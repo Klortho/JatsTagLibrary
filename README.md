@@ -30,8 +30,6 @@ about how to install it, and what it does.
 3.  Click the "Raw" button.  You should see a pop-up window asking if you want to install this
     user script.
 4.  Click "Install".  You should see a message, "TagLibPermalink installed successfully."
-5.  Go to any of the JATS Tag Library pages, for example, [Article Authoring, NISO JATS
-    1.0](http://jats.nlm.nih.gov/articleauthoring/tag-library/1.0/)
 
 ### To install in Google Chrome (native)
 
