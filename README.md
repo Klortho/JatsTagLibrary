@@ -61,8 +61,7 @@ Tampermonkey.
     should appear asking if you want to install it.
 4.  Click "OK".
 
-Try it out
-----------
+### Try it out
 
 Navigate to any element documentation page.  For example, starting at the
 [Article Authoring Tag Library](http://jats.nlm.nih.gov/articleauthoring/tag-library/1.0/),
