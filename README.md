@@ -65,7 +65,7 @@ Tampermonkey.
 
 Navigate to any element documentation page.  For example, starting at the
 [Article Authoring Tag Library](http://jats.nlm.nih.gov/articleauthoring/tag-library/1.0/),
-navigate to _Element_ → _&lt;abbrev&gt;_.  You should see "permalink" in the upper-right hand corner.
+navigate to _Elements_ → _&lt;abbrev&gt;_.  You should see "permalink" in the upper-right hand corner.
 Click on that, and verify that your browser address bar now has
 "http://jats.nlm.nih.gov/articleauthoring/tag-library/1.0/?elem=abbrev".
 
