@@ -18,6 +18,10 @@ links to them.
 This extension works in Firefox and in Chrome.  It may work in other browsers, but hasn't
 been tested.
 
+You can see a short video about how to install it, and what it does,
+[here](http://www.ncbi.nlm.nih.gov/staff/maloneyc/JatsTagLibrary/TagSetPermalink.mp4).
+Or, just follow these instructions:
+
 ### To install in Firefox
 
 1.  Install the [Greasemonkey add-on](https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/)
@@ -48,3 +52,19 @@ been tested.
 7.  Navigate to any element documentation page, for example,
     [&lt;abbrev&gt;](http://jats.nlm.nih.gov/articleauthoring/tag-library/1.0/?elem=abbrev).  You
     should see "permalink" in the upper-right hand corner.
+
+
+Public domain
+-------------
+
+This work is in the public domain and may be reproduced, published or otherwise
+used without permission of the National Library of Medicine (NLM).
+
+Although all reasonable efforts have been taken to ensure the accuracy and
+reliability of the software and data, the NLM and the U.S. Government do not
+and cannot warrant the performance or results that may be obtained by using
+this software or data. The NLM and the U.S. Government disclaim all warranties,
+express or implied, including warranties of performance, merchantability or
+fitness for any particular purpose.
+
+
