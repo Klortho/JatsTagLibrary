@@ -3,9 +3,11 @@
 // ==UserScript==
 // @name          TagLibPermalink
 // @namespace     TagLibPermalink
+// @version       1.0.1
 // @description   Greasemonkey script to add a permalink to the tag library documentation pages.
 // @include       http://jats.nlm.nih.gov/archiving/tag-library/*
 // @include       http://jats.nlm.nih.gov/articleauthoring/tag-library/*
+// @include       http://jats.nlm.nih.gov/extensions/bits/tag-library/*
 // @include       http://jats.nlm.nih.gov/publishing/tag-library/*
 // @include       http://dtd.nlm.nih.gov/book/tag-library/*
 // @include       http://dtd.nlm.nih.gov/archiving/tag-library/*
