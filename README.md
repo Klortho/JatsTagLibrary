@@ -1,4 +1,4 @@
-JatsTagLibrary
+﻿JatsTagLibrary
 ==============
 
 This repository contains a few tools exploring different ways to improve the JATS Tag Library documentation,
@@ -18,12 +18,9 @@ links to them.
 This extension works in Firefox and in Chrome.  It may work in other browsers, but hasn't
 been tested.
 
-You can see a short video about how to install it, and what it does,
-[here](http://www.ncbi.nlm.nih.gov/staff/maloneyc/JatsTagLibrary/TagSetPermalink.mp4).
-(Install it using the "Raw" button
-[here](https://github.com/Klortho/JatsTagLibrary/blob/master/GreaseMonkey/TagLibPermalink.user.js))
+You can watch a [short video](http://www.ncbi.nlm.nih.gov/staff/maloneyc/JatsTagLibrary/TagSetPermalink.mp4)
+about how to install it, and what it does.
 
-Or, if you don't want to watch the video, follow these instructions:
 
 ### To install in Firefox
 
@@ -35,11 +32,8 @@ Or, if you don't want to watch the video, follow these instructions:
 4.  Click "Install".  You should see a message, "TagLibPermalink installed successfully."
 5.  Go to any of the JATS Tag Library pages, for example, [Article Authoring, NISO JATS
     1.0](http://jats.nlm.nih.gov/articleauthoring/tag-library/1.0/)
-6.  Navigate to any element documentation page, for example,
-    [&lt;abbrev&gt;](http://jats.nlm.nih.gov/articleauthoring/tag-library/1.0/?elem=abbrev).  You
-    should see "permalink" in the upper-right hand corner.
 
-### To install in Google Chrome
+### To install in Google Chrome (native)
 
 1.  Go to the GitHub description page for this extension,
     [here](https://github.com/Klortho/JatsTagLibrary/blob/master/GreaseMonkey/TagLibPermalink.user.js)
@@ -52,9 +46,29 @@ Or, if you don't want to watch the video, follow these instructions:
 5.  Now, drag the user script from the filesystem window onto the Chrome extensions window.
     You should see a pop-up asking if you want to "Add TagLibraryPermalink?"
 6.  Click "Add".
-7.  Navigate to any element documentation page, for example,
-    [&lt;abbrev&gt;](http://jats.nlm.nih.gov/articleauthoring/tag-library/1.0/?elem=abbrev).  You
-    should see "permalink" in the upper-right hand corner.
+
+### To install in Google Chrome (tampermonkey)
+
+If your Google Chrome extensions are restricted by your admins (as is the case in one
+government organization that I know of) you might be able to install it anyway with
+Tampermonkey.
+
+1.  Find Tampermonkey in the [Chrome web store](https://chrome.google.com/webstore),
+    and install it.
+2.  Go to the GitHub description page for this extension,
+    [here](https://github.com/Klortho/JatsTagLibrary/blob/master/GreaseMonkey/TagLibPermalink.user.js)
+3.  Click the "Raw" button.  The script should open in a new Tampermonkey tab, and a dialog box
+    should appear asking if you want to install it.
+4.  Click "OK".
+
+Try it out
+----------
+
+Navigate to any element documentation page.  For example, starting at the
+[Article Authoring Tag Library](http://jats.nlm.nih.gov/articleauthoring/tag-library/1.0/),
+navigate to ''Element'' → ''&lt;abbrev&gt;''.  You should see "permalink" in the upper-right hand corner.
+Click on that, and verify that your browser address bar now has
+"http://jats.nlm.nih.gov/articleauthoring/tag-library/1.0/?elem=abbrev".
 
 
 Public domain
