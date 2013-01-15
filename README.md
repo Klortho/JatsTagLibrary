@@ -20,7 +20,10 @@ been tested.
 
 You can see a short video about how to install it, and what it does,
 [here](http://www.ncbi.nlm.nih.gov/staff/maloneyc/JatsTagLibrary/TagSetPermalink.mp4).
-Or, just follow these instructions:
+(Install it using the "Raw" button
+[here](https://github.com/Klortho/JatsTagLibrary/blob/master/GreaseMonkey/TagLibPermalink.user.js))
+
+Or, if you don't want to watch the video, follow these instructions:
 
 ### To install in Firefox
 
