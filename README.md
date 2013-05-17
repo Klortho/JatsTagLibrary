@@ -8,6 +8,15 @@ which can be found here:
   * [Publishing - NISO JATS 1.0](http://jats.nlm.nih.gov/publishing/tag-library/1.0/)
   * [Article Authoring - NISO JATS 1.0](http://jats.nlm.nih.gov/articleauthoring/tag-library/1.0/)
 
+Alternative Interface to the Tag Suite Library
+----------------------------------------------
+
+This is a project that I've started, to adapt the [jqapi](http://jqapi.com/)
+documentation framework to the tag library.
+
+Work is being done in [my fork of that software](https://github.com/Klortho/jqapi/tree/dtdanalyzer).
+
+
 Browser Extension - TagLibPermalink
 -----------------------------------
 
