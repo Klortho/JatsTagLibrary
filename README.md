@@ -26,7 +26,7 @@ The first (and only, so far) tool is a small browser extension that will add a "
 each of the documentation pages, making it much easier to bookmark them and to share
 links to them.
 
-See the [PermalinkUserScript]() for instructions to install and use it.
+See the [PermalinkUserScript](PermalinkUserScript) for instructions to install and use it.
 
 Public domain
 -------------
