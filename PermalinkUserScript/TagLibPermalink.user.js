@@ -74,7 +74,8 @@ function main() {
                     permalink = $('<em>[ no permalink ]</em>');
                 }
                 else {
-                    var loc = window.location.toString().replace(/\?.*/, "");   // strip off query string and fragment
+                    // strip off query string and fragment
+                    var loc = window.location.toString().replace(/\?.*/, "");
                     var permahref = loc + "?" + type + "=" + slug;
                     permalink = $('<a href="' + permahref + '" target="_top">permalink</a>');
                 }
