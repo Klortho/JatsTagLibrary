@@ -13,7 +13,7 @@ about how to install it, and what it does.
 1.  Install the [Greasemonkey
     add-on](https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/)
 2.  Go to the GitHub description page for this extension,
-    [here](https://github.com/Klortho/JatsTagLibrary/blob/master/PermalinkUserScript/TagLibPermalink.user.js)
+    [here](TagLibPermalink.user.js)
 3.  Click the "Raw" button.  You should see a pop-up window asking if you want to install this
     user script.
 4.  Click "Install".  You should see a message, "TagLibPermalink installed successfully."
@@ -21,7 +21,7 @@ about how to install it, and what it does.
 ### To install in Google Chrome (native)
 
 1.  Go to the GitHub description page for this extension,
-    [here](https://github.com/Klortho/JatsTagLibrary/blob/master/PermalinkUserScript/TagLibPermalink.user.js)
+    [here](TagLibPermalink.user.js)
 2.  '''Right-click''' on "Raw", and choose "Save link as", and then save the file to disk.
 3.  On the button for the just-downloaded file, at the bottom of the browser window,
     right-click and select "show in folder" to bring up the file in the filesystem window (for
@@ -41,7 +41,7 @@ Tampermonkey.
 1.  Find Tampermonkey in the [Chrome web store](https://chrome.google.com/webstore),
     and install it.
 2.  Go to the GitHub description page for this extension,
-    [here](https://github.com/Klortho/JatsTagLibrary/blob/master/PermalinkUserScript/TagLibPermalink.user.js)
+    [here](TagLibPermalink.user.js)
 3.  Click the "Raw" button.  The script should open in a new Tampermonkey tab, and a dialog box
     should appear asking if you want to install it.
 4.  Click "OK".
