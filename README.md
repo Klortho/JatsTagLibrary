@@ -2,7 +2,7 @@
 ==============
 
 Looking for the "permalink" user script for the JATS Tag Library pages?  I've moved
-that to its own repository, [here](https://github.com/Klortho/jqapi/TagLibPermalink).
+that to its own repository, [here](https://github.com/Klortho/TagLibPermalink).
 
 This repository is a project to improve the JATS
 Tag Library documentation, which can be found here:
