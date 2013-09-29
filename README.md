@@ -1,7 +1,10 @@
 ﻿JatsTagLibrary
 ==============
 
-This repository contains a few tools exploring different ways to improve the JATS
+Looking for the "permalink" user script for the JATS Tag Library pages?  I've moved
+that to its own repository, [here](https://github.com/Klortho/jqapi/TagLibPermalink).
+
+This repository is a project to improve the JATS
 Tag Library documentation, which can be found here:
 
   * [Archiving and Interchange - NISO JATS
@@ -10,23 +13,13 @@ Tag Library documentation, which can be found here:
   * [Article Authoring - NISO JATS
     1.0](http://jats.nlm.nih.gov/articleauthoring/tag-library/1.0/)
 
-Alternative Interface to the Tag Suite Library
-----------------------------------------------
+I am adapting the [jqapi](http://jqapi.com/) documentation framework to work with
+the tag library.
 
-This is a project that I've started, to adapt the [jqapi](http://jqapi.com/)
-documentation framework to the tag library.
+Work is being done in [my fork of that
+software](https://github.com/Klortho/jqapi/tree/dtdanalyzer), but eventually will
+be moved here.
 
-Work is being done in [my fork of that software](https://github.com/Klortho/jqapi/tree/dtdanalyzer).
-
-
-Browser Extension - TagLibPermalink
------------------------------------
-
-The first (and only, so far) tool is a small browser extension that will add a "permalink" to
-each of the documentation pages, making it much easier to bookmark them and to share
-links to them.
-
-See the [TagLibPermalink README](TagLibPermalink) for instructions to install and use it.
 
 Public domain
 -------------
