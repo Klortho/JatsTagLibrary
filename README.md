@@ -31,12 +31,19 @@ needed by the documentation framework.  I wasn't given access to the original
 XML files used to produce the tag library documentation, so I had to start with
 the HTML files downloaded from jats.nlm.nih.gov.
 
-### Downloaded the JATS Tag Library documentation from the NLM FTP site
+### Downloaded the official JATS Tag Library documentation
 
 Version 1.0 of each of the three main tag sets was downloaded from
 [ftp://ftp.ncbi.nlm.nih.gov/pub/jats](ftp://ftp.ncbi.nlm.nih.gov/pub/jats),
 extracted, and then imported into this Git repository, with
 [this commit](https://github.com/Klortho/JatsTagLibrary/commit/ba87a7309da8f3350a7128a52320183f4c5b177d).
+
+Note that the version I downloaded from the FTP site, on 2013-10-09, does not match the version
+served from jats.nlm.nih.gov.  The downloaded version indicates, at the bottom of every page,
+"Version of May 2012".  The pages served from the offical website say, "Version of August 2012".
+
+
+### Use HTML tidy to convert to well-formed XHTML
 
 Ran HTML tidy on all of the HTML files to convert them into well-formed XHTML. For
 example,
@@ -48,6 +55,8 @@ cd archiving-1.0
 
 I then checked the output of that, `tidy-out.txt`, for any failures.
 
+### Preprocess the TOC
+
 Produce the `toc-xref.xml` file by running `t-2000.html` through the `make-toc-xref.xsl`
 stylesheet.  This XML file gives, for each TOC entry, the hash used in the existing
 tag set documentation, the title, and a computed slug.  For example,
@@ -58,6 +67,10 @@ tag set documentation, the title, and a computed slug.  For example,
       slug="pe-journal-title-elements"/>
 ```
 
+### Generate toc.html
+
+Ran the `t-2000.html` file through the stylesheet `make-toc.xsl`, to produce `toc.html`,
+which is the source for the left-hand navigation panel of the new docs.
 
 
 Public domain
