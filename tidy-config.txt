@@ -1,0 +1,10 @@
+output-xhtml: yes
+indent: auto
+indent-spaces: 2
+wrap: 100
+char-encoding: utf8
+output-encoding: utf8
+write-back: yes
+numeric-entities: yes
+quiet: yes
+new-inline-tags: default.value
