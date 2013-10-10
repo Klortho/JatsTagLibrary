@@ -21,6 +21,45 @@ software](https://github.com/Klortho/jqapi/tree/dtdanalyzer), but eventually wil
 be moved here.
 
 
+
+
+Transforming the tag library documentation
+------------------------------------------
+
+These are the steps used to convert the tag library documentation into the form
+needed by the documentation framework.  I wasn't given access to the original
+XML files used to produce the tag library documentation, so I had to start with
+the HTML files downloaded from jats.nlm.nih.gov.
+
+### Downloaded the JATS Tag Library documentation from the NLM FTP site
+
+Version 1.0 of each of the three main tag sets was downloaded from
+[ftp://ftp.ncbi.nlm.nih.gov/pub/jats](ftp://ftp.ncbi.nlm.nih.gov/pub/jats),
+extracted, and then imported into this Git repository, with
+[this commit](https://github.com/Klortho/JatsTagLibrary/commit/ba87a7309da8f3350a7128a52320183f4c5b177d).
+
+Ran HTML tidy on all of the HTML files to convert them into well-formed XHTML. For
+example,
+
+```
+cd archiving-1.0
+../scripts/run-tidy.sh
+```
+
+I then checked the output of that, `tidy-out.txt`, for any failures.
+
+Produce the `toc-xref.xml` file by running `t-2000.html` through the `make-toc-xref.xsl`
+stylesheet.  This XML file gives, for each TOC entry, the hash used in the existing
+tag set documentation, the title, and a computed slug.  For example,
+
+```xml
+<item hash="n-ze42"
+      title="%journal-title-elements;"
+      slug="pe-journal-title-elements"/>
+```
+
+
+
 Public domain
 -------------
 
