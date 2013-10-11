@@ -43,27 +43,26 @@
     <xsl:variable name='title' select='$xrefItem/@title'/>
     <xsl:variable name='liClass'>
       <xsl:choose>
-        <xsl:when test="$level=1">
+        <xsl:when test='$level=1 and following-sibling::h:div[1]/@class="toc-section"'>
+          <xsl:text>top-cat has-kids</xsl:text>
+        </xsl:when>
+        <xsl:when test='$level=1'>
           <xsl:text>top-cat</xsl:text>
         </xsl:when>
+        <xsl:when test='following-sibling::h:div[1]/@class="toc-section"'>
+          <xsl:text>sub-cat has-kids</xsl:text>
+        </xsl:when>
         <xsl:otherwise>
-          <xsl:choose>
-            <xsl:when test='following-sibling::h:div[1]/@class="toc-section"'>
-              <xsl:text>sub-cat</xsl:text>
-            </xsl:when>
-            <xsl:otherwise>
-              <xsl:text>entry</xsl:text>
-            </xsl:otherwise>
-          </xsl:choose>
+          <xsl:text>entry</xsl:text>
         </xsl:otherwise>
       </xsl:choose>
     </xsl:variable>
     <xsl:variable name='spanClass'>
       <xsl:choose>
-        <xsl:when test="$liClass='top-cat'">
+        <xsl:when test="contains($liClass, 'top-cat')">
           <xsl:text>top-cat-name</xsl:text>
         </xsl:when>
-        <xsl:when test="$liClass='sub-cat'">
+        <xsl:when test="contains($liClass, 'sub-cat')">
           <xsl:text>sub-cat-name</xsl:text>
         </xsl:when>
         <xsl:when test="$liClass='entry'">
