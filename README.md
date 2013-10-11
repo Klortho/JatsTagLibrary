@@ -69,7 +69,7 @@ tag set documentation, the title, and a computed slug.  For example,
 
 ### Generate toc.html
 
-Ran the `t-2000.html` file through the stylesheet `make-toc.xsl`, to produce `toc.html`,
+Ran the `t-2000.html` file through the stylesheet `make-toc.xsl`, to produce `jqapi-docs/toc.html`,
 which is the source for the left-hand navigation panel of the new docs.
 
 
