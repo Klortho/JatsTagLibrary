@@ -7,6 +7,7 @@ require 'nokogiri'
 
 script_dir = File.dirname(__FILE__)
 entries_dir = "jqapi-docs/entries"
+Dir.mkdir(entries_dir)
 
 doc = Nokogiri::XML(File.open("toc-xref.xml"))
 doc.xpath('//item').each { |item|
