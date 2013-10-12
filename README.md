@@ -31,6 +31,11 @@ needed by the documentation framework.  I wasn't given access to the original
 XML files used to produce the tag library documentation, so I had to start with
 the HTML files downloaded from jats.nlm.nih.gov.
 
+### Get prerequisites
+
+* Get saxon9he.jar and put it into the *scripts* directory.
+* Install ruby and the nokogiri gem.
+
 ### Downloaded the official JATS Tag Library documentation
 
 Version 1.0 of each of the three main tag sets was downloaded from
@@ -69,9 +74,18 @@ tag set documentation, the title, and a computed slug.  For example,
 
 ### Generate toc.html
 
-Ran the `t-2000.html` file through the stylesheet `make-toc.xsl`, to produce `jqapi-docs/toc.html`,
+Ran the *t-2000.html* file through the stylesheet *make-toc.xsl*, to produce *jqapi-docs/toc.html*,
 which is the source for the left-hand navigation panel of the new docs.
 
+### Generate all the other documentation files
+
+From, for example, the *archiving-1.0* directory, run
+
+```
+ruby ../scripts/make-docs.rb
+```
+
+This will take quite a long time to convert all of the files.
 
 Public domain
 -------------
