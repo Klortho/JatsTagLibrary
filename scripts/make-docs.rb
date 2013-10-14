@@ -1,4 +1,4 @@
-#/usr/bin/env ruby
+#!/usr/bin/env ruby
 # This script converts all of the JATS Tag Library documents into the form
 # required by the new library browser framework.
 # It depends on saxon9he.jar being in the same directory as this script.
