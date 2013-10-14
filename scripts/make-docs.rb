@@ -4,28 +4,21 @@
 # It depends on saxon9he.jar being in the same directory as this script.
 
 require 'nokogiri'
+require 'trollop'
 
+opts = Trollop::options do
+  banner <<-EOB
+Convert JATS Tag Library documentation to format required by jqapi library.
 
-usage = <<-END_USAGE
-Usage: #{__FILE__} [ file-to-convert ]
-<file-to-convert>, if given, specifies the file either by the hash, slug, or
-the title.  If not given, then all the files are converted.
-END_USAGE
+Usage: #{__FILE__} [options] [file-to-convert]
 
-if ARGV.grep(/^-\?|h$/).any?
-  print usage
-  exit 0
+[file-to-convert], if given, specifies the file either by the hash, slug, or
+the title (see toc-xref.xml).  If not given, then all the files are converted.
+EOB
 end
 
-if ARGV.size > 1
-  puts "Too many arguments"
-  print usage
-  exit 1
-end
-
-
+Trollop::die "Too many arguments" if ARGV.size > 1
 file_to_convert = ARGV[0]  # This will be nil if not given
-
 
 script_dir = File.dirname(__FILE__)
 entries_dir = "jqapi-docs/entries"
