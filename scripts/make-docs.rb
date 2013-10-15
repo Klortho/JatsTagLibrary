@@ -13,40 +13,43 @@ Convert JATS Tag Library documentation to format required by jatsdoc library.
 
 Usage: #{__FILE__} [options] [file-to-convert]
 
-By default, this transforms all the XHTML files specified by the toc-xref.xml
-file, and puts the results into jatsdoc/entries.  It also copies all of image
-files from graphics into jatsdoc/resources.
+By default, this:
+* Creates the destination directory jatsdoc, if it doesn't already exist
+* Copies index.html and toc.html into it
+* Transforms all the XHTML files specified by the toc-xref.xml file, from the
+  orig-html directory, and puts the results into jatsdoc/entries.
+* Copies all of image files from graphics into jatsdoc/resources.
 
-[file-to-convert], if given, specifies the file either by the hash, slug, or
-the title (see toc-xref.xml).  If not given, then all the files are converted.
+You can also do things piecemeal, by specifying a file to transform, or using
+the options to specify particular actions.
+
+[file-to-convert], if given, specifies one XHTML file to transfrom, either by
+the hash, slug, or the title (see toc-xref.xml).
 
 Options:
 EOB
-  opt :copy_resources, "Only copy resources"
+  opt :index, "Only copy index.html and toc.html"
+  opt :resources, "Only copy the image files from graphics -> resources"
 end
 
 Trollop::die "Too many arguments" if ARGV.size > 1
+
 file_to_convert = ARGV[0]  # This will be nil if not given
 
-#p opts
-#p opts[:copy_resources]
-#exit
-
 script_dir = File.dirname(__FILE__)
-
 dest_dir = "jatsdoc"
-
-entries_src_dir = "orig-html"
-entries_dest_dir = "#{dest_dir}/entries"
-
-resources_src_dir = "graphics"
-resources_dest_dir = "#{dest_dir}/resources"
-
 Dir.mkdir(dest_dir) unless File.directory?(dest_dir)
-Dir.mkdir(entries_dest_dir) unless File.directory?(entries_dest_dir)
 
-if !opts[:copy_resources]
+
+
+# Transform XHTML files
+if file_to_convert || (!opts[:index] && !opts[:resources])
   converted = false
+
+  entries_src_dir = "orig-html"
+  entries_dest_dir = "#{dest_dir}/entries"
+  Dir.mkdir(entries_dest_dir) unless File.directory?(entries_dest_dir)
+
   doc = Nokogiri::XML(File.open("toc-xref.xml"))
   doc.xpath('//item').each { |item|
     hash = item.attribute("hash").to_str
@@ -75,15 +78,20 @@ if !opts[:copy_resources]
   }
 
   if !converted
-    puts "No matching file found"
+    puts "No file found that matches '#{file_to_convert}'"
   end
 end
 
-# Copy the resources, if there was no "file_to_convert" argument given
-if !file_to_convert || opts[:copy_resources]
+# Copy index and toc
+if opts[:index] || (!file_to_convert && !opts[:resources])
+  FileUtils.cp("index.html", dest_dir)
+  FileUtils.cp("toc.html", dest_dir)
+end
+
+# Copy the resources
+if opts[:resources] || (!file_to_convert && !opts[:index])
+  resources_src_dir = "graphics"
+  resources_dest_dir = "#{dest_dir}/resources"
   FileUtils.rm_rf resources_dest_dir
-  #Dir.mkdir(resources_dest_dir) unless File.directory?(resources_dest_dir)
-
-
   FileUtils.cp_r("#{resources_src_dir}", resources_dest_dir)
 end
