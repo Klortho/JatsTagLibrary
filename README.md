@@ -5,7 +5,7 @@ Looking for the "permalink" user script for the JATS Tag Library pages?  I've mo
 that to its own repository, [here](https://github.com/Klortho/TagLibPermalink).
 
 This repository is a project to improve the JATS
-Tag Library documentation, which can be found here:
+Tag Library documentation.  The original versions can be found on the NLM site here:
 
   * [Archiving and Interchange - NISO JATS
     1.0](http://jats.nlm.nih.gov/archiving/tag-library/1.0/)
@@ -14,11 +14,12 @@ Tag Library documentation, which can be found here:
     1.0](http://jats.nlm.nih.gov/articleauthoring/tag-library/1.0/)
 
 I am adapting the [jqapi](http://jqapi.com/) documentation framework to work with
-the tag library.
+the JATS tag library documentation.  Work on the framework, which is a JS and CSS library,
+is being done in my fork of that software, on GitHub at
+[Klortho/jatsdoc](https://github.com/Klortho/jatsdoc).
 
-Work is being done in [my fork of that
-software](https://github.com/Klortho/jqapi/tree/dtdanalyzer), but eventually will
-be moved here.
+*This* repository contains the *content* that will use that documentation library,
+and the scripts used to convert the original documentation into the proper form.
 
 
 
@@ -47,7 +48,6 @@ Note that the version I downloaded from the FTP site, on 2013-10-09, does not ma
 served from jats.nlm.nih.gov.  The downloaded version indicates, at the bottom of every page,
 "Version of May 2012".  The pages served from the offical website say, "Version of August 2012".
 
-
 ### Use HTML tidy to convert to well-formed XHTML
 
 Ran HTML tidy on all of the HTML files to convert them into well-formed XHTML. For
@@ -59,6 +59,11 @@ cd archiving-1.0
 ```
 
 I then checked the output of that, `tidy-out.txt`, for any failures.
+
+I then moved the generated HTML files into a subdirectory called *orig-html*.
+(Note that this isa misnomer, since they aren't really the *original* HTML files;
+they have already been processed with tidy.)
+
 
 ### Preprocess the TOC
 
@@ -84,6 +89,9 @@ From, for example, the *archiving-1.0* directory, run
 ```
 ruby ../scripts/make-docs.rb
 ```
+
+This does several things, in addition to transforming the HTML files.  Run
+it with the `-h` option to get more info.
 
 This will take quite a long time to convert all of the files.
 
