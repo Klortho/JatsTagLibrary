@@ -112,6 +112,9 @@
     </xsl:choose>
   </xsl:template>
 
+  <!-- Drop the pagefooter for each entry.  We'll preserve the index.html
+    footer and use it everywhere -->
+  <xsl:template match='h:div[@class="pagefooter"]'/>
 
   <!-- Get rid of some silly classes -->
   <xsl:template match='h:p/@class[.="para"]'/>
