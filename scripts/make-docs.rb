@@ -51,6 +51,8 @@ if file_to_convert || (!opts[:index] && !opts[:resources])
   Dir.mkdir(entries_dest_dir) unless File.directory?(entries_dest_dir)
 
   doc = Nokogiri::XML(File.open("toc-xref.xml"))
+  original_base = doc.xpath("/tocXref/@original-base")
+
   doc.xpath('//item').each { |item|
     hash = item.attribute("hash").to_str
     title = item.attribute("title").to_str
@@ -66,7 +68,9 @@ if file_to_convert || (!opts[:index] && !opts[:resources])
         "java -jar #{script_dir}/saxon9he.jar " +
         "-xsl:#{script_dir}/make-doc.xsl " +
         "-s:#{in_html} " +
-        "> #{out_html}"
+        "-o:#{out_html} " +
+        "original-base=#{original_base} " +
+        "hash=#{hash}"
 
       %x( #{transform_cmd} )
       if $?.exitstatus != 0
@@ -84,12 +88,14 @@ end
 
 # Copy index and toc
 if opts[:index] || (!file_to_convert && !opts[:resources])
+  puts "Copying index.html and toc.html to #{dest_dir}"
   FileUtils.cp("index.html", dest_dir)
   FileUtils.cp("toc.html", dest_dir)
 end
 
 # Copy the resources
 if opts[:resources] || (!file_to_convert && !opts[:index])
+  puts "Copying graphics/* to #{dest_dir}/resources"
   resources_src_dir = "graphics"
   resources_dest_dir = "#{dest_dir}/resources"
   FileUtils.rm_rf resources_dest_dir

@@ -77,6 +77,16 @@ tag set documentation, the title, and a computed slug.  For example,
       slug="pe-journal-title-elements"/>
 ```
 
+I then manually entered the base URL of the original tag library documentation into
+the *toc-xref.html* file.  This is used to produce the "Original" link on each of the
+individual pages.  Like so:
+
+```xml
+<tocXref xmlns:h="http://www.w3.org/1999/xhtml"
+         original-base='http://jats.nlm.nih.gov/archiving/tag-library/1.0/'>
+```
+
+
 ### Generate toc.html
 
 Ran the *t-2000.html* file through the stylesheet *make-toc.xsl*, to produce *jqapi-docs/toc.html*,
