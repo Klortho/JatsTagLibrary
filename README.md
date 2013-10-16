@@ -77,7 +77,7 @@ tag set documentation, the title, and a computed slug.  For example,
       slug="pe-journal-title-elements"/>
 ```
 
-I then manually entered the base URL of the original tag library documentation into
+Then, manually enter the base URL of the original tag library documentation into
 the *toc-xref.html* file.  This is used to produce the "Original" link on each of the
 individual pages.  Like so:
 
