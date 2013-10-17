@@ -116,11 +116,15 @@
     footer and use it everywhere -->
   <xsl:template match='h:div[@class="pagefooter"]'/>
 
+  <!-- We're not using frames, so get rid of @target="main" -->
+  <xsl:template match='h:a/@target[.="main"]'/>
+  
   <!-- Get rid of some silly classes -->
   <xsl:template match='h:p/@class[.="para"]'/>
   <xsl:template match='h:ul/@class[.="bullist"]'/>
   <xsl:template match='h:h3/@class[.="header"]'/>
-    
+  <xsl:template match='h:h4/@class[.="header"]'/>
+  
 
   <xsl:template match='@*|*|text()'>
     <xsl:copy>

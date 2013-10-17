@@ -87,17 +87,19 @@ if file_to_convert || (!opts[:index] && !opts[:resources])
 end
 
 # Copy index and toc
+resources_src_dir = "graphics"
+resources_dest_dir = "#{dest_dir}/resources"
+
 if opts[:index] || (!file_to_convert && !opts[:resources])
   puts "Copying index.html and toc.html to #{dest_dir}"
   FileUtils.cp("index.html", dest_dir)
   FileUtils.cp("toc.html", dest_dir)
+  FileUtils.cp("taglib.css", resources_dest_dir)
 end
 
 # Copy the resources
 if opts[:resources] || (!file_to_convert && !opts[:index])
   puts "Copying graphics/* to #{dest_dir}/resources"
-  resources_src_dir = "graphics"
-  resources_dest_dir = "#{dest_dir}/resources"
   FileUtils.rm_rf resources_dest_dir
   FileUtils.cp_r("#{resources_src_dir}", resources_dest_dir)
 end
