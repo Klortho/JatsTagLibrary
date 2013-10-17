@@ -105,6 +105,13 @@ it with the `-h` option to get more info.
 
 This will take quite a long time to convert all of the files.
 
+
+### Generate taglib.css
+
+Customize each tag library with its own color scheme.
+
+
+
 Public domain
 -------------
 
