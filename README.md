@@ -115,14 +115,14 @@ Customize each tag library with its own color scheme.
 Public domain
 -------------
 
-This work is in the public domain and may be reproduced, published or otherwise
-used without permission of the National Library of Medicine (NLM).
+The JATS Tag Library documentation was produced for the National Center for
+Biotechnology Information (NCBI), National Library of Medicine (NLM), by
+Mulberry Technologies, Inc., Rockville, Maryland.
 
-Although all reasonable efforts have been taken to ensure the accuracy and
-reliability of the software and data, the NLM and the U.S. Government do not
-and cannot warrant the performance or results that may be obtained by using
-this software or data. The NLM and the U.S. Government disclaim all warranties,
-express or implied, including warranties of performance, merchantability or
-fitness for any particular purpose.
+The JATS Tag Library is in the public domain. See the [NCBI Copyright and
+Disclaimer](http://www.ncbi.nlm.nih.gov/About/disclaimer.html) page for more
+information.
 
-
+The scripts and transformations developed here by Chris Maloney, in this GitHub
+project, to adapt the Tag Library to the jatsdoc framework, are also dedicated
+to the [public domain](http://creativecommons.org/publicdomain/zero/1.0/).

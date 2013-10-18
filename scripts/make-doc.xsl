@@ -11,17 +11,25 @@
                 exclude-result-prefixes="xs f"
                 version="2.0">
 
-  <xsl:output method='xhtml' indent='yes'/>
+  <!-- 
+    In the output spec, indent must be "no", otherwise Saxon adds whitespace around 
+    <a> tags.  I haven't investigated thoroughly, but I'd say this is a bug.  See
+    http://www.w3.org/TR/xslt-xquery-serialization/#xhtml-output:
+    "Whitespace MUST NOT be added or removed adjacent to an inline element"
+  -->
+  <xsl:output method='xhtml' indent='no'/>
   
   <xsl:param name='original-base' />
-  <xsl:param name='hash' />
+  <xsl:param name='hash' select='"n-jn00"'/>
 
   <!-- Read in the toc-xref, so we can resolve inter-page links -->
   <xsl:variable name='baseUri' select='base-uri(/)'/>
   <xsl:variable name='dir' select='replace($baseUri, "/[^/]*$", "")'/>
   <xsl:variable name='xref' 
     select='document(concat($dir, "/../", "toc-xref.xml"))'/>
-  
+
+  <xsl:variable name='slug' select='$xref//item[@hash=$hash]/@slug'/>
+
   
   <xsl:template match='h:html'>
     <xsl:apply-templates select='h:body'/>
@@ -29,8 +37,16 @@
   
   <xsl:template match='h:body'>
     <div id='entry-wrapper'>
-      <!-- Original link -->
-      <a class='original' href='{$original-base}{$hash}.html'>Original</a>
+      <span class='original'>
+        <a href='{$original-base}{$hash}.html'>Original</a>
+        <xsl:if test='starts-with($slug, "elem-") or
+                      starts-with($slug, "attr-") or
+                      starts-with($slug, "pe-")'>
+          <xsl:text> (</xsl:text>
+            <a href='{$original-base}?{concat(substring-before($slug, "-"), "=", substring-after($slug, "-"))}'>frames</a>
+          <xsl:text>)</xsl:text>
+        </xsl:if>
+      </span>
       
       
       <!-- h1 header -->
@@ -62,14 +78,28 @@
           <xsl:variable name='header' select='h:div[@class="header"]'/>
           
           <h1>
-            <xsl:copy-of select='$header/h:h1[@class="elementtag"]/node()'/>
-            <xsl:value-of select='" "'/>
-            <xsl:copy-of select='$header/h:h1[@class="elementname"]/node()'/>
+            <xsl:copy-of select='$header/h:h1[
+              @class="elementtag" or @class="attrtag" or @class="petag"]/node()'/>
+            <xsl:text> </xsl:text>
+            <xsl:if test='$header/h:h1[@class="attrtag"]'>
+              <xsl:text>- </xsl:text>
+            </xsl:if>
+            <xsl:copy-of select='$header/h:h1[
+              @class="elementname" or @class="attrname" or @class="pename"]/node()'/>
           </h1>
           
           <xsl:for-each select="$header/following-sibling::*">
             <xsl:apply-templates select='.'/>
           </xsl:for-each>
+        </xsl:when>
+        
+        <!-- Example: top-level-element:  n-h2g2.html -->
+        <xsl:when test='h:div[@class="section"]/h:h3[@class="header"]'>
+          <h1>
+            <xsl:copy-of select='h:div[@class="section"]/h:h3[@class="header"]/node()'/>
+          </h1>
+          <xsl:apply-templates select='h:div[@class="section"]/h:h3[@class="header"]/
+              following-sibling::*'/>
         </xsl:when>
       </xsl:choose>
     </div>
@@ -112,6 +142,40 @@
     </xsl:choose>
   </xsl:template>
 
+  <!-- Rework the attribute lists inside the element entries -->
+  <xsl:template match='h:div[@class="attrlist"]'>
+    <xsl:copy>
+      <xsl:apply-templates select='@*'/>
+      <h2>Attributes</h2>
+      <ul class='attrlist'>
+        <xsl:apply-templates select='h:h5' mode='attrlist'/>
+      </ul>
+    </xsl:copy>
+  </xsl:template>
+  
+  <xsl:template match='h:h5' mode='attrlist'>
+    <li>
+      <xsl:apply-templates mode='attrlist'/>
+    </li>
+  </xsl:template>
+
+
+  <xsl:template match='h:a[h:span/@class="attrtag"]' mode='attrlist'>
+    <xsl:copy>
+      <xsl:apply-templates/>
+    </xsl:copy>
+    <xsl:text> - </xsl:text>
+  </xsl:template>
+
+  
+  <xsl:template match='h:a[h:span/@class="attrname"]' mode='attrlist'>
+    <xsl:apply-templates select='h:span/node()'/>
+  </xsl:template>
+
+
+
+
+  
   <!-- Drop the pagefooter for each entry.  We'll preserve the index.html
     footer and use it everywhere -->
   <xsl:template match='h:div[@class="pagefooter"]'/>
