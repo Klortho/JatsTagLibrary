@@ -94,6 +94,7 @@ if opts[:index] || (!file_to_convert && !opts[:resources])
   puts "Copying index.html and toc.html to #{dest_dir}"
   FileUtils.cp("index.html", dest_dir)
   FileUtils.cp("toc.html", dest_dir)
+  puts "Copying taglib.css to #{resources_dest_dir}"
   FileUtils.cp("taglib.css", resources_dest_dir)
 end
 

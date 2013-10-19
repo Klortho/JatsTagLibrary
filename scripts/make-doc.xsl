@@ -68,7 +68,7 @@
           <h1>
             <xsl:copy-of select='$header/node()'/>
           </h1>
-          <xsl:for-each select="$header/following-sibling::*">
+          <xsl:for-each select="$header/following-sibling::node()">
             <xsl:apply-templates select='.'/>
           </xsl:for-each>
         </xsl:when>
@@ -88,23 +88,62 @@
               @class="elementname" or @class="attrname" or @class="pename"]/node()'/>
           </h1>
           
-          <xsl:for-each select="$header/following-sibling::*">
+          <xsl:for-each select="$header/following-sibling::node()">
             <xsl:apply-templates select='.'/>
           </xsl:for-each>
         </xsl:when>
         
-        <!-- Example: top-level-element:  n-h2g2.html -->
-        <xsl:when test='h:div[@class="section"]/h:h3[@class="header"]'>
+        <!-- Example: top-level-element:  n-h2g2.html, body comprises
+          <div class='section'>
+            <h3 class='header'>...</h3>
+            ...
+          </div>
+        -->
+        <xsl:when test='h:div[@class="section"]/*[1][local-name()="h3"][@class="header"]'>
           <h1>
-            <xsl:copy-of select='h:div[@class="section"]/h:h3[@class="header"]/node()'/>
+            <xsl:copy-of select='h:div[@class="section"]/*[1]/node()'/>
           </h1>
-          <xsl:apply-templates select='h:div[@class="section"]/h:h3[@class="header"]/
-              following-sibling::*'/>
+          <xsl:apply-templates select='h:div[@class="section"]/*[1]/following-sibling::node()'/>
+        </xsl:when>
+
+        <!-- Example: sample-citations-for:  n-6en2.html, body comprises 
+          <div class='section'>
+            <h4 class='header'>...</h4>
+            ...
+          </div>
+        -->
+        <xsl:when test='h:div[@class="section"]/*[1][local-name()="h4"][@class="header"]'>
+          <h1>
+            <xsl:copy-of select='h:div[@class="section"]/*[1]/node()'/>
+          </h1>
+          <xsl:apply-templates select='h:div[@class="section"]/*[1]/following-sibling::node()'/>
+        </xsl:when>
+        
+        <!-- element-context-table, n-nzd2 -->
+        <xsl:when test='h:div[@class="pageheader"]/following-sibling::*[1][local-name()="h1"]'>
+          <xsl:variable name='header' select='h:div[@class="pageheader"]/following-sibling::*[1]'/>
+          <h1>
+            <xsl:copy-of select='$header/node()'/>
+          </h1>
+          <xsl:for-each select="$header/following-sibling::node()">
+            <xsl:apply-templates select='.'/>
+          </xsl:for-each>
         </xsl:when>
       </xsl:choose>
     </div>
   </xsl:template>
-  
+
+  <!-- Fix text nodes that are immediate children of <div class='section'>.  I found
+    one of these in Tagging Personal Names (text "as illustrated here:").  There might
+    be others.  -->
+  <xsl:template match='h:div[@class="section"]/text()'>
+    <xsl:if test='normalize-space(.) != ""'>
+      <p>
+        <xsl:copy/>
+      </p>
+    </xsl:if>
+  </xsl:template>
+
   <!-- Fix URLs of images -->  
   <xsl:template match='h:img/@src[starts-with(., "graphics/")]'>
     <xsl:attribute name='src'>
@@ -159,7 +198,6 @@
     </li>
   </xsl:template>
 
-
   <xsl:template match='h:a[h:span/@class="attrtag"]' mode='attrlist'>
     <xsl:copy>
       <xsl:apply-templates/>
@@ -167,13 +205,27 @@
     <xsl:text> - </xsl:text>
   </xsl:template>
 
-  
   <xsl:template match='h:a[h:span/@class="attrname"]' mode='attrlist'>
     <xsl:apply-templates select='h:span/node()'/>
   </xsl:template>
 
+  <!-- Fix the list of "subsidiary sections" on a few pages like 
+    document-hierarchy-diagrams.  I think they look pretty bad the way they
+    were. -->
+  <xsl:template match='h:h3[.="Subsidiary sections:"]'>
+    <xsl:copy>
+      <xsl:apply-templates select='@*|node()'/>
+    </xsl:copy>
+    <ul>
+      <xsl:for-each select="following-sibling::h:h4">
+        <li>
+          <xsl:apply-templates select='*'/>
+        </li>
+      </xsl:for-each>
+    </ul>
+  </xsl:template>
 
-
+  <xsl:template match='h:h4[preceding-sibling::h:h3[.="Subsidiary sections:"]]'/>
 
   
   <!-- Drop the pagefooter for each entry.  We'll preserve the index.html
