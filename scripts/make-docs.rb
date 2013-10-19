@@ -28,8 +28,8 @@ the hash, slug, or the title (see toc-xref.xml).
 
 Options:
 EOB
-  opt :index, "Only copy index.html and toc.html"
-  opt :resources, "Only copy the image files from graphics -> resources"
+  opt :index,     "Copy index.html and toc.html"
+  opt :resources, "Copy the image files from graphics, and taglib.css -> resources"
 end
 
 Trollop::die "Too many arguments" if ARGV.size > 1
@@ -42,8 +42,8 @@ Dir.mkdir(dest_dir) unless File.directory?(dest_dir)
 
 
 
-# Transform XHTML files
-if file_to_convert || (!opts[:index] && !opts[:resources])
+# Transform a single XHTML file.  This will use make-doc.xsl
+if file_to_convert
   converted = false
 
   entries_src_dir = "orig-html"
@@ -58,7 +58,7 @@ if file_to_convert || (!opts[:index] && !opts[:resources])
     title = item.attribute("title").to_str
     slug = item.attribute("slug").to_str
 
-    if hash != "" && (!file_to_convert || file_to_convert == hash ||
+    if hash != "" && (file_to_convert == hash ||
         file_to_convert == title || file_to_convert == slug)
 
       in_html = "#{entries_src_dir}/#{hash}.html"
@@ -86,6 +86,23 @@ if file_to_convert || (!opts[:index] && !opts[:resources])
   end
 end
 
+# Transform all of XHTML files in one go
+if !file_to_convert && !opts[:index] && !opts[:resources]
+  entries_dest_dir = "#{dest_dir}/entries"
+  Dir.mkdir(entries_dest_dir) unless File.directory?(entries_dest_dir)
+
+  transform_cmd =
+    "java -jar #{script_dir}/saxon9he.jar " +
+    "-xsl:#{script_dir}/make-docs.xsl " +
+    "-s:toc-xref.xml "
+
+  %x( #{transform_cmd} )
+  if $?.exitstatus != 0
+    puts "Failed: '#{transform_cmd}', exit status is #{$?.exitstatus}"
+    exit
+  end
+end
+
 # Copy index and toc
 resources_src_dir = "graphics"
 resources_dest_dir = "#{dest_dir}/resources"
@@ -94,8 +111,6 @@ if opts[:index] || (!file_to_convert && !opts[:resources])
   puts "Copying index.html and toc.html to #{dest_dir}"
   FileUtils.cp("index.html", dest_dir)
   FileUtils.cp("toc.html", dest_dir)
-  puts "Copying taglib.css to #{resources_dest_dir}"
-  FileUtils.cp("taglib.css", resources_dest_dir)
 end
 
 # Copy the resources
@@ -103,4 +118,6 @@ if opts[:resources] || (!file_to_convert && !opts[:index])
   puts "Copying graphics/* to #{dest_dir}/resources"
   FileUtils.rm_rf resources_dest_dir
   FileUtils.cp_r("#{resources_src_dir}", resources_dest_dir)
+  puts "Copying taglib.css to #{resources_dest_dir}"
+  FileUtils.cp("taglib.css", resources_dest_dir)
 end
