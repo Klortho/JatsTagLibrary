@@ -108,6 +108,10 @@ java -jar ../scripts/saxon9he.jar -xsl:../scripts/make-toc.xsl \
 
 These top-level pages for each tag set are written by hand.
 
+In practice, *archiving-1.0/index.html* was written first, and then copied to
+the other two, with very minor modifications.
+
+For *taglib.css*, each tag set is customized with its own color scheme.
 
 ### Generate all the other documentation files
 
@@ -123,9 +127,6 @@ it with the `-h` option to get more info.
 This will take quite a long time to convert all of the files.
 
 
-### Generate taglib.css
-
-Customize each tag library with its own color scheme.
 
 
 
