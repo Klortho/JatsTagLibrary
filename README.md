@@ -61,7 +61,7 @@ cd archiving-1.0
 I then checked the output of that, `tidy-out.txt`, for any failures.
 
 I then moved the generated HTML files into a subdirectory called *orig-html*.
-(Note that this isa misnomer, since they aren't really the *original* HTML files;
+(Of course this is a misnomer, since they aren't really the *original* HTML files;
 they have already been processed with tidy.)
 
 
