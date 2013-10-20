@@ -9,10 +9,11 @@
 
   <xsl:output method="xml" indent='yes'/>
 
-  <xsl:variable name='baseUri' select='base-uri(/)'/>
-  <xsl:variable name='dir' select='replace($baseUri, "/[^/]*$", "")'/>
+  <!-- Various filesystem directories of interest -->
+  <xsl:variable name='inputUri' select='base-uri(/)'/>
+  <xsl:variable name='projectRoot' select='replace($inputUri, "/[^/]*/[^/]*$", "")'/>
   <xsl:variable name='xref' 
-    select='document(concat($dir, "/", "toc-xref.xml"))'/>
+    select='document(concat($projectRoot, "/", "toc-xref.xml"))'/>
 
   <xsl:template match='/'>
     <ul id='categories'>

@@ -68,7 +68,14 @@ they have already been processed with tidy.)
 ### Preprocess the TOC
 
 Produce the `toc-xref.xml` file by running `t-2000.html` through the `make-toc-xref.xsl`
-stylesheet.  This XML file gives, for each TOC entry, the hash used in the existing
+stylesheet.
+
+```
+java -jar ../scripts/saxon9he.jar -xsl:../scripts/make-toc-xref.xsl \
+  -s:orig-html/t-2000.html -o:toc-xref.xml
+```
+
+This XML file gives, for each TOC entry, the hash used in the existing
 tag set documentation, the title, and a computed slug.  For example,
 
 ```xml
@@ -89,8 +96,13 @@ individual pages.  Like so:
 
 ### Generate toc.html
 
-Ran the *t-2000.html* file through the stylesheet *make-toc.xsl*, to produce *jqapi-docs/toc.html*,
-which is the source for the left-hand navigation panel of the new docs.
+Run the *t-2000.html* file through the stylesheet *make-toc.xsl*, to produce *jqapi-docs/toc.html*,
+which is the source for the left-hand navigation panel of the new docs:
+
+```
+java -jar ../scripts/saxon9he.jar -xsl:../scripts/make-toc.xsl \
+  -s:orig-html/t-2000.html -o:toc.html
+```
 
 ### Generate all the other documentation files
 

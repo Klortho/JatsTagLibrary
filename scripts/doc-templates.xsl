@@ -57,6 +57,9 @@
           <xsl:variable name='header' select='h:div[@class="header"]'/>
           
           <h1>
+            <xsl:if test='$header/h:h1[@class="attrtag"]'>
+              <xsl:text>@</xsl:text>
+            </xsl:if>
             <xsl:copy-of select='$header/h:h1[
               @class="elementtag" or @class="attrtag" or @class="petag"]/node()'/>
             <xsl:text> </xsl:text>
@@ -182,7 +185,7 @@
 
   <xsl:template match='h:a[h:span/@class="attrtag"]' mode='attrlist'>
     <xsl:copy>
-      <xsl:apply-templates/>
+      <xsl:apply-templates select='@*|node()'/>
     </xsl:copy>
     <xsl:text> - </xsl:text>
   </xsl:template>

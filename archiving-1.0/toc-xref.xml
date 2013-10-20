@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tocXref xmlns:h="http://www.w3.org/1999/xhtml"
-         original-base='http://jats.nlm.nih.gov/archiving/tag-library/1.0/'>
+<tocXref xmlns:h="http://www.w3.org/1999/xhtml">
    <item hash="n-cc00" title="How To Use (Read Me First)" slug="how-to-use"/>
    <item hash="n-cw00"
          title="General Introduction"
@@ -315,149 +314,153 @@
    <item hash="n-j2z0" title="&lt;xref&gt;" slug="elem-xref"/>
    <item hash="n-tuz0" title="&lt;year&gt;" slug="elem-year"/>
    <item hash="n-vxz0" title="Attributes" slug="attributes"/>
-   <item hash="n-x4z0" title="abbr" slug="attr-abbr"/>
-   <item hash="n-5sz0" title="abbrev-type" slug="attr-abbrev-type"/>
-   <item hash="n-zsz0" title="abstract-type" slug="attr-abstract-type"/>
-   <item hash="n-gfz0" title="align" slug="attr-align"/>
-   <item hash="n-bnz0" title="alt" slug="attr-alt"/>
-   <item hash="n-3dz0" title="altimg" slug="attr-altimg"/>
-   <item hash="n-pdz0" title="alttext" slug="attr-alttext"/>
-   <item hash="n-rrz0" title="alt-title-type" slug="attr-alt-title-type"/>
-   <item hash="n-nhz0" title="arrange" slug="attr-arrange"/>
-   <item hash="n-giz0" title="article-type" slug="attr-article-type"/>
-   <item hash="n-p9z0" title="award-type" slug="attr-award-type"/>
-   <item hash="n-ymz0" title="axis" slug="attr-axis"/>
-   <item hash="n-nzz0" title="baseline" slug="attr-baseline"/>
-   <item hash="n-xkk2" title="baseline-shift" slug="attr-baseline-shift"/>
-   <item hash="n-tck2" title="border" slug="attr-border"/>
-   <item hash="n-43k2" title="calendar" slug="attr-calendar"/>
-   <item hash="n-t5k2" title="cellpadding" slug="attr-cellpadding"/>
-   <item hash="n-x8k2" title="cellspacing" slug="attr-cellspacing"/>
-   <item hash="n-5ak2" title="char" slug="attr-char"/>
-   <item hash="n-huk2" title="charoff" slug="attr-charoff"/>
-   <item hash="n-wxk2" title="class" slug="attr-class"/>
-   <item hash="n-mxk2" title="collab-type" slug="attr-collab-type"/>
-   <item hash="n-p4k2" title="colspan" slug="attr-colspan"/>
-   <item hash="n-bsk2" title="content-type" slug="attr-content-type"/>
-   <item hash="n-j6k2" title="continued-from" slug="attr-continued-from"/>
-   <item hash="n-rdk2" title="contrib-id-type" slug="attr-contrib-id-type"/>
-   <item hash="n-6rk2" title="contrib-type" slug="attr-contrib-type"/>
-   <item hash="n-jhk2" title="corresp" slug="attr-corresp"/>
-   <item hash="n-pik2" title="count" slug="attr-count"/>
-   <item hash="n-9yk2" title="count-type" slug="attr-count-type"/>
-   <item hash="n-mjk2" title="country" slug="attr-country"/>
-   <item hash="n-7qk2" title="currency" slug="attr-currency"/>
-   <item hash="n-mbk2" title="date-type" slug="attr-date-type"/>
-   <item hash="n-zzk2" title="deceased" slug="attr-deceased"/>
-   <item hash="n-jk22" title="description" slug="attr-description"/>
-   <item hash="n-kc22" title="designator" slug="attr-designator"/>
-   <item hash="n-c322" title="display" slug="attr-display"/>
-   <item hash="n-y322" title="disp-level" slug="attr-disp-level"/>
-   <item hash="n-p522" title="document-id" slug="attr-document-id"/>
-   <item hash="n-g822" title="document-id-type" slug="attr-document-id-type"/>
-   <item hash="n-ua22" title="document-type" slug="attr-document-type"/>
-   <item hash="n-ku22" title="dtd-version" slug="attr-dtd-version"/>
-   <item hash="n-bu22" title="elocation-id" slug="attr-elocation-id"/>
-   <item hash="n-dw22" title="equal-contrib" slug="attr-equal-contrib"/>
-   <item hash="n-rx22" title="ext-link-type" slug="attr-ext-link-type"/>
-   <item hash="n-3t22" title="fig-type" slug="attr-fig-type"/>
-   <item hash="n-g722" title="fn-type" slug="attr-fn-type"/>
-   <item hash="n-zg22" title="fontchar" slug="attr-fontchar"/>
-   <item hash="n-dn22" title="fontname" slug="attr-fontname"/>
-   <item hash="n-x622" title="format" slug="attr-format"/>
-   <item hash="n-ud22" title="frame" slug="attr-frame"/>
-   <item hash="n-9r22" title="glyph-data" slug="attr-glyph-data"/>
-   <item hash="n-3i22" title="headers" slug="attr-headers"/>
-   <item hash="n-9i22" title="height" slug="attr-height"/>
-   <item hash="n-6y22" title="id" slug="attr-id"/>
-   <item hash="n-n922" title="initials" slug="attr-initials"/>
-   <item hash="n-hm22" title="issue" slug="attr-issue"/>
-   <item hash="n-yz22" title="iso-8601-date" slug="attr-iso-8601-date"/>
-   <item hash="n-zkc2" title="journal-id" slug="attr-journal-id"/>
-   <item hash="n-b2c2" title="journal-id-type" slug="attr-journal-id-type"/>
-   <item hash="n-d5c2" title="kwd-group-type" slug="attr-kwd-group-type"/>
-   <item hash="n-aac2" title="license-type" slug="attr-license-type"/>
-   <item hash="n-kuc2" title="link-type" slug="attr-link-type"/>
-   <item hash="n-yuc2" title="list-content" slug="attr-list-content"/>
-   <item hash="n-gxc2" title="list-type" slug="attr-list-type"/>
-   <item hash="n-q4c2" title="macros" slug="attr-macros"/>
-   <item hash="n-gsc2" title="mime-subtype" slug="attr-mime-subtype"/>
-   <item hash="n-ftc2" title="mimetype" slug="attr-mimetype"/>
-   <item hash="n-i7c2" title="mode" slug="attr-mode"/>
-   <item hash="n-tec2" title="name" slug="attr-name"/>
-   <item hash="n-cgc2" title="name-style" slug="attr-name-style"/>
-   <item hash="n-enc2" title="notation" slug="attr-notation"/>
-   <item hash="n-p6c2" title="notes-type" slug="attr-notes-type"/>
-   <item hash="n-ddc2" title="object-id" slug="attr-object-id"/>
-   <item hash="n-yrc2" title="object-id-type" slug="attr-object-id-type"/>
-   <item hash="n-nhc2" title="object-type" slug="attr-object-type"/>
-   <item hash="n-gic2" title="orientation" slug="attr-orientation"/>
-   <item hash="n-byc2" title="other" slug="attr-other"/>
-   <item hash="n-njc2" title="overflow" slug="attr-overflow"/>
-   <item hash="n-dpc2" title="page" slug="attr-page"/>
+   <item hash="n-x4z0" title="@abbr" slug="attr-abbr"/>
+   <item hash="n-5sz0" title="@abbrev-type" slug="attr-abbrev-type"/>
+   <item hash="n-zsz0" title="@abstract-type" slug="attr-abstract-type"/>
+   <item hash="n-gfz0" title="@align" slug="attr-align"/>
+   <item hash="n-bnz0" title="@alt" slug="attr-alt"/>
+   <item hash="n-3dz0" title="@altimg" slug="attr-altimg"/>
+   <item hash="n-pdz0" title="@alttext" slug="attr-alttext"/>
+   <item hash="n-rrz0" title="@alt-title-type" slug="attr-alt-title-type"/>
+   <item hash="n-nhz0" title="@arrange" slug="attr-arrange"/>
+   <item hash="n-giz0" title="@article-type" slug="attr-article-type"/>
+   <item hash="n-p9z0" title="@award-type" slug="attr-award-type"/>
+   <item hash="n-ymz0" title="@axis" slug="attr-axis"/>
+   <item hash="n-nzz0" title="@baseline" slug="attr-baseline"/>
+   <item hash="n-xkk2" title="@baseline-shift" slug="attr-baseline-shift"/>
+   <item hash="n-tck2" title="@border" slug="attr-border"/>
+   <item hash="n-43k2" title="@calendar" slug="attr-calendar"/>
+   <item hash="n-t5k2" title="@cellpadding" slug="attr-cellpadding"/>
+   <item hash="n-x8k2" title="@cellspacing" slug="attr-cellspacing"/>
+   <item hash="n-5ak2" title="@char" slug="attr-char"/>
+   <item hash="n-huk2" title="@charoff" slug="attr-charoff"/>
+   <item hash="n-wxk2" title="@class" slug="attr-class"/>
+   <item hash="n-mxk2" title="@collab-type" slug="attr-collab-type"/>
+   <item hash="n-p4k2" title="@colspan" slug="attr-colspan"/>
+   <item hash="n-bsk2" title="@content-type" slug="attr-content-type"/>
+   <item hash="n-j6k2" title="@continued-from" slug="attr-continued-from"/>
+   <item hash="n-rdk2" title="@contrib-id-type" slug="attr-contrib-id-type"/>
+   <item hash="n-6rk2" title="@contrib-type" slug="attr-contrib-type"/>
+   <item hash="n-jhk2" title="@corresp" slug="attr-corresp"/>
+   <item hash="n-pik2" title="@count" slug="attr-count"/>
+   <item hash="n-9yk2" title="@count-type" slug="attr-count-type"/>
+   <item hash="n-mjk2" title="@country" slug="attr-country"/>
+   <item hash="n-7qk2" title="@currency" slug="attr-currency"/>
+   <item hash="n-mbk2" title="@date-type" slug="attr-date-type"/>
+   <item hash="n-zzk2" title="@deceased" slug="attr-deceased"/>
+   <item hash="n-jk22" title="@description" slug="attr-description"/>
+   <item hash="n-kc22" title="@designator" slug="attr-designator"/>
+   <item hash="n-c322" title="@display" slug="attr-display"/>
+   <item hash="n-y322" title="@disp-level" slug="attr-disp-level"/>
+   <item hash="n-p522" title="@document-id" slug="attr-document-id"/>
+   <item hash="n-g822"
+         title="@document-id-type"
+         slug="attr-document-id-type"/>
+   <item hash="n-ua22" title="@document-type" slug="attr-document-type"/>
+   <item hash="n-ku22" title="@dtd-version" slug="attr-dtd-version"/>
+   <item hash="n-bu22" title="@elocation-id" slug="attr-elocation-id"/>
+   <item hash="n-dw22" title="@equal-contrib" slug="attr-equal-contrib"/>
+   <item hash="n-rx22" title="@ext-link-type" slug="attr-ext-link-type"/>
+   <item hash="n-3t22" title="@fig-type" slug="attr-fig-type"/>
+   <item hash="n-g722" title="@fn-type" slug="attr-fn-type"/>
+   <item hash="n-zg22" title="@fontchar" slug="attr-fontchar"/>
+   <item hash="n-dn22" title="@fontname" slug="attr-fontname"/>
+   <item hash="n-x622" title="@format" slug="attr-format"/>
+   <item hash="n-ud22" title="@frame" slug="attr-frame"/>
+   <item hash="n-9r22" title="@glyph-data" slug="attr-glyph-data"/>
+   <item hash="n-3i22" title="@headers" slug="attr-headers"/>
+   <item hash="n-9i22" title="@height" slug="attr-height"/>
+   <item hash="n-6y22" title="@id" slug="attr-id"/>
+   <item hash="n-n922" title="@initials" slug="attr-initials"/>
+   <item hash="n-hm22" title="@issue" slug="attr-issue"/>
+   <item hash="n-yz22" title="@iso-8601-date" slug="attr-iso-8601-date"/>
+   <item hash="n-zkc2" title="@journal-id" slug="attr-journal-id"/>
+   <item hash="n-b2c2" title="@journal-id-type" slug="attr-journal-id-type"/>
+   <item hash="n-d5c2" title="@kwd-group-type" slug="attr-kwd-group-type"/>
+   <item hash="n-aac2" title="@license-type" slug="attr-license-type"/>
+   <item hash="n-kuc2" title="@link-type" slug="attr-link-type"/>
+   <item hash="n-yuc2" title="@list-content" slug="attr-list-content"/>
+   <item hash="n-gxc2" title="@list-type" slug="attr-list-type"/>
+   <item hash="n-q4c2" title="@macros" slug="attr-macros"/>
+   <item hash="n-gsc2" title="@mime-subtype" slug="attr-mime-subtype"/>
+   <item hash="n-ftc2" title="@mimetype" slug="attr-mimetype"/>
+   <item hash="n-i7c2" title="@mode" slug="attr-mode"/>
+   <item hash="n-tec2" title="@name" slug="attr-name"/>
+   <item hash="n-cgc2" title="@name-style" slug="attr-name-style"/>
+   <item hash="n-enc2" title="@notation" slug="attr-notation"/>
+   <item hash="n-p6c2" title="@notes-type" slug="attr-notes-type"/>
+   <item hash="n-ddc2" title="@object-id" slug="attr-object-id"/>
+   <item hash="n-yrc2" title="@object-id-type" slug="attr-object-id-type"/>
+   <item hash="n-nhc2" title="@object-type" slug="attr-object-type"/>
+   <item hash="n-gic2" title="@orientation" slug="attr-orientation"/>
+   <item hash="n-byc2" title="@other" slug="attr-other"/>
+   <item hash="n-njc2" title="@overflow" slug="attr-overflow"/>
+   <item hash="n-dpc2" title="@page" slug="attr-page"/>
    <item hash="n-pqc2"
-         title="person-group-type"
+         title="@person-group-type"
          slug="attr-person-group-type"/>
-   <item hash="n-z9c2" title="position" slug="attr-position"/>
-   <item hash="n-nzc2" title="prefix-word" slug="attr-prefix-word"/>
-   <item hash="n-s232" title="preformat-type" slug="attr-preformat-type"/>
-   <item hash="n-k332" title="product-type" slug="attr-product-type"/>
-   <item hash="n-u532" title="pub-id-type" slug="attr-pub-id-type"/>
-   <item hash="n-yw32" title="pub-type" slug="attr-pub-type"/>
+   <item hash="n-z9c2" title="@position" slug="attr-position"/>
+   <item hash="n-nzc2" title="@prefix-word" slug="attr-prefix-word"/>
+   <item hash="n-s232" title="@preformat-type" slug="attr-preformat-type"/>
+   <item hash="n-k332" title="@product-type" slug="attr-product-type"/>
+   <item hash="n-u532" title="@pub-id-type" slug="attr-pub-id-type"/>
+   <item hash="n-yw32" title="@pub-type" slug="attr-pub-type"/>
    <item hash="n-r432"
-         title="publication-format"
+         title="@publication-format"
          slug="attr-publication-format"/>
-   <item hash="n-rt32" title="publication-type" slug="attr-publication-type"/>
-   <item hash="n-ue32" title="publisher-type" slug="attr-publisher-type"/>
-   <item hash="n-df32" title="rationale" slug="attr-rationale"/>
-   <item hash="n-7g32" title="ref-type" slug="attr-ref-type"/>
+   <item hash="n-rt32"
+         title="@publication-type"
+         slug="attr-publication-type"/>
+   <item hash="n-ue32" title="@publisher-type" slug="attr-publisher-type"/>
+   <item hash="n-df32" title="@rationale" slug="attr-rationale"/>
+   <item hash="n-7g32" title="@ref-type" slug="attr-ref-type"/>
    <item hash="n-5h32"
-         title="related-article-type"
+         title="@related-article-type"
          slug="attr-related-article-type"/>
-   <item hash="n-iy32" title="resolution" slug="attr-resolution"/>
-   <item hash="n-gj32" title="response-type" slug="attr-response-type"/>
-   <item hash="n-mp32" title="rid" slug="attr-rid"/>
-   <item hash="n-pb32" title="rowspan" slug="attr-rowspan"/>
-   <item hash="n-b932" title="rules" slug="attr-rules"/>
-   <item hash="n-dz32" title="scope" slug="attr-scope"/>
-   <item hash="n-zk52" title="sec-type" slug="attr-sec-type"/>
-   <item hash="n-n352" title="seq" slug="attr-seq"/>
-   <item hash="n-c852" title="source-id" slug="attr-source-id"/>
-   <item hash="n-ca52" title="source-id-type" slug="attr-source-id-type"/>
-   <item hash="n-pa52" title="source-type" slug="attr-source-type"/>
-   <item hash="n-xw52" title="span" slug="attr-span"/>
-   <item hash="n-ax52" title="specific-use" slug="attr-specific-use"/>
-   <item hash="n-kn52" title="style" slug="attr-style"/>
-   <item hash="n-kd52" title="style-type" slug="attr-style-type"/>
-   <item hash="n-pd52" title="subj-group-type" slug="attr-subj-group-type"/>
-   <item hash="n-nr52" title="summary" slug="attr-summary"/>
-   <item hash="n-xh52" title="supplement-type" slug="attr-supplement-type"/>
-   <item hash="n-yi52" title="symbol" slug="attr-symbol"/>
-   <item hash="n-py52" title="target-type" slug="attr-target-type"/>
-   <item hash="n-fj52" title="type" slug="attr-type"/>
-   <item hash="n-ap52" title="underline-style" slug="attr-underline-style"/>
-   <item hash="n-xq52" title="units" slug="attr-units"/>
-   <item hash="n-sb52" title="valign" slug="attr-valign"/>
-   <item hash="n-b952" title="version" slug="attr-version"/>
-   <item hash="n-6m52" title="vol" slug="attr-vol"/>
-   <item hash="n-hz52" title="width" slug="attr-width"/>
-   <item hash="n-3282" title="xlink:actuate" slug="attr-xlink-actuate"/>
-   <item hash="n-5382" title="xlink:href" slug="attr-xlink-href"/>
-   <item hash="n-8882" title="xlink:role" slug="attr-xlink-role"/>
-   <item hash="n-ya82" title="xlink:show" slug="attr-xlink-show"/>
-   <item hash="n-mw82" title="xlink:title" slug="attr-xlink-title"/>
-   <item hash="n-dv82" title="xlink:type" slug="attr-xlink-type"/>
-   <item hash="n-wt82" title="xmlns:mml" slug="attr-xmlns-mml"/>
-   <item hash="n-3782" title="xmlns:xlink" slug="attr-xmlns-xlink"/>
-   <item hash="n-af82" title="xmlns:xsi" slug="attr-xmlns-xsi"/>
-   <item hash="n-cg82" title="xml:lang" slug="attr-xml-lang"/>
-   <item hash="n-hj82" title="xml:space" slug="attr-xml-space"/>
-   <item hash="n-ip82" title="xref" slug="attr-xref"/>
-   <item hash="n-tq82" title="x-size" slug="attr-x-size"/>
+   <item hash="n-iy32" title="@resolution" slug="attr-resolution"/>
+   <item hash="n-gj32" title="@response-type" slug="attr-response-type"/>
+   <item hash="n-mp32" title="@rid" slug="attr-rid"/>
+   <item hash="n-pb32" title="@rowspan" slug="attr-rowspan"/>
+   <item hash="n-b932" title="@rules" slug="attr-rules"/>
+   <item hash="n-dz32" title="@scope" slug="attr-scope"/>
+   <item hash="n-zk52" title="@sec-type" slug="attr-sec-type"/>
+   <item hash="n-n352" title="@seq" slug="attr-seq"/>
+   <item hash="n-c852" title="@source-id" slug="attr-source-id"/>
+   <item hash="n-ca52" title="@source-id-type" slug="attr-source-id-type"/>
+   <item hash="n-pa52" title="@source-type" slug="attr-source-type"/>
+   <item hash="n-xw52" title="@span" slug="attr-span"/>
+   <item hash="n-ax52" title="@specific-use" slug="attr-specific-use"/>
+   <item hash="n-kn52" title="@style" slug="attr-style"/>
+   <item hash="n-kd52" title="@style-type" slug="attr-style-type"/>
+   <item hash="n-pd52" title="@subj-group-type" slug="attr-subj-group-type"/>
+   <item hash="n-nr52" title="@summary" slug="attr-summary"/>
+   <item hash="n-xh52" title="@supplement-type" slug="attr-supplement-type"/>
+   <item hash="n-yi52" title="@symbol" slug="attr-symbol"/>
+   <item hash="n-py52" title="@target-type" slug="attr-target-type"/>
+   <item hash="n-fj52" title="@type" slug="attr-type"/>
+   <item hash="n-ap52" title="@underline-style" slug="attr-underline-style"/>
+   <item hash="n-xq52" title="@units" slug="attr-units"/>
+   <item hash="n-sb52" title="@valign" slug="attr-valign"/>
+   <item hash="n-b952" title="@version" slug="attr-version"/>
+   <item hash="n-6m52" title="@vol" slug="attr-vol"/>
+   <item hash="n-hz52" title="@width" slug="attr-width"/>
+   <item hash="n-3282" title="@xlink:actuate" slug="attr-xlink-actuate"/>
+   <item hash="n-5382" title="@xlink:href" slug="attr-xlink-href"/>
+   <item hash="n-8882" title="@xlink:role" slug="attr-xlink-role"/>
+   <item hash="n-ya82" title="@xlink:show" slug="attr-xlink-show"/>
+   <item hash="n-mw82" title="@xlink:title" slug="attr-xlink-title"/>
+   <item hash="n-dv82" title="@xlink:type" slug="attr-xlink-type"/>
+   <item hash="n-wt82" title="@xmlns:mml" slug="attr-xmlns-mml"/>
+   <item hash="n-3782" title="@xmlns:xlink" slug="attr-xmlns-xlink"/>
+   <item hash="n-af82" title="@xmlns:xsi" slug="attr-xmlns-xsi"/>
+   <item hash="n-cg82" title="@xml:lang" slug="attr-xml-lang"/>
+   <item hash="n-hj82" title="@xml:space" slug="attr-xml-space"/>
+   <item hash="n-ip82" title="@xref" slug="attr-xref"/>
+   <item hash="n-tq82" title="@x-size" slug="attr-x-size"/>
    <item hash="n-ub82"
-         title="xsi:schemaLocation"
+         title="@xsi:schemaLocation"
          slug="attr-xsi-schemaLocation"/>
-   <item hash="n-9b82" title="y-size" slug="attr-y-size"/>
+   <item hash="n-9b82" title="@y-size" slug="attr-y-size"/>
    <item hash="n-i982" title="Parameter Entities" slug="parameter-entities"/>
    <item hash="n-dka2" title="%abbrev-atts;" slug="pe-abbrev-atts"/>
    <item hash="n-82a2" title="%abbrev-elements;" slug="pe-abbrev-elements"/>

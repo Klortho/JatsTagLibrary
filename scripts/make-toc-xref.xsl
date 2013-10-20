@@ -19,8 +19,16 @@
   -->
   <xsl:template match='h:div[@class="toc-entry"]'>
     <xsl:param name='slug-prefix' />
-    
-    <xsl:variable name='title' select='normalize-space(.)'/>
+    <xsl:variable name='title'>
+      <xsl:choose>
+        <xsl:when test="$slug-prefix = 'attr'">
+          <xsl:value-of select='concat("@", normalize-space(.))'/>
+        </xsl:when>
+        <xsl:otherwise>
+          <xsl:value-of select="normalize-space(.)"/>
+        </xsl:otherwise>
+      </xsl:choose>
+    </xsl:variable>
     <xsl:variable name='hash' select='substring-before(h:a[@target="main"]/@href, ".html")'/>
     <xsl:variable name='slug'>
       <xsl:choose>
@@ -75,7 +83,7 @@
   <xsl:function name='f:stripSpecialChars'>
     <xsl:param name='s'/>
     
-    <xsl:variable name='s2' select='replace($s, "[&lt;&gt;%;]", "")'/>
+    <xsl:variable name='s2' select='replace($s, "[&lt;&gt;%;@]", "")'/>
     <!-- Also convert colons to dashes, since colons aren't legal in filenames
       on Windows -->
     <xsl:value-of select='translate($s2, ":", "-")'/>
