@@ -1,43 +1,185 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008--><link rel="stylesheet" href="auto-css.css" type="text/css"><title>Tagging Book or Product Reviews</title></head><body class="main"><div class="pageheader"><h2 class="headname">Article Authoring Tag Library Proposed NISO JATS version 1.0</h2><h4 class="sponsor">National Center for Biotechnology Information (NCBI)<br class="linebrk"> National Library of
-   Medicine (NLM)</h4></div><div class="section"><h3 class="header">Tagging Book or Product Reviews</h3><p class="para">In tagging a book or product review, there are two parts to the material to be
-          captured:</p><ul class="bullist"><li>The review content, tagged as an article, complete with article metadata
-                (<a href="n-rf20.html" target="main" title="Article Metadata"><span class="elementtag">&lt;article-meta&gt;</span></a>), a body (<a href="n-b3c0.html" target="main" title="Body of the Document"><span class="elementtag">&lt;body&gt;</span></a>) containing the text of the review, and,
-              potentially, back matter (<a href="n-cz20.html" target="main" title="Back Matter"><span class="elementtag">&lt;back&gt;</span></a>);
-              and</li><li>Information identifying the book or product being reviewed, tagged using the
-                <a href="n-x8v0.html" target="main" title="Product Information"><span class="elementtag">&lt;product&gt;</span></a> element within the article
-              metadata (<a href="n-rf20.html" target="main" title="Article Metadata"><span class="elementtag">&lt;article-meta&gt;</span></a>).</li></ul><p class="para">All information in <a href="n-rf20.html" target="main" title="Article Metadata"><span class="elementtag">&lt;article-meta&gt;</span></a>, other
-          than within the <a href="n-x8v0.html" target="main" title="Product Information"><span class="elementtag">&lt;product&gt;</span></a> element, describes
-          the review article itself, not the book (or other product) being reviewed. While the text
-          below primarily describes a book or product review, reviews for software, websites,
-          journal articles, issues of journals, laboratory or electronic equipment, DVDs, or other
-          things can be tagged similarly.</p><div class="section"><a name="aut-tag-review-type"></a><h4 class="header">Identifying the Review</h4><p class="para">On the <a href="n-ce20.html" target="main" title="Article"><span class="elementtag">&lt;article&gt;</span></a> element, the
-              <a href="n-4me0.html" target="main" title="Type of Article"><span class="attrtag">@article-type</span></a> attribute should identify
-            the article as a product review, with a value such as “<tt>book-review</tt>” “<tt>software-review</tt>” etc.</p><p class="para"><strong>Best Practice:</strong> An article that reviews research findings in a particular domain
-            should be tagged <tt>article-type="review-article"</tt>.</p><div class="section"><a name="aut-tag-review-title"></a><h4 class="header">Titles in Reviews</h4><p class="para">The title of the object being reviewed is tagged inside <a href="n-x8v0.html" target="main" title="Product Information"><span class="elementtag">&lt;product&gt;</span></a>, typically as a <a href="n-2940.html" target="main" title="Source"><span class="elementtag">&lt;source&gt;</span></a> element, but using other elements as
-              appropriate. (See <a href="n-.html#pub-tag-cite-titles">Titles in
-                Citations</a>.)</p><p class="para">There are several common styles of article title (<a href="n-k620.html" target="main" title="Article Title"><span class="elementtag">&lt;article-title&gt;</span></a>) for reviews. The title of the
-              article may be:</p><ul class="bullist"><li>The book or product title such as <em>Moby
-                  Dick</em>,</li><li>A generic phrase such as “Book Reviews”,</li><li>A generic phrase such as “Book Reviews:” followed by the title
-                  of the book or product (“Recent Reviews: <em>Moby
-                      Dick</em>”), or </li><li>A descriptive or catchy title concerning the book or product (“Whale of
-                    a Tale”).</li></ul><p class="para">Even if the title of the article is the same as the title of the book, that
-              information is recorded in two different places, once as the <a href="n-k620.html" target="main" title="Article Title"><span class="elementtag">&lt;article-title&gt;</span></a> in the article metadata and once as
-              the <a href="n-2940.html" target="main" title="Source"><span class="elementtag">&lt;source&gt;</span></a> inside <a href="n-x8v0.html" target="main" title="Product Information"><span class="elementtag">&lt;product&gt;</span></a>.</p><p class="para">For some journals, the generic phrase like “Book Reviews” may be an
-article category or eyebrow title added by the publisher rather than part of the title of the
-article. For other journals, an author may be instructed to add “Software Review” or similar to the text of
-the article title.</p></div><div class="section"><a name="aut-tag-review-author"></a><h4 class="header">Author(s) of the Article and Book</h4><p class="para">The author of the review should be tagged as the author of the article
-                (<a href="n-dp30.html" target="main" title="Contributor"><span class="elementtag">&lt;contrib&gt;</span></a>). The authors of the product
-              being reviewed should be included only within <a href="n-x8v0.html" target="main" title="Product Information"><span class="elementtag">&lt;product&gt;</span></a>, using <a href="n-s7w0.html" target="main" title="Name of Person"><span class="elementtag">&lt;name&gt;</span></a>,
-                <a href="n-ehx0.html" target="main" title="Person Group for a Cited Publication"><span class="elementtag">&lt;person-group&gt;</span></a>, or <a href="n-8ss0.html" target="main" title="Name of Person (Unstructured)"><span class="elementtag">&lt;string-name&gt;</span></a> as appropriate. For more guidance, see
-                <a href="n-.html#pub-tag-names-cites">Tagging Names in Citations</a>.
-              Since the <a href="n-x8v0.html" target="main" title="Product Information"><span class="elementtag">&lt;product&gt;</span></a> element has textual
-              content, it is very like a <a href="n-6bu0.html" target="main" title="Mixed Citation"><span class="elementtag">&lt;mixed-citation&gt;</span></a>, and the same type of considerations apply.</p></div><div class="section"><a name="aut-tag-review-metadata"></a><h4 class="header">Metadata for the Reviewed Object</h4><p class="para">In many book or product reviews, the <a href="n-x8v0.html" target="main" title="Product Information"><span class="elementtag">&lt;product&gt;</span></a> element commonly includes:</p><ul class="bullist"><li>Bibliographic information about the book or product cited, such as the book
-                  title (<a href="n-2940.html" target="main" title="Source"><span class="elementtag">&lt;source&gt;</span></a>), <a href="n-uz50.html" target="main" title="Edition Statement, Cited"><span class="elementtag">&lt;edition&gt;</span></a>, <a href="n-jpa0.html" target="main" title="ISBN"><span class="elementtag">&lt;isbn&gt;</span></a>, or <a href="n-mv80.html" target="main" title="Electronic Location Identifier"><span class="elementtag">&lt;elocation-id&gt;</span></a>;</li><li>Its <a href="n-5mx0.html" target="main" title="Price"><span class="elementtag">&lt;price&gt;</span></a>; and</li><li>Its <a href="n-6q40.html" target="main" title="Size"><span class="elementtag">&lt;size&gt;</span></a>.</li></ul><p class="para">The attribute <a href="n-b260.html" target="main" title="Type of Product"><span class="attrtag">@product-type</span></a> names
-              the type of product being reviewed, for example, “<tt>book</tt>”, “<tt>software</tt>”, “<tt>article</tt>” (journal article), “<tt>issue</tt>” (journal issue), “<tt>website</tt>”, “<tt>film</tt>”.</p><p class="para"><strong>Best Practice:</strong> Since the metadata specified within the <a href="n-x8v0.html" target="main" title="Product Information"><span class="elementtag">&lt;product&gt;</span></a> element applies to the book or product
-              being reviewed, information concerning other products (for example, products the
-              author might mention for comparison to the primary product), should not be mentioned
-              within the <a href="n-x8v0.html" target="main" title="Product Information"><span class="elementtag">&lt;product&gt;</span></a> element, but only in
-              the actual body of the review.</p></div></div><div class="section"><a name="aut-cit-review-xmp"></a><h4 class="header">Sample Reviews</h4><p class="para"></p><div class="codeblock"><pre>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta name="generator" content="HTML Tidy for Linux/x86 (vers 25 March 2009), see www.w3.org" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008-->
+  <link rel="stylesheet" href="auto-css.css" type="text/css" />
+
+  <title>Tagging Book or Product Reviews</title>
+</head>
+
+<body class="main">
+  <div class="pageheader">
+    <h2 class="headname">Article Authoring Tag Library Proposed NISO JATS version 1.0</h2>
+
+    <h4 class="sponsor">National Center for Biotechnology Information (NCBI)<br class="linebrk" />
+    National Library of Medicine (NLM)</h4>
+  </div>
+
+  <div class="section">
+    <h3 class="header">Tagging Book or Product Reviews</h3>
+
+    <p class="para">In tagging a book or product review, there are two parts to the material to be
+    captured:</p>
+
+    <ul class="bullist">
+      <li>The review content, tagged as an article, complete with article metadata (<a href=
+      "n-rf20.html" target="main" title="Article Metadata"><span class=
+      "elementtag">&lt;article-meta&gt;</span></a>), a body (<a href="n-b3c0.html" target="main"
+      title="Body of the Document"><span class="elementtag">&lt;body&gt;</span></a>) containing the
+      text of the review, and, potentially, back matter (<a href="n-cz20.html" target="main" title=
+      "Back Matter"><span class="elementtag">&lt;back&gt;</span></a>); and</li>
+
+      <li>Information identifying the book or product being reviewed, tagged using the <a href=
+      "n-x8v0.html" target="main" title="Product Information"><span class=
+      "elementtag">&lt;product&gt;</span></a> element within the article metadata (<a href=
+      "n-rf20.html" target="main" title="Article Metadata"><span class=
+      "elementtag">&lt;article-meta&gt;</span></a>).</li>
+    </ul>
+
+    <p class="para">All information in <a href="n-rf20.html" target="main" title=
+    "Article Metadata"><span class="elementtag">&lt;article-meta&gt;</span></a>, other than within
+    the <a href="n-x8v0.html" target="main" title="Product Information"><span class=
+    "elementtag">&lt;product&gt;</span></a> element, describes the review article itself, not the
+    book (or other product) being reviewed. While the text below primarily describes a book or
+    product review, reviews for software, websites, journal articles, issues of journals,
+    laboratory or electronic equipment, DVDs, or other things can be tagged similarly.</p>
+
+    <div class="section">
+      <a name="aut-tag-review-type" id="aut-tag-review-type"></a>
+
+      <h4 class="header">Identifying the Review</h4>
+
+      <p class="para">On the <a href="n-ce20.html" target="main" title="Article"><span class=
+      "elementtag">&lt;article&gt;</span></a> element, the <a href="n-4me0.html" target="main"
+      title="Type of Article"><span class="attrtag">@article-type</span></a> attribute should
+      identify the article as a product review, with a value such as “<tt>book-review</tt>”
+      “<tt>software-review</tt>” etc.</p>
+
+      <p class="para"><strong>Best Practice:</strong> An article that reviews research findings in
+      a particular domain should be tagged <tt>article-type="review-article"</tt>.</p>
+
+      <div class="section">
+        <a name="aut-tag-review-title" id="aut-tag-review-title"></a>
+
+        <h4 class="header">Titles in Reviews</h4>
+
+        <p class="para">The title of the object being reviewed is tagged inside <a href=
+        "n-x8v0.html" target="main" title="Product Information"><span class=
+        "elementtag">&lt;product&gt;</span></a>, typically as a <a href="n-2940.html" target="main"
+        title="Source"><span class="elementtag">&lt;source&gt;</span></a> element, but using other
+        elements as appropriate. (See <a href="n-.html#pub-tag-cite-titles">Titles in
+        Citations</a>.)</p>
+
+        <p class="para">There are several common styles of article title (<a href="n-k620.html"
+        target="main" title="Article Title"><span class=
+        "elementtag">&lt;article-title&gt;</span></a>) for reviews. The title of the article may
+        be:</p>
+
+        <ul class="bullist">
+          <li>The book or product title such as <em>Moby Dick</em>,</li>
+
+          <li>A generic phrase such as “Book Reviews”,</li>
+
+          <li>A generic phrase such as “Book Reviews:” followed by the title of the book or product
+          (“Recent Reviews: <em>Moby Dick</em>”), or</li>
+
+          <li>A descriptive or catchy title concerning the book or product (“Whale of a
+          Tale”).</li>
+        </ul>
+
+        <p class="para">Even if the title of the article is the same as the title of the book, that
+        information is recorded in two different places, once as the <a href="n-k620.html" target=
+        "main" title="Article Title"><span class="elementtag">&lt;article-title&gt;</span></a> in
+        the article metadata and once as the <a href="n-2940.html" target="main" title=
+        "Source"><span class="elementtag">&lt;source&gt;</span></a> inside <a href="n-x8v0.html"
+        target="main" title="Product Information"><span class=
+        "elementtag">&lt;product&gt;</span></a>.</p>
+
+        <p class="para">For some journals, the generic phrase like “Book Reviews” may be an article
+        category or eyebrow title added by the publisher rather than part of the title of the
+        article. For other journals, an author may be instructed to add “Software Review” or
+        similar to the text of the article title.</p>
+      </div>
+
+      <div class="section">
+        <a name="aut-tag-review-author" id="aut-tag-review-author"></a>
+
+        <h4 class="header">Author(s) of the Article and Book</h4>
+
+        <p class="para">The author of the review should be tagged as the author of the article
+        (<a href="n-dp30.html" target="main" title="Contributor"><span class=
+        "elementtag">&lt;contrib&gt;</span></a>). The authors of the product being reviewed should
+        be included only within <a href="n-x8v0.html" target="main" title=
+        "Product Information"><span class="elementtag">&lt;product&gt;</span></a>, using <a href=
+        "n-s7w0.html" target="main" title="Name of Person"><span class=
+        "elementtag">&lt;name&gt;</span></a>, <a href="n-ehx0.html" target="main" title=
+        "Person Group for a Cited Publication"><span class=
+        "elementtag">&lt;person-group&gt;</span></a>, or <a href="n-8ss0.html" target="main" title=
+        "Name of Person (Unstructured)"><span class="elementtag">&lt;string-name&gt;</span></a> as
+        appropriate. For more guidance, see <a href="n-.html#pub-tag-names-cites">Tagging Names in
+        Citations</a>. Since the <a href="n-x8v0.html" target="main" title=
+        "Product Information"><span class="elementtag">&lt;product&gt;</span></a> element has
+        textual content, it is very like a <a href="n-6bu0.html" target="main" title=
+        "Mixed Citation"><span class="elementtag">&lt;mixed-citation&gt;</span></a>, and the same
+        type of considerations apply.</p>
+      </div>
+
+      <div class="section">
+        <a name="aut-tag-review-metadata" id="aut-tag-review-metadata"></a>
+
+        <h4 class="header">Metadata for the Reviewed Object</h4>
+
+        <p class="para">In many book or product reviews, the <a href="n-x8v0.html" target="main"
+        title="Product Information"><span class="elementtag">&lt;product&gt;</span></a> element
+        commonly includes:</p>
+
+        <ul class="bullist">
+          <li>Bibliographic information about the book or product cited, such as the book title
+          (<a href="n-2940.html" target="main" title="Source"><span class=
+          "elementtag">&lt;source&gt;</span></a>), <a href="n-uz50.html" target="main" title=
+          "Edition Statement, Cited"><span class="elementtag">&lt;edition&gt;</span></a>, <a href=
+          "n-jpa0.html" target="main" title="ISBN"><span class=
+          "elementtag">&lt;isbn&gt;</span></a>, or <a href="n-mv80.html" target="main" title=
+          "Electronic Location Identifier"><span class=
+          "elementtag">&lt;elocation-id&gt;</span></a>;</li>
+
+          <li>Its <a href="n-5mx0.html" target="main" title="Price"><span class=
+          "elementtag">&lt;price&gt;</span></a>; and</li>
+
+          <li>Its <a href="n-6q40.html" target="main" title="Size"><span class=
+          "elementtag">&lt;size&gt;</span></a>.</li>
+        </ul>
+
+        <p class="para">The attribute <a href="n-b260.html" target="main" title=
+        "Type of Product"><span class="attrtag">@product-type</span></a> names the type of product
+        being reviewed, for example, “<tt>book</tt>”, “<tt>software</tt>”, “<tt>article</tt>”
+        (journal article), “<tt>issue</tt>” (journal issue), “<tt>website</tt>”,
+        “<tt>film</tt>”.</p>
+
+        <p class="para"><strong>Best Practice:</strong> Since the metadata specified within the
+        <a href="n-x8v0.html" target="main" title="Product Information"><span class=
+        "elementtag">&lt;product&gt;</span></a> element applies to the book or product being
+        reviewed, information concerning other products (for example, products the author might
+        mention for comparison to the primary product), should not be mentioned within the <a href=
+        "n-x8v0.html" target="main" title="Product Information"><span class=
+        "elementtag">&lt;product&gt;</span></a> element, but only in the actual body of the
+        review.</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <a name="aut-cit-review-xmp" id="aut-cit-review-xmp"></a>
+
+      <h4 class="header">Sample Reviews</h4>
+
+      <p class="para"></p>
+
+      <div class="codeblock">
+        <pre>
                
 &lt;article article-type="product-review" dtd-version="1.0" xml:lang="en"
 xmlns:xlink="http://www.w3.org/1999/xlink"&gt;
@@ -77,7 +219,14 @@ in all known species. And, it&amp;rsquo;s only $3.95.&lt;/p&gt;
 &lt;/body&gt;
 &lt;/article&gt;
 
-            </pre></div><p class="para"></p><div class="codeblock"><pre>
+            
+</pre>
+      </div>
+
+      <p class="para"></p>
+
+      <div class="codeblock">
+        <pre>
                
 &lt;article article-type="book-review" dtd-version="1.0" xml:lang="en"
 xmlns:xlink="http://www.w3.org/1999/xlink" &gt;
@@ -129,8 +278,38 @@ vegetation&lt;/article-title&gt;
 &lt;/body&gt;
 &lt;/article&gt;
 
-            </pre></div></div><div class="section"><a name="aut-cit-review-bibr"></a><h4 class="header">Reviews in Citations</h4><p class="para">When a review is cited in a bibliography, the <a href="n-jt60.html" target="main" title="Type of Referenced Publication"><span class="attrtag">@publication-type</span></a> attribute on the <a href="n-sk80.html" target="main" title="Element Citation"><span class="elementtag">&lt;element-citation&gt;</span></a> or <a href="n-6bu0.html" target="main" title="Mixed Citation"><span class="elementtag">&lt;mixed-citation&gt;</span></a> element should be used to distinguish
-            it: <tt>publication-type="review"</tt>
-          </p><p class="para">When a brief review is provided as part of a bibliographic citation for a book or article 
-     (that is, within an <a href="n-sk80.html" target="main" title="Element Citation"><span class="elementtag">&lt;element-citation&gt;</span></a> or <a href="n-6bu0.html" target="main" title="Mixed Citation"><span class="elementtag">&lt;mixed-citation&gt;</span></a>), the reviewing text is not tagged as a review or as a
-     product, but should instead be tagged as an <a href="n-4w20.html" target="main" title="Annotation in a Citation"><span class="elementtag">&lt;annotation&gt;</span></a>.</p></div></div><div class="pagefooter"><h2 class="headname">Article Authoring Tag Library Proposed NISO JATS version 1.0</h2><h4 class="pubdate">Version of May 2012</h4></div></body></html>
+            
+</pre>
+      </div>
+    </div>
+
+    <div class="section">
+      <a name="aut-cit-review-bibr" id="aut-cit-review-bibr"></a>
+
+      <h4 class="header">Reviews in Citations</h4>
+
+      <p class="para">When a review is cited in a bibliography, the <a href="n-jt60.html" target=
+      "main" title="Type of Referenced Publication"><span class=
+      "attrtag">@publication-type</span></a> attribute on the <a href="n-sk80.html" target="main"
+      title="Element Citation"><span class="elementtag">&lt;element-citation&gt;</span></a> or
+      <a href="n-6bu0.html" target="main" title="Mixed Citation"><span class=
+      "elementtag">&lt;mixed-citation&gt;</span></a> element should be used to distinguish it:
+      <tt>publication-type="review"</tt></p>
+
+      <p class="para">When a brief review is provided as part of a bibliographic citation for a
+      book or article (that is, within an <a href="n-sk80.html" target="main" title=
+      "Element Citation"><span class="elementtag">&lt;element-citation&gt;</span></a> or <a href=
+      "n-6bu0.html" target="main" title="Mixed Citation"><span class=
+      "elementtag">&lt;mixed-citation&gt;</span></a>), the reviewing text is not tagged as a review
+      or as a product, but should instead be tagged as an <a href="n-4w20.html" target="main"
+      title="Annotation in a Citation"><span class="elementtag">&lt;annotation&gt;</span></a>.</p>
+    </div>
+  </div>
+
+  <div class="pagefooter">
+    <h2 class="headname">Article Authoring Tag Library Proposed NISO JATS version 1.0</h2>
+
+    <h4 class="pubdate">Version of May 2012</h4>
+  </div>
+</body>
+</html>

@@ -1,5 +1,106 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008--><link rel="stylesheet" href="auto-css.css" type="text/css"><title>Element: Label (of an Equation, Figure, Reference, etc.)</title></head><body class="main"><div class="pageheader"><h2 class="headname">Article Authoring Tag Library Proposed NISO JATS version 1.0</h2><h4 class="sponsor">National Center for Biotechnology Information (NCBI)<br class="linebrk"> National Library of
-   Medicine (NLM)</h4></div><div class="header"><h1 class="elementtag">&lt;label&gt;</h1><h1 class="elementname">Label (of an Equation, Figure, Reference, etc.)</h1></div><div class="definition"><p class="para">Number and/or prefix word placed at the beginning of display elements (for example, equation, statement, figure).</p></div><div class="remarks"><h2 class="header">Remarks</h2><p class="para">As an example, a label placed at the beginning of an equation (<a href="n-di50.html" target="main" title="Formula, Display"><span class="elementtag">&lt;disp-formula&gt;</span></a>) could be a number such as <tt>&lt;label&gt;Equation 3.&lt;/label&gt;</tt>, <tt>&lt;label&gt;(3)&lt;/label&gt;</tt>, or <tt>&lt;label&gt;3.&lt;/label&gt;</tt>. A label before a statement such as a Proof or Lemma, could be a word such as <tt>&lt;label&gt;Proof&lt;/label&gt;</tt> or <tt>&lt;label&gt;Hypothesis&lt;/label&gt;</tt>.</p><p class="para"><strong>Accessibility:</strong> Sometimes a <span class="elementtag">&lt;label&gt;</span> needs to be pronounced in a way that is not reflected in its content or its tagging. The <a href="n-6pe0.html" target="main" title="Alternative Text"><span class="attrtag">@alt</span></a> attribute can be used to record the pronunciation for screen readers and other accessibility devices. For example, the element figure that follows might be pronounced as “Figure 3”.</p><div class="codeblock"><pre>&lt;label alt="figure 3"&gt;Fig&amp;amp;#x00A0;III.&lt;/label&gt;</pre></div></div><div class="attrlist"><h2 class="header">Attributes</h2><h5 class="header"><a href="n-6pe0.html" target="main"><span class="attrtag">alt</span></a> <a href="n-6pe0.html" target="main"><span class="attrname">Alternative Text</span></a></h5><h5 class="header"><a href="n-xwr0.html" target="main"><span class="attrtag">xml:lang</span></a> <a href="n-xwr0.html" target="main"><span class="attrname">Language</span></a></h5></div><div class="contentmodel"><h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  label        (#PCDATA <a href="n-nnp0.html" target="main" title="Label Elements"><span class="petag">%label-elements;</span></a>)*                  &gt;</pre></div><div class="contentmodel"><h2 class="header">Expanded Content Model</h2><p class="contentdesc">(#PCDATA)*</p></div><div class="modeldesc"><h2 class="header">Description</h2><p class="para">Text, numbers, or special characters, zero or more</p></div><div class="elementcontext"><h3 class="header">This element may be contained in:</h3><p class="para"><a href="n-di50.html" target="main" title="Formula, Display"><span class="elementtag">&lt;disp-formula&gt;</span></a>, <a href="n-9q50.html" target="main" title="Formula, Display Group"><span class="elementtag">&lt;disp-formula-group&gt;</span></a>, <a href="n-d3s0.html" target="main" title="Statement, Formal"><span class="elementtag">&lt;statement&gt;</span></a></p></div><div class="examp.group"><h3 class="header">Example</h3><div class="taggedexamp"><pre class="taggedtext">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta name="generator" content="HTML Tidy for Linux/x86 (vers 25 March 2009), see www.w3.org" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008-->
+  <link rel="stylesheet" href="auto-css.css" type="text/css" />
+
+  <title>Element: Label (of an Equation, Figure, Reference, etc.)</title>
+</head>
+
+<body class="main">
+  <div class="pageheader">
+    <h2 class="headname">Article Authoring Tag Library Proposed NISO JATS version 1.0</h2>
+
+    <h4 class="sponsor">National Center for Biotechnology Information (NCBI)<br class="linebrk" />
+    National Library of Medicine (NLM)</h4>
+  </div>
+
+  <div class="header">
+    <h1 class="elementtag">&lt;label&gt;</h1>
+
+    <h1 class="elementname">Label (of an Equation, Figure, Reference, etc.)</h1>
+  </div>
+
+  <div class="definition">
+    <p class="para">Number and/or prefix word placed at the beginning of display elements (for
+    example, equation, statement, figure).</p>
+  </div>
+
+  <div class="remarks">
+    <h2 class="header">Remarks</h2>
+
+    <p class="para">As an example, a label placed at the beginning of an equation (<a href=
+    "n-di50.html" target="main" title="Formula, Display"><span class=
+    "elementtag">&lt;disp-formula&gt;</span></a>) could be a number such as
+    <tt>&lt;label&gt;Equation 3.&lt;/label&gt;</tt>, <tt>&lt;label&gt;(3)&lt;/label&gt;</tt>, or
+    <tt>&lt;label&gt;3.&lt;/label&gt;</tt>. A label before a statement such as a Proof or Lemma,
+    could be a word such as <tt>&lt;label&gt;Proof&lt;/label&gt;</tt> or
+    <tt>&lt;label&gt;Hypothesis&lt;/label&gt;</tt>.</p>
+
+    <p class="para"><strong>Accessibility:</strong> Sometimes a <span class=
+    "elementtag">&lt;label&gt;</span> needs to be pronounced in a way that is not reflected in its
+    content or its tagging. The <a href="n-6pe0.html" target="main" title=
+    "Alternative Text"><span class="attrtag">@alt</span></a> attribute can be used to record the
+    pronunciation for screen readers and other accessibility devices. For example, the element
+    figure that follows might be pronounced as “Figure 3”.</p>
+
+    <div class="codeblock">
+      <pre>
+&lt;label alt="figure 3"&gt;Fig&amp;amp;#x00A0;III.&lt;/label&gt;
+</pre>
+    </div>
+  </div>
+
+  <div class="attrlist">
+    <h2 class="header">Attributes</h2>
+
+    <h5 class="header"><a href="n-6pe0.html" target="main"><span class="attrtag">alt</span></a>
+    <a href="n-6pe0.html" target="main"><span class="attrname">Alternative Text</span></a></h5>
+
+    <h5 class="header"><a href="n-xwr0.html" target="main"><span class=
+    "attrtag">xml:lang</span></a> <a href="n-xwr0.html" target="main"><span class=
+    "attrname">Language</span></a></h5>
+  </div>
+
+  <div class="contentmodel">
+    <h2 class="header first">Content Model</h2>
+    <pre class="contentdesc">
+&lt;!ELEMENT  label        (#PCDATA <a href="n-nnp0.html" target="main" title=
+"Label Elements"><span class="petag">%label-elements;</span></a>)*                  &gt;
+</pre>
+  </div>
+
+  <div class="contentmodel">
+    <h2 class="header">Expanded Content Model</h2>
+
+    <p class="contentdesc">(#PCDATA)*</p>
+  </div>
+
+  <div class="modeldesc">
+    <h2 class="header">Description</h2>
+
+    <p class="para">Text, numbers, or special characters, zero or more</p>
+  </div>
+
+  <div class="elementcontext">
+    <h3 class="header">This element may be contained in:</h3>
+
+    <p class="para"><a href="n-di50.html" target="main" title="Formula, Display"><span class=
+    "elementtag">&lt;disp-formula&gt;</span></a>, <a href="n-9q50.html" target="main" title=
+    "Formula, Display Group"><span class="elementtag">&lt;disp-formula-group&gt;</span></a>,
+    <a href="n-d3s0.html" target="main" title="Statement, Formal"><span class=
+    "elementtag">&lt;statement&gt;</span></a></p>
+  </div>
+
+  <div class="examp.group">
+    <h3 class="header">Example</h3>
+
+    <div class="taggedexamp">
+      <pre class="taggedtext">
 &lt;article&gt;
 &lt;front&gt;
 ...
@@ -12,7 +113,8 @@ and subsequently differentiate their perceptions of
 these countries accordingly.
 ... The following
 hypothesis is posited:
-&lt;statement&gt;<strong><span class="focus">&lt;label&gt;Hypothesis 1&lt;/label&gt;</span></strong>
+&lt;statement&gt;<strong><span class=
+"focus">&lt;label&gt;Hypothesis 1&lt;/label&gt;</span></strong>
 &lt;p&gt;Buyer preferences for companies are influenced by
 factors extrinsic to the firm attributable to, and
 determined by, country-of-origin effects.&lt;/p&gt;
@@ -25,4 +127,20 @@ determined by, country-of-origin effects.&lt;/p&gt;
 &lt;/back&gt;
 &lt;/article&gt;
 
-</pre></div></div><div class="moduledefined"><h2 class="header">Module</h2><p class="moduledefined">JATS-common1.ent</p></div><div class="pagefooter"><h2 class="headname">Article Authoring Tag Library Proposed NISO JATS version 1.0</h2><h4 class="pubdate">Version of May 2012</h4></div></body></html>
+</pre>
+    </div>
+  </div>
+
+  <div class="moduledefined">
+    <h2 class="header">Module</h2>
+
+    <p class="moduledefined">JATS-common1.ent</p>
+  </div>
+
+  <div class="pagefooter">
+    <h2 class="headname">Article Authoring Tag Library Proposed NISO JATS version 1.0</h2>
+
+    <h4 class="pubdate">Version of May 2012</h4>
+  </div>
+</body>
+</html>
