@@ -104,6 +104,11 @@ java -jar ../scripts/saxon9he.jar -xsl:../scripts/make-toc.xsl \
   -s:orig-html/t-2000.html -o:toc.html
 ```
 
+### Manually create the index.html page and taglib.css
+
+These top-level pages for each tag set are written by hand.
+
+
 ### Generate all the other documentation files
 
 From, for example, the *archiving-1.0* directory, run
