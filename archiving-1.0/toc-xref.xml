@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tocXref xmlns:h="http://www.w3.org/1999/xhtml">
+<tocXref xmlns:h="http://www.w3.org/1999/xhtml"
+         original-base='http://jats.nlm.nih.gov/archiving/tag-library/1.0/'>
    <item hash="n-cc00" title="How To Use (Read Me First)" slug="how-to-use"/>
    <item hash="n-cw00"
          title="General Introduction"
