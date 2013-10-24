@@ -4,8 +4,16 @@
 Looking for the "permalink" user script for the JATS Tag Library pages?  I've moved
 that to its own repository, [here](https://github.com/Klortho/TagLibPermalink).
 
-This repository is a project to improve the JATS
-Tag Library documentation.  The original versions can be found on the NLM site here:
+This repository holds the content for a new-and-improved JATS Tag Set viewer.
+The results are deployed here:
+
+  * [Archiving and Interchange - NISO JATS
+    1.0](http://jatspan.org/archiving-1.0/)
+  * [Publishing - NISO JATS 1.0](http://jatspan.org/publishing-1.0/)
+  * [Article Authoring - NISO JATS
+    1.0](http://jatspan.org/authoring-1.0/)
+
+The original versions can be found on the NLM site here:
 
   * [Archiving and Interchange - NISO JATS
     1.0](http://jats.nlm.nih.gov/archiving/tag-library/1.0/)
@@ -13,15 +21,12 @@ Tag Library documentation.  The original versions can be found on the NLM site h
   * [Article Authoring - NISO JATS
     1.0](http://jats.nlm.nih.gov/articleauthoring/tag-library/1.0/)
 
-I am adapting the [jqapi](http://jqapi.com/) documentation framework to work with
-the JATS tag library documentation.  Work on the framework, which is a JS and CSS library,
-is being done in my fork of that software, on GitHub at
-[Klortho/jatsdoc](https://github.com/Klortho/jatsdoc).
+These documentation sets use [jatsdoc](https://github.com/Klortho/jatsdoc), a
+JS/CSS framework forked form the excellent [jqapi](http://jqapi.com/).
 
-*This* repository contains the *content* that will use that documentation library,
-and the scripts used to convert the original documentation into the proper form.
-
-
+*This* JatsTagLibrary repository contains the *content*, and the various scripts
+that were used to convert the original documentation into the proper form for use
+with the jatsdoc framework.
 
 
 Transforming the tag library documentation
