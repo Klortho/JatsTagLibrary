@@ -8,10 +8,10 @@ This repository holds the content for a new-and-improved JATS Tag Set viewer.
 The results are deployed here:
 
   * [Archiving and Interchange - NISO JATS
-    1.0](http://jatspan.org/archiving-1.0/)
-  * [Publishing - NISO JATS 1.0](http://jatspan.org/publishing-1.0/)
+    1.0](http://jatspan.org/niso/archiving-1.0/)
+  * [Publishing - NISO JATS 1.0](http://jatspan.org/niso/publishing-1.0/)
   * [Article Authoring - NISO JATS
-    1.0](http://jatspan.org/authoring-1.0/)
+    1.0](http://jatspan.org/niso/authoring-1.0/)
 
 The original versions can be found on the NLM site here:
 
