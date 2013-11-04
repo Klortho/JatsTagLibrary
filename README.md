@@ -133,8 +133,6 @@ This will take quite a long time to convert all of the files.
 
 
 
-
-
 Public domain
 -------------
 
@@ -149,3 +147,4 @@ information.
 The scripts and transformations developed here by Chris Maloney, in this GitHub
 project, to adapt the Tag Library to the jatsdoc framework, are also dedicated
 to the [public domain](http://creativecommons.org/publicdomain/zero/1.0/).
+
