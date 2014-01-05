@@ -1,0 +1,165 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008--><link rel="stylesheet" href="auto-css.css" type="text/css"><title>Element: Institution Name: in an Address</title></head><body class="main"><div class="pageheader"><h2 class="headname">Journal Archiving and Interchange Tag Library NISO JATS Draft Version 1.1d1</h2><h4 class="sponsor">National Center for Biotechnology Information (NCBI)<br class="linebrk"> National Library of
+   Medicine (NLM)</h4></div><div class="header"><h1 class="elementtag">&lt;institution&gt;</h1><h1 class="elementname">Institution Name: in an Address</h1></div><div class="definition"><p class="para">Name of an institution or organization (for example, a university or corporation).</p></div><div class="remarks"><h2 class="header">Remarks</h2><p class="para"><strong>Common Practice:</strong> All levels of a multi-tier organization are typically listed within a single <span class="elementtag">&lt;institution&gt;</span> element. For example, a program, a department, and a university may be part of the same <a href="n-sh70.html" target="main" title="Institution Name: in an Address"><span class="elementtag">&lt;institution&gt;</span></a>. Similarly both a corporation and a
+division within the corporation might be inside one <a href="n-sh70.html" target="main" title="Institution Name: in an Address"><span class="elementtag">&lt;institution&gt;</span></a>.</p><div class="codeblock"><pre>&lt;institution content-type="edu"&gt;
+University of Frostbite Falls, Dept of Campus Security, 
+Dept of Moose and Squirrel Security, 
+Office of the Acting Dean&lt;/institution&gt;</pre></div><p class="para">Alternatively, a divisional distinction such as an
+“organization” element with subordinate “dept” and an “office”
+inside a department could tagged using multiple <a href="n-sh70.html" target="main" title="Institution Name: in an Address"><span class="elementtag">&lt;institution&gt;</span></a> elements with the <a href="n-mf32.html" target="main" title="Type of Content"><span class="attrtag">@content-type</span></a> attribute differentiating institution, department, and office:</p><div class="codeblock"><pre>  &lt;institution content-type="edu"&gt;
+    University of Frostbite Falls&lt;/institution&gt;
+    &lt;institution content-type="dept"&gt;
+      Dept of Campus Security&lt;/institution&gt;
+    &lt;institution content-type="dept"&gt;
+      Dept of Moose and Squirrel Security&lt;/institution&gt;
+    &lt;institution content-type="office"&gt;
+      Office of the Acting Dean&lt;/institution&gt;</pre></div><p class="para">As yet another alternative, the same distinction could tagged using multiple <a href="n-qk60.html" target="main" title="Named Special (Subject) Content"><span class="elementtag">&lt;named-content&gt;</span></a> elements:</p><div class="codeblock"><pre>    &lt;institution content-type="edu"&gt;
+    University of Frostbite Falls
+    &lt;named-content content-type="dept"&gt;
+      Dept of Campus Security&lt;/named-content&gt;
+    &lt;named-content content-type="dept"&gt;
+      Dept of Moose and Squirrel Security&lt;/named-content&gt;
+    &lt;named-content content-type="office"&gt;
+      Office of the Acting Dean&lt;/named-content&gt;
+  &lt;/institution&gt;</pre></div></div><div class="attrlist"><h2 class="header">Attributes</h2><h5 class="header"><a href="n-mf32.html" target="main"><span class="attrtag">content-type</span></a> <a href="n-mf32.html" target="main"><span class="attrname">Type of Content</span></a></h5><h5 class="header"><a href="n-z952.html" target="main"><span class="attrtag">id</span></a> <a href="n-z952.html" target="main"><span class="attrname">Document Internal Identifier</span></a></h5><h5 class="header"><a href="n-zhu2.html" target="main"><span class="attrtag">specific-use</span></a> <a href="n-zhu2.html" target="main"><span class="attrname">Specific Use</span></a></h5><h5 class="header"><a href="n-mfw2.html" target="main"><span class="attrtag">xlink:actuate</span></a> <a href="n-mfw2.html" target="main"><span class="attrname">Actuating the Link</span></a></h5><h5 class="header"><a href="n-znw2.html" target="main"><span class="attrtag">xlink:href</span></a> <a href="n-znw2.html" target="main"><span class="attrname">Href (Linking Mechanism)</span></a></h5><h5 class="header"><a href="n-3rw2.html" target="main"><span class="attrtag">xlink:role</span></a> <a href="n-3rw2.html" target="main"><span class="attrname">Role of the Link</span></a></h5><h5 class="header"><a href="n-hhw2.html" target="main"><span class="attrtag">xlink:show</span></a> <a href="n-hhw2.html" target="main"><span class="attrname">Showing the Link</span></a></h5><h5 class="header"><a href="n-byw2.html" target="main"><span class="attrtag">xlink:title</span></a> <a href="n-byw2.html" target="main"><span class="attrname">Title of the Link</span></a></h5><h5 class="header"><a href="n-npw2.html" target="main"><span class="attrtag">xlink:type</span></a> <a href="n-npw2.html" target="main"><span class="attrname">Type of Link</span></a></h5><h5 class="header"><a href="n-2mw2.html" target="main"><span class="attrtag">xmlns:xlink</span></a> <a href="n-2mw2.html" target="main"><span class="attrname">XLink Namespace Declaration</span></a></h5><h5 class="header"><a href="n-k2x2.html" target="main"><span class="attrtag">xml:base</span></a> <a href="n-k2x2.html" target="main"><span class="attrname">Base</span></a></h5><h5 class="header"><a href="n-pxx2.html" target="main"><span class="attrtag">xml:lang</span></a> <a href="n-pxx2.html" target="main"><span class="attrname">Language</span></a></h5></div><div class="relatedelem"><h2 class="header">Related Elements</h2><p class="para">The elements used in an address may include the address class elements: <a href="n-ad20.html" target="main" title="Address Line"><span class="elementtag">&lt;addr-line&gt;</span></a>, <a href="n-f9w0.html" target="main" title="Country: in an Address"><span class="elementtag">&lt;country&gt;</span></a>, <a href="n-ti40.html" target="main" title="Fax Number: in an Address"><span class="elementtag">&lt;fax&gt;</span></a>, <a href="n-sh70.html" target="main" title="Institution Name: in an Address"><span class="elementtag">&lt;institution&gt;</span></a>, and <a href="n-f5r0.html" target="main" title="Phone Number: in an Address"><span class="elementtag">&lt;phone&gt;</span></a> and the address linking class elements: <a href="n-rk40.html" target="main" title="Email Address"><span class="elementtag">&lt;email&gt;</span></a>, <a href="n-q740.html" target="main" title="External Link"><span class="elementtag">&lt;ext-link&gt;</span></a>, and <a href="n-mzk2.html" target="main" title="Uniform Resource Identifier (URI)"><span class="elementtag">&lt;uri&gt;</span></a>.</p></div><div class="contentmodel"><h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  institution  (#PCDATA <a href="n-tce2.html" target="main" title="Institution Name Elements"><span class="petag">%institution-elements;</span></a>)*            &gt;</pre></div><div class="contentmodel"><h2 class="header">Expanded Content Model</h2><p class="contentdesc">(#PCDATA | email | ext-link | uri | inline-supplementary-material | related-article | related-object | hr | bold | fixed-case | italic | monospace | overline | overline-start | overline-end | roman | sans-serif | sc | strike | underline | underline-start | underline-end | ruby | alternatives | inline-graphic | private-char | chem-struct | inline-formula | tex-math | mml:math | abbrev | milestone-end | milestone-start | named-content | styled-content | fn | target | xref | sub | sup | x | break)*</p></div><div class="modeldesc"><h2 class="header">Description</h2><p class="para">Any combination of:<ul class="bullist"><li>Text, numbers, or special characters</li><li>Linking Elements<ul class="bullist"><li><a href="n-rk40.html" target="main" title="Email Address"><span class="elementtag">&lt;email&gt;</span></a> <a href="n-rk40.html" target="main" title="<email&gt;"><span class="elementname">Email Address</span></a></li><li><a href="n-q740.html" target="main" title="External Link"><span class="elementtag">&lt;ext-link&gt;</span></a> <a href="n-q740.html" target="main" title="<ext-link&gt;"><span class="elementname">External Link</span></a></li><li><a href="n-mzk2.html" target="main" title="Uniform Resource Identifier (URI)"><span class="elementtag">&lt;uri&gt;</span></a> <a href="n-mzk2.html" target="main" title="<uri&gt;"><span class="elementname">Uniform Resource Identifier (URI)</span></a></li></ul></li><li><a href="n-4f70.html" target="main" title="Inline Supplementary Material"><span class="elementtag">&lt;inline-supplementary-material&gt;</span></a> <a href="n-4f70.html" target="main" title="<inline-supplementary-material&gt;"><span class="elementname">Inline Supplementary Material</span></a></li><li><a href="n-4ai0.html" target="main" title="Related Article Information"><span class="elementtag">&lt;related-article&gt;</span></a> <a href="n-4ai0.html" target="main" title="<related-article&gt;"><span class="elementname">Related Article Information</span></a></li><li><a href="n-zgi0.html" target="main" title="Related Object Information"><span class="elementtag">&lt;related-object&gt;</span></a> <a href="n-zgi0.html" target="main" title="<related-object&gt;"><span class="elementname">Related Object Information</span></a></li><li><a href="n-du70.html" target="main" title="Horizontal Rule"><span class="elementtag">&lt;hr&gt;</span></a> <a href="n-du70.html" target="main" title="<hr&gt;"><span class="elementname">Horizontal Rule</span></a></li><li>Emphasis Elements<ul class="bullist"><li><a href="n-bi50.html" target="main" title="Bold"><span class="elementtag">&lt;bold&gt;</span></a> <a href="n-bi50.html" target="main" title="<bold&gt;"><span class="elementname">Bold</span></a></li><li><a href="n-cas0.html" target="main" title="Fixed Case"><span class="elementtag">&lt;fixed-case&gt;</span></a> <a href="n-cas0.html" target="main" title="<fixed-case&gt;"><span class="elementname">Fixed Case</span></a></li><li><a href="n-wqe0.html" target="main" title="Italic"><span class="elementtag">&lt;italic&gt;</span></a> <a href="n-wqe0.html" target="main" title="<italic&gt;"><span class="elementname">Italic</span></a></li><li><a href="n-26n0.html" target="main" title="Monospace Text (Typewriter Text)"><span class="elementtag">&lt;monospace&gt;</span></a> <a href="n-26n0.html" target="main" title="<monospace&gt;"><span class="elementname">Monospace Text (Typewriter Text)</span></a></li><li><a href="n-72d0.html" target="main" title="Overline"><span class="elementtag">&lt;overline&gt;</span></a> <a href="n-72d0.html" target="main" title="<overline&gt;"><span class="elementname">Overline</span></a></li><li><a href="n-2wd0.html" target="main" title="Overline Start"><span class="elementtag">&lt;overline-start&gt;</span></a> <a href="n-2wd0.html" target="main" title="<overline-start&gt;"><span class="elementname">Overline Start</span></a></li><li><a href="n-dad0.html" target="main" title="Overline End"><span class="elementtag">&lt;overline-end&gt;</span></a> <a href="n-dad0.html" target="main" title="<overline-end&gt;"><span class="elementname">Overline End</span></a></li><li><a href="n-say0.html" target="main" title="Roman"><span class="elementtag">&lt;roman&gt;</span></a> <a href="n-say0.html" target="main" title="<roman&gt;"><span class="elementname">Roman</span></a></li><li><a href="n-gey0.html" target="main" title="Sans Serif"><span class="elementtag">&lt;sans-serif&gt;</span></a> <a href="n-gey0.html" target="main" title="<sans-serif&gt;"><span class="elementname">Sans Serif</span></a></li><li><a href="n-ary0.html" target="main" title="Small Caps"><span class="elementtag">&lt;sc&gt;</span></a> <a href="n-ary0.html" target="main" title="<sc&gt;"><span class="elementname">Small Caps</span></a></li><li><a href="n-ezp0.html" target="main" title="Strike Through"><span class="elementtag">&lt;strike&gt;</span></a> <a href="n-ezp0.html" target="main" title="<strike&gt;"><span class="elementname">Strike Through</span></a></li><li><a href="n-bnk2.html" target="main" title="Underline"><span class="elementtag">&lt;underline&gt;</span></a> <a href="n-bnk2.html" target="main" title="<underline&gt;"><span class="elementname">Underline</span></a></li><li><a href="n-hjk2.html" target="main" title="Underline Start"><span class="elementtag">&lt;underline-start&gt;</span></a> <a href="n-hjk2.html" target="main" title="<underline-start&gt;"><span class="elementname">Underline Start</span></a></li><li><a href="n-syk2.html" target="main" title="Underline End"><span class="elementtag">&lt;underline-end&gt;</span></a> <a href="n-syk2.html" target="main" title="<underline-end&gt;"><span class="elementname">Underline End</span></a></li><li><a href="n-ety0.html" target="main" title="Ruby Annotation Wrapper"><span class="elementtag">&lt;ruby&gt;</span></a> <a href="n-ety0.html" target="main" title="<ruby&gt;"><span class="elementname">Ruby Annotation Wrapper</span></a></li></ul></li><li><a href="n-2ec0.html" target="main" title="Alternatives For Processing"><span class="elementtag">&lt;alternatives&gt;</span></a> <a href="n-2ec0.html" target="main" title="<alternatives&gt;"><span class="elementname">Alternatives For Processing</span></a></li><li>Inline Display Elements<ul class="bullist"><li><a href="n-x770.html" target="main" title="Graphic, Inline"><span class="elementtag">&lt;inline-graphic&gt;</span></a> <a href="n-x770.html" target="main" title="<inline-graphic&gt;"><span class="elementname">Graphic, Inline</span></a></li><li><a href="n-6pr0.html" target="main" title="Private Character (Custom or Unicode)"><span class="elementtag">&lt;private-char&gt;</span></a> <a href="n-6pr0.html" target="main" title="<private-char&gt;"><span class="elementname">Private Character (Custom or Unicode)</span></a></li></ul></li><li><a href="n-z480.html" target="main" title="Chemical Structure (Display)"><span class="elementtag">&lt;chem-struct&gt;</span></a> <a href="n-z480.html" target="main" title="<chem-struct&gt;"><span class="elementname">Chemical Structure (Display)</span></a></li><li><a href="n-gw70.html" target="main" title="Formula, Inline"><span class="elementtag">&lt;inline-formula&gt;</span></a> <a href="n-gw70.html" target="main" title="<inline-formula&gt;"><span class="elementname">Formula, Inline</span></a></li><li>Math Elements<ul class="bullist"><li><a href="n-skz0.html" target="main" title="TeX Math Equation"><span class="elementtag">&lt;tex-math&gt;</span></a> <a href="n-skz0.html" target="main" title="<tex-math&gt;"><span class="elementname">TeX Math Equation</span></a></li><li><a href="n-cgn0.html" target="main" title="Math (MathML Tag Set)"><span class="elementtag">&lt;mml:math&gt;</span></a> <a href="n-cgn0.html" target="main" title="<mml:math&gt;"><span class="elementname">Math (MathML Tag Set)</span></a></li></ul></li><li>Other Inline Elements<ul class="bullist"><li><a href="n-9p00.html" target="main" title="Abbreviation or Acronym"><span class="elementtag">&lt;abbrev&gt;</span></a> <a href="n-9p00.html" target="main" title="<abbrev&gt;"><span class="elementname">Abbreviation or Acronym</span></a></li><li><a href="n-7cn0.html" target="main" title="Milestone End"><span class="elementtag">&lt;milestone-end&gt;</span></a> <a href="n-7cn0.html" target="main" title="<milestone-end&gt;"><span class="elementname">Milestone End</span></a></li><li><a href="n-a3n0.html" target="main" title="Milestone Start"><span class="elementtag">&lt;milestone-start&gt;</span></a> <a href="n-a3n0.html" target="main" title="<milestone-start&gt;"><span class="elementname">Milestone Start</span></a></li><li><a href="n-qk60.html" target="main" title="Named Special (Subject) Content"><span class="elementtag">&lt;named-content&gt;</span></a> <a href="n-qk60.html" target="main" title="<named-content&gt;"><span class="elementname">Named Special (Subject) Content</span></a></li><li><a href="n-piq0.html" target="main" title="Styled Special (Subject) Content"><span class="elementtag">&lt;styled-content&gt;</span></a> <a href="n-piq0.html" target="main" title="<styled-content&gt;"><span class="elementname">Styled Special (Subject) Content</span></a></li></ul></li><li><a href="n-87s0.html" target="main" title="Footnote"><span class="elementtag">&lt;fn&gt;</span></a> <a href="n-87s0.html" target="main" title="<fn&gt;"><span class="elementname">Footnote</span></a></li><li><a href="n-xam0.html" target="main" title="Target of an Internal Link"><span class="elementtag">&lt;target&gt;</span></a> <a href="n-xam0.html" target="main" title="<target&gt;"><span class="elementname">Target of an Internal Link</span></a></li><li><a href="n-ucc2.html" target="main" title="X (cross) Reference"><span class="elementtag">&lt;xref&gt;</span></a> <a href="n-ucc2.html" target="main" title="<xref&gt;"><span class="elementname">X (cross) Reference</span></a></li><li><a href="n-9zq0.html" target="main" title="Subscript"><span class="elementtag">&lt;sub&gt;</span></a> <a href="n-9zq0.html" target="main" title="<sub&gt;"><span class="elementname">Subscript</span></a></li><li><a href="n-5zb0.html" target="main" title="Superscript"><span class="elementtag">&lt;sup&gt;</span></a> <a href="n-5zb0.html" target="main" title="<sup&gt;"><span class="elementname">Superscript</span></a></li><li><a href="n-sm22.html" target="main" title="X - Generated Text and Punctuation"><span class="elementtag">&lt;x&gt;</span></a> <a href="n-sm22.html" target="main" title="<x&gt;"><span class="elementname">X - Generated Text and Punctuation</span></a></li><li><a href="n-i380.html" target="main" title="Line Break"><span class="elementtag">&lt;break&gt;</span></a> <a href="n-i380.html" target="main" title="<break&gt;"><span class="elementname">Line Break</span></a></li></ul></p></div><div class="elementcontext"><h3 class="header">This element may be contained in:</h3><p class="para"><a href="n-mp20.html" target="main" title="Address/Contact Information"><span class="elementtag">&lt;address&gt;</span></a>, <a href="n-ad20.html" target="main" title="Address Line"><span class="elementtag">&lt;addr-line&gt;</span></a>, <a href="n-n920.html" target="main" title="Affiliation"><span class="elementtag">&lt;aff&gt;</span></a>, <a href="n-xz80.html" target="main" title="Collaborative (Group) Author"><span class="elementtag">&lt;collab&gt;</span></a>, <a href="n-yru0.html" target="main" title="Conference Sponsor"><span class="elementtag">&lt;conf-sponsor&gt;</span></a>, <a href="n-gtw0.html" target="main" title="Copyright Holder"><span class="elementtag">&lt;copyright-holder&gt;</span></a>, <a href="n-mhw0.html" target="main" title="Correspondence Information"><span class="elementtag">&lt;corresp&gt;</span></a>, <a href="n-hgv0.html" target="main" title="Element Citation"><span class="elementtag">&lt;element-citation&gt;</span></a>, <a href="n-d9s0.html" target="main" title="Funding Source"><span class="elementtag">&lt;funding-source&gt;</span></a>, <a href="n-2z70.html" target="main" title="Institution Wrapper"><span class="elementtag">&lt;institution-wrap&gt;</span></a>, <a href="n-m3n0.html" target="main" title="Mixed Citation"><span class="elementtag">&lt;mixed-citation&gt;</span></a>, <a href="n-fp60.html" target="main" title="On Behalf of"><span class="elementtag">&lt;on-behalf-of&gt;</span></a>, <a href="n-nir0.html" target="main" title="Principal Award Recipient"><span class="elementtag">&lt;principal-award-recipient&gt;</span></a>, <a href="n-k9r0.html" target="main" title="Product Information"><span class="elementtag">&lt;product&gt;</span></a>, <a href="n-m4h0.html" target="main" title="Publisher’s Location"><span class="elementtag">&lt;publisher-loc&gt;</span></a>, <a href="n-vnh0.html" target="main" title="Publisher’s Name"><span class="elementtag">&lt;publisher-name&gt;</span></a>, <a href="n-4ai0.html" target="main" title="Related Article Information"><span class="elementtag">&lt;related-article&gt;</span></a>, <a href="n-zgi0.html" target="main" title="Related Object Information"><span class="elementtag">&lt;related-object&gt;</span></a>, <a href="n-2pp0.html" target="main" title="Standards Organization"><span class="elementtag">&lt;std-organization&gt;</span></a></p></div><div class="examp.group"><h3 class="header">Example 1</h3><p class="para">As part of an affiliation:</p><div class="taggedexamp"><pre class="taggedtext">
+ 
+...
+&lt;contrib-group&gt;
+&lt;contrib contrib-type="author"&gt;
+&lt;name name-style="western"&gt;
+&lt;surname&gt;Nüsslin&lt;/surname&gt;
+&lt;given-names&gt;Fridtjof&lt;/given-names&gt;
+&lt;prefix&gt;Dr.&lt;/prefix&gt;
+&lt;/name&gt;
+&lt;/contrib&gt;
+&lt;aff&gt;Klinik für Strahlentherapie und Radiologische Onkologie,
+<strong><span class="focus">&lt;institution&gt;Technische Universität München&lt;/institution&gt;</span></strong>, 
+Munich, Germany (Tel: 49-89-41404517, E-mail:
+&lt;ext-link ext-link-type="email" xlink:href="mailto:nuesslin@lrz.tum.de"&gt;
+nuesslin@lrz.tum.de&lt;/ext-link&gt;)&lt;/aff&gt;
+&lt;/contrib-group&gt;
+...
+
+ </pre></div></div><div class="examp.group"><h3 class="header">Example 2</h3><p class="para">Institution names wrapped with their institutional identifiers:</p><div class="taggedexamp"><pre class="taggedtext">
+  
+...
+&lt;article-meta&gt;
+...  
+&lt;contrib-group&gt;
+&lt;contrib contrib-type="author" rid="aff1"&gt;
+&lt;name&gt;&lt;surname&gt;Gaillard&lt;/surname&gt;
+&lt;given-names&gt;T. D.&lt;/given-names&gt;&lt;/name&gt;
+&lt;/contrib&gt;
+&lt;contrib contrib-type="author" rid="aff1"&gt;
+&lt;name&gt;&lt;surname&gt;Clark&lt;/surname&gt;
+&lt;given-names&gt;H. S.&lt;/given-names&gt;&lt;/name&gt;
+&lt;/contrib&gt;
+&lt;/contrib-group&gt;
+&lt;aff id="aff1"&gt;
+&lt;institution-wrap&gt;
+&lt;institution-id institution-id-type="Ringgold"&gt;1812&lt;/institution-id&gt;
+<strong><span class="focus">&lt;institution content-type="university"&gt;Harvard University&lt;/institution&gt;</span></strong>
+&lt;/institution-wrap&gt;
+&lt;/aff&gt;
+&lt;author-notes&gt;
+&lt;fn&gt;
+&lt;p&gt;Correspondence to: TD Gaillard &lt;email&gt;tgail@harvard.edu&lt;/email&gt;&lt;/p&gt;
+&lt;/fn&gt;
+&lt;/author-notes&gt;
+...
+&lt;/article-meta&gt;
+...
+
+
+  </pre></div><div class="taggedexamp"><pre class="taggedtext">
+ 
+...
+&lt;funding-group&gt;
+&lt;award-group&gt;
+&lt;funding-source&gt;
+&lt;institution-wrap&gt;
+<strong><span class="focus">&lt;institution content-type="laboratory"&gt;Massachusetts Green High Performance 
+Computing Center&lt;/institution&gt;</span></strong>
+&lt;/institution-wrap&gt;, operated by 
+  
+&lt;institution-wrap&gt;
+&lt;institution-id institution-id-type="Ringgold"&gt;1846&lt;/institution-id&gt;
+&lt;institution-id institution-id-type="ISNI"&gt;0000 0001 2170 1429&lt;/institution-id&gt;
+<strong><span class="focus">&lt;institution content-type="university"&gt;Boston University&lt;/institution&gt;</span></strong>
+&lt;/institution-wrap&gt;, 
+      
+&lt;institution-wrap&gt;
+&lt;institution-id institution-id-type="Ringgold"&gt;1812&lt;/institution-id&gt;
+<strong><span class="focus">&lt;institution content-type="university"&gt;Harvard University&lt;/institution&gt;</span></strong>
+&lt;/institution-wrap&gt;, 
+      
+&lt;institution-wrap&gt;
+&lt;institution-id institution-id-type="Ringgold"&gt;2167&lt;/institution-id&gt;
+<strong><span class="focus">&lt;institution content-type="university"&gt;MIT&lt;/institution&gt;</span></strong>
+&lt;/institution-wrap&gt;, 
+      
+&lt;institution-wrap&gt;
+&lt;institution-id institution-id-type="Ringgold"&gt;1848&lt;/institution-id&gt;
+<strong><span class="focus">&lt;institution content-type="university"&gt;Northeastern University&lt;/institution&gt;</span></strong>
+&lt;/institution-wrap&gt;, and the 
+      
+&lt;institution-wrap&gt;      
+&lt;institution-id institution-id-type="Ringgold"&gt;14707&lt;/institution-id&gt;
+<strong><span class="focus">&lt;institution content-type="university"&gt;University of Massachusetts&lt;/institution&gt;</span></strong>
+&lt;/institution-wrap&gt;
+&lt;/funding-source&gt;
+&lt;/award-group&gt;
+&lt;/funding-group&gt;
+...
+
+
+ </pre></div></div><div class="examp.group"><h3 class="header">Example 3</h3><p class="para">Two institutions used inside affiliations — one directly and one in an address:</p><div class="taggedexamp"><pre class="taggedtext">
+...
+&lt;article-meta&gt;
+...
+&lt;contrib-group&gt;
+&lt;contrib contrib-type="author"&gt;
+&lt;name&gt;&lt;surname&gt;Silverstein&lt;/surname&gt;
+&lt;given-names&gt;Michael Q.&lt;/given-names&gt;&lt;/name&gt;
+&lt;aff id="UWW"&gt;
+<strong><span class="focus">&lt;institution&gt;Department of Pathobiology
+University of WallieWash&lt;/institution&gt;</span></strong>
+&lt;addr-line&gt;Oberlin, Washington 96204&lt;/addr-line&gt;
+&lt;country&gt;USA&lt;/country&gt;
+&lt;/aff&gt;
+&lt;/contrib&gt;
+&lt;contrib contrib-type="author"&gt;
+&lt;name&gt;&lt;surname&gt;Taylor&lt;/surname&gt;
+&lt;given-names&gt;James C.&lt;/given-names&gt;&lt;/name&gt;
+&lt;degrees&gt;Ph D&lt;/degrees&gt;
+&lt;aff id="affKalakukko"&gt;Kalakukko Corporation&lt;/aff&gt;
+&lt;address&gt;
+<strong><span class="focus">&lt;institution&gt;Kalakukko Corporation&lt;/institution&gt;</span></strong>
+&lt;addr-line&gt;17 West Jefferson St.&lt;/addr-line&gt;
+&lt;addr-line&gt;Suite 207&lt;/addr-line&gt;
+&lt;addr-line&gt;New South Finland, MD 20856.&lt;/addr-line&gt;
+&lt;country&gt;USA&lt;/country&gt;
+&lt;phone&gt;(301) 754-5766&lt;/phone&gt;
+&lt;fax&gt;(301) 754-5765&lt;/fax&gt;
+&lt;email&gt;jct@kalakukko.com&lt;/email&gt;
+&lt;uri&gt;http://www.kalakukko.com&lt;/uri&gt;
+&lt;/address&gt;
+&lt;/contrib&gt;
+&lt;/contrib-group&gt;
+...
+&lt;/article-meta&gt;
+...
+</pre></div></div><div class="examp.group"><h3 class="header">Example 4</h3><p class="para">In a mixed-style bibliographic reference (punctuation and spacing preserved):</p><div class="taggedexamp"><pre class="taggedtext">
+
+...
+&lt;ref id="c25"&gt;
+&lt;mixed-citation publication-type="report" publisher-type="government"&gt;
+&lt;collab&gt;Federal Highway Administration&lt;/collab&gt; (FHWA). 
+(&lt;year iso-8601-date="1992"&gt;1992&lt;/year&gt;). &amp;#x201C;&lt;article-title&gt;Evaluating 
+scour at bridges&lt;/article-title&gt;.&amp;#x201D;  &lt;source&gt;&lt;italic&gt;Hydr. Engrg. Circular 
+No. 18&lt;/italic&gt;&lt;/source&gt;: &lt;gov&gt;&lt;italic&gt;FHWA-IP-90-017&lt;/italic&gt;&lt;/gov&gt;, 
+<strong><span class="focus">&lt;institution&gt;Office of Engineering, Bridge Div.&lt;/institution&gt;</span></strong>, Washington, 
+D.C. &lt;/mixed-citation&gt; 
+&lt;/ref&gt;
+...
+
+</pre></div></div><div class="moduledefined"><h2 class="header">Module</h2><p class="moduledefined">JATS-common1.ent</p></div><div class="pagefooter"><h2 class="headname">Journal Archiving and Interchange Tag Library NISO JATS Draft Version 1.1d1</h2><h4 class="pubdate">Version of December 2013</h4></div></body></html>
