@@ -1,0 +1,241 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008--><link rel="stylesheet" href="auto-css.css" type="text/css"><title>Element: Contributor</title></head><body class="main"><div class="pageheader"><h2 class="headname">Journal Publishing Tag Library  NISO JATS Draft Version 1.1d1</h2><h4 class="sponsor">National Center for Biotechnology Information (NCBI)<br class="linebrk"> National Library of
+   Medicine (NLM)</h4></div><div class="header"><h1 class="elementtag">&lt;contrib&gt;</h1><h1 class="elementname">Contributor</h1></div><div class="definition"><p class="para">Container element for information about a single author, editor, or other contributor.</p></div><div class="remarks"><h2 class="header">Remarks</h2><p class="para"><strong>Types of Contributors.</strong> The element <span class="elementtag">&lt;contrib&gt;</span> can be used for many roles besides authors, for example, editors, special issue editors, photographers, illustrators, directors, etc.  The  <a href="n-bgj0.html" target="main" title="Type of Contribution"><span class="attrtag">@contrib-type</span></a> attribute placed <em>on</em> the <span class="elementtag">&lt;contrib&gt;</span> element, or the  <a href="n-nwg0.html" target="main" title="Role or Function Title of Contributor"><span class="elementtag">&lt;role&gt;</span></a> element used <em>within</em>  the <span class="elementtag">&lt;contrib&gt;</span> element, may be used to describe the contribution.</p><p class="para"><strong>Best Practice:</strong> Use <a href="n-x9i0.html" target="main" title="X (cross) Reference"><span class="elementtag">&lt;xref&gt;</span></a> to point to the institution (<a href="n-c420.html" target="main" title="Affiliation"><span class="elementtag">&lt;aff&gt;</span></a>), the corresponding information (<a href="n-56a0.html" target="main" title="Correspondence Information"><span class="elementtag">&lt;corresp&gt;</span></a>), or any author footnotes in the author note group.</p><p class="para"> <strong>Anonymous:</strong> The name of a contributor that is being withheld or is not known may be recorded using the <tt>EMPTY</tt> element <a href="n-nm20.html" target="main" title="Anonymous"><span class="elementtag">&lt;anonymous&gt;</span></a>, which is expected to cause text such an “Anonymous” or “anon.” to be generated for display or print.</p><p class="para"><strong>Elsevier Conversion Note:</strong> For users of the Elsevier Tag Sets, when the ranking or importance of authors has been marked as a note (for example, using <tt>&lt;ranking&gt;</tt>), the ranking information may be encoded in the <a href="n-nwg0.html" target="main" title="Role or Function Title of Contributor"><span class="elementtag">&lt;role&gt;</span></a> element. Thus, the Elsevier-tagged text:</p><div class="codeblock"><pre>
+  &lt;ranking&gt;&lt;sup&gt;*&lt;/sup&gt;&lt;/ranking&gt;
+  </pre></div><p class="para">would be converted to: </p><div class="codeblock"><pre>
+  &lt;role&gt;&lt;sup&gt;*&lt;/sup&gt;&lt;/role&gt;
+  </pre></div></div><div class="attrlist"><h2 class="header">Attributes</h2><h5 class="header"><a href="n-bgj0.html" target="main"><span class="attrtag">contrib-type</span></a> <a href="n-bgj0.html" target="main"><span class="attrname">Type of Contribution</span></a></h5><h5 class="header"><a href="n-c6j0.html" target="main"><span class="attrtag">corresp</span></a> <a href="n-c6j0.html" target="main"><span class="attrname">Corresponding Author</span></a></h5><h5 class="header"><a href="n-wbj0.html" target="main"><span class="attrtag">deceased</span></a> <a href="n-wbj0.html" target="main"><span class="attrname">Deceased</span></a></h5><h5 class="header"><a href="n-55p0.html" target="main"><span class="attrtag">equal-contrib</span></a> <a href="n-55p0.html" target="main"><span class="attrname">Equal Contribution</span></a></h5><h5 class="header"><a href="n-fdp0.html" target="main"><span class="attrtag">id</span></a> <a href="n-fdp0.html" target="main"><span class="attrname">Document Internal Identifier</span></a></h5><h5 class="header"><a href="n-8k90.html" target="main"><span class="attrtag">rid</span></a> <a href="n-8k90.html" target="main"><span class="attrname">Reference to an Identifier</span></a></h5><h5 class="header"><a href="n-t790.html" target="main"><span class="attrtag">specific-use</span></a> <a href="n-t790.html" target="main"><span class="attrname">Specific Use</span></a></h5><h5 class="header"><a href="n-8wm0.html" target="main"><span class="attrtag">xlink:actuate</span></a> <a href="n-8wm0.html" target="main"><span class="attrname">Actuating the Link</span></a></h5><h5 class="header"><a href="n-5vm0.html" target="main"><span class="attrtag">xlink:href</span></a> <a href="n-5vm0.html" target="main"><span class="attrname">Href (Linking Mechanism)</span></a></h5><h5 class="header"><a href="n-asm0.html" target="main"><span class="attrtag">xlink:role</span></a> <a href="n-asm0.html" target="main"><span class="attrname">Role of the Link</span></a></h5><h5 class="header"><a href="n-itm0.html" target="main"><span class="attrtag">xlink:show</span></a> <a href="n-itm0.html" target="main"><span class="attrname">Showing the Link</span></a></h5><h5 class="header"><a href="n-qem0.html" target="main"><span class="attrtag">xlink:title</span></a> <a href="n-qem0.html" target="main"><span class="attrname">Title of the Link</span></a></h5><h5 class="header"><a href="n-egm0.html" target="main"><span class="attrtag">xlink:type</span></a> <a href="n-egm0.html" target="main"><span class="attrname">Type of Link</span></a></h5><h5 class="header"><a href="n-bdm0.html" target="main"><span class="attrtag">xmlns:xlink</span></a> <a href="n-bdm0.html" target="main"><span class="attrname">XLink Namespace Declaration</span></a></h5><h5 class="header"><a href="n-jim0.html" target="main"><span class="attrtag">xml:base</span></a> <a href="n-jim0.html" target="main"><span class="attrname">Base</span></a></h5></div><div class="relatedelem"><h2 class="header">Related Elements</h2><p class="para">Use the <a href="n-8q50.html" target="main" title="Collaborative (Group) Author"><span class="elementtag">&lt;collab&gt;</span></a> element for contributions by organizations or groups of people. Use the <a href="n-ce70.html" target="main" title="On Behalf of"><span class="elementtag">&lt;on-behalf-of&gt;</span></a> element within the contributor information to indicate that a person has written as a representative of (on behalf of) an organization or group.</p></div><div class="contentmodel"><h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  contrib      <a href="n-qac2.html" target="main" title="Contributor Model"><span class="petag">%contrib-model;</span></a>                              &gt;</pre></div><div class="contentmodel"><h2 class="header">Expanded Content Model</h2><p class="contentdesc">((contrib-id)*, (anonymous | collab | collab-alternatives | name | name-alternatives)*, (degrees)*, (address | aff | aff-alternatives | author-comment | bio | email | ext-link | on-behalf-of | role | uri | xref)*)</p></div><div class="modeldesc"><h2 class="header">Description</h2><p class="para">The following, in order:<ul class="bullist"><li><a href="n-w4a0.html" target="main" title="Contributor Identifier"><span class="elementtag">&lt;contrib-id&gt;</span></a> <a href="n-w4a0.html" target="main" title="<contrib-id&gt;"><span class="elementname">Contributor Identifier</span></a>, zero or more</li><li>Any combination of:<ul class="bullist"><li>Contributor Naming Elements<ul class="bullist"><li><a href="n-nm20.html" target="main" title="Anonymous"><span class="elementtag">&lt;anonymous&gt;</span></a> <a href="n-nm20.html" target="main" title="<anonymous&gt;"><span class="elementname">Anonymous</span></a></li><li><a href="n-8q50.html" target="main" title="Collaborative (Group) Author"><span class="elementtag">&lt;collab&gt;</span></a> <a href="n-8q50.html" target="main" title="<collab&gt;"><span class="elementname">Collaborative (Group) Author</span></a></li><li><a href="n-x280.html" target="main" title="Collaboration Alternatives"><span class="elementtag">&lt;collab-alternatives&gt;</span></a> <a href="n-x280.html" target="main" title="<collab-alternatives&gt;"><span class="elementname">Collaboration Alternatives</span></a></li><li><a href="n-4ft0.html" target="main" title="Name of Person"><span class="elementtag">&lt;name&gt;</span></a> <a href="n-4ft0.html" target="main" title="<name&gt;"><span class="elementname">Name of Person</span></a></li><li><a href="n-x6t0.html" target="main" title="Name Alternatives"><span class="elementtag">&lt;name-alternatives&gt;</span></a> <a href="n-x6t0.html" target="main" title="<name-alternatives&gt;"><span class="elementname">Name Alternatives</span></a></li></ul></li></ul></li><li><a href="n-77u0.html" target="main" title="Degree(s)"><span class="elementtag">&lt;degrees&gt;</span></a> <a href="n-77u0.html" target="main" title="<degrees&gt;"><span class="elementname">Degree(s)</span></a>, zero or more</li><li>Any combination of:<ul class="bullist"><li><a href="n-dw20.html" target="main" title="Address/Contact Information"><span class="elementtag">&lt;address&gt;</span></a> <a href="n-dw20.html" target="main" title="<address&gt;"><span class="elementname">Address/Contact Information</span></a></li><li><a href="n-c420.html" target="main" title="Affiliation"><span class="elementtag">&lt;aff&gt;</span></a> <a href="n-c420.html" target="main" title="<aff&gt;"><span class="elementname">Affiliation</span></a></li><li><a href="n-ef20.html" target="main" title="Affiliation Alternatives"><span class="elementtag">&lt;aff-alternatives&gt;</span></a> <a href="n-ef20.html" target="main" title="<aff-alternatives&gt;"><span class="elementname">Affiliation Alternatives</span></a></li><li><a href="n-w830.html" target="main" title="Author Comment"><span class="elementtag">&lt;author-comment&gt;</span></a> <a href="n-w830.html" target="main" title="<author-comment&gt;"><span class="elementname">Author Comment</span></a></li><li><a href="n-9e30.html" target="main" title="Biography"><span class="elementtag">&lt;bio&gt;</span></a> <a href="n-9e30.html" target="main" title="<bio&gt;"><span class="elementname">Biography</span></a></li><li>Linking Elements<ul class="bullist"><li><a href="n-gvw0.html" target="main" title="Email Address"><span class="elementtag">&lt;email&gt;</span></a> <a href="n-gvw0.html" target="main" title="<email&gt;"><span class="elementname">Email Address</span></a></li><li><a href="n-3fw0.html" target="main" title="External Link"><span class="elementtag">&lt;ext-link&gt;</span></a> <a href="n-3fw0.html" target="main" title="<ext-link&gt;"><span class="elementname">External Link</span></a></li><li><a href="n-6gi0.html" target="main" title="Uniform Resource Identifier (URI)"><span class="elementtag">&lt;uri&gt;</span></a> <a href="n-6gi0.html" target="main" title="<uri&gt;"><span class="elementname">Uniform Resource Identifier (URI)</span></a></li></ul></li><li><a href="n-ce70.html" target="main" title="On Behalf of"><span class="elementtag">&lt;on-behalf-of&gt;</span></a> <a href="n-ce70.html" target="main" title="<on-behalf-of&gt;"><span class="elementname">On Behalf of</span></a></li><li><a href="n-nwg0.html" target="main" title="Role or Function Title of Contributor"><span class="elementtag">&lt;role&gt;</span></a> <a href="n-nwg0.html" target="main" title="<role&gt;"><span class="elementname">Role or Function Title of Contributor</span></a></li><li><a href="n-x9i0.html" target="main" title="X (cross) Reference"><span class="elementtag">&lt;xref&gt;</span></a> <a href="n-x9i0.html" target="main" title="<xref&gt;"><span class="elementname">X (cross) Reference</span></a></li></ul></li></ul></p></div><div class="elementcontext"><h3 class="header">This element may be contained in:</h3><p class="para"><a href="n-iua0.html" target="main" title="Contributor Group"><span class="elementtag">&lt;contrib-group&gt;</span></a></p></div><div class="examp.group"><h3 class="header">Example 1</h3><p class="para">A single contributor with his affiliation inside the <a href="n-iua0.html" target="main" title="Contributor Group"><span class="elementtag">&lt;contrib-group&gt;</span></a> element:</p><div class="taggedexamp"><pre class="taggedtext">
+
+...
+&lt;contrib-group&gt;
+<strong><span class="focus">&lt;contrib contrib-type="author"&gt;
+&lt;name name-style="western"&gt;
+&lt;surname&gt;McCrohan&lt;/surname&gt;
+&lt;given-names&gt;John&lt;/given-names&gt;
+&lt;prefix&gt;Capt.&lt;/prefix&gt;
+&lt;/name&gt;
+&lt;/contrib&gt;</span></strong>
+&lt;aff&gt;Center for Devices and Radiological Health, Food and 
+Drug Administration, Rockville, Maryland 20857&lt;/aff&gt;
+&lt;/contrib-group&gt;
+...
+
+</pre></div><div class="taggedexamp"><pre class="taggedtext">
+
+...
+&lt;contrib-group&gt;
+<strong><span class="focus">&lt;contrib contrib-type="author"&gt;
+&lt;name name-style="western"&gt;
+&lt;surname&gt;Nüsslin&lt;/surname&gt;
+&lt;given-names&gt;Fridtjof&lt;/given-names&gt;
+&lt;prefix&gt;Dr.&lt;/prefix&gt;
+&lt;/name&gt;
+&lt;/contrib&gt;</span></strong>
+&lt;aff&gt;Klinik für Strahlentherapie und Radiologische Onkologie,
+&lt;institution&gt;Technische Universität München&lt;/institution&gt;, 
+Munich, Germany (Tel: 49-89-41404517, E-mail:
+&lt;ext-link ext-link-type="email" xlink:href="mailto:nuesslin@lrz.tum.de"&gt;
+nuesslin@lrz.tum.de&lt;/ext-link&gt;)&lt;/aff&gt;
+&lt;/contrib-group&gt;
+...
+
+</pre></div></div><div class="examp.group"><h3 class="header">Example 2</h3><p class="para">A single contributor with a role:</p><div class="taggedexamp"><pre class="taggedtext">
+
+...
+&lt;contrib-group&gt;
+<strong><span class="focus">&lt;contrib contrib-type="author"&gt;
+&lt;name name-style="western"&gt;
+&lt;surname&gt;Foster&lt;/surname&gt;
+&lt;given-names&gt;Bill&lt;/given-names&gt;
+&lt;prefix&gt;Rep.&lt;/prefix&gt;
+&lt;/name&gt;
+&lt;role&gt;(IL-14)&lt;/role&gt;
+&lt;/contrib&gt;</span></strong>
+&lt;/contrib-group&gt;
+...
+
+</pre></div></div><div class="examp.group"><h3 class="header">Example 3</h3><p class="para">A collaboration as a contributor:</p><div class="taggedexamp"><pre class="taggedtext">
+
+...
+&lt;article-meta&gt;
+...
+&lt;contrib-group&gt;
+<strong><span class="focus">&lt;contrib contrib-type="author"&gt;
+&lt;collab collab-type="committee"&gt;Accredited Standards Committee S3, 
+Bioacoustics&lt;/collab&gt;
+&lt;/contrib&gt;</span></strong>
+&lt;/contrib-group&gt;
+...
+&lt;fpage seq="1"&gt;1&lt;/fpage&gt;
+&lt;lpage&gt;44&lt;/lpage&gt;
+&lt;supplementary-material mime-subtype="zip" mimetype="application"
+xlink:href="ASASTD.ANSI.ASA.S3.50.supplementary-material.zip"/&gt;
+...
+&lt;/article-meta&gt;
+...
+
+</pre></div><div class="taggedexamp"><pre class="taggedtext">
+
+...
+&lt;article-meta&gt;
+...
+&lt;contrib-group&gt;
+<strong><span class="focus">&lt;contrib contrib-type="author"&gt;
+&lt;collab collab-type="committee"&gt;Technical Committee ISO/TC 108, 
+Subcommittee SC 2&lt;/collab&gt;
+&lt;/contrib&gt;</span></strong>
+&lt;/contrib-group&gt;
+...
+&lt;fpage seq="1"&gt;1&lt;/fpage&gt;
+&lt;lpage&gt;23&lt;/lpage&gt;
+&lt;history&gt;
+&lt;date date-type="approved" iso-8601-date="2012-06-01"&gt;
+&lt;day&gt;01&lt;/day&gt;
+&lt;month&gt;06&lt;/month&gt;
+&lt;year&gt;2012&lt;/year&gt;
+&lt;/date&gt;
+&lt;/history&gt;
+...
+&lt;/article-meta&gt;
+...
+
+</pre></div></div><div class="examp.group"><h3 class="header">Example 4</h3><p class="para">Issue editors as <a href="n-rca0.html" target="main" title="Contributor"><span class="elementtag">&lt;contrib&gt;</span></a>s:</p><div class="taggedexamp"><pre class="taggedtext">
+
+...
+&lt;contrib-group&gt;
+<strong><span class="focus">&lt;contrib contrib-type="issue-editor"&gt;
+&lt;name&gt;&lt;surname&gt;Madison&lt;/surname&gt;
+&lt;given-names&gt;Taylor&lt;/given-names&gt;&lt;/name&gt;
+&lt;role&gt;Special Issue Editor&lt;/role&gt;
+&lt;/contrib&gt;</span></strong>
+<strong><span class="focus">&lt;contrib contrib-type="issue-editor"&gt;
+&lt;name&gt;&lt;surname&gt;McKinley&lt;/surname&gt;
+&lt;given-names&gt;Grant&lt;/given-names&gt;&lt;/name&gt;
+&lt;role&gt;Special Issue Editor&lt;/role&gt;
+&lt;/contrib&gt;</span></strong>
+&lt;/contrib-group&gt;
+...
+
+
+</pre></div></div><div class="examp.group"><h3 class="header">Example 5</h3><p class="para">Conference editors as <a href="n-rca0.html" target="main" title="Contributor"><span class="elementtag">&lt;contrib&gt;</span></a>s:</p><div class="taggedexamp"><pre class="taggedtext">
+
+...  
+&lt;contrib-group content-type="conference-editors"&gt;
+<strong><span class="focus">&lt;contrib contrib-type="editor"&gt;
+&lt;name name-style="western"&gt;
+&lt;surname&gt;Herrera&lt;/surname&gt;
+&lt;given-names&gt;Gerardo&lt;/given-names&gt;
+&lt;/name&gt;
+&lt;role&gt;Conference Editor&lt;/role&gt;
+&lt;/contrib&gt;</span></strong>
+&lt;/contrib-group&gt;
+...
+
+</pre></div></div><div class="examp.group"><h3 class="header">Example 6</h3><p class="para">Several authors, with one writing on behalf of a group:</p><div class="taggedexamp"><pre class="taggedtext">
+
+...
+&lt;contrib-group&gt;
+<strong><span class="focus">&lt;contrib contrib-type="author"&gt;
+&lt;name&gt;&lt;surname&gt;Forster&lt;/surname&gt;
+&lt;given-names&gt;Anne Williams&lt;/given-names&gt;
+&lt;/name&gt;
+&lt;role&gt;research physiotherapist&lt;/role&gt;
+&lt;xref ref-type="aff" rid="StLukes"/&gt;
+&lt;xref ref-type="aff" rid="RoyalInf"/&gt;
+&lt;/contrib&gt;</span></strong>
+<strong><span class="focus">&lt;contrib contrib-type="author"&gt;
+&lt;name&gt;&lt;surname&gt;Young&lt;/surname&gt;
+&lt;given-names&gt;John G.&lt;/given-names&gt;&lt;/name&gt;
+&lt;role&gt;consultant physician&lt;/role&gt;
+&lt;xref ref-type="aff" rid="RoyalInf"/&gt;
+&lt;author-comment&gt;
+&lt;p&gt;on behalf of the Day Hospital Group&lt;/p&gt;
+&lt;/author-comment&gt;
+&lt;/contrib&gt;</span></strong>
+&lt;aff id="StLukes"&gt;Department of Health Care
+for the Elderly, St Luke&amp;#x2019;s Hospital, Bradford BD5
+0NA&lt;/aff&gt;
+&lt;aff id="RoyalInf"&gt;Academic Section
+of Geriatric Medicine, Royal Infirmary, Glasgow
+G4 0SF&lt;/aff&gt;
+&lt;/contrib-group&gt;
+...
+
+</pre></div></div><div class="examp.group"><h3 class="header">Example 7</h3><p class="para">The name of a contributor given in several script/language combinations, with associated affiliations:</p><div class="taggedexamp"><pre class="taggedtext">
+ 
+... 
+&lt;article-meta&gt;
+&lt;title-group&gt;...&lt;/title-group&gt;
+&lt;contrib-group&gt;
+<strong><span class="focus">&lt;contrib contrib-type="author"&gt;
+&lt;name-alternatives&gt;
+&lt;name name-style="eastern" xml:lang="ja-Jpan"&gt;
+&lt;surname&gt;中西&lt;/surname&gt;
+&lt;given-names&gt;秀彦&lt;/given-names&gt;
+&lt;/name&gt;
+&lt;name name-style="western" xml:lang="en"&gt;
+&lt;surname&gt;Nakanishi&lt;/surname&gt;
+&lt;given-names&gt;Hidehiko&lt;/given-names&gt;
+&lt;/name&gt;
+&lt;name name-style="eastern" xml:lang="ja-Kana"&gt;
+&lt;surname&gt;ナカニシ&lt;/surname&gt;
+&lt;given-names&gt;ヒデヒコ&lt;/given-names&gt;
+&lt;/name&gt;
+&lt;/name-alternatives&gt;
+&lt;xref ref-type="aff" rid="aff2"&gt;&amp;ast;&amp;ast;&lt;/xref&gt;
+&lt;/contrib&gt;</span></strong>
+&lt;aff-alternatives id="aff2"&gt;
+&lt;aff id="aff-ja"&gt;
+&lt;institution xml:lang="ja-Jpan"&gt;国立言語学博物館&lt;/institution&gt;
+&lt;/aff&gt;
+&lt;aff id="aff-en"&gt;
+&lt;institution xml:lang="en"&gt;National Museum of Linguistics&lt;/institution&gt;
+&lt;/aff&gt;
+&lt;/aff-alternatives&gt;
+&lt;/contrib-group&gt;
+...
+&lt;/article-meta&gt;
+...
+ 
+
+</pre></div><div class="taggedexamp"><pre class="taggedtext">
+
+...
+&lt;article-meta&gt;
+...
+&lt;contrib-group&gt;
+<strong><span class="focus">&lt;contrib contrib-type="author"&gt;
+&lt;name-alternatives&gt;
+&lt;name name-style="western"&gt;&lt;surname&gt;Zhang&lt;/surname&gt;
+&lt;given-names&gt;Y. P.&lt;/given-names&gt;&lt;/name&gt;
+&lt;string-name name-style="eastern" xml:lang="zh"&gt;张轶泼&lt;/string-name&gt;
+&lt;/name-alternatives&gt;
+&lt;xref ref-type="aff" rid="a1"&gt;1&lt;/xref&gt;
+&lt;xref ref-type="author-notes" rid="n1"&gt;a)&lt;/xref&gt;
+&lt;/contrib&gt;</span></strong>
+  
+<strong><span class="focus">&lt;contrib contrib-type="author"&gt;
+&lt;name-alternatives&gt;
+&lt;name name-style="western"&gt;&lt;surname&gt;Isobe&lt;/surname&gt;
+&lt;given-names&gt;M.&lt;/given-names&gt;&lt;/name&gt;
+&lt;string-name name-style="eastern" xml:lang="zh"&gt;磯部光孝&lt;/string-name&gt;
+&lt;/name-alternatives&gt;
+&lt;xref ref-type="aff" rid="a2"&gt;2&lt;/xref&gt;
+&lt;/contrib&gt;</span></strong>
+  
+<strong><span class="focus">&lt;contrib contrib-type="author"&gt;
+&lt;name-alternatives&gt;
+&lt;name name-style="western"&gt;&lt;surname&gt;Liu&lt;/surname&gt;
+&lt;given-names&gt;Yi&lt;/given-names&gt;&lt;/name&gt;
+&lt;string-name name-style="eastern" xml:lang="zh"&gt;刘仪&lt;/string-name&gt;
+&lt;/name-alternatives&gt;
+&lt;xref ref-type="aff" rid="a1"&gt;1&lt;/xref&gt;
+&lt;/contrib&gt;</span></strong>
+&lt;/contrib-group&gt;
+&lt;aff id="a1"&gt;...&lt;/aff&gt;
+&lt;aff id="a2"&gt;...&lt;/aff&gt;
+&lt;author-notes id="n1"&gt;...&lt;/author-notes&gt;
+...
+&lt;/article-meta&gt;
+...
+
+</pre></div></div><div class="moduledefined"><h2 class="header">Module</h2><p class="moduledefined">JATS-articlemeta1.ent</p></div><div class="pagefooter"><h2 class="headname">Journal Publishing Tag Library  NISO JATS Draft Version 1.1d1</h2><h4 class="pubdate">Version of December 2013</h4></div></body></html>

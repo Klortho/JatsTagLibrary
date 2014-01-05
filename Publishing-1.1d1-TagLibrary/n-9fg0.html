@@ -1,0 +1,49 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008--><link rel="stylesheet" href="auto-css.css" type="text/css"><title>Element: Ruby Textual Annotation</title></head><body class="main"><div class="pageheader"><h2 class="headname">Journal Publishing Tag Library  NISO JATS Draft Version 1.1d1</h2><h4 class="sponsor">National Center for Biotechnology Information (NCBI)<br class="linebrk"> National Library of
+   Medicine (NLM)</h4></div><div class="header"><h1 class="elementtag">&lt;rt&gt;</h1><h1 class="elementname">Ruby Textual Annotation</h1></div><div class="definition"><p class="para">This element is one half of a Ruby annotation (<a href="n-wng0.html" target="main" title="Ruby Annotation Wrapper"><span class="elementtag">&lt;ruby&gt;</span></a>),
+and it contains the text that annotates the material in the Ruby Base (<a href="n-vvf0.html" target="main" title="Ruby Base Text"><span class="elementtag">&lt;rb&gt;</span></a>), which may be a small as
+a single character.</p></div><div class="remarks"><h2 class="header">Remarks</h2><p class="para"><strong>What is Ruby:</strong> A Ruby textual annotation is an annotation, typically
+short, applied to a letter, word, phrase, or name that appears in narrative text. Ruby annotations
+can indicate, for example, pronunciation advice, notes for  translation, semantic annotations, et al.
+Ruby is used with Japanese, for example, in furigana, which typically uses hiragana annotations on
+kanji base text. Ruby is also be used in Chinese Pīnyīn (a phonetic system for transcribing the
+sound of Chinese characters into Latin script) as well as for some Korean names. In display or
+print, the characters of a Ruby annotation are frequently placed above the characters they modify, in parenthesis after the characters they modify, or to the right of vertically set text.</p><p class="para"><em>Structure of NISO JATS Ruby:</em> The
+<a href="n-wng0.html" target="main" title="Ruby Annotation Wrapper"><span class="elementtag">&lt;ruby&gt;</span></a> element is an inline wrapper element that contains some of the
+document narrative text (inside a Ruby Base <a href="n-vvf0.html" target="main" title="Ruby Base Text"><span class="elementtag">&lt;rb&gt;</span></a> element) and one or
+more Ruby
+Textual Annotations (inside an <a href="n-9fg0.html" target="main" title="Ruby Textual Annotation"><span class="elementtag">&lt;rt&gt;</span></a> element) associated with
+that base text.</p></div><div class="attrlist"><h2 class="header">Attributes</h2><h5 class="header"><a href="n-kxj0.html" target="main"><span class="attrtag">content-type</span></a> <a href="n-kxj0.html" target="main"><span class="attrname">Type of Content</span></a></h5><h5 class="header"><a href="n-fdp0.html" target="main"><span class="attrtag">id</span></a> <a href="n-fdp0.html" target="main"><span class="attrname">Document Internal Identifier</span></a></h5><h5 class="header"><a href="n-t790.html" target="main"><span class="attrtag">specific-use</span></a> <a href="n-t790.html" target="main"><span class="attrname">Specific Use</span></a></h5><h5 class="header"><a href="n-jim0.html" target="main"><span class="attrtag">xml:base</span></a> <a href="n-jim0.html" target="main"><span class="attrname">Base</span></a></h5><h5 class="header"><a href="n-tkz0.html" target="main"><span class="attrtag">xml:lang</span></a> <a href="n-tkz0.html" target="main"><span class="attrname">Language</span></a></h5></div><div class="contentmodel"><h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  rt           (#PCDATA <a href="n-6gw2.html" target="main" title="Ruby Textual Annotation Elements"><span class="petag">%rt-elements;</span></a>)*                     &gt;</pre></div><div class="contentmodel"><h2 class="header">Expanded Content Model</h2><p class="contentdesc">(#PCDATA)*</p></div><div class="modeldesc"><h2 class="header">Description</h2><p class="para">Text, numbers, or special characters, zero or more</p></div><div class="elementcontext"><h3 class="header">This element may be contained in:</h3><p class="para"><a href="n-wng0.html" target="main" title="Ruby Annotation Wrapper"><span class="elementtag">&lt;ruby&gt;</span></a></p></div><div class="examp.group"><h3 class="header">Example 1</h3><div class="formatexamp"><img class="image.desc" src="graphics/ruby2.png"></div><div class="taggedexamp"><pre class="taggedtext">
+  
+...
+&lt;p&gt;... 畿内や西日本一帯では&lt;ruby&gt;&lt;rb&gt;麦&lt;/rb&gt;
+<strong><span class="focus">&lt;rt&gt;むぎ&lt;/rt&gt;</span></strong>&lt;/ruby&gt;を&lt;ruby&gt;&lt;rb&gt;裏&lt;/rb&gt;<strong><span class="focus">&lt;rt&gt;うら&lt;/rt&gt;</span></strong>&lt;/ruby&gt;
+&lt;ruby&gt;&lt;rb&gt;作&lt;/rb&gt;<strong><span class="focus">&lt;rt&gt;さく&lt;/rt&gt;</span></strong>&lt;/ruby&gt;とする二毛作が普及していった。
+...&lt;/p&gt;
+...
+
+
+  </pre></div></div><div class="examp.group"><h3 class="header">Example 2</h3><div class="formatexamp"><img class="image.desc" src="graphics/ruby-scotland-yard.png"></div><div class="taggedexamp"><pre class="taggedtext">
+  
+...
+&lt;p&gt;... あの&lt;ruby&gt;&lt;rb&gt;ロンドン警視庁&lt;/rb&gt;
+<strong><span class="focus">&lt;rt xml:lang="en"&gt;Scotland Yard&lt;/rt&gt;</span></strong>&lt;/ruby&gt;は霧の中に隠れていた。 
+or
+あの&lt;ruby&gt;&lt;rb&gt;ロンドン警視庁&lt;/rb&gt;
+<strong><span class="focus">&lt;rt xml:lang="ja"&gt;ろんどんけいしちょう&lt;/rt&gt;</span></strong>
+&lt;/ruby&gt;は霧の中に隠れていた。 ...&lt;/p&gt;
+...
+
+
+  </pre></div></div><div class="examp.group"><h3 class="header">Example 3</h3><div class="taggedexamp"><pre class="taggedtext">
+  
+...
+&lt;p&gt;In the midst of the document text, we find:
+&lt;ruby&gt;&lt;rb&gt;多武峰&lt;/rb&gt;<strong><span class="focus">&lt;rt&gt;とうのみね&lt;/rt&gt;</span></strong>&lt;/ruby&gt;, 
+and yet another example:
+&lt;ruby&gt;&lt;rb&gt;汉&lt;/rb&gt;<strong><span class="focus">&lt;rt&gt;hàn&lt;/rt&gt;</span></strong>&lt;/ruby&gt;
+&lt;ruby&gt;&lt;rb&gt;字&lt;/rb&gt;<strong><span class="focus">&lt;rt&gt;zì&lt;/rt&gt;</span></strong>&lt;/ruby&gt;.
+&lt;/p&gt;
+...
+
+
+  </pre></div></div><div class="moduledefined"><h2 class="header">Module</h2><p class="moduledefined">JATS-format1.ent</p></div><div class="pagefooter"><h2 class="headname">Journal Publishing Tag Library  NISO JATS Draft Version 1.1d1</h2><h4 class="pubdate">Version of December 2013</h4></div></body></html>
