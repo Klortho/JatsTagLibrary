@@ -1,7 +1,139 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008--><link rel="stylesheet" href="auto-css.css" type="text/css"><title>Element: Compound Keyword</title></head><body class="main"><div class="pageheader"><h2 class="headname">Journal Archiving and Interchange Tag Library NISO JATS Draft Version 1.1d1</h2><h4 class="sponsor">National Center for Biotechnology Information (NCBI)<br class="linebrk"> National Library of
-   Medicine (NLM)</h4></div><div class="header"><h1 class="elementtag">&lt;compound-kwd&gt;</h1><h1 class="elementname">Compound Keyword</h1></div><div class="definition"><p class="para">Wrapper element for multi-part keywords (for example, a code and its meaning).</p></div><div class="remarks"><h2 class="header">Remarks</h2><p class="para"><strong>Related Essay:</strong> For a discussion on the use of <span class="elementtag">&lt;compound-kwd&gt;</span>, see <a href="n-6th2.html#arc-tag-keywords">Keywords</a>.</p><p class="para">Some keywords are a simple word or phrase; such keywords should generally be tagged using the <a href="n-hff0.html" target="main" title="Keyword"><span class="elementtag">&lt;kwd&gt;</span></a> element. The <a href="n-uta0.html" target="main" title="Compound Keyword"><span class="elementtag">&lt;compound-kwd&gt;</span></a> element is used when keywords are composed of multiple parts, such as a code and its meaning. For more information on the handling of compound keywords, see the tagging practices section <a href="n-6th2.html#arc-kwd-compound-kwds">Complex/Compound/Nested Keywords</a>.</p><p class="para">More complicated keywords with two parts include: <ul class="bullist"><li>a code and a term together </li><li>an abbreviation and its expansion 
- </li></ul> </p></div><div class="attrlist"><h2 class="header">Attributes</h2><h5 class="header"><a href="n-mf32.html" target="main"><span class="attrtag">content-type</span></a> <a href="n-mf32.html" target="main"><span class="attrname">Type of Content</span></a></h5><h5 class="header"><a href="n-z952.html" target="main"><span class="attrtag">id</span></a> <a href="n-z952.html" target="main"><span class="attrname">Document Internal Identifier</span></a></h5><h5 class="header"><a href="n-k2x2.html" target="main"><span class="attrtag">xml:base</span></a> <a href="n-k2x2.html" target="main"><span class="attrname">Base</span></a></h5></div><div class="relatedelem"><h2 class="header">Related Elements</h2><p class="para">This Tag Set contains several differently-structured types of keywords:<ul class="bullist"><li><a href="n-hff0.html" target="main" title="Keyword"><span class="elementtag">&lt;kwd&gt;</span></a> is used with simple keywords: words or phrases. </li><li>
-       <a href="n-uta0.html" target="main" title="Compound Keyword"><span class="elementtag">&lt;compound-kwd&gt;</span></a> is used with multi-part keywords, such as a keyword that is a code-and-term pair.</li><li> <a href="n-bx60.html" target="main" title="Nested Keyword"><span class="elementtag">&lt;nested-kwd&gt;</span></a> is used with hierarchical keywords structures, such as taxonomies, to record a portion of a taxonomic hierarchy. Both simple and compound keywords can be nested hierarchically.</li><li><a href="n-kqk2.html" target="main" title="Unstructured Keyword Group"><span class="elementtag">&lt;unstructured-kwd-group&gt;</span></a> is used to hold on long keyword, in which the multiple constituent keywords are not tagged individually.</li></ul></p></div><div class="contentmodel"><h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  compound-kwd <a href="n-x3s2.html" target="main" title="Compound Keyword Model"><span class="petag">%compound-kwd-model;</span></a>                         &gt;</pre></div><div class="contentmodel"><h2 class="header">Expanded Content Model</h2><p class="contentdesc">(compound-kwd-part+)</p></div><div class="modeldesc"><h2 class="header">Description</h2><p class="para"><a href="n-tea0.html" target="main" title="Compound Keyword Part"><span class="elementtag">&lt;compound-kwd-part&gt;</span></a> <a href="n-tea0.html" target="main" title="<compound-kwd-part&gt;"><span class="elementname">Compound Keyword Part</span></a>, one or more</p></div><div class="elementcontext"><h3 class="header">This element may be contained in:</h3><p class="para"><a href="n-wyf0.html" target="main" title="Keyword Group"><span class="elementtag">&lt;kwd-group&gt;</span></a>, <a href="n-bx60.html" target="main" title="Nested Keyword"><span class="elementtag">&lt;nested-kwd&gt;</span></a></p></div><div class="examp.group"><h3 class="header">Example 1</h3><p class="para">Keywords for codes and their expansions:</p><div class="taggedexamp"><pre class="taggedtext">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta name="generator" content="HTML Tidy for Linux/x86 (vers 25 March 2009), see www.w3.org" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008-->
+  <link rel="stylesheet" href="auto-css.css" type="text/css" />
+
+  <title>Element: Compound Keyword</title>
+</head>
+
+<body class="main">
+  <div class="pageheader">
+    <h2 class="headname">Journal Archiving and Interchange Tag Library NISO JATS Draft Version
+    1.1d1</h2>
+
+    <h4 class="sponsor">National Center for Biotechnology Information (NCBI)<br class="linebrk" />
+    National Library of Medicine (NLM)</h4>
+  </div>
+
+  <div class="header">
+    <h1 class="elementtag">&lt;compound-kwd&gt;</h1>
+
+    <h1 class="elementname">Compound Keyword</h1>
+  </div>
+
+  <div class="definition">
+    <p class="para">Wrapper element for multi-part keywords (for example, a code and its
+    meaning).</p>
+  </div>
+
+  <div class="remarks">
+    <h2 class="header">Remarks</h2>
+
+    <p class="para"><strong>Related Essay:</strong> For a discussion on the use of <span class=
+    "elementtag">&lt;compound-kwd&gt;</span>, see <a href=
+    "n-6th2.html#arc-tag-keywords">Keywords</a>.</p>
+
+    <p class="para">Some keywords are a simple word or phrase; such keywords should generally be
+    tagged using the <a href="n-hff0.html" target="main" title="Keyword"><span class=
+    "elementtag">&lt;kwd&gt;</span></a> element. The <a href="n-uta0.html" target="main" title=
+    "Compound Keyword"><span class="elementtag">&lt;compound-kwd&gt;</span></a> element is used
+    when keywords are composed of multiple parts, such as a code and its meaning. For more
+    information on the handling of compound keywords, see the tagging practices section <a href=
+    "n-6th2.html#arc-kwd-compound-kwds">Complex/Compound/Nested Keywords</a>.</p>
+
+    <p class="para">More complicated keywords with two parts include:</p>
+
+    <ul class="bullist">
+      <li>a code and a term together</li>
+
+      <li>an abbreviation and its expansion</li>
+    </ul>
+  </div>
+
+  <div class="attrlist">
+    <h2 class="header">Attributes</h2>
+
+    <h5 class="header"><a href="n-mf32.html" target="main"><span class=
+    "attrtag">content-type</span></a> <a href="n-mf32.html" target="main"><span class=
+    "attrname">Type of Content</span></a></h5>
+
+    <h5 class="header"><a href="n-z952.html" target="main"><span class="attrtag">id</span></a>
+    <a href="n-z952.html" target="main"><span class="attrname">Document Internal
+    Identifier</span></a></h5>
+
+    <h5 class="header"><a href="n-k2x2.html" target="main"><span class=
+    "attrtag">xml:base</span></a> <a href="n-k2x2.html" target="main"><span class=
+    "attrname">Base</span></a></h5>
+  </div>
+
+  <div class="relatedelem">
+    <h2 class="header">Related Elements</h2>
+
+    <p class="para">This Tag Set contains several differently-structured types of keywords:</p>
+
+    <ul class="bullist">
+      <li><a href="n-hff0.html" target="main" title="Keyword"><span class=
+      "elementtag">&lt;kwd&gt;</span></a> is used with simple keywords: words or phrases.</li>
+
+      <li><a href="n-uta0.html" target="main" title="Compound Keyword"><span class=
+      "elementtag">&lt;compound-kwd&gt;</span></a> is used with multi-part keywords, such as a
+      keyword that is a code-and-term pair.</li>
+
+      <li><a href="n-bx60.html" target="main" title="Nested Keyword"><span class=
+      "elementtag">&lt;nested-kwd&gt;</span></a> is used with hierarchical keywords structures,
+      such as taxonomies, to record a portion of a taxonomic hierarchy. Both simple and compound
+      keywords can be nested hierarchically.</li>
+
+      <li><a href="n-kqk2.html" target="main" title="Unstructured Keyword Group"><span class=
+      "elementtag">&lt;unstructured-kwd-group&gt;</span></a> is used to hold on long keyword, in
+      which the multiple constituent keywords are not tagged individually.</li>
+    </ul>
+  </div>
+
+  <div class="contentmodel">
+    <h2 class="header first">Content Model</h2>
+    <pre class="contentdesc">
+&lt;!ELEMENT  compound-kwd <a href="n-x3s2.html" target="main" title=
+"Compound Keyword Model"><span class=
+"petag">%compound-kwd-model;</span></a>                         &gt;
+</pre>
+  </div>
+
+  <div class="contentmodel">
+    <h2 class="header">Expanded Content Model</h2>
+
+    <p class="contentdesc">(compound-kwd-part+)</p>
+  </div>
+
+  <div class="modeldesc">
+    <h2 class="header">Description</h2>
+
+    <p class="para"><a href="n-tea0.html" target="main" title="Compound Keyword Part"><span class=
+    "elementtag">&lt;compound-kwd-part&gt;</span></a> <a href="n-tea0.html" target="main" title=
+    "&lt;compound-kwd-part&gt;"><span class="elementname">Compound Keyword Part</span></a>, one or
+    more</p>
+  </div>
+
+  <div class="elementcontext">
+    <h3 class="header">This element may be contained in:</h3>
+
+    <p class="para"><a href="n-wyf0.html" target="main" title="Keyword Group"><span class=
+    "elementtag">&lt;kwd-group&gt;</span></a>, <a href="n-bx60.html" target="main" title=
+    "Nested Keyword"><span class="elementtag">&lt;nested-kwd&gt;</span></a></p>
+  </div>
+
+  <div class="examp.group">
+    <h3 class="header">Example 1</h3>
+
+    <p class="para">Keywords for codes and their expansions:</p>
+
+    <div class="taggedexamp">
+      <pre class="taggedtext">
 ...
 &lt;article-meta&gt;
 ...  
@@ -23,7 +155,11 @@ and applications&lt;/compound-kwd-part&gt;
 &lt;/kwd-group&gt;
 &lt;/article-meta&gt;
 ...
-</pre></div><div class="taggedexamp"><pre class="taggedtext">
+</pre>
+    </div>
+
+    <div class="taggedexamp">
+      <pre class="taggedtext">
 ...
 &lt;article-meta&gt;
 ...
@@ -46,7 +182,11 @@ and applications&lt;/compound-kwd-part&gt;
 &lt;/article-meta&gt;
 ...
 
-</pre></div><div class="taggedexamp"><pre class="taggedtext">
+</pre>
+    </div>
+
+    <div class="taggedexamp">
+      <pre class="taggedtext">
 
 ... 
 &lt;kwd-group&gt; 
@@ -58,7 +198,17 @@ and applications&lt;/compound-kwd-part&gt;
 &lt;/kwd-group&gt;
 ...
 
-</pre></div></div><div class="examp.group"><h3 class="header">Example 2</h3><p class="para">Keywords used for abbreviations and their expansions:</p><div class="taggedexamp"><pre class="taggedtext">
+</pre>
+    </div>
+  </div>
+
+  <div class="examp.group">
+    <h3 class="header">Example 2</h3>
+
+    <p class="para">Keywords used for abbreviations and their expansions:</p>
+
+    <div class="taggedexamp">
+      <pre class="taggedtext">
 ...
 &lt;article-meta&gt;
 ...
@@ -81,7 +231,17 @@ and applications&lt;/compound-kwd-part&gt;
 &lt;/article-meta&gt;
 ...
 
-</pre></div></div><div class="examp.group"><h3 class="header">Example 3</h3><p class="para">Coded keywords (including Japanese):</p><div class="taggedexamp"><pre class="taggedtext">
+</pre>
+    </div>
+  </div>
+
+  <div class="examp.group">
+    <h3 class="header">Example 3</h3>
+
+    <p class="para">Coded keywords (including Japanese):</p>
+
+    <div class="taggedexamp">
+      <pre class="taggedtext">
 ...
 &lt;article-meta&gt;
 ...
@@ -94,4 +254,21 @@ and applications&lt;/compound-kwd-part&gt;
 &lt;/article-meta&gt;
 ...
 
-</pre></div></div><div class="moduledefined"><h2 class="header">Module</h2><p class="moduledefined">JATS-articlemeta1.ent</p></div><div class="pagefooter"><h2 class="headname">Journal Archiving and Interchange Tag Library NISO JATS Draft Version 1.1d1</h2><h4 class="pubdate">Version of December 2013</h4></div></body></html>
+</pre>
+    </div>
+  </div>
+
+  <div class="moduledefined">
+    <h2 class="header">Module</h2>
+
+    <p class="moduledefined">JATS-articlemeta1.ent</p>
+  </div>
+
+  <div class="pagefooter">
+    <h2 class="headname">Journal Archiving and Interchange Tag Library NISO JATS Draft Version
+    1.1d1</h2>
+
+    <h4 class="pubdate">Version of December 2013</h4>
+  </div>
+</body>
+</html>

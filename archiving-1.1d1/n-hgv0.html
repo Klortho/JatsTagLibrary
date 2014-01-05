@@ -1,13 +1,759 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008--><link rel="stylesheet" href="auto-css.css" type="text/css"><title>Element: Element Citation</title></head><body class="main"><div class="pageheader"><h2 class="headname">Journal Archiving and Interchange Tag Library NISO JATS Draft Version 1.1d1</h2><h4 class="sponsor">National Center for Biotechnology Information (NCBI)<br class="linebrk"> National Library of
-   Medicine (NLM)</h4></div><div class="header"><h1 class="elementtag">&lt;element-citation&gt;</h1><h1 class="elementname">Element Citation</h1></div><div class="definition"><p class="para">Bibliographic description of a work. Includes bibliographic reference elements only.
-            Does not include untagged text, spacing, or punctuation.</p></div><div class="remarks"><h2 class="header">Remarks</h2><p class="para">This element is composed of bibliographic descriptive elements (such as
-              <span class="elementtag">&lt;article-title&gt;</span> and <span class="elementtag">&lt;fpage&gt;</span>) in any order, repeated as needed, with no
-              untagged text and all the punctuation and spacing between elements removed.</p><p class="para">This element is intended for capturing a publisher’s specific element order; therefore, it does not enforce a particular element order on its own.</p><p class="para"><strong>Related Essay:</strong> For a discussion on the use of <span class="elementtag">&lt;element-citation&gt;</span>, see <a href="n-7mh2.html#arc-tag-citation">Tagging Bibliographic References</a>.</p><p class="para"><strong>Best Practice:</strong> Although this Tag Set does not enforce it, best practice is to tag as many of the following elements as possible within an <span class="elementtag">&lt;element-citation&gt;</span> to a journal article or a book, so that PubMed Central, CrossRef, or other matching service can make the journal citation into a live link. <div class="deflist"><table class="deflisttable"><tr class="row1"><td class="dterm"><p>source</p></td><td class="ddef"><p class="para">The title of the journal in which the cited article was published. (For journal titles, publishers and archives typically establish authority lists; for example, in PubMed Central processing, the journal title source is usually the NLM title abbreviation of the journal name <tt>&lt;source&gt;Physiol Rev&lt;/source&gt;</tt>.) For book citations, this is the title of the book: <tt>&lt;source&gt;Moby Dick&lt;/source&gt;</tt>.</p></td></tr><tr class="row0"><td class="dterm"><p>article-title</p></td><td class="ddef"><p class="para">Title of the article (Use the <a href="n-bap0.html" target="main" title="Source"><span class="elementtag">&lt;source&gt;</span></a> element for titles of books, reports, conference proceedings, etc.) </p></td></tr><tr class="row1"><td class="dterm"><p>volume</p></td><td class="ddef"><p class="para">Number of the applicable volume of the journal </p></td></tr><tr class="row0"><td class="dterm"><p>issue</p></td><td class="ddef"><p class="para">Issue number of the applicable issue </p></td></tr><tr class="row1"><td class="dterm"><p>fpage</p></td><td class="ddef"><p class="para">Page number on which the article starts </p></td></tr><tr class="row0"><td class="dterm"><p>surname</p></td><td class="ddef"><p class="para">Surname (familial name) of an author or editor (This element is used inside a <a href="n-6pn0.html" target="main" title="Name of Person"><span class="elementtag">&lt;name&gt;</span></a> element or <a href="n-rfq0.html" target="main" title="Name of Person (Unstructured)"><span class="elementtag">&lt;string-name&gt;</span></a> element which is repeated when multiple authors must be listed.) </p></td></tr><tr class="row1"><td class="dterm"><p>year</p></td><td class="ddef"><p class="para">The year of publication </p></td></tr><tr class="row0"><td class="dterm"><p>month</p></td><td class="ddef"><p class="para">The month of publication (if present) </p></td></tr><tr class="row1"><td class="dterm"><p>day</p></td><td class="ddef"><p class="para">The day of month of publication (if present) </p></td></tr></table></div>Other elements inside a citation may also be tagged if desired.</p><p class="para"><strong>Linking Best Practice:</strong> In order to make citations into live links, as much of the author and date information as is available should be preserved, even if it not possible to tag all the elements just named. The most important date tag is <a href="n-vwc2.html" target="main" title="Year"><span class="elementtag">&lt;year&gt;</span></a>, and it should always be tagged if possible, for example, <tt>&lt;year&gt;2008&lt;/year&gt;</tt>. The <a href="n-f4x0.html" target="main" title="Day"><span class="elementtag">&lt;day&gt;</span></a> and <a href="n-4yn0.html" target="main" title="Month"><span class="elementtag">&lt;month&gt;</span></a> tags are used more rarely; they are provided because some of the citation matching services can use the month and day information if it is available.</p><p class="para"><strong>Information Typing Best Practice:</strong> The <a href="n-aqa2.html" target="main" title="Type of Referenced Publication"><span class="attrtag">@publication-type</span></a> attribute should normally be used to distinguish between journal articles, books, reviews, personal communications, and so on.</p><p class="para"><strong>Historical Note:</strong> This element is one of the elements that replaces the
-<tt>&lt;citation&gt;</tt> element from previous versions of this Tag Set.</p></div><div class="attrlist"><h2 class="header">Attributes</h2><h5 class="header"><a href="n-z952.html" target="main"><span class="attrtag">id</span></a> <a href="n-z952.html" target="main"><span class="attrname">Document Internal Identifier</span></a></h5><h5 class="header"><a href="n-3ja2.html" target="main"><span class="attrtag">publication-format</span></a> <a href="n-3ja2.html" target="main"><span class="attrname">Format of Publication</span></a></h5><h5 class="header"><a href="n-aqa2.html" target="main"><span class="attrtag">publication-type</span></a> <a href="n-aqa2.html" target="main"><span class="attrname">Type of Referenced Publication</span></a></h5><h5 class="header"><a href="n-yba2.html" target="main"><span class="attrtag">publisher-type</span></a> <a href="n-yba2.html" target="main"><span class="attrname">Type of Publisher</span></a></h5><h5 class="header"><a href="n-zhu2.html" target="main"><span class="attrtag">specific-use</span></a> <a href="n-zhu2.html" target="main"><span class="attrname">Specific Use</span></a></h5><h5 class="header"><a href="n-mfw2.html" target="main"><span class="attrtag">xlink:actuate</span></a> <a href="n-mfw2.html" target="main"><span class="attrname">Actuating the Link</span></a></h5><h5 class="header"><a href="n-znw2.html" target="main"><span class="attrtag">xlink:href</span></a> <a href="n-znw2.html" target="main"><span class="attrname">Href (Linking Mechanism)</span></a></h5><h5 class="header"><a href="n-3rw2.html" target="main"><span class="attrtag">xlink:role</span></a> <a href="n-3rw2.html" target="main"><span class="attrname">Role of the Link</span></a></h5><h5 class="header"><a href="n-hhw2.html" target="main"><span class="attrtag">xlink:show</span></a> <a href="n-hhw2.html" target="main"><span class="attrname">Showing the Link</span></a></h5><h5 class="header"><a href="n-byw2.html" target="main"><span class="attrtag">xlink:title</span></a> <a href="n-byw2.html" target="main"><span class="attrname">Title of the Link</span></a></h5><h5 class="header"><a href="n-npw2.html" target="main"><span class="attrtag">xlink:type</span></a> <a href="n-npw2.html" target="main"><span class="attrname">Type of Link</span></a></h5><h5 class="header"><a href="n-2mw2.html" target="main"><span class="attrtag">xmlns:xlink</span></a> <a href="n-2mw2.html" target="main"><span class="attrname">XLink Namespace Declaration</span></a></h5><h5 class="header"><a href="n-k2x2.html" target="main"><span class="attrtag">xml:base</span></a> <a href="n-k2x2.html" target="main"><span class="attrname">Base</span></a></h5><h5 class="header"><a href="n-pxx2.html" target="main"><span class="attrtag">xml:lang</span></a> <a href="n-pxx2.html" target="main"><span class="attrname">Language</span></a></h5></div><div class="relatedelem"><h2 class="header">Related Elements</h2><p class="para">This <span class="elementtag">&lt;element-citation&gt;</span> element contains the bibliographic description of a work; the pointer to that description uses the <span class="elementtag">&lt;xref&gt;</span> element. These two elements are sometimes confused because in common language both may be called “citations”.</p><p class="para">There are three kinds of citations in this Tag Set: <ul class="bullist"><li>The element <span class="elementtag">&lt;element-citation&gt;</span>, which has element-only content, no interior punctuation or spacing, and allows the components of the citation to be in any order.</li><li>The element <a href="n-m3n0.html" target="main" title="Mixed Citation"><span class="elementtag">&lt;mixed-citation&gt;</span></a>, which has textual content, with all interior punctuation and spacing preserved, and allows the components of the citation to be in any order.</li><li>Deprecated. The deprecated element  <a href="n-is60.html" target="main" title="NLM Citation"><span class="elementtag">&lt;nlm-citation&gt;</span></a>, which has element-only content, no interior punctuation or spacing, and requires the components of the citation to be in a specific order. This element was used in previous versions of this Tag Set and is now deprecated.</li></ul> </p></div><div class="contentmodel"><h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  element-citation
-                        (<a href="n-2i42.html" target="main" title="Citation Elements"><span class="petag">%citation-elements;</span></a>)+                       &gt;</pre></div><div class="contentmodel"><h2 class="header">Expanded Content Model</h2><p class="contentdesc">(inline-supplementary-material | related-article | related-object | hr | string-date | bold | fixed-case | italic | monospace | overline | overline-start | overline-end | roman | sans-serif | sc | strike | underline | underline-start | underline-end | ruby | alternatives | inline-graphic | private-char | chem-struct | inline-formula | label | tex-math | mml:math | abbrev | milestone-end | milestone-start | named-content | styled-content | annotation | article-title | chapter-title | collab | collab-alternatives | comment | conf-date | conf-loc | conf-name | conf-sponsor | date | date-in-citation | day | edition | email | elocation-id | etal | ext-link | fpage | gov | institution | institution-wrap | isbn | issn | issn-l | issue | issue-id | issue-part | issue-title | lpage | month | name | name-alternatives | object-id | page-range | part-title | patent | person-group | pub-id | publisher-loc | publisher-name | role | season | series | size | source | std | string-name | supplement | trans-source | trans-title | uri | volume | volume-id | volume-series | year | fn | target | xref | sub | sup | x)+</p></div><div class="modeldesc"><h2 class="header">Description</h2><p class="para">One or more of any of:<ul class="bullist"><li><a href="n-4f70.html" target="main" title="Inline Supplementary Material"><span class="elementtag">&lt;inline-supplementary-material&gt;</span></a> <a href="n-4f70.html" target="main" title="<inline-supplementary-material&gt;"><span class="elementname">Inline Supplementary Material</span></a></li><li><a href="n-4ai0.html" target="main" title="Related Article Information"><span class="elementtag">&lt;related-article&gt;</span></a> <a href="n-4ai0.html" target="main" title="<related-article&gt;"><span class="elementname">Related Article Information</span></a></li><li><a href="n-zgi0.html" target="main" title="Related Object Information"><span class="elementtag">&lt;related-object&gt;</span></a> <a href="n-zgi0.html" target="main" title="<related-object&gt;"><span class="elementname">Related Object Information</span></a></li><li><a href="n-du70.html" target="main" title="Horizontal Rule"><span class="elementtag">&lt;hr&gt;</span></a> <a href="n-du70.html" target="main" title="<hr&gt;"><span class="elementname">Horizontal Rule</span></a></li><li><a href="n-rvq0.html" target="main" title="Date as a String"><span class="elementtag">&lt;string-date&gt;</span></a> <a href="n-rvq0.html" target="main" title="<string-date&gt;"><span class="elementname">Date as a String</span></a></li><li>Emphasis Elements<ul class="bullist"><li><a href="n-bi50.html" target="main" title="Bold"><span class="elementtag">&lt;bold&gt;</span></a> <a href="n-bi50.html" target="main" title="<bold&gt;"><span class="elementname">Bold</span></a></li><li><a href="n-cas0.html" target="main" title="Fixed Case"><span class="elementtag">&lt;fixed-case&gt;</span></a> <a href="n-cas0.html" target="main" title="<fixed-case&gt;"><span class="elementname">Fixed Case</span></a></li><li><a href="n-wqe0.html" target="main" title="Italic"><span class="elementtag">&lt;italic&gt;</span></a> <a href="n-wqe0.html" target="main" title="<italic&gt;"><span class="elementname">Italic</span></a></li><li><a href="n-26n0.html" target="main" title="Monospace Text (Typewriter Text)"><span class="elementtag">&lt;monospace&gt;</span></a> <a href="n-26n0.html" target="main" title="<monospace&gt;"><span class="elementname">Monospace Text (Typewriter Text)</span></a></li><li><a href="n-72d0.html" target="main" title="Overline"><span class="elementtag">&lt;overline&gt;</span></a> <a href="n-72d0.html" target="main" title="<overline&gt;"><span class="elementname">Overline</span></a></li><li><a href="n-2wd0.html" target="main" title="Overline Start"><span class="elementtag">&lt;overline-start&gt;</span></a> <a href="n-2wd0.html" target="main" title="<overline-start&gt;"><span class="elementname">Overline Start</span></a></li><li><a href="n-dad0.html" target="main" title="Overline End"><span class="elementtag">&lt;overline-end&gt;</span></a> <a href="n-dad0.html" target="main" title="<overline-end&gt;"><span class="elementname">Overline End</span></a></li><li><a href="n-say0.html" target="main" title="Roman"><span class="elementtag">&lt;roman&gt;</span></a> <a href="n-say0.html" target="main" title="<roman&gt;"><span class="elementname">Roman</span></a></li><li><a href="n-gey0.html" target="main" title="Sans Serif"><span class="elementtag">&lt;sans-serif&gt;</span></a> <a href="n-gey0.html" target="main" title="<sans-serif&gt;"><span class="elementname">Sans Serif</span></a></li><li><a href="n-ary0.html" target="main" title="Small Caps"><span class="elementtag">&lt;sc&gt;</span></a> <a href="n-ary0.html" target="main" title="<sc&gt;"><span class="elementname">Small Caps</span></a></li><li><a href="n-ezp0.html" target="main" title="Strike Through"><span class="elementtag">&lt;strike&gt;</span></a> <a href="n-ezp0.html" target="main" title="<strike&gt;"><span class="elementname">Strike Through</span></a></li><li><a href="n-bnk2.html" target="main" title="Underline"><span class="elementtag">&lt;underline&gt;</span></a> <a href="n-bnk2.html" target="main" title="<underline&gt;"><span class="elementname">Underline</span></a></li><li><a href="n-hjk2.html" target="main" title="Underline Start"><span class="elementtag">&lt;underline-start&gt;</span></a> <a href="n-hjk2.html" target="main" title="<underline-start&gt;"><span class="elementname">Underline Start</span></a></li><li><a href="n-syk2.html" target="main" title="Underline End"><span class="elementtag">&lt;underline-end&gt;</span></a> <a href="n-syk2.html" target="main" title="<underline-end&gt;"><span class="elementname">Underline End</span></a></li><li><a href="n-ety0.html" target="main" title="Ruby Annotation Wrapper"><span class="elementtag">&lt;ruby&gt;</span></a> <a href="n-ety0.html" target="main" title="<ruby&gt;"><span class="elementname">Ruby Annotation Wrapper</span></a></li></ul></li><li><a href="n-2ec0.html" target="main" title="Alternatives For Processing"><span class="elementtag">&lt;alternatives&gt;</span></a> <a href="n-2ec0.html" target="main" title="<alternatives&gt;"><span class="elementname">Alternatives For Processing</span></a></li><li>Inline Display Elements<ul class="bullist"><li><a href="n-x770.html" target="main" title="Graphic, Inline"><span class="elementtag">&lt;inline-graphic&gt;</span></a> <a href="n-x770.html" target="main" title="<inline-graphic&gt;"><span class="elementname">Graphic, Inline</span></a></li><li><a href="n-6pr0.html" target="main" title="Private Character (Custom or Unicode)"><span class="elementtag">&lt;private-char&gt;</span></a> <a href="n-6pr0.html" target="main" title="<private-char&gt;"><span class="elementname">Private Character (Custom or Unicode)</span></a></li></ul></li><li><a href="n-z480.html" target="main" title="Chemical Structure (Display)"><span class="elementtag">&lt;chem-struct&gt;</span></a> <a href="n-z480.html" target="main" title="<chem-struct&gt;"><span class="elementname">Chemical Structure (Display)</span></a></li><li><a href="n-gw70.html" target="main" title="Formula, Inline"><span class="elementtag">&lt;inline-formula&gt;</span></a> <a href="n-gw70.html" target="main" title="<inline-formula&gt;"><span class="elementname">Formula, Inline</span></a></li><li><a href="n-sqf0.html" target="main" title="Label (of an Equation, Figure, Reference, etc.)"><span class="elementtag">&lt;label&gt;</span></a> <a href="n-sqf0.html" target="main" title="<label&gt;"><span class="elementname">Label (of an Equation, Figure, Reference, etc.)</span></a></li><li>Math Elements<ul class="bullist"><li><a href="n-skz0.html" target="main" title="TeX Math Equation"><span class="elementtag">&lt;tex-math&gt;</span></a> <a href="n-skz0.html" target="main" title="<tex-math&gt;"><span class="elementname">TeX Math Equation</span></a></li><li><a href="n-cgn0.html" target="main" title="Math (MathML Tag Set)"><span class="elementtag">&lt;mml:math&gt;</span></a> <a href="n-cgn0.html" target="main" title="<mml:math&gt;"><span class="elementname">Math (MathML Tag Set)</span></a></li></ul></li><li>Other Inline Elements<ul class="bullist"><li><a href="n-9p00.html" target="main" title="Abbreviation or Acronym"><span class="elementtag">&lt;abbrev&gt;</span></a> <a href="n-9p00.html" target="main" title="<abbrev&gt;"><span class="elementname">Abbreviation or Acronym</span></a></li><li><a href="n-7cn0.html" target="main" title="Milestone End"><span class="elementtag">&lt;milestone-end&gt;</span></a> <a href="n-7cn0.html" target="main" title="<milestone-end&gt;"><span class="elementname">Milestone End</span></a></li><li><a href="n-a3n0.html" target="main" title="Milestone Start"><span class="elementtag">&lt;milestone-start&gt;</span></a> <a href="n-a3n0.html" target="main" title="<milestone-start&gt;"><span class="elementname">Milestone Start</span></a></li><li><a href="n-qk60.html" target="main" title="Named Special (Subject) Content"><span class="elementtag">&lt;named-content&gt;</span></a> <a href="n-qk60.html" target="main" title="<named-content&gt;"><span class="elementname">Named Special (Subject) Content</span></a></li><li><a href="n-piq0.html" target="main" title="Styled Special (Subject) Content"><span class="elementtag">&lt;styled-content&gt;</span></a> <a href="n-piq0.html" target="main" title="<styled-content&gt;"><span class="elementname">Styled Special (Subject) Content</span></a></li></ul></li><li><a href="n-nnc0.html" target="main" title="Annotation in a Citation"><span class="elementtag">&lt;annotation&gt;</span></a> <a href="n-nnc0.html" target="main" title="<annotation&gt;"><span class="elementname">Annotation in a Citation</span></a></li><li><a href="n-e630.html" target="main" title="Article Title"><span class="elementtag">&lt;article-title&gt;</span></a> <a href="n-e630.html" target="main" title="<article-title&gt;"><span class="elementname">Article Title</span></a></li><li><a href="n-da80.html" target="main" title="Chapter Title in a Citation"><span class="elementtag">&lt;chapter-title&gt;</span></a> <a href="n-da80.html" target="main" title="<chapter-title&gt;"><span class="elementname">Chapter Title in a Citation</span></a></li><li><a href="n-xz80.html" target="main" title="Collaborative (Group) Author"><span class="elementtag">&lt;collab&gt;</span></a> <a href="n-xz80.html" target="main" title="<collab&gt;"><span class="elementname">Collaborative (Group) Author</span></a></li><li><a href="n-iaa0.html" target="main" title="Collaboration Alternatives"><span class="elementtag">&lt;collab-alternatives&gt;</span></a> <a href="n-iaa0.html" target="main" title="<collab-alternatives&gt;"><span class="elementname">Collaboration Alternatives</span></a></li><li><a href="n-eua0.html" target="main" title="Comment in a Citation"><span class="elementtag">&lt;comment&gt;</span></a> <a href="n-eua0.html" target="main" title="<comment&gt;"><span class="elementname">Comment in a Citation</span></a></li><li><a href="n-wcu0.html" target="main" title="Conference Date"><span class="elementtag">&lt;conf-date&gt;</span></a> <a href="n-wcu0.html" target="main" title="<conf-date&gt;"><span class="elementname">Conference Date</span></a></li><li><a href="n-y5u0.html" target="main" title="Conference Location"><span class="elementtag">&lt;conf-loc&gt;</span></a> <a href="n-y5u0.html" target="main" title="<conf-loc&gt;"><span class="elementname">Conference Location</span></a></li><li><a href="n-rvu0.html" target="main" title="Conference Name"><span class="elementtag">&lt;conf-name&gt;</span></a> <a href="n-rvu0.html" target="main" title="<conf-name&gt;"><span class="elementname">Conference Name</span></a></li><li><a href="n-yru0.html" target="main" title="Conference Sponsor"><span class="elementtag">&lt;conf-sponsor&gt;</span></a> <a href="n-yru0.html" target="main" title="<conf-sponsor&gt;"><span class="elementname">Conference Sponsor</span></a></li><li><a href="n-75x0.html" target="main" title="Date"><span class="elementtag">&lt;date&gt;</span></a> <a href="n-75x0.html" target="main" title="<date&gt;"><span class="elementname">Date</span></a></li><li><a href="n-iux0.html" target="main" title="Date within a Citation"><span class="elementtag">&lt;date-in-citation&gt;</span></a> <a href="n-iux0.html" target="main" title="<date-in-citation&gt;"><span class="elementname">Date within a Citation</span></a></li><li><a href="n-f4x0.html" target="main" title="Day"><span class="elementtag">&lt;day&gt;</span></a> <a href="n-f4x0.html" target="main" title="<day&gt;"><span class="elementname">Day</span></a></li><li><a href="n-usv0.html" target="main" title="Edition Statement, Cited"><span class="elementtag">&lt;edition&gt;</span></a> <a href="n-usv0.html" target="main" title="<edition&gt;"><span class="elementname">Edition Statement, Cited</span></a></li><li>Linking Elements<ul class="bullist"><li><a href="n-rk40.html" target="main" title="Email Address"><span class="elementtag">&lt;email&gt;</span></a> <a href="n-rk40.html" target="main" title="<email&gt;"><span class="elementname">Email Address</span></a></li><li><a href="n-q740.html" target="main" title="External Link"><span class="elementtag">&lt;ext-link&gt;</span></a> <a href="n-q740.html" target="main" title="<ext-link&gt;"><span class="elementname">External Link</span></a></li><li><a href="n-mzk2.html" target="main" title="Uniform Resource Identifier (URI)"><span class="elementtag">&lt;uri&gt;</span></a> <a href="n-mzk2.html" target="main" title="<uri&gt;"><span class="elementname">Uniform Resource Identifier (URI)</span></a></li></ul></li><li><a href="n-ymv0.html" target="main" title="Electronic Location Identifier"><span class="elementtag">&lt;elocation-id&gt;</span></a> <a href="n-ymv0.html" target="main" title="<elocation-id&gt;"><span class="elementname">Electronic Location Identifier</span></a></li><li><a href="n-aw40.html" target="main" title="Et Al."><span class="elementtag">&lt;etal&gt;</span></a> <a href="n-aw40.html" target="main" title="<etal&gt;"><span class="elementname">Et Al.</span></a></li><li><a href="n-sgs0.html" target="main" title="First Page"><span class="elementtag">&lt;fpage&gt;</span></a> <a href="n-sgs0.html" target="main" title="<fpage&gt;"><span class="elementname">First Page</span></a></li><li><a href="n-cit0.html" target="main" title="Government Report, Cited"><span class="elementtag">&lt;gov&gt;</span></a> <a href="n-cit0.html" target="main" title="<gov&gt;"><span class="elementname">Government Report, Cited</span></a></li><li><a href="n-sh70.html" target="main" title="Institution Name: in an Address"><span class="elementtag">&lt;institution&gt;</span></a> <a href="n-sh70.html" target="main" title="<institution&gt;"><span class="elementname">Institution Name: in an Address</span></a></li><li><a href="n-2z70.html" target="main" title="Institution Wrapper"><span class="elementtag">&lt;institution-wrap&gt;</span></a> <a href="n-2z70.html" target="main" title="<institution-wrap&gt;"><span class="elementname">Institution Wrapper</span></a></li><li><a href="n-bke0.html" target="main" title="ISBN"><span class="elementtag">&lt;isbn&gt;</span></a> <a href="n-bke0.html" target="main" title="<isbn&gt;"><span class="elementname">ISBN</span></a></li><li><a href="n-v3e0.html" target="main" title="ISSN"><span class="elementtag">&lt;issn&gt;</span></a> <a href="n-v3e0.html" target="main" title="<issn&gt;"><span class="elementname">ISSN</span></a></li><li><a href="n-tce0.html" target="main" title="ISSN-L (Linking ISSN)"><span class="elementtag">&lt;issn-l&gt;</span></a> <a href="n-tce0.html" target="main" title="<issn-l&gt;"><span class="elementname">ISSN-L (Linking ISSN)</span></a></li><li><a href="n-v5e0.html" target="main" title="Issue Number"><span class="elementtag">&lt;issue&gt;</span></a> <a href="n-v5e0.html" target="main" title="<issue&gt;"><span class="elementname">Issue Number</span></a></li><li><a href="n-k4e0.html" target="main" title="Issue Identifier"><span class="elementtag">&lt;issue-id&gt;</span></a> <a href="n-k4e0.html" target="main" title="<issue-id&gt;"><span class="elementname">Issue Identifier</span></a></li><li><a href="n-p4e0.html" target="main" title="Issue Part"><span class="elementtag">&lt;issue-part&gt;</span></a> <a href="n-p4e0.html" target="main" title="<issue-part&gt;"><span class="elementname">Issue Part</span></a></li><li><a href="n-uhe0.html" target="main" title="Issue Title"><span class="elementtag">&lt;issue-title&gt;</span></a> <a href="n-uhe0.html" target="main" title="<issue-title&gt;"><span class="elementname">Issue Title</span></a></li><li><a href="n-nfg0.html" target="main" title="Last Page"><span class="elementtag">&lt;lpage&gt;</span></a> <a href="n-nfg0.html" target="main" title="<lpage&gt;"><span class="elementname">Last Page</span></a></li><li><a href="n-4yn0.html" target="main" title="Month"><span class="elementtag">&lt;month&gt;</span></a> <a href="n-4yn0.html" target="main" title="<month&gt;"><span class="elementname">Month</span></a></li><li><a href="n-6pn0.html" target="main" title="Name of Person"><span class="elementtag">&lt;name&gt;</span></a> <a href="n-6pn0.html" target="main" title="<name&gt;"><span class="elementname">Name of Person</span></a></li><li><a href="n-g9n0.html" target="main" title="Name Alternatives"><span class="elementtag">&lt;name-alternatives&gt;</span></a> <a href="n-g9n0.html" target="main" title="<name-alternatives&gt;"><span class="elementname">Name Alternatives</span></a></li><li><a href="n-qy60.html" target="main" title="Object Identifier"><span class="elementtag">&lt;object-id&gt;</span></a> <a href="n-qy60.html" target="main" title="<object-id&gt;"><span class="elementname">Object Identifier</span></a></li><li><a href="n-wdd0.html" target="main" title="Page Ranges"><span class="elementtag">&lt;page-range&gt;</span></a> <a href="n-wdd0.html" target="main" title="<page-range&gt;"><span class="elementname">Page Ranges</span></a></li><li><a href="n-uhd0.html" target="main" title="Part Title in a Citation"><span class="elementtag">&lt;part-title&gt;</span></a> <a href="n-uhd0.html" target="main" title="<part-title&gt;"><span class="elementname">Part Title in a Citation</span></a></li><li><a href="n-fqd0.html" target="main" title="Patent Number, Cited"><span class="elementtag">&lt;patent&gt;</span></a> <a href="n-fqd0.html" target="main" title="<patent&gt;"><span class="elementname">Patent Number, Cited</span></a></li><li><a href="n-2cr0.html" target="main" title="Person Group for a Cited Publication"><span class="elementtag">&lt;person-group&gt;</span></a> <a href="n-2cr0.html" target="main" title="<person-group&gt;"><span class="elementname">Person Group for a Cited Publication</span></a></li><li><a href="n-6xh0.html" target="main" title="Publication Identifier for a Cited Publication"><span class="elementtag">&lt;pub-id&gt;</span></a> <a href="n-6xh0.html" target="main" title="<pub-id&gt;"><span class="elementname">Publication Identifier for a Cited Publication</span></a></li><li><a href="n-m4h0.html" target="main" title="Publisher’s Location"><span class="elementtag">&lt;publisher-loc&gt;</span></a> <a href="n-m4h0.html" target="main" title="<publisher-loc&gt;"><span class="elementname">Publisher’s Location</span></a></li><li><a href="n-vnh0.html" target="main" title="Publisher’s Name"><span class="elementtag">&lt;publisher-name&gt;</span></a> <a href="n-vnh0.html" target="main" title="<publisher-name&gt;"><span class="elementname">Publisher’s Name</span></a></li><li><a href="n-jzi0.html" target="main" title="Role or Function Title of Contributor"><span class="elementtag">&lt;role&gt;</span></a> <a href="n-jzi0.html" target="main" title="<role&gt;"><span class="elementname">Role or Function Title of Contributor</span></a></li><li><a href="n-9py0.html" target="main" title="Season"><span class="elementtag">&lt;season&gt;</span></a> <a href="n-9py0.html" target="main" title="<season&gt;"><span class="elementname">Season</span></a></li><li><a href="n-hwj0.html" target="main" title="Series"><span class="elementtag">&lt;series&gt;</span></a> <a href="n-hwj0.html" target="main" title="<series&gt;"><span class="elementname">Series</span></a></li><li><a href="n-w8p0.html" target="main" title="Size"><span class="elementtag">&lt;size&gt;</span></a> <a href="n-w8p0.html" target="main" title="<size&gt;"><span class="elementname">Size</span></a></li><li><a href="n-bap0.html" target="main" title="Source"><span class="elementtag">&lt;source&gt;</span></a> <a href="n-bap0.html" target="main" title="<source&gt;"><span class="elementname">Source</span></a></li><li><a href="n-5hp0.html" target="main" title="Standard, Cited"><span class="elementtag">&lt;std&gt;</span></a> <a href="n-5hp0.html" target="main" title="<std&gt;"><span class="elementname">Standard, Cited</span></a></li><li><a href="n-rfq0.html" target="main" title="Name of Person (Unstructured)"><span class="elementtag">&lt;string-name&gt;</span></a> <a href="n-rfq0.html" target="main" title="<string-name&gt;"><span class="elementname">Name of Person (Unstructured)</span></a></li><li><a href="n-g590.html" target="main" title="Supplement Information"><span class="elementtag">&lt;supplement&gt;</span></a> <a href="n-g590.html" target="main" title="<supplement&gt;"><span class="elementname">Supplement Information</span></a></li><li><a href="n-jmz0.html" target="main" title="Translated Source"><span class="elementtag">&lt;trans-source&gt;</span></a> <a href="n-jmz0.html" target="main" title="<trans-source&gt;"><span class="elementname">Translated Source</span></a></li><li><a href="n-7vk2.html" target="main" title="Translated Title"><span class="elementtag">&lt;trans-title&gt;</span></a> <a href="n-7vk2.html" target="main" title="<trans-title&gt;"><span class="elementname">Translated Title</span></a></li><li><a href="n-wt22.html" target="main" title="Volume Number"><span class="elementtag">&lt;volume&gt;</span></a> <a href="n-wt22.html" target="main" title="<volume&gt;"><span class="elementname">Volume Number</span></a></li><li><a href="n-k622.html" target="main" title="Volume Identifier"><span class="elementtag">&lt;volume-id&gt;</span></a> <a href="n-k622.html" target="main" title="<volume-id&gt;"><span class="elementname">Volume Identifier</span></a></li><li><a href="n-uy22.html" target="main" title="Volume Series"><span class="elementtag">&lt;volume-series&gt;</span></a> <a href="n-uy22.html" target="main" title="<volume-series&gt;"><span class="elementname">Volume Series</span></a></li><li><a href="n-vwc2.html" target="main" title="Year"><span class="elementtag">&lt;year&gt;</span></a> <a href="n-vwc2.html" target="main" title="<year&gt;"><span class="elementname">Year</span></a></li><li><a href="n-87s0.html" target="main" title="Footnote"><span class="elementtag">&lt;fn&gt;</span></a> <a href="n-87s0.html" target="main" title="<fn&gt;"><span class="elementname">Footnote</span></a></li><li><a href="n-xam0.html" target="main" title="Target of an Internal Link"><span class="elementtag">&lt;target&gt;</span></a> <a href="n-xam0.html" target="main" title="<target&gt;"><span class="elementname">Target of an Internal Link</span></a></li><li><a href="n-ucc2.html" target="main" title="X (cross) Reference"><span class="elementtag">&lt;xref&gt;</span></a> <a href="n-ucc2.html" target="main" title="<xref&gt;"><span class="elementname">X (cross) Reference</span></a></li><li><a href="n-9zq0.html" target="main" title="Subscript"><span class="elementtag">&lt;sub&gt;</span></a> <a href="n-9zq0.html" target="main" title="<sub&gt;"><span class="elementname">Subscript</span></a></li><li><a href="n-5zb0.html" target="main" title="Superscript"><span class="elementtag">&lt;sup&gt;</span></a> <a href="n-5zb0.html" target="main" title="<sup&gt;"><span class="elementname">Superscript</span></a></li><li><a href="n-sm22.html" target="main" title="X - Generated Text and Punctuation"><span class="elementtag">&lt;x&gt;</span></a> <a href="n-sm22.html" target="main" title="<x&gt;"><span class="elementname">X - Generated Text and Punctuation</span></a></li></ul></p></div><div class="elementcontext"><h3 class="header">This element may be contained in:</h3><p class="para"><a href="n-wi80.html" target="main" title="Citation Alternatives"><span class="elementtag">&lt;citation-alternatives&gt;</span></a>, <a href="n-83g0.html" target="main" title="License Paragraph"><span class="elementtag">&lt;license-p&gt;</span></a>, <a href="n-7xd0.html" target="main" title="Paragraph"><span class="elementtag">&lt;p&gt;</span></a>, <a href="n-2mh0.html" target="main" title="Reference Item"><span class="elementtag">&lt;ref&gt;</span></a>, <a href="n-tsm0.html" target="main" title="Table Data Cell (NISO JATS table model)"><span class="elementtag">&lt;td&gt;</span></a>, <a href="n-cuz0.html" target="main" title="Table Header Cell (NISO JATS table model)"><span class="elementtag">&lt;th&gt;</span></a>, <a href="n-7fz0.html" target="main" title="Title"><span class="elementtag">&lt;title&gt;</span></a></p></div><div class="examp.group"><h3 class="header">Example 1</h3><p class="para">Typical citation to a journal article:</p><div class="taggedexamp"><pre class="taggedtext">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta name="generator" content="HTML Tidy for Linux/x86 (vers 25 March 2009), see www.w3.org" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008-->
+  <link rel="stylesheet" href="auto-css.css" type="text/css" />
+
+  <title>Element: Element Citation</title>
+</head>
+
+<body class="main">
+  <div class="pageheader">
+    <h2 class="headname">Journal Archiving and Interchange Tag Library NISO JATS Draft Version
+    1.1d1</h2>
+
+    <h4 class="sponsor">National Center for Biotechnology Information (NCBI)<br class="linebrk" />
+    National Library of Medicine (NLM)</h4>
+  </div>
+
+  <div class="header">
+    <h1 class="elementtag">&lt;element-citation&gt;</h1>
+
+    <h1 class="elementname">Element Citation</h1>
+  </div>
+
+  <div class="definition">
+    <p class="para">Bibliographic description of a work. Includes bibliographic reference elements
+    only. Does not include untagged text, spacing, or punctuation.</p>
+  </div>
+
+  <div class="remarks">
+    <h2 class="header">Remarks</h2>
+
+    <p class="para">This element is composed of bibliographic descriptive elements (such as
+    <span class="elementtag">&lt;article-title&gt;</span> and <span class=
+    "elementtag">&lt;fpage&gt;</span>) in any order, repeated as needed, with no untagged text and
+    all the punctuation and spacing between elements removed.</p>
+
+    <p class="para">This element is intended for capturing a publisher’s specific element order;
+    therefore, it does not enforce a particular element order on its own.</p>
+
+    <p class="para"><strong>Related Essay:</strong> For a discussion on the use of <span class=
+    "elementtag">&lt;element-citation&gt;</span>, see <a href=
+    "n-7mh2.html#arc-tag-citation">Tagging Bibliographic References</a>.</p>
+
+    <p class="para"><strong>Best Practice:</strong> Although this Tag Set does not enforce it, best
+    practice is to tag as many of the following elements as possible within an <span class=
+    "elementtag">&lt;element-citation&gt;</span> to a journal article or a book, so that PubMed
+    Central, CrossRef, or other matching service can make the journal citation into a live
+    link.</p>
+
+    <div class="deflist">
+      <table class="deflisttable">
+        <tr class="row1">
+          <td class="dterm">
+            <p>source</p>
+          </td>
+
+          <td class="ddef">
+            <p class="para">The title of the journal in which the cited article was published. (For
+            journal titles, publishers and archives typically establish authority lists; for
+            example, in PubMed Central processing, the journal title source is usually the NLM
+            title abbreviation of the journal name <tt>&lt;source&gt;Physiol
+            Rev&lt;/source&gt;</tt>.) For book citations, this is the title of the book:
+            <tt>&lt;source&gt;Moby Dick&lt;/source&gt;</tt>.</p>
+          </td>
+        </tr>
+
+        <tr class="row0">
+          <td class="dterm">
+            <p>article-title</p>
+          </td>
+
+          <td class="ddef">
+            <p class="para">Title of the article (Use the <a href="n-bap0.html" target="main"
+            title="Source"><span class="elementtag">&lt;source&gt;</span></a> element for titles of
+            books, reports, conference proceedings, etc.)</p>
+          </td>
+        </tr>
+
+        <tr class="row1">
+          <td class="dterm">
+            <p>volume</p>
+          </td>
+
+          <td class="ddef">
+            <p class="para">Number of the applicable volume of the journal</p>
+          </td>
+        </tr>
+
+        <tr class="row0">
+          <td class="dterm">
+            <p>issue</p>
+          </td>
+
+          <td class="ddef">
+            <p class="para">Issue number of the applicable issue</p>
+          </td>
+        </tr>
+
+        <tr class="row1">
+          <td class="dterm">
+            <p>fpage</p>
+          </td>
+
+          <td class="ddef">
+            <p class="para">Page number on which the article starts</p>
+          </td>
+        </tr>
+
+        <tr class="row0">
+          <td class="dterm">
+            <p>surname</p>
+          </td>
+
+          <td class="ddef">
+            <p class="para">Surname (familial name) of an author or editor (This element is used
+            inside a <a href="n-6pn0.html" target="main" title="Name of Person"><span class=
+            "elementtag">&lt;name&gt;</span></a> element or <a href="n-rfq0.html" target="main"
+            title="Name of Person (Unstructured)"><span class=
+            "elementtag">&lt;string-name&gt;</span></a> element which is repeated when multiple
+            authors must be listed.)</p>
+          </td>
+        </tr>
+
+        <tr class="row1">
+          <td class="dterm">
+            <p>year</p>
+          </td>
+
+          <td class="ddef">
+            <p class="para">The year of publication</p>
+          </td>
+        </tr>
+
+        <tr class="row0">
+          <td class="dterm">
+            <p>month</p>
+          </td>
+
+          <td class="ddef">
+            <p class="para">The month of publication (if present)</p>
+          </td>
+        </tr>
+
+        <tr class="row1">
+          <td class="dterm">
+            <p>day</p>
+          </td>
+
+          <td class="ddef">
+            <p class="para">The day of month of publication (if present)</p>
+          </td>
+        </tr>
+      </table>
+    </div>Other elements inside a citation may also be tagged if desired.
+
+    <p class="para"><strong>Linking Best Practice:</strong> In order to make citations into live
+    links, as much of the author and date information as is available should be preserved, even if
+    it not possible to tag all the elements just named. The most important date tag is <a href=
+    "n-vwc2.html" target="main" title="Year"><span class="elementtag">&lt;year&gt;</span></a>, and
+    it should always be tagged if possible, for example, <tt>&lt;year&gt;2008&lt;/year&gt;</tt>.
+    The <a href="n-f4x0.html" target="main" title="Day"><span class=
+    "elementtag">&lt;day&gt;</span></a> and <a href="n-4yn0.html" target="main" title=
+    "Month"><span class="elementtag">&lt;month&gt;</span></a> tags are used more rarely; they are
+    provided because some of the citation matching services can use the month and day information
+    if it is available.</p>
+
+    <p class="para"><strong>Information Typing Best Practice:</strong> The <a href="n-aqa2.html"
+    target="main" title="Type of Referenced Publication"><span class=
+    "attrtag">@publication-type</span></a> attribute should normally be used to distinguish between
+    journal articles, books, reviews, personal communications, and so on.</p>
+
+    <p class="para"><strong>Historical Note:</strong> This element is one of the elements that
+    replaces the <tt>&lt;citation&gt;</tt> element from previous versions of this Tag Set.</p>
+  </div>
+
+  <div class="attrlist">
+    <h2 class="header">Attributes</h2>
+
+    <h5 class="header"><a href="n-z952.html" target="main"><span class="attrtag">id</span></a>
+    <a href="n-z952.html" target="main"><span class="attrname">Document Internal
+    Identifier</span></a></h5>
+
+    <h5 class="header"><a href="n-3ja2.html" target="main"><span class=
+    "attrtag">publication-format</span></a> <a href="n-3ja2.html" target="main"><span class=
+    "attrname">Format of Publication</span></a></h5>
+
+    <h5 class="header"><a href="n-aqa2.html" target="main"><span class=
+    "attrtag">publication-type</span></a> <a href="n-aqa2.html" target="main"><span class=
+    "attrname">Type of Referenced Publication</span></a></h5>
+
+    <h5 class="header"><a href="n-yba2.html" target="main"><span class=
+    "attrtag">publisher-type</span></a> <a href="n-yba2.html" target="main"><span class=
+    "attrname">Type of Publisher</span></a></h5>
+
+    <h5 class="header"><a href="n-zhu2.html" target="main"><span class=
+    "attrtag">specific-use</span></a> <a href="n-zhu2.html" target="main"><span class=
+    "attrname">Specific Use</span></a></h5>
+
+    <h5 class="header"><a href="n-mfw2.html" target="main"><span class=
+    "attrtag">xlink:actuate</span></a> <a href="n-mfw2.html" target="main"><span class=
+    "attrname">Actuating the Link</span></a></h5>
+
+    <h5 class="header"><a href="n-znw2.html" target="main"><span class=
+    "attrtag">xlink:href</span></a> <a href="n-znw2.html" target="main"><span class="attrname">Href
+    (Linking Mechanism)</span></a></h5>
+
+    <h5 class="header"><a href="n-3rw2.html" target="main"><span class=
+    "attrtag">xlink:role</span></a> <a href="n-3rw2.html" target="main"><span class="attrname">Role
+    of the Link</span></a></h5>
+
+    <h5 class="header"><a href="n-hhw2.html" target="main"><span class=
+    "attrtag">xlink:show</span></a> <a href="n-hhw2.html" target="main"><span class=
+    "attrname">Showing the Link</span></a></h5>
+
+    <h5 class="header"><a href="n-byw2.html" target="main"><span class=
+    "attrtag">xlink:title</span></a> <a href="n-byw2.html" target="main"><span class=
+    "attrname">Title of the Link</span></a></h5>
+
+    <h5 class="header"><a href="n-npw2.html" target="main"><span class=
+    "attrtag">xlink:type</span></a> <a href="n-npw2.html" target="main"><span class="attrname">Type
+    of Link</span></a></h5>
+
+    <h5 class="header"><a href="n-2mw2.html" target="main"><span class=
+    "attrtag">xmlns:xlink</span></a> <a href="n-2mw2.html" target="main"><span class=
+    "attrname">XLink Namespace Declaration</span></a></h5>
+
+    <h5 class="header"><a href="n-k2x2.html" target="main"><span class=
+    "attrtag">xml:base</span></a> <a href="n-k2x2.html" target="main"><span class=
+    "attrname">Base</span></a></h5>
+
+    <h5 class="header"><a href="n-pxx2.html" target="main"><span class=
+    "attrtag">xml:lang</span></a> <a href="n-pxx2.html" target="main"><span class=
+    "attrname">Language</span></a></h5>
+  </div>
+
+  <div class="relatedelem">
+    <h2 class="header">Related Elements</h2>
+
+    <p class="para">This <span class="elementtag">&lt;element-citation&gt;</span> element contains
+    the bibliographic description of a work; the pointer to that description uses the <span class=
+    "elementtag">&lt;xref&gt;</span> element. These two elements are sometimes confused because in
+    common language both may be called “citations”.</p>
+
+    <p class="para">There are three kinds of citations in this Tag Set:</p>
+
+    <ul class="bullist">
+      <li>The element <span class="elementtag">&lt;element-citation&gt;</span>, which has
+      element-only content, no interior punctuation or spacing, and allows the components of the
+      citation to be in any order.</li>
+
+      <li>The element <a href="n-m3n0.html" target="main" title="Mixed Citation"><span class=
+      "elementtag">&lt;mixed-citation&gt;</span></a>, which has textual content, with all interior
+      punctuation and spacing preserved, and allows the components of the citation to be in any
+      order.</li>
+
+      <li>Deprecated. The deprecated element <a href="n-is60.html" target="main" title=
+      "NLM Citation"><span class="elementtag">&lt;nlm-citation&gt;</span></a>, which has
+      element-only content, no interior punctuation or spacing, and requires the components of the
+      citation to be in a specific order. This element was used in previous versions of this Tag
+      Set and is now deprecated.</li>
+    </ul>
+  </div>
+
+  <div class="contentmodel">
+    <h2 class="header first">Content Model</h2>
+    <pre class="contentdesc">
+&lt;!ELEMENT  element-citation
+                        (<a href="n-2i42.html" target="main" title="Citation Elements"><span class=
+"petag">%citation-elements;</span></a>)+                       &gt;
+</pre>
+  </div>
+
+  <div class="contentmodel">
+    <h2 class="header">Expanded Content Model</h2>
+
+    <p class="contentdesc">(inline-supplementary-material | related-article | related-object | hr |
+    string-date | bold | fixed-case | italic | monospace | overline | overline-start | overline-end
+    | roman | sans-serif | sc | strike | underline | underline-start | underline-end | ruby |
+    alternatives | inline-graphic | private-char | chem-struct | inline-formula | label | tex-math
+    | mml:math | abbrev | milestone-end | milestone-start | named-content | styled-content |
+    annotation | article-title | chapter-title | collab | collab-alternatives | comment | conf-date
+    | conf-loc | conf-name | conf-sponsor | date | date-in-citation | day | edition | email |
+    elocation-id | etal | ext-link | fpage | gov | institution | institution-wrap | isbn | issn |
+    issn-l | issue | issue-id | issue-part | issue-title | lpage | month | name | name-alternatives
+    | object-id | page-range | part-title | patent | person-group | pub-id | publisher-loc |
+    publisher-name | role | season | series | size | source | std | string-name | supplement |
+    trans-source | trans-title | uri | volume | volume-id | volume-series | year | fn | target |
+    xref | sub | sup | x)+</p>
+  </div>
+
+  <div class="modeldesc">
+    <h2 class="header">Description</h2>
+
+    <p class="para">One or more of any of:</p>
+
+    <ul class="bullist">
+      <li><a href="n-4f70.html" target="main" title="Inline Supplementary Material"><span class=
+      "elementtag">&lt;inline-supplementary-material&gt;</span></a> <a href="n-4f70.html" target=
+      "main" title="&lt;inline-supplementary-material&gt;"><span class="elementname">Inline
+      Supplementary Material</span></a></li>
+
+      <li><a href="n-4ai0.html" target="main" title="Related Article Information"><span class=
+      "elementtag">&lt;related-article&gt;</span></a> <a href="n-4ai0.html" target="main" title=
+      "&lt;related-article&gt;"><span class="elementname">Related Article
+      Information</span></a></li>
+
+      <li><a href="n-zgi0.html" target="main" title="Related Object Information"><span class=
+      "elementtag">&lt;related-object&gt;</span></a> <a href="n-zgi0.html" target="main" title=
+      "&lt;related-object&gt;"><span class="elementname">Related Object Information</span></a></li>
+
+      <li><a href="n-du70.html" target="main" title="Horizontal Rule"><span class=
+      "elementtag">&lt;hr&gt;</span></a> <a href="n-du70.html" target="main" title=
+      "&lt;hr&gt;"><span class="elementname">Horizontal Rule</span></a></li>
+
+      <li><a href="n-rvq0.html" target="main" title="Date as a String"><span class=
+      "elementtag">&lt;string-date&gt;</span></a> <a href="n-rvq0.html" target="main" title=
+      "&lt;string-date&gt;"><span class="elementname">Date as a String</span></a></li>
+
+      <li>Emphasis Elements
+
+        <ul class="bullist">
+          <li><a href="n-bi50.html" target="main" title="Bold"><span class=
+          "elementtag">&lt;bold&gt;</span></a> <a href="n-bi50.html" target="main" title=
+          "&lt;bold&gt;"><span class="elementname">Bold</span></a></li>
+
+          <li><a href="n-cas0.html" target="main" title="Fixed Case"><span class=
+          "elementtag">&lt;fixed-case&gt;</span></a> <a href="n-cas0.html" target="main" title=
+          "&lt;fixed-case&gt;"><span class="elementname">Fixed Case</span></a></li>
+
+          <li><a href="n-wqe0.html" target="main" title="Italic"><span class=
+          "elementtag">&lt;italic&gt;</span></a> <a href="n-wqe0.html" target="main" title=
+          "&lt;italic&gt;"><span class="elementname">Italic</span></a></li>
+
+          <li><a href="n-26n0.html" target="main" title=
+          "Monospace Text (Typewriter Text)"><span class="elementtag">&lt;monospace&gt;</span></a>
+          <a href="n-26n0.html" target="main" title="&lt;monospace&gt;"><span class=
+          "elementname">Monospace Text (Typewriter Text)</span></a></li>
+
+          <li><a href="n-72d0.html" target="main" title="Overline"><span class=
+          "elementtag">&lt;overline&gt;</span></a> <a href="n-72d0.html" target="main" title=
+          "&lt;overline&gt;"><span class="elementname">Overline</span></a></li>
+
+          <li><a href="n-2wd0.html" target="main" title="Overline Start"><span class=
+          "elementtag">&lt;overline-start&gt;</span></a> <a href="n-2wd0.html" target="main" title=
+          "&lt;overline-start&gt;"><span class="elementname">Overline Start</span></a></li>
+
+          <li><a href="n-dad0.html" target="main" title="Overline End"><span class=
+          "elementtag">&lt;overline-end&gt;</span></a> <a href="n-dad0.html" target="main" title=
+          "&lt;overline-end&gt;"><span class="elementname">Overline End</span></a></li>
+
+          <li><a href="n-say0.html" target="main" title="Roman"><span class=
+          "elementtag">&lt;roman&gt;</span></a> <a href="n-say0.html" target="main" title=
+          "&lt;roman&gt;"><span class="elementname">Roman</span></a></li>
+
+          <li><a href="n-gey0.html" target="main" title="Sans Serif"><span class=
+          "elementtag">&lt;sans-serif&gt;</span></a> <a href="n-gey0.html" target="main" title=
+          "&lt;sans-serif&gt;"><span class="elementname">Sans Serif</span></a></li>
+
+          <li><a href="n-ary0.html" target="main" title="Small Caps"><span class=
+          "elementtag">&lt;sc&gt;</span></a> <a href="n-ary0.html" target="main" title=
+          "&lt;sc&gt;"><span class="elementname">Small Caps</span></a></li>
+
+          <li><a href="n-ezp0.html" target="main" title="Strike Through"><span class=
+          "elementtag">&lt;strike&gt;</span></a> <a href="n-ezp0.html" target="main" title=
+          "&lt;strike&gt;"><span class="elementname">Strike Through</span></a></li>
+
+          <li><a href="n-bnk2.html" target="main" title="Underline"><span class=
+          "elementtag">&lt;underline&gt;</span></a> <a href="n-bnk2.html" target="main" title=
+          "&lt;underline&gt;"><span class="elementname">Underline</span></a></li>
+
+          <li><a href="n-hjk2.html" target="main" title="Underline Start"><span class=
+          "elementtag">&lt;underline-start&gt;</span></a> <a href="n-hjk2.html" target="main"
+          title="&lt;underline-start&gt;"><span class="elementname">Underline Start</span></a></li>
+
+          <li><a href="n-syk2.html" target="main" title="Underline End"><span class=
+          "elementtag">&lt;underline-end&gt;</span></a> <a href="n-syk2.html" target="main" title=
+          "&lt;underline-end&gt;"><span class="elementname">Underline End</span></a></li>
+
+          <li><a href="n-ety0.html" target="main" title="Ruby Annotation Wrapper"><span class=
+          "elementtag">&lt;ruby&gt;</span></a> <a href="n-ety0.html" target="main" title=
+          "&lt;ruby&gt;"><span class="elementname">Ruby Annotation Wrapper</span></a></li>
+        </ul>
+      </li>
+
+      <li><a href="n-2ec0.html" target="main" title="Alternatives For Processing"><span class=
+      "elementtag">&lt;alternatives&gt;</span></a> <a href="n-2ec0.html" target="main" title=
+      "&lt;alternatives&gt;"><span class="elementname">Alternatives For Processing</span></a></li>
+
+      <li>Inline Display Elements
+
+        <ul class="bullist">
+          <li><a href="n-x770.html" target="main" title="Graphic, Inline"><span class=
+          "elementtag">&lt;inline-graphic&gt;</span></a> <a href="n-x770.html" target="main" title=
+          "&lt;inline-graphic&gt;"><span class="elementname">Graphic, Inline</span></a></li>
+
+          <li><a href="n-6pr0.html" target="main" title=
+          "Private Character (Custom or Unicode)"><span class=
+          "elementtag">&lt;private-char&gt;</span></a> <a href="n-6pr0.html" target="main" title=
+          "&lt;private-char&gt;"><span class="elementname">Private Character (Custom or
+          Unicode)</span></a></li>
+        </ul>
+      </li>
+
+      <li><a href="n-z480.html" target="main" title="Chemical Structure (Display)"><span class=
+      "elementtag">&lt;chem-struct&gt;</span></a> <a href="n-z480.html" target="main" title=
+      "&lt;chem-struct&gt;"><span class="elementname">Chemical Structure (Display)</span></a></li>
+
+      <li><a href="n-gw70.html" target="main" title="Formula, Inline"><span class=
+      "elementtag">&lt;inline-formula&gt;</span></a> <a href="n-gw70.html" target="main" title=
+      "&lt;inline-formula&gt;"><span class="elementname">Formula, Inline</span></a></li>
+
+      <li><a href="n-sqf0.html" target="main" title=
+      "Label (of an Equation, Figure, Reference, etc.)"><span class=
+      "elementtag">&lt;label&gt;</span></a> <a href="n-sqf0.html" target="main" title=
+      "&lt;label&gt;"><span class="elementname">Label (of an Equation, Figure, Reference,
+      etc.)</span></a></li>
+
+      <li>Math Elements
+
+        <ul class="bullist">
+          <li><a href="n-skz0.html" target="main" title="TeX Math Equation"><span class=
+          "elementtag">&lt;tex-math&gt;</span></a> <a href="n-skz0.html" target="main" title=
+          "&lt;tex-math&gt;"><span class="elementname">TeX Math Equation</span></a></li>
+
+          <li><a href="n-cgn0.html" target="main" title="Math (MathML Tag Set)"><span class=
+          "elementtag">&lt;mml:math&gt;</span></a> <a href="n-cgn0.html" target="main" title=
+          "&lt;mml:math&gt;"><span class="elementname">Math (MathML Tag Set)</span></a></li>
+        </ul>
+      </li>
+
+      <li>Other Inline Elements
+
+        <ul class="bullist">
+          <li><a href="n-9p00.html" target="main" title="Abbreviation or Acronym"><span class=
+          "elementtag">&lt;abbrev&gt;</span></a> <a href="n-9p00.html" target="main" title=
+          "&lt;abbrev&gt;"><span class="elementname">Abbreviation or Acronym</span></a></li>
+
+          <li><a href="n-7cn0.html" target="main" title="Milestone End"><span class=
+          "elementtag">&lt;milestone-end&gt;</span></a> <a href="n-7cn0.html" target="main" title=
+          "&lt;milestone-end&gt;"><span class="elementname">Milestone End</span></a></li>
+
+          <li><a href="n-a3n0.html" target="main" title="Milestone Start"><span class=
+          "elementtag">&lt;milestone-start&gt;</span></a> <a href="n-a3n0.html" target="main"
+          title="&lt;milestone-start&gt;"><span class="elementname">Milestone Start</span></a></li>
+
+          <li><a href="n-qk60.html" target="main" title=
+          "Named Special (Subject) Content"><span class=
+          "elementtag">&lt;named-content&gt;</span></a> <a href="n-qk60.html" target="main" title=
+          "&lt;named-content&gt;"><span class="elementname">Named Special (Subject)
+          Content</span></a></li>
+
+          <li><a href="n-piq0.html" target="main" title=
+          "Styled Special (Subject) Content"><span class=
+          "elementtag">&lt;styled-content&gt;</span></a> <a href="n-piq0.html" target="main" title=
+          "&lt;styled-content&gt;"><span class="elementname">Styled Special (Subject)
+          Content</span></a></li>
+        </ul>
+      </li>
+
+      <li><a href="n-nnc0.html" target="main" title="Annotation in a Citation"><span class=
+      "elementtag">&lt;annotation&gt;</span></a> <a href="n-nnc0.html" target="main" title=
+      "&lt;annotation&gt;"><span class="elementname">Annotation in a Citation</span></a></li>
+
+      <li><a href="n-e630.html" target="main" title="Article Title"><span class=
+      "elementtag">&lt;article-title&gt;</span></a> <a href="n-e630.html" target="main" title=
+      "&lt;article-title&gt;"><span class="elementname">Article Title</span></a></li>
+
+      <li><a href="n-da80.html" target="main" title="Chapter Title in a Citation"><span class=
+      "elementtag">&lt;chapter-title&gt;</span></a> <a href="n-da80.html" target="main" title=
+      "&lt;chapter-title&gt;"><span class="elementname">Chapter Title in a Citation</span></a></li>
+
+      <li><a href="n-xz80.html" target="main" title="Collaborative (Group) Author"><span class=
+      "elementtag">&lt;collab&gt;</span></a> <a href="n-xz80.html" target="main" title=
+      "&lt;collab&gt;"><span class="elementname">Collaborative (Group) Author</span></a></li>
+
+      <li><a href="n-iaa0.html" target="main" title="Collaboration Alternatives"><span class=
+      "elementtag">&lt;collab-alternatives&gt;</span></a> <a href="n-iaa0.html" target="main"
+      title="&lt;collab-alternatives&gt;"><span class="elementname">Collaboration
+      Alternatives</span></a></li>
+
+      <li><a href="n-eua0.html" target="main" title="Comment in a Citation"><span class=
+      "elementtag">&lt;comment&gt;</span></a> <a href="n-eua0.html" target="main" title=
+      "&lt;comment&gt;"><span class="elementname">Comment in a Citation</span></a></li>
+
+      <li><a href="n-wcu0.html" target="main" title="Conference Date"><span class=
+      "elementtag">&lt;conf-date&gt;</span></a> <a href="n-wcu0.html" target="main" title=
+      "&lt;conf-date&gt;"><span class="elementname">Conference Date</span></a></li>
+
+      <li><a href="n-y5u0.html" target="main" title="Conference Location"><span class=
+      "elementtag">&lt;conf-loc&gt;</span></a> <a href="n-y5u0.html" target="main" title=
+      "&lt;conf-loc&gt;"><span class="elementname">Conference Location</span></a></li>
+
+      <li><a href="n-rvu0.html" target="main" title="Conference Name"><span class=
+      "elementtag">&lt;conf-name&gt;</span></a> <a href="n-rvu0.html" target="main" title=
+      "&lt;conf-name&gt;"><span class="elementname">Conference Name</span></a></li>
+
+      <li><a href="n-yru0.html" target="main" title="Conference Sponsor"><span class=
+      "elementtag">&lt;conf-sponsor&gt;</span></a> <a href="n-yru0.html" target="main" title=
+      "&lt;conf-sponsor&gt;"><span class="elementname">Conference Sponsor</span></a></li>
+
+      <li><a href="n-75x0.html" target="main" title="Date"><span class=
+      "elementtag">&lt;date&gt;</span></a> <a href="n-75x0.html" target="main" title=
+      "&lt;date&gt;"><span class="elementname">Date</span></a></li>
+
+      <li><a href="n-iux0.html" target="main" title="Date within a Citation"><span class=
+      "elementtag">&lt;date-in-citation&gt;</span></a> <a href="n-iux0.html" target="main" title=
+      "&lt;date-in-citation&gt;"><span class="elementname">Date within a Citation</span></a></li>
+
+      <li><a href="n-f4x0.html" target="main" title="Day"><span class=
+      "elementtag">&lt;day&gt;</span></a> <a href="n-f4x0.html" target="main" title=
+      "&lt;day&gt;"><span class="elementname">Day</span></a></li>
+
+      <li><a href="n-usv0.html" target="main" title="Edition Statement, Cited"><span class=
+      "elementtag">&lt;edition&gt;</span></a> <a href="n-usv0.html" target="main" title=
+      "&lt;edition&gt;"><span class="elementname">Edition Statement, Cited</span></a></li>
+
+      <li>Linking Elements
+
+        <ul class="bullist">
+          <li><a href="n-rk40.html" target="main" title="Email Address"><span class=
+          "elementtag">&lt;email&gt;</span></a> <a href="n-rk40.html" target="main" title=
+          "&lt;email&gt;"><span class="elementname">Email Address</span></a></li>
+
+          <li><a href="n-q740.html" target="main" title="External Link"><span class=
+          "elementtag">&lt;ext-link&gt;</span></a> <a href="n-q740.html" target="main" title=
+          "&lt;ext-link&gt;"><span class="elementname">External Link</span></a></li>
+
+          <li><a href="n-mzk2.html" target="main" title=
+          "Uniform Resource Identifier (URI)"><span class="elementtag">&lt;uri&gt;</span></a>
+          <a href="n-mzk2.html" target="main" title="&lt;uri&gt;"><span class="elementname">Uniform
+          Resource Identifier (URI)</span></a></li>
+        </ul>
+      </li>
+
+      <li><a href="n-ymv0.html" target="main" title="Electronic Location Identifier"><span class=
+      "elementtag">&lt;elocation-id&gt;</span></a> <a href="n-ymv0.html" target="main" title=
+      "&lt;elocation-id&gt;"><span class="elementname">Electronic Location
+      Identifier</span></a></li>
+
+      <li><a href="n-aw40.html" target="main" title="Et Al."><span class=
+      "elementtag">&lt;etal&gt;</span></a> <a href="n-aw40.html" target="main" title=
+      "&lt;etal&gt;"><span class="elementname">Et Al.</span></a></li>
+
+      <li><a href="n-sgs0.html" target="main" title="First Page"><span class=
+      "elementtag">&lt;fpage&gt;</span></a> <a href="n-sgs0.html" target="main" title=
+      "&lt;fpage&gt;"><span class="elementname">First Page</span></a></li>
+
+      <li><a href="n-cit0.html" target="main" title="Government Report, Cited"><span class=
+      "elementtag">&lt;gov&gt;</span></a> <a href="n-cit0.html" target="main" title=
+      "&lt;gov&gt;"><span class="elementname">Government Report, Cited</span></a></li>
+
+      <li><a href="n-sh70.html" target="main" title="Institution Name: in an Address"><span class=
+      "elementtag">&lt;institution&gt;</span></a> <a href="n-sh70.html" target="main" title=
+      "&lt;institution&gt;"><span class="elementname">Institution Name: in an
+      Address</span></a></li>
+
+      <li><a href="n-2z70.html" target="main" title="Institution Wrapper"><span class=
+      "elementtag">&lt;institution-wrap&gt;</span></a> <a href="n-2z70.html" target="main" title=
+      "&lt;institution-wrap&gt;"><span class="elementname">Institution Wrapper</span></a></li>
+
+      <li><a href="n-bke0.html" target="main" title="ISBN"><span class=
+      "elementtag">&lt;isbn&gt;</span></a> <a href="n-bke0.html" target="main" title=
+      "&lt;isbn&gt;"><span class="elementname">ISBN</span></a></li>
+
+      <li><a href="n-v3e0.html" target="main" title="ISSN"><span class=
+      "elementtag">&lt;issn&gt;</span></a> <a href="n-v3e0.html" target="main" title=
+      "&lt;issn&gt;"><span class="elementname">ISSN</span></a></li>
+
+      <li><a href="n-tce0.html" target="main" title="ISSN-L (Linking ISSN)"><span class=
+      "elementtag">&lt;issn-l&gt;</span></a> <a href="n-tce0.html" target="main" title=
+      "&lt;issn-l&gt;"><span class="elementname">ISSN-L (Linking ISSN)</span></a></li>
+
+      <li><a href="n-v5e0.html" target="main" title="Issue Number"><span class=
+      "elementtag">&lt;issue&gt;</span></a> <a href="n-v5e0.html" target="main" title=
+      "&lt;issue&gt;"><span class="elementname">Issue Number</span></a></li>
+
+      <li><a href="n-k4e0.html" target="main" title="Issue Identifier"><span class=
+      "elementtag">&lt;issue-id&gt;</span></a> <a href="n-k4e0.html" target="main" title=
+      "&lt;issue-id&gt;"><span class="elementname">Issue Identifier</span></a></li>
+
+      <li><a href="n-p4e0.html" target="main" title="Issue Part"><span class=
+      "elementtag">&lt;issue-part&gt;</span></a> <a href="n-p4e0.html" target="main" title=
+      "&lt;issue-part&gt;"><span class="elementname">Issue Part</span></a></li>
+
+      <li><a href="n-uhe0.html" target="main" title="Issue Title"><span class=
+      "elementtag">&lt;issue-title&gt;</span></a> <a href="n-uhe0.html" target="main" title=
+      "&lt;issue-title&gt;"><span class="elementname">Issue Title</span></a></li>
+
+      <li><a href="n-nfg0.html" target="main" title="Last Page"><span class=
+      "elementtag">&lt;lpage&gt;</span></a> <a href="n-nfg0.html" target="main" title=
+      "&lt;lpage&gt;"><span class="elementname">Last Page</span></a></li>
+
+      <li><a href="n-4yn0.html" target="main" title="Month"><span class=
+      "elementtag">&lt;month&gt;</span></a> <a href="n-4yn0.html" target="main" title=
+      "&lt;month&gt;"><span class="elementname">Month</span></a></li>
+
+      <li><a href="n-6pn0.html" target="main" title="Name of Person"><span class=
+      "elementtag">&lt;name&gt;</span></a> <a href="n-6pn0.html" target="main" title=
+      "&lt;name&gt;"><span class="elementname">Name of Person</span></a></li>
+
+      <li><a href="n-g9n0.html" target="main" title="Name Alternatives"><span class=
+      "elementtag">&lt;name-alternatives&gt;</span></a> <a href="n-g9n0.html" target="main" title=
+      "&lt;name-alternatives&gt;"><span class="elementname">Name Alternatives</span></a></li>
+
+      <li><a href="n-qy60.html" target="main" title="Object Identifier"><span class=
+      "elementtag">&lt;object-id&gt;</span></a> <a href="n-qy60.html" target="main" title=
+      "&lt;object-id&gt;"><span class="elementname">Object Identifier</span></a></li>
+
+      <li><a href="n-wdd0.html" target="main" title="Page Ranges"><span class=
+      "elementtag">&lt;page-range&gt;</span></a> <a href="n-wdd0.html" target="main" title=
+      "&lt;page-range&gt;"><span class="elementname">Page Ranges</span></a></li>
+
+      <li><a href="n-uhd0.html" target="main" title="Part Title in a Citation"><span class=
+      "elementtag">&lt;part-title&gt;</span></a> <a href="n-uhd0.html" target="main" title=
+      "&lt;part-title&gt;"><span class="elementname">Part Title in a Citation</span></a></li>
+
+      <li><a href="n-fqd0.html" target="main" title="Patent Number, Cited"><span class=
+      "elementtag">&lt;patent&gt;</span></a> <a href="n-fqd0.html" target="main" title=
+      "&lt;patent&gt;"><span class="elementname">Patent Number, Cited</span></a></li>
+
+      <li><a href="n-2cr0.html" target="main" title=
+      "Person Group for a Cited Publication"><span class=
+      "elementtag">&lt;person-group&gt;</span></a> <a href="n-2cr0.html" target="main" title=
+      "&lt;person-group&gt;"><span class="elementname">Person Group for a Cited
+      Publication</span></a></li>
+
+      <li><a href="n-6xh0.html" target="main" title=
+      "Publication Identifier for a Cited Publication"><span class=
+      "elementtag">&lt;pub-id&gt;</span></a> <a href="n-6xh0.html" target="main" title=
+      "&lt;pub-id&gt;"><span class="elementname">Publication Identifier for a Cited
+      Publication</span></a></li>
+
+      <li><a href="n-m4h0.html" target="main" title="Publisher’s Location"><span class=
+      "elementtag">&lt;publisher-loc&gt;</span></a> <a href="n-m4h0.html" target="main" title=
+      "&lt;publisher-loc&gt;"><span class="elementname">Publisher’s Location</span></a></li>
+
+      <li><a href="n-vnh0.html" target="main" title="Publisher’s Name"><span class=
+      "elementtag">&lt;publisher-name&gt;</span></a> <a href="n-vnh0.html" target="main" title=
+      "&lt;publisher-name&gt;"><span class="elementname">Publisher’s Name</span></a></li>
+
+      <li><a href="n-jzi0.html" target="main" title=
+      "Role or Function Title of Contributor"><span class="elementtag">&lt;role&gt;</span></a>
+      <a href="n-jzi0.html" target="main" title="&lt;role&gt;"><span class="elementname">Role or
+      Function Title of Contributor</span></a></li>
+
+      <li><a href="n-9py0.html" target="main" title="Season"><span class=
+      "elementtag">&lt;season&gt;</span></a> <a href="n-9py0.html" target="main" title=
+      "&lt;season&gt;"><span class="elementname">Season</span></a></li>
+
+      <li><a href="n-hwj0.html" target="main" title="Series"><span class=
+      "elementtag">&lt;series&gt;</span></a> <a href="n-hwj0.html" target="main" title=
+      "&lt;series&gt;"><span class="elementname">Series</span></a></li>
+
+      <li><a href="n-w8p0.html" target="main" title="Size"><span class=
+      "elementtag">&lt;size&gt;</span></a> <a href="n-w8p0.html" target="main" title=
+      "&lt;size&gt;"><span class="elementname">Size</span></a></li>
+
+      <li><a href="n-bap0.html" target="main" title="Source"><span class=
+      "elementtag">&lt;source&gt;</span></a> <a href="n-bap0.html" target="main" title=
+      "&lt;source&gt;"><span class="elementname">Source</span></a></li>
+
+      <li><a href="n-5hp0.html" target="main" title="Standard, Cited"><span class=
+      "elementtag">&lt;std&gt;</span></a> <a href="n-5hp0.html" target="main" title=
+      "&lt;std&gt;"><span class="elementname">Standard, Cited</span></a></li>
+
+      <li><a href="n-rfq0.html" target="main" title="Name of Person (Unstructured)"><span class=
+      "elementtag">&lt;string-name&gt;</span></a> <a href="n-rfq0.html" target="main" title=
+      "&lt;string-name&gt;"><span class="elementname">Name of Person (Unstructured)</span></a></li>
+
+      <li><a href="n-g590.html" target="main" title="Supplement Information"><span class=
+      "elementtag">&lt;supplement&gt;</span></a> <a href="n-g590.html" target="main" title=
+      "&lt;supplement&gt;"><span class="elementname">Supplement Information</span></a></li>
+
+      <li><a href="n-jmz0.html" target="main" title="Translated Source"><span class=
+      "elementtag">&lt;trans-source&gt;</span></a> <a href="n-jmz0.html" target="main" title=
+      "&lt;trans-source&gt;"><span class="elementname">Translated Source</span></a></li>
+
+      <li><a href="n-7vk2.html" target="main" title="Translated Title"><span class=
+      "elementtag">&lt;trans-title&gt;</span></a> <a href="n-7vk2.html" target="main" title=
+      "&lt;trans-title&gt;"><span class="elementname">Translated Title</span></a></li>
+
+      <li><a href="n-wt22.html" target="main" title="Volume Number"><span class=
+      "elementtag">&lt;volume&gt;</span></a> <a href="n-wt22.html" target="main" title=
+      "&lt;volume&gt;"><span class="elementname">Volume Number</span></a></li>
+
+      <li><a href="n-k622.html" target="main" title="Volume Identifier"><span class=
+      "elementtag">&lt;volume-id&gt;</span></a> <a href="n-k622.html" target="main" title=
+      "&lt;volume-id&gt;"><span class="elementname">Volume Identifier</span></a></li>
+
+      <li><a href="n-uy22.html" target="main" title="Volume Series"><span class=
+      "elementtag">&lt;volume-series&gt;</span></a> <a href="n-uy22.html" target="main" title=
+      "&lt;volume-series&gt;"><span class="elementname">Volume Series</span></a></li>
+
+      <li><a href="n-vwc2.html" target="main" title="Year"><span class=
+      "elementtag">&lt;year&gt;</span></a> <a href="n-vwc2.html" target="main" title=
+      "&lt;year&gt;"><span class="elementname">Year</span></a></li>
+
+      <li><a href="n-87s0.html" target="main" title="Footnote"><span class=
+      "elementtag">&lt;fn&gt;</span></a> <a href="n-87s0.html" target="main" title=
+      "&lt;fn&gt;"><span class="elementname">Footnote</span></a></li>
+
+      <li><a href="n-xam0.html" target="main" title="Target of an Internal Link"><span class=
+      "elementtag">&lt;target&gt;</span></a> <a href="n-xam0.html" target="main" title=
+      "&lt;target&gt;"><span class="elementname">Target of an Internal Link</span></a></li>
+
+      <li><a href="n-ucc2.html" target="main" title="X (cross) Reference"><span class=
+      "elementtag">&lt;xref&gt;</span></a> <a href="n-ucc2.html" target="main" title=
+      "&lt;xref&gt;"><span class="elementname">X (cross) Reference</span></a></li>
+
+      <li><a href="n-9zq0.html" target="main" title="Subscript"><span class=
+      "elementtag">&lt;sub&gt;</span></a> <a href="n-9zq0.html" target="main" title=
+      "&lt;sub&gt;"><span class="elementname">Subscript</span></a></li>
+
+      <li><a href="n-5zb0.html" target="main" title="Superscript"><span class=
+      "elementtag">&lt;sup&gt;</span></a> <a href="n-5zb0.html" target="main" title=
+      "&lt;sup&gt;"><span class="elementname">Superscript</span></a></li>
+
+      <li><a href="n-sm22.html" target="main" title=
+      "X - Generated Text and Punctuation"><span class="elementtag">&lt;x&gt;</span></a> <a href=
+      "n-sm22.html" target="main" title="&lt;x&gt;"><span class="elementname">X - Generated Text
+      and Punctuation</span></a></li>
+    </ul>
+  </div>
+
+  <div class="elementcontext">
+    <h3 class="header">This element may be contained in:</h3>
+
+    <p class="para"><a href="n-wi80.html" target="main" title="Citation Alternatives"><span class=
+    "elementtag">&lt;citation-alternatives&gt;</span></a>, <a href="n-83g0.html" target="main"
+    title="License Paragraph"><span class="elementtag">&lt;license-p&gt;</span></a>, <a href=
+    "n-7xd0.html" target="main" title="Paragraph"><span class="elementtag">&lt;p&gt;</span></a>,
+    <a href="n-2mh0.html" target="main" title="Reference Item"><span class=
+    "elementtag">&lt;ref&gt;</span></a>, <a href="n-tsm0.html" target="main" title=
+    "Table Data Cell (NISO JATS table model)"><span class="elementtag">&lt;td&gt;</span></a>,
+    <a href="n-cuz0.html" target="main" title=
+    "Table Header Cell (NISO JATS table model)"><span class="elementtag">&lt;th&gt;</span></a>,
+    <a href="n-7fz0.html" target="main" title="Title"><span class=
+    "elementtag">&lt;title&gt;</span></a></p>
+  </div>
+
+  <div class="examp.group">
+    <h3 class="header">Example 1</h3>
+
+    <p class="para">Typical citation to a journal article:</p>
+
+    <div class="taggedexamp">
+      <pre class="taggedtext">
 ...
 &lt;ref&gt;
-<strong><span class="focus">&lt;element-citation publication-type="journal" publication-format="print"&gt;
+<strong><span class=
+"focus">&lt;element-citation publication-type="journal" publication-format="print"&gt;
 &lt;name&gt;&lt;surname&gt;Llanos De La Torre Quiralte&lt;/surname&gt;
 &lt;given-names&gt;M&lt;/given-names&gt;&lt;/name&gt;
 &lt;name&gt;&lt;surname&gt;Garijo Ayestaran&lt;/surname&gt;
@@ -34,10 +780,21 @@ Spanish&lt;/comment&gt;
 ...
 
 
-</pre></div></div><div class="examp.group"><h3 class="header">Example 2</h3><p class="para">Typical citation to a book:</p><div class="taggedexamp"><pre class="taggedtext">
+</pre>
+    </div>
+  </div>
+
+  <div class="examp.group">
+    <h3 class="header">Example 2</h3>
+
+    <p class="para">Typical citation to a book:</p>
+
+    <div class="taggedexamp">
+      <pre class="taggedtext">
 ...
 &lt;ref&gt;
-<strong><span class="focus">&lt;element-citation publication-type="book" publication-format="print"&gt;
+<strong><span class=
+"focus">&lt;element-citation publication-type="book" publication-format="print"&gt;
 &lt;name&gt;&lt;surname&gt;Al-Ibrahim&lt;/surname&gt;
 &lt;given-names&gt;MS&lt;/given-names&gt;&lt;/name&gt;
 &lt;name&gt;&lt;surname&gt;Gross&lt;/surname&gt;
@@ -64,10 +821,21 @@ iso-8601-date="1990"&gt;1990&lt;/date-in-citation&gt;
 ...
 
 
-</pre></div></div><div class="examp.group"><h3 class="header">Example 3</h3><p class="para">Translated example:</p><div class="taggedexamp"><pre class="taggedtext">
+</pre>
+    </div>
+  </div>
+
+  <div class="examp.group">
+    <h3 class="header">Example 3</h3>
+
+    <p class="para">Translated example:</p>
+
+    <div class="taggedexamp">
+      <pre class="taggedtext">
 ...
 &lt;ref&gt;
-<strong><span class="focus">&lt;element-citation publication-type="journal" publication-format="print"&gt;
+<strong><span class=
+"focus">&lt;element-citation publication-type="journal" publication-format="print"&gt;
 &lt;name&gt;&lt;surname&gt;Llanos De La Torre Quiralte&lt;/surname&gt;
 &lt;given-names&gt;M&lt;/given-names&gt;&lt;/name&gt;
 &lt;name&gt;&lt;surname&gt;Garijo Ayestaran&lt;/surname&gt;
@@ -94,11 +862,22 @@ Spanish&lt;/comment&gt;
 ...
 
 
-</pre></div></div><div class="examp.group"><h3 class="header">Example 4</h3><p class="para">Citation for a book, showing <a href="n-75x0.html" target="main" title="Date"><span class="elementtag">&lt;date&gt;</span></a> holding the publication year:
-:</p><div class="taggedexamp"><pre class="taggedtext">
+</pre>
+    </div>
+  </div>
+
+  <div class="examp.group">
+    <h3 class="header">Example 4</h3>
+
+    <p class="para">Citation for a book, showing <a href="n-75x0.html" target="main" title=
+    "Date"><span class="elementtag">&lt;date&gt;</span></a> holding the publication year: :</p>
+
+    <div class="taggedexamp">
+      <pre class="taggedtext">
 ...
 &lt;ref id="B14"&gt;
-<strong><span class="focus">&lt;element-citation publication-type="book" publication-format="print"&gt;
+<strong><span class=
+"focus">&lt;element-citation publication-type="book" publication-format="print"&gt;
 &lt;person-group person-group-type="author"&gt;
 &lt;name&gt;&lt;surname&gt;Hart&lt;/surname&gt;
 &lt;given-names&gt;JT&lt;/given-names&gt;&lt;/name&gt;
@@ -114,4 +893,21 @@ part in the health of the community&lt;/source&gt;
 ...
 
 
-</pre></div></div><div class="moduledefined"><h2 class="header">Module</h2><p class="moduledefined">JATS-common1.ent</p></div><div class="pagefooter"><h2 class="headname">Journal Archiving and Interchange Tag Library NISO JATS Draft Version 1.1d1</h2><h4 class="pubdate">Version of December 2013</h4></div></body></html>
+</pre>
+    </div>
+  </div>
+
+  <div class="moduledefined">
+    <h2 class="header">Module</h2>
+
+    <p class="moduledefined">JATS-common1.ent</p>
+  </div>
+
+  <div class="pagefooter">
+    <h2 class="headname">Journal Archiving and Interchange Tag Library NISO JATS Draft Version
+    1.1d1</h2>
+
+    <h4 class="pubdate">Version of December 2013</h4>
+  </div>
+</body>
+</html>
