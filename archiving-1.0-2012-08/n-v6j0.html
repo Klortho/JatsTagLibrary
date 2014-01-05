@@ -1,12 +1,80 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008--><link rel="stylesheet" href="auto-css.css" type="text/css"><title>Element: Subject Group</title></head><body class="main"><div class="pageheader"><h2 class="headname">Journal Archiving and Interchange Tag Library Proposed NISO JATS version 1.0</h2><h4 class="sponsor">National Center for Biotechnology Information (NCBI)<br class="linebrk"> National Library of
-   Medicine (NLM)</h4></div><div class="header"><h1 class="elementtag">&lt;subj-group&gt;</h1><h1 class="elementname">Subject Group</h1></div><div class="definition"><p class="para">Container element for the subject matter designations describing a document’s content or a component document’s content. Subjects are used to organize documents into groupings (potentially hierarchical groupings) for display or print.</p></div><div class="remarks"><h2 class="header">Remarks</h2><p class="para"> Subjects (and groupings of subjects) are used, typically, to provide headings for groups of documents or document components in a printed, or online, generated Table of Contents or splash page.</p><p class="para">For some journals, articles are grouped into categories which this Tag Set calls <a href="n-8hj0.html" target="main" title="Subject Grouping Name"><span class="elementtag">&lt;subject&gt;</span></a>s, which may be grouped into <a href="n-v6j0.html" target="main" title="Subject Group"><span class="elementtag">&lt;subj-group&gt;</span></a>s. These subject categories are typically shown in the Table of Contents, at the top of the first print or display page, or on the web splash page for an article. Sometimes the grouping or category refers to the type of article, such as “Essay”, “Commentary”, “Obituary”, “Award”, or “Article”. Sometimes the grouping refers to subject areas, such as “Physical Sciences”, “Biological Sciences”, or “Social Sciences”. Sometimes the grouping refers to topics within the larger subject areas, such as “Applied Math”, “Biology”, or “Chemistry”. For example, a one-level grouping might be:</p><div class="codeblock"><pre>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta name="generator" content="HTML Tidy for Linux/x86 (vers 25 March 2009), see www.w3.org" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008-->
+  <link rel="stylesheet" href="auto-css.css" type="text/css" />
+
+  <title>Element: Subject Group</title>
+</head>
+
+<body class="main">
+  <div class="pageheader">
+    <h2 class="headname">Journal Archiving and Interchange Tag Library Proposed NISO JATS version
+    1.0</h2>
+
+    <h4 class="sponsor">National Center for Biotechnology Information (NCBI)<br class="linebrk" />
+    National Library of Medicine (NLM)</h4>
+  </div>
+
+  <div class="header">
+    <h1 class="elementtag">&lt;subj-group&gt;</h1>
+
+    <h1 class="elementname">Subject Group</h1>
+  </div>
+
+  <div class="definition">
+    <p class="para">Container element for the subject matter designations describing a document’s
+    content or a component document’s content. Subjects are used to organize documents into
+    groupings (potentially hierarchical groupings) for display or print.</p>
+  </div>
+
+  <div class="remarks">
+    <h2 class="header">Remarks</h2>
+
+    <p class="para">Subjects (and groupings of subjects) are used, typically, to provide headings
+    for groups of documents or document components in a printed, or online, generated Table of
+    Contents or splash page.</p>
+
+    <p class="para">For some journals, articles are grouped into categories which this Tag Set
+    calls <a href="n-8hj0.html" target="main" title="Subject Grouping Name"><span class=
+    "elementtag">&lt;subject&gt;</span></a>s, which may be grouped into <a href="n-v6j0.html"
+    target="main" title="Subject Group"><span class="elementtag">&lt;subj-group&gt;</span></a>s.
+    These subject categories are typically shown in the Table of Contents, at the top of the first
+    print or display page, or on the web splash page for an article. Sometimes the grouping or
+    category refers to the type of article, such as “Essay”, “Commentary”, “Obituary”, “Award”, or
+    “Article”. Sometimes the grouping refers to subject areas, such as “Physical Sciences”,
+    “Biological Sciences”, or “Social Sciences”. Sometimes the grouping refers to topics within the
+    larger subject areas, such as “Applied Math”, “Biology”, or “Chemistry”. For example, a
+    one-level grouping might be:</p>
+
+    <div class="codeblock">
+      <pre>
   &lt;subj-group&gt;
     &lt;subject&gt;Retraction&lt;/subject&gt;
   &lt;/subj-group&gt;
-  </pre></div><p class="para">or, as another example: </p><div class="codeblock"><pre>
+  
+</pre>
+    </div>
+
+    <p class="para">or, as another example:</p>
+
+    <div class="codeblock">
+      <pre>
   &lt;subj-group&gt;
     &lt;subject&gt;Essay&lt;/subject&gt;
-  &lt;/subj-group&gt;</pre></div><p class="para">And a four-level grouping might be: </p><div class="codeblock"><pre>&lt;article-categories&gt;
+  &lt;/subj-group&gt;
+</pre>
+    </div>
+
+    <p class="para">And a four-level grouping might be:</p>
+
+    <div class="codeblock">
+      <pre>
+&lt;article-categories&gt;
   &lt;subj-group subj-group-type="keywords"&gt; 
      &lt;subject&gt;Biological Sciences&lt;/subject&gt;
      &lt;subj-group subj-group-type="keywords"&gt;
@@ -19,7 +87,17 @@
         &lt;/subj-group&gt;
      &lt;/subj-group&gt;
   &lt;/subj-group&gt; 
-&lt;/article-categories&gt;</pre></div><p class="para">Articles may also be assigned to more than one grouping. For example, if an article is classified as “Biochemistry” under “Biological Sciences” and “Chemistry” under “Physical Sciences”, the <a href="n-v6j0.html" target="main" title="Subject Group"><span class="elementtag">&lt;subj-group&gt;</span></a> container element may repeat. For example: </p><div class="codeblock"><pre>
+&lt;/article-categories&gt;
+</pre>
+    </div>
+
+    <p class="para">Articles may also be assigned to more than one grouping. For example, if an
+    article is classified as “Biochemistry” under “Biological Sciences” and “Chemistry” under
+    “Physical Sciences”, the <a href="n-v6j0.html" target="main" title="Subject Group"><span class=
+    "elementtag">&lt;subj-group&gt;</span></a> container element may repeat. For example:</p>
+
+    <div class="codeblock">
+      <pre>
   &lt;subj-group&gt;
     &lt;subject&gt;Articles&lt;/subject&gt;
   
@@ -39,7 +117,83 @@
       &lt;/subj-group&gt;
     &lt;/subj-group&gt;
   &lt;/subj-group&gt;
-  </pre></div></div><div class="attrlist"><h2 class="header">Attributes</h2><h5 class="header"><a href="n-ax52.html" target="main"><span class="attrtag">specific-use</span></a> <a href="n-ax52.html" target="main"><span class="attrname">Specific Use</span></a></h5><h5 class="header"><a href="n-pd52.html" target="main"><span class="attrtag">subj-group-type</span></a> <a href="n-pd52.html" target="main"><span class="attrname">Type of Subject Group</span></a></h5><h5 class="header"><a href="n-cg82.html" target="main"><span class="attrtag">xml:lang</span></a> <a href="n-cg82.html" target="main"><span class="attrname">Language</span></a></h5></div><div class="contentmodel"><h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  subj-group   <a href="n-54e2.html" target="main" title="Subject Group Model"><span class="petag">%subj-group-model;</span></a>                           &gt;</pre></div><div class="contentmodel"><h2 class="header">Expanded Content Model</h2><p class="contentdesc">((subject | compound-subject)+, subj-group*)</p></div><div class="modeldesc"><h2 class="header">Description</h2><p class="para">The following, in order:<ul class="bullist"><li>One or more of any of:<ul class="bullist"><li><a href="n-8hj0.html" target="main" title="Subject Grouping Name"><span class="elementtag">&lt;subject&gt;</span></a> <a href="n-8hj0.html" target="main" title="<subject&gt;"><span class="elementname">Subject Grouping Name</span></a></li><li><a href="n-bm80.html" target="main" title="Compound Subject Name"><span class="elementtag">&lt;compound-subject&gt;</span></a> <a href="n-bm80.html" target="main" title="<compound-subject&gt;"><span class="elementname">Compound Subject Name</span></a></li></ul></li><li><a href="n-v6j0.html" target="main" title="Subject Group"><span class="elementtag">&lt;subj-group&gt;</span></a> <a href="n-v6j0.html" target="main" title="<subj-group&gt;"><span class="elementname">Subject Group</span></a>, zero or more</li></ul></p></div><div class="elementcontext"><h3 class="header">This element may be contained in:</h3><p class="para"><a href="n-ybc0.html" target="main" title="Article Grouping Data"><span class="elementtag">&lt;article-categories&gt;</span></a>, <a href="n-v6j0.html" target="main" title="Subject Group"><span class="elementtag">&lt;subj-group&gt;</span></a></p></div><div class="examp.group"><h3 class="header">Example 1</h3><p class="para">Article categories that are very like keywords:</p><div class="taggedexamp"><pre class="taggedtext">
+  
+</pre>
+    </div>
+  </div>
+
+  <div class="attrlist">
+    <h2 class="header">Attributes</h2>
+
+    <h5 class="header"><a href="n-ax52.html" target="main"><span class=
+    "attrtag">specific-use</span></a> <a href="n-ax52.html" target="main"><span class=
+    "attrname">Specific Use</span></a></h5>
+
+    <h5 class="header"><a href="n-pd52.html" target="main"><span class=
+    "attrtag">subj-group-type</span></a> <a href="n-pd52.html" target="main"><span class=
+    "attrname">Type of Subject Group</span></a></h5>
+
+    <h5 class="header"><a href="n-cg82.html" target="main"><span class=
+    "attrtag">xml:lang</span></a> <a href="n-cg82.html" target="main"><span class=
+    "attrname">Language</span></a></h5>
+  </div>
+
+  <div class="contentmodel">
+    <h2 class="header first">Content Model</h2>
+    <pre class="contentdesc">
+&lt;!ELEMENT  subj-group   <a href="n-54e2.html" target="main" title=
+"Subject Group Model"><span class=
+"petag">%subj-group-model;</span></a>                           &gt;
+</pre>
+  </div>
+
+  <div class="contentmodel">
+    <h2 class="header">Expanded Content Model</h2>
+
+    <p class="contentdesc">((subject | compound-subject)+, subj-group*)</p>
+  </div>
+
+  <div class="modeldesc">
+    <h2 class="header">Description</h2>
+
+    <p class="para">The following, in order:</p>
+
+    <ul class="bullist">
+      <li>One or more of any of:
+
+        <ul class="bullist">
+          <li><a href="n-8hj0.html" target="main" title="Subject Grouping Name"><span class=
+          "elementtag">&lt;subject&gt;</span></a> <a href="n-8hj0.html" target="main" title=
+          "&lt;subject&gt;"><span class="elementname">Subject Grouping Name</span></a></li>
+
+          <li><a href="n-bm80.html" target="main" title="Compound Subject Name"><span class=
+          "elementtag">&lt;compound-subject&gt;</span></a> <a href="n-bm80.html" target="main"
+          title="&lt;compound-subject&gt;"><span class="elementname">Compound Subject
+          Name</span></a></li>
+        </ul>
+      </li>
+
+      <li><a href="n-v6j0.html" target="main" title="Subject Group"><span class=
+      "elementtag">&lt;subj-group&gt;</span></a> <a href="n-v6j0.html" target="main" title=
+      "&lt;subj-group&gt;"><span class="elementname">Subject Group</span></a>, zero or more</li>
+    </ul>
+  </div>
+
+  <div class="elementcontext">
+    <h3 class="header">This element may be contained in:</h3>
+
+    <p class="para"><a href="n-ybc0.html" target="main" title="Article Grouping Data"><span class=
+    "elementtag">&lt;article-categories&gt;</span></a>, <a href="n-v6j0.html" target="main" title=
+    "Subject Group"><span class="elementtag">&lt;subj-group&gt;</span></a></p>
+  </div>
+
+  <div class="examp.group">
+    <h3 class="header">Example 1</h3>
+
+    <p class="para">Article categories that are very like keywords:</p>
+
+    <div class="taggedexamp">
+      <pre class="taggedtext">
 ...
 &lt;article-categories&gt;
   <strong><span class="focus">&lt;subj-group subj-group-type="kwd"&gt;
@@ -53,7 +207,17 @@
 &lt;/article-categories&gt;
 ...
 
-</pre></div></div><div class="examp.group"><h3 class="header">Example 2</h3><p class="para">Categories for Table of Contents grouping:</p><div class="taggedexamp"><pre class="taggedtext">
+</pre>
+    </div>
+  </div>
+
+  <div class="examp.group">
+    <h3 class="header">Example 2</h3>
+
+    <p class="para">Categories for Table of Contents grouping:</p>
+
+    <div class="taggedexamp">
+      <pre class="taggedtext">
 ...
 &lt;article-categories&gt;
 <strong><span class="focus">&lt;subj-group&gt;
@@ -114,7 +278,15 @@
 &lt;/article-categories&gt;
 ...
 
-</pre></div></div><div class="examp.group"><h3 class="header">Example 3</h3><div class="taggedexamp"><pre class="taggedtext">
+</pre>
+    </div>
+  </div>
+
+  <div class="examp.group">
+    <h3 class="header">Example 3</h3>
+
+    <div class="taggedexamp">
+      <pre class="taggedtext">
 &lt;article&gt;
 &lt;front&gt;
 &lt;journal-meta&gt;...&lt;/journal-meta&gt;
@@ -144,4 +316,21 @@
 &lt;back&gt;...&lt;/back&gt;
 &lt;/article&gt;
 
-</pre></div></div><div class="moduledefined"><h2 class="header">Module</h2><p class="moduledefined">JATS-articlemeta1.ent</p></div><div class="pagefooter"><h2 class="headname">Journal Archiving and Interchange Tag Library Proposed NISO JATS version 1.0</h2><h4 class="pubdate">Version of May 2012</h4></div></body></html>
+</pre>
+    </div>
+  </div>
+
+  <div class="moduledefined">
+    <h2 class="header">Module</h2>
+
+    <p class="moduledefined">JATS-articlemeta1.ent</p>
+  </div>
+
+  <div class="pagefooter">
+    <h2 class="headname">Journal Archiving and Interchange Tag Library Proposed NISO JATS version
+    1.0</h2>
+
+    <h4 class="pubdate">Version of May 2012</h4>
+  </div>
+</body>
+</html>
