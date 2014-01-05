@@ -129,8 +129,12 @@ ruby ../scripts/make-docs.rb
 This does several things, in addition to transforming the HTML files.  Run
 it with the `-h` option to get more info.
 
-This will take quite a long time to convert all of the files.
+This will take a few minutes to convert all of the files.  The final bundle
+of documentation will be self-contained in the *jatsdoc* subdirectory,
+and can be moved as a package to the server.
 
+Note that the final converted jatsdoc version of the files do not get
+added back into the Git repository.  They are "pure product" files.
 
 
 
