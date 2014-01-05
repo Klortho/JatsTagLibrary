@@ -1,0 +1,179 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008--><link rel="stylesheet" href="BITS.css" type="text/css"><title>Element: Name of Person</title></head><body class="main"><div class="pageheader"><h2 class="headname">Book Interchange Tag Suite (BITS) Version 1.0 Tag Library 
+Version 1.0</h2><h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+National Library of Medicine (NLM)</h4></div><div class="header"><h1 class="elementtag">&lt;name&gt;</h1><h1 class="elementname">Name of Person</h1></div><div class="definition"><p class="para">Container element for the component elements of personal names, such as a
+          <a href="n-ruz0.html" target="main" title="Surname"><span class="elementtag">&lt;surname&gt;</span></a>.</p></div><div class="remarks"><h2 class="header">Remarks</h2><p class="para"><strong>Related Essay:</strong> For a discussion on the use of
+          <span class="elementtag">&lt;name&gt;</span>, see <a href="n-rzj2.html#bits-tag-names-cites">Personal Names in Citations</a>.</p><p class="para"><strong>Best Practice:</strong> If the name parts are unknown or
+          untagged, the whole name can be placed <ul class="bullist"><li>Within the <a href="n-gw90.html" target="main" title="Name of Person (Unstructured)"><span class="elementtag">&lt;string-name&gt;</span></a> element in
+              contexts where <a href="n-gw90.html" target="main" title="Name of Person (Unstructured)"><span class="elementtag">&lt;string-name&gt;</span></a> is allowed,
+              for example, <tt>&lt;string-name&gt;Ice Cube&lt;/string-name&gt;</tt>; or</li><li>Within the element <a href="n-ruz0.html" target="main" title="Surname"><span class="elementtag">&lt;surname&gt;</span></a> in
+              contexts where only <a href="n-ad60.html" target="main" title="Name of Person"><span class="elementtag">&lt;name&gt;</span></a> is allowed,
+              for example, <tt>&lt;surname&gt;Ice Cube&lt;/surname&gt;</tt>
+</li></ul>Use of a <a href="n-gw90.html" target="main" title="Name of Person (Unstructured)"><span class="elementtag">&lt;string-name&gt;</span></a> or
+          <a href="n-ruz0.html" target="main" title="Surname"><span class="elementtag">&lt;surname&gt;</span></a> element is more likely to lead to
+          better search results than merely leaving the person’s name untagged. (See <a href="n-gw90.html" target="main" title="Name of Person (Unstructured)"><span class="elementtag">&lt;string-name&gt;</span></a> for additional detail.)</p></div><div class="attrlist"><h2 class="header">Attributes</h2><h5 class="header"><a href="n-yxa2.html" target="main"><span class="attrtag">content-type</span></a> <a href="n-yxa2.html" target="main"><span class="attrname">Type of Content</span></a></h5><h5 class="header"><a href="n-4qu2.html" target="main"><span class="attrtag">id</span></a> <a href="n-4qu2.html" target="main"><span class="attrname">Document Internal Identifier</span></a></h5><h5 class="header"><a href="n-g9w2.html" target="main"><span class="attrtag">name-style</span></a> <a href="n-g9w2.html" target="main"><span class="attrname">Name Style</span></a></h5><h5 class="header"><a href="n-rdv2.html" target="main"><span class="attrtag">specific-use</span></a> <a href="n-rdv2.html" target="main"><span class="attrname">Specific Use</span></a></h5><h5 class="header"><a href="n-ib42.html" target="main"><span class="attrtag">xml:base</span></a> <a href="n-ib42.html" target="main"><span class="attrname">Base</span></a></h5><h5 class="header"><a href="n-fas2.html" target="main"><span class="attrtag">xml:lang</span></a> <a href="n-fas2.html" target="main"><span class="attrname">Language</span></a></h5></div><div class="contentmodel"><h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  name         ( ( (surname, given-names?) | given-names),
+                          prefix?, suffix?)                          &gt;</pre></div><div class="contentmodel"><h2 class="header">Expanded Content Model</h2><p class="contentdesc">(((surname, given-names?) | given-names), prefix?, suffix?)</p></div><div class="modeldesc"><h2 class="header">Description</h2><p class="para">The following, in order:<ul class="bullist"><li>Any one of:<ul class="bullist"><li>The following, in order:<ul class="bullist"><li><a href="n-ruz0.html" target="main" title="Surname"><span class="elementtag">&lt;surname&gt;</span></a> <a href="n-ruz0.html" target="main" title="<surname&gt;"><span class="elementname">Surname</span></a></li><li><a href="n-2a70.html" target="main" title="Given (First) Names"><span class="elementtag">&lt;given-names&gt;</span></a> <a href="n-2a70.html" target="main" title="<given-names&gt;"><span class="elementname">Given (First) Names</span></a>, zero or one</li></ul></li><li><a href="n-2a70.html" target="main" title="Given (First) Names"><span class="elementtag">&lt;given-names&gt;</span></a> <a href="n-2a70.html" target="main" title="<given-names&gt;"><span class="elementname">Given (First) Names</span></a></li></ul></li><li><a href="n-ueh0.html" target="main" title="Prefix"><span class="elementtag">&lt;prefix&gt;</span></a> <a href="n-ueh0.html" target="main" title="<prefix&gt;"><span class="elementname">Prefix</span></a>, zero or one</li><li><a href="n-qem0.html" target="main" title="Suffix"><span class="elementtag">&lt;suffix&gt;</span></a> <a href="n-qem0.html" target="main" title="<suffix&gt;"><span class="elementname">Suffix</span></a>, zero or one</li></ul></p></div><div class="elementcontext"><h3 class="header">This element may be contained in:</h3><p class="para"><a href="n-kzw0.html" target="main" title="Contributor"><span class="elementtag">&lt;contrib&gt;</span></a>, <a href="n-f740.html" target="main" title="Element Citation"><span class="elementtag">&lt;element-citation&gt;</span></a>, <a href="n-f9n0.html" target="main" title="Mixed Citation"><span class="elementtag">&lt;mixed-citation&gt;</span></a>, <a href="n-8i60.html" target="main" title="Name Alternatives"><span class="elementtag">&lt;name-alternatives&gt;</span></a>, <a href="n-uah0.html" target="main" title="Person Group for a Cited Publication"><span class="elementtag">&lt;person-group&gt;</span></a>, <a href="n-t9h0.html" target="main" title="Principal Award Recipient"><span class="elementtag">&lt;principal-award-recipient&gt;</span></a>, <a href="n-2zh0.html" target="main" title="Principal Investigator"><span class="elementtag">&lt;principal-investigator&gt;</span></a>, <a href="n-qci0.html" target="main" title="Product Information"><span class="elementtag">&lt;product&gt;</span></a>, <a href="n-pgy0.html" target="main" title="Related Article Information"><span class="elementtag">&lt;related-article&gt;</span></a>, <a href="n-49y0.html" target="main" title="Related Object Information"><span class="elementtag">&lt;related-object&gt;</span></a></p></div><div class="examp.group"><h3 class="header">Example 1</h3><p class="para">In metadata, naming an author:</p><div class="taggedexamp"><pre class="taggedtext">
+ 
+...
+&lt;contrib-group&gt;
+&lt;contrib contrib-type="author"&gt;
+<strong><span class="focus">&lt;name name-style="western"&gt;
+&lt;surname&gt;McCrohan&lt;/surname&gt;
+&lt;given-names&gt;John&lt;/given-names&gt;
+&lt;prefix&gt;Capt.&lt;/prefix&gt;
+&lt;/name&gt;</span></strong>
+&lt;/contrib&gt;
+&lt;aff&gt;Center for Devices and Radiological Health, Food and 
+Drug Administration, Rockville, Maryland 20857&lt;/aff&gt;
+&lt;/contrib-group&gt;
+...
+
+ </pre></div><div class="taggedexamp"><pre class="taggedtext">
+    
+...
+&lt;contrib-group&gt;
+&lt;contrib contrib-type="author" rid="StLukes"&gt;
+<strong><span class="focus">&lt;name&gt;&lt;surname&gt;Johnson&lt;/surname&gt;
+&lt;given-names&gt;John Jacob&lt;/given-names&gt;&lt;/name&gt;</span></strong>
+&lt;role&gt;research physiotherapist&lt;/role&gt;
+&lt;/contrib&gt;
+&lt;contrib contrib-type="author" rid="RoyalInf"&gt;
+<strong><span class="focus">&lt;name&gt;&lt;surname&gt;Smithson&lt;/surname&gt;
+&lt;given-names&gt;Sally B.&lt;/given-names&gt;&lt;/name&gt;</span></strong>
+&lt;role&gt;consultant physician&lt;/role&gt;
+&lt;author-comment&gt;&lt;p&gt;In addition to her role as consulting
+physician on this project, Dr. Smithson owns trains the
+therapy dog used in the experiments&lt;/p&gt;&lt;/author-comment&gt;
+&lt;/contrib&gt;
+&lt;/contrib-group&gt;
+...
+
+
+   </pre></div></div><div class="examp.group"><h3 class="header">Example 2</h3><p class="para">In metadata, naming an editor:</p><div class="taggedexamp"><pre class="taggedtext">
+
+...  
+&lt;contrib-group content-type="conference-editors"&gt;
+&lt;contrib contrib-type="editor"&gt;
+<strong><span class="focus">&lt;name name-style="western"&gt;
+&lt;surname&gt;Herrera&lt;/surname&gt;
+&lt;given-names&gt;Gerardo&lt;/given-names&gt;
+&lt;/name&gt;</span></strong>
+&lt;role&gt;Conference Editor&lt;/role&gt;
+&lt;/contrib&gt;
+&lt;/contrib-group&gt;
+...
+
+</pre></div></div><div class="examp.group"><h3 class="header">Example 3</h3><p class="para">In an element-style bibliographic reference (punctuation and spacing removed):</p><div class="taggedexamp"><pre class="taggedtext">
+    
+...
+&lt;ref-list&gt;
+...
+&lt;ref id="B8"&gt;&lt;label&gt;8&lt;/label&gt;
+&lt;element-citation&gt;
+&lt;person-group person-group-type="author"&gt;
+<strong><span class="focus">&lt;name&gt;&lt;surname&gt;Weissert&lt;/surname&gt;
+&lt;given-names&gt;W&lt;/given-names&gt;&lt;/name&gt;</span></strong>
+<strong><span class="focus">&lt;name&gt;&lt;surname&gt;Livieratos&lt;/surname&gt;
+&lt;given-names&gt;B&lt;/given-names&gt;&lt;/name&gt;</span></strong>
+&lt;/person-group&gt;
+&lt;article-title&gt;Effects and costs of day-care
+services for the chronically ill: a randomized
+experiment&lt;/article-title&gt;
+&lt;source&gt;Medical Care&lt;/source&gt;
+&lt;year iso-8601-date="1980"&gt;1980&lt;/year&gt;
+&lt;volume&gt;18&lt;/volume&gt;
+&lt;fpage&gt;567&lt;/fpage&gt;
+&lt;lpage&gt;584&lt;/lpage&gt;
+&lt;pub-id pub-id-type="publisher-id"&gt;WES-6772889&lt;/pub-id&gt;
+&lt;/element-citation&gt;
+&lt;/ref&gt;
+...
+&lt;/ref-list&gt;
+...
+
+   </pre></div></div><div class="examp.group"><h3 class="header">Example 4</h3><p class="para">In metadata, providing alternative names (in Japanese):</p><div class="taggedexamp"><pre class="taggedtext">
+...
+&lt;book-meta&gt;
+...
+&lt;contrib-group&gt;
+&lt;contrib contrib-type="author"&gt;
+&lt;name-alternatives&gt;
+<strong><span class="focus">&lt;name name-style="eastern" xml:lang="ja-Jpan"&gt;
+&lt;surname&gt;園田&lt;/surname&gt;
+&lt;given-names&gt;直子&lt;/given-names&gt;
+&lt;/name&gt;</span></strong>
+<strong><span class="focus">&lt;name name-style="western" xml:lang="en"&gt;
+&lt;surname&gt;Sonoda&lt;/surname&gt;
+&lt;given-names&gt;Naoko&lt;/given-names&gt;
+&lt;/name&gt;</span></strong>
+<strong><span class="focus">&lt;name name-style="eastern" xml:lang="ja-Kana"&gt;
+&lt;surname&gt;ソノダ&lt;/surname&gt;
+&lt;given-names&gt;ナオコ&lt;/given-names&gt;
+&lt;/name&gt;</span></strong>
+&lt;/name-alternatives&gt; 
+&lt;xref ref-type="aff" rid="aff2"&gt;&amp;ast;&amp;ast;&lt;/xref&gt;
+&lt;/contrib&gt;
+&lt;/contrib-group&gt;
+...
+&lt;/book-meta&gt;
+...
+</pre></div></div><div class="examp.group"><h3 class="header">Example 5</h3><p class="para">Providing alternative names (in Chinese):</p><div class="taggedexamp"><pre class="taggedtext">
+  
+...  
+&lt;name-alternatives&gt;
+<strong><span class="focus">&lt;name name-style="western"&gt;&lt;surname&gt;Chu&lt;/surname&gt;
+&lt;given-names&gt;J. H.&lt;/given-names&gt;&lt;/name&gt;</span></strong>
+&lt;string-name name-style="eastern" xml:lang="zh"&gt;褚君浩&lt;/string-name&gt;
+&lt;/name-alternatives&gt;
+...
+
+  </pre></div><div class="taggedexamp"><pre class="taggedtext">
+  
+...
+&lt;contrib-group&gt;
+&lt;contrib&gt;  
+&lt;name-alternatives&gt;
+<strong><span class="focus">&lt;name name-style="western"&gt;&lt;surname&gt;Zhang&lt;/surname&gt;
+&lt;given-names&gt;Y. P.&lt;/given-names&gt;&lt;/name&gt;</span></strong>
+&lt;string-name name-style="eastern" xml:lang="zh"&gt;张轶泼&lt;/string-name&gt;
+&lt;/name-alternatives&gt;
+&lt;xref ref-type="aff" rid="a1"&gt;1&lt;/xref&gt;
+&lt;xref ref-type="author-notes" rid="n1"&gt;a)&lt;/xref&gt;
+&lt;/contrib&gt;
+&lt;contrib contrib-type="author"&gt;
+&lt;name-alternatives&gt;
+<strong><span class="focus">&lt;name name-style="western"&gt;&lt;surname&gt;Isobe&lt;/surname&gt;
+&lt;given-names&gt;M.&lt;/given-names&gt;&lt;/name&gt;</span></strong>
+&lt;string-name name-style="eastern" xml:lang="zh"&gt;磯部光孝&lt;/string-name&gt;
+&lt;/name-alternatives&gt;
+&lt;xref ref-type="aff" rid="a2"&gt;2&lt;/xref&gt;
+&lt;/contrib&gt;
+&lt;contrib contrib-type="author"&gt;
+&lt;name-alternatives&gt;
+<strong><span class="focus">&lt;name name-style="western"&gt;&lt;surname&gt;Liu&lt;/surname&gt;
+&lt;given-names&gt;Yi&lt;/given-names&gt;&lt;/name&gt;</span></strong>
+&lt;string-name name-style="eastern" xml:lang="zh"&gt;刘仪&lt;/string-name&gt;
+&lt;/name-alternatives&gt;
+&lt;xref ref-type="aff" rid="a1"&gt;1&lt;/xref&gt;
+&lt;/contrib&gt;
+&lt;/contrib-group&gt;
+...
+
+  </pre></div></div><div class="examp.group"><h3 class="header">Example 6</h3><p class="para">Providing author names as part of a product description:</p><div class="taggedexamp"><pre class="taggedtext">
+
+...
+&lt;product&gt;
+&lt;source&gt;Image-Guided Radiation Therapy in Lymphoma Management. 
+The Increasing Role of Functional Imaging.&lt;/source&gt;
+<strong><span class="focus">&lt;name name-style="western"&gt;&lt;surname&gt;Macklis&lt;/surname&gt;
+&lt;given-names&gt;R. M.&lt;/given-names&gt;&lt;/name&gt;</span></strong>
+<strong><span class="focus">&lt;name name-style="western"&gt;&lt;surname&gt;Conti&lt;/surname&gt;
+&lt;given-names&gt;P. S.&lt;/given-names&gt;&lt;/name&gt;</span></strong>
+&lt;publisher-name&gt;Informa Healthcare&lt;/publisher-name&gt;, 
+Essex, United Kingdom, 2010, Price: &lt;price&gt;$324.00&lt;/price&gt;. 
+ISBN: &lt;isbn&gt;9781420058741&lt;/isbn&gt;, 80 p. (hardcover)
+&lt;/product&gt;
+...
+
+</pre></div></div><div class="pagefooter"><h2 class="headname">Book Interchange Tag Suite (BITS) Version 1.0 Tag Library 
+Version 1.0</h2><h4 class="pubdate">Version of December 2013</h4></div></body></html>

@@ -1,0 +1,59 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008--><link rel="stylesheet" href="BITS.css" type="text/css"><title>Element: Annotation in a Citation</title></head><body class="main"><div class="pageheader"><h2 class="headname">Book Interchange Tag Suite (BITS) Version 1.0 Tag Library 
+Version 1.0</h2><h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+National Library of Medicine (NLM)</h4></div><div class="header"><h1 class="elementtag">&lt;annotation&gt;</h1><h1 class="elementname">Annotation in a Citation</h1></div><div class="definition"><p class="para">Commentary, summary, review, or similar non-bibliographic information concerning the
+          cited work.</p></div><div class="remarks"><h2 class="header">Remarks</h2><p class="para">While most citations simply provide the bibliographic information for a cited
+          reference, a few describe the work, categorize the work, comment upon the nature or
+          quality of the work, or summarize its findings. The <a href="n-2uc0.html" target="main" title="Annotation in a Citation"><span class="elementtag">&lt;annotation&gt;</span></a> element is intended to hold such
+          commentary.</p><p class="para"><strong>Display/Formatting Note:</strong> All of the other reference
+          elements are inline elements. In contrast, an <a href="n-2uc0.html" target="main" title="Annotation in a Citation"><span class="elementtag">&lt;annotation&gt;</span></a> is typically presented as a block element, with space before and after
+          it.</p></div><div class="attrlist"><h2 class="header">Attributes</h2><h5 class="header"><a href="n-yxa2.html" target="main"><span class="attrtag">content-type</span></a> <a href="n-yxa2.html" target="main"><span class="attrname">Type of Content</span></a></h5><h5 class="header"><a href="n-4qu2.html" target="main"><span class="attrtag">id</span></a> <a href="n-4qu2.html" target="main"><span class="attrname">Document Internal Identifier</span></a></h5><h5 class="header"><a href="n-rdv2.html" target="main"><span class="attrtag">specific-use</span></a> <a href="n-rdv2.html" target="main"><span class="attrname">Specific Use</span></a></h5><h5 class="header"><a href="n-ib42.html" target="main"><span class="attrtag">xml:base</span></a> <a href="n-ib42.html" target="main"><span class="attrname">Base</span></a></h5><h5 class="header"><a href="n-fas2.html" target="main"><span class="attrtag">xml:lang</span></a> <a href="n-fas2.html" target="main"><span class="attrname">Language</span></a></h5></div><div class="relatedelem"><h2 class="header">Related Elements</h2><p class="para">This element is not related to the MathML <tt>&lt;annotation&gt;</tt> element,
+          which is a mathematical term used only with equations.</p></div><div class="contentmodel"><h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  annotation   <a href="n-nvt2.html" target="main" title="Date Elements Model"><span class="petag">%annotation-model;</span></a>                           &gt;</pre></div><div class="contentmodel"><h2 class="header">Expanded Content Model</h2><p class="contentdesc">((p)+)</p></div><div class="modeldesc"><h2 class="header">Description</h2><p class="para">Any one of:<ul class="bullist"><li><a href="n-7tr0.html" target="main" title="Paragraph"><span class="elementtag">&lt;p&gt;</span></a> <a href="n-7tr0.html" target="main" title="<p&gt;"><span class="elementname">Paragraph</span></a>, one or more</li></ul></p></div><div class="elementcontext"><h3 class="header">This element may be contained in:</h3><p class="para"><a href="n-f740.html" target="main" title="Element Citation"><span class="elementtag">&lt;element-citation&gt;</span></a>, <a href="n-f9n0.html" target="main" title="Mixed Citation"><span class="elementtag">&lt;mixed-citation&gt;</span></a>, <a href="n-qci0.html" target="main" title="Product Information"><span class="elementtag">&lt;product&gt;</span></a>, <a href="n-pgy0.html" target="main" title="Related Article Information"><span class="elementtag">&lt;related-article&gt;</span></a>, <a href="n-49y0.html" target="main" title="Related Object Information"><span class="elementtag">&lt;related-object&gt;</span></a></p></div><div class="examp.group"><h3 class="header">Example 1</h3><p class="para">In an element-style bibliographic reference (punctuation and spacing removed): </p><div class="taggedexamp"><pre class="taggedtext">
+    
+...
+&lt;ref&gt;
+&lt;element-citation publication-type="commun"&gt;
+&lt;person-group&gt;
+&lt;name&gt;&lt;surname&gt;Nightingale&lt;/surname&gt;
+&lt;given-names&gt;Florence&lt;/given-names&gt;&lt;/name&gt;
+&lt;/person-group&gt;
+&lt;comment&gt;115 Park Street, W, [London, GB]&lt;/comment&gt;
+&lt;source&gt;Letter to: Marquis Townshend&lt;/source&gt;
+&lt;year iso-8601-date="1864-07-27"&gt;1864&lt;/year&gt;
+&lt;month&gt;Jul&lt;/month&gt;
+&lt;day&gt;27&lt;/day&gt;
+&lt;size units="leaves"&gt;4 leaves&lt;/size&gt;
+&lt;comment&gt;Located at: Modern Manuscripts Collection,
+History of Medicine Division, National Library of Medicine, 
+Bethesda, MD; MS F 179&lt;/comment&gt;
+<strong><span class="focus">&lt;annotation&gt;&lt;p&gt;Nightingale responds to Townshend&amp;rsquo;s
+request on behalf of a Mrs. Montague for funds to support 
+old nurses&lt;/p&gt;&lt;/annotation&gt;</span></strong>
+&lt;/element-citation&gt;
+&lt;/ref&gt;
+...
+
+   </pre></div></div><div class="examp.group"><h3 class="header">Example 2</h3><p class="para">In a mixed-style bibliographic reference (punctuation and spacing preserved): </p><div class="taggedexamp"><pre class="taggedtext">
+    
+...
+&lt;ref&gt;
+&lt;mixed-citation publication-type="commun"&gt;
+&lt;string-name&gt;&lt;surname&gt;Nightingale&lt;/surname&gt;,
+&lt;given-names&gt;Florence&lt;/given-names&gt;&lt;/string-name&gt; (115
+Park Street, W, [London, GB]). &lt;source&gt;Letter to: Marquis
+Townshend&lt;/source&gt;. &lt;year iso-8601-date="1864-07-27"&gt;1864&lt;/year&gt;
+&lt;month&gt;Jul&lt;/month&gt; &lt;day&gt;27&lt;/day&gt;. &lt;size units="leaves"&gt;4
+leaves&lt;/size&gt;. Located at: Modern Manuscripts Collection,
+History of Medicine Division, National Library of
+Medicine, Bethesda, MD; MS F 179.
+<strong><span class="focus">&lt;annotation&gt;&lt;p&gt;Nightingale responds to Townshend&amp;rsquo;s
+request on behalf of a Mrs. Montague for funds to support
+old nurses.&lt;/p&gt;&lt;/annotation&gt;</span></strong>
+&lt;/mixed-citation&gt;
+&lt;/ref&gt;
+...
+
+
+
+   </pre></div></div><div class="pagefooter"><h2 class="headname">Book Interchange Tag Suite (BITS) Version 1.0 Tag Library 
+Version 1.0</h2><h4 class="pubdate">Version of December 2013</h4></div></body></html>

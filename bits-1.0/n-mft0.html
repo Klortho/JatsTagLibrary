@@ -1,0 +1,46 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008--><link rel="stylesheet" href="BITS.css" type="text/css"><title>Element: Footnote Group</title></head><body class="main"><div class="pageheader"><h2 class="headname">Book Interchange Tag Suite (BITS) Version 1.0 Tag Library 
+Version 1.0</h2><h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+National Library of Medicine (NLM)</h4></div><div class="header"><h1 class="elementtag">&lt;fn-group&gt;</h1><h1 class="elementname">Footnote Group</h1></div><div class="definition"><p class="para">Container element for footnotes that appear at the end of the document.</p></div><div class="attrlist"><h2 class="header">Attributes</h2><h5 class="header"><a href="n-yxa2.html" target="main"><span class="attrtag">content-type</span></a> <a href="n-yxa2.html" target="main"><span class="attrname">Type of Content</span></a></h5><h5 class="header"><a href="n-4qu2.html" target="main"><span class="attrtag">id</span></a> <a href="n-4qu2.html" target="main"><span class="attrname">Document Internal Identifier</span></a></h5><h5 class="header"><a href="n-rdv2.html" target="main"><span class="attrtag">specific-use</span></a> <a href="n-rdv2.html" target="main"><span class="attrname">Specific Use</span></a></h5><h5 class="header"><a href="n-ib42.html" target="main"><span class="attrtag">xml:base</span></a> <a href="n-ib42.html" target="main"><span class="attrname">Base</span></a></h5><h5 class="header"><a href="n-fas2.html" target="main"><span class="attrtag">xml:lang</span></a> <a href="n-fas2.html" target="main"><span class="attrname">Language</span></a></h5></div><div class="contentmodel"><h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  fn-group     <a href="n-x7g2.html" target="main" title="Footnote Group Model"><span class="petag">%fn-group-model;</span></a>                             &gt;</pre></div><div class="contentmodel"><h2 class="header">Expanded Content Model</h2><p class="contentdesc">(label?, title?, (fn | x)+)</p></div><div class="modeldesc"><h2 class="header">Description</h2><p class="para">The following, in order:<ul class="bullist"><li><a href="n-tdg0.html" target="main" title="Label (of an Equation, Figure, Reference, etc.)"><span class="elementtag">&lt;label&gt;</span></a> <a href="n-tdg0.html" target="main" title="<label&gt;"><span class="elementname">Label (of an Equation, Figure, Reference, etc.)</span></a>, zero or one</li><li><a href="n-da22.html" target="main" title="Title"><span class="elementtag">&lt;title&gt;</span></a> <a href="n-da22.html" target="main" title="<title&gt;"><span class="elementname">Title</span></a>, zero or one</li><li>One or more of any of:<ul class="bullist"><li><a href="n-5et0.html" target="main" title="Footnote"><span class="elementtag">&lt;fn&gt;</span></a> <a href="n-5et0.html" target="main" title="<fn&gt;"><span class="elementname">Footnote</span></a></li><li><a href="n-p652.html" target="main" title="X - Generated Text and Punctuation"><span class="elementtag">&lt;x&gt;</span></a> <a href="n-p652.html" target="main" title="<x&gt;"><span class="elementname">X - Generated Text and Punctuation</span></a></li></ul></li></ul></p></div><div class="elementcontext"><h3 class="header">This element may be contained in:</h3><p class="para"><a href="n-2q00.html" target="main" title="Abstract"><span class="elementtag">&lt;abstract&gt;</span></a>, <a href="n-wc20.html" target="main" title="Acknowledgments"><span class="elementtag">&lt;ack&gt;</span></a>, <a href="n-ztc0.html" target="main" title="Answer to a Question"><span class="elementtag">&lt;answer&gt;</span></a>, <a href="n-urc0.html" target="main" title="Appendix"><span class="elementtag">&lt;app&gt;</span></a>, <a href="n-4p30.html" target="main" title="Back Matter for a Book Part"><span class="elementtag">&lt;back&gt;</span></a>, <a href="n-x930.html" target="main" title="Biography"><span class="elementtag">&lt;bio&gt;</span></a>, <a href="n-xe50.html" target="main" title="Book Back Matter"><span class="elementtag">&lt;book-back&gt;</span></a>, <a href="n-wk80.html" target="main" title="Book Part Wrapper"><span class="elementtag">&lt;book-part-wrapper&gt;</span></a>, <a href="n-ew80.html" target="main" title="Book Title Group"><span class="elementtag">&lt;book-title-group&gt;</span></a>, <a href="n-3d80.html" target="main" title="Boxed Text"><span class="elementtag">&lt;boxed-text&gt;</span></a>, <a href="n-nrt0.html" target="main" title="Front Matter"><span class="elementtag">&lt;front-matter&gt;</span></a>, <a href="n-crd0.html" target="main" title="Notes"><span class="elementtag">&lt;notes&gt;</span></a>, <a href="n-ezi0.html" target="main" title="Question"><span class="elementtag">&lt;question&gt;</span></a>, <a href="n-cap0.html" target="main" title="Section"><span class="elementtag">&lt;sec&gt;</span></a>, <a href="n-hyz0.html" target="main" title="Table Wrapper Footer"><span class="elementtag">&lt;table-wrap-foot&gt;</span></a>, <a href="n-ht22.html" target="main" title="Title Group"><span class="elementtag">&lt;title-group&gt;</span></a>, <a href="n-z8c2.html" target="main" title="Translated Abstract"><span class="elementtag">&lt;trans-abstract&gt;</span></a></p></div><div class="examp.group"><h3 class="header">Example 1</h3><div class="taggedexamp"><pre class="taggedtext">
+    
+...
+&lt;book-back&gt;
+&lt;ack&gt;
+&lt;p&gt;We are grateful to Uri Alon, Harley McAdams, Lee Kroos,
+Patrick Piggot, and Patrick Stragier for critical comments
+of the manuscript. ...&lt;/p&gt;
+...
+&lt;/ack&gt;
+<strong><span class="focus">&lt;fn-group&gt;
+&lt;fn id="n1" fn-type="conflict"&gt;
+&lt;p&gt;&lt;bold&gt;Conflicts of interest.&lt;/bold&gt; The authors have declared
+that no conflicts of interest exist.&lt;/p&gt;
+&lt;/fn&gt;
+&lt;fn id="n2" fn-type="con"&gt;
+&lt;p&gt;&lt;bold&gt;Author contributions.&lt;/bold&gt; PE, MF, STJ, EMC, DZR, 
+TS, JSL, and RL conceived and designed the experiments. PE, 
+MF, DZR, STW, CF, and KH performed the experiments. PE, MF, 
+STJ, EMC, DZR, and JSL analyzed the data. PE, MF, STJ, EMC, 
+DZR, and JSL contributed reagents/materials/analysis tools. PE, 
+MF, STJ, EMC, JSL, and RL wrote the paper.&lt;/p&gt;
+&lt;/fn&gt;
+&lt;/fn-group&gt;</span></strong>
+&lt;/book-back&gt;
+...
+
+   </pre></div></div><div class="examp.group"><h3 class="header">Example 2</h3><div class="taggedexamp"><pre class="taggedtext">
+    
+...
+&lt;book-part&gt;
+...
+&lt;back&gt;
+&lt;ref-list&gt;...&lt;/ref-list&gt;
+<strong><span class="focus">&lt;fn-group&gt;
+&lt;fn&gt;&lt;p&gt;Competing interests: None declared.&lt;/p&gt;&lt;/fn&gt;
+&lt;/fn-group&gt;</span></strong>
+&lt;/back&gt;
+&lt;/book-part&gt;
+...
+
+   </pre></div></div><div class="pagefooter"><h2 class="headname">Book Interchange Tag Suite (BITS) Version 1.0 Tag Library 
+Version 1.0</h2><h4 class="pubdate">Version of December 2013</h4></div></body></html>

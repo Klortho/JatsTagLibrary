@@ -1,0 +1,54 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008--><link rel="stylesheet" href="BITS.css" type="text/css"><title>Element: Ruby Base Text</title></head><body class="main"><div class="pageheader"><h2 class="headname">Book Interchange Tag Suite (BITS) Version 1.0 Tag Library 
+Version 1.0</h2><h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+National Library of Medicine (NLM)</h4></div><div class="header"><h1 class="elementtag">&lt;rb&gt;</h1><h1 class="elementname">Ruby Base Text</h1></div><div class="definition"><p class="para">This element is one half of a Ruby annotation (<a href="n-hhj0.html" target="main" title="Ruby Annotation Wrapper"><span class="elementtag">&lt;ruby&gt;</span></a>),
+and it contains the narrative text in the document, which may be as short as a single character, to
+which a Ruby Textual Annotation (<a href="n-4rj0.html" target="main" title="Ruby Textual Annotation"><span class="elementtag">&lt;rt&gt;</span></a>) should be applied.</p></div><div class="remarks"><h2 class="header">Remarks</h2><p class="para"><strong>What is Ruby:</strong> A Ruby textual annotation is an annotation, typically
+short, applied to a letter, word, phrase, or name that appears in narrative text. Ruby annotations
+can indicate, for example, pronunciation advice, notes for  translation, semantic annotations, et al.
+Ruby is used with Japanese, for example, in furigana, which typically uses hiragana annotations on
+kanji base text. Ruby is also be used in Chinese Pīnyīn (a phonetic system for transcribing the
+sound of Chinese characters into Latin script) as well as for some Korean names. In display or
+print, the characters of a Ruby annotation are frequently placed above the characters they modify, in parenthesis after the characters they modify, or to the right of vertically set text.</p><p class="para">In NISO JATS, Ruby annotations are not used within any of the metadata elements such as
+<a href="n-8r50.html" target="main" title="Book Metadata (Whole Book)"><span class="elementtag">&lt;book-meta&gt;</span></a>, <a href="n-zq50.html" target="main" title="Book Part Metadata"><span class="elementtag">&lt;book-part-meta&gt;</span></a>, and
+<a href="n-b4p0.html" target="main" title="Section Metadata"><span class="elementtag">&lt;sec-meta&gt;</span></a>.</p><p class="para"><em>Structure of NISO JATS Ruby:</em> The
+<a href="n-hhj0.html" target="main" title="Ruby Annotation Wrapper"><span class="elementtag">&lt;ruby&gt;</span></a> element is an inline wrapper element that contains some of the
+document narrative text (inside a Ruby Base <a href="n-gay0.html" target="main" title="Ruby Base Text"><span class="elementtag">&lt;rb&gt;</span></a> element) and one or
+more Ruby
+Textual Annotations (inside an <a href="n-4rj0.html" target="main" title="Ruby Textual Annotation"><span class="elementtag">&lt;rt&gt;</span></a> element) associated with
+that base text.</p></div><div class="attrlist"><h2 class="header">Attributes</h2><h5 class="header"><a href="n-yxa2.html" target="main"><span class="attrtag">content-type</span></a> <a href="n-yxa2.html" target="main"><span class="attrname">Type of Content</span></a></h5><h5 class="header"><a href="n-4qu2.html" target="main"><span class="attrtag">id</span></a> <a href="n-4qu2.html" target="main"><span class="attrname">Document Internal Identifier</span></a></h5><h5 class="header"><a href="n-rdv2.html" target="main"><span class="attrtag">specific-use</span></a> <a href="n-rdv2.html" target="main"><span class="attrname">Specific Use</span></a></h5><h5 class="header"><a href="n-ib42.html" target="main"><span class="attrtag">xml:base</span></a> <a href="n-ib42.html" target="main"><span class="attrname">Base</span></a></h5><h5 class="header"><a href="n-fas2.html" target="main"><span class="attrtag">xml:lang</span></a> <a href="n-fas2.html" target="main"><span class="attrname">Language</span></a></h5></div><div class="contentmodel"><h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  rb           (#PCDATA <a href="n-pjr2.html" target="main" title="Ruby Base Elements"><span class="petag">%rb-elements;</span></a>)*                     &gt;</pre></div><div class="contentmodel"><h2 class="header">Expanded Content Model</h2><p class="contentdesc">(#PCDATA | bold | fixed-case | italic | monospace | overline | overline-start | overline-end | roman | sans-serif | sc | strike | underline | underline-start | underline-end)*</p></div><div class="modeldesc"><h2 class="header">Description</h2><p class="para">Any combination of:<ul class="bullist"><li>Text, numbers, or special characters</li><li><a href="n-8w50.html" target="main" title="Bold"><span class="elementtag">&lt;bold&gt;</span></a> <a href="n-8w50.html" target="main" title="<bold&gt;"><span class="elementname">Bold</span></a></li><li><a href="n-hut0.html" target="main" title="Fixed Case"><span class="elementtag">&lt;fixed-case&gt;</span></a> <a href="n-hut0.html" target="main" title="<fixed-case&gt;"><span class="elementname">Fixed Case</span></a></li><li><a href="n-vcg0.html" target="main" title="Italic"><span class="elementtag">&lt;italic&gt;</span></a> <a href="n-vcg0.html" target="main" title="<italic&gt;"><span class="elementname">Italic</span></a></li><li><a href="n-ts60.html" target="main" title="Monospace Text (Typewriter Text)"><span class="elementtag">&lt;monospace&gt;</span></a> <a href="n-ts60.html" target="main" title="<monospace&gt;"><span class="elementname">Monospace Text (Typewriter Text)</span></a></li><li><a href="n-48r0.html" target="main" title="Overline"><span class="elementtag">&lt;overline&gt;</span></a> <a href="n-48r0.html" target="main" title="<overline&gt;"><span class="elementname">Overline</span></a></li><li><a href="n-csr0.html" target="main" title="Overline Start"><span class="elementtag">&lt;overline-start&gt;</span></a> <a href="n-csr0.html" target="main" title="<overline-start&gt;"><span class="elementname">Overline Start</span></a></li><li><a href="n-hvr0.html" target="main" title="Overline End"><span class="elementtag">&lt;overline-end&gt;</span></a> <a href="n-hvr0.html" target="main" title="<overline-end&gt;"><span class="elementname">Overline End</span></a></li><li><a href="n-eej0.html" target="main" title="Roman"><span class="elementtag">&lt;roman&gt;</span></a> <a href="n-eej0.html" target="main" title="<roman&gt;"><span class="elementname">Roman</span></a></li><li><a href="n-yyj0.html" target="main" title="Sans Serif"><span class="elementtag">&lt;sans-serif&gt;</span></a> <a href="n-yyj0.html" target="main" title="<sans-serif&gt;"><span class="elementname">Sans Serif</span></a></li><li><a href="n-nmj0.html" target="main" title="Small Caps"><span class="elementtag">&lt;sc&gt;</span></a> <a href="n-nmj0.html" target="main" title="<sc&gt;"><span class="elementname">Small Caps</span></a></li><li><a href="n-fhb0.html" target="main" title="Strike Through"><span class="elementtag">&lt;strike&gt;</span></a> <a href="n-fhb0.html" target="main" title="<strike&gt;"><span class="elementname">Strike Through</span></a></li><li><a href="n-wk32.html" target="main" title="Underline"><span class="elementtag">&lt;underline&gt;</span></a> <a href="n-wk32.html" target="main" title="<underline&gt;"><span class="elementname">Underline</span></a></li><li><a href="n-au32.html" target="main" title="Underline Start"><span class="elementtag">&lt;underline-start&gt;</span></a> <a href="n-au32.html" target="main" title="<underline-start&gt;"><span class="elementname">Underline Start</span></a></li><li><a href="n-9832.html" target="main" title="Underline End"><span class="elementtag">&lt;underline-end&gt;</span></a> <a href="n-9832.html" target="main" title="<underline-end&gt;"><span class="elementname">Underline End</span></a></li></ul></p></div><div class="elementcontext"><h3 class="header">This element may be contained in:</h3><p class="para"><a href="n-hhj0.html" target="main" title="Ruby Annotation Wrapper"><span class="elementtag">&lt;ruby&gt;</span></a></p></div><div class="examp.group"><h3 class="header">Example 1</h3><div class="formatexamp"><img class="image.desc" src="graphics/ruby2.png"></div><div class="taggedexamp"><pre class="taggedtext">
+   
+...
+&lt;p&gt;... 畿内や西日本一帯では&lt;ruby&gt;<strong><span class="focus">&lt;rb&gt;麦&lt;/rb&gt;</span></strong>
+&lt;rt&gt;むぎ&lt;/rt&gt;&lt;/ruby&gt;を&lt;ruby&gt;<strong><span class="focus">&lt;rb&gt;裏&lt;/rb&gt;</span></strong>&lt;rt&gt;うら&lt;/rt&gt;&lt;/ruby&gt;
+&lt;ruby&gt;<strong><span class="focus">&lt;rb&gt;作&lt;/rb&gt;</span></strong>&lt;rt&gt;さく&lt;/rt&gt;&lt;/ruby&gt;とする二毛作が普及していった。
+...&lt;/p&gt;
+...
+
+
+   </pre></div></div><div class="examp.group"><h3 class="header">Example 2</h3><div class="formatexamp"><img class="image.desc" src="graphics/ruby-scotland-yard.png"></div><div class="taggedexamp"><pre class="taggedtext">
+   
+...
+&lt;p&gt;... あの&lt;ruby&gt;<strong><span class="focus">&lt;rb&gt;ロンドン警視庁&lt;/rb&gt;</span></strong>
+&lt;rt xml:lang="en"&gt;Scotland Yard&lt;/rt&gt;&lt;/ruby&gt;は霧の中に隠れていた。 
+or
+あの&lt;ruby&gt;<strong><span class="focus">&lt;rb&gt;ロンドン警視庁&lt;/rb&gt;</span></strong>
+&lt;rt xml:lang="ja"&gt;ろんどんけいしちょう&lt;/rt&gt;
+&lt;/ruby&gt;は霧の中に隠れていた。 ...&lt;/p&gt;
+...
+
+
+   </pre></div></div><div class="examp.group"><h3 class="header">Example 3</h3><div class="taggedexamp"><pre class="taggedtext">
+   
+...
+&lt;p&gt;In the midst of the document text, we find:
+&lt;ruby&gt;<strong><span class="focus">&lt;rb&gt;多武峰&lt;/rb&gt;</span></strong>&lt;rt&gt;とうのみね&lt;/rt&gt;&lt;/ruby&gt;, 
+and yet another example:
+&lt;ruby&gt;<strong><span class="focus">&lt;rb&gt;汉&lt;/rb&gt;</span></strong>&lt;rt&gt;hàn&lt;/rt&gt;&lt;/ruby&gt;
+&lt;ruby&gt;<strong><span class="focus">&lt;rb&gt;字&lt;/rb&gt;</span></strong>&lt;rt&gt;zì&lt;/rt&gt;&lt;/ruby&gt;.
+&lt;/p&gt;
+...
+
+
+   </pre></div></div><div class="pagefooter"><h2 class="headname">Book Interchange Tag Suite (BITS) Version 1.0 Tag Library 
+Version 1.0</h2><h4 class="pubdate">Version of December 2013</h4></div></body></html>

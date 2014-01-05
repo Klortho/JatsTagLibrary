@@ -1,0 +1,39 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008--><link rel="stylesheet" href="BITS.css" type="text/css"><title>Element: Event in Publishing History</title></head><body class="main"><div class="pageheader"><h2 class="headname">Book Interchange Tag Suite (BITS) Version 1.0 Tag Library 
+Version 1.0</h2><h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+National Library of Medicine (NLM)</h4></div><div class="header"><h1 class="elementtag">&lt;event&gt;</h1><h1 class="elementname">Event in Publishing History</h1></div><div class="definition"><p class="para">An event in the publication history of a book, for example,
+          reprinting or publication of the revised online edition.  This element contains information such as a description of the event (<a href="n-pts0.html" target="main" title="Event Description"><span class="elementtag">&lt;event-desc&gt;</span></a>), copyright information for a reprint or edition, a publication date, ISBN, etc.</p></div><div class="attrlist"><h2 class="header">Attributes</h2><h5 class="header"><a href="n-7wu2.html" target="main"><span class="attrtag">event-type</span></a> <a href="n-7wu2.html" target="main"><span class="attrname">Type of Event</span></a></h5><h5 class="header"><a href="n-4qu2.html" target="main"><span class="attrtag">id</span></a> <a href="n-4qu2.html" target="main"><span class="attrname">Document Internal Identifier</span></a></h5><h5 class="header"><a href="n-rdv2.html" target="main"><span class="attrtag">specific-use</span></a> <a href="n-rdv2.html" target="main"><span class="attrname">Specific Use</span></a></h5><h5 class="header"><a href="n-ib42.html" target="main"><span class="attrtag">xml:base</span></a> <a href="n-ib42.html" target="main"><span class="attrname">Base</span></a></h5><h5 class="header"><a href="n-fas2.html" target="main"><span class="attrtag">xml:lang</span></a> <a href="n-fas2.html" target="main"><span class="attrname">Language</span></a></h5></div><div class="contentmodel"><h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  event        <a href="n-q2g2.html" target="main" title="Event Model"><span class="petag">%event-model;</span></a>                                &gt;</pre></div><div class="contentmodel"><h2 class="header">Expanded Content Model</h2><p class="contentdesc">(event-desc?, book-id*, edition*, pub-date*, (date | string-date)*, issn*, issn-l?, isbn*, permissions?, notes*, self-uri*)</p></div><div class="modeldesc"><h2 class="header">Description</h2><p class="para">The following, in order:<ul class="bullist"><li><a href="n-pts0.html" target="main" title="Event Description"><span class="elementtag">&lt;event-desc&gt;</span></a> <a href="n-pts0.html" target="main" title="<event-desc&gt;"><span class="elementname">Event Description</span></a>, zero or one</li><li><a href="n-5d50.html" target="main" title="Book Identifier"><span class="elementtag">&lt;book-id&gt;</span></a> <a href="n-5d50.html" target="main" title="<book-id&gt;"><span class="elementname">Book Identifier</span></a>, zero or more</li><li><a href="n-pw40.html" target="main" title="Edition Statement, Cited"><span class="elementtag">&lt;edition&gt;</span></a> <a href="n-pw40.html" target="main" title="<edition&gt;"><span class="elementname">Edition Statement, Cited</span></a>, zero or more</li><li><a href="n-gti0.html" target="main" title="Publication Date"><span class="elementtag">&lt;pub-date&gt;</span></a> <a href="n-gti0.html" target="main" title="<pub-date&gt;"><span class="elementname">Publication Date</span></a>, zero or more</li><li>Any combination of:<ul class="bullist"><li><a href="n-dzx0.html" target="main" title="Date"><span class="elementtag">&lt;date&gt;</span></a> <a href="n-dzx0.html" target="main" title="<date&gt;"><span class="elementname">Date</span></a></li><li><a href="n-vc90.html" target="main" title="Date as a String"><span class="elementtag">&lt;string-date&gt;</span></a> <a href="n-vc90.html" target="main" title="<string-date&gt;"><span class="elementname">Date as a String</span></a></li></ul></li><li><a href="n-v7f0.html" target="main" title="ISSN"><span class="elementtag">&lt;issn&gt;</span></a> <a href="n-v7f0.html" target="main" title="<issn&gt;"><span class="elementname">ISSN</span></a>, zero or more</li><li><a href="n-vef0.html" target="main" title="ISSN-L (Linking ISSN)"><span class="elementtag">&lt;issn-l&gt;</span></a> <a href="n-vef0.html" target="main" title="<issn-l&gt;"><span class="elementname">ISSN-L (Linking ISSN)</span></a>, zero or one</li><li><a href="n-isf0.html" target="main" title="ISBN"><span class="elementtag">&lt;isbn&gt;</span></a> <a href="n-isf0.html" target="main" title="<isbn&gt;"><span class="elementname">ISBN</span></a>, zero or more</li><li><a href="n-k8h0.html" target="main" title="Permissions"><span class="elementtag">&lt;permissions&gt;</span></a> <a href="n-k8h0.html" target="main" title="<permissions&gt;"><span class="elementname">Permissions</span></a>, zero or one</li><li><a href="n-crd0.html" target="main" title="Notes"><span class="elementtag">&lt;notes&gt;</span></a> <a href="n-crd0.html" target="main" title="<notes&gt;"><span class="elementname">Notes</span></a>, zero or more</li><li><a href="n-p5q0.html" target="main" title="URI for Object Online"><span class="elementtag">&lt;self-uri&gt;</span></a> <a href="n-p5q0.html" target="main" title="<self-uri&gt;"><span class="elementname">URI for Object Online</span></a>, zero or more</li></ul></p></div><div class="elementcontext"><h3 class="header">This element may be contained in:</h3><p class="para"><a href="n-cei0.html" target="main" title="Publication History"><span class="elementtag">&lt;pub-history&gt;</span></a></p></div><div class="examp.group"><h3 class="header">Example</h3><div class="taggedexamp"><pre class="taggedtext">
+    
+...
+&lt;book-meta&gt;
+&lt;book-title-group&gt;
+&lt;book-title&gt;Proceedings of Balisage: The Markup Conference 
+2013&lt;/book-title&gt;
+&lt;/book-title-group&gt;
+&lt;pub-date iso-8601-date="2013-10"&gt;
+&lt;month&gt;October&lt;/month&gt;&lt;year&gt;2013&lt;/year&gt;&lt;/pub-date&gt;
+&lt;book-volume-number&gt;10&lt;/book-volume-number&gt;
+&lt;isbn content-type="isbn-13"&gt;978-1-935958-06-2&lt;/isbn&gt;
+&lt;publisher&gt;
+&lt;publisher-name&gt;Mulberry Technologies, Inc.&lt;/publisher-name&gt;
+&lt;/publisher&gt;
+&lt;pub-history&gt;
+<strong><span class="focus">&lt;event&gt;
+&lt;event-desc&gt;pre-conference proceedings&lt;/event-desc&gt;
+&lt;date iso-8601-date="2013-07" date-type="pub" 
+publication-format="online"&gt;
+&lt;month&gt;July&lt;/month&gt;&lt;year&gt;2013&lt;/year&gt;&lt;/date&gt;
+&lt;/event&gt;</span></strong>
+<strong><span class="focus">&lt;event&gt;
+&lt;event-desc&gt;post-conference proceedings&lt;/event-desc&gt;
+&lt;date iso-8601-date="2013-10" date-type="pub" 
+publication-format="online"&gt;
+&lt;month&gt;October&lt;/month&gt;&lt;year&gt;2013&lt;/year&gt;&lt;/date&gt;
+&lt;/event&gt;</span></strong>
+&lt;/pub-history&gt;
+...
+&lt;/book-meta&gt;
+...
+
+   </pre></div></div><div class="pagefooter"><h2 class="headname">Book Interchange Tag Suite (BITS) Version 1.0 Tag Library 
+Version 1.0</h2><h4 class="pubdate">Version of December 2013</h4></div></body></html>

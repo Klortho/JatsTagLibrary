@@ -1,0 +1,40 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008--><link rel="stylesheet" href="BITS.css" type="text/css"><title>Element: Publication Date</title></head><body class="main"><div class="pageheader"><h2 class="headname">Book Interchange Tag Suite (BITS) Version 1.0 Tag Library 
+Version 1.0</h2><h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+National Library of Medicine (NLM)</h4></div><div class="header"><h1 class="elementtag">&lt;pub-date&gt;</h1><h1 class="elementname">Publication Date</h1></div><div class="definition"><p class="para">Container element for the parts of a single date associated with an book’s 
+          publication (for example, the date a preprint chapter was released, the date a book was published in
+          print or as an eBook).</p></div><div class="remarks"><h2 class="header">Remarks</h2><p class="para">As part of the book metadata or book part metadata, the <a href="n-gti0.html" target="main" title="Publication Date"><span class="elementtag">&lt;pub-date&gt;</span></a> is allowed to repeat; each repetition can take <a href="n-nix2.html" target="main" title="Format of Publication"><span class="attrtag">@publication-format</span></a> and <a href="n-2pa2.html" target="main" title="Type of Date"><span class="attrtag">@date-type</span></a> attributes to distinguish which form of
+          publication, for example, print publication, eBook publication, web 
+          distribution, etc.</p></div><div class="attrlist"><h2 class="header">Attributes</h2><h5 class="header"><a href="n-yq82.html" target="main"><span class="attrtag">calendar</span></a> <a href="n-yq82.html" target="main"><span class="attrname">Calendar</span></a></h5><h5 class="header"><a href="n-2pa2.html" target="main"><span class="attrtag">date-type</span></a> <a href="n-2pa2.html" target="main"><span class="attrname">Type of Date</span></a></h5><h5 class="header"><a href="n-4qu2.html" target="main"><span class="attrtag">id</span></a> <a href="n-4qu2.html" target="main"><span class="attrname">Document Internal Identifier</span></a></h5><h5 class="header"><a href="n-avw2.html" target="main"><span class="attrtag">iso-8601-date</span></a> <a href="n-avw2.html" target="main"><span class="attrname">ISO-8601 Formatted Date</span></a></h5><h5 class="header"><a href="n-nix2.html" target="main"><span class="attrtag">publication-format</span></a> <a href="n-nix2.html" target="main"><span class="attrname">Format of Publication</span></a></h5><h5 class="header"><a href="n-ib42.html" target="main"><span class="attrtag">xml:base</span></a> <a href="n-ib42.html" target="main"><span class="attrname">Base</span></a></h5><h5 class="header"><a href="n-fas2.html" target="main"><span class="attrtag">xml:lang</span></a> <a href="n-fas2.html" target="main"><span class="attrname">Language</span></a></h5></div><div class="contentmodel"><h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  pub-date     <a href="n-qfr2.html" target="main" title="Publication Date Model"><span class="petag">%pub-date-model;</span></a>                             &gt;</pre></div><div class="contentmodel"><h2 class="header">Expanded Content Model</h2><p class="contentdesc">(day | era | month | season | year | string-date | x)+</p></div><div class="modeldesc"><h2 class="header">Description</h2><p class="para">One or more of any of:<ul class="bullist"><li><a href="n-7av0.html" target="main" title="Day"><span class="elementtag">&lt;day&gt;</span></a> <a href="n-7av0.html" target="main" title="<day&gt;"><span class="elementname">Day</span></a></li><li><a href="n-u5s0.html" target="main" title="Era of Time"><span class="elementtag">&lt;era&gt;</span></a> <a href="n-u5s0.html" target="main" title="<era&gt;"><span class="elementname">Era of Time</span></a></li><li><a href="n-mg60.html" target="main" title="Month"><span class="elementtag">&lt;month&gt;</span></a> <a href="n-mg60.html" target="main" title="<month&gt;"><span class="elementname">Month</span></a></li><li><a href="n-75p0.html" target="main" title="Season"><span class="elementtag">&lt;season&gt;</span></a> <a href="n-75p0.html" target="main" title="<season&gt;"><span class="elementname">Season</span></a></li><li><a href="n-9z52.html" target="main" title="Year"><span class="elementtag">&lt;year&gt;</span></a> <a href="n-9z52.html" target="main" title="<year&gt;"><span class="elementname">Year</span></a></li><li><a href="n-vc90.html" target="main" title="Date as a String"><span class="elementtag">&lt;string-date&gt;</span></a> <a href="n-vc90.html" target="main" title="<string-date&gt;"><span class="elementname">Date as a String</span></a></li><li><a href="n-p652.html" target="main" title="X - Generated Text and Punctuation"><span class="elementtag">&lt;x&gt;</span></a> <a href="n-p652.html" target="main" title="<x&gt;"><span class="elementname">X - Generated Text and Punctuation</span></a></li></ul></p></div><div class="elementcontext"><h3 class="header">This element may be contained in:</h3><p class="para"><a href="n-8r50.html" target="main" title="Book Metadata (Whole Book)"><span class="elementtag">&lt;book-meta&gt;</span></a>, <a href="n-zq50.html" target="main" title="Book Part Metadata"><span class="elementtag">&lt;book-part-meta&gt;</span></a>, <a href="n-b4s0.html" target="main" title="Event in Publishing History"><span class="elementtag">&lt;event&gt;</span></a>, <a href="n-pts0.html" target="main" title="Event Description"><span class="elementtag">&lt;event-desc&gt;</span></a></p></div><div class="examp.group"><h3 class="header">Example</h3><div class="taggedexamp"><pre class="taggedtext">
+    
+...
+&lt;book-meta&gt;
+&lt;book-id book-id-type="publisher"&gt;handbook-648&lt;/book-id&gt;
+&lt;book-title-group&gt;
+&lt;book-title&gt;The NCBI Handbook&lt;/book-title&gt;
+&lt;/book-title-group&gt;
+&lt;contrib-group&gt;
+&lt;contrib contrib-type="editor" rid="bid.m.1"&gt;
+&lt;name&gt;&lt;surname&gt;McEntyre&lt;/surname&gt;
+&lt;given-names&gt;Jo&lt;/given-names&gt;&lt;/name&gt;
+&lt;/contrib&gt;
+&lt;contrib contrib-type="editor" rid="bid.m.1"&gt;
+&lt;name&gt;&lt;surname&gt;Ostell&lt;/surname&gt;
+&lt;given-names&gt;Jim&lt;/given-names&gt;&lt;/name&gt;
+&lt;/contrib&gt;
+&lt;/contrib-group&gt;
+&lt;aff id="bid.m.1"&gt;
+&lt;institution&gt;National Center for Biotechnology Information
+(NCBI), National Library of Medicine, National Institutes of 
+Health&lt;/institution&gt;,
+&lt;addr-line&gt;Bethesda, MD 20892-6510&lt;/addr-line&gt;
+&lt;/aff&gt;
+<strong><span class="focus">&lt;pub-date iso-8601-date="2002-11"&gt;&lt;month&gt;11&lt;/month&gt;
+&lt;year&gt;2002&lt;/year&gt;&lt;/pub-date&gt;</span></strong>
+&lt;publisher&gt;...&lt;/publisher&gt;
+...
+&lt;/book-meta&gt;
+...
+
+   </pre></div></div><div class="pagefooter"><h2 class="headname">Book Interchange Tag Suite (BITS) Version 1.0 Tag Library 
+Version 1.0</h2><h4 class="pubdate">Version of December 2013</h4></div></body></html>

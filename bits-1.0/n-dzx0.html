@@ -1,0 +1,163 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008--><link rel="stylesheet" href="BITS.css" type="text/css"><title>Element: Date</title></head><body class="main"><div class="pageheader"><h2 class="headname">Book Interchange Tag Suite (BITS) Version 1.0 Tag Library 
+Version 1.0</h2><h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+National Library of Medicine (NLM)</h4></div><div class="header"><h1 class="elementtag">&lt;date&gt;</h1><h1 class="elementname">Date</h1></div><div class="definition"><p class="para">Container element for the parts of a single calendar date.</p></div><div class="remarks"><h2 class="header">Remarks</h2><p class="para"><strong>Usage:</strong> A <span class="elementtag">&lt;date&gt;</span> element may contain date components such as <a href="n-7av0.html" target="main" title="Day"><span class="elementtag">&lt;day&gt;</span></a>, <a href="n-mg60.html" target="main" title="Month"><span class="elementtag">&lt;month&gt;</span></a>, and <a href="n-9z52.html" target="main" title="Year"><span class="elementtag">&lt;year&gt;</span></a> (which are typically given
+          numeric values), as well as non-numeric elements such as <a href="n-75p0.html" target="main" title="Season"><span class="elementtag">&lt;season&gt;</span></a> (which is a text string).</p><p class="para">When used within citations (<a href="n-f740.html" target="main" title="Element Citation"><span class="elementtag">&lt;element-citation&gt;</span></a> and <a href="n-f9n0.html" target="main" title="Mixed Citation"><span class="elementtag">&lt;mixed-citation&gt;</span></a>), this
+          element names the publication date of the cited source.</p><p class="para"><strong>Related Essay:</strong> For a discussion on the use of
+          <span class="elementtag">&lt;date&gt;</span>, see <a href="n-ayp2.html#bits-tag-cite-dates">Dates in Citations</a>.</p></div><div class="attrlist"><h2 class="header">Attributes</h2><h5 class="header"><a href="n-yq82.html" target="main"><span class="attrtag">calendar</span></a> <a href="n-yq82.html" target="main"><span class="attrname">Calendar</span></a></h5><h5 class="header"><a href="n-2pa2.html" target="main"><span class="attrtag">date-type</span></a> <a href="n-2pa2.html" target="main"><span class="attrname">Type of Date</span></a></h5><h5 class="header"><a href="n-4qu2.html" target="main"><span class="attrtag">id</span></a> <a href="n-4qu2.html" target="main"><span class="attrname">Document Internal Identifier</span></a></h5><h5 class="header"><a href="n-avw2.html" target="main"><span class="attrtag">iso-8601-date</span></a> <a href="n-avw2.html" target="main"><span class="attrname">ISO-8601 Formatted Date</span></a></h5><h5 class="header"><a href="n-nix2.html" target="main"><span class="attrtag">publication-format</span></a> <a href="n-nix2.html" target="main"><span class="attrname">Format of Publication</span></a></h5><h5 class="header"><a href="n-rdv2.html" target="main"><span class="attrtag">specific-use</span></a> <a href="n-rdv2.html" target="main"><span class="attrname">Specific Use</span></a></h5><h5 class="header"><a href="n-ib42.html" target="main"><span class="attrtag">xml:base</span></a> <a href="n-ib42.html" target="main"><span class="attrname">Base</span></a></h5></div><div class="relatedelem"><h2 class="header">Related Elements</h2><p class="para">Within citations (<a href="n-f740.html" target="main" title="Element Citation"><span class="elementtag">&lt;element-citation&gt;</span></a> and
+          <a href="n-f9n0.html" target="main" title="Mixed Citation"><span class="elementtag">&lt;mixed-citation&gt;</span></a>), this element is used to
+          name the date of publication of the cited source. The elements <a href="n-9z52.html" target="main" title="Year"><span class="elementtag">&lt;year&gt;</span></a>, <a href="n-dzx0.html" target="main" title="Date"><span class="elementtag">&lt;date&gt;</span></a>, <a href="n-7av0.html" target="main" title="Day"><span class="elementtag">&lt;day&gt;</span></a>, <a href="n-mg60.html" target="main" title="Month"><span class="elementtag">&lt;month&gt;</span></a>, and <a href="n-75p0.html" target="main" title="Season"><span class="elementtag">&lt;season&gt;</span></a> may all be used to describe the date a cited resource was published.
+          Other dates inside a citation, such as a copyright date, the date on which the author
+          accessed the resource, or a withdrawal date, should be tagged using <a href="n-icv0.html" target="main" title="Date within a Citation"><span class="elementtag">&lt;date-in-citation&gt;</span></a> with the <a href="n-yxa2.html" target="main" title="Type of Content"><span class="attrtag">@content-type</span></a> attribute used to name the type of date
+          (<tt>copyright</tt>, <tt>access-date</tt>, <tt>time-stamp</tt>, etc.).</p></div><div class="contentmodel"><h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  date         <a href="n-twf2.html" target="main" title="Date Elements Model"><span class="petag">%date-model;</span></a>                                 &gt;</pre></div><div class="contentmodel"><h2 class="header">Expanded Content Model</h2><p class="contentdesc">(((day?, month?) | season)?, year?, era?, string-date?)</p></div><div class="modeldesc"><h2 class="header">Description</h2><p class="para">The following, in order:<ul class="bullist"><li>Optionally any one of:<ul class="bullist"><li>The following, in order:<ul class="bullist"><li><a href="n-7av0.html" target="main" title="Day"><span class="elementtag">&lt;day&gt;</span></a> <a href="n-7av0.html" target="main" title="<day&gt;"><span class="elementname">Day</span></a>, zero or one</li><li><a href="n-mg60.html" target="main" title="Month"><span class="elementtag">&lt;month&gt;</span></a> <a href="n-mg60.html" target="main" title="<month&gt;"><span class="elementname">Month</span></a>, zero or one</li></ul></li><li><a href="n-75p0.html" target="main" title="Season"><span class="elementtag">&lt;season&gt;</span></a> <a href="n-75p0.html" target="main" title="<season&gt;"><span class="elementname">Season</span></a></li></ul></li><li><a href="n-9z52.html" target="main" title="Year"><span class="elementtag">&lt;year&gt;</span></a> <a href="n-9z52.html" target="main" title="<year&gt;"><span class="elementname">Year</span></a>, zero or one</li><li><a href="n-u5s0.html" target="main" title="Era of Time"><span class="elementtag">&lt;era&gt;</span></a> <a href="n-u5s0.html" target="main" title="<era&gt;"><span class="elementname">Era of Time</span></a>, zero or one</li><li><a href="n-vc90.html" target="main" title="Date as a String"><span class="elementtag">&lt;string-date&gt;</span></a> <a href="n-vc90.html" target="main" title="<string-date&gt;"><span class="elementname">Date as a String</span></a>, zero or one</li></ul></p></div><div class="elementcontext"><h3 class="header">This element may be contained in:</h3><p class="para"><a href="n-f740.html" target="main" title="Element Citation"><span class="elementtag">&lt;element-citation&gt;</span></a>, <a href="n-b4s0.html" target="main" title="Event in Publishing History"><span class="elementtag">&lt;event&gt;</span></a>, <a href="n-pts0.html" target="main" title="Event Description"><span class="elementtag">&lt;event-desc&gt;</span></a>, <a href="n-f9n0.html" target="main" title="Mixed Citation"><span class="elementtag">&lt;mixed-citation&gt;</span></a>, <a href="n-qci0.html" target="main" title="Product Information"><span class="elementtag">&lt;product&gt;</span></a>, <a href="n-cei0.html" target="main" title="Publication History"><span class="elementtag">&lt;pub-history&gt;</span></a>, <a href="n-pgy0.html" target="main" title="Related Article Information"><span class="elementtag">&lt;related-article&gt;</span></a>, <a href="n-49y0.html" target="main" title="Related Object Information"><span class="elementtag">&lt;related-object&gt;</span></a></p></div><div class="examp.group"><h3 class="header">Example 1</h3><p class="para">Date approved:</p><div class="taggedexamp"><pre class="taggedtext">
+
+...
+&lt;book-part-meta&gt;
+...
+&lt;contrib-group&gt;
+&lt;contrib contrib-type="author"&gt;
+&lt;collab collab-type="committee"&gt;Technical Committee ISO/TC 108, 
+Subcommittee SC 2&lt;/collab&gt;
+&lt;/contrib&gt;
+&lt;/contrib-group&gt;
+&lt;fpage seq="1"&gt;1&lt;/fpage&gt;
+&lt;lpage&gt;23&lt;/lpage&gt;
+&lt;pub-history&gt;
+<strong><span class="focus">&lt;date date-type="approved"&gt;
+&lt;day&gt;01&lt;/day&gt;
+&lt;month&gt;06&lt;/month&gt;
+&lt;year&gt;2012&lt;/year&gt;
+&lt;/date&gt;</span></strong>
+&lt;/pub-history&gt;
+...
+&lt;/book-part-meta&gt;
+...
+
+</pre></div></div><div class="examp.group"><h3 class="header">Example 2</h3><p class="para">In metadata, in both publication date and publication history dates:</p><div class="taggedexamp"><pre class="taggedtext">
+    
+...
+&lt;book-meta&gt;
+...
+&lt;pub-date  date-type="publication" 
+  publication-format="electronic" 
+  iso-8601-date="1998-09-17"&gt;
+&lt;day&gt;17&lt;/day&gt;&lt;month&gt;09&lt;/month&gt;&lt;year&gt;1998&lt;/year&gt;
+&lt;/pub-date&gt;
+&lt;pub-date date-type="publication" 
+  publication-format="print" 
+  iso-8601-date="1998-11-09"&gt;
+&lt;year&gt;1998&lt;/year&gt;
+&lt;/pub-date&gt;
+&lt;pub-history&gt;
+<strong><span class="focus">&lt;date date-type="received" 
+  publication-format="manuscript" 
+  iso-8601-date="1998-01-05"&gt;
+&lt;day&gt;05&lt;/day&gt;&lt;month&gt;01&lt;/month&gt;&lt;year&gt;1998&lt;/year&gt;
+&lt;/date&gt;</span></strong>
+<strong><span class="focus">&lt;date date-type="rev-request" 
+  iso-8601-date="1998-03-14"&gt;
+&lt;day&gt;14&lt;/day&gt;&lt;month&gt;03&lt;/month&gt;&lt;year&gt;1998&lt;/year&gt;
+&lt;/date&gt;</span></strong>
+<strong><span class="focus">&lt;date date-type="rev-received" 
+  iso-8601-date="1998-05-24"&gt;
+&lt;day&gt;24&lt;/day&gt;&lt;month&gt;05&lt;/month&gt;&lt;year&gt;1998&lt;/year&gt;
+&lt;/date&gt;</span></strong>
+<strong><span class="focus">&lt;date date-type="accepted" 
+  iso-8601-date="1998-06-06"&gt;
+&lt;day&gt;06&lt;/day&gt;&lt;month&gt;06&lt;/month&gt;&lt;year&gt;1998&lt;/year&gt;
+&lt;/date&gt;</span></strong>
+&lt;/pub-history&gt;
+...
+&lt;/book-meta&gt;
+...
+
+   </pre></div><div class="taggedexamp"><pre class="taggedtext">
+
+...
+&lt;book-meta&gt;
+&lt;book-title-group&gt;
+&lt;book-title&gt;Proceedings of Balisage: The Markup Conference 
+2013&lt;/book-title&gt;
+&lt;/book-title-group&gt;
+&lt;pub-date iso-8601-date="2013-10"&gt;
+&lt;month&gt;October&lt;/month&gt;&lt;year&gt;2013&lt;/year&gt;&lt;/pub-date&gt;
+&lt;book-volume-number&gt;10&lt;/book-volume-number&gt;
+&lt;isbn content-type="isbn-13"&gt;978-1-935958-06-2&lt;/isbn&gt;
+&lt;publisher&gt;
+&lt;publisher-name&gt;Mulberry Technologies, Inc.&lt;/publisher-name&gt;
+&lt;/publisher&gt;
+&lt;pub-history&gt;
+&lt;event&gt;
+&lt;event-desc&gt;pre-conference proceedings&lt;/event-desc&gt;
+<strong><span class="focus">&lt;date iso-8601-date="2013-07" date-type="pub" 
+publication-format="online"&gt;
+&lt;month&gt;July&lt;/month&gt;&lt;year&gt;2013&lt;/year&gt;&lt;/date&gt;</span></strong>
+&lt;/event&gt;
+&lt;event&gt;
+&lt;event-desc&gt;post-conference proceedings&lt;/event-desc&gt;
+<strong><span class="focus">&lt;date iso-8601-date="2013-10" date-type="pub" 
+publication-format="online"&gt;
+&lt;month&gt;October&lt;/month&gt;&lt;year&gt;2013&lt;/year&gt;&lt;/date&gt;</span></strong>
+&lt;/event&gt;
+&lt;/pub-history&gt;
+...
+&lt;/book-meta&gt;
+...
+
+</pre></div></div><div class="examp.group"><h3 class="header">Example 3</h3><p class="para">Date in a non-Gregorian calendar:</p><div class="taggedexamp"><pre class="taggedtext">
+...
+&lt;date date-type="received" calendar="Japanese" 
+  iso-8601-date="1947-07-01"&gt;
+&lt;day&gt;1&lt;/day&gt;
+&lt;month&gt;7&lt;/month&gt;
+&lt;year&gt;22&lt;/year&gt;
+<strong><span class="focus">&lt;era&gt;昭和&lt;/era&gt;</span></strong>
+&lt;/date&gt;
+...
+</pre></div></div><div class="examp.group"><h3 class="header">Example 4</h3><p class="para">Date used as a time stamp:</p><div class="taggedexamp"><pre class="taggedtext">
+
+...
+<strong><span class="focus">&lt;date date-type="online" specific-use="metadata"&gt;
+&lt;string-date&gt;2012-05-03T08:47:08&lt;/string-date&gt;
+&lt;/date&gt;</span></strong>
+...
+
+</pre></div></div><div class="examp.group"><h3 class="header">Example 5</h3><p class="para">Inside a citation to hold the publication date of the cited book:</p><div class="taggedexamp"><pre class="taggedtext">
+
+...
+&lt;ref id="B14"&gt;
+&lt;element-citation publication-type="book" publication-format="print"&gt;
+&lt;person-group person-group-type="author"&gt;
+&lt;name&gt;&lt;surname&gt;Hart&lt;/surname&gt;
+&lt;given-names&gt;JT&lt;/given-names&gt;&lt;/name&gt;
+&lt;/person-group&gt;
+&lt;source&gt;A new kind of doctor: the general practitioner&amp;rsquo;s 
+part in the health of the community&lt;/source&gt;
+<strong><span class="focus">&lt;date iso-8601-date="1988" date-type="published"&gt;
+&lt;year&gt;1988&lt;/year&gt;&lt;/date&gt;</span></strong>
+&lt;publisher-loc&gt;London&lt;/publisher-loc&gt;
+&lt;publisher-name&gt;Merlin Press&lt;/publisher-name&gt;
+&lt;/element-citation&gt;
+&lt;/ref&gt;
+...
+
+</pre></div><div class="taggedexamp"><pre class="taggedtext">
+
+...
+&lt;ref id="B14"&gt;
+&lt;mixed-citation publication-type="book" publication-format="print"&gt;
+&lt;person-group person-group-type="author"&gt;
+&lt;name&gt;&lt;surname&gt;Hart&lt;/surname&gt; &lt;given-names&gt;JT&lt;/given-names&gt;
+&lt;/name&gt;&lt;/person-group&gt;. 
+&lt;source&gt;A new kind of doctor: the general practitioner&amp;rsquo;s 
+part in the health of the community&lt;/source&gt;. 
+&lt;publisher-loc&gt;London&lt;/publisher-loc&gt;:  
+&lt;publisher-name&gt;Merlin Press&lt;/publisher-name&gt;, 
+<strong><span class="focus">&lt;date iso-8601-date="1988" date-type="published"&gt;
+&lt;year&gt;1988&lt;/year&gt;&lt;/date&gt;</span></strong>.
+&lt;/mixed-citation&gt;
+&lt;/ref&gt;
+...
+
+</pre></div></div><div class="pagefooter"><h2 class="headname">Book Interchange Tag Suite (BITS) Version 1.0 Tag Library 
+Version 1.0</h2><h4 class="pubdate">Version of December 2013</h4></div></body></html>

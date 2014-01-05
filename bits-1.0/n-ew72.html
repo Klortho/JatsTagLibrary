@@ -1,0 +1,20 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008--><link rel="stylesheet" href="BITS.css" type="text/css"><title>Parameter entity: Book Part Metadata Model</title></head><body class="main"><div class="pageheader"><h2 class="headname">Book Interchange Tag Suite (BITS) Version 1.0 Tag Library 
+Version 1.0</h2><h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+National Library of Medicine (NLM)</h4></div><div class="header"><h1 class="petag">%book-part-meta-model;</h1><h1 class="pename">Book Part Metadata Model</h1></div><div class="definition"><p class="para">Full content model for the metadata that is specific to a book component, such as a chapter or unit.</p></div><div class="contentmodel"><h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ENTITY % book-part-meta-model 
+                        "(book-part-id*, subj-group*, title-group?,
+                          (<a href="n-qpe2.html" target="main" title="Contributor Group Class"><span class="petag">%contrib-group.class;</span></a> |
+                           <a href="n-g5t2.html" target="main" title="Affiliations Alternatives Class"><span class="petag">%aff-alternatives.class;</span></a> | <a href="n-6xj2.html" target="main" title="X - Generated Text/Punctuation Class Elements"><span class="petag">%x.class;</span></a>)*, 
+                          author-notes?, pub-date*, edition*, 
+                          issn*, issn-l?, isbn*, 
+                          publisher*, 
+                          ((fpage, lpage?) | elocation-id)?,
+                          supplementary-material*, pub-history*, 
+                          permissions?, self-uri*, 
+                          (<a href="n-42h2.html" target="main" title="Related Article Links Class Elements"><span class="petag">%related-article.class;</span></a>)*,
+                          (<a href="n-g9s2.html" target="main" title="Abstract Class Elements"><span class="petag">%abstract.class;</span></a>)*, trans-abstract*, 
+                          (<a href="n-ds62.html" target="main" title="Keyword Group Class Elements"><span class="petag">%kwd-group.class;</span></a>)*,
+                          funding-group*, conference*, counts?,
+                          custom-meta-group*,
+                          (<a href="n-yng2.html" target="main" title="Front and Back Class Elements"><span class="petag">%front-back.class;</span></a>)* )"                   &gt;</pre></div><div class="contentmodel"><h2 class="header">Expanded Content Model</h2><p class="contentdesc">(book-part-id*, subj-group*, title-group?, (contrib-group | aff | aff-alternatives | x)*, author-notes?, pub-date*, edition*, issn*, issn-l?, isbn*, publisher*, ((fpage, lpage?) | elocation-id)?, supplementary-material*, pub-history*, permissions?, self-uri*, (related-article | related-object)*, (abstract)*, trans-abstract*, (kwd-group)*, funding-group*, conference*, counts?, custom-meta-group*, (notes)* )</p></div><div class="pagefooter"><h2 class="headname">Book Interchange Tag Suite (BITS) Version 1.0 Tag Library 
+Version 1.0</h2><h4 class="pubdate">Version of December 2013</h4></div></body></html>

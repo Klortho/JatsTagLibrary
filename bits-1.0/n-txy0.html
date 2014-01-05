@@ -1,0 +1,93 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008--><link rel="stylesheet" href="BITS.css" type="text/css"><title>Element: Reference Item</title></head><body class="main"><div class="pageheader"><h2 class="headname">Book Interchange Tag Suite (BITS) Version 1.0 Tag Library 
+Version 1.0</h2><h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+National Library of Medicine (NLM)</h4></div><div class="header"><h1 class="elementtag">&lt;ref&gt;</h1><h1 class="elementname">Reference Item</h1></div><div class="definition"><p class="para">One item in a bibliographic list.</p></div><div class="remarks"><h2 class="header">Remarks</h2><p class="para">A <a href="n-txy0.html" target="main" title="Reference Item"><span class="elementtag">&lt;ref&gt;</span></a> is typically a citation
+          describing a referenced work (see <a href="n-87p2.html#bits-tag-citation">Tagging
+          References</a>). This Tag Set allows notes as well as citations in a
+          bibliographic list, but best practice is to place notes in an <a href="n-mft0.html" target="main" title="Footnote Group"><span class="elementtag">&lt;fn-group&gt;</span></a> or <a href="n-crd0.html" target="main" title="Notes"><span class="elementtag">&lt;notes&gt;</span></a> section and use <a href="n-gsy0.html" target="main" title="Reference List (Bibliographic)"><span class="elementtag">&lt;ref-list&gt;</span></a>
+          only for bibliographic citations.</p></div><div class="attrlist"><h2 class="header">Attributes</h2><h5 class="header"><a href="n-yxa2.html" target="main"><span class="attrtag">content-type</span></a> <a href="n-yxa2.html" target="main"><span class="attrname">Type of Content</span></a></h5><h5 class="header"><a href="n-4qu2.html" target="main"><span class="attrtag">id</span></a> <a href="n-4qu2.html" target="main"><span class="attrname">Document Internal Identifier</span></a></h5><h5 class="header"><a href="n-rdv2.html" target="main"><span class="attrtag">specific-use</span></a> <a href="n-rdv2.html" target="main"><span class="attrname">Specific Use</span></a></h5><h5 class="header"><a href="n-ib42.html" target="main"><span class="attrtag">xml:base</span></a> <a href="n-ib42.html" target="main"><span class="attrname">Base</span></a></h5><h5 class="header"><a href="n-fas2.html" target="main"><span class="attrtag">xml:lang</span></a> <a href="n-fas2.html" target="main"><span class="attrname">Language</span></a></h5></div><div class="contentmodel"><h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  ref          <a href="n-i9r2.html" target="main" title="Reference Item Model"><span class="petag">%ref-model;</span></a>                                  &gt;</pre></div><div class="contentmodel"><h2 class="header">Expanded Content Model</h2><p class="contentdesc">(label?, (citation-alternatives | element-citation | mixed-citation | note | x)+)</p></div><div class="modeldesc"><h2 class="header">Description</h2><p class="para">The following, in order:<ul class="bullist"><li><a href="n-tdg0.html" target="main" title="Label (of an Equation, Figure, Reference, etc.)"><span class="elementtag">&lt;label&gt;</span></a> <a href="n-tdg0.html" target="main" title="<label&gt;"><span class="elementname">Label (of an Equation, Figure, Reference, etc.)</span></a>, zero or one</li><li>One or more of any of:<ul class="bullist"><li>Citation Elements<ul class="bullist"><li><a href="n-5ta0.html" target="main" title="Citation Alternatives"><span class="elementtag">&lt;citation-alternatives&gt;</span></a> <a href="n-5ta0.html" target="main" title="<citation-alternatives&gt;"><span class="elementname">Citation Alternatives</span></a></li><li><a href="n-f740.html" target="main" title="Element Citation"><span class="elementtag">&lt;element-citation&gt;</span></a> <a href="n-f740.html" target="main" title="<element-citation&gt;"><span class="elementname">Element Citation</span></a></li><li><a href="n-f9n0.html" target="main" title="Mixed Citation"><span class="elementtag">&lt;mixed-citation&gt;</span></a> <a href="n-f9n0.html" target="main" title="<mixed-citation&gt;"><span class="elementname">Mixed Citation</span></a></li></ul></li><li><a href="n-y6d0.html" target="main" title="Note in a Reference List"><span class="elementtag">&lt;note&gt;</span></a> <a href="n-y6d0.html" target="main" title="<note&gt;"><span class="elementname">Note in a Reference List</span></a></li><li><a href="n-p652.html" target="main" title="X - Generated Text and Punctuation"><span class="elementtag">&lt;x&gt;</span></a> <a href="n-p652.html" target="main" title="<x&gt;"><span class="elementname">X - Generated Text and Punctuation</span></a></li></ul></li></ul></p></div><div class="elementcontext"><h3 class="header">This element may be contained in:</h3><p class="para"><a href="n-gsy0.html" target="main" title="Reference List (Bibliographic)"><span class="elementtag">&lt;ref-list&gt;</span></a></p></div><div class="examp.group"><h3 class="header">Example 1</h3><p class="para">Including an element-style bibliographic reference (punctuation and spacing removed): </p><div class="taggedexamp"><pre class="taggedtext">
+    
+...
+&lt;back&gt;
+&lt;ref-list&gt;
+&lt;title&gt;References&lt;/title&gt;
+<strong><span class="focus">&lt;ref id="bid.41"&gt;
+&lt;label&gt;1&lt;/label&gt;
+&lt;element-citation&gt;
+&lt;person-group&gt;
+&lt;name&gt;&lt;surname&gt;Olson&lt;/surname&gt;&lt;given-names&gt;M&lt;/given-names&gt;&lt;/name&gt;
+...
+&lt;/person-group&gt;
+&lt;article-title&gt;A common language for physical mapping
+of the human genome&lt;/article-title&gt;
+&lt;source&gt;Science&lt;/source&gt;
+&lt;year iso-8601-date="1989"&gt;1989&lt;/year&gt;
+&lt;volume&gt;245&lt;/volume&gt;
+&lt;issue&gt;4925&lt;/issue&gt;
+&lt;fpage&gt;1434&lt;/fpage&gt;
+&lt;lpage&gt;1435&lt;/lpage&gt;
+&lt;pub-id pub-id-type="pmid"&gt;2781285&lt;/pub-id&gt;
+&lt;/element-citation&gt;
+&lt;/ref&gt;</span></strong>
+<strong><span class="focus">&lt;ref&gt;...&lt;/ref&gt;</span></strong>
+&lt;/ref-list&gt;
+&lt;/back&gt;
+...
+
+   </pre></div></div><div class="examp.group"><h3 class="header">Example 2</h3><p class="para">Including a mixed-style bibliographic reference (punctuation and spacing preserved): </p><div class="taggedexamp"><pre class="taggedtext">
+    
+...
+&lt;back&gt;
+&lt;ref-list&gt;
+&lt;title&gt;References&lt;/title&gt;
+<strong><span class="focus">&lt;ref id="B8"&gt;
+&lt;label&gt;8. &lt;/label&gt;
+&lt;mixed-citation&gt;
+&lt;string-name&gt;&lt;surname&gt;Weissert&lt;/surname&gt;,
+&lt;given-names&gt;W&lt;/given-names&gt;&lt;/string-name&gt;,
+&lt;string-name&gt;&lt;surname&gt;Livieratos&lt;/surname&gt;,
+&lt;given-names&gt;B&lt;/given-names&gt;
+&lt;/string-name&gt;. &lt;article-title&gt;Effects and costs of
+day-care services for the chronically ill: a randomized
+experiment&lt;/article-title&gt;. &lt;source&gt;Medical Care&lt;/source&gt;:
+&lt;year iso-8601-date="1980"&gt;1980&lt;/year&gt;; &lt;volume&gt;18&lt;/volume&gt;;
+&lt;fpage&gt;567&lt;/fpage&gt;&amp;ndash;&lt;lpage&gt;584&lt;/lpage&gt;.
+&lt;pub-id pub-id-type="publisher-id"&gt;WES-6772889&lt;/pub-id&gt;.
+&lt;/mixed-citation&gt;
+&lt;/ref&gt;</span></strong>
+<strong><span class="focus">&lt;ref&gt;...&lt;/ref&gt;</span></strong>
+&lt;/ref-list&gt;
+&lt;/back&gt;
+...
+
+   </pre></div></div><div class="examp.group"><h3 class="header">Example 3</h3><p class="para">This Tag Set allows notes (<a href="n-y6d0.html" target="main" title="Note in a Reference List"><span class="elementtag">&lt;note&gt;</span></a>) in addition to citations in a reference list:</p><div class="taggedexamp"><pre class="taggedtext">
+
+...
+<strong><span class="focus">&lt;ref id="c33"&gt;
+&lt;label&gt;33.&lt;/label&gt;
+&lt;note&gt;
+&lt;p&gt;While the samples appear homogeneous in terms of local variations in 
+transition energy and PL intensity, the response to external electric fields 
+is strongly inhomogeneous, which can most likely be attributed to local 
+variations in the AlGaN back contact conductivity as well as inhomogeneities 
+in the passivation process.&lt;/p&gt;
+&lt;/note&gt;
+&lt;/ref&gt;</span></strong>
+...
+
+</pre></div><div class="taggedexamp"><pre class="taggedtext">
+
+...
+<strong><span class="focus">&lt;ref id="c35"&gt;
+&lt;label&gt;35.&lt;/label&gt;
+&lt;note&gt;
+&lt;p&gt;The geometric optimization and electronic transport properties are 
+all calculated by a developed &lt;italic&gt;ab-initio&lt;/italic&gt; software package 
+Atomistix ToolKit, which is based on the spin-polarized density-functional 
+theory combined with the non-equilibrium Greens functions. ...&lt;/p&gt;
+&lt;/note&gt;
+&lt;/ref&gt;</span></strong>
+...
+
+</pre></div></div><div class="pagefooter"><h2 class="headname">Book Interchange Tag Suite (BITS) Version 1.0 Tag Library 
+Version 1.0</h2><h4 class="pubdate">Version of December 2013</h4></div></body></html>

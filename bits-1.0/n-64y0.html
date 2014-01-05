@@ -1,0 +1,38 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008--><link rel="stylesheet" href="BITS.css" type="text/css"><title>Element: Reference Count</title></head><body class="main"><div class="pageheader"><h2 class="headname">Book Interchange Tag Suite (BITS) Version 1.0 Tag Library 
+Version 1.0</h2><h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+National Library of Medicine (NLM)</h4></div><div class="header"><h1 class="elementtag">&lt;ref-count&gt;</h1><h1 class="elementname">Reference Count</h1></div><div class="definition"><p class="para">Number of references or citations that appear in a bibliographic reference
+          list.</p></div><div class="attrlist"><h2 class="header">Attributes</h2><h5 class="header"><a href="n-mda2.html" target="main"><span class="attrtag">count</span></a> <a href="n-mda2.html" target="main"><span class="attrname">Count</span></a></h5><h5 class="header"><a href="n-4qu2.html" target="main"><span class="attrtag">id</span></a> <a href="n-4qu2.html" target="main"><span class="attrname">Document Internal Identifier</span></a></h5><h5 class="header"><a href="n-ib42.html" target="main"><span class="attrtag">xml:base</span></a> <a href="n-ib42.html" target="main"><span class="attrname">Base</span></a></h5></div><div class="relatedelem"><h2 class="header">Related Elements</h2><p class="para">Inside the <a href="n-vqx0.html" target="main" title="Counts"><span class="elementtag">&lt;counts&gt;</span></a> container element are
+          the counts of various components of the document: the generic count element <a href="n-myx0.html" target="main" title="Count"><span class="elementtag">&lt;count&gt;</span></a> (for which the <a href="n-2ha2.html" target="main" title="Count Type"><span class="attrtag">@count-type</span></a> names what is being counted) and the specific
+          named counting elements: <a href="n-p3t0.html" target="main" title="Figure Count"><span class="elementtag">&lt;fig-count&gt;</span></a> is the
+          number of figures, the <a href="n-gnz0.html" target="main" title="Table Count"><span class="elementtag">&lt;table-count&gt;</span></a> is the
+          number of tables, the <a href="n-w3s0.html" target="main" title="Equation Count"><span class="elementtag">&lt;equation-count&gt;</span></a> is the
+          number of equations, the <a href="n-64y0.html" target="main" title="Reference Count"><span class="elementtag">&lt;ref-count&gt;</span></a> is
+          either the number of references or (more properly) the number of citations in the
+          bibliographic reference list, the <a href="n-qrr0.html" target="main" title="Page Count"><span class="elementtag">&lt;page-count&gt;</span></a> is the page count, and the <a href="n-bn52.html" target="main" title="Word Count"><span class="elementtag">&lt;word-count&gt;</span></a> is
+          the number of words in the document.</p></div><div class="contentmodel"><h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  ref-count    EMPTY                                        &gt;</pre></div><div class="modeldesc"><h2 class="header">Description</h2><p class="para">This is an EMPTY element</p></div><div class="elementcontext"><h3 class="header">This element may be contained in:</h3><p class="para"><a href="n-vqx0.html" target="main" title="Counts"><span class="elementtag">&lt;counts&gt;</span></a></p></div><div class="examp.group"><h3 class="header">Example</h3><div class="taggedexamp"><pre class="taggedtext">
+    
+&lt;book dtd-version="1.0"&gt;  
+&lt;book-meta&gt;
+&lt;book-id book-id-type="publisher"&gt;handbook-648&lt;/book-id&gt;
+&lt;book-title-group&gt;
+&lt;book-title&gt;The NCBI Handbook&lt;/book-title&gt;
+&lt;/book-title-group&gt;
+...
+&lt;counts&gt;
+&lt;count count-type="contributors" count="2"/&gt;
+&lt;fig-count count="98"/&gt;
+&lt;table-count count="40"/&gt;
+&lt;equation-count count="0"/&gt;
+<strong><span class="focus">&lt;ref-count count="115"/&gt;</span></strong>
+&lt;page-count count="532"/&gt;
+&lt;word-count count="149852"/&gt;
+&lt;/counts&gt;
+&lt;/book-meta&gt;
+&lt;front-matter&gt;...&lt;/front-matter&gt;
+&lt;book-body&gt;...&lt;/book-body&gt;
+&lt;book-back&gt;...&lt;/book-back&gt;
+&lt;/book&gt;
+
+   </pre></div></div><div class="pagefooter"><h2 class="headname">Book Interchange Tag Suite (BITS) Version 1.0 Tag Library 
+Version 1.0</h2><h4 class="pubdate">Version of December 2013</h4></div></body></html>

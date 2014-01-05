@@ -1,0 +1,39 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008--><link rel="stylesheet" href="BITS.css" type="text/css"><title>Element: Book Part</title></head><body class="main"><div class="pageheader"><h2 class="headname">Book Interchange Tag Suite (BITS) Version 1.0 Tag Library 
+Version 1.0</h2><h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+National Library of Medicine (NLM)</h4></div><div class="header"><h1 class="elementtag">&lt;book-part&gt;</h1><h1 class="elementname">Book Part</h1></div><div class="definition"><p class="para">A major organizational unit of a book, typically called a “chapter”, but given many names in common language, for example, chapter, part, unit, module, section, topic, lesson, canto, volume, or even “book”.</p></div><div class="remarks"><h2 class="header">Remarks</h2><p class="para">Book Parts are recursive, that is, various levels of <a href="n-nj50.html" target="main" title="Book Part"><span class="elementtag">&lt;book-part&gt;</span></a> are indicated by containment, not by different names for the interior parts. The body of a book part (<a href="n-8350.html" target="main" title="Body of a Book Part"><span class="elementtag">&lt;body&gt;</span></a>) may contain lower level <a href="n-nj50.html" target="main" title="Book Part"><span class="elementtag">&lt;book-part&gt;</span></a> elements or just recursive sections that are tagged using the <a href="n-cap0.html" target="main" title="Section"><span class="elementtag">&lt;sec&gt;</span></a> element.</p></div><div class="attrlist"><h2 class="header">Attributes</h2><h5 class="header"><a href="n-vj82.html" target="main"><span class="attrtag">book-part-type</span></a> <a href="n-vj82.html" target="main"><span class="attrname">Type of Book Part</span></a></h5><h5 class="header"><a href="n-4qu2.html" target="main"><span class="attrtag">id</span></a> <a href="n-4qu2.html" target="main"><span class="attrname">Document Internal Identifier</span></a></h5><h5 class="header"><a href="n-suw2.html" target="main"><span class="attrtag">indexed</span></a> <a href="n-suw2.html" target="main"><span class="attrname">Indexed</span></a></h5><h5 class="header"><a href="n-wtv2.html" target="main"><span class="attrtag">seq</span></a> <a href="n-wtv2.html" target="main"><span class="attrname">Sequence</span></a></h5><h5 class="header"><a href="n-rdv2.html" target="main"><span class="attrtag">specific-use</span></a> <a href="n-rdv2.html" target="main"><span class="attrname">Specific Use</span></a></h5><h5 class="header"><a href="n-ib42.html" target="main"><span class="attrtag">xml:base</span></a> <a href="n-ib42.html" target="main"><span class="attrname">Base</span></a></h5><h5 class="header"><a href="n-fas2.html" target="main"><span class="attrtag">xml:lang</span></a> <a href="n-fas2.html" target="main"><span class="attrname">Language</span></a></h5><h5 class="header"><a href="n-qfs2.html" target="main"><span class="attrtag">xmlns:mml</span></a> <a href="n-qfs2.html" target="main"><span class="attrname">MathML Namespace Declaration</span></a></h5><h5 class="header"><a href="n-bgs2.html" target="main"><span class="attrtag">xmlns:xi</span></a> <a href="n-bgs2.html" target="main"><span class="attrname">XInclude Namespace Declaration</span></a></h5><h5 class="header"><a href="n-pns2.html" target="main"><span class="attrtag">xmlns:xlink</span></a> <a href="n-pns2.html" target="main"><span class="attrname">XLink Namespace Declaration</span></a></h5><h5 class="header"><a href="n-crs2.html" target="main"><span class="attrtag">xmlns:xsi</span></a> <a href="n-crs2.html" target="main"><span class="attrname">XML Schema Namespace Declaration</span></a></h5></div><div class="contentmodel"><h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  book-part    <a href="n-5x72.html" target="main" title="Book Part Model"><span class="petag">%book-part-model;</span></a>                            &gt;</pre></div><div class="contentmodel"><h2 class="header">Expanded Content Model</h2><p class="contentdesc">(book-part-meta?, front-matter?, body?, back?)</p></div><div class="modeldesc"><h2 class="header">Description</h2><p class="para">The following, in order:<ul class="bullist"><li><a href="n-zq50.html" target="main" title="Book Part Metadata"><span class="elementtag">&lt;book-part-meta&gt;</span></a> <a href="n-zq50.html" target="main" title="<book-part-meta&gt;"><span class="elementname">Book Part Metadata</span></a>, zero or one</li><li><a href="n-nrt0.html" target="main" title="Front Matter"><span class="elementtag">&lt;front-matter&gt;</span></a> <a href="n-nrt0.html" target="main" title="<front-matter&gt;"><span class="elementname">Front Matter</span></a>, zero or one</li><li><a href="n-8350.html" target="main" title="Body of a Book Part"><span class="elementtag">&lt;body&gt;</span></a> <a href="n-8350.html" target="main" title="<body&gt;"><span class="elementname">Body of a Book Part</span></a>, zero or one</li><li><a href="n-4p30.html" target="main" title="Back Matter for a Book Part"><span class="elementtag">&lt;back&gt;</span></a> <a href="n-4p30.html" target="main" title="<back&gt;"><span class="elementname">Back Matter for a Book Part</span></a>, zero or one</li></ul></p></div><div class="elementcontext"><h3 class="header">This element may be contained in:</h3><p class="para"><a href="n-8350.html" target="main" title="Body of a Book Part"><span class="elementtag">&lt;body&gt;</span></a>, <a href="n-xe50.html" target="main" title="Book Back Matter"><span class="elementtag">&lt;book-back&gt;</span></a>, <a href="n-sn50.html" target="main" title="Body of the Book"><span class="elementtag">&lt;book-body&gt;</span></a>, <a href="n-wk80.html" target="main" title="Book Part Wrapper"><span class="elementtag">&lt;book-part-wrapper&gt;</span></a></p></div><div class="examp.group"><h3 class="header">Example</h3><div class="taggedexamp"><pre class="taggedtext">
+    
+&lt;book dtd-version="1.0"&gt;  
+&lt;book-meta&gt;...&lt;/book-meta&gt;
+&lt;front-matter&gt;...&lt;/front-matter&gt;
+&lt;book-body&gt;
+<strong><span class="focus">&lt;book-part id="bid.2" book-part-type="chapter"&gt;
+&lt;book-part-meta&gt;...&lt;/book-part-meta&gt;
+&lt;body&gt;
+&lt;sec id="bid.3"&gt;
+&lt;title&gt;History&lt;/title&gt;
+&lt;p&gt;Initially, GenBank was built and maintained at Los Alamos National
+Laboratory (&lt;xref ref-type="kwd" rid="bid.41"&gt;LANL&lt;/xref&gt;). In the
+early 1990s, this responsibility was awarded to NCBI through ...&lt;/p&gt;
+&lt;/sec&gt;
+&lt;sec id="bid.4"&gt;
+&lt;title&gt;International Collaboration&lt;/title&gt;
+&lt;p&gt;In the mid-1990s, the GenBank database became part of the 
+International Nucleotide Sequence Database Collaboration with the 
+EMBL database ...&lt;/p&gt;
+&lt;/sec&gt;
+&lt;/body&gt;
+&lt;back&gt;...&lt;/back&gt;
+&lt;/book-part&gt;</span></strong>
+
+<strong><span class="focus">&lt;book-part&gt;...&lt;/book-part&gt;</span></strong>
+
+<strong><span class="focus">&lt;book-part&gt;...&lt;/book-part&gt;</span></strong>
+
+<strong><span class="focus">&lt;book-part&gt;...&lt;/book-part&gt;</span></strong>
+
+&lt;/book-body&gt;
+&lt;/book&gt;
+
+   </pre></div></div><div class="pagefooter"><h2 class="headname">Book Interchange Tag Suite (BITS) Version 1.0 Tag Library 
+Version 1.0</h2><h4 class="pubdate">Version of December 2013</h4></div></body></html>

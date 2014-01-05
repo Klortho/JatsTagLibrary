@@ -1,0 +1,115 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008--><link rel="stylesheet" href="BITS.css" type="text/css"><title>Element: Book Part Wrapper</title></head><body class="main"><div class="pageheader"><h2 class="headname">Book Interchange Tag Suite (BITS) Version 1.0 Tag Library 
+Version 1.0</h2><h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+National Library of Medicine (NLM)</h4></div><div class="header"><h1 class="elementtag">&lt;book-part-wrapper&gt;</h1><h1 class="elementname">Book Part Wrapper</h1></div><div class="definition"><p class="para">A wrapper element used to exchange a book part such as a chapter (<a href="n-nj50.html" target="main" title="Book Part"><span class="elementtag">&lt;book-part&gt;</span></a>).</p></div><div class="attrlist"><h2 class="header">Attributes</h2><h5 class="header"><a href="n-yxa2.html" target="main"><span class="attrtag">content-type</span></a> <a href="n-yxa2.html" target="main"><span class="attrname">Type of Content</span></a></h5><h5 class="header"><a href="n-u8u2.html" target="main"><span class="attrtag">dtd-version</span></a> <a href="n-u8u2.html" target="main"><span class="attrname">Version of the Tag Set (DTD)</span></a></h5><h5 class="header"><a href="n-ehu2.html" target="main"><span class="attrtag">from-where</span></a> <a href="n-ehu2.html" target="main"><span class="attrname">From Where</span></a></h5><h5 class="header"><a href="n-4qu2.html" target="main"><span class="attrtag">id</span></a> <a href="n-4qu2.html" target="main"><span class="attrname">Document Internal Identifier</span></a></h5><h5 class="header"><a href="n-rdv2.html" target="main"><span class="attrtag">specific-use</span></a> <a href="n-rdv2.html" target="main"><span class="attrname">Specific Use</span></a></h5><h5 class="header"><a href="n-ib42.html" target="main"><span class="attrtag">xml:base</span></a> <a href="n-ib42.html" target="main"><span class="attrname">Base</span></a></h5><h5 class="header"><a href="n-fas2.html" target="main"><span class="attrtag">xml:lang</span></a> <a href="n-fas2.html" target="main"><span class="attrname">Language</span></a></h5><h5 class="header"><a href="n-qfs2.html" target="main"><span class="attrtag">xmlns:mml</span></a> <a href="n-qfs2.html" target="main"><span class="attrname">MathML Namespace Declaration</span></a></h5><h5 class="header"><a href="n-bgs2.html" target="main"><span class="attrtag">xmlns:xi</span></a> <a href="n-bgs2.html" target="main"><span class="attrname">XInclude Namespace Declaration</span></a></h5><h5 class="header"><a href="n-pns2.html" target="main"><span class="attrtag">xmlns:xlink</span></a> <a href="n-pns2.html" target="main"><span class="attrname">XLink Namespace Declaration</span></a></h5><h5 class="header"><a href="n-crs2.html" target="main"><span class="attrtag">xmlns:xsi</span></a> <a href="n-crs2.html" target="main"><span class="attrname">XML Schema Namespace Declaration</span></a></h5></div><div class="contentmodel"><h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  book-part-wrapper
+                        <a href="n-hv72.html" target="main" title="Book Part Wrapper Model"><span class="petag">%book-part-wrapper-model;</span></a>                    &gt;</pre></div><div class="contentmodel"><h2 class="header">Expanded Content Model</h2><p class="contentdesc">(collection-meta*, book-meta, (book-part | xi:include | app | app-group | floats-group | index | index-group | ref-list | front-matter-part | foreword | preface | notes | ack | bio | dedication | fn-group | glossary | toc | toc-group))</p></div><div class="modeldesc"><h2 class="header">Description</h2><p class="para">The following, in order:<ul class="bullist"><li><a href="n-tma0.html" target="main" title="Collection Metadata"><span class="elementtag">&lt;collection-meta&gt;</span></a> <a href="n-tma0.html" target="main" title="<collection-meta&gt;"><span class="elementname">Collection Metadata</span></a>, zero or more</li><li><a href="n-8r50.html" target="main" title="Book Metadata (Whole Book)"><span class="elementtag">&lt;book-meta&gt;</span></a> <a href="n-8r50.html" target="main" title="<book-meta&gt;"><span class="elementname">Book Metadata (Whole Book)</span></a></li><li>Any one of:<ul class="bullist"><li><a href="n-nj50.html" target="main" title="Book Part"><span class="elementtag">&lt;book-part&gt;</span></a> <a href="n-nj50.html" target="main" title="<book-part&gt;"><span class="elementname">Book Part</span></a></li><li><a href="n-dy52.html" target="main" title="XInclude"><span class="elementtag">&lt;xi:include&gt;</span></a> <a href="n-dy52.html" target="main" title="<xi:include&gt;"><span class="elementname">XInclude</span></a></li><li><a href="n-urc0.html" target="main" title="Appendix"><span class="elementtag">&lt;app&gt;</span></a> <a href="n-urc0.html" target="main" title="<app&gt;"><span class="elementname">Appendix</span></a></li><li><a href="n-3qc0.html" target="main" title="Appendix Group"><span class="elementtag">&lt;app-group&gt;</span></a> <a href="n-3qc0.html" target="main" title="<app-group&gt;"><span class="elementname">Appendix Group</span></a></li><li><a href="n-8tt0.html" target="main" title="Floating Element Group"><span class="elementtag">&lt;floats-group&gt;</span></a> <a href="n-8tt0.html" target="main" title="<floats-group&gt;"><span class="elementname">Floating Element Group</span></a></li><li><a href="n-pz70.html" target="main" title="Index"><span class="elementtag">&lt;index&gt;</span></a> <a href="n-pz70.html" target="main" title="<index&gt;"><span class="elementname">Index</span></a></li><li><a href="n-wse0.html" target="main" title="Index Group"><span class="elementtag">&lt;index-group&gt;</span></a> <a href="n-wse0.html" target="main" title="<index-group&gt;"><span class="elementname">Index Group</span></a></li><li><a href="n-gsy0.html" target="main" title="Reference List (Bibliographic)"><span class="elementtag">&lt;ref-list&gt;</span></a> <a href="n-gsy0.html" target="main" title="<ref-list&gt;"><span class="elementname">Reference List (Bibliographic)</span></a></li><li><a href="n-bit0.html" target="main" title="Front Matter Part"><span class="elementtag">&lt;front-matter-part&gt;</span></a> <a href="n-bit0.html" target="main" title="<front-matter-part&gt;"><span class="elementname">Front Matter Part</span></a></li><li><a href="n-8nt0.html" target="main" title="Foreword"><span class="elementtag">&lt;foreword&gt;</span></a> <a href="n-8nt0.html" target="main" title="<foreword&gt;"><span class="elementname">Foreword</span></a></li><li><a href="n-87h0.html" target="main" title="Preface"><span class="elementtag">&lt;preface&gt;</span></a> <a href="n-87h0.html" target="main" title="<preface&gt;"><span class="elementname">Preface</span></a></li><li><a href="n-crd0.html" target="main" title="Notes"><span class="elementtag">&lt;notes&gt;</span></a> <a href="n-crd0.html" target="main" title="<notes&gt;"><span class="elementname">Notes</span></a></li><li><a href="n-wc20.html" target="main" title="Acknowledgments"><span class="elementtag">&lt;ack&gt;</span></a> <a href="n-wc20.html" target="main" title="<ack&gt;"><span class="elementname">Acknowledgments</span></a></li><li><a href="n-x930.html" target="main" title="Biography"><span class="elementtag">&lt;bio&gt;</span></a> <a href="n-x930.html" target="main" title="<bio&gt;"><span class="elementname">Biography</span></a></li><li><a href="n-xwv0.html" target="main" title="Dedication"><span class="elementtag">&lt;dedication&gt;</span></a> <a href="n-xwv0.html" target="main" title="<dedication&gt;"><span class="elementname">Dedication</span></a></li><li><a href="n-mft0.html" target="main" title="Footnote Group"><span class="elementtag">&lt;fn-group&gt;</span></a> <a href="n-mft0.html" target="main" title="<fn-group&gt;"><span class="elementname">Footnote Group</span></a></li><li><a href="n-4t70.html" target="main" title="Glossary Elements List"><span class="elementtag">&lt;glossary&gt;</span></a> <a href="n-4t70.html" target="main" title="<glossary&gt;"><span class="elementname">Glossary Elements List</span></a></li><li><a href="n-ve22.html" target="main" title="Table of Contents"><span class="elementtag">&lt;toc&gt;</span></a> <a href="n-ve22.html" target="main" title="<toc&gt;"><span class="elementname">Table of Contents</span></a></li><li><a href="n-fkc2.html" target="main" title="Table of Contents Group"><span class="elementtag">&lt;toc-group&gt;</span></a> <a href="n-fkc2.html" target="main" title="<toc-group&gt;"><span class="elementname">Table of Contents Group</span></a></li></ul></li></ul></p></div><div class="elementcontext"><h3 class="header">This top-level element may not be contained in any other elements.</h3></div><div class="examp.group"><h3 class="header">Example 1</h3><div class="taggedexamp"><pre class="taggedtext">
+    
+<strong><span class="focus">&lt;book-part-wrapper 
+  dtd-version="1.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xi="http://www.w3.org/2001/XInclude"
+  xmlns:mml="http://www.w3.org/1998/Math/MathML"
+  xmlns:xlink="http://www.w3.org/1999/xlink"&gt;
+
+&lt;book-meta&gt;
+&lt;book-id book-id-type="DOI"&gt;10.1038/issn.1476-4857&lt;/book-id&gt;
+&lt;book-id book-id-type="publisher-id"&gt;BITS-Test1&lt;/book-id&gt;
+&lt;book-title-group&gt;
+&lt;book-title&gt;BITS DTD Test Book&lt;/book-title&gt;
+&lt;/book-title-group&gt;
+&lt;contrib-group&gt;...&lt;/contrib-group&gt;
+...
+&lt;pub-date iso-8601-date="2014"&gt;&lt;year&gt;2014&lt;/year&gt;&lt;/pub-date&gt;
+&lt;isbn&gt;1-234 567890-123&lt;/isbn&gt;
+&lt;publisher&gt;
+&lt;publisher-name&gt;Mulberry Technologies, Inc.&lt;/publisher-name&gt;
+&lt;/publisher&gt;
+&lt;edition designator="13"&gt;Thirteenth&lt;/edition&gt;
+&lt;pub-history&gt;...&lt;/pub-history&gt;
+&lt;permissions&gt;...&lt;/permissions&gt;
+&lt;kwd-group kwd-group-type="author"&gt;...&lt;/kwd-group&gt;
+&lt;/book-meta&gt;
+
+&lt;book-part 
+  book-part-type="introduction"
+  indexed="no" 
+  seq="1" 
+  xmlns:mml="http://www.w3.org/1998/Math/MathML"
+  xmlns:xlink="http://www.w3.org/1999/xlink" &gt;
+&lt;book-part-meta&gt;
+&lt;book-part-id book-part-id-type="publisher-id"&gt;
+10.1038/issn.1476-4857/chp-intro&lt;/book-part-id&gt;
+&lt;subj-group&gt;...&lt;/subj-group&gt;
+&lt;title-group&gt;
+&lt;label&gt;Chapter 1.&lt;/label&gt;
+&lt;title&gt;BITS Book Chapter for DTD Testing&lt;/title&gt;
+&lt;/title-group&gt;
+&lt;contrib-group&gt;...&lt;/contrib-group&gt;
+&lt;pub-date iso-8601-date="2014"&gt;&lt;year&gt;2014&lt;/year&gt;&lt;/pub-date&gt;
+&lt;pub-history&gt;...&lt;/pub-history&gt;
+&lt;permissions&gt;...&lt;/permissions&gt;
+&lt;abstract&gt;...&lt;/abstract&gt;
+&lt;kwd-group kwd-group-type="author"&gt;...&lt;/kwd-group&gt;
+&lt;counts&gt;...&lt;/counts&gt;
+&lt;/book-part-meta&gt;
+&lt;body&gt;...&lt;/body&gt;
+&lt;/book-part&gt;
+
+&lt;/book-part-wrapper&gt;</span></strong>
+
+   </pre></div></div><div class="examp.group"><h3 class="header">Example 2</h3><div class="taggedexamp"><pre class="taggedtext">
+     
+<strong><span class="focus">&lt;book-part-wrapper 
+  dtd-version="1.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xi="http://www.w3.org/2001/XInclude"
+  xmlns:mml="http://www.w3.org/1998/Math/MathML"
+  xmlns:xlink="http://www.w3.org/1999/xlink"&gt;
+
+&lt;collection-meta&gt;
+&lt;title-group&gt;
+&lt;title&gt;Balisage Series on Markup Technologies&lt;/title&gt;
+&lt;/title-group&gt;
+...
+&lt;abstract&gt;
+&lt;p&gt;The &lt;italic&gt;Balisage Series on Markup Technologies&lt;/italic&gt; 
+is an occasional series that includes the proceedings of 
+conferences, symposia, and other markup-related events.&lt;/p&gt;
+&lt;/abstract&gt;
+&lt;/collection-meta&gt;
+
+&lt;book-meta&gt;
+&lt;book-title-group&gt;
+&lt;book-title&gt;Proceedings of Balisage: The Markup Conference 
+2013&lt;/book-title&gt;
+&lt;/book-title-group&gt;
+...
+&lt;abstract&gt;
+&lt;p&gt;Balisage is a peer-reviewed conference designed to meet 
+the needs of markup theoreticians and practitioners who are 
+pushing the boundaries ...&lt;/p&gt;&lt;/abstract&gt;
+...
+&lt;/book-meta&gt;
+
+&lt;book-part 
+  book-part-type="paper"
+  indexed="yes" 
+  seq="25" 
+  xmlns:mml="http://www.w3.org/1998/Math/MathML"
+  xmlns:xlink="http://www.w3.org/1999/xlink" &gt;
+&lt;book-part-meta&gt;
+&lt;book-part-id book-part-id-type="doi"&gt;
+10.4242/BalisageVol10.Nordstrom01&lt;/book-part-id&gt;
+&lt;subj-group&gt;...&lt;/subj-group&gt;
+&lt;title-group&gt;
+&lt;title&gt;Semantic Profiling Using Indirection&lt;/title&gt;
+&lt;/title-group&gt;
+...
+&lt;/book-part-meta&gt;
+&lt;body&gt;...&lt;/body&gt;
+&lt;/book-part&gt;
+
+&lt;/book-part-wrapper&gt;</span></strong>
+
+    </pre></div></div><div class="pagefooter"><h2 class="headname">Book Interchange Tag Suite (BITS) Version 1.0 Tag Library 
+Version 1.0</h2><h4 class="pubdate">Version of December 2013</h4></div></body></html>

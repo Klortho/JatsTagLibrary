@@ -1,0 +1,73 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008--><link rel="stylesheet" href="BITS.css" type="text/css"><title>Element: Explanation</title></head><body class="main"><div class="pageheader"><h2 class="headname">Book Interchange Tag Suite (BITS) Version 1.0 Tag Library 
+Version 1.0</h2><h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+National Library of Medicine (NLM)</h4></div><div class="header"><h1 class="elementtag">&lt;explanation&gt;</h1><h1 class="elementname">Explanation</h1></div><div class="definition"><p class="para">A description of a question/answer or of just an answer or answer set. The explanation may describe, for example, why this particular answer is incorrect, or where in the text the material for this question can be found, et al.</p></div><div class="attrlist"><h2 class="header">Attributes</h2><h5 class="header"><a href="n-yxa2.html" target="main"><span class="attrtag">content-type</span></a> <a href="n-yxa2.html" target="main"><span class="attrname">Type of Content</span></a></h5><h5 class="header"><a href="n-4qu2.html" target="main"><span class="attrtag">id</span></a> <a href="n-4qu2.html" target="main"><span class="attrname">Document Internal Identifier</span></a></h5><h5 class="header"><a href="n-rdv2.html" target="main"><span class="attrtag">specific-use</span></a> <a href="n-rdv2.html" target="main"><span class="attrname">Specific Use</span></a></h5><h5 class="header"><a href="n-ib42.html" target="main"><span class="attrtag">xml:base</span></a> <a href="n-ib42.html" target="main"><span class="attrname">Base</span></a></h5><h5 class="header"><a href="n-fas2.html" target="main"><span class="attrtag">xml:lang</span></a> <a href="n-fas2.html" target="main"><span class="attrname">Language</span></a></h5></div><div class="contentmodel"><h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  explanation  <a href="n-w3g2.html" target="main" title="Explanation Model"><span class="petag">%explanation-model;</span></a>                          &gt;</pre></div><div class="contentmodel"><h2 class="header">Expanded Content Model</h2><p class="contentdesc">(p)+</p></div><div class="modeldesc"><h2 class="header">Description</h2><p class="para"><a href="n-7tr0.html" target="main" title="Paragraph"><span class="elementtag">&lt;p&gt;</span></a> <a href="n-7tr0.html" target="main" title="<p&gt;"><span class="elementname">Paragraph</span></a>, one or more</p></div><div class="elementcontext"><h3 class="header">This element may be contained in:</h3><p class="para"><a href="n-ztc0.html" target="main" title="Answer to a Question"><span class="elementtag">&lt;answer&gt;</span></a>, <a href="n-m6c0.html" target="main" title="Answer Set"><span class="elementtag">&lt;answer-set&gt;</span></a>, <a href="n-c8y0.html" target="main" title="Question Wrap"><span class="elementtag">&lt;question-wrap&gt;</span></a></p></div><div class="examp.group"><h3 class="header">Example 1</h3><p class="para">Multiple choice style question:</p><div class="taggedexamp"><pre class="taggedtext">
+    
+...
+&lt;sec id="sec45"&gt;
+...
+&lt;question-wrap&gt;
+&lt;question&gt;&lt;p&gt;Where was the first permanent English 
+settlement in the New World?&lt;/p&gt;&lt;/question&gt;
+&lt;answer-set answer-type="multiple-choice"&gt;
+&lt;answer correct="no"&gt;
+&lt;label&gt;A&lt;/label&gt;
+&lt;p&gt;Plymouth&lt;/p&gt;
+&lt;/answer&gt;
+&lt;answer correct="yes"&gt;
+&lt;label&gt;B&lt;/label&gt;
+&lt;p&gt;Jamestown&lt;/p&gt;
+&lt;/answer&gt;
+&lt;answer correct="no"&gt;
+&lt;label&gt;C&lt;/label&gt;
+&lt;p&gt;Roanoke&lt;/p&gt;
+&lt;/answer&gt;
+<strong><span class="focus">&lt;explanation&gt;
+&lt;p&gt;Established by the Virginia Company of London, Jamestown 
+was the first permanent English settlement in the New World; 
+it flourished from 1607 to 1699.  Although the Roanoke colony 
+was founded earlier (in 1587), that colony failed; upon returning 
+from a trip to England for supplies, its Governor found the 
+settlement abandoned.  Although one of the earliest New England 
+colonies, Plymouth (in modern Massachusetts) was not founded 
+by the Pilgrims until 1620.&lt;/p&gt;
+&lt;/explanation&gt;</span></strong>
+&lt;/answer-set&gt;
+&lt;/question-wrap&gt;
+&lt;/sec&gt;
+...
+
+
+   </pre></div></div><div class="examp.group"><h3 class="header">Example 2</h3><p class="para">True-False style question:</p><div class="taggedexamp"><pre class="taggedtext">
+    
+...
+&lt;sec id="sec45"&gt;
+...
+&lt;question-wrap&gt;
+&lt;question&gt;&lt;p&gt;Peregrine White was the first English 
+child born in North America.&lt;/p&gt;&lt;/question&gt;
+&lt;answer-set answer-type="true-false"&gt;
+&lt;answer correct="no"&gt;
+&lt;p&gt;True&lt;/p&gt;
+&lt;/answer&gt;
+&lt;answer correct="yes"&gt;
+&lt;p&gt;False&lt;/p&gt;
+&lt;/answer&gt;
+<strong><span class="focus">&lt;explanation&gt;
+&lt;p&gt;The first English child born in North America was 
+Virginia Dare.  She was born in August 1587, in the 
+short-lived colony of Roanoke.  Although the settlement 
+was later abandoned and the fate of its inhabitants a 
+mystery, records brought to England by her grandfather, 
+the governor of the colony, later in 1587 note her birth 
+and baptism.  Born in November 1620, Peregrine White 
+was the first child born in the Plymouth colony.&lt;/p&gt;
+&lt;/explanation&gt;</span></strong>
+&lt;/answer-set&gt;
+&lt;/question-wrap&gt;
+&lt;/sec&gt;
+...
+
+
+   </pre></div></div><div class="pagefooter"><h2 class="headname">Book Interchange Tag Suite (BITS) Version 1.0 Tag Library 
+Version 1.0</h2><h4 class="pubdate">Version of December 2013</h4></div></body></html>

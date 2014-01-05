@@ -1,0 +1,28 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008--><link rel="stylesheet" href="BITS.css" type="text/css"><title>Element: Author Comment</title></head><body class="main"><div class="pageheader"><h2 class="headname">Book Interchange Tag Suite (BITS) Version 1.0 Tag Library 
+Version 1.0</h2><h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+National Library of Medicine (NLM)</h4></div><div class="header"><h1 class="elementtag">&lt;author-comment&gt;</h1><h1 class="elementname">Author Comment</h1></div><div class="definition"><p class="para">Textual material associated with a contributor.</p></div><div class="remarks"><h2 class="header">Remarks</h2><p class="para"><strong>Common Practice:</strong> Although a typical author comment might
+explain, for example, some facts about the circumstances under which a contributor wrote the material, during conversion the <a href="n-sf30.html" target="main" title="Author Comment"><span class="elementtag">&lt;author-comment&gt;</span></a> element can also act as an escape mechanism to take the content of any contributor-related elements not anticipated by the Suite.</p></div><div class="attrlist"><h2 class="header">Attributes</h2><h5 class="header"><a href="n-yxa2.html" target="main"><span class="attrtag">content-type</span></a> <a href="n-yxa2.html" target="main"><span class="attrname">Type of Content</span></a></h5><h5 class="header"><a href="n-4qu2.html" target="main"><span class="attrtag">id</span></a> <a href="n-4qu2.html" target="main"><span class="attrname">Document Internal Identifier</span></a></h5><h5 class="header"><a href="n-rdv2.html" target="main"><span class="attrtag">specific-use</span></a> <a href="n-rdv2.html" target="main"><span class="attrname">Specific Use</span></a></h5><h5 class="header"><a href="n-ib42.html" target="main"><span class="attrtag">xml:base</span></a> <a href="n-ib42.html" target="main"><span class="attrname">Base</span></a></h5><h5 class="header"><a href="n-fas2.html" target="main"><span class="attrtag">xml:lang</span></a> <a href="n-fas2.html" target="main"><span class="attrname">Language</span></a></h5></div><div class="contentmodel"><h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  author-comment
+                        <a href="n-nit2.html" target="main" title="Author Comment Model"><span class="petag">%author-comment-model;</span></a>                       &gt;</pre></div><div class="contentmodel"><h2 class="header">Expanded Content Model</h2><p class="contentdesc">(label?, title?, (p)+)</p></div><div class="modeldesc"><h2 class="header">Description</h2><p class="para">The following, in order:<ul class="bullist"><li><a href="n-tdg0.html" target="main" title="Label (of an Equation, Figure, Reference, etc.)"><span class="elementtag">&lt;label&gt;</span></a> <a href="n-tdg0.html" target="main" title="<label&gt;"><span class="elementname">Label (of an Equation, Figure, Reference, etc.)</span></a>, zero or one</li><li><a href="n-da22.html" target="main" title="Title"><span class="elementtag">&lt;title&gt;</span></a> <a href="n-da22.html" target="main" title="<title&gt;"><span class="elementname">Title</span></a>, zero or one</li><li><a href="n-7tr0.html" target="main" title="Paragraph"><span class="elementtag">&lt;p&gt;</span></a> <a href="n-7tr0.html" target="main" title="<p&gt;"><span class="elementname">Paragraph</span></a>, one or more</li></ul></p></div><div class="elementcontext"><h3 class="header">This element may be contained in:</h3><p class="para"><a href="n-xra0.html" target="main" title="Collaborative (Group) Author"><span class="elementtag">&lt;collab&gt;</span></a>, <a href="n-kzw0.html" target="main" title="Contributor"><span class="elementtag">&lt;contrib&gt;</span></a>, <a href="n-45x0.html" target="main" title="Contributor Group"><span class="elementtag">&lt;contrib-group&gt;</span></a></p></div><div class="examp.group"><h3 class="header">Example</h3><div class="taggedexamp"><pre class="taggedtext">
+    
+...
+&lt;contrib-group&gt;
+&lt;contrib contrib-type="author" rid="StLukes"&gt;
+&lt;name&gt;&lt;surname&gt;Johnson&lt;/surname&gt;
+&lt;given-names&gt;John Jacob&lt;/given-names&gt;&lt;/name&gt;
+&lt;role&gt;research physiotherapist&lt;/role&gt;
+&lt;/contrib&gt;
+&lt;contrib contrib-type="author" rid="RoyalInf"&gt;
+&lt;name&gt;&lt;surname&gt;Smithson&lt;/surname&gt;
+&lt;given-names&gt;Sally B.&lt;/given-names&gt;&lt;/name&gt;
+&lt;role&gt;consultant physician&lt;/role&gt;
+<strong><span class="focus">&lt;author-comment&gt;&lt;p&gt;In addition to her role as consulting
+physician on this project, Dr. Smithson owns trains the
+therapy dog used in the experiments&lt;/p&gt;&lt;/author-comment&gt;</span></strong>
+&lt;/contrib&gt;
+&lt;/contrib-group&gt;
+...
+
+
+   </pre></div></div><div class="pagefooter"><h2 class="headname">Book Interchange Tag Suite (BITS) Version 1.0 Tag Library 
+Version 1.0</h2><h4 class="pubdate">Version of December 2013</h4></div></body></html>

@@ -1,0 +1,197 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008--><link rel="stylesheet" href="BITS.css" type="text/css"><title>Element: Affiliation</title></head><body class="main"><div class="pageheader"><h2 class="headname">Book Interchange Tag Suite (BITS) Version 1.0 Tag Library 
+Version 1.0</h2><h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+National Library of Medicine (NLM)</h4></div><div class="header"><h1 class="elementtag">&lt;aff&gt;</h1><h1 class="elementname">Affiliation</h1></div><div class="definition"><p class="para">Name of an institution or organization (for example, university, corporation) with
+          which a contributor is affiliated.</p></div><div class="remarks"><h2 class="header">Remarks</h2><p class="para">All levels of a multi-tier organization are listed within a single <a href="n-hg20.html" target="main" title="Affiliation"><span class="elementtag">&lt;aff&gt;</span></a> element; for example, a program, a department, and a university may be part of the same <a href="n-hg20.html" target="main" title="Affiliation"><span class="elementtag">&lt;aff&gt;</span></a>.
+       Similarly, both a division and a corporation would be inside one <a href="n-hg20.html" target="main" title="Affiliation"><span class="elementtag">&lt;aff&gt;</span></a>.</p><p class="para"><strong>Best Practice:</strong> In a typical case, the <a href="n-4qu2.html" target="main" title="Document Internal Identifier"><span class="attrtag">@id</span></a> attribute of an <a href="n-hg20.html" target="main" title="Affiliation"><span class="elementtag">&lt;aff&gt;</span></a> element will be pointed to from one or more <a href="n-kzw0.html" target="main" title="Contributor"><span class="elementtag">&lt;contrib&gt;</span></a> elements, establishing the linkage between them.</p><p class="para">Even if the explicitly tagged numbers or symbols for author linkages are preserved in
+       conversion, the <tt>ID/IDREF</tt> linking mechanism should be maintained or created
+       during conversion.</p><p class="para">If an archive wishes to record divisional distinctions made by a publisher, such as an
+       <a href="n-92f0.html" target="main" title="Institution Name"><span class="elementtag">&lt;institution&gt;</span></a> element with
+       “<tt>&lt;dept&gt;</tt>” and “<tt>&lt;office&gt;</tt>”
+       sub-elements for the affiliation, the embedded divisions could be converted to this Tag Set
+       using <a href="n-zm60.html" target="main" title="Named Special (Subject) Content"><span class="elementtag">&lt;named-content&gt;</span></a> elements:</p><div class="codeblock"><pre>
+  &lt;aff&gt;
+    &lt;institution content-type="edu"&gt;
+      University of Frostbite Falls
+      &lt;named-content content-type="dept"&gt;Dept of Campus Security
+      &lt;/named-content&gt;
+      &lt;named-content content-type="dept"&gt;Dept of Moose and Squirrel
+      Security&lt;/named-content&gt;
+      &lt;named-content content-type="office"&gt;Office of the Acting Dean
+      &lt;/named-content&gt;
+    &lt;/institution&gt;
+  &lt;/aff&gt;</pre></div></div><div class="attrlist"><h2 class="header">Attributes</h2><h5 class="header"><a href="n-yxa2.html" target="main"><span class="attrtag">content-type</span></a> <a href="n-yxa2.html" target="main"><span class="attrname">Type of Content</span></a></h5><h5 class="header"><a href="n-4qu2.html" target="main"><span class="attrtag">id</span></a> <a href="n-4qu2.html" target="main"><span class="attrname">Document Internal Identifier</span></a></h5><h5 class="header"><a href="n-45v2.html" target="main"><span class="attrtag">rid</span></a> <a href="n-45v2.html" target="main"><span class="attrname">Reference to an Identifier</span></a></h5><h5 class="header"><a href="n-rdv2.html" target="main"><span class="attrtag">specific-use</span></a> <a href="n-rdv2.html" target="main"><span class="attrname">Specific Use</span></a></h5><h5 class="header"><a href="n-ib42.html" target="main"><span class="attrtag">xml:base</span></a> <a href="n-ib42.html" target="main"><span class="attrname">Base</span></a></h5><h5 class="header"><a href="n-fas2.html" target="main"><span class="attrtag">xml:lang</span></a> <a href="n-fas2.html" target="main"><span class="attrname">Language</span></a></h5></div><div class="relatedelem"><h2 class="header">Related Elements</h2><p class="para">Within an affiliation element (<a href="n-hg20.html" target="main" title="Affiliation"><span class="elementtag">&lt;aff&gt;</span></a>), the name of an institution
+may just be given as text, or the institution may be tagged explicitly (as an 
+<a href="n-92f0.html" target="main" title="Institution Name"><span class="elementtag">&lt;institution&gt;</span></a>) and 
+an institutional identifier recorded (<a href="n-cxf0.html" target="main" title="Institution Identifier"><span class="elementtag">&lt;institution-id&gt;</span></a>). The element 
+<a href="n-bvf0.html" target="main" title="Institution Wrapper"><span class="elementtag">&lt;institution-wrap&gt;</span></a> collects together both the name of the institution
+and its identifier.</p><p class="para">A single institution may have multiple identifiers, either because different assigning
+agencies have defined an identifier or because the entity belongs to more than one larger
+organizational unit, for example, a laboratory may be part of multiple institutions.</p></div><div class="contentmodel"><h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  aff          (#PCDATA <a href="n-f8t2.html" target="main" title="Affiliation Elements"><span class="petag">%aff-elements;</span></a>)*                    &gt;</pre></div><div class="contentmodel"><h2 class="header">Expanded Content Model</h2><p class="contentdesc">(#PCDATA | addr-line | country | fax | institution | institution-wrap | phone | email | ext-link | uri | inline-supplementary-material | related-article | related-object | hr | bold | fixed-case | italic | monospace | overline | overline-start | overline-end | roman | sans-serif | sc | strike | underline | underline-start | underline-end | ruby | alternatives | inline-graphic | private-char | chem-struct | inline-formula | tex-math | mml:math | abbrev | index-term | index-term-range-end | milestone-end | milestone-start | named-content | styled-content | fn | target | xref | sub | sup | x | break | label)*</p></div><div class="modeldesc"><h2 class="header">Description</h2><p class="para">Any combination of:<ul class="bullist"><li>Text, numbers, or special characters</li><li>Address Elements<ul class="bullist"><li><a href="n-qu20.html" target="main" title="Address Line"><span class="elementtag">&lt;addr-line&gt;</span></a> <a href="n-qu20.html" target="main" title="<addr-line&gt;"><span class="elementname">Address Line</span></a></li><li><a href="n-8px0.html" target="main" title="Country: in an Address"><span class="elementtag">&lt;country&gt;</span></a> <a href="n-8px0.html" target="main" title="<country&gt;"><span class="elementname">Country: in an Address</span></a></li><li><a href="n-zys0.html" target="main" title="Fax Number: in an Address"><span class="elementtag">&lt;fax&gt;</span></a> <a href="n-zys0.html" target="main" title="<fax&gt;"><span class="elementname">Fax Number: in an Address</span></a></li><li><a href="n-92f0.html" target="main" title="Institution Name"><span class="elementtag">&lt;institution&gt;</span></a> <a href="n-92f0.html" target="main" title="<institution&gt;"><span class="elementname">Institution Name</span></a></li><li><a href="n-bvf0.html" target="main" title="Institution Wrapper"><span class="elementtag">&lt;institution-wrap&gt;</span></a> <a href="n-bvf0.html" target="main" title="<institution-wrap&gt;"><span class="elementname">Institution Wrapper</span></a></li><li><a href="n-hwh0.html" target="main" title="Phone Number: in an Address"><span class="elementtag">&lt;phone&gt;</span></a> <a href="n-hwh0.html" target="main" title="<phone&gt;"><span class="elementname">Phone Number: in an Address</span></a></li></ul></li><li>Linking Elements<ul class="bullist"><li><a href="n-s940.html" target="main" title="Email Address"><span class="elementtag">&lt;email&gt;</span></a> <a href="n-s940.html" target="main" title="<email&gt;"><span class="elementname">Email Address</span></a></li><li><a href="n-5fs0.html" target="main" title="External Link"><span class="elementtag">&lt;ext-link&gt;</span></a> <a href="n-5fs0.html" target="main" title="<ext-link&gt;"><span class="elementname">External Link</span></a></li><li><a href="n-6t32.html" target="main" title="Uniform Resource Identifier (URI)"><span class="elementtag">&lt;uri&gt;</span></a> <a href="n-6t32.html" target="main" title="<uri&gt;"><span class="elementname">Uniform Resource Identifier (URI)</span></a></li></ul></li><li><a href="n-jqe0.html" target="main" title="Inline Supplementary Material"><span class="elementtag">&lt;inline-supplementary-material&gt;</span></a> <a href="n-jqe0.html" target="main" title="<inline-supplementary-material&gt;"><span class="elementname">Inline Supplementary Material</span></a></li><li><a href="n-pgy0.html" target="main" title="Related Article Information"><span class="elementtag">&lt;related-article&gt;</span></a> <a href="n-pgy0.html" target="main" title="<related-article&gt;"><span class="elementname">Related Article Information</span></a></li><li><a href="n-49y0.html" target="main" title="Related Object Information"><span class="elementtag">&lt;related-object&gt;</span></a> <a href="n-49y0.html" target="main" title="<related-object&gt;"><span class="elementname">Related Object Information</span></a></li><li><a href="n-mm70.html" target="main" title="Horizontal Rule"><span class="elementtag">&lt;hr&gt;</span></a> <a href="n-mm70.html" target="main" title="<hr&gt;"><span class="elementname">Horizontal Rule</span></a></li><li>Emphasis Elements<ul class="bullist"><li><a href="n-8w50.html" target="main" title="Bold"><span class="elementtag">&lt;bold&gt;</span></a> <a href="n-8w50.html" target="main" title="<bold&gt;"><span class="elementname">Bold</span></a></li><li><a href="n-hut0.html" target="main" title="Fixed Case"><span class="elementtag">&lt;fixed-case&gt;</span></a> <a href="n-hut0.html" target="main" title="<fixed-case&gt;"><span class="elementname">Fixed Case</span></a></li><li><a href="n-vcg0.html" target="main" title="Italic"><span class="elementtag">&lt;italic&gt;</span></a> <a href="n-vcg0.html" target="main" title="<italic&gt;"><span class="elementname">Italic</span></a></li><li><a href="n-ts60.html" target="main" title="Monospace Text (Typewriter Text)"><span class="elementtag">&lt;monospace&gt;</span></a> <a href="n-ts60.html" target="main" title="<monospace&gt;"><span class="elementname">Monospace Text (Typewriter Text)</span></a></li><li><a href="n-48r0.html" target="main" title="Overline"><span class="elementtag">&lt;overline&gt;</span></a> <a href="n-48r0.html" target="main" title="<overline&gt;"><span class="elementname">Overline</span></a></li><li><a href="n-csr0.html" target="main" title="Overline Start"><span class="elementtag">&lt;overline-start&gt;</span></a> <a href="n-csr0.html" target="main" title="<overline-start&gt;"><span class="elementname">Overline Start</span></a></li><li><a href="n-hvr0.html" target="main" title="Overline End"><span class="elementtag">&lt;overline-end&gt;</span></a> <a href="n-hvr0.html" target="main" title="<overline-end&gt;"><span class="elementname">Overline End</span></a></li><li><a href="n-eej0.html" target="main" title="Roman"><span class="elementtag">&lt;roman&gt;</span></a> <a href="n-eej0.html" target="main" title="<roman&gt;"><span class="elementname">Roman</span></a></li><li><a href="n-yyj0.html" target="main" title="Sans Serif"><span class="elementtag">&lt;sans-serif&gt;</span></a> <a href="n-yyj0.html" target="main" title="<sans-serif&gt;"><span class="elementname">Sans Serif</span></a></li><li><a href="n-nmj0.html" target="main" title="Small Caps"><span class="elementtag">&lt;sc&gt;</span></a> <a href="n-nmj0.html" target="main" title="<sc&gt;"><span class="elementname">Small Caps</span></a></li><li><a href="n-fhb0.html" target="main" title="Strike Through"><span class="elementtag">&lt;strike&gt;</span></a> <a href="n-fhb0.html" target="main" title="<strike&gt;"><span class="elementname">Strike Through</span></a></li><li><a href="n-wk32.html" target="main" title="Underline"><span class="elementtag">&lt;underline&gt;</span></a> <a href="n-wk32.html" target="main" title="<underline&gt;"><span class="elementname">Underline</span></a></li><li><a href="n-au32.html" target="main" title="Underline Start"><span class="elementtag">&lt;underline-start&gt;</span></a> <a href="n-au32.html" target="main" title="<underline-start&gt;"><span class="elementname">Underline Start</span></a></li><li><a href="n-9832.html" target="main" title="Underline End"><span class="elementtag">&lt;underline-end&gt;</span></a> <a href="n-9832.html" target="main" title="<underline-end&gt;"><span class="elementname">Underline End</span></a></li><li><a href="n-hhj0.html" target="main" title="Ruby Annotation Wrapper"><span class="elementtag">&lt;ruby&gt;</span></a> <a href="n-hhj0.html" target="main" title="<ruby&gt;"><span class="elementname">Ruby Annotation Wrapper</span></a></li></ul></li><li><a href="n-i3c0.html" target="main" title="Alternatives For Processing"><span class="elementtag">&lt;alternatives&gt;</span></a> <a href="n-i3c0.html" target="main" title="<alternatives&gt;"><span class="elementname">Alternatives For Processing</span></a></li><li>Inline Display Elements<ul class="bullist"><li><a href="n-eje0.html" target="main" title="Graphic, Inline"><span class="elementtag">&lt;inline-graphic&gt;</span></a> <a href="n-eje0.html" target="main" title="<inline-graphic&gt;"><span class="elementname">Graphic, Inline</span></a></li><li><a href="n-7ki0.html" target="main" title="Private Character (Custom or Unicode)"><span class="elementtag">&lt;private-char&gt;</span></a> <a href="n-7ki0.html" target="main" title="<private-char&gt;"><span class="elementname">Private Character (Custom or Unicode)</span></a></li></ul></li><li><a href="n-yca0.html" target="main" title="Chemical Structure (Display)"><span class="elementtag">&lt;chem-struct&gt;</span></a> <a href="n-yca0.html" target="main" title="<chem-struct&gt;"><span class="elementname">Chemical Structure (Display)</span></a></li><li><a href="n-t6e0.html" target="main" title="Formula, Inline"><span class="elementtag">&lt;inline-formula&gt;</span></a> <a href="n-t6e0.html" target="main" title="<inline-formula&gt;"><span class="elementname">Formula, Inline</span></a></li><li>Math Elements<ul class="bullist"><li><a href="n-6ik2.html" target="main" title="TeX Math Equation"><span class="elementtag">&lt;tex-math&gt;</span></a> <a href="n-6ik2.html" target="main" title="<tex-math&gt;"><span class="elementname">TeX Math Equation</span></a></li><li><a href="n-6v60.html" target="main" title="Math (MathML Tag Set)"><span class="elementtag">&lt;mml:math&gt;</span></a> <a href="n-6v60.html" target="main" title="<mml:math&gt;"><span class="elementname">Math (MathML Tag Set)</span></a></li></ul></li><li>Other Inline Elements<ul class="bullist"><li><a href="n-ed00.html" target="main" title="Abbreviation or Acronym"><span class="elementtag">&lt;abbrev&gt;</span></a> <a href="n-ed00.html" target="main" title="<abbrev&gt;"><span class="elementname">Abbreviation or Acronym</span></a></li><li><a href="n-nfe0.html" target="main" title="Index Term"><span class="elementtag">&lt;index-term&gt;</span></a> <a href="n-nfe0.html" target="main" title="<index-term&gt;"><span class="elementname">Index Term</span></a></li><li><a href="n-ene0.html" target="main" title="Index Term Range End"><span class="elementtag">&lt;index-term-range-end&gt;</span></a> <a href="n-ene0.html" target="main" title="<index-term-range-end&gt;"><span class="elementname">Index Term Range End</span></a></li><li><a href="n-cbn0.html" target="main" title="Milestone End"><span class="elementtag">&lt;milestone-end&gt;</span></a> <a href="n-cbn0.html" target="main" title="<milestone-end&gt;"><span class="elementname">Milestone End</span></a></li><li><a href="n-jbn0.html" target="main" title="Milestone Start"><span class="elementtag">&lt;milestone-start&gt;</span></a> <a href="n-jbn0.html" target="main" title="<milestone-start&gt;"><span class="elementname">Milestone Start</span></a></li><li><a href="n-zm60.html" target="main" title="Named Special (Subject) Content"><span class="elementtag">&lt;named-content&gt;</span></a> <a href="n-zm60.html" target="main" title="<named-content&gt;"><span class="elementname">Named Special (Subject) Content</span></a></li><li><a href="n-2f90.html" target="main" title="Styled Special (Subject) Content"><span class="elementtag">&lt;styled-content&gt;</span></a> <a href="n-2f90.html" target="main" title="<styled-content&gt;"><span class="elementname">Styled Special (Subject) Content</span></a></li></ul></li><li><a href="n-5et0.html" target="main" title="Footnote"><span class="elementtag">&lt;fn&gt;</span></a> <a href="n-5et0.html" target="main" title="<fn&gt;"><span class="elementname">Footnote</span></a></li><li><a href="n-ibz0.html" target="main" title="Target of an Internal Link"><span class="elementtag">&lt;target&gt;</span></a> <a href="n-ibz0.html" target="main" title="<target&gt;"><span class="elementname">Target of an Internal Link</span></a></li><li><a href="n-nj52.html" target="main" title="X (cross) Reference"><span class="elementtag">&lt;xref&gt;</span></a> <a href="n-nj52.html" target="main" title="<xref&gt;"><span class="elementname">X (cross) Reference</span></a></li><li><a href="n-3y90.html" target="main" title="Subscript"><span class="elementtag">&lt;sub&gt;</span></a> <a href="n-3y90.html" target="main" title="<sub&gt;"><span class="elementname">Subscript</span></a></li><li><a href="n-erm0.html" target="main" title="Superscript"><span class="elementtag">&lt;sup&gt;</span></a> <a href="n-erm0.html" target="main" title="<sup&gt;"><span class="elementname">Superscript</span></a></li><li><a href="n-p652.html" target="main" title="X - Generated Text and Punctuation"><span class="elementtag">&lt;x&gt;</span></a> <a href="n-p652.html" target="main" title="<x&gt;"><span class="elementname">X - Generated Text and Punctuation</span></a></li><li><a href="n-up80.html" target="main" title="Line Break"><span class="elementtag">&lt;break&gt;</span></a> <a href="n-up80.html" target="main" title="<break&gt;"><span class="elementname">Line Break</span></a></li><li><a href="n-tdg0.html" target="main" title="Label (of an Equation, Figure, Reference, etc.)"><span class="elementtag">&lt;label&gt;</span></a> <a href="n-tdg0.html" target="main" title="<label&gt;"><span class="elementname">Label (of an Equation, Figure, Reference, etc.)</span></a></li></ul></p></div><div class="elementcontext"><h3 class="header">This element may be contained in:</h3><p class="para"><a href="n-gj20.html" target="main" title="Affiliation Alternatives"><span class="elementtag">&lt;aff-alternatives&gt;</span></a>, <a href="n-8r50.html" target="main" title="Book Metadata (Whole Book)"><span class="elementtag">&lt;book-meta&gt;</span></a>, <a href="n-zq50.html" target="main" title="Book Part Metadata"><span class="elementtag">&lt;book-part-meta&gt;</span></a>, <a href="n-xra0.html" target="main" title="Collaborative (Group) Author"><span class="elementtag">&lt;collab&gt;</span></a>, <a href="n-tma0.html" target="main" title="Collection Metadata"><span class="elementtag">&lt;collection-meta&gt;</span></a>, <a href="n-kzw0.html" target="main" title="Contributor"><span class="elementtag">&lt;contrib&gt;</span></a>, <a href="n-45x0.html" target="main" title="Contributor Group"><span class="elementtag">&lt;contrib-group&gt;</span></a>, <a href="n-uah0.html" target="main" title="Person Group for a Cited Publication"><span class="elementtag">&lt;person-group&gt;</span></a>, <a href="n-qrq0.html" target="main" title="Signature Block"><span class="elementtag">&lt;sig-block&gt;</span></a></p></div><div class="examp.group"><h3 class="header">Example 1</h3><p class="para">Following a contributor group in metadata with contributors linked to affiliations by
+cross-reference:</p><div class="taggedexamp"><pre class="taggedtext">
+    
+...
+&lt;book-meta&gt;
+...
+&lt;contrib-group&gt;
+&lt;contrib contrib-type="editor" rid="bid.m.1"&gt;
+&lt;name&gt;&lt;surname&gt;McEntyre&lt;/surname&gt;
+&lt;given-names&gt;Jo&lt;/given-names&gt;&lt;/name&gt;
+&lt;xref ref-type="aff" rid="bid.m.1"/&gt;
+&lt;/contrib&gt;
+&lt;contrib contrib-type="editor" rid="bid.m.1"&gt;
+&lt;name&gt;&lt;surname&gt;Ostell&lt;/surname&gt;
+&lt;given-names&gt;Jim&lt;/given-names&gt;&lt;/name&gt;
+&lt;xref ref-type="aff" rid="bid.m.1"/&gt;
+&lt;/contrib&gt;
+&lt;/contrib-group&gt;
+<strong><span class="focus">&lt;aff id="bid.m.1"&gt;
+&lt;institution&gt;National Center for Biotechnology Information
+(NCBI), National Library of Medicine, National Institutes
+of Health&lt;/institution&gt;,
+&lt;addr-line&gt;Bethesda, MD 20892-6510&lt;/addr-line&gt;
+&lt;/aff&gt;</span></strong>
+...
+&lt;/book-meta&gt;
+...
+
+
+   </pre></div></div><div class="examp.group"><h3 class="header">Example 2</h3><p class="para">Inside a contributor in the book  metadata:</p><div class="taggedexamp"><pre class="taggedtext">
+...
+&lt;contrib-group&gt;
+&lt;contrib contrib-type="author"&gt;
+&lt;name&gt;&lt;surname&gt;Weinstein&lt;/surname&gt;
+&lt;given-names&gt;Melvin P.&lt;/given-names&gt;&lt;/name&gt;
+<strong><span class="focus">&lt;aff&gt;Departments of Medicine and Pathology, UMDNJ-Robert
+Wood Johnson Medical School, New Brunswick, New
+Jersey 08901-0019&lt;/aff&gt;</span></strong>
+&lt;address&gt;
+&lt;institution&gt;Departments of Medicine and Pathology,
+UMDNJ-Robert Wood Johnson Medical School&lt;/institution&gt;
+&lt;addr-line&gt;1 Robert Wood Johnson Pl.&lt;/addr-line&gt;
+&lt;addr-line&gt;New Brunswick, NJ 08901-0019&lt;/addr-line&gt;
+&lt;country&gt;USA&lt;/country&gt;
+&lt;phone&gt;(732) 235-7713&lt;/phone&gt;
+&lt;fax&gt;(732) 235-7951&lt;/fax&gt;
+&lt;email&gt;weinstei@umdnj.edu&lt;/email&gt;
+&lt;/address&gt;
+&lt;/contrib&gt;
+&lt;/contrib-group&gt;
+...
+
+</pre></div></div><div class="examp.group"><h3 class="header">Example 3</h3><p class="para">In a contributor group, following the contributors, in the metadata:</p><div class="taggedexamp"><pre class="taggedtext">
+
+...
+&lt;contrib-group&gt;
+&lt;contrib contrib-type="author"&gt;
+&lt;name name-style="western"&gt;
+&lt;surname&gt;Nüsslin&lt;/surname&gt;
+&lt;given-names&gt;Fridtjof&lt;/given-names&gt;
+&lt;prefix&gt;Dr.&lt;/prefix&gt;
+&lt;/name&gt;
+&lt;/contrib&gt;
+<strong><span class="focus">&lt;aff&gt;Klinik für Strahlentherapie und Radiologische Onkologie,
+&lt;institution&gt;Technische Universität München&lt;/institution&gt;, 
+Munich, Germany (Tel: 49-89-41404517, E-mail:
+&lt;ext-link ext-link-type="email" xlink:href="mailto:nuesslin@lrz.tum.de"&gt;
+nuesslin@lrz.tum.de&lt;/ext-link&gt;)&lt;/aff&gt;</span></strong>
+&lt;/contrib-group&gt;
+...
+
+</pre></div></div><div class="examp.group"><h3 class="header">Example 4</h3><p class="para">Naming the affiliated institution and providing an institution identifier:</p><div class="taggedexamp"><pre class="taggedtext">
+...  
+&lt;book-meta&gt;
+...
+&lt;contrib-group&gt;
+&lt;contrib contrib-type="author" rid="aff1"&gt;
+&lt;name&gt;&lt;surname&gt;Gaillard&lt;/surname&gt;
+&lt;given-names&gt;T. D.&lt;/given-names&gt;&lt;/name&gt;
+&lt;/contrib&gt;
+&lt;contrib contrib-type="author" rid="aff1"&gt;
+&lt;name&gt;&lt;surname&gt;Clark&lt;/surname&gt;
+&lt;given-names&gt;H. S.&lt;/given-names&gt;&lt;/name&gt;
+&lt;/contrib&gt;
+&lt;/contrib-group&gt;
+<strong><span class="focus">&lt;aff id="aff1"&gt;
+&lt;institution-wrap&gt;
+&lt;institution-id institution-id-type="Ringgold"&gt;1812&lt;/institution-id&gt;
+&lt;institution content-type="university"&gt;Harvard University&lt;/institution&gt;
+&lt;/institution-wrap&gt;
+&lt;/aff&gt;</span></strong>
+&lt;author-notes&gt;
+&lt;fn&gt;
+&lt;p&gt;Correspondence to: TD Gaillard &lt;email&gt;tgail@harvard.edu&lt;/email&gt;&lt;/p&gt;
+&lt;/fn&gt;
+&lt;/author-notes&gt;
+...
+&lt;/book-meta&gt;
+...
+
+</pre></div></div><div class="examp.group"><h3 class="header">Example 5</h3><p class="para">In a person group in an element-style bibliographic reference (punctuation and spacing removed):</p><div class="taggedexamp"><pre class="taggedtext">
+    
+...
+&lt;ref&gt;
+&lt;element-citation publication-type="journal" publication-format="print"&gt;
+&lt;person-group&gt;
+&lt;name&gt;&lt;surname&gt;Pinet&lt;/surname&gt;
+&lt;given-names&gt;LM&lt;/given-names&gt;&lt;/name&gt;
+<strong><span class="focus">&lt;aff&gt;Departamento de Servicios de Salud de
+Emergencia, Escuela de Posgrado, Universidad
+de Maryland, Condado de Baltimore, USA.
+&lt;email&gt;lpinetl@umbc.edu&lt;/email&gt;
+&lt;/aff&gt;</span></strong>
+&lt;/person-group&gt;
+&lt;trans-title xml:lang="en"&gt;Prehospital emergency
+care in Mexico City: the opportunities of the
+healthcare system&lt;/trans-title&gt;
+&lt;source&gt;Salud Publica Mex&lt;/source&gt;
+&lt;year iso-8601-date="2005-01"&gt;2005&lt;/year&gt;
+&lt;month&gt;Jan-Feb&lt;/month&gt;
+&lt;volume&gt;47&lt;/volume&gt;
+&lt;issue&gt;1&lt;/issue&gt;
+&lt;fpage&gt;64&lt;/fpage&gt;
+&lt;lpage&gt;71&lt;/lpage&gt;
+&lt;comment&gt;Spanish&lt;/comment&gt;
+&lt;/element-citation&gt;
+&lt;/ref&gt;
+...
+
+   </pre></div></div><div class="examp.group"><h3 class="header">Example 6</h3><p class="para">An affiliation name in Japanese and English:</p><div class="taggedexamp"><pre class="taggedtext">
+      
+...
+&lt;book-meta&gt;
+...
+&lt;contrib-group&gt;
+&lt;contrib contrib-type="author"&gt;
+&lt;name-alternatives&gt;
+&lt;name name-style="eastern" xml:lang="ja-Jpan"&gt;
+&lt;surname&gt;園田&lt;/surname&gt;
+&lt;given-names&gt;直子&lt;/given-names&gt;
+&lt;/name&gt;
+&lt;name name-style="western" xml:lang="en"&gt;
+&lt;surname&gt;Sonoda&lt;/surname&gt;
+&lt;given-names&gt;Naoko&lt;/given-names&gt;
+&lt;/name&gt;
+&lt;name name-style="eastern" xml:lang="ja-Kana"&gt;
+&lt;surname&gt;ソノダ&lt;/surname&gt;
+&lt;given-names&gt;ナオコ&lt;/given-names&gt;
+&lt;/name&gt;
+&lt;/name-alternatives&gt; 
+&lt;xref ref-type="aff" rid="aff2"&gt;&amp;ast;&amp;ast;&lt;/xref&gt;
+&lt;/contrib&gt;
+&lt;/contrib-group&gt;
+&lt;aff-alternatives id="aff2"&gt;
+<strong><span class="focus">&lt;aff id="aff-ja"&gt;
+&lt;institution xml:lang="ja-Jpan"&gt;国立民族学博物館博物館民族学研究部&lt;/institution&gt;
+&lt;/aff&gt;</span></strong>
+<strong><span class="focus">&lt;aff id="aff-en"&gt;
+&lt;institution xml:lang="en"&gt;Department of Museum Anthropology, 
+National Museum of Ethnology&lt;/institution&gt;
+&lt;/aff&gt;</span></strong>
+&lt;/aff-alternatives&gt;   
+...
+&lt;/book-meta&gt;
+...
+
+     </pre></div></div><div class="pagefooter"><h2 class="headname">Book Interchange Tag Suite (BITS) Version 1.0 Tag Library 
+Version 1.0</h2><h4 class="pubdate">Version of December 2013</h4></div></body></html>

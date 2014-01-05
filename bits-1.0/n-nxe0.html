@@ -1,0 +1,241 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008--><link rel="stylesheet" href="BITS.css" type="text/css"><title>Element: Index Entry</title></head><body class="main"><div class="pageheader"><h2 class="headname">Book Interchange Tag Suite (BITS) Version 1.0 Tag Library 
+Version 1.0</h2><h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+National Library of Medicine (NLM)</h4></div><div class="header"><h1 class="elementtag">&lt;index-entry&gt;</h1><h1 class="elementname">Index Entry</h1></div><div class="definition"><p class="para">One entry, with all its subdivisions, see and see also terms, and navigational pointers
+ (if any) in a structural index.</p></div><div class="attrlist"><h2 class="header">Attributes</h2><h5 class="header"><a href="n-yxa2.html" target="main"><span class="attrtag">content-type</span></a> <a href="n-yxa2.html" target="main"><span class="attrname">Type of Content</span></a></h5><h5 class="header"><a href="n-4qu2.html" target="main"><span class="attrtag">id</span></a> <a href="n-4qu2.html" target="main"><span class="attrname">Document Internal Identifier</span></a></h5><h5 class="header"><a href="n-iev2.html" target="main"><span class="attrtag">sort-key</span></a> <a href="n-iev2.html" target="main"><span class="attrname">Sort Key for Index Entry</span></a></h5><h5 class="header"><a href="n-rdv2.html" target="main"><span class="attrtag">specific-use</span></a> <a href="n-rdv2.html" target="main"><span class="attrname">Specific Use</span></a></h5><h5 class="header"><a href="n-ib42.html" target="main"><span class="attrtag">xml:base</span></a> <a href="n-ib42.html" target="main"><span class="attrname">Base</span></a></h5><h5 class="header"><a href="n-fas2.html" target="main"><span class="attrtag">xml:lang</span></a> <a href="n-fas2.html" target="main"><span class="attrname">Language</span></a></h5></div><div class="contentmodel"><h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  index-entry  <a href="n-y3n2.html" target="main" title="Index Entry Model"><span class="petag">%index-entry-model;</span></a>                          &gt;</pre></div><div class="contentmodel"><h2 class="header">Expanded Content Model</h2><p class="contentdesc">(term, (ext-link | nav-pointer | nav-pointer-group)*, (index-entry | see-entry | see-also-entry | x)*)</p></div><div class="modeldesc"><h2 class="header">Description</h2><p class="para">The following, in order:<ul class="bullist"><li><a href="n-mvk2.html" target="main" title="Definition List: Term"><span class="elementtag">&lt;term&gt;</span></a> <a href="n-mvk2.html" target="main" title="<term&gt;"><span class="elementname">Definition List: Term</span></a></li><li>Any combination of:<ul class="bullist"><li><a href="n-5fs0.html" target="main" title="External Link"><span class="elementtag">&lt;ext-link&gt;</span></a> <a href="n-5fs0.html" target="main" title="<ext-link&gt;"><span class="elementname">External Link</span></a></li><li><a href="n-uwd0.html" target="main" title="Navigation Pointer"><span class="elementtag">&lt;nav-pointer&gt;</span></a> <a href="n-uwd0.html" target="main" title="<nav-pointer&gt;"><span class="elementname">Navigation Pointer</span></a></li><li><a href="n-red0.html" target="main" title="Navigation Pointer Group"><span class="elementtag">&lt;nav-pointer-group&gt;</span></a> <a href="n-red0.html" target="main" title="<nav-pointer-group&gt;"><span class="elementname">Navigation Pointer Group</span></a></li></ul></li><li>Any combination of:<ul class="bullist"><li><a href="n-nxe0.html" target="main" title="Index Entry"><span class="elementtag">&lt;index-entry&gt;</span></a> <a href="n-nxe0.html" target="main" title="<index-entry&gt;"><span class="elementname">Index Entry</span></a></li><li><a href="n-rmp0.html" target="main" title="See Index Entry"><span class="elementtag">&lt;see-entry&gt;</span></a> <a href="n-rmp0.html" target="main" title="<see-entry&gt;"><span class="elementname">See Index Entry</span></a></li><li><a href="n-iyp0.html" target="main" title="See-Also Index Entry"><span class="elementtag">&lt;see-also-entry&gt;</span></a> <a href="n-iyp0.html" target="main" title="<see-also-entry&gt;"><span class="elementname">See-Also Index Entry</span></a></li><li><a href="n-p652.html" target="main" title="X - Generated Text and Punctuation"><span class="elementtag">&lt;x&gt;</span></a> <a href="n-p652.html" target="main" title="<x&gt;"><span class="elementname">X - Generated Text and Punctuation</span></a></li></ul></li></ul></p></div><div class="elementcontext"><h3 class="header">This element may be contained in:</h3><p class="para"><a href="n-pz70.html" target="main" title="Index"><span class="elementtag">&lt;index&gt;</span></a>, <a href="n-i5e0.html" target="main" title="Index Division"><span class="elementtag">&lt;index-div&gt;</span></a>, <a href="n-nxe0.html" target="main" title="Index Entry"><span class="elementtag">&lt;index-entry&gt;</span></a></p></div><div class="examp.group"><h3 class="header">Example 1</h3><p class="para">Back of Book Index with links into the text:</p><div class="taggedexamp"><pre class="taggedtext">
+    
+...
+&lt;book-back&gt;
+&lt;index&gt;
+&lt;title-group&gt;&lt;title&gt;Index&lt;/title&gt;&lt;/title-group&gt;
+...
+&lt;index-div&gt;
+&lt;title-group&gt;&lt;title&gt;N&lt;/title&gt;&lt;/title-group&gt;
+...
+<strong><span class="focus">&lt;index-entry&gt;
+  &lt;term&gt;Navy&lt;/term&gt;&lt;x&gt;.&lt;/x&gt;
+  &lt;see-entry&gt;Armed forces&lt;/see-entry&gt;&lt;x&gt;.&lt;/x&gt;
+&lt;/index-entry&gt;</span></strong>
+<strong><span class="focus">&lt;index-entry&gt;
+  &lt;term&gt;Necessary and proper clause, congressional power&lt;/term&gt;
+  &lt;nav-pointer-group&gt;...&lt;/nav-pointer-group&gt;
+&lt;/index-entry&gt;</span></strong>
+<strong><span class="focus">&lt;index-entry&gt;
+  &lt;term&gt;Newsgathering as commerce&lt;/term&gt;
+  &lt;nav-pointer-group&gt;
+     &lt;nav-pointer rid="idx13" nav-pointer-type="point"/&gt;
+   &lt;/nav-pointer-group&gt;
+&lt;/index-entry&gt;</span></strong>
+<strong><span class="focus">&lt;index-entry&gt;
+  &lt;term&gt;Newspapers&lt;/term&gt;&lt;x&gt; (&lt;/x&gt;&lt;see-also-entry&gt;Speech 
+    and press&lt;/see-also-entry&gt;&lt;x&gt;):&lt;/x&gt;
+  <strong><span class="focus">&lt;index-entry&gt;
+    &lt;term&gt;Contempt for publication&lt;/term&gt;
+    &lt;nav-pointer-group&gt;
+      &lt;nav-pointer rid="idx14-1" nav-pointer-type="start-of-range"/&gt;&amp;ndash;
+      &lt;nav-pointer rid="idx14-2" nav-pointer-type="end-of-range"/&gt;
+    &lt;/nav-pointer-group&gt;
+  &lt;/index-entry&gt;</span></strong>
+  <strong><span class="focus">&lt;index-entry&gt;
+    &lt;term&gt;Exclusion from mails&lt;/term&gt;
+    &lt;nav-pointer-group&gt;
+      &lt;nav-pointer rid="idx15" nav-pointer-type="point"/&gt;
+    &lt;/nav-pointer-group&gt;
+  &lt;/index-entry&gt;</span></strong>
+&lt;/index-entry&gt;</span></strong>
+&lt;/index-div&gt;
+...
+&lt;/index&gt;&lt;/book-back&gt;
+...
+
+   </pre></div><p class="para">Back of Book Index with print page numbers:</p><div class="taggedexamp"><pre class="taggedtext">
+    
+...
+&lt;book-back&gt;
+&lt;index&gt;
+&lt;title-group&gt;&lt;title&gt;Index&lt;/title&gt;&lt;/title-group&gt;
+...
+&lt;index-div&gt;
+&lt;title-group&gt;&lt;title&gt;N&lt;/title&gt;&lt;/title-group&gt;
+...
+<strong><span class="focus">&lt;index-entry&gt;
+  &lt;term&gt;Navy&lt;/term&gt;&lt;x&gt;.&lt;/x&gt;
+  &lt;see-entry&gt;Armed forces&lt;/see-entry&gt;&lt;x&gt;.&lt;/x&gt;
+&lt;/index-entry&gt;</span></strong>
+<strong><span class="focus">&lt;index-entry&gt;
+  &lt;term&gt;Necessary and proper clause, congressional power&lt;/term&gt;
+  &lt;nav-pointer-group&gt;...&lt;/nav-pointer-group&gt;
+&lt;/index-entry&gt;</span></strong>
+<strong><span class="focus">&lt;index-entry&gt;
+  &lt;term&gt;Newsgathering as commerce&lt;/term&gt;
+  &lt;nav-pointer-group&gt;
+    &lt;nav-pointer rid="idx13" nav-pointer-type="point"&gt;162&lt;/nav-pointer&gt;
+  &lt;/nav-pointer-group&gt;
+&lt;/index-entry&gt;</span></strong>
+<strong><span class="focus">&lt;index-entry&gt;
+  &lt;term&gt;Newspapers&lt;/term&gt;&lt;x&gt; (&lt;/x&gt;&lt;see-also-entry&gt;Speech 
+    and press&lt;/see-also-entry&gt;&lt;x&gt;):&lt;/x&gt;
+  <strong><span class="focus">&lt;index-entry&gt;
+    &lt;term&gt;Contempt for publication&lt;/term&gt;
+    &lt;nav-pointer-group&gt;
+      &lt;nav-pointer rid="idx14-1" nav-pointer-type="start-of-range"&gt;627&lt;/nav-pointer&gt;&amp;ndash;
+      &lt;nav-pointer rid="idx14-2" nav-pointer-type="end-of-range"&gt;629&lt;/nav-pointer&gt;
+    &lt;/nav-pointer-group&gt;
+  &lt;/index-entry&gt;</span></strong>
+  <strong><span class="focus">&lt;index-entry&gt;
+    &lt;term&gt;Exclusion from mails&lt;/term&gt;
+    &lt;nav-pointer-group&gt;
+      &lt;nav-pointer rid="idx15" nav-pointer-type="point"&gt;290&lt;/nav-pointer&gt;
+    &lt;/nav-pointer-group&gt;
+  &lt;/index-entry&gt;</span></strong>
+&lt;/index-entry&gt;</span></strong>
+&lt;/index-div&gt;
+...
+&lt;/index&gt;&lt;/book-back&gt;
+...
+
+   </pre></div></div><div class="examp.group"><h3 class="header">Example 2</h3><p class="para">Back of Book Index with nested index terms and links into the text:</p><div class="taggedexamp"><pre class="taggedtext">
+    
+...
+&lt;book-back&gt;
+  &lt;index&gt;
+    &lt;title-group&gt;&lt;title&gt;Index&lt;/title&gt;&lt;/title-group&gt;
+    ...
+    &lt;index-div&gt;
+      &lt;title-group&gt;&lt;title&gt;I&lt;/title&gt;&lt;/title-group&gt;
+      ...
+      <strong><span class="focus">&lt;index-entry&gt;
+        &lt;term&gt;Interstate commerce&lt;/term&gt;&lt;x&gt;:&lt;/x&gt;
+        ...
+        <strong><span class="focus">&lt;index-entry&gt;
+          &lt;term&gt;State powers, taxation and regulation&lt;/term&gt;
+          &lt;nav-pointer-group&gt;
+            &lt;nav-pointer rid="idx1-1" nav-pointer-type="start-of-range"/&gt;&amp;ndash;&lt;nav-pointer 
+              rid="idx1-2" nav-pointer-type="end-of-range"/&gt;
+          &lt;/nav-pointer-group&gt;
+          <strong><span class="focus">&lt;index-entry&gt;
+            &lt;term&gt;Balancing test, modern standard&lt;/term&gt;
+            &lt;nav-pointer-group&gt;
+              &lt;nav-pointer rid="idx2-1" nav-pointer-type="start-of-range"/&gt;&amp;ndash;&lt;nav-pointer 
+                rid="idx2-2" nav-pointer-type="end-of-range"/&gt;
+            &lt;/nav-pointer-group&gt;
+          &lt;/index-entry&gt;</span></strong>
+          <strong><span class="focus">&lt;index-entry&gt;
+            &lt;term&gt;Regulation of commerce&lt;/term&gt;
+            &lt;nav-pointer-group&gt;
+              &lt;nav-pointer rid="idx6-1" nav-pointer-type="start-of-range"/&gt;&amp;ndash;&lt;nav-pointer
+                rid="idx6-2" nav-pointer-type="end-of-range"/&gt;, &lt;nav-pointer rid="idx7-1"
+                nav-pointer-type="start-of-range"/&gt;&amp;ndash;&lt;nav-pointer rid="idx7-2"
+                nav-pointer-type="end-of-range"/&gt;, &lt;nav-pointer rid="idx8-1"
+                nav-pointer-type="start-of-range"/&gt;&amp;ndash;&lt;nav-pointer rid="idx8-2"
+                nav-pointer-type="end-of-range"/&gt;
+            &lt;/nav-pointer-group&gt;
+          &lt;/index-entry&gt;</span></strong>            
+          <strong><span class="focus">&lt;index-entry&gt;
+            &lt;term&gt;Taxation of commerce&lt;/term&gt;
+            &lt;nav-pointer-group&gt;
+              &lt;nav-pointer rid="idx10-1" nav-pointer-type="start-of-range"/&gt;&amp;ndash; &lt;nav-pointer
+                rid="idx10-2" nav-pointer-type="end-of-range"/&gt;, &lt;nav-pointer rid="idx11-1"
+                nav-pointer-type="start-of-range"/&gt;&amp;ndash; &lt;nav-pointer rid="idx11-2"
+                nav-pointer-type="end-of-range"/&gt;
+            &lt;/nav-pointer-group&gt;
+            <strong><span class="focus">&lt;index-entry&gt;
+              &lt;term&gt;Apportionment&lt;/term&gt;
+              &lt;nav-pointer-group&gt;
+                &lt;nav-pointer rid="idx12" nav-pointer-type="point"/&gt;, &lt;nav-pointer rid="idx13-1"
+                  nav-pointer-type="start-of-range"/&gt;&amp;ndash; &lt;nav-pointer rid="idx13-2"
+                  nav-pointer-type="end-of-range"/&gt;
+              &lt;/nav-pointer-group&gt;
+            &lt;/index-entry&gt;</span></strong>
+            <strong><span class="focus">&lt;index-entry&gt;
+              &lt;term&gt;Benefit relationship&lt;/term&gt;
+              &lt;nav-pointer rid="idx14" nav-pointer-type="point"/&gt;
+            &lt;/index-entry&gt;</span></strong>
+          &lt;/index-entry&gt;</span></strong>
+        &lt;/index-entry&gt;</span></strong>
+      &lt;/index-entry&gt;</span></strong> 
+      <strong><span class="focus">&lt;index-entry&gt;
+        &lt;term&gt;Interstate compacts&lt;/term&gt;&lt;x&gt;.&lt;/x&gt;
+        &lt;see-entry&gt;States, Agreements with other States&lt;/see-entry&gt;&lt;x&gt;.&lt;/x&gt;
+      &lt;/index-entry&gt;</span></strong>
+      ...
+    &lt;/index-div&gt;
+    ...
+  &lt;/index&gt;
+&lt;/book-back&gt;
+...
+
+
+   </pre></div><p class="para">Back of Book Index with nested terms and print page numbers:</p><div class="taggedexamp"><pre class="taggedtext">
+    
+...
+&lt;book-back&gt;
+  &lt;index&gt;
+    &lt;title-group&gt;&lt;title&gt;Index&lt;/title&gt;&lt;/title-group&gt;
+    ...
+    &lt;index-div&gt;
+      &lt;title-group&gt;&lt;title&gt;I&lt;/title&gt;&lt;/title-group&gt;
+      ...
+      <strong><span class="focus">&lt;index-entry&gt;
+        &lt;term&gt;Interstate commerce&lt;/term&gt;&lt;x&gt;:&lt;/x&gt;
+        ...
+        <strong><span class="focus">&lt;index-entry&gt;
+          &lt;term&gt;State powers, taxation and regulation&lt;/term&gt;
+          &lt;nav-pointer-group&gt;
+            &lt;nav-pointer rid="idx1-1" nav-pointer-type="start-of-range"&gt;209&lt;/nav-pointer&gt;&amp;ndash;&lt;nav-pointer 
+              rid="idx1-2" nav-pointer-type="end-of-range"&gt;240&lt;/nav-pointer&gt;
+          &lt;/nav-pointer-group&gt;
+          <strong><span class="focus">&lt;index-entry&gt;
+            &lt;term&gt;Balancing test, modern standard&lt;/term&gt;
+            &lt;nav-pointer-group&gt;
+              &lt;nav-pointer rid="idx2-1" nav-pointer-type="start-of-range"&gt;233&lt;/nav-pointer&gt;&amp;ndash;&lt;nav-pointer 
+                rid="idx2-2" nav-pointer-type="end-of-range"&gt;234&lt;/nav-pointer&gt;
+            &lt;/nav-pointer-group&gt;
+          &lt;/index-entry&gt;</span></strong>
+          <strong><span class="focus">&lt;index-entry&gt;
+            &lt;term&gt;Regulation of commerce&lt;/term&gt;
+            &lt;nav-pointer-group&gt;
+              &lt;nav-pointer rid="idx6-1" nav-pointer-type="start-of-range"&gt;220&lt;/nav-pointer&gt;&amp;ndash;&lt;nav-pointer 
+                rid="idx6-2" nav-pointer-type="end-of-range"&gt;221&lt;/nav-pointer&gt;, &lt;nav-pointer rid="idx7-1" 
+                nav-pointer-type="start-of-range"&gt;224&lt;/nav-pointer&gt;&amp;ndash;&lt;nav-pointer rid="idx7-2" 
+                nav-pointer-type="end-of-range"&gt;227&lt;/nav-pointer&gt;, &lt;nav-pointer rid="idx8-1" 
+                nav-pointer-type="start-of-range"&gt;233&lt;/nav-pointer&gt;&amp;ndash;&lt;nav-pointer rid="idx8-2" 
+                nav-pointer-type="end-of-range"&gt;240&lt;/nav-pointer&gt;
+            &lt;/nav-pointer-group&gt;
+          &lt;/index-entry&gt;</span></strong>
+          <strong><span class="focus">&lt;index-entry&gt;
+            &lt;term&gt;Taxation of commerce&lt;/term&gt;
+            &lt;nav-pointer-group&gt;
+              &lt;nav-pointer rid="idx10-1" nav-pointer-type="start-of-range"&gt;220&lt;/nav-pointer&gt;&amp;ndash;&lt;nav-pointer 
+                rid="idx10-2" nav-pointer-type="end-of-range"&gt;223&lt;/nav-pointer&gt;, &lt;nav-pointer rid="idx11-1" 
+                nav-pointer-type="start-of-range"&gt;227&lt;/nav-pointer&gt;&amp;ndash;&lt;nav-pointer rid="idx11-2" 
+                nav-pointer-type="end-of-range"&gt;233&lt;/nav-pointer&gt;
+            &lt;/nav-pointer-group&gt;
+            <strong><span class="focus">&lt;index-entry&gt;
+              &lt;term&gt;Apportionment&lt;/term&gt;
+              &lt;nav-pointer-group&gt;
+                &lt;nav-pointer rid="idx12" nav-pointer-type="point"&gt;223&lt;/nav-pointer&gt;, &lt;nav-pointer rid="idx13-1" 
+                  nav-pointer-type="start-of-range"&gt;231&lt;/nav-pointer&gt;&amp;ndash;&lt;nav-pointer rid="idx13-2" 
+                  nav-pointer-type="end-of-range"&gt;232&lt;/nav-pointer&gt;
+              &lt;/nav-pointer-group&gt;
+            &lt;/index-entry&gt;</span></strong>
+            <strong><span class="focus">&lt;index-entry&gt;
+              &lt;term&gt;Benefit relationship&lt;/term&gt;
+              &lt;nav-pointer rid="idx14" nav-pointer-type="point"&gt;233&lt;/nav-pointer&gt;
+            &lt;/index-entry&gt;</span></strong>
+          &lt;/index-entry&gt;</span></strong>
+        &lt;/index-entry&gt;</span></strong>
+      &lt;/index-entry&gt;</span></strong>
+      <strong><span class="focus">&lt;index-entry&gt;
+        &lt;term&gt;Interstate compacts&lt;/term&gt;&lt;x&gt;.&lt;/x&gt;
+        &lt;see-entry&gt;States, Agreements with other States&lt;/see-entry&gt;&lt;x&gt;.&lt;/x&gt;
+      &lt;/index-entry&gt;</span></strong>
+      ...
+    &lt;/index-div&gt;
+    ...
+  &lt;/index&gt;
+&lt;/book-back&gt;
+...
+
+   </pre></div></div><div class="pagefooter"><h2 class="headname">Book Interchange Tag Suite (BITS) Version 1.0 Tag Library 
+Version 1.0</h2><h4 class="pubdate">Version of December 2013</h4></div></body></html>

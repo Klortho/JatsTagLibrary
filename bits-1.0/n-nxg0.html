@@ -1,0 +1,148 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008--><link rel="stylesheet" href="BITS.css" type="text/css"><title>Element: Keyword</title></head><body class="main"><div class="pageheader"><h2 class="headname">Book Interchange Tag Suite (BITS) Version 1.0 Tag Library 
+Version 1.0</h2><h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+National Library of Medicine (NLM)</h4></div><div class="header"><h1 class="elementtag">&lt;kwd&gt;</h1><h1 class="elementname">Keyword</h1></div><div class="definition"><p class="para">A keyword is a finding aid used to record one subject term, key phrase, abbreviation,
+          indexing word, taxonomic structure, or other expression that is associated with the whole
+          structure (such as an book or book part). Keywords can be used for identification, searching, and
+          indexing purposes. A keyword element (<a href="n-nxg0.html" target="main" title="Keyword"><span class="elementtag">&lt;kwd&gt;</span></a>)
+          may contain a repetition of words found in the structure or it may contain broader terms,
+          narrower terms, related terms, or taxonomic identifiers used to find the structure in a
+          search or provide semantic classification of the text by mapping a specific structure to a
+          taxonomy.</p></div><div class="remarks"><h2 class="header">Remarks</h2><p class="para">Keywords are contained in <a href="n-xgg0.html" target="main" title="Keyword Group"><span class="elementtag">&lt;kwd-group&gt;</span></a>s.
+          There may be several <a href="n-xgg0.html" target="main" title="Keyword Group"><span class="elementtag">&lt;kwd-group&gt;</span></a>s, each of
+          which can be identified separately by language, vocabulary, or taxonomy source. None of
+          the individual keyword elements (<span class="elementtag">&lt;kwd&gt;</span>,
+          <a href="n-puu0.html" target="main" title="Compound Keyword"><span class="elementtag">&lt;compound-kwd&gt;</span></a>, <a href="n-mfd0.html" target="main" title="Nested Keyword"><span class="elementtag">&lt;nested-kwd&gt;</span></a>) take the <a href="n-fas2.html" target="main" title="Language"><span class="attrtag">@xml:lang</span></a> attribute; that is reserved for the
+          <a href="n-xgg0.html" target="main" title="Keyword Group"><span class="elementtag">&lt;kwd-group&gt;</span></a>. This means that keywords must be
+          sorted by language and entered in language groups.</p><p class="para"><strong>Related Essay:</strong> For a discussion on the use of
+          <span class="elementtag">&lt;kwd&gt;</span>, see <a href="n-f9j2.html#bits-tag-keywords">Keywords</a>.</p></div><div class="attrlist"><h2 class="header">Attributes</h2><h5 class="header"><a href="n-yxa2.html" target="main"><span class="attrtag">content-type</span></a> <a href="n-yxa2.html" target="main"><span class="attrname">Type of Content</span></a></h5><h5 class="header"><a href="n-4qu2.html" target="main"><span class="attrtag">id</span></a> <a href="n-4qu2.html" target="main"><span class="attrname">Document Internal Identifier</span></a></h5><h5 class="header"><a href="n-ib42.html" target="main"><span class="attrtag">xml:base</span></a> <a href="n-ib42.html" target="main"><span class="attrname">Base</span></a></h5></div><div class="relatedelem"><h2 class="header">Related Elements</h2><p class="para">This Tag Set contains several differently-structured types of keywords:<ul class="bullist"><li><a href="n-nxg0.html" target="main" title="Keyword"><span class="elementtag">&lt;kwd&gt;</span></a> is used with simple keywords: words or phrases. </li><li>
+       <a href="n-puu0.html" target="main" title="Compound Keyword"><span class="elementtag">&lt;compound-kwd&gt;</span></a> is used with multi-part keywords, such as a keyword that is a code-and-term pair.</li><li><a href="n-mfd0.html" target="main" title="Nested Keyword"><span class="elementtag">&lt;nested-kwd&gt;</span></a> is used with hierarchical keywords structures, such as taxonomies, to record a portion of a taxonomic hierarchy. Both simple and compound keywords can be nested hierarchically.</li><li><a href="n-ew32.html" target="main" title="Unstructured Keyword Group"><span class="elementtag">&lt;unstructured-kwd-group&gt;</span></a> is used to hold one long keyword string, which contains multiple constituent
+keywords that are
+not tagged individually.</li></ul></p><p class="para"><strong>Best Practice:</strong> In this Tag Set, nested keywords (<a href="n-mfd0.html" target="main" title="Nested Keyword"><span class="elementtag">&lt;nested-kwd&gt;</span></a>) should be reserved for hierarchical material such as taxonomies. There are a few journal tag sets in which keyword nesting is used to simulate a two-part list. Such a keyword list should be tagged as a <a href="n-fnv0.html" target="main" title="Definition List"><span class="elementtag">&lt;def-list&gt;</span></a> instead.</p></div><div class="contentmodel"><h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  kwd          (#PCDATA <a href="n-6462.html" target="main" title="Keyword Content Elements"><span class="petag">%kwd-elements;</span></a>)*                    &gt;</pre></div><div class="contentmodel"><h2 class="header">Expanded Content Model</h2><p class="contentdesc">(#PCDATA | email | ext-link | uri | inline-supplementary-material | related-article | related-object | hr | bold | fixed-case | italic | monospace | overline | overline-start | overline-end | roman | sans-serif | sc | strike | underline | underline-start | underline-end | ruby | alternatives | inline-graphic | private-char | chem-struct | inline-formula | tex-math | mml:math | abbrev | index-term | index-term-range-end | milestone-end | milestone-start | named-content | styled-content | fn | target | xref | sub | sup | x | break)*</p></div><div class="modeldesc"><h2 class="header">Description</h2><p class="para">Any combination of:<ul class="bullist"><li>Text, numbers, or special characters</li><li>Linking Elements<ul class="bullist"><li><a href="n-s940.html" target="main" title="Email Address"><span class="elementtag">&lt;email&gt;</span></a> <a href="n-s940.html" target="main" title="<email&gt;"><span class="elementname">Email Address</span></a></li><li><a href="n-5fs0.html" target="main" title="External Link"><span class="elementtag">&lt;ext-link&gt;</span></a> <a href="n-5fs0.html" target="main" title="<ext-link&gt;"><span class="elementname">External Link</span></a></li><li><a href="n-6t32.html" target="main" title="Uniform Resource Identifier (URI)"><span class="elementtag">&lt;uri&gt;</span></a> <a href="n-6t32.html" target="main" title="<uri&gt;"><span class="elementname">Uniform Resource Identifier (URI)</span></a></li></ul></li><li><a href="n-jqe0.html" target="main" title="Inline Supplementary Material"><span class="elementtag">&lt;inline-supplementary-material&gt;</span></a> <a href="n-jqe0.html" target="main" title="<inline-supplementary-material&gt;"><span class="elementname">Inline Supplementary Material</span></a></li><li><a href="n-pgy0.html" target="main" title="Related Article Information"><span class="elementtag">&lt;related-article&gt;</span></a> <a href="n-pgy0.html" target="main" title="<related-article&gt;"><span class="elementname">Related Article Information</span></a></li><li><a href="n-49y0.html" target="main" title="Related Object Information"><span class="elementtag">&lt;related-object&gt;</span></a> <a href="n-49y0.html" target="main" title="<related-object&gt;"><span class="elementname">Related Object Information</span></a></li><li><a href="n-mm70.html" target="main" title="Horizontal Rule"><span class="elementtag">&lt;hr&gt;</span></a> <a href="n-mm70.html" target="main" title="<hr&gt;"><span class="elementname">Horizontal Rule</span></a></li><li>Emphasis Elements<ul class="bullist"><li><a href="n-8w50.html" target="main" title="Bold"><span class="elementtag">&lt;bold&gt;</span></a> <a href="n-8w50.html" target="main" title="<bold&gt;"><span class="elementname">Bold</span></a></li><li><a href="n-hut0.html" target="main" title="Fixed Case"><span class="elementtag">&lt;fixed-case&gt;</span></a> <a href="n-hut0.html" target="main" title="<fixed-case&gt;"><span class="elementname">Fixed Case</span></a></li><li><a href="n-vcg0.html" target="main" title="Italic"><span class="elementtag">&lt;italic&gt;</span></a> <a href="n-vcg0.html" target="main" title="<italic&gt;"><span class="elementname">Italic</span></a></li><li><a href="n-ts60.html" target="main" title="Monospace Text (Typewriter Text)"><span class="elementtag">&lt;monospace&gt;</span></a> <a href="n-ts60.html" target="main" title="<monospace&gt;"><span class="elementname">Monospace Text (Typewriter Text)</span></a></li><li><a href="n-48r0.html" target="main" title="Overline"><span class="elementtag">&lt;overline&gt;</span></a> <a href="n-48r0.html" target="main" title="<overline&gt;"><span class="elementname">Overline</span></a></li><li><a href="n-csr0.html" target="main" title="Overline Start"><span class="elementtag">&lt;overline-start&gt;</span></a> <a href="n-csr0.html" target="main" title="<overline-start&gt;"><span class="elementname">Overline Start</span></a></li><li><a href="n-hvr0.html" target="main" title="Overline End"><span class="elementtag">&lt;overline-end&gt;</span></a> <a href="n-hvr0.html" target="main" title="<overline-end&gt;"><span class="elementname">Overline End</span></a></li><li><a href="n-eej0.html" target="main" title="Roman"><span class="elementtag">&lt;roman&gt;</span></a> <a href="n-eej0.html" target="main" title="<roman&gt;"><span class="elementname">Roman</span></a></li><li><a href="n-yyj0.html" target="main" title="Sans Serif"><span class="elementtag">&lt;sans-serif&gt;</span></a> <a href="n-yyj0.html" target="main" title="<sans-serif&gt;"><span class="elementname">Sans Serif</span></a></li><li><a href="n-nmj0.html" target="main" title="Small Caps"><span class="elementtag">&lt;sc&gt;</span></a> <a href="n-nmj0.html" target="main" title="<sc&gt;"><span class="elementname">Small Caps</span></a></li><li><a href="n-fhb0.html" target="main" title="Strike Through"><span class="elementtag">&lt;strike&gt;</span></a> <a href="n-fhb0.html" target="main" title="<strike&gt;"><span class="elementname">Strike Through</span></a></li><li><a href="n-wk32.html" target="main" title="Underline"><span class="elementtag">&lt;underline&gt;</span></a> <a href="n-wk32.html" target="main" title="<underline&gt;"><span class="elementname">Underline</span></a></li><li><a href="n-au32.html" target="main" title="Underline Start"><span class="elementtag">&lt;underline-start&gt;</span></a> <a href="n-au32.html" target="main" title="<underline-start&gt;"><span class="elementname">Underline Start</span></a></li><li><a href="n-9832.html" target="main" title="Underline End"><span class="elementtag">&lt;underline-end&gt;</span></a> <a href="n-9832.html" target="main" title="<underline-end&gt;"><span class="elementname">Underline End</span></a></li><li><a href="n-hhj0.html" target="main" title="Ruby Annotation Wrapper"><span class="elementtag">&lt;ruby&gt;</span></a> <a href="n-hhj0.html" target="main" title="<ruby&gt;"><span class="elementname">Ruby Annotation Wrapper</span></a></li></ul></li><li><a href="n-i3c0.html" target="main" title="Alternatives For Processing"><span class="elementtag">&lt;alternatives&gt;</span></a> <a href="n-i3c0.html" target="main" title="<alternatives&gt;"><span class="elementname">Alternatives For Processing</span></a></li><li>Inline Display Elements<ul class="bullist"><li><a href="n-eje0.html" target="main" title="Graphic, Inline"><span class="elementtag">&lt;inline-graphic&gt;</span></a> <a href="n-eje0.html" target="main" title="<inline-graphic&gt;"><span class="elementname">Graphic, Inline</span></a></li><li><a href="n-7ki0.html" target="main" title="Private Character (Custom or Unicode)"><span class="elementtag">&lt;private-char&gt;</span></a> <a href="n-7ki0.html" target="main" title="<private-char&gt;"><span class="elementname">Private Character (Custom or Unicode)</span></a></li></ul></li><li><a href="n-yca0.html" target="main" title="Chemical Structure (Display)"><span class="elementtag">&lt;chem-struct&gt;</span></a> <a href="n-yca0.html" target="main" title="<chem-struct&gt;"><span class="elementname">Chemical Structure (Display)</span></a></li><li><a href="n-t6e0.html" target="main" title="Formula, Inline"><span class="elementtag">&lt;inline-formula&gt;</span></a> <a href="n-t6e0.html" target="main" title="<inline-formula&gt;"><span class="elementname">Formula, Inline</span></a></li><li>Math Elements<ul class="bullist"><li><a href="n-6ik2.html" target="main" title="TeX Math Equation"><span class="elementtag">&lt;tex-math&gt;</span></a> <a href="n-6ik2.html" target="main" title="<tex-math&gt;"><span class="elementname">TeX Math Equation</span></a></li><li><a href="n-6v60.html" target="main" title="Math (MathML Tag Set)"><span class="elementtag">&lt;mml:math&gt;</span></a> <a href="n-6v60.html" target="main" title="<mml:math&gt;"><span class="elementname">Math (MathML Tag Set)</span></a></li></ul></li><li>Other Inline Elements<ul class="bullist"><li><a href="n-ed00.html" target="main" title="Abbreviation or Acronym"><span class="elementtag">&lt;abbrev&gt;</span></a> <a href="n-ed00.html" target="main" title="<abbrev&gt;"><span class="elementname">Abbreviation or Acronym</span></a></li><li><a href="n-nfe0.html" target="main" title="Index Term"><span class="elementtag">&lt;index-term&gt;</span></a> <a href="n-nfe0.html" target="main" title="<index-term&gt;"><span class="elementname">Index Term</span></a></li><li><a href="n-ene0.html" target="main" title="Index Term Range End"><span class="elementtag">&lt;index-term-range-end&gt;</span></a> <a href="n-ene0.html" target="main" title="<index-term-range-end&gt;"><span class="elementname">Index Term Range End</span></a></li><li><a href="n-cbn0.html" target="main" title="Milestone End"><span class="elementtag">&lt;milestone-end&gt;</span></a> <a href="n-cbn0.html" target="main" title="<milestone-end&gt;"><span class="elementname">Milestone End</span></a></li><li><a href="n-jbn0.html" target="main" title="Milestone Start"><span class="elementtag">&lt;milestone-start&gt;</span></a> <a href="n-jbn0.html" target="main" title="<milestone-start&gt;"><span class="elementname">Milestone Start</span></a></li><li><a href="n-zm60.html" target="main" title="Named Special (Subject) Content"><span class="elementtag">&lt;named-content&gt;</span></a> <a href="n-zm60.html" target="main" title="<named-content&gt;"><span class="elementname">Named Special (Subject) Content</span></a></li><li><a href="n-2f90.html" target="main" title="Styled Special (Subject) Content"><span class="elementtag">&lt;styled-content&gt;</span></a> <a href="n-2f90.html" target="main" title="<styled-content&gt;"><span class="elementname">Styled Special (Subject) Content</span></a></li></ul></li><li><a href="n-5et0.html" target="main" title="Footnote"><span class="elementtag">&lt;fn&gt;</span></a> <a href="n-5et0.html" target="main" title="<fn&gt;"><span class="elementname">Footnote</span></a></li><li><a href="n-ibz0.html" target="main" title="Target of an Internal Link"><span class="elementtag">&lt;target&gt;</span></a> <a href="n-ibz0.html" target="main" title="<target&gt;"><span class="elementname">Target of an Internal Link</span></a></li><li><a href="n-nj52.html" target="main" title="X (cross) Reference"><span class="elementtag">&lt;xref&gt;</span></a> <a href="n-nj52.html" target="main" title="<xref&gt;"><span class="elementname">X (cross) Reference</span></a></li><li><a href="n-3y90.html" target="main" title="Subscript"><span class="elementtag">&lt;sub&gt;</span></a> <a href="n-3y90.html" target="main" title="<sub&gt;"><span class="elementname">Subscript</span></a></li><li><a href="n-erm0.html" target="main" title="Superscript"><span class="elementtag">&lt;sup&gt;</span></a> <a href="n-erm0.html" target="main" title="<sup&gt;"><span class="elementname">Superscript</span></a></li><li><a href="n-p652.html" target="main" title="X - Generated Text and Punctuation"><span class="elementtag">&lt;x&gt;</span></a> <a href="n-p652.html" target="main" title="<x&gt;"><span class="elementname">X - Generated Text and Punctuation</span></a></li><li><a href="n-up80.html" target="main" title="Line Break"><span class="elementtag">&lt;break&gt;</span></a> <a href="n-up80.html" target="main" title="<break&gt;"><span class="elementname">Line Break</span></a></li></ul></p></div><div class="elementcontext"><h3 class="header">This element may be contained in:</h3><p class="para"><a href="n-xgg0.html" target="main" title="Keyword Group"><span class="elementtag">&lt;kwd-group&gt;</span></a>, <a href="n-mfd0.html" target="main" title="Nested Keyword"><span class="elementtag">&lt;nested-kwd&gt;</span></a></p></div><div class="examp.group"><h3 class="header">Example 1</h3><p class="para">An author’s list of keywords for a document:</p><div class="taggedexamp"><pre class="taggedtext">
+    
+...
+&lt;book-meta&gt;
+...
+&lt;permissions&gt;
+&lt;copyright-statement&gt;Copyright &amp;copy; 2000, The National Academy of
+Sciences&lt;/copyright-statement&gt;
+&lt;copyright-year&gt;2000&lt;/copyright-year&gt;
+&lt;/permissions&gt;
+&lt;abstract&gt;&lt;p&gt;We describe a method for cloning nucleic acid molecules
+onto the surfaces of 5-&amp;#x03BC;m microbeads rather than in biological
+hosts. A unique tag sequence is attached to each molecule, and the
+tagged library is amplified. Unique tagging of the molecules is achieved 
+by sampling a small fraction (1%) of a very large repertoire of tag 
+sequences. ...&lt;/p&gt;
+&lt;/abstract&gt;
+&lt;kwd-group kwd-group-type="author"&gt;
+<strong><span class="focus">&lt;kwd&gt;DNA analysis&lt;/kwd&gt;</span></strong>
+<strong><span class="focus">&lt;kwd&gt;gene expression&lt;/kwd&gt;</span></strong>
+<strong><span class="focus">&lt;kwd&gt;parallel cloning&lt;/kwd&gt;</span></strong>
+<strong><span class="focus">&lt;kwd&gt;fluid microarray&lt;/kwd&gt;</span></strong>
+&lt;/kwd-group&gt;
+...
+&lt;/book-meta&gt;
+...
+
+   </pre></div></div><div class="examp.group"><h3 class="header">Example 2</h3><p class="para">Multiple keyword groups for a document, including those created by Inspec:</p><div class="taggedexamp"><pre class="taggedtext">
+...
+&lt;book-part-meta&gt;
+...  
+&lt;kwd-group kwd-group-type="Inspec"&gt;
+<strong><span class="focus">&lt;kwd&gt;diversity reception&lt;/kwd&gt;</span></strong>
+<strong><span class="focus">&lt;kwd&gt;Doppler radar&lt;/kwd&gt;</span></strong>
+<strong><span class="focus">&lt;kwd&gt;Doppler shift&lt;/kwd&gt;</span></strong>
+<strong><span class="focus">&lt;kwd&gt;encoding&lt;/kwd&gt;</span></strong>
+<strong><span class="focus">&lt;kwd&gt;optimisation&lt;/kwd&gt;</span></strong>
+<strong><span class="focus">&lt;kwd&gt;orthogonal codes&lt;/kwd&gt;</span></strong>
+<strong><span class="focus">&lt;kwd&gt;radar signal processing&lt;/kwd&gt;</span></strong>
+<strong><span class="focus">&lt;kwd&gt;MIMO radar&lt;/kwd&gt;</span></strong>
+&lt;/kwd-group&gt;
+
+&lt;kwd-group kwd-group-type="uncontrolled"&gt;
+<strong><span class="focus">&lt;kwd&gt;polyphase codes optimisation&lt;/kwd&gt;</span></strong>
+<strong><span class="focus">&lt;kwd&gt;multiinput-multioutput radars&lt;/kwd&gt;</span></strong>
+<strong><span class="focus">&lt;kwd&gt;radar performance&lt;/kwd&gt;</span></strong>
+<strong><span class="focus">&lt;kwd&gt;diversity technique&lt;/kwd&gt;</span></strong>
+<strong><span class="focus">&lt;kwd&gt;MIMO radar transmission&lt;/kwd&gt;</span></strong>
+<strong><span class="focus">&lt;kwd&gt;diversity performance&lt;/kwd&gt;</span></strong>
+<strong><span class="focus">&lt;kwd&gt;orthogonal codes&lt;/kwd&gt;</span></strong>
+<strong><span class="focus">&lt;kwd&gt;Doppler sensitive&lt;/kwd&gt;</span></strong>
+<strong><span class="focus">&lt;kwd&gt;side-lobes level&lt;/kwd&gt;</span></strong>
+<strong><span class="focus">&lt;kwd&gt;adaptive clonal selection algorithm&lt;/kwd&gt;</span></strong>
+<strong><span class="focus">&lt;kwd&gt;polyphase coded orthogonal signals&lt;/kwd&gt;</span></strong>
+<strong><span class="focus">&lt;kwd&gt;aperiodic autocorrelation side lobe&lt;/kwd&gt;</span></strong>
+<strong><span class="focus">&lt;kwd&gt;Doppler shift tolerance&lt;/kwd&gt;</span></strong>
+<strong><span class="focus">&lt;kwd&gt;sustainable Doppler shifts&lt;/kwd&gt;</span></strong>
+<strong><span class="focus">&lt;kwd&gt;Doppler tolerance performances&lt;/kwd&gt;</span></strong>
+&lt;/kwd-group&gt;
+
+&lt;kwd-group kwd-group-type="Inspec-class"&gt;
+&lt;compound-kwd&gt;
+&lt;compound-kwd-part content-type="code"&gt;B0260&lt;/compound-kwd-part&gt;
+&lt;compound-kwd-part content-type="text"&gt;Optimisation 
+techniques&lt;/compound-kwd-part&gt;
+&lt;/compound-kwd&gt;
+&lt;compound-kwd&gt;
+&lt;compound-kwd-part content-type="code"&gt;B6140&lt;/compound-kwd-part&gt;
+&lt;compound-kwd-part content-type="text"&gt;Signal processing and detection&lt;/compound-kwd-part&gt;
+&lt;/compound-kwd&gt;
+&lt;compound-kwd&gt;
+&lt;compound-kwd-part content-type="code"&gt;B6320&lt;/compound-kwd-part&gt;
+&lt;compound-kwd-part content-type="text"&gt;Radar equipment, systems 
+and applications&lt;/compound-kwd-part&gt;
+&lt;/compound-kwd&gt;
+&lt;/kwd-group&gt;
+&lt;/book-part-meta&gt;
+...
+
+</pre></div></div><div class="examp.group"><h3 class="header">Example 3</h3><p class="para">Multiple keyword groups for a document (in Japanese):</p><div class="taggedexamp"><pre class="taggedtext">
+...
+&lt;book-meta&gt;
+...
+&lt;kwd-group xml:lang="en"&gt;
+<strong><span class="focus">&lt;kwd&gt;heated air&lt;/kwd&gt;</span></strong>
+&lt;/kwd-group&gt;
+
+&lt;kwd-group xml:lang="ja"&gt;
+<strong><span class="focus">&lt;kwd&gt;加温空気&lt;/kwd&gt;</span></strong>
+&lt;/kwd-group&gt;
+  
+...    
+&lt;/book-meta&gt;
+...
+</pre></div></div><div class="examp.group"><h3 class="header">Example 4</h3><p class="para">App Navigation Information:</p><div class="taggedexamp"><pre class="taggedtext">
+...  
+&lt;sec&gt;
+&lt;sec-meta&gt;
+&lt;kwd-group specific-use="mobile-nav"&gt;
+  &lt;nested-kwd&gt;
+    <strong><span class="focus">&lt;kwd&gt;dosing&lt;/kwd&gt;</span></strong>
+    &lt;nested-kwd&gt;
+      <strong><span class="focus">&lt;kwd&gt;geriatric&lt;/kwd&gt;</span></strong>
+      &lt;nested-kwd&gt;
+        <strong><span class="focus">&lt;kwd&gt;Digoxin&lt;/kwd&gt;</span></strong>
+      &lt;/nested-kwd&gt;
+    &lt;/nested-kwd&gt;
+  &lt;/nested-kwd&gt;
+&lt;/kwd-group&gt;
+  
+&lt;kwd-group specific-use="mobile-nav"&gt;
+  &lt;nested-kwd&gt;
+    <strong><span class="focus">&lt;kwd&gt;Digoxin&lt;/kwd&gt;</span></strong>
+    &lt;nested-kwd&gt;
+      <strong><span class="focus">&lt;kwd&gt;dosing&lt;/kwd&gt;</span></strong>
+      &lt;nested-kwd&gt;
+        <strong><span class="focus">&lt;kwd&gt;geriatric&lt;/kwd&gt;</span></strong>
+      &lt;/nested-kwd&gt;
+    &lt;/nested-kwd&gt;
+  &lt;/nested-kwd&gt;
+&lt;/kwd-group&gt;
+&lt;/sec-meta&gt;
+&lt;title&gt;Dosing Table, Geriatric&lt;/title&gt;
+...
+&lt;/sec&gt;  
+...
+</pre></div></div><div class="pagefooter"><h2 class="headname">Book Interchange Tag Suite (BITS) Version 1.0 Tag Library 
+Version 1.0</h2><h4 class="pubdate">Version of December 2013</h4></div></body></html>

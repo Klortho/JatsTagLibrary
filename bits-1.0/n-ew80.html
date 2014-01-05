@@ -1,0 +1,27 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008--><link rel="stylesheet" href="BITS.css" type="text/css"><title>Element: Book Title Group</title></head><body class="main"><div class="pageheader"><h2 class="headname">Book Interchange Tag Suite (BITS) Version 1.0 Tag Library 
+Version 1.0</h2><h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
+National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
+National Library of Medicine (NLM)</h4></div><div class="header"><h1 class="elementtag">&lt;book-title-group&gt;</h1><h1 class="elementname">Book Title Group</h1></div><div class="definition"><p class="para">A container element for the various title elements that might be used for the book.</p></div><div class="attrlist"><h2 class="header">Attributes</h2><h5 class="header"><a href="n-4qu2.html" target="main"><span class="attrtag">id</span></a> <a href="n-4qu2.html" target="main"><span class="attrname">Document Internal Identifier</span></a></h5><h5 class="header"><a href="n-ib42.html" target="main"><span class="attrtag">xml:base</span></a> <a href="n-ib42.html" target="main"><span class="attrname">Base</span></a></h5></div><div class="relatedelem"><h2 class="header">Related Elements</h2><p class="para">The very similar element <a href="n-ht22.html" target="main" title="Title Group"><span class="elementtag">&lt;title-group&gt;</span></a> is
+used only at the book part (<a href="n-nj50.html" target="main" title="Book Part"><span class="elementtag">&lt;book-part&gt;</span></a>) level, for book parts both named and generic as well as Indexes and
+Tables of Contents. The <span class="elementtag">&lt;book-title-group&gt;</span> is only used
+inside the <a href="n-8r50.html" target="main" title="Book Metadata (Whole Book)"><span class="elementtag">&lt;book-meta&gt;</span></a> element of a book or book
+wrapper.</p></div><div class="contentmodel"><h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  book-title-group
+                        <a href="n-a772.html" target="main" title="Book Title Group Model"><span class="petag">%book-title-group-model;</span></a>                     &gt;</pre></div><div class="contentmodel"><h2 class="header">Expanded Content Model</h2><p class="contentdesc">(label?, book-title?, subtitle*, trans-title-group*, alt-title*, fn-group?)</p></div><div class="modeldesc"><h2 class="header">Description</h2><p class="para">The following, in order:<ul class="bullist"><li><a href="n-tdg0.html" target="main" title="Label (of an Equation, Figure, Reference, etc.)"><span class="elementtag">&lt;label&gt;</span></a> <a href="n-tdg0.html" target="main" title="<label&gt;"><span class="elementname">Label (of an Equation, Figure, Reference, etc.)</span></a>, zero or one</li><li><a href="n-3380.html" target="main" title="Book Title"><span class="elementtag">&lt;book-title&gt;</span></a> <a href="n-3380.html" target="main" title="<book-title&gt;"><span class="elementname">Book Title</span></a>, zero or one</li><li><a href="n-4wm0.html" target="main" title="Document Subtitle"><span class="elementtag">&lt;subtitle&gt;</span></a> <a href="n-4wm0.html" target="main" title="<subtitle&gt;"><span class="elementname">Document Subtitle</span></a>, zero or more</li><li><a href="n-zmc2.html" target="main" title="Translated Title Group"><span class="elementtag">&lt;trans-title-group&gt;</span></a> <a href="n-zmc2.html" target="main" title="<trans-title-group&gt;"><span class="elementname">Translated Title Group</span></a>, zero or more</li><li><a href="n-bb20.html" target="main" title="Alternate Title"><span class="elementtag">&lt;alt-title&gt;</span></a> <a href="n-bb20.html" target="main" title="<alt-title&gt;"><span class="elementname">Alternate Title</span></a>, zero or more</li><li><a href="n-mft0.html" target="main" title="Footnote Group"><span class="elementtag">&lt;fn-group&gt;</span></a> <a href="n-mft0.html" target="main" title="<fn-group&gt;"><span class="elementname">Footnote Group</span></a>, zero or one</li></ul></p></div><div class="elementcontext"><h3 class="header">This element may be contained in:</h3><p class="para"><a href="n-8r50.html" target="main" title="Book Metadata (Whole Book)"><span class="elementtag">&lt;book-meta&gt;</span></a></p></div><div class="examp.group"><h3 class="header">Example</h3><div class="taggedexamp"><pre class="taggedtext">
+    
+&lt;book dtd-version="1.0"&gt;  
+&lt;book-meta&gt;
+&lt;book-id book-id-type="doi"&gt;...&lt;/book-id&gt;
+&lt;book-id book-id-type="other"&gt;emdocrin&lt;/book-id&gt;
+<strong><span class="focus">&lt;book-title-group&gt;
+&lt;book-title&gt;Endocrinology&lt;/book-title&gt;
+&lt;subtitle&gt;An Integrated Approach&lt;/subtitle&gt;
+&lt;/book-title-group&gt;</span></strong>
+...
+&lt;/book-meta&gt;
+&lt;front-matter&gt;...&lt;/front-matter&gt;
+&lt;book-body&gt;...&lt;/book-body&gt;
+&lt;book-back&gt;...&lt;/book-back&gt;
+&lt;/book&gt;
+
+   </pre></div></div><div class="pagefooter"><h2 class="headname">Book Interchange Tag Suite (BITS) Version 1.0 Tag Library 
+Version 1.0</h2><h4 class="pubdate">Version of December 2013</h4></div></body></html>
