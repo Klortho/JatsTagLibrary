@@ -1,6 +1,179 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008--><link rel="stylesheet" href="auto-css.css" type="text/css"><title>Element: Person Group for a Cited Publication</title></head><body class="main"><div class="pageheader"><h2 class="headname">Article Authoring Tag Library  NISO JATS Draft Version 1.1d1</h2><h4 class="sponsor">National Center for Biotechnology Information (NCBI)<br class="linebrk"> National Library of
-   Medicine (NLM)</h4></div><div class="header"><h1 class="elementtag">&lt;person-group&gt;</h1><h1 class="elementname">Person Group for a Cited Publication</h1></div><div class="definition"><p class="para">Container element for one or more contributors in a bibliographic reference.</p></div><div class="remarks"><h2 class="header">Remarks</h2><p class="para">The container can be used to group all the contributors of a particular type (for example, authors, editors, directors, translators) that are named in a reference.</p><p class="para"><strong>Related Essay:</strong> For a discussion on the use of <span class="elementtag">&lt;person-group&gt;</span>, see <a href="n-dqc2.html#aut-tag-names-cites">Personal Names in Citations</a>.</p><p class="para"><strong>Usage:</strong> This element may be used in bibliographic references (<a href="n-zh80.html" target="main" title="Element Citation"><span class="elementtag">&lt;element-citation&gt;</span></a> and <a href="n-48x0.html" target="main" title="Mixed Citation"><span class="elementtag">&lt;mixed-citation&gt;</span></a>).</p><p class="para">This element may also include any punctuation and spacing that is between the names, <em>even when</em> this element is used within an <a href="n-zh80.html" target="main" title="Element Citation"><span class="elementtag">&lt;element-citation&gt;</span></a>. Therefore, within the context of an element-only <a href="n-zh80.html" target="main" title="Element Citation"><span class="elementtag">&lt;element-citation&gt;</span></a>, care should be taken not to accidentally allow punctuation and spaces, since an XML parser will not view this as an error.</p></div><div class="attrlist"><h2 class="header">Attributes</h2><h5 class="header"><a href="n-82d0.html" target="main"><span class="attrtag">id</span></a> <a href="n-82d0.html" target="main"><span class="attrname">Document Internal Identifier</span></a></h5><h5 class="header"><a href="n-sur0.html" target="main"><span class="attrtag">person-group-type</span></a> <a href="n-sur0.html" target="main"><span class="attrname">Type of People in the Person Group</span></a></h5><h5 class="header"><a href="n-r6h0.html" target="main"><span class="attrtag">specific-use</span></a> <a href="n-r6h0.html" target="main"><span class="attrname">Specific Use</span></a></h5><h5 class="header"><a href="n-uyi0.html" target="main"><span class="attrtag">xml:base</span></a> <a href="n-uyi0.html" target="main"><span class="attrname">Base</span></a></h5><h5 class="header"><a href="n-xzi0.html" target="main"><span class="attrtag">xml:lang</span></a> <a href="n-xzi0.html" target="main"><span class="attrname">Language</span></a></h5></div><div class="contentmodel"><h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  person-group <a href="n-kwz0.html" target="main" title="Person Group Model"><span class="petag">%person-group-model;</span></a>                         &gt;</pre></div><div class="contentmodel"><h2 class="header">Expanded Content Model</h2><p class="contentdesc">(#PCDATA | anonymous | collab | collab-alternatives | name | name-alternatives | aff | aff-alternatives | etal | role | string-name)*</p></div><div class="modeldesc"><h2 class="header">Description</h2><p class="para">Any combination of:<ul class="bullist"><li>Text, numbers, or special characters</li><li>Contributor Naming Elements<ul class="bullist"><li><a href="n-s620.html" target="main" title="Anonymous"><span class="elementtag">&lt;anonymous&gt;</span></a> <a href="n-s620.html" target="main" title="<anonymous&gt;"><span class="elementname">Anonymous</span></a></li><li><a href="n-3e30.html" target="main" title="Collaborative (Group) Author"><span class="elementtag">&lt;collab&gt;</span></a> <a href="n-3e30.html" target="main" title="<collab&gt;"><span class="elementname">Collaborative (Group) Author</span></a></li><li><a href="n-j630.html" target="main" title="Collaboration Alternatives"><span class="elementtag">&lt;collab-alternatives&gt;</span></a> <a href="n-j630.html" target="main" title="<collab-alternatives&gt;"><span class="elementname">Collaboration Alternatives</span></a></li><li><a href="n-4yx0.html" target="main" title="Name of Person"><span class="elementtag">&lt;name&gt;</span></a> <a href="n-4yx0.html" target="main" title="<name&gt;"><span class="elementname">Name of Person</span></a></li><li><a href="n-hqx0.html" target="main" title="Name Alternatives"><span class="elementtag">&lt;name-alternatives&gt;</span></a> <a href="n-hqx0.html" target="main" title="<name-alternatives&gt;"><span class="elementname">Name Alternatives</span></a></li></ul></li><li><a href="n-na20.html" target="main" title="Affiliation"><span class="elementtag">&lt;aff&gt;</span></a> <a href="n-na20.html" target="main" title="<aff&gt;"><span class="elementname">Affiliation</span></a></li><li><a href="n-e420.html" target="main" title="Affiliation Alternatives"><span class="elementtag">&lt;aff-alternatives&gt;</span></a> <a href="n-e420.html" target="main" title="<aff-alternatives&gt;"><span class="elementname">Affiliation Alternatives</span></a></li><li><a href="n-aaa0.html" target="main" title="Et Al."><span class="elementtag">&lt;etal&gt;</span></a> <a href="n-aaa0.html" target="main" title="<etal&gt;"><span class="elementname">Et Al.</span></a></li><li><a href="n-uys0.html" target="main" title="Role or Function Title of Contributor"><span class="elementtag">&lt;role&gt;</span></a> <a href="n-uys0.html" target="main" title="<role&gt;"><span class="elementname">Role or Function Title of Contributor</span></a></li><li><a href="n-wa70.html" target="main" title="Name of Person (Unstructured)"><span class="elementtag">&lt;string-name&gt;</span></a> <a href="n-wa70.html" target="main" title="<string-name&gt;"><span class="elementname">Name of Person (Unstructured)</span></a></li></ul></p></div><div class="elementcontext"><h3 class="header">This element may be contained in:</h3><p class="para"><a href="n-zh80.html" target="main" title="Element Citation"><span class="elementtag">&lt;element-citation&gt;</span></a>, <a href="n-48x0.html" target="main" title="Mixed Citation"><span class="elementtag">&lt;mixed-citation&gt;</span></a>, <a href="n-xuv0.html" target="main" title="NLM Citation"><span class="elementtag">&lt;nlm-citation&gt;</span></a>, <a href="n-z640.html" target="main" title="Product Information"><span class="elementtag">&lt;product&gt;</span></a>, <a href="n-eas0.html" target="main" title="Related Article Information"><span class="elementtag">&lt;related-article&gt;</span></a>, <a href="n-ees0.html" target="main" title="Related Object Information"><span class="elementtag">&lt;related-object&gt;</span></a></p></div><div class="examp.group"><h3 class="header">Example 1</h3><p class="para">In an element-style bibliographic reference (punctuation and spacing removed):
-</p><div class="taggedexamp"><pre class="taggedtext">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta name="generator" content="HTML Tidy for Linux/x86 (vers 25 March 2009), see www.w3.org" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008-->
+  <link rel="stylesheet" href="auto-css.css" type="text/css" />
+
+  <title>Element: Person Group for a Cited Publication</title>
+</head>
+
+<body class="main">
+  <div class="pageheader">
+    <h2 class="headname">Article Authoring Tag Library NISO JATS Draft Version 1.1d1</h2>
+
+    <h4 class="sponsor">National Center for Biotechnology Information (NCBI)<br class="linebrk" />
+    National Library of Medicine (NLM)</h4>
+  </div>
+
+  <div class="header">
+    <h1 class="elementtag">&lt;person-group&gt;</h1>
+
+    <h1 class="elementname">Person Group for a Cited Publication</h1>
+  </div>
+
+  <div class="definition">
+    <p class="para">Container element for one or more contributors in a bibliographic
+    reference.</p>
+  </div>
+
+  <div class="remarks">
+    <h2 class="header">Remarks</h2>
+
+    <p class="para">The container can be used to group all the contributors of a particular type
+    (for example, authors, editors, directors, translators) that are named in a reference.</p>
+
+    <p class="para"><strong>Related Essay:</strong> For a discussion on the use of <span class=
+    "elementtag">&lt;person-group&gt;</span>, see <a href=
+    "n-dqc2.html#aut-tag-names-cites">Personal Names in Citations</a>.</p>
+
+    <p class="para"><strong>Usage:</strong> This element may be used in bibliographic references
+    (<a href="n-zh80.html" target="main" title="Element Citation"><span class=
+    "elementtag">&lt;element-citation&gt;</span></a> and <a href="n-48x0.html" target="main" title=
+    "Mixed Citation"><span class="elementtag">&lt;mixed-citation&gt;</span></a>).</p>
+
+    <p class="para">This element may also include any punctuation and spacing that is between the
+    names, <em>even when</em> this element is used within an <a href="n-zh80.html" target="main"
+    title="Element Citation"><span class="elementtag">&lt;element-citation&gt;</span></a>.
+    Therefore, within the context of an element-only <a href="n-zh80.html" target="main" title=
+    "Element Citation"><span class="elementtag">&lt;element-citation&gt;</span></a>, care should be
+    taken not to accidentally allow punctuation and spaces, since an XML parser will not view this
+    as an error.</p>
+  </div>
+
+  <div class="attrlist">
+    <h2 class="header">Attributes</h2>
+
+    <h5 class="header"><a href="n-82d0.html" target="main"><span class="attrtag">id</span></a>
+    <a href="n-82d0.html" target="main"><span class="attrname">Document Internal
+    Identifier</span></a></h5>
+
+    <h5 class="header"><a href="n-sur0.html" target="main"><span class=
+    "attrtag">person-group-type</span></a> <a href="n-sur0.html" target="main"><span class=
+    "attrname">Type of People in the Person Group</span></a></h5>
+
+    <h5 class="header"><a href="n-r6h0.html" target="main"><span class=
+    "attrtag">specific-use</span></a> <a href="n-r6h0.html" target="main"><span class=
+    "attrname">Specific Use</span></a></h5>
+
+    <h5 class="header"><a href="n-uyi0.html" target="main"><span class=
+    "attrtag">xml:base</span></a> <a href="n-uyi0.html" target="main"><span class=
+    "attrname">Base</span></a></h5>
+
+    <h5 class="header"><a href="n-xzi0.html" target="main"><span class=
+    "attrtag">xml:lang</span></a> <a href="n-xzi0.html" target="main"><span class=
+    "attrname">Language</span></a></h5>
+  </div>
+
+  <div class="contentmodel">
+    <h2 class="header first">Content Model</h2>
+    <pre class="contentdesc">
+&lt;!ELEMENT  person-group <a href="n-kwz0.html" target="main" title=
+"Person Group Model"><span class=
+"petag">%person-group-model;</span></a>                         &gt;
+</pre>
+  </div>
+
+  <div class="contentmodel">
+    <h2 class="header">Expanded Content Model</h2>
+
+    <p class="contentdesc">(#PCDATA | anonymous | collab | collab-alternatives | name |
+    name-alternatives | aff | aff-alternatives | etal | role | string-name)*</p>
+  </div>
+
+  <div class="modeldesc">
+    <h2 class="header">Description</h2>
+
+    <p class="para">Any combination of:</p>
+
+    <ul class="bullist">
+      <li>Text, numbers, or special characters</li>
+
+      <li>Contributor Naming Elements
+
+        <ul class="bullist">
+          <li><a href="n-s620.html" target="main" title="Anonymous"><span class=
+          "elementtag">&lt;anonymous&gt;</span></a> <a href="n-s620.html" target="main" title=
+          "&lt;anonymous&gt;"><span class="elementname">Anonymous</span></a></li>
+
+          <li><a href="n-3e30.html" target="main" title="Collaborative (Group) Author"><span class=
+          "elementtag">&lt;collab&gt;</span></a> <a href="n-3e30.html" target="main" title=
+          "&lt;collab&gt;"><span class="elementname">Collaborative (Group) Author</span></a></li>
+
+          <li><a href="n-j630.html" target="main" title="Collaboration Alternatives"><span class=
+          "elementtag">&lt;collab-alternatives&gt;</span></a> <a href="n-j630.html" target="main"
+          title="&lt;collab-alternatives&gt;"><span class="elementname">Collaboration
+          Alternatives</span></a></li>
+
+          <li><a href="n-4yx0.html" target="main" title="Name of Person"><span class=
+          "elementtag">&lt;name&gt;</span></a> <a href="n-4yx0.html" target="main" title=
+          "&lt;name&gt;"><span class="elementname">Name of Person</span></a></li>
+
+          <li><a href="n-hqx0.html" target="main" title="Name Alternatives"><span class=
+          "elementtag">&lt;name-alternatives&gt;</span></a> <a href="n-hqx0.html" target="main"
+          title="&lt;name-alternatives&gt;"><span class="elementname">Name
+          Alternatives</span></a></li>
+        </ul>
+      </li>
+
+      <li><a href="n-na20.html" target="main" title="Affiliation"><span class=
+      "elementtag">&lt;aff&gt;</span></a> <a href="n-na20.html" target="main" title=
+      "&lt;aff&gt;"><span class="elementname">Affiliation</span></a></li>
+
+      <li><a href="n-e420.html" target="main" title="Affiliation Alternatives"><span class=
+      "elementtag">&lt;aff-alternatives&gt;</span></a> <a href="n-e420.html" target="main" title=
+      "&lt;aff-alternatives&gt;"><span class="elementname">Affiliation Alternatives</span></a></li>
+
+      <li><a href="n-aaa0.html" target="main" title="Et Al."><span class=
+      "elementtag">&lt;etal&gt;</span></a> <a href="n-aaa0.html" target="main" title=
+      "&lt;etal&gt;"><span class="elementname">Et Al.</span></a></li>
+
+      <li><a href="n-uys0.html" target="main" title=
+      "Role or Function Title of Contributor"><span class="elementtag">&lt;role&gt;</span></a>
+      <a href="n-uys0.html" target="main" title="&lt;role&gt;"><span class="elementname">Role or
+      Function Title of Contributor</span></a></li>
+
+      <li><a href="n-wa70.html" target="main" title="Name of Person (Unstructured)"><span class=
+      "elementtag">&lt;string-name&gt;</span></a> <a href="n-wa70.html" target="main" title=
+      "&lt;string-name&gt;"><span class="elementname">Name of Person (Unstructured)</span></a></li>
+    </ul>
+  </div>
+
+  <div class="elementcontext">
+    <h3 class="header">This element may be contained in:</h3>
+
+    <p class="para"><a href="n-zh80.html" target="main" title="Element Citation"><span class=
+    "elementtag">&lt;element-citation&gt;</span></a>, <a href="n-48x0.html" target="main" title=
+    "Mixed Citation"><span class="elementtag">&lt;mixed-citation&gt;</span></a>, <a href=
+    "n-xuv0.html" target="main" title="NLM Citation"><span class=
+    "elementtag">&lt;nlm-citation&gt;</span></a>, <a href="n-z640.html" target="main" title=
+    "Product Information"><span class="elementtag">&lt;product&gt;</span></a>, <a href=
+    "n-eas0.html" target="main" title="Related Article Information"><span class=
+    "elementtag">&lt;related-article&gt;</span></a>, <a href="n-ees0.html" target="main" title=
+    "Related Object Information"><span class="elementtag">&lt;related-object&gt;</span></a></p>
+  </div>
+
+  <div class="examp.group">
+    <h3 class="header">Example 1</h3>
+
+    <p class="para">In an element-style bibliographic reference (punctuation and spacing
+    removed):</p>
+
+    <div class="taggedexamp">
+      <pre class="taggedtext">
 ...
 &lt;ref-list&gt;
 ...
@@ -28,8 +201,18 @@ PB80-148810&lt;/comment&gt;
 &lt;/ref-list&gt;
 ...
 
-</pre></div></div><div class="examp.group"><h3 class="header">Example 2</h3><p class="para">In a mixed-style bibliographic reference (punctuation and spacing preserved):
-</p><div class="taggedexamp"><pre class="taggedtext">
+</pre>
+    </div>
+  </div>
+
+  <div class="examp.group">
+    <h3 class="header">Example 2</h3>
+
+    <p class="para">In a mixed-style bibliographic reference (punctuation and spacing
+    preserved):</p>
+
+    <div class="taggedexamp">
+      <pre class="taggedtext">
 ...
 &lt;ref-list&gt;
 ...
@@ -55,4 +238,20 @@ PB80-148810&lt;/comment&gt;.
 &lt;/ref&gt;
 &lt;/ref-list&gt;
 ...
-</pre></div></div><div class="moduledefined"><h2 class="header">Module</h2><p class="moduledefined">JATS-references1.ent</p></div><div class="pagefooter"><h2 class="headname">Article Authoring Tag Library  NISO JATS Draft Version 1.1d1</h2><h4 class="pubdate">Version of December 2013</h4></div></body></html>
+</pre>
+    </div>
+  </div>
+
+  <div class="moduledefined">
+    <h2 class="header">Module</h2>
+
+    <p class="moduledefined">JATS-references1.ent</p>
+  </div>
+
+  <div class="pagefooter">
+    <h2 class="headname">Article Authoring Tag Library NISO JATS Draft Version 1.1d1</h2>
+
+    <h4 class="pubdate">Version of December 2013</h4>
+  </div>
+</body>
+</html>

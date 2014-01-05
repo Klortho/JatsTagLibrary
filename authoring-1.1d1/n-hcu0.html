@@ -1,9 +1,54 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008--><link rel="stylesheet" href="auto-css.css" type="text/css"><title>Element: Given (First) Names</title></head><body class="main"><div class="pageheader"><h2 class="headname">Article Authoring Tag Library  NISO JATS Draft Version 1.1d1</h2><h4 class="sponsor">National Center for Biotechnology Information (NCBI)<br class="linebrk"> National Library of
-   Medicine (NLM)</h4></div><div class="header"><h1 class="elementtag">&lt;given-names&gt;</h1><h1 class="elementname">Given (First) Names</h1></div><div class="definition"><p class="para">All given names of a person, such as the first name, middle names, maiden name if
-            used as part of the married name, etc.</p></div><div class="remarks"><h2 class="header">Remarks</h2><p class="para">As a typical example, in the name “John Q. Delancey Public”, the
-            <a href="n-hcu0.html" target="main" title="Given (First) Names"><span class="elementtag">&lt;given-names&gt;</span></a> would be “John Q.
-            Delancey” and the <a href="n-zae0.html" target="main" title="Surname"><span class="elementtag">&lt;surname&gt;</span></a> would
-            be “Public”.</p><p class="para">Care should be taken with multipart names to divide the components into family names (<span class="elementtag">&lt;surname&gt;</span>) and personal names (<a href="n-hcu0.html" target="main" title="Given (First) Names"><span class="elementtag">&lt;given-names&gt;</span></a>) in as culturally appropriate a fashion as possible. Initials can be preserved separately using the <a href="n-axd0.html" target="main" title="Initials for Personal Names"><span class="attrtag">@initials</span></a> attribute.</p><div class="codeblock"><pre>&lt;surname initials=”Q”&gt;Llanos De La Torre Quiralte&lt;/surname&gt;   
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta name="generator" content="HTML Tidy for Linux/x86 (vers 25 March 2009), see www.w3.org" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008-->
+  <link rel="stylesheet" href="auto-css.css" type="text/css" />
+
+  <title>Element: Given (First) Names</title>
+</head>
+
+<body class="main">
+  <div class="pageheader">
+    <h2 class="headname">Article Authoring Tag Library NISO JATS Draft Version 1.1d1</h2>
+
+    <h4 class="sponsor">National Center for Biotechnology Information (NCBI)<br class="linebrk" />
+    National Library of Medicine (NLM)</h4>
+  </div>
+
+  <div class="header">
+    <h1 class="elementtag">&lt;given-names&gt;</h1>
+
+    <h1 class="elementname">Given (First) Names</h1>
+  </div>
+
+  <div class="definition">
+    <p class="para">All given names of a person, such as the first name, middle names, maiden name
+    if used as part of the married name, etc.</p>
+  </div>
+
+  <div class="remarks">
+    <h2 class="header">Remarks</h2>
+
+    <p class="para">As a typical example, in the name “John Q. Delancey Public”, the <a href=
+    "n-hcu0.html" target="main" title="Given (First) Names"><span class=
+    "elementtag">&lt;given-names&gt;</span></a> would be “John Q. Delancey” and the <a href=
+    "n-zae0.html" target="main" title="Surname"><span class="elementtag">&lt;surname&gt;</span></a>
+    would be “Public”.</p>
+
+    <p class="para">Care should be taken with multipart names to divide the components into family
+    names (<span class="elementtag">&lt;surname&gt;</span>) and personal names (<a href=
+    "n-hcu0.html" target="main" title="Given (First) Names"><span class=
+    "elementtag">&lt;given-names&gt;</span></a>) in as culturally appropriate a fashion as
+    possible. Initials can be preserved separately using the <a href="n-axd0.html" target="main"
+    title="Initials for Personal Names"><span class="attrtag">@initials</span></a> attribute.</p>
+
+    <div class="codeblock">
+      <pre>
+&lt;surname initials=”Q”&gt;Llanos De La Torre Quiralte&lt;/surname&gt;   
 &lt;given-names initials=”M”&gt;M&lt;/given-names&gt;    
 
 &lt;surname initials=”U”&gt;Usdin&lt;/surname&gt;   
@@ -35,7 +80,73 @@
 
 &lt;surname initials=”L”&gt;Lewis&lt;/surname&gt;   
 &lt;given-names initials=”CS”&gt;C.S.&lt;/given-names&gt;
-</pre></div><p class="para"><strong>Best Practice:</strong> There is no single style that best handles all single (one-part) names. Tibetan, Indian, and Burmese single names <em>that are not surnames</em> may be tagged as <a href="n-hcu0.html" target="main" title="Given (First) Names"><span class="elementtag">&lt;given-names&gt;</span></a>; there is no need to commit the tag abuse of calling the given name a surname. Most westernized single names (“Pele”, “Prince”, “Babyface”, “Aztek”) are more likely to be retrieved properly if they are tagged as <a href="n-zae0.html" target="main" title="Surname"><span class="elementtag">&lt;surname&gt;</span></a>s.</p></div><div class="attrlist"><h2 class="header">Attributes</h2><h5 class="header"><a href="n-82d0.html" target="main"><span class="attrtag">id</span></a> <a href="n-82d0.html" target="main"><span class="attrname">Document Internal Identifier</span></a></h5><h5 class="header"><a href="n-axd0.html" target="main"><span class="attrtag">initials</span></a> <a href="n-axd0.html" target="main"><span class="attrname">Initials for Personal Names</span></a></h5><h5 class="header"><a href="n-uyi0.html" target="main"><span class="attrtag">xml:base</span></a> <a href="n-uyi0.html" target="main"><span class="attrname">Base</span></a></h5></div><div class="contentmodel"><h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  given-names  (#PCDATA <a href="n-ntb0.html" target="main" title="Given (First) Names Elements"><span class="petag">%given-names-elements;</span></a>)*            &gt;</pre></div><div class="contentmodel"><h2 class="header">Expanded Content Model</h2><p class="contentdesc">(#PCDATA)*</p></div><div class="modeldesc"><h2 class="header">Description</h2><p class="para">Text, numbers, or special characters, zero or more</p></div><div class="elementcontext"><h3 class="header">This element may be contained in:</h3><p class="para"><a href="n-4yx0.html" target="main" title="Name of Person"><span class="elementtag">&lt;name&gt;</span></a>, <a href="n-mit0.html" target="main" title="Speaker"><span class="elementtag">&lt;speaker&gt;</span></a>, <a href="n-wa70.html" target="main" title="Name of Person (Unstructured)"><span class="elementtag">&lt;string-name&gt;</span></a></p></div><div class="examp.group"><h3 class="header">Example 1</h3><p class="para">As part of article metadata, providing the given names of an author:</p><div class="taggedexamp"><pre class="taggedtext">
+</pre>
+    </div>
+
+    <p class="para"><strong>Best Practice:</strong> There is no single style that best handles all
+    single (one-part) names. Tibetan, Indian, and Burmese single names <em>that are not
+    surnames</em> may be tagged as <a href="n-hcu0.html" target="main" title=
+    "Given (First) Names"><span class="elementtag">&lt;given-names&gt;</span></a>; there is no need
+    to commit the tag abuse of calling the given name a surname. Most westernized single names
+    (“Pele”, “Prince”, “Babyface”, “Aztek”) are more likely to be retrieved properly if they are
+    tagged as <a href="n-zae0.html" target="main" title="Surname"><span class=
+    "elementtag">&lt;surname&gt;</span></a>s.</p>
+  </div>
+
+  <div class="attrlist">
+    <h2 class="header">Attributes</h2>
+
+    <h5 class="header"><a href="n-82d0.html" target="main"><span class="attrtag">id</span></a>
+    <a href="n-82d0.html" target="main"><span class="attrname">Document Internal
+    Identifier</span></a></h5>
+
+    <h5 class="header"><a href="n-axd0.html" target="main"><span class=
+    "attrtag">initials</span></a> <a href="n-axd0.html" target="main"><span class=
+    "attrname">Initials for Personal Names</span></a></h5>
+
+    <h5 class="header"><a href="n-uyi0.html" target="main"><span class=
+    "attrtag">xml:base</span></a> <a href="n-uyi0.html" target="main"><span class=
+    "attrname">Base</span></a></h5>
+  </div>
+
+  <div class="contentmodel">
+    <h2 class="header first">Content Model</h2>
+    <pre class="contentdesc">
+&lt;!ELEMENT  given-names  (#PCDATA <a href="n-ntb0.html" target="main" title=
+"Given (First) Names Elements"><span class=
+"petag">%given-names-elements;</span></a>)*            &gt;
+</pre>
+  </div>
+
+  <div class="contentmodel">
+    <h2 class="header">Expanded Content Model</h2>
+
+    <p class="contentdesc">(#PCDATA)*</p>
+  </div>
+
+  <div class="modeldesc">
+    <h2 class="header">Description</h2>
+
+    <p class="para">Text, numbers, or special characters, zero or more</p>
+  </div>
+
+  <div class="elementcontext">
+    <h3 class="header">This element may be contained in:</h3>
+
+    <p class="para"><a href="n-4yx0.html" target="main" title="Name of Person"><span class=
+    "elementtag">&lt;name&gt;</span></a>, <a href="n-mit0.html" target="main" title=
+    "Speaker"><span class="elementtag">&lt;speaker&gt;</span></a>, <a href="n-wa70.html" target=
+    "main" title="Name of Person (Unstructured)"><span class=
+    "elementtag">&lt;string-name&gt;</span></a></p>
+  </div>
+
+  <div class="examp.group">
+    <h3 class="header">Example 1</h3>
+
+    <p class="para">As part of article metadata, providing the given names of an author:</p>
+
+    <div class="taggedexamp">
+      <pre class="taggedtext">
 
 ...
 &lt;contrib-group&gt;
@@ -51,7 +162,11 @@ Drug Administration, Rockville, Maryland 20857&lt;/aff&gt;
 &lt;/contrib-group&gt;
 ...
 
-</pre></div><div class="taggedexamp"><pre class="taggedtext">
+</pre>
+    </div>
+
+    <div class="taggedexamp">
+      <pre class="taggedtext">
 
 ...
 &lt;contrib-group&gt;
@@ -66,7 +181,17 @@ Drug Administration, Rockville, Maryland 20857&lt;/aff&gt;
 &lt;/contrib-group&gt;
 ...
 
-</pre></div></div><div class="examp.group"><h3 class="header">Example 2</h3><p class="para">As part of article metadata, providing the given names of an editor:</p><div class="taggedexamp"><pre class="taggedtext">
+</pre>
+    </div>
+  </div>
+
+  <div class="examp.group">
+    <h3 class="header">Example 2</h3>
+
+    <p class="para">As part of article metadata, providing the given names of an editor:</p>
+
+    <div class="taggedexamp">
+      <pre class="taggedtext">
 
 ...  
 &lt;contrib-group content-type="conference-editors"&gt;
@@ -80,7 +205,17 @@ Drug Administration, Rockville, Maryland 20857&lt;/aff&gt;
 &lt;/contrib-group&gt;
 ...
 
-</pre></div></div><div class="examp.group"><h3 class="header">Example 3</h3><p class="para">As part of author names in multiple languages:</p><div class="taggedexamp"><pre class="taggedtext">
+</pre>
+    </div>
+  </div>
+
+  <div class="examp.group">
+    <h3 class="header">Example 3</h3>
+
+    <p class="para">As part of author names in multiple languages:</p>
+
+    <div class="taggedexamp">
+      <pre class="taggedtext">
 ...
 &lt;contrib contrib-type="author" rid="aff2"&gt;
 &lt;name-alternatives&gt;
@@ -89,7 +224,8 @@ Drug Administration, Rockville, Maryland 20857&lt;/aff&gt;
 <strong><span class="focus">&lt;given-names&gt;直子&lt;/given-names&gt;</span></strong>&lt;/name&gt;
 &lt;name name-style="western" xml:lang="en"&gt;
 &lt;surname&gt;Sonoda&lt;/surname&gt;
-<strong><span class="focus">&lt;given-names&gt;Naoko&lt;/given-names&gt;</span></strong>&lt;/name&gt;
+<strong><span class=
+"focus">&lt;given-names&gt;Naoko&lt;/given-names&gt;</span></strong>&lt;/name&gt;
 &lt;name name-style="eastern" xml:lang="ja-Kana"&gt;
 &lt;surname&gt;ソノダ&lt;/surname&gt;
 <strong><span class="focus">&lt;given-names&gt;ナオコ&lt;/given-names&gt;</span></strong>&lt;/name&gt;
@@ -106,24 +242,34 @@ National Museum of Ethnology&lt;/institution&gt;
 &lt;/contrib&gt;
 ...
 
-</pre></div><div class="taggedexamp"><pre class="taggedtext">
+</pre>
+    </div>
+
+    <div class="taggedexamp">
+      <pre class="taggedtext">
 
 ...  
 &lt;name-alternatives&gt;
 &lt;name name-style="western"&gt;&lt;surname&gt;Chu&lt;/surname&gt;
-<strong><span class="focus">&lt;given-names&gt;J. H.&lt;/given-names&gt;</span></strong>&lt;/name&gt;
+<strong><span class=
+"focus">&lt;given-names&gt;J. H.&lt;/given-names&gt;</span></strong>&lt;/name&gt;
 &lt;string-name name-style="eastern" xml:lang="zh"&gt;褚君浩&lt;/string-name&gt;
 &lt;/name-alternatives&gt;
 ...
 
-</pre></div><div class="taggedexamp"><pre class="taggedtext">
+</pre>
+    </div>
+
+    <div class="taggedexamp">
+      <pre class="taggedtext">
 
 ...
 &lt;contrib-group&gt;
 &lt;contrib contrib-type="author"&gt;  
 &lt;name-alternatives&gt;
 &lt;name name-style="western"&gt;&lt;surname&gt;Zhang&lt;/surname&gt;
-<strong><span class="focus">&lt;given-names&gt;Y. P.&lt;/given-names&gt;</span></strong>&lt;/name&gt;
+<strong><span class=
+"focus">&lt;given-names&gt;Y. P.&lt;/given-names&gt;</span></strong>&lt;/name&gt;
 &lt;string-name name-style="eastern" xml:lang="zh"&gt;张轶泼&lt;/string-name&gt;
 &lt;/name-alternatives&gt;
 &lt;/contrib&gt;
@@ -146,7 +292,18 @@ National Museum of Ethnology&lt;/institution&gt;
 &lt;/contrib-group&gt;
 ...
 
-</pre></div></div><div class="examp.group"><h3 class="header">Example 4</h3><p class="para">In an element-style bibliographic reference (punctuation and spacing removed):</p><div class="taggedexamp"><pre class="taggedtext">
+</pre>
+    </div>
+  </div>
+
+  <div class="examp.group">
+    <h3 class="header">Example 4</h3>
+
+    <p class="para">In an element-style bibliographic reference (punctuation and spacing
+    removed):</p>
+
+    <div class="taggedexamp">
+      <pre class="taggedtext">
 ...
 &lt;ref&gt;
 &lt;element-citation publication-type="journal" publication-format="print"&gt;
@@ -174,16 +331,30 @@ Spanish&lt;/comment&gt;
 &lt;/element-citation&gt;
 &lt;/ref&gt;
 ...
-</pre></div></div><div class="examp.group"><h3 class="header">Example 5</h3><p class="para">In a mixed-style bibliographic reference (punctuation and spacing preserved):</p><div class="taggedexamp"><pre class="taggedtext">
+</pre>
+    </div>
+  </div>
+
+  <div class="examp.group">
+    <h3 class="header">Example 5</h3>
+
+    <p class="para">In a mixed-style bibliographic reference (punctuation and spacing
+    preserved):</p>
+
+    <div class="taggedexamp">
+      <pre class="taggedtext">
 ...
 &lt;ref&gt;
 &lt;mixed-citation publication-type="journal" publication-format="print"&gt;
 &lt;string-name&gt;&lt;surname&gt;Llanos De La Torre Quiralte&lt;/surname&gt;
-<strong><span class="focus">&lt;given-names&gt;M&lt;/given-names&gt;</span></strong>&lt;/string-name&gt;,
+<strong><span class=
+"focus">&lt;given-names&gt;M&lt;/given-names&gt;</span></strong>&lt;/string-name&gt;,
 &lt;string-name&gt;&lt;surname&gt;Garijo Ayestaran&lt;/surname&gt;
-<strong><span class="focus">&lt;given-names&gt;M&lt;/given-names&gt;</span></strong>&lt;/string-name&gt;,
+<strong><span class=
+"focus">&lt;given-names&gt;M&lt;/given-names&gt;</span></strong>&lt;/string-name&gt;,
 &lt;string-name&gt;&lt;surname&gt;Poch Olive&lt;/surname&gt;
-<strong><span class="focus">&lt;given-names&gt;ML&lt;/given-names&gt;</span></strong>&lt;/string-name&gt;.
+<strong><span class=
+"focus">&lt;given-names&gt;ML&lt;/given-names&gt;</span></strong>&lt;/string-name&gt;.
 &lt;article-title xml:lang="es"&gt;Evolucion de la mortalidad
 infantil de La Rioja (1980-1998)&lt;/article-title&gt;
 [&lt;trans-title xml:lang="en"&gt;Evolution of the infant
@@ -196,28 +367,72 @@ de mortalidad infantil [Figure 3, Trends in infant
 mortality]; p. 418. Spanish.&lt;/mixed-citation&gt;
 &lt;/ref&gt;
 ...
-</pre></div></div><div class="examp.group"><h3 class="header">Example 6</h3><p class="para">The <a href="n-hcu0.html" target="main" title="Given (First) Names"><span class="elementtag">&lt;given-names&gt;</span></a> element can be used inside a <a href="n-wa70.html" target="main" title="Name of Person (Unstructured)"><span class="elementtag">&lt;string-name&gt;</span></a> as well as inside a <a href="n-4yx0.html" target="main" title="Name of Person"><span class="elementtag">&lt;name&gt;</span></a>:</p><div class="taggedexamp"><pre class="taggedtext">
+</pre>
+    </div>
+  </div>
+
+  <div class="examp.group">
+    <h3 class="header">Example 6</h3>
+
+    <p class="para">The <a href="n-hcu0.html" target="main" title=
+    "Given (First) Names"><span class="elementtag">&lt;given-names&gt;</span></a> element can be
+    used inside a <a href="n-wa70.html" target="main" title=
+    "Name of Person (Unstructured)"><span class="elementtag">&lt;string-name&gt;</span></a> as well
+    as inside a <a href="n-4yx0.html" target="main" title="Name of Person"><span class=
+    "elementtag">&lt;name&gt;</span></a>:</p>
+
+    <div class="taggedexamp">
+      <pre class="taggedtext">
 
 ...  
 &lt;string-name name-style="western"&gt;
-<strong><span class="focus">&lt;given-names&gt;Y.&lt;/given-names&gt;</span></strong> &lt;surname&gt;Song&lt;/surname&gt;
+<strong><span class=
+"focus">&lt;given-names&gt;Y.&lt;/given-names&gt;</span></strong> &lt;surname&gt;Song&lt;/surname&gt;
 &lt;/string-name&gt;
 ...
 
-</pre></div></div><div class="examp.group"><h3 class="header">Example 7</h3><p class="para">Inside the description of a product:</p><div class="taggedexamp"><pre class="taggedtext">
+</pre>
+    </div>
+  </div>
+
+  <div class="examp.group">
+    <h3 class="header">Example 7</h3>
+
+    <p class="para">Inside the description of a product:</p>
+
+    <div class="taggedexamp">
+      <pre class="taggedtext">
 
 ...  
 &lt;product&gt;
 &lt;source&gt;Image-Guided Radiation Therapy in Lymphoma Management. 
 The Increasing Role of Functional Imaging.&lt;/source&gt;
 &lt;name name-style="western"&gt;&lt;surname&gt;Macklis&lt;/surname&gt;
-<strong><span class="focus">&lt;given-names&gt;R. M.&lt;/given-names&gt;</span></strong>&lt;/name&gt;
+<strong><span class=
+"focus">&lt;given-names&gt;R. M.&lt;/given-names&gt;</span></strong>&lt;/name&gt;
 &lt;name name-style="western"&gt;&lt;surname&gt;Conti&lt;/surname&gt;
-<strong><span class="focus">&lt;given-names&gt;P. S.&lt;/given-names&gt;</span></strong>&lt;/name&gt;
+<strong><span class=
+"focus">&lt;given-names&gt;P. S.&lt;/given-names&gt;</span></strong>&lt;/name&gt;
 &lt;publisher-name&gt;Informa Healthcare&lt;/publisher-name&gt;, 
 Essex, United Kingdom, 2010, Price: &lt;price&gt;$324.00&lt;/price&gt;. 
 ISBN: &lt;isbn&gt;9781420058741&lt;/isbn&gt;, 80 p. (hardcover)
 &lt;/product&gt;
 ...
 
-</pre></div></div><div class="moduledefined"><h2 class="header">Module</h2><p class="moduledefined">JATS-common1.ent</p></div><div class="pagefooter"><h2 class="headname">Article Authoring Tag Library  NISO JATS Draft Version 1.1d1</h2><h4 class="pubdate">Version of December 2013</h4></div></body></html>
+</pre>
+    </div>
+  </div>
+
+  <div class="moduledefined">
+    <h2 class="header">Module</h2>
+
+    <p class="moduledefined">JATS-common1.ent</p>
+  </div>
+
+  <div class="pagefooter">
+    <h2 class="headname">Article Authoring Tag Library NISO JATS Draft Version 1.1d1</h2>
+
+    <h4 class="pubdate">Version of December 2013</h4>
+  </div>
+</body>
+</html>

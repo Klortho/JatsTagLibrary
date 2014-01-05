@@ -1,6 +1,135 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008--><link rel="stylesheet" href="auto-css.css" type="text/css"><title>Element: Quote, Displayed</title></head><body class="main"><div class="pageheader"><h2 class="headname">Article Authoring Tag Library  NISO JATS Draft Version 1.1d1</h2><h4 class="sponsor">National Center for Biotechnology Information (NCBI)<br class="linebrk"> National Library of
-   Medicine (NLM)</h4></div><div class="header"><h1 class="elementtag">&lt;disp-quote&gt;</h1><h1 class="elementname">Quote, Displayed</h1></div><div class="definition"><p class="para">Extract or extended quoted passage from another work, usually made typographically
-            distinct from surrounding text.</p></div><div class="remarks"><h2 class="header">Remarks</h2><p class="para"><strong>Best Practice:</strong> Use this element for epigraphs, as well as for block quotes and extracts within text.</p></div><div class="attrlist"><h2 class="header">Attributes</h2><h5 class="header"><a href="n-wyn0.html" target="main"><span class="attrtag">content-type</span></a> <a href="n-wyn0.html" target="main"><span class="attrname">Type of Content</span></a></h5><h5 class="header"><a href="n-82d0.html" target="main"><span class="attrtag">id</span></a> <a href="n-82d0.html" target="main"><span class="attrname">Document Internal Identifier</span></a></h5><h5 class="header"><a href="n-r6h0.html" target="main"><span class="attrtag">specific-use</span></a> <a href="n-r6h0.html" target="main"><span class="attrname">Specific Use</span></a></h5><h5 class="header"><a href="n-uyi0.html" target="main"><span class="attrtag">xml:base</span></a> <a href="n-uyi0.html" target="main"><span class="attrname">Base</span></a></h5><h5 class="header"><a href="n-xzi0.html" target="main"><span class="attrtag">xml:lang</span></a> <a href="n-xzi0.html" target="main"><span class="attrname">Language</span></a></h5></div><div class="contentmodel"><h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  disp-quote   <a href="n-ggq0.html" target="main" title="Quote, Displayed Model"><span class="petag">%disp-quote-model;</span></a>                           &gt;</pre></div><div class="contentmodel"><h2 class="header">Expanded Content Model</h2><p class="contentdesc">(title?, (p)+, attrib?, permissions?)</p></div><div class="modeldesc"><h2 class="header">Description</h2><p class="para">The following, in order:<ul class="bullist"><li><a href="n-znf0.html" target="main" title="Title"><span class="elementtag">&lt;title&gt;</span></a> <a href="n-znf0.html" target="main" title="<title&gt;"><span class="elementname">Title</span></a>, zero or one</li><li><a href="n-ndv0.html" target="main" title="Paragraph"><span class="elementtag">&lt;p&gt;</span></a> <a href="n-ndv0.html" target="main" title="<p&gt;"><span class="elementname">Paragraph</span></a>, one or more</li><li>Ownership Elements<ul class="bullist"><li><a href="n-m2c0.html" target="main" title="Attribution"><span class="elementtag">&lt;attrib&gt;</span></a> <a href="n-m2c0.html" target="main" title="<attrib&gt;"><span class="elementname">Attribution</span></a>, zero or one</li><li><a href="n-jc40.html" target="main" title="Permissions"><span class="elementtag">&lt;permissions&gt;</span></a> <a href="n-jc40.html" target="main" title="<permissions&gt;"><span class="elementname">Permissions</span></a>, zero or one</li></ul></li></ul></p></div><div class="elementcontext"><h3 class="header">This element may be contained in:</h3><p class="para"><a href="n-7d20.html" target="main" title="Appendix"><span class="elementtag">&lt;app&gt;</span></a>, <a href="n-h4c0.html" target="main" title="Biography"><span class="elementtag">&lt;bio&gt;</span></a>, <a href="n-b7c0.html" target="main" title="Body of the Document"><span class="elementtag">&lt;body&gt;</span></a>, <a href="n-ihc0.html" target="main" title="Boxed Text"><span class="elementtag">&lt;boxed-text&gt;</span></a>, <a href="n-wea0.html" target="main" title="Figure"><span class="elementtag">&lt;fig&gt;</span></a>, <a href="n-mdw0.html" target="main" title="License Paragraph"><span class="elementtag">&lt;license-p&gt;</span></a>, <a href="n-f9x0.html" target="main" title="Named Special (Subject) Content"><span class="elementtag">&lt;named-content&gt;</span></a>, <a href="n-ndv0.html" target="main" title="Paragraph"><span class="elementtag">&lt;p&gt;</span></a>, <a href="n-cst0.html" target="main" title="Section"><span class="elementtag">&lt;sec&gt;</span></a>, <a href="n-ax70.html" target="main" title="Styled Special (Subject) Content"><span class="elementtag">&lt;styled-content&gt;</span></a>, <a href="n-6se0.html" target="main" title="Table Wrapper"><span class="elementtag">&lt;table-wrap&gt;</span></a></p></div><div class="examp.group"><h3 class="header">Example 1</h3><div class="taggedexamp"><pre class="taggedtext">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta name="generator" content="HTML Tidy for Linux/x86 (vers 25 March 2009), see www.w3.org" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008-->
+  <link rel="stylesheet" href="auto-css.css" type="text/css" />
+
+  <title>Element: Quote, Displayed</title>
+</head>
+
+<body class="main">
+  <div class="pageheader">
+    <h2 class="headname">Article Authoring Tag Library NISO JATS Draft Version 1.1d1</h2>
+
+    <h4 class="sponsor">National Center for Biotechnology Information (NCBI)<br class="linebrk" />
+    National Library of Medicine (NLM)</h4>
+  </div>
+
+  <div class="header">
+    <h1 class="elementtag">&lt;disp-quote&gt;</h1>
+
+    <h1 class="elementname">Quote, Displayed</h1>
+  </div>
+
+  <div class="definition">
+    <p class="para">Extract or extended quoted passage from another work, usually made
+    typographically distinct from surrounding text.</p>
+  </div>
+
+  <div class="remarks">
+    <h2 class="header">Remarks</h2>
+
+    <p class="para"><strong>Best Practice:</strong> Use this element for epigraphs, as well as for
+    block quotes and extracts within text.</p>
+  </div>
+
+  <div class="attrlist">
+    <h2 class="header">Attributes</h2>
+
+    <h5 class="header"><a href="n-wyn0.html" target="main"><span class=
+    "attrtag">content-type</span></a> <a href="n-wyn0.html" target="main"><span class=
+    "attrname">Type of Content</span></a></h5>
+
+    <h5 class="header"><a href="n-82d0.html" target="main"><span class="attrtag">id</span></a>
+    <a href="n-82d0.html" target="main"><span class="attrname">Document Internal
+    Identifier</span></a></h5>
+
+    <h5 class="header"><a href="n-r6h0.html" target="main"><span class=
+    "attrtag">specific-use</span></a> <a href="n-r6h0.html" target="main"><span class=
+    "attrname">Specific Use</span></a></h5>
+
+    <h5 class="header"><a href="n-uyi0.html" target="main"><span class=
+    "attrtag">xml:base</span></a> <a href="n-uyi0.html" target="main"><span class=
+    "attrname">Base</span></a></h5>
+
+    <h5 class="header"><a href="n-xzi0.html" target="main"><span class=
+    "attrtag">xml:lang</span></a> <a href="n-xzi0.html" target="main"><span class=
+    "attrname">Language</span></a></h5>
+  </div>
+
+  <div class="contentmodel">
+    <h2 class="header first">Content Model</h2>
+    <pre class="contentdesc">
+&lt;!ELEMENT  disp-quote   <a href="n-ggq0.html" target="main" title=
+"Quote, Displayed Model"><span class=
+"petag">%disp-quote-model;</span></a>                           &gt;
+</pre>
+  </div>
+
+  <div class="contentmodel">
+    <h2 class="header">Expanded Content Model</h2>
+
+    <p class="contentdesc">(title?, (p)+, attrib?, permissions?)</p>
+  </div>
+
+  <div class="modeldesc">
+    <h2 class="header">Description</h2>
+
+    <p class="para">The following, in order:</p>
+
+    <ul class="bullist">
+      <li><a href="n-znf0.html" target="main" title="Title"><span class=
+      "elementtag">&lt;title&gt;</span></a> <a href="n-znf0.html" target="main" title=
+      "&lt;title&gt;"><span class="elementname">Title</span></a>, zero or one</li>
+
+      <li><a href="n-ndv0.html" target="main" title="Paragraph"><span class=
+      "elementtag">&lt;p&gt;</span></a> <a href="n-ndv0.html" target="main" title=
+      "&lt;p&gt;"><span class="elementname">Paragraph</span></a>, one or more</li>
+
+      <li>Ownership Elements
+
+        <ul class="bullist">
+          <li><a href="n-m2c0.html" target="main" title="Attribution"><span class=
+          "elementtag">&lt;attrib&gt;</span></a> <a href="n-m2c0.html" target="main" title=
+          "&lt;attrib&gt;"><span class="elementname">Attribution</span></a>, zero or one</li>
+
+          <li><a href="n-jc40.html" target="main" title="Permissions"><span class=
+          "elementtag">&lt;permissions&gt;</span></a> <a href="n-jc40.html" target="main" title=
+          "&lt;permissions&gt;"><span class="elementname">Permissions</span></a>, zero or one</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <div class="elementcontext">
+    <h3 class="header">This element may be contained in:</h3>
+
+    <p class="para"><a href="n-7d20.html" target="main" title="Appendix"><span class=
+    "elementtag">&lt;app&gt;</span></a>, <a href="n-h4c0.html" target="main" title=
+    "Biography"><span class="elementtag">&lt;bio&gt;</span></a>, <a href="n-b7c0.html" target=
+    "main" title="Body of the Document"><span class="elementtag">&lt;body&gt;</span></a>, <a href=
+    "n-ihc0.html" target="main" title="Boxed Text"><span class=
+    "elementtag">&lt;boxed-text&gt;</span></a>, <a href="n-wea0.html" target="main" title=
+    "Figure"><span class="elementtag">&lt;fig&gt;</span></a>, <a href="n-mdw0.html" target="main"
+    title="License Paragraph"><span class="elementtag">&lt;license-p&gt;</span></a>, <a href=
+    "n-f9x0.html" target="main" title="Named Special (Subject) Content"><span class=
+    "elementtag">&lt;named-content&gt;</span></a>, <a href="n-ndv0.html" target="main" title=
+    "Paragraph"><span class="elementtag">&lt;p&gt;</span></a>, <a href="n-cst0.html" target="main"
+    title="Section"><span class="elementtag">&lt;sec&gt;</span></a>, <a href="n-ax70.html" target=
+    "main" title="Styled Special (Subject) Content"><span class=
+    "elementtag">&lt;styled-content&gt;</span></a>, <a href="n-6se0.html" target="main" title=
+    "Table Wrapper"><span class="elementtag">&lt;table-wrap&gt;</span></a></p>
+  </div>
+
+  <div class="examp.group">
+    <h3 class="header">Example 1</h3>
+
+    <div class="taggedexamp">
+      <pre class="taggedtext">
 ...
 &lt;sec&gt;
 &lt;title&gt;Introduction&lt;/title&gt;
@@ -16,7 +145,17 @@ Ecclesiastes has a much wider scope ...&lt;/p&gt;
 &lt;/sec&gt;
 ...
 
-</pre></div></div><div class="examp.group"><h3 class="header">Example 2</h3><p class="para">Epigraph:</p><div class="taggedexamp"><pre class="taggedtext">
+</pre>
+    </div>
+  </div>
+
+  <div class="examp.group">
+    <h3 class="header">Example 2</h3>
+
+    <p class="para">Epigraph:</p>
+
+    <div class="taggedexamp">
+      <pre class="taggedtext">
 ...
 &lt;body&gt;
 <strong><span class="focus">&lt;disp-quote&gt;
@@ -38,4 +177,20 @@ but even as we do so, we struggle ...&lt;/p&gt;
 &lt;sec&gt;...&lt;/sec&gt;
 &lt;/body&gt;
 ...
-</pre></div></div><div class="moduledefined"><h2 class="header">Module</h2><p class="moduledefined">JATS-para1.ent</p></div><div class="pagefooter"><h2 class="headname">Article Authoring Tag Library  NISO JATS Draft Version 1.1d1</h2><h4 class="pubdate">Version of December 2013</h4></div></body></html>
+</pre>
+    </div>
+  </div>
+
+  <div class="moduledefined">
+    <h2 class="header">Module</h2>
+
+    <p class="moduledefined">JATS-para1.ent</p>
+  </div>
+
+  <div class="pagefooter">
+    <h2 class="headname">Article Authoring Tag Library NISO JATS Draft Version 1.1d1</h2>
+
+    <h4 class="pubdate">Version of December 2013</h4>
+  </div>
+</body>
+</html>

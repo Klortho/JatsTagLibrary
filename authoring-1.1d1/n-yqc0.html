@@ -1,5 +1,137 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008--><link rel="stylesheet" href="auto-css.css" type="text/css"><title>Element: Caption of a Figure, Table, etc.</title></head><body class="main"><div class="pageheader"><h2 class="headname">Article Authoring Tag Library  NISO JATS Draft Version 1.1d1</h2><h4 class="sponsor">National Center for Biotechnology Information (NCBI)<br class="linebrk"> National Library of
-   Medicine (NLM)</h4></div><div class="header"><h1 class="elementtag">&lt;caption&gt;</h1><h1 class="elementname">Caption of a Figure, Table, etc.</h1></div><div class="definition"><p class="para">Container element for the textual description that is associated with an object (for example, with a <a href="n-wea0.html" target="main" title="Figure"><span class="elementtag">&lt;fig&gt;</span></a> or <a href="n-8ve0.html" target="main" title="Table (NISO JATS table model)"><span class="elementtag">&lt;table&gt;</span></a>).</p></div><div class="remarks"><h2 class="header">Remarks</h2><p class="para">A caption is a visible textual description of a table, figure, or similar object. In print or display, a caption is usually recognizable because it is not part of the ordinary text flow; it sits just under, above, beside, or in the same small window or page area as the tabular portions of a table or the graphical portions of a figure. A <a href="n-yqc0.html" target="main" title="Caption of a Figure, Table, etc."><span class="elementtag">&lt;caption&gt;</span></a> may contain many kinds of text associated with its object, for example, a title (tagged as <a href="n-znf0.html" target="main" title="Title"><span class="elementtag">&lt;title&gt;</span></a>), a descriptive paragraph (tagged as <a href="n-ndv0.html" target="main" title="Paragraph"><span class="elementtag">&lt;p&gt;</span></a>), or a legend (which is not identified as a separate element in this Suite).</p><p class="para">Captions may just contain paragraphs of explanatory text (see example below) or a caption may contain an explicit title as well as text. The title is typically a short, pithy statement that acts as a heading and may be made typographically distinct, for example, set in bold or italics while the following paragraph is in roman.</p></div><div class="attrlist"><h2 class="header">Attributes</h2><h5 class="header"><a href="n-wyn0.html" target="main"><span class="attrtag">content-type</span></a> <a href="n-wyn0.html" target="main"><span class="attrname">Type of Content</span></a></h5><h5 class="header"><a href="n-82d0.html" target="main"><span class="attrtag">id</span></a> <a href="n-82d0.html" target="main"><span class="attrname">Document Internal Identifier</span></a></h5><h5 class="header"><a href="n-r6h0.html" target="main"><span class="attrtag">specific-use</span></a> <a href="n-r6h0.html" target="main"><span class="attrname">Specific Use</span></a></h5><h5 class="header"><a href="n-6qh0.html" target="main"><span class="attrtag">style</span></a> <a href="n-6qh0.html" target="main"><span class="attrname">Style (NISO JATS table model; MathML Tag Set)</span></a></h5><h5 class="header"><a href="n-uyi0.html" target="main"><span class="attrtag">xml:base</span></a> <a href="n-uyi0.html" target="main"><span class="attrname">Base</span></a></h5><h5 class="header"><a href="n-xzi0.html" target="main"><span class="attrtag">xml:lang</span></a> <a href="n-xzi0.html" target="main"><span class="attrname">Language</span></a></h5></div><div class="contentmodel"><h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  caption      <a href="n-2ij0.html" target="main" title="Caption Model"><span class="petag">%caption-model;</span></a>                              &gt;</pre></div><div class="contentmodel"><h2 class="header">Expanded Content Model</h2><p class="contentdesc">(title?, (p)*)</p></div><div class="modeldesc"><h2 class="header">Description</h2><p class="para">The following, in order:<ul class="bullist"><li><a href="n-znf0.html" target="main" title="Title"><span class="elementtag">&lt;title&gt;</span></a> <a href="n-znf0.html" target="main" title="<title&gt;"><span class="elementname">Title</span></a>, zero or one</li><li><a href="n-ndv0.html" target="main" title="Paragraph"><span class="elementtag">&lt;p&gt;</span></a> <a href="n-ndv0.html" target="main" title="<p&gt;"><span class="elementname">Paragraph</span></a>, zero or more</li></ul></p></div><div class="elementcontext"><h3 class="header">This element may be contained in:</h3><p class="para"><a href="n-ihc0.html" target="main" title="Boxed Text"><span class="elementtag">&lt;boxed-text&gt;</span></a>, <a href="n-m530.html" target="main" title="Chemical Structure Wrapper"><span class="elementtag">&lt;chem-struct-wrap&gt;</span></a>, <a href="n-xn80.html" target="main" title="Formula, Display Group"><span class="elementtag">&lt;disp-formula-group&gt;</span></a>, <a href="n-wea0.html" target="main" title="Figure"><span class="elementtag">&lt;fig&gt;</span></a>, <a href="n-92e0.html" target="main" title="Supplementary Material"><span class="elementtag">&lt;supplementary-material&gt;</span></a>, <a href="n-6se0.html" target="main" title="Table Wrapper"><span class="elementtag">&lt;table-wrap&gt;</span></a></p></div><div class="examp.group"><h3 class="header">Example 1</h3><p class="para">In a figure:</p><div class="taggedexamp"><pre class="taggedtext">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta name="generator" content="HTML Tidy for Linux/x86 (vers 25 March 2009), see www.w3.org" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008-->
+  <link rel="stylesheet" href="auto-css.css" type="text/css" />
+
+  <title>Element: Caption of a Figure, Table, etc.</title>
+</head>
+
+<body class="main">
+  <div class="pageheader">
+    <h2 class="headname">Article Authoring Tag Library NISO JATS Draft Version 1.1d1</h2>
+
+    <h4 class="sponsor">National Center for Biotechnology Information (NCBI)<br class="linebrk" />
+    National Library of Medicine (NLM)</h4>
+  </div>
+
+  <div class="header">
+    <h1 class="elementtag">&lt;caption&gt;</h1>
+
+    <h1 class="elementname">Caption of a Figure, Table, etc.</h1>
+  </div>
+
+  <div class="definition">
+    <p class="para">Container element for the textual description that is associated with an object
+    (for example, with a <a href="n-wea0.html" target="main" title="Figure"><span class=
+    "elementtag">&lt;fig&gt;</span></a> or <a href="n-8ve0.html" target="main" title=
+    "Table (NISO JATS table model)"><span class="elementtag">&lt;table&gt;</span></a>).</p>
+  </div>
+
+  <div class="remarks">
+    <h2 class="header">Remarks</h2>
+
+    <p class="para">A caption is a visible textual description of a table, figure, or similar
+    object. In print or display, a caption is usually recognizable because it is not part of the
+    ordinary text flow; it sits just under, above, beside, or in the same small window or page area
+    as the tabular portions of a table or the graphical portions of a figure. A <a href=
+    "n-yqc0.html" target="main" title="Caption of a Figure, Table, etc."><span class=
+    "elementtag">&lt;caption&gt;</span></a> may contain many kinds of text associated with its
+    object, for example, a title (tagged as <a href="n-znf0.html" target="main" title=
+    "Title"><span class="elementtag">&lt;title&gt;</span></a>), a descriptive paragraph (tagged as
+    <a href="n-ndv0.html" target="main" title="Paragraph"><span class=
+    "elementtag">&lt;p&gt;</span></a>), or a legend (which is not identified as a separate element
+    in this Suite).</p>
+
+    <p class="para">Captions may just contain paragraphs of explanatory text (see example below) or
+    a caption may contain an explicit title as well as text. The title is typically a short, pithy
+    statement that acts as a heading and may be made typographically distinct, for example, set in
+    bold or italics while the following paragraph is in roman.</p>
+  </div>
+
+  <div class="attrlist">
+    <h2 class="header">Attributes</h2>
+
+    <h5 class="header"><a href="n-wyn0.html" target="main"><span class=
+    "attrtag">content-type</span></a> <a href="n-wyn0.html" target="main"><span class=
+    "attrname">Type of Content</span></a></h5>
+
+    <h5 class="header"><a href="n-82d0.html" target="main"><span class="attrtag">id</span></a>
+    <a href="n-82d0.html" target="main"><span class="attrname">Document Internal
+    Identifier</span></a></h5>
+
+    <h5 class="header"><a href="n-r6h0.html" target="main"><span class=
+    "attrtag">specific-use</span></a> <a href="n-r6h0.html" target="main"><span class=
+    "attrname">Specific Use</span></a></h5>
+
+    <h5 class="header"><a href="n-6qh0.html" target="main"><span class="attrtag">style</span></a>
+    <a href="n-6qh0.html" target="main"><span class="attrname">Style (NISO JATS table model; MathML
+    Tag Set)</span></a></h5>
+
+    <h5 class="header"><a href="n-uyi0.html" target="main"><span class=
+    "attrtag">xml:base</span></a> <a href="n-uyi0.html" target="main"><span class=
+    "attrname">Base</span></a></h5>
+
+    <h5 class="header"><a href="n-xzi0.html" target="main"><span class=
+    "attrtag">xml:lang</span></a> <a href="n-xzi0.html" target="main"><span class=
+    "attrname">Language</span></a></h5>
+  </div>
+
+  <div class="contentmodel">
+    <h2 class="header first">Content Model</h2>
+    <pre class="contentdesc">
+&lt;!ELEMENT  caption      <a href="n-2ij0.html" target="main" title="Caption Model"><span class=
+"petag">%caption-model;</span></a>                              &gt;
+</pre>
+  </div>
+
+  <div class="contentmodel">
+    <h2 class="header">Expanded Content Model</h2>
+
+    <p class="contentdesc">(title?, (p)*)</p>
+  </div>
+
+  <div class="modeldesc">
+    <h2 class="header">Description</h2>
+
+    <p class="para">The following, in order:</p>
+
+    <ul class="bullist">
+      <li><a href="n-znf0.html" target="main" title="Title"><span class=
+      "elementtag">&lt;title&gt;</span></a> <a href="n-znf0.html" target="main" title=
+      "&lt;title&gt;"><span class="elementname">Title</span></a>, zero or one</li>
+
+      <li><a href="n-ndv0.html" target="main" title="Paragraph"><span class=
+      "elementtag">&lt;p&gt;</span></a> <a href="n-ndv0.html" target="main" title=
+      "&lt;p&gt;"><span class="elementname">Paragraph</span></a>, zero or more</li>
+    </ul>
+  </div>
+
+  <div class="elementcontext">
+    <h3 class="header">This element may be contained in:</h3>
+
+    <p class="para"><a href="n-ihc0.html" target="main" title="Boxed Text"><span class=
+    "elementtag">&lt;boxed-text&gt;</span></a>, <a href="n-m530.html" target="main" title=
+    "Chemical Structure Wrapper"><span class="elementtag">&lt;chem-struct-wrap&gt;</span></a>,
+    <a href="n-xn80.html" target="main" title="Formula, Display Group"><span class=
+    "elementtag">&lt;disp-formula-group&gt;</span></a>, <a href="n-wea0.html" target="main" title=
+    "Figure"><span class="elementtag">&lt;fig&gt;</span></a>, <a href="n-92e0.html" target="main"
+    title="Supplementary Material"><span class=
+    "elementtag">&lt;supplementary-material&gt;</span></a>, <a href="n-6se0.html" target="main"
+    title="Table Wrapper"><span class="elementtag">&lt;table-wrap&gt;</span></a></p>
+  </div>
+
+  <div class="examp.group">
+    <h3 class="header">Example 1</h3>
+
+    <p class="para">In a figure:</p>
+
+    <div class="taggedexamp">
+      <pre class="taggedtext">
 ...
 &lt;sec&gt;
 &lt;title&gt;Results&lt;/title&gt;
@@ -23,7 +155,11 @@ xlink:href="fors2662.f1"  &gt;
 &lt;/sec&gt;
 ...
 
-</pre></div><div class="taggedexamp"><pre class="taggedtext">
+</pre>
+    </div>
+
+    <div class="taggedexamp">
+      <pre class="taggedtext">
   
 ... 
 &lt;fig id="f8" orientation="portrait" position="float"&gt;
@@ -36,7 +172,18 @@ for 0 or 1.&lt;/p&gt;
 &lt;/fig&gt;
 ...
 
-  </pre></div></div><div class="examp.group"><h3 class="header">Example 2</h3><p class="para">In a table:</p><div class="taggedexamp"><pre class="taggedtext">
+  
+</pre>
+    </div>
+  </div>
+
+  <div class="examp.group">
+    <h3 class="header">Example 2</h3>
+
+    <p class="para">In a table:</p>
+
+    <div class="taggedexamp">
+      <pre class="taggedtext">
 ...
 &lt;table-wrap id="TN0.170"&gt;
 <strong><span class="focus">&lt;caption&gt;
@@ -58,7 +205,11 @@ services&lt;/p&gt;
 &lt;/table-wrap&gt;
 ...
 
-</pre></div><div class="taggedexamp"><pre class="taggedtext">
+</pre>
+    </div>
+
+    <div class="taggedexamp">
+      <pre class="taggedtext">
  
 ...
 &lt;table-wrap id="t2" orientation="portrait" position="float"&gt;
@@ -78,4 +229,21 @@ in &lt;italic&gt;y&lt;/italic&gt; direction).&lt;/p&gt;
 &lt;/table-wrap&gt;
 ...
 
- </pre></div></div><div class="moduledefined"><h2 class="header">Module</h2><p class="moduledefined">JATS-display1.ent</p></div><div class="pagefooter"><h2 class="headname">Article Authoring Tag Library  NISO JATS Draft Version 1.1d1</h2><h4 class="pubdate">Version of December 2013</h4></div></body></html>
+ 
+</pre>
+    </div>
+  </div>
+
+  <div class="moduledefined">
+    <h2 class="header">Module</h2>
+
+    <p class="moduledefined">JATS-display1.ent</p>
+  </div>
+
+  <div class="pagefooter">
+    <h2 class="headname">Article Authoring Tag Library NISO JATS Draft Version 1.1d1</h2>
+
+    <h4 class="pubdate">Version of December 2013</h4>
+  </div>
+</body>
+</html>

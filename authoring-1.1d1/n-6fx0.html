@@ -1,12 +1,196 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008--><link rel="stylesheet" href="auto-css.css" type="text/css"><title>Element: Math (MathML Tag Set)</title></head><body class="main"><div class="pageheader"><h2 class="headname">Article Authoring Tag Library  NISO JATS Draft Version 1.1d1</h2><h4 class="sponsor">National Center for Biotechnology Information (NCBI)<br class="linebrk"> National Library of
-   Medicine (NLM)</h4></div><div class="header"><h1 class="elementtag">&lt;mml:math&gt;</h1><h1 class="elementname">Math (MathML Tag Set)</h1></div><div class="definition"><p class="para">Use documentation for the Mathematical Markup Language (MathML) 3.0 Tag Set (<a href="http://www.w3.org/TR/MathML3/" target="_new" class="external">http://www.w3.org/TR/MathML3/</a>) or the
-Mathematical Markup Language (MathML) 2.0 Tag Set (<a href="http://www.w3.org/TR/MathML2/" target="_new" class="external">http://www.w3.org/TR/MathML2/</a>).</p></div><div class="remarks"><h2 class="header">Remarks</h2><p class="para"><strong>&lt;mml:math&gt;:</strong> The top-level element for math tagged according to the MathML Tag Set.</p><p class="para"><strong>MathML 2.0 and MathML 3.0:</strong> While MathML 3.0 is the preferred
-MathML version for new material, NISO JATS recognizes that many users have material in MathML 2.0, 
-and MathML 2.0 will continue to be supported in this version of JATS. There are two distinct JATS
-DTDS, one for MathML 2.0 and one for MathML 3.0. </p><p class="para"><strong>Changes to MathML:</strong>  With one exception, the various elements and attributes of MathML used inside <span class="elementtag">&lt;mml:math&gt;</span> are not documented here, and the reader should refer to online documentation from the W3C and Design Science. The one exception is the <tt>&lt;mml:annotation-xml&gt;</tt> element. The content model for the <tt>&lt;mml:annotation-xml&gt;</tt> is normally “<tt>ANY</tt>”, but this causes difficulties in many editing tools, so this Tag Set has reduced the content model to one or more paragraphs: <tt>(p+)</tt>.</p><p class="para"><strong>MathML Namespacing:</strong> The vast majority of users of this Tag Set use the DTDs as their primary (or only) model, so this Tag Set is maintained to ensure that users of DTDs and DTD-based tools will work well. Because DTDs do not “play well” with namespaces, and most DTD-based tools are not namespace aware, the MathML namespace has been hardcoded to the prefix “<tt>mml</tt>” in the DTDs. This means that the element name, in the DTDs, really is <span class="elementtag">&lt;mml:math&gt;</span>. While this was the usual prefix when this Tag Set was originally established, the
-more frequently seen prefix is now “<tt>m</tt>”. Since XSD and RNG use “real” namespaces, this makes no difference to them, as to a namespace-aware processor a namespace prefix is only a placeholder. For DTD users, the element names in the MathML will need to be “<tt>mml</tt>” (for example, <tt>&lt;mml:mfrac&gt;</tt>), but tools can be set to provide that prefix and the essence of namespaces is that prefixes do not matter, so no harm is done.</p><p class="para">Some current MathML viewers cannot handle MathML elements that are prefixed (using
-the tag 
-<tt>&lt;mml:msub&gt;</tt> rather than the tag <tt>&lt;msub&gt;</tt>) <em>unless</em> the MathML namespace pseudo-attribute has been placed directly on the <a href="n-6fx0.html" target="main" title="Math (MathML Tag Set)"><span class="elementtag">&lt;mml:math&gt;</span></a> element (<tt>&lt;mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML"&gt;</tt>); the presence of the namespace on the top-level element is not good enough. By default in this Tag Set, the namespace has been established as a <tt>#FIXED</tt> attribute on the <a href="n-6fx0.html" target="main" title="Math (MathML Tag Set)"><span class="elementtag">&lt;mml:math&gt;</span></a> element, but processors not using a DTD/schema cannot see defaulted or <tt>#FIXED</tt> attributes. For such processors, the MathML namespace attribute must be placed directly on all <a href="n-6fx0.html" target="main" title="Math (MathML Tag Set)"><span class="elementtag">&lt;mml:math&gt;</span></a> elements in the instance document.</p></div><div class="attrlist"><h2 class="header">Attributes</h2><h5 class="header"><a href="n-5mg0.html" target="main"><span class="attrtag">altimg</span></a> <a href="n-5mg0.html" target="main"><span class="attrname">Alternate Image (MathML Tag Set)</span></a></h5><h5 class="header"><a href="n-qmg0.html" target="main"><span class="attrtag">alttext</span></a> <a href="n-qmg0.html" target="main"><span class="attrname">Alternate Text (MathML Tag Set)</span></a></h5><h5 class="header"><a href="n-vwn0.html" target="main"><span class="attrtag">baseline</span></a> <a href="n-vwn0.html" target="main"><span class="attrname">Baseline (MathML Tag Set)</span></a></h5><h5 class="header"><a href="n-u6n0.html" target="main"><span class="attrtag">class</span></a> <a href="n-u6n0.html" target="main"><span class="attrname">Class (MathML Tag Set)</span></a></h5><h5 class="header"><a href="n-b460.html" target="main"><span class="attrtag">display</span></a> <a href="n-b460.html" target="main"><span class="attrname">Display (MathML Tag Set)</span></a></h5><h5 class="header"><a href="n-ekd0.html" target="main"><span class="attrtag">height</span></a> <a href="n-ekd0.html" target="main"><span class="attrname">Height (MathML Tag Set)</span></a></h5><h5 class="header"><a href="n-82d0.html" target="main"><span class="attrtag">id</span></a> <a href="n-82d0.html" target="main"><span class="attrname">Document Internal Identifier</span></a></h5><h5 class="header"><a href="n-7yd0.html" target="main"><span class="attrtag">macros</span></a> <a href="n-7yd0.html" target="main"><span class="attrname">Macros (MathML Tag Set)</span></a></h5><h5 class="header"><a href="n-sbd0.html" target="main"><span class="attrtag">mode</span></a> <a href="n-sbd0.html" target="main"><span class="attrname">Mode (MathML Tag Set)</span></a></h5><h5 class="header"><a href="n-c9d0.html" target="main"><span class="attrtag">name</span></a> <a href="n-c9d0.html" target="main"><span class="attrname">Name</span></a></h5><h5 class="header"><a href="n-75r0.html" target="main"><span class="attrtag">other</span></a> <a href="n-75r0.html" target="main"><span class="attrname">Other (MathML Tag Set)</span></a></h5><h5 class="header"><a href="n-58r0.html" target="main"><span class="attrtag">overflow</span></a> <a href="n-58r0.html" target="main"><span class="attrname">Overflow (MathML Tag Set)</span></a></h5><h5 class="header"><a href="n-6qh0.html" target="main"><span class="attrtag">style</span></a> <a href="n-6qh0.html" target="main"><span class="attrname">Style (NISO JATS table model; MathML Tag Set)</span></a></h5><h5 class="header"><a href="n-k3i0.html" target="main"><span class="attrtag">type</span></a> <a href="n-k3i0.html" target="main"><span class="attrname">Type (MathML Tag Set)</span></a></h5><h5 class="header"><a href="n-tui0.html" target="main"><span class="attrtag">width</span></a> <a href="n-tui0.html" target="main"><span class="attrname">Width (NISO JATS table model; MathML Tag Set)</span></a></h5><h5 class="header"><a href="n-yvi0.html" target="main"><span class="attrtag">xlink:href</span></a> <a href="n-yvi0.html" target="main"><span class="attrname">Href (Linking Mechanism)</span></a></h5><h5 class="header"><a href="n-zgi0.html" target="main"><span class="attrtag">xlink:type</span></a> <a href="n-zgi0.html" target="main"><span class="attrname">Type of Link</span></a></h5><h5 class="header"><a href="n-fdi0.html" target="main"><span class="attrtag">xmlns:mml</span></a> <a href="n-fdi0.html" target="main"><span class="attrname">MathML Namespace Declaration</span></a></h5><h5 class="header"><a href="n-quy0.html" target="main"><span class="attrtag">xref</span></a> <a href="n-quy0.html" target="main"><span class="attrname">Cross-Reference (MathML Tag Set)</span></a></h5><h5 class="header"><a href="n-sxy0.html" target="main"><span class="attrtag">xsi:schemaLocation</span></a> <a href="n-sxy0.html" target="main"><span class="attrname">Schema Location (MathML Tag Set)</span></a></h5></div><div class="elementcontext"><h3 class="header">This element may be contained in:</h3><p class="para"><a href="n-m720.html" target="main" title="Alternatives For Processing"><span class="elementtag">&lt;alternatives&gt;</span></a>, <a href="n-gt80.html" target="main" title="Formula, Display"><span class="elementtag">&lt;disp-formula&gt;</span></a>, <a href="n-xgu0.html" target="main" title="Formula, Inline"><span class="elementtag">&lt;inline-formula&gt;</span></a>, <a href="n-mdw0.html" target="main" title="License Paragraph"><span class="elementtag">&lt;license-p&gt;</span></a>, <a href="n-f9x0.html" target="main" title="Named Special (Subject) Content"><span class="elementtag">&lt;named-content&gt;</span></a>, <a href="n-ndv0.html" target="main" title="Paragraph"><span class="elementtag">&lt;p&gt;</span></a>, <a href="n-ax70.html" target="main" title="Styled Special (Subject) Content"><span class="elementtag">&lt;styled-content&gt;</span></a>, <a href="n-qre0.html" target="main" title="Table Data Cell (NISO JATS table model)"><span class="elementtag">&lt;td&gt;</span></a>, <a href="n-78f0.html" target="main" title="Textual Form"><span class="elementtag">&lt;textual-form&gt;</span></a>, <a href="n-dvf0.html" target="main" title="Table Header Cell (NISO JATS table model)"><span class="elementtag">&lt;th&gt;</span></a></p></div><div class="examp.group"><h3 class="header">Example 1</h3><p class="para">A display formula inside a paragraph:</p><div class="taggedexamp"><pre class="taggedtext">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta name="generator" content="HTML Tidy for Linux/x86 (vers 25 March 2009), see www.w3.org" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008-->
+  <link rel="stylesheet" href="auto-css.css" type="text/css" />
+
+  <title>Element: Math (MathML Tag Set)</title>
+</head>
+
+<body class="main">
+  <div class="pageheader">
+    <h2 class="headname">Article Authoring Tag Library NISO JATS Draft Version 1.1d1</h2>
+
+    <h4 class="sponsor">National Center for Biotechnology Information (NCBI)<br class="linebrk" />
+    National Library of Medicine (NLM)</h4>
+  </div>
+
+  <div class="header">
+    <h1 class="elementtag">&lt;mml:math&gt;</h1>
+
+    <h1 class="elementname">Math (MathML Tag Set)</h1>
+  </div>
+
+  <div class="definition">
+    <p class="para">Use documentation for the Mathematical Markup Language (MathML) 3.0 Tag Set
+    (<a href="http://www.w3.org/TR/MathML3/" target="_new" class=
+    "external">http://www.w3.org/TR/MathML3/</a>) or the Mathematical Markup Language (MathML) 2.0
+    Tag Set (<a href="http://www.w3.org/TR/MathML2/" target="_new" class=
+    "external">http://www.w3.org/TR/MathML2/</a>).</p>
+  </div>
+
+  <div class="remarks">
+    <h2 class="header">Remarks</h2>
+
+    <p class="para"><strong>&lt;mml:math&gt;:</strong> The top-level element for math tagged
+    according to the MathML Tag Set.</p>
+
+    <p class="para"><strong>MathML 2.0 and MathML 3.0:</strong> While MathML 3.0 is the preferred
+    MathML version for new material, NISO JATS recognizes that many users have material in MathML
+    2.0, and MathML 2.0 will continue to be supported in this version of JATS. There are two
+    distinct JATS DTDS, one for MathML 2.0 and one for MathML 3.0.</p>
+
+    <p class="para"><strong>Changes to MathML:</strong> With one exception, the various elements
+    and attributes of MathML used inside <span class="elementtag">&lt;mml:math&gt;</span> are not
+    documented here, and the reader should refer to online documentation from the W3C and Design
+    Science. The one exception is the <tt>&lt;mml:annotation-xml&gt;</tt> element. The content
+    model for the <tt>&lt;mml:annotation-xml&gt;</tt> is normally “<tt>ANY</tt>”, but this causes
+    difficulties in many editing tools, so this Tag Set has reduced the content model to one or
+    more paragraphs: <tt>(p+)</tt>.</p>
+
+    <p class="para"><strong>MathML Namespacing:</strong> The vast majority of users of this Tag Set
+    use the DTDs as their primary (or only) model, so this Tag Set is maintained to ensure that
+    users of DTDs and DTD-based tools will work well. Because DTDs do not “play well” with
+    namespaces, and most DTD-based tools are not namespace aware, the MathML namespace has been
+    hardcoded to the prefix “<tt>mml</tt>” in the DTDs. This means that the element name, in the
+    DTDs, really is <span class="elementtag">&lt;mml:math&gt;</span>. While this was the usual
+    prefix when this Tag Set was originally established, the more frequently seen prefix is now
+    “<tt>m</tt>”. Since XSD and RNG use “real” namespaces, this makes no difference to them, as to
+    a namespace-aware processor a namespace prefix is only a placeholder. For DTD users, the
+    element names in the MathML will need to be “<tt>mml</tt>” (for example,
+    <tt>&lt;mml:mfrac&gt;</tt>), but tools can be set to provide that prefix and the essence of
+    namespaces is that prefixes do not matter, so no harm is done.</p>
+
+    <p class="para">Some current MathML viewers cannot handle MathML elements that are prefixed
+    (using the tag <tt>&lt;mml:msub&gt;</tt> rather than the tag <tt>&lt;msub&gt;</tt>)
+    <em>unless</em> the MathML namespace pseudo-attribute has been placed directly on the <a href=
+    "n-6fx0.html" target="main" title="Math (MathML Tag Set)"><span class=
+    "elementtag">&lt;mml:math&gt;</span></a> element (<tt>&lt;mml:math
+    xmlns:mml="http://www.w3.org/1998/Math/MathML"&gt;</tt>); the presence of the namespace on the
+    top-level element is not good enough. By default in this Tag Set, the namespace has been
+    established as a <tt>#FIXED</tt> attribute on the <a href="n-6fx0.html" target="main" title=
+    "Math (MathML Tag Set)"><span class="elementtag">&lt;mml:math&gt;</span></a> element, but
+    processors not using a DTD/schema cannot see defaulted or <tt>#FIXED</tt> attributes. For such
+    processors, the MathML namespace attribute must be placed directly on all <a href="n-6fx0.html"
+    target="main" title="Math (MathML Tag Set)"><span class=
+    "elementtag">&lt;mml:math&gt;</span></a> elements in the instance document.</p>
+  </div>
+
+  <div class="attrlist">
+    <h2 class="header">Attributes</h2>
+
+    <h5 class="header"><a href="n-5mg0.html" target="main"><span class="attrtag">altimg</span></a>
+    <a href="n-5mg0.html" target="main"><span class="attrname">Alternate Image (MathML Tag
+    Set)</span></a></h5>
+
+    <h5 class="header"><a href="n-qmg0.html" target="main"><span class="attrtag">alttext</span></a>
+    <a href="n-qmg0.html" target="main"><span class="attrname">Alternate Text (MathML Tag
+    Set)</span></a></h5>
+
+    <h5 class="header"><a href="n-vwn0.html" target="main"><span class=
+    "attrtag">baseline</span></a> <a href="n-vwn0.html" target="main"><span class=
+    "attrname">Baseline (MathML Tag Set)</span></a></h5>
+
+    <h5 class="header"><a href="n-u6n0.html" target="main"><span class="attrtag">class</span></a>
+    <a href="n-u6n0.html" target="main"><span class="attrname">Class (MathML Tag
+    Set)</span></a></h5>
+
+    <h5 class="header"><a href="n-b460.html" target="main"><span class="attrtag">display</span></a>
+    <a href="n-b460.html" target="main"><span class="attrname">Display (MathML Tag
+    Set)</span></a></h5>
+
+    <h5 class="header"><a href="n-ekd0.html" target="main"><span class="attrtag">height</span></a>
+    <a href="n-ekd0.html" target="main"><span class="attrname">Height (MathML Tag
+    Set)</span></a></h5>
+
+    <h5 class="header"><a href="n-82d0.html" target="main"><span class="attrtag">id</span></a>
+    <a href="n-82d0.html" target="main"><span class="attrname">Document Internal
+    Identifier</span></a></h5>
+
+    <h5 class="header"><a href="n-7yd0.html" target="main"><span class="attrtag">macros</span></a>
+    <a href="n-7yd0.html" target="main"><span class="attrname">Macros (MathML Tag
+    Set)</span></a></h5>
+
+    <h5 class="header"><a href="n-sbd0.html" target="main"><span class="attrtag">mode</span></a>
+    <a href="n-sbd0.html" target="main"><span class="attrname">Mode (MathML Tag
+    Set)</span></a></h5>
+
+    <h5 class="header"><a href="n-c9d0.html" target="main"><span class="attrtag">name</span></a>
+    <a href="n-c9d0.html" target="main"><span class="attrname">Name</span></a></h5>
+
+    <h5 class="header"><a href="n-75r0.html" target="main"><span class="attrtag">other</span></a>
+    <a href="n-75r0.html" target="main"><span class="attrname">Other (MathML Tag
+    Set)</span></a></h5>
+
+    <h5 class="header"><a href="n-58r0.html" target="main"><span class=
+    "attrtag">overflow</span></a> <a href="n-58r0.html" target="main"><span class=
+    "attrname">Overflow (MathML Tag Set)</span></a></h5>
+
+    <h5 class="header"><a href="n-6qh0.html" target="main"><span class="attrtag">style</span></a>
+    <a href="n-6qh0.html" target="main"><span class="attrname">Style (NISO JATS table model; MathML
+    Tag Set)</span></a></h5>
+
+    <h5 class="header"><a href="n-k3i0.html" target="main"><span class="attrtag">type</span></a>
+    <a href="n-k3i0.html" target="main"><span class="attrname">Type (MathML Tag
+    Set)</span></a></h5>
+
+    <h5 class="header"><a href="n-tui0.html" target="main"><span class="attrtag">width</span></a>
+    <a href="n-tui0.html" target="main"><span class="attrname">Width (NISO JATS table model; MathML
+    Tag Set)</span></a></h5>
+
+    <h5 class="header"><a href="n-yvi0.html" target="main"><span class=
+    "attrtag">xlink:href</span></a> <a href="n-yvi0.html" target="main"><span class="attrname">Href
+    (Linking Mechanism)</span></a></h5>
+
+    <h5 class="header"><a href="n-zgi0.html" target="main"><span class=
+    "attrtag">xlink:type</span></a> <a href="n-zgi0.html" target="main"><span class="attrname">Type
+    of Link</span></a></h5>
+
+    <h5 class="header"><a href="n-fdi0.html" target="main"><span class=
+    "attrtag">xmlns:mml</span></a> <a href="n-fdi0.html" target="main"><span class=
+    "attrname">MathML Namespace Declaration</span></a></h5>
+
+    <h5 class="header"><a href="n-quy0.html" target="main"><span class="attrtag">xref</span></a>
+    <a href="n-quy0.html" target="main"><span class="attrname">Cross-Reference (MathML Tag
+    Set)</span></a></h5>
+
+    <h5 class="header"><a href="n-sxy0.html" target="main"><span class=
+    "attrtag">xsi:schemaLocation</span></a> <a href="n-sxy0.html" target="main"><span class=
+    "attrname">Schema Location (MathML Tag Set)</span></a></h5>
+  </div>
+
+  <div class="elementcontext">
+    <h3 class="header">This element may be contained in:</h3>
+
+    <p class="para"><a href="n-m720.html" target="main" title=
+    "Alternatives For Processing"><span class="elementtag">&lt;alternatives&gt;</span></a>,
+    <a href="n-gt80.html" target="main" title="Formula, Display"><span class=
+    "elementtag">&lt;disp-formula&gt;</span></a>, <a href="n-xgu0.html" target="main" title=
+    "Formula, Inline"><span class="elementtag">&lt;inline-formula&gt;</span></a>, <a href=
+    "n-mdw0.html" target="main" title="License Paragraph"><span class=
+    "elementtag">&lt;license-p&gt;</span></a>, <a href="n-f9x0.html" target="main" title=
+    "Named Special (Subject) Content"><span class="elementtag">&lt;named-content&gt;</span></a>,
+    <a href="n-ndv0.html" target="main" title="Paragraph"><span class=
+    "elementtag">&lt;p&gt;</span></a>, <a href="n-ax70.html" target="main" title=
+    "Styled Special (Subject) Content"><span class="elementtag">&lt;styled-content&gt;</span></a>,
+    <a href="n-qre0.html" target="main" title=
+    "Table Data Cell (NISO JATS table model)"><span class="elementtag">&lt;td&gt;</span></a>,
+    <a href="n-78f0.html" target="main" title="Textual Form"><span class=
+    "elementtag">&lt;textual-form&gt;</span></a>, <a href="n-dvf0.html" target="main" title=
+    "Table Header Cell (NISO JATS table model)"><span class="elementtag">&lt;th&gt;</span></a></p>
+  </div>
+
+  <div class="examp.group">
+    <h3 class="header">Example 1</h3>
+
+    <p class="para">A display formula inside a paragraph:</p>
+
+    <div class="taggedexamp">
+      <pre class="taggedtext">
 ...
 &lt;p&gt;... This can be seen in the following summation:
 &lt;disp-formula&gt;
@@ -34,7 +218,17 @@ the tag
 &lt;/disp-formula&gt;
 &lt;/p&gt;
 ...
-</pre></div></div><div class="examp.group"><h3 class="header">Example 2</h3><p class="para">Inline formula in an abstract:</p><div class="taggedexamp"><pre class="taggedtext">
+</pre>
+    </div>
+  </div>
+
+  <div class="examp.group">
+    <h3 class="header">Example 2</h3>
+
+    <p class="para">Inline formula in an abstract:</p>
+
+    <div class="taggedexamp">
+      <pre class="taggedtext">
 
 ...  
 &lt;abstract&gt;
@@ -70,4 +264,20 @@ in Chinese and Russian) has been covered through the middle of 2008.&lt;/p&gt;
 &lt;/abstract&gt;
 ...
 
-</pre></div></div><div class="moduledefined"><h2 class="header">Module</h2><p class="moduledefined">JATS-mathml2.dtd</p></div><div class="pagefooter"><h2 class="headname">Article Authoring Tag Library  NISO JATS Draft Version 1.1d1</h2><h4 class="pubdate">Version of December 2013</h4></div></body></html>
+</pre>
+    </div>
+  </div>
+
+  <div class="moduledefined">
+    <h2 class="header">Module</h2>
+
+    <p class="moduledefined">JATS-mathml2.dtd</p>
+  </div>
+
+  <div class="pagefooter">
+    <h2 class="headname">Article Authoring Tag Library NISO JATS Draft Version 1.1d1</h2>
+
+    <h4 class="pubdate">Version of December 2013</h4>
+  </div>
+</body>
+</html>

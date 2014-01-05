@@ -1,7 +1,149 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008--><link rel="stylesheet" href="auto-css.css" type="text/css"><title>Element: Article</title></head><body class="main"><div class="pageheader"><h2 class="headname">Article Authoring Tag Library  NISO JATS Draft Version 1.1d1</h2><h4 class="sponsor">National Center for Biotechnology Information (NCBI)<br class="linebrk"> National Library of
-   Medicine (NLM)</h4></div><div class="header"><h1 class="elementtag">&lt;article&gt;</h1><h1 class="elementname">Article</h1></div><div class="definition"><p class="para">A journal article.</p></div><div class="remarks"><h2 class="header">Remarks</h2><p class="para"><strong>Usage: </strong>This element can be used to describe not only typical journal articles (research articles) but also much of the non-article content within a journal, such as book and product reviews, editorials, commentaries, and news summaries.</p></div><div class="attrlist"><h2 class="header">Attributes</h2><h5 class="header"><a href="n-rkn0.html" target="main"><span class="attrtag">article-type</span></a> <a href="n-rkn0.html" target="main"><span class="attrname">Type of Article</span></a></h5><h5 class="header"><a href="n-2e60.html" target="main"><span class="attrtag">dtd-version</span></a> <a href="n-2e60.html" target="main"><span class="attrname">Version of the Tag Set (DTD)</span></a></h5><h5 class="header"><a href="n-82d0.html" target="main"><span class="attrtag">id</span></a> <a href="n-82d0.html" target="main"><span class="attrname">Document Internal Identifier</span></a></h5><h5 class="header"><a href="n-r6h0.html" target="main"><span class="attrtag">specific-use</span></a> <a href="n-r6h0.html" target="main"><span class="attrname">Specific Use</span></a></h5><h5 class="header"><a href="n-fdi0.html" target="main"><span class="attrtag">xmlns:mml</span></a> <a href="n-fdi0.html" target="main"><span class="attrname">MathML Namespace Declaration</span></a></h5><h5 class="header"><a href="n-4ri0.html" target="main"><span class="attrtag">xmlns:xlink</span></a> <a href="n-4ri0.html" target="main"><span class="attrname">XLink Namespace Declaration</span></a></h5><h5 class="header"><a href="n-4ii0.html" target="main"><span class="attrtag">xmlns:xsi</span></a> <a href="n-4ii0.html" target="main"><span class="attrname">XML Schema Namespace Declaration</span></a></h5><h5 class="header"><a href="n-uyi0.html" target="main"><span class="attrtag">xml:base</span></a> <a href="n-uyi0.html" target="main"><span class="attrname">Base</span></a></h5><h5 class="header"><a href="n-xzi0.html" target="main"><span class="attrtag">xml:lang</span></a> <a href="n-xzi0.html" target="main"><span class="attrname">Language</span></a></h5></div><div class="relatedelem"><h2 class="header">Related Elements</h2><p class="para">A journal article <a href="n-py20.html" target="main" title="Article"><span class="elementtag">&lt;article&gt;</span></a> may be divided into three parts: 
-<ol class="olist"><li>the <a href="n-bqa0.html" target="main" title="Front Matter"><span class="elementtag">&lt;front&gt;</span></a> (the metadata or
-header information for the article, such as the title and the published date); </li><li>the <a href="n-b7c0.html" target="main" title="Body of the Document"><span class="elementtag">&lt;body&gt;</span></a> (textual and graphical content of the article); and </li><li>any <a href="n-zxc0.html" target="main" title="Back Matter"><span class="elementtag">&lt;back&gt;</span></a> (ancillary information such as a glossary, reference list, or appendix).</li></ol> </p></div><div class="contentmodel"><h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  article      <a href="n-t5j0.html" target="main" title="Article Model (Limited)"><span class="petag">%article-short-model;</span></a>                        &gt;</pre></div><div class="contentmodel"><h2 class="header">Expanded Content Model</h2><p class="contentdesc">(front, body, back?)</p></div><div class="modeldesc"><h2 class="header">Description</h2><p class="para">The following, in order:<ul class="bullist"><li><a href="n-bqa0.html" target="main" title="Front Matter"><span class="elementtag">&lt;front&gt;</span></a> <a href="n-bqa0.html" target="main" title="<front&gt;"><span class="elementname">Front Matter</span></a></li><li><a href="n-b7c0.html" target="main" title="Body of the Document"><span class="elementtag">&lt;body&gt;</span></a> <a href="n-b7c0.html" target="main" title="<body&gt;"><span class="elementname">Body of the Document</span></a></li><li><a href="n-zxc0.html" target="main" title="Back Matter"><span class="elementtag">&lt;back&gt;</span></a> <a href="n-zxc0.html" target="main" title="<back&gt;"><span class="elementname">Back Matter</span></a>, zero or one</li></ul></p></div><div class="elementcontext"><h3 class="header">This top-level element may not be contained in any other elements.</h3></div><div class="examp.group"><h3 class="header">Example 1</h3><p class="para">A typical article with front matter, a body, and back matter:</p><div class="taggedexamp"><pre class="taggedtext">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta name="generator" content="HTML Tidy for Linux/x86 (vers 25 March 2009), see www.w3.org" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008-->
+  <link rel="stylesheet" href="auto-css.css" type="text/css" />
+
+  <title>Element: Article</title>
+</head>
+
+<body class="main">
+  <div class="pageheader">
+    <h2 class="headname">Article Authoring Tag Library NISO JATS Draft Version 1.1d1</h2>
+
+    <h4 class="sponsor">National Center for Biotechnology Information (NCBI)<br class="linebrk" />
+    National Library of Medicine (NLM)</h4>
+  </div>
+
+  <div class="header">
+    <h1 class="elementtag">&lt;article&gt;</h1>
+
+    <h1 class="elementname">Article</h1>
+  </div>
+
+  <div class="definition">
+    <p class="para">A journal article.</p>
+  </div>
+
+  <div class="remarks">
+    <h2 class="header">Remarks</h2>
+
+    <p class="para"><strong>Usage:</strong> This element can be used to describe not only typical
+    journal articles (research articles) but also much of the non-article content within a journal,
+    such as book and product reviews, editorials, commentaries, and news summaries.</p>
+  </div>
+
+  <div class="attrlist">
+    <h2 class="header">Attributes</h2>
+
+    <h5 class="header"><a href="n-rkn0.html" target="main"><span class=
+    "attrtag">article-type</span></a> <a href="n-rkn0.html" target="main"><span class=
+    "attrname">Type of Article</span></a></h5>
+
+    <h5 class="header"><a href="n-2e60.html" target="main"><span class=
+    "attrtag">dtd-version</span></a> <a href="n-2e60.html" target="main"><span class=
+    "attrname">Version of the Tag Set (DTD)</span></a></h5>
+
+    <h5 class="header"><a href="n-82d0.html" target="main"><span class="attrtag">id</span></a>
+    <a href="n-82d0.html" target="main"><span class="attrname">Document Internal
+    Identifier</span></a></h5>
+
+    <h5 class="header"><a href="n-r6h0.html" target="main"><span class=
+    "attrtag">specific-use</span></a> <a href="n-r6h0.html" target="main"><span class=
+    "attrname">Specific Use</span></a></h5>
+
+    <h5 class="header"><a href="n-fdi0.html" target="main"><span class=
+    "attrtag">xmlns:mml</span></a> <a href="n-fdi0.html" target="main"><span class=
+    "attrname">MathML Namespace Declaration</span></a></h5>
+
+    <h5 class="header"><a href="n-4ri0.html" target="main"><span class=
+    "attrtag">xmlns:xlink</span></a> <a href="n-4ri0.html" target="main"><span class=
+    "attrname">XLink Namespace Declaration</span></a></h5>
+
+    <h5 class="header"><a href="n-4ii0.html" target="main"><span class=
+    "attrtag">xmlns:xsi</span></a> <a href="n-4ii0.html" target="main"><span class="attrname">XML
+    Schema Namespace Declaration</span></a></h5>
+
+    <h5 class="header"><a href="n-uyi0.html" target="main"><span class=
+    "attrtag">xml:base</span></a> <a href="n-uyi0.html" target="main"><span class=
+    "attrname">Base</span></a></h5>
+
+    <h5 class="header"><a href="n-xzi0.html" target="main"><span class=
+    "attrtag">xml:lang</span></a> <a href="n-xzi0.html" target="main"><span class=
+    "attrname">Language</span></a></h5>
+  </div>
+
+  <div class="relatedelem">
+    <h2 class="header">Related Elements</h2>
+
+    <p class="para">A journal article <a href="n-py20.html" target="main" title=
+    "Article"><span class="elementtag">&lt;article&gt;</span></a> may be divided into three
+    parts:</p>
+
+    <ol class="olist">
+      <li>the <a href="n-bqa0.html" target="main" title="Front Matter"><span class=
+      "elementtag">&lt;front&gt;</span></a> (the metadata or header information for the article,
+      such as the title and the published date);</li>
+
+      <li>the <a href="n-b7c0.html" target="main" title="Body of the Document"><span class=
+      "elementtag">&lt;body&gt;</span></a> (textual and graphical content of the article); and</li>
+
+      <li>any <a href="n-zxc0.html" target="main" title="Back Matter"><span class=
+      "elementtag">&lt;back&gt;</span></a> (ancillary information such as a glossary, reference
+      list, or appendix).</li>
+    </ol>
+  </div>
+
+  <div class="contentmodel">
+    <h2 class="header first">Content Model</h2>
+    <pre class="contentdesc">
+&lt;!ELEMENT  article      <a href="n-t5j0.html" target="main" title=
+"Article Model (Limited)"><span class=
+"petag">%article-short-model;</span></a>                        &gt;
+</pre>
+  </div>
+
+  <div class="contentmodel">
+    <h2 class="header">Expanded Content Model</h2>
+
+    <p class="contentdesc">(front, body, back?)</p>
+  </div>
+
+  <div class="modeldesc">
+    <h2 class="header">Description</h2>
+
+    <p class="para">The following, in order:</p>
+
+    <ul class="bullist">
+      <li><a href="n-bqa0.html" target="main" title="Front Matter"><span class=
+      "elementtag">&lt;front&gt;</span></a> <a href="n-bqa0.html" target="main" title=
+      "&lt;front&gt;"><span class="elementname">Front Matter</span></a></li>
+
+      <li><a href="n-b7c0.html" target="main" title="Body of the Document"><span class=
+      "elementtag">&lt;body&gt;</span></a> <a href="n-b7c0.html" target="main" title=
+      "&lt;body&gt;"><span class="elementname">Body of the Document</span></a></li>
+
+      <li><a href="n-zxc0.html" target="main" title="Back Matter"><span class=
+      "elementtag">&lt;back&gt;</span></a> <a href="n-zxc0.html" target="main" title=
+      "&lt;back&gt;"><span class="elementname">Back Matter</span></a>, zero or one</li>
+    </ul>
+  </div>
+
+  <div class="elementcontext">
+    <h3 class="header">This top-level element may not be contained in any other elements.</h3>
+  </div>
+
+  <div class="examp.group">
+    <h3 class="header">Example 1</h3>
+
+    <p class="para">A typical article with front matter, a body, and back matter:</p>
+
+    <div class="taggedexamp">
+      <pre class="taggedtext">
 <strong><span class="focus">&lt;article dtd-version="1.1d1"&gt;
 &lt;front&gt;
 &lt;article-meta&gt;
@@ -34,7 +176,17 @@ Medical Journal&lt;/copyright-statement&gt;
 &lt;body&gt;...&lt;/body&gt;
 &lt;back&gt;...&lt;/back&gt;
 &lt;/article&gt;</span></strong>
-</pre></div></div><div class="examp.group"><h3 class="header">Example 2</h3><p class="para">Some realistic article attributes:</p><div class="taggedexamp"><pre class="taggedtext">
+</pre>
+    </div>
+  </div>
+
+  <div class="examp.group">
+    <h3 class="header">Example 2</h3>
+
+    <p class="para">Some realistic article attributes:</p>
+
+    <div class="taggedexamp">
+      <pre class="taggedtext">
 
 <strong><span class="focus">&lt;article
   xmlns:mml="http://www.w3.org/1998/Math/MathML"
@@ -48,7 +200,11 @@ Medical Journal&lt;/copyright-statement&gt;
 &lt;/article&gt;</span></strong>
 
 
-</pre></div><div class="taggedexamp"><pre class="taggedtext">
+</pre>
+    </div>
+
+    <div class="taggedexamp">
+      <pre class="taggedtext">
 
 <strong><span class="focus">&lt;article
   article-type="iso-standard"
@@ -63,7 +219,11 @@ Medical Journal&lt;/copyright-statement&gt;
 &lt;/article&gt;</span></strong>
 
 
-</pre></div><div class="taggedexamp"><pre class="taggedtext">
+</pre>
+    </div>
+
+    <div class="taggedexamp">
+      <pre class="taggedtext">
 
 <strong><span class="focus">&lt;article
   xmlns:mml="http://www.w3.org/1998/Math/MathML"
@@ -79,7 +239,11 @@ Medical Journal&lt;/copyright-statement&gt;
 &lt;/article&gt;</span></strong>
 
 
-</pre></div><div class="taggedexamp"><pre class="taggedtext">
+</pre>
+    </div>
+
+    <div class="taggedexamp">
+      <pre class="taggedtext">
 
 <strong><span class="focus">&lt;article
   xmlns:mml="http://www.w3.org/1998/Math/MathML"
@@ -95,4 +259,20 @@ Medical Journal&lt;/copyright-statement&gt;
 &lt;/article&gt;</span></strong>
 
 
-</pre></div></div><div class="moduledefined"><h2 class="header">Module</h2><p class="moduledefined">JATS-articleauthoring0.dtd</p></div><div class="pagefooter"><h2 class="headname">Article Authoring Tag Library  NISO JATS Draft Version 1.1d1</h2><h4 class="pubdate">Version of December 2013</h4></div></body></html>
+</pre>
+    </div>
+  </div>
+
+  <div class="moduledefined">
+    <h2 class="header">Module</h2>
+
+    <p class="moduledefined">JATS-articleauthoring0.dtd</p>
+  </div>
+
+  <div class="pagefooter">
+    <h2 class="headname">Article Authoring Tag Library NISO JATS Draft Version 1.1d1</h2>
+
+    <h4 class="pubdate">Version of December 2013</h4>
+  </div>
+</body>
+</html>
