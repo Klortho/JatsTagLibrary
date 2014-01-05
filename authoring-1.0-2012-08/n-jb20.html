@@ -1,5 +1,150 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008--><link rel="stylesheet" href="auto-css.css" type="text/css"><title>Element: Award Group</title></head><body class="main"><div class="pageheader"><h2 class="headname">Article Authoring Tag Library Proposed NISO JATS version 1.0</h2><h4 class="sponsor">National Center for Biotechnology Information (NCBI)<br class="linebrk"> National Library of
-   Medicine (NLM)</h4></div><div class="header"><h1 class="elementtag">&lt;award-group&gt;</h1><h1 class="elementname">Award Group</h1></div><div class="definition"><p class="para">Container element for information concerning one award under which the work (or the research on which the work was based) was supported.</p></div><div class="remarks"><h2 class="header">Remarks</h2><p class="para">There may be more than one source of funding, a grant or contract number, principal investigator, etc.</p><p class="para">This element replaces the obsolete <tt>&lt;contract-num&gt;</tt> element.</p></div><div class="attrlist"><h2 class="header">Attributes</h2><h5 class="header"><a href="n-x5f0.html" target="main"><span class="attrtag">award-type</span></a> <a href="n-x5f0.html" target="main"><span class="attrname">Type of Award</span></a></h5><h5 class="header"><a href="n-qpg0.html" target="main"><span class="attrtag">id</span></a> <a href="n-qpg0.html" target="main"><span class="attrname">Identifier</span></a></h5><h5 class="header"><a href="n-ty60.html" target="main"><span class="attrtag">rid</span></a> <a href="n-ty60.html" target="main"><span class="attrname">Reference to an Identifier</span></a></h5><h5 class="header"><a href="n-m8d0.html" target="main"><span class="attrtag">specific-use</span></a> <a href="n-m8d0.html" target="main"><span class="attrname">Specific Use</span></a></h5><h5 class="header"><a href="n-2jd0.html" target="main"><span class="attrtag">xlink:actuate</span></a> <a href="n-2jd0.html" target="main"><span class="attrname">Actuating the Link</span></a></h5><h5 class="header"><a href="n-zpd0.html" target="main"><span class="attrtag">xlink:href</span></a> <a href="n-zpd0.html" target="main"><span class="attrname">Href (Linking Mechanism)</span></a></h5><h5 class="header"><a href="n-9bd0.html" target="main"><span class="attrtag">xlink:role</span></a> <a href="n-9bd0.html" target="main"><span class="attrname">Role of the Link</span></a></h5><h5 class="header"><a href="n-tmd0.html" target="main"><span class="attrtag">xlink:show</span></a> <a href="n-tmd0.html" target="main"><span class="attrname">Showing the Link</span></a></h5><h5 class="header"><a href="n-fkr0.html" target="main"><span class="attrtag">xlink:title</span></a> <a href="n-fkr0.html" target="main"><span class="attrname">Title of the Link</span></a></h5><h5 class="header"><a href="n-3cr0.html" target="main"><span class="attrtag">xlink:type</span></a> <a href="n-3cr0.html" target="main"><span class="attrname">Type of Link</span></a></h5><h5 class="header"><a href="n-t8r0.html" target="main"><span class="attrtag">xmlns:xlink</span></a> <a href="n-t8r0.html" target="main"><span class="attrname">XLink Namespace Declaration</span></a></h5><h5 class="header"><a href="n-xwr0.html" target="main"><span class="attrtag">xml:lang</span></a> <a href="n-xwr0.html" target="main"><span class="attrname">Language</span></a></h5></div><div class="contentmodel"><h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  award-group  <a href="n-3nh0.html" target="main" title="Award Group Model"><span class="petag">%award-group-model;</span></a>                          &gt;</pre></div><div class="contentmodel"><h2 class="header">Expanded Content Model</h2><p class="contentdesc">(funding-source*, award-id*, principal-award-recipient*, principal-investigator*)</p></div><div class="modeldesc"><h2 class="header">Description</h2><p class="para">The following, in order:<ul class="bullist"><li><a href="n-u2a0.html" target="main" title="Funding Source"><span class="elementtag">&lt;funding-source&gt;</span></a> <a href="n-u2a0.html" target="main" title="<funding-source&gt;"><span class="elementname">Funding Source</span></a>, zero or more</li><li><a href="n-um20.html" target="main" title="Award Identifier"><span class="elementtag">&lt;award-id&gt;</span></a> <a href="n-um20.html" target="main" title="<award-id&gt;"><span class="elementname">Award Identifier</span></a>, zero or more</li><li><a href="n-zzx0.html" target="main" title="Principal Award Recipient"><span class="elementtag">&lt;principal-award-recipient&gt;</span></a> <a href="n-zzx0.html" target="main" title="<principal-award-recipient&gt;"><span class="elementname">Principal Award Recipient</span></a>, zero or more</li><li><a href="n-f2v0.html" target="main" title="Principal Investigator"><span class="elementtag">&lt;principal-investigator&gt;</span></a> <a href="n-f2v0.html" target="main" title="<principal-investigator&gt;"><span class="elementname">Principal Investigator</span></a>, zero or more</li></ul></p></div><div class="elementcontext"><h3 class="header">This element may be contained in:</h3><p class="para"><a href="n-mz80.html" target="main" title="Funding Group"><span class="elementtag">&lt;funding-group&gt;</span></a></p></div><div class="examp.group"><h3 class="header">Example 1</h3><div class="taggedexamp"><pre class="taggedtext">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta name="generator" content="HTML Tidy for Linux/x86 (vers 25 March 2009), see www.w3.org" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008-->
+  <link rel="stylesheet" href="auto-css.css" type="text/css" />
+
+  <title>Element: Award Group</title>
+</head>
+
+<body class="main">
+  <div class="pageheader">
+    <h2 class="headname">Article Authoring Tag Library Proposed NISO JATS version 1.0</h2>
+
+    <h4 class="sponsor">National Center for Biotechnology Information (NCBI)<br class="linebrk" />
+    National Library of Medicine (NLM)</h4>
+  </div>
+
+  <div class="header">
+    <h1 class="elementtag">&lt;award-group&gt;</h1>
+
+    <h1 class="elementname">Award Group</h1>
+  </div>
+
+  <div class="definition">
+    <p class="para">Container element for information concerning one award under which the work (or
+    the research on which the work was based) was supported.</p>
+  </div>
+
+  <div class="remarks">
+    <h2 class="header">Remarks</h2>
+
+    <p class="para">There may be more than one source of funding, a grant or contract number,
+    principal investigator, etc.</p>
+
+    <p class="para">This element replaces the obsolete <tt>&lt;contract-num&gt;</tt> element.</p>
+  </div>
+
+  <div class="attrlist">
+    <h2 class="header">Attributes</h2>
+
+    <h5 class="header"><a href="n-x5f0.html" target="main"><span class=
+    "attrtag">award-type</span></a> <a href="n-x5f0.html" target="main"><span class="attrname">Type
+    of Award</span></a></h5>
+
+    <h5 class="header"><a href="n-qpg0.html" target="main"><span class="attrtag">id</span></a>
+    <a href="n-qpg0.html" target="main"><span class="attrname">Identifier</span></a></h5>
+
+    <h5 class="header"><a href="n-ty60.html" target="main"><span class="attrtag">rid</span></a>
+    <a href="n-ty60.html" target="main"><span class="attrname">Reference to an
+    Identifier</span></a></h5>
+
+    <h5 class="header"><a href="n-m8d0.html" target="main"><span class=
+    "attrtag">specific-use</span></a> <a href="n-m8d0.html" target="main"><span class=
+    "attrname">Specific Use</span></a></h5>
+
+    <h5 class="header"><a href="n-2jd0.html" target="main"><span class=
+    "attrtag">xlink:actuate</span></a> <a href="n-2jd0.html" target="main"><span class=
+    "attrname">Actuating the Link</span></a></h5>
+
+    <h5 class="header"><a href="n-zpd0.html" target="main"><span class=
+    "attrtag">xlink:href</span></a> <a href="n-zpd0.html" target="main"><span class="attrname">Href
+    (Linking Mechanism)</span></a></h5>
+
+    <h5 class="header"><a href="n-9bd0.html" target="main"><span class=
+    "attrtag">xlink:role</span></a> <a href="n-9bd0.html" target="main"><span class="attrname">Role
+    of the Link</span></a></h5>
+
+    <h5 class="header"><a href="n-tmd0.html" target="main"><span class=
+    "attrtag">xlink:show</span></a> <a href="n-tmd0.html" target="main"><span class=
+    "attrname">Showing the Link</span></a></h5>
+
+    <h5 class="header"><a href="n-fkr0.html" target="main"><span class=
+    "attrtag">xlink:title</span></a> <a href="n-fkr0.html" target="main"><span class=
+    "attrname">Title of the Link</span></a></h5>
+
+    <h5 class="header"><a href="n-3cr0.html" target="main"><span class=
+    "attrtag">xlink:type</span></a> <a href="n-3cr0.html" target="main"><span class="attrname">Type
+    of Link</span></a></h5>
+
+    <h5 class="header"><a href="n-t8r0.html" target="main"><span class=
+    "attrtag">xmlns:xlink</span></a> <a href="n-t8r0.html" target="main"><span class=
+    "attrname">XLink Namespace Declaration</span></a></h5>
+
+    <h5 class="header"><a href="n-xwr0.html" target="main"><span class=
+    "attrtag">xml:lang</span></a> <a href="n-xwr0.html" target="main"><span class=
+    "attrname">Language</span></a></h5>
+  </div>
+
+  <div class="contentmodel">
+    <h2 class="header first">Content Model</h2>
+    <pre class="contentdesc">
+&lt;!ELEMENT  award-group  <a href="n-3nh0.html" target="main" title=
+"Award Group Model"><span class=
+"petag">%award-group-model;</span></a>                          &gt;
+</pre>
+  </div>
+
+  <div class="contentmodel">
+    <h2 class="header">Expanded Content Model</h2>
+
+    <p class="contentdesc">(funding-source*, award-id*, principal-award-recipient*,
+    principal-investigator*)</p>
+  </div>
+
+  <div class="modeldesc">
+    <h2 class="header">Description</h2>
+
+    <p class="para">The following, in order:</p>
+
+    <ul class="bullist">
+      <li><a href="n-u2a0.html" target="main" title="Funding Source"><span class=
+      "elementtag">&lt;funding-source&gt;</span></a> <a href="n-u2a0.html" target="main" title=
+      "&lt;funding-source&gt;"><span class="elementname">Funding Source</span></a>, zero or
+      more</li>
+
+      <li><a href="n-um20.html" target="main" title="Award Identifier"><span class=
+      "elementtag">&lt;award-id&gt;</span></a> <a href="n-um20.html" target="main" title=
+      "&lt;award-id&gt;"><span class="elementname">Award Identifier</span></a>, zero or more</li>
+
+      <li><a href="n-zzx0.html" target="main" title="Principal Award Recipient"><span class=
+      "elementtag">&lt;principal-award-recipient&gt;</span></a> <a href="n-zzx0.html" target="main"
+      title="&lt;principal-award-recipient&gt;"><span class="elementname">Principal Award
+      Recipient</span></a>, zero or more</li>
+
+      <li><a href="n-f2v0.html" target="main" title="Principal Investigator"><span class=
+      "elementtag">&lt;principal-investigator&gt;</span></a> <a href="n-f2v0.html" target="main"
+      title="&lt;principal-investigator&gt;"><span class="elementname">Principal
+      Investigator</span></a>, zero or more</li>
+    </ul>
+  </div>
+
+  <div class="elementcontext">
+    <h3 class="header">This element may be contained in:</h3>
+
+    <p class="para"><a href="n-mz80.html" target="main" title="Funding Group"><span class=
+    "elementtag">&lt;funding-group&gt;</span></a></p>
+  </div>
+
+  <div class="examp.group">
+    <h3 class="header">Example 1</h3>
+
+    <div class="taggedexamp">
+      <pre class="taggedtext">
 &lt;article&gt;
 &lt;front&gt;
 &lt;article-meta&gt;
@@ -61,7 +206,15 @@ provided by the grant-in-aid for scientific research.&lt;/p&gt;
 &lt;/back&gt;
 &lt;/article&gt;
 
-</pre></div></div><div class="examp.group"><h3 class="header">Example 2</h3><div class="taggedexamp"><pre class="taggedtext">
+</pre>
+    </div>
+  </div>
+
+  <div class="examp.group">
+    <h3 class="header">Example 2</h3>
+
+    <div class="taggedexamp">
+      <pre class="taggedtext">
 &lt;article&gt;
 &lt;front&gt;
 &lt;article-meta&gt;
@@ -103,4 +256,20 @@ an ARDA AQUAINT contract, and a gift from Genentech Corp.&lt;/p&gt;
 &lt;/back&gt;
 &lt;/article&gt;
 
-</pre></div></div><div class="moduledefined"><h2 class="header">Module</h2><p class="moduledefined">JATS-funding1.ent</p></div><div class="pagefooter"><h2 class="headname">Article Authoring Tag Library Proposed NISO JATS version 1.0</h2><h4 class="pubdate">Version of May 2012</h4></div></body></html>
+</pre>
+    </div>
+  </div>
+
+  <div class="moduledefined">
+    <h2 class="header">Module</h2>
+
+    <p class="moduledefined">JATS-funding1.ent</p>
+  </div>
+
+  <div class="pagefooter">
+    <h2 class="headname">Article Authoring Tag Library Proposed NISO JATS version 1.0</h2>
+
+    <h4 class="pubdate">Version of May 2012</h4>
+  </div>
+</body>
+</html>

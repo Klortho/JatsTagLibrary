@@ -1,5 +1,159 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008--><link rel="stylesheet" href="auto-css.css" type="text/css"><title>Element: Address/Contact Information</title></head><body class="main"><div class="pageheader"><h2 class="headname">Article Authoring Tag Library Proposed NISO JATS version 1.0</h2><h4 class="sponsor">National Center for Biotechnology Information (NCBI)<br class="linebrk"> National Library of
-   Medicine (NLM)</h4></div><div class="header"><h1 class="elementtag">&lt;address&gt;</h1><h1 class="elementname">Address/Contact Information</h1></div><div class="definition"><p class="para">Container element for contact information such as a postal address for a person or organization.</p></div><div class="attrlist"><h2 class="header">Attributes</h2><h5 class="header"><a href="n-w6f0.html" target="main"><span class="attrtag">content-type</span></a> <a href="n-w6f0.html" target="main"><span class="attrname">Type of Content</span></a></h5><h5 class="header"><a href="n-qpg0.html" target="main"><span class="attrtag">id</span></a> <a href="n-qpg0.html" target="main"><span class="attrname">Identifier</span></a></h5><h5 class="header"><a href="n-m8d0.html" target="main"><span class="attrtag">specific-use</span></a> <a href="n-m8d0.html" target="main"><span class="attrname">Specific Use</span></a></h5><h5 class="header"><a href="n-xwr0.html" target="main"><span class="attrtag">xml:lang</span></a> <a href="n-xwr0.html" target="main"><span class="attrname">Language</span></a></h5></div><div class="relatedelem"><h2 class="header">Related Elements</h2><p class="para">An address (<a href="n-kb00.html" target="main" title="Address/Contact Information"><span class="elementtag">&lt;address&gt;</span></a>) may contain the following elements, in order: <a href="n-yya0.html" target="main" title="Institution Name: in an Address"><span class="elementtag">&lt;institution&gt;</span></a>, <a href="n-iy00.html" target="main" title="Address Line"><span class="elementtag">&lt;addr-line&gt;</span></a>, <a href="n-2u50.html" target="main" title="Country: in an Address"><span class="elementtag">&lt;country&gt;</span></a>, <a href="n-qyx0.html" target="main" title="Phone Number: in an Address"><span class="elementtag">&lt;phone&gt;</span></a>, <a href="n-rr80.html" target="main" title="Fax Number: in an Address"><span class="elementtag">&lt;fax&gt;</span></a>, <a href="n-is80.html" target="main" title="Email Address"><span class="elementtag">&lt;email&gt;</span></a>, <a href="n-tf80.html" target="main" title="External Link"><span class="elementtag">&lt;ext-link&gt;</span></a>, and <a href="n-25e0.html" target="main" title="Uniform Resource Identifier (URI)"><span class="elementtag">&lt;uri&gt;</span></a>. At minimum, the element <a href="n-2u50.html" target="main" title="Country: in an Address"><span class="elementtag">&lt;country&gt;</span></a> must be used.</p></div><div class="contentmodel"><h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  address      <a href="n-z9r0.html" target="main" title="Address Model"><span class="petag">%address-model;</span></a>                              &gt;</pre></div><div class="contentmodel"><h2 class="header">Expanded Content Model</h2><p class="contentdesc">(institution?, addr-line*, country, phone*, fax*, email*, ext-link*, uri*)</p></div><div class="modeldesc"><h2 class="header">Description</h2><p class="para">The following, in order:<ul class="bullist"><li>Address Elements<ul class="bullist"><li><a href="n-iy00.html" target="main" title="Address Line"><span class="elementtag">&lt;addr-line&gt;</span></a> <a href="n-iy00.html" target="main" title="<addr-line&gt;"><span class="elementname">Address Line</span></a>, zero or more</li><li><a href="n-2u50.html" target="main" title="Country: in an Address"><span class="elementtag">&lt;country&gt;</span></a> <a href="n-2u50.html" target="main" title="<country&gt;"><span class="elementname">Country: in an Address</span></a></li><li><a href="n-rr80.html" target="main" title="Fax Number: in an Address"><span class="elementtag">&lt;fax&gt;</span></a> <a href="n-rr80.html" target="main" title="<fax&gt;"><span class="elementname">Fax Number: in an Address</span></a>, zero or more</li><li><a href="n-yya0.html" target="main" title="Institution Name: in an Address"><span class="elementtag">&lt;institution&gt;</span></a> <a href="n-yya0.html" target="main" title="<institution&gt;"><span class="elementname">Institution Name: in an Address</span></a>, zero or one</li><li><a href="n-qyx0.html" target="main" title="Phone Number: in an Address"><span class="elementtag">&lt;phone&gt;</span></a> <a href="n-qyx0.html" target="main" title="<phone&gt;"><span class="elementname">Phone Number: in an Address</span></a>, zero or more</li></ul></li><li>Linking Elements<ul class="bullist"><li><a href="n-is80.html" target="main" title="Email Address"><span class="elementtag">&lt;email&gt;</span></a> <a href="n-is80.html" target="main" title="<email&gt;"><span class="elementname">Email Address</span></a>, zero or more</li><li><a href="n-tf80.html" target="main" title="External Link"><span class="elementtag">&lt;ext-link&gt;</span></a> <a href="n-tf80.html" target="main" title="<ext-link&gt;"><span class="elementname">External Link</span></a>, zero or more</li><li><a href="n-25e0.html" target="main" title="Uniform Resource Identifier (URI)"><span class="elementtag">&lt;uri&gt;</span></a> <a href="n-25e0.html" target="main" title="<uri&gt;"><span class="elementname">Uniform Resource Identifier (URI)</span></a>, zero or more</li></ul></li></ul></p></div><div class="elementcontext"><h3 class="header">This element may be contained in:</h3><p class="para"><a href="n-99c0.html" target="main" title="Collaborative (Group) Author"><span class="elementtag">&lt;collab&gt;</span></a>, <a href="n-dp30.html" target="main" title="Contributor"><span class="elementtag">&lt;contrib&gt;</span></a></p></div><div class="examp.group"><h3 class="header">Example</h3><div class="taggedexamp"><pre class="taggedtext">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta name="generator" content="HTML Tidy for Linux/x86 (vers 25 March 2009), see www.w3.org" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008-->
+  <link rel="stylesheet" href="auto-css.css" type="text/css" />
+
+  <title>Element: Address/Contact Information</title>
+</head>
+
+<body class="main">
+  <div class="pageheader">
+    <h2 class="headname">Article Authoring Tag Library Proposed NISO JATS version 1.0</h2>
+
+    <h4 class="sponsor">National Center for Biotechnology Information (NCBI)<br class="linebrk" />
+    National Library of Medicine (NLM)</h4>
+  </div>
+
+  <div class="header">
+    <h1 class="elementtag">&lt;address&gt;</h1>
+
+    <h1 class="elementname">Address/Contact Information</h1>
+  </div>
+
+  <div class="definition">
+    <p class="para">Container element for contact information such as a postal address for a person
+    or organization.</p>
+  </div>
+
+  <div class="attrlist">
+    <h2 class="header">Attributes</h2>
+
+    <h5 class="header"><a href="n-w6f0.html" target="main"><span class=
+    "attrtag">content-type</span></a> <a href="n-w6f0.html" target="main"><span class=
+    "attrname">Type of Content</span></a></h5>
+
+    <h5 class="header"><a href="n-qpg0.html" target="main"><span class="attrtag">id</span></a>
+    <a href="n-qpg0.html" target="main"><span class="attrname">Identifier</span></a></h5>
+
+    <h5 class="header"><a href="n-m8d0.html" target="main"><span class=
+    "attrtag">specific-use</span></a> <a href="n-m8d0.html" target="main"><span class=
+    "attrname">Specific Use</span></a></h5>
+
+    <h5 class="header"><a href="n-xwr0.html" target="main"><span class=
+    "attrtag">xml:lang</span></a> <a href="n-xwr0.html" target="main"><span class=
+    "attrname">Language</span></a></h5>
+  </div>
+
+  <div class="relatedelem">
+    <h2 class="header">Related Elements</h2>
+
+    <p class="para">An address (<a href="n-kb00.html" target="main" title=
+    "Address/Contact Information"><span class="elementtag">&lt;address&gt;</span></a>) may contain
+    the following elements, in order: <a href="n-yya0.html" target="main" title=
+    "Institution Name: in an Address"><span class="elementtag">&lt;institution&gt;</span></a>,
+    <a href="n-iy00.html" target="main" title="Address Line"><span class=
+    "elementtag">&lt;addr-line&gt;</span></a>, <a href="n-2u50.html" target="main" title=
+    "Country: in an Address"><span class="elementtag">&lt;country&gt;</span></a>, <a href=
+    "n-qyx0.html" target="main" title="Phone Number: in an Address"><span class=
+    "elementtag">&lt;phone&gt;</span></a>, <a href="n-rr80.html" target="main" title=
+    "Fax Number: in an Address"><span class="elementtag">&lt;fax&gt;</span></a>, <a href=
+    "n-is80.html" target="main" title="Email Address"><span class=
+    "elementtag">&lt;email&gt;</span></a>, <a href="n-tf80.html" target="main" title=
+    "External Link"><span class="elementtag">&lt;ext-link&gt;</span></a>, and <a href="n-25e0.html"
+    target="main" title="Uniform Resource Identifier (URI)"><span class=
+    "elementtag">&lt;uri&gt;</span></a>. At minimum, the element <a href="n-2u50.html" target=
+    "main" title="Country: in an Address"><span class="elementtag">&lt;country&gt;</span></a> must
+    be used.</p>
+  </div>
+
+  <div class="contentmodel">
+    <h2 class="header first">Content Model</h2>
+    <pre class="contentdesc">
+&lt;!ELEMENT  address      <a href="n-z9r0.html" target="main" title="Address Model"><span class=
+"petag">%address-model;</span></a>                              &gt;
+</pre>
+  </div>
+
+  <div class="contentmodel">
+    <h2 class="header">Expanded Content Model</h2>
+
+    <p class="contentdesc">(institution?, addr-line*, country, phone*, fax*, email*, ext-link*,
+    uri*)</p>
+  </div>
+
+  <div class="modeldesc">
+    <h2 class="header">Description</h2>
+
+    <p class="para">The following, in order:</p>
+
+    <ul class="bullist">
+      <li>Address Elements
+
+        <ul class="bullist">
+          <li><a href="n-iy00.html" target="main" title="Address Line"><span class=
+          "elementtag">&lt;addr-line&gt;</span></a> <a href="n-iy00.html" target="main" title=
+          "&lt;addr-line&gt;"><span class="elementname">Address Line</span></a>, zero or more</li>
+
+          <li><a href="n-2u50.html" target="main" title="Country: in an Address"><span class=
+          "elementtag">&lt;country&gt;</span></a> <a href="n-2u50.html" target="main" title=
+          "&lt;country&gt;"><span class="elementname">Country: in an Address</span></a></li>
+
+          <li><a href="n-rr80.html" target="main" title="Fax Number: in an Address"><span class=
+          "elementtag">&lt;fax&gt;</span></a> <a href="n-rr80.html" target="main" title=
+          "&lt;fax&gt;"><span class="elementname">Fax Number: in an Address</span></a>, zero or
+          more</li>
+
+          <li><a href="n-yya0.html" target="main" title=
+          "Institution Name: in an Address"><span class="elementtag">&lt;institution&gt;</span></a>
+          <a href="n-yya0.html" target="main" title="&lt;institution&gt;"><span class=
+          "elementname">Institution Name: in an Address</span></a>, zero or one</li>
+
+          <li><a href="n-qyx0.html" target="main" title="Phone Number: in an Address"><span class=
+          "elementtag">&lt;phone&gt;</span></a> <a href="n-qyx0.html" target="main" title=
+          "&lt;phone&gt;"><span class="elementname">Phone Number: in an Address</span></a>, zero or
+          more</li>
+        </ul>
+      </li>
+
+      <li>Linking Elements
+
+        <ul class="bullist">
+          <li><a href="n-is80.html" target="main" title="Email Address"><span class=
+          "elementtag">&lt;email&gt;</span></a> <a href="n-is80.html" target="main" title=
+          "&lt;email&gt;"><span class="elementname">Email Address</span></a>, zero or more</li>
+
+          <li><a href="n-tf80.html" target="main" title="External Link"><span class=
+          "elementtag">&lt;ext-link&gt;</span></a> <a href="n-tf80.html" target="main" title=
+          "&lt;ext-link&gt;"><span class="elementname">External Link</span></a>, zero or more</li>
+
+          <li><a href="n-25e0.html" target="main" title=
+          "Uniform Resource Identifier (URI)"><span class="elementtag">&lt;uri&gt;</span></a>
+          <a href="n-25e0.html" target="main" title="&lt;uri&gt;"><span class="elementname">Uniform
+          Resource Identifier (URI)</span></a>, zero or more</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <div class="elementcontext">
+    <h3 class="header">This element may be contained in:</h3>
+
+    <p class="para"><a href="n-99c0.html" target="main" title=
+    "Collaborative (Group) Author"><span class="elementtag">&lt;collab&gt;</span></a>, <a href=
+    "n-dp30.html" target="main" title="Contributor"><span class=
+    "elementtag">&lt;contrib&gt;</span></a></p>
+  </div>
+
+  <div class="examp.group">
+    <h3 class="header">Example</h3>
+
+    <div class="taggedexamp">
+      <pre class="taggedtext">
 ...
 &lt;article-meta&gt;
 ...
@@ -34,4 +188,20 @@ University of WallieWash&lt;/institution&gt;
 &lt;/contrib-group&gt;
 ...
 &lt;/article-meta&gt;...
-</pre></div></div><div class="moduledefined"><h2 class="header">Module</h2><p class="moduledefined">JATS-common1.ent</p></div><div class="pagefooter"><h2 class="headname">Article Authoring Tag Library Proposed NISO JATS version 1.0</h2><h4 class="pubdate">Version of May 2012</h4></div></body></html>
+</pre>
+    </div>
+  </div>
+
+  <div class="moduledefined">
+    <h2 class="header">Module</h2>
+
+    <p class="moduledefined">JATS-common1.ent</p>
+  </div>
+
+  <div class="pagefooter">
+    <h2 class="headname">Article Authoring Tag Library Proposed NISO JATS version 1.0</h2>
+
+    <h4 class="pubdate">Version of May 2012</h4>
+  </div>
+</body>
+</html>

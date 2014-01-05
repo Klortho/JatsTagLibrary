@@ -1,7 +1,189 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008--><link rel="stylesheet" href="auto-css.css" type="text/css"><title>Element: Name of Person</title></head><body class="main"><div class="pageheader"><h2 class="headname">Article Authoring Tag Library  NISO JATS version 1.0</h2><h4 class="sponsor">National Center for Biotechnology Information (NCBI)<br class="linebrk"> National Library of
-   Medicine (NLM)</h4></div><div class="header"><h1 class="elementtag">&lt;name&gt;</h1><h1 class="elementname">Name of Person</h1></div><div class="definition"><p class="para">Container element for the component elements of personal names, such as a <a href="n-k4t0.html" target="main" title="Surname"><span class="elementtag">&lt;surname&gt;</span></a>.</p></div><div class="remarks"><h2 class="header">Remarks</h2><p class="para"><strong>Related Essay:</strong> For a discussion on the use of <span class="elementtag">&lt;name&gt;</span>, see <a href="n-5az0.html#aut-tag-names-cites">Personal Names in Citations</a>.</p><p class="para"><strong>Best Practice:</strong> If the name parts are unknown, the whole name can be placed <ul class="bullist"><li>Within the <a href="n-nss0.html" target="main" title="Name of Person (Unstructured)"><span class="elementtag">&lt;string-name&gt;</span></a> element in contexts where <a href="n-nss0.html" target="main" title="Name of Person (Unstructured)"><span class="elementtag">&lt;string-name&gt;</span></a> is allowed, for example, <tt>&lt;string-name&gt;Ice Cube&lt;/string-name&gt;</tt>; or </li><li>Within the element <a href="n-k4t0.html" target="main" title="Surname"><span class="elementtag">&lt;surname&gt;</span></a> in contexts where only <a href="n-j7w0.html" target="main" title="Name of Person"><span class="elementtag">&lt;name&gt;</span></a> is allowed, for example, <tt>&lt;surname&gt;Ice Cube&lt;/surname&gt;</tt>
-                </li></ul>Use of a <a href="n-nss0.html" target="main" title="Name of Person (Unstructured)"><span class="elementtag">&lt;string-name&gt;</span></a> or <a href="n-k4t0.html" target="main" title="Surname"><span class="elementtag">&lt;surname&gt;</span></a> element is more likely to lead to better search results than merely leaving the person’s name untagged. (See <a href="n-nss0.html" target="main" title="Name of Person (Unstructured)"><span class="elementtag">&lt;string-name&gt;</span></a> for additional detail.) </p></div><div class="attrlist"><h2 class="header">Attributes</h2><h5 class="header"><a href="n-r6f0.html" target="main"><span class="attrtag">content-type</span></a> <a href="n-r6f0.html" target="main"><span class="attrname">Type of Content</span></a></h5><h5 class="header"><a href="n-pnn0.html" target="main"><span class="attrtag">name-style</span></a> <a href="n-pnn0.html" target="main"><span class="attrname">Name Style</span></a></h5><h5 class="header"><a href="n-gad0.html" target="main"><span class="attrtag">specific-use</span></a> <a href="n-gad0.html" target="main"><span class="attrname">Specific Use</span></a></h5><h5 class="header"><a href="n-zwr0.html" target="main"><span class="attrtag">xml:lang</span></a> <a href="n-zwr0.html" target="main"><span class="attrname">Language</span></a></h5></div><div class="relatedelem"><h2 class="header">Related Elements</h2><p class="para">Within citations (<a href="n-hk80.html" target="main" title="Element Citation"><span class="elementtag">&lt;element-citation&gt;</span></a> and <a href="n-9bu0.html" target="main" title="Mixed Citation"><span class="elementtag">&lt;mixed-citation&gt;</span></a>), this element is used to name the date of publication. The elements <a href="n-rfe0.html" target="main" title="Year"><span class="elementtag">&lt;year&gt;</span></a>, <a href="n-ts50.html" target="main" title="Day"><span class="elementtag">&lt;day&gt;</span></a>, <a href="n-zsw0.html" target="main" title="Month"><span class="elementtag">&lt;month&gt;</span></a>, and <a href="n-z640.html" target="main" title="Season"><span class="elementtag">&lt;season&gt;</span></a> may all be used to describe the date a cited resource was published. Other dates inside a citation, such as a copyright date, the date on which the author accessed the resource, or a withdrawal date, should be tagged using <a href="n-gv50.html" target="main" title="Date within a Citation"><span class="elementtag">&lt;date-in-citation&gt;</span></a> with the <a href="n-r6f0.html" target="main" title="Type of Content"><span class="attrtag">@content-type</span></a> attribute used to name the type of date (<tt>copyright</tt>, <tt>access-date</tt>, <tt>time-stamp</tt>, etc.).</p></div><div class="contentmodel"><h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  name         ( ( (surname, given-names?) | given-names),
-                          prefix?, suffix?)                          &gt;</pre></div><div class="contentmodel"><h2 class="header">Expanded Content Model</h2><p class="contentdesc">(((surname, given-names?) | given-names), prefix?, suffix?)</p></div><div class="modeldesc"><h2 class="header">Description</h2><p class="para">The following, in order:<ul class="bullist"><li>Any one of:<ul class="bullist"><li>The following, in order:<ul class="bullist"><li><a href="n-k4t0.html" target="main" title="Surname"><span class="elementtag">&lt;surname&gt;</span></a> <a href="n-k4t0.html" target="main" title="<surname&gt;"><span class="elementname">Surname</span></a></li><li><a href="n-58a0.html" target="main" title="Given (First) Names"><span class="elementtag">&lt;given-names&gt;</span></a> <a href="n-58a0.html" target="main" title="<given-names&gt;"><span class="elementname">Given (First) Names</span></a>, zero or one</li></ul></li><li><a href="n-58a0.html" target="main" title="Given (First) Names"><span class="elementtag">&lt;given-names&gt;</span></a> <a href="n-58a0.html" target="main" title="<given-names&gt;"><span class="elementname">Given (First) Names</span></a></li></ul></li><li><a href="n-xpx0.html" target="main" title="Prefix"><span class="elementtag">&lt;prefix&gt;</span></a> <a href="n-xpx0.html" target="main" title="<prefix&gt;"><span class="elementname">Prefix</span></a>, zero or one</li><li><a href="n-szs0.html" target="main" title="Suffix"><span class="elementtag">&lt;suffix&gt;</span></a> <a href="n-szs0.html" target="main" title="<suffix&gt;"><span class="elementname">Suffix</span></a>, zero or one</li></ul></p></div><div class="elementcontext"><h3 class="header">This element may be contained in:</h3><p class="para"><a href="n-mp30.html" target="main" title="Contributor"><span class="elementtag">&lt;contrib&gt;</span></a>, <a href="n-hk80.html" target="main" title="Element Citation"><span class="elementtag">&lt;element-citation&gt;</span></a>, <a href="n-9bu0.html" target="main" title="Mixed Citation"><span class="elementtag">&lt;mixed-citation&gt;</span></a>, <a href="n-sgw0.html" target="main" title="Name Alternatives"><span class="elementtag">&lt;name-alternatives&gt;</span></a>, <a href="n-bhx0.html" target="main" title="Person Group for a Cited Publication"><span class="elementtag">&lt;person-group&gt;</span></a>, <a href="n-skv0.html" target="main" title="Principal Award Recipient"><span class="elementtag">&lt;principal-award-recipient&gt;</span></a>, <a href="n-92v0.html" target="main" title="Principal Investigator"><span class="elementtag">&lt;principal-investigator&gt;</span></a>, <a href="n-h8v0.html" target="main" title="Product Information"><span class="elementtag">&lt;product&gt;</span></a>, <a href="n-crv0.html" target="main" title="Related Article Information"><span class="elementtag">&lt;related-article&gt;</span></a>, <a href="n-y9v0.html" target="main" title="Related Object Information"><span class="elementtag">&lt;related-object&gt;</span></a></p></div><div class="examp.group"><h3 class="header">Example 1</h3><p class="para">In an element-style bibliographic reference (punctuation and spacing removed):</p><div class="taggedexamp"><pre class="taggedtext">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta name="generator" content="HTML Tidy for Linux/x86 (vers 25 March 2009), see www.w3.org" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008-->
+  <link rel="stylesheet" href="auto-css.css" type="text/css" />
+
+  <title>Element: Name of Person</title>
+</head>
+
+<body class="main">
+  <div class="pageheader">
+    <h2 class="headname">Article Authoring Tag Library NISO JATS version 1.0</h2>
+
+    <h4 class="sponsor">National Center for Biotechnology Information (NCBI)<br class="linebrk" />
+    National Library of Medicine (NLM)</h4>
+  </div>
+
+  <div class="header">
+    <h1 class="elementtag">&lt;name&gt;</h1>
+
+    <h1 class="elementname">Name of Person</h1>
+  </div>
+
+  <div class="definition">
+    <p class="para">Container element for the component elements of personal names, such as a
+    <a href="n-k4t0.html" target="main" title="Surname"><span class=
+    "elementtag">&lt;surname&gt;</span></a>.</p>
+  </div>
+
+  <div class="remarks">
+    <h2 class="header">Remarks</h2>
+
+    <p class="para"><strong>Related Essay:</strong> For a discussion on the use of <span class=
+    "elementtag">&lt;name&gt;</span>, see <a href="n-5az0.html#aut-tag-names-cites">Personal Names
+    in Citations</a>.</p>
+
+    <p class="para"><strong>Best Practice:</strong> If the name parts are unknown, the whole name
+    can be placed</p>
+
+    <ul class="bullist">
+      <li>Within the <a href="n-nss0.html" target="main" title=
+      "Name of Person (Unstructured)"><span class="elementtag">&lt;string-name&gt;</span></a>
+      element in contexts where <a href="n-nss0.html" target="main" title=
+      "Name of Person (Unstructured)"><span class="elementtag">&lt;string-name&gt;</span></a> is
+      allowed, for example, <tt>&lt;string-name&gt;Ice Cube&lt;/string-name&gt;</tt>; or</li>
+
+      <li>Within the element <a href="n-k4t0.html" target="main" title="Surname"><span class=
+      "elementtag">&lt;surname&gt;</span></a> in contexts where only <a href="n-j7w0.html" target=
+      "main" title="Name of Person"><span class="elementtag">&lt;name&gt;</span></a> is allowed,
+      for example, <tt>&lt;surname&gt;Ice Cube&lt;/surname&gt;</tt></li>
+    </ul>Use of a <a href="n-nss0.html" target="main" title=
+    "Name of Person (Unstructured)"><span class="elementtag">&lt;string-name&gt;</span></a> or
+    <a href="n-k4t0.html" target="main" title="Surname"><span class=
+    "elementtag">&lt;surname&gt;</span></a> element is more likely to lead to better search results
+    than merely leaving the person’s name untagged. (See <a href="n-nss0.html" target="main" title=
+    "Name of Person (Unstructured)"><span class="elementtag">&lt;string-name&gt;</span></a> for
+    additional detail.)
+  </div>
+
+  <div class="attrlist">
+    <h2 class="header">Attributes</h2>
+
+    <h5 class="header"><a href="n-r6f0.html" target="main"><span class=
+    "attrtag">content-type</span></a> <a href="n-r6f0.html" target="main"><span class=
+    "attrname">Type of Content</span></a></h5>
+
+    <h5 class="header"><a href="n-pnn0.html" target="main"><span class=
+    "attrtag">name-style</span></a> <a href="n-pnn0.html" target="main"><span class="attrname">Name
+    Style</span></a></h5>
+
+    <h5 class="header"><a href="n-gad0.html" target="main"><span class=
+    "attrtag">specific-use</span></a> <a href="n-gad0.html" target="main"><span class=
+    "attrname">Specific Use</span></a></h5>
+
+    <h5 class="header"><a href="n-zwr0.html" target="main"><span class=
+    "attrtag">xml:lang</span></a> <a href="n-zwr0.html" target="main"><span class=
+    "attrname">Language</span></a></h5>
+  </div>
+
+  <div class="relatedelem">
+    <h2 class="header">Related Elements</h2>
+
+    <p class="para">Within citations (<a href="n-hk80.html" target="main" title=
+    "Element Citation"><span class="elementtag">&lt;element-citation&gt;</span></a> and <a href=
+    "n-9bu0.html" target="main" title="Mixed Citation"><span class=
+    "elementtag">&lt;mixed-citation&gt;</span></a>), this element is used to name the date of
+    publication. The elements <a href="n-rfe0.html" target="main" title="Year"><span class=
+    "elementtag">&lt;year&gt;</span></a>, <a href="n-ts50.html" target="main" title=
+    "Day"><span class="elementtag">&lt;day&gt;</span></a>, <a href="n-zsw0.html" target="main"
+    title="Month"><span class="elementtag">&lt;month&gt;</span></a>, and <a href="n-z640.html"
+    target="main" title="Season"><span class="elementtag">&lt;season&gt;</span></a> may all be used
+    to describe the date a cited resource was published. Other dates inside a citation, such as a
+    copyright date, the date on which the author accessed the resource, or a withdrawal date,
+    should be tagged using <a href="n-gv50.html" target="main" title=
+    "Date within a Citation"><span class="elementtag">&lt;date-in-citation&gt;</span></a> with the
+    <a href="n-r6f0.html" target="main" title="Type of Content"><span class=
+    "attrtag">@content-type</span></a> attribute used to name the type of date (<tt>copyright</tt>,
+    <tt>access-date</tt>, <tt>time-stamp</tt>, etc.).</p>
+  </div>
+
+  <div class="contentmodel">
+    <h2 class="header first">Content Model</h2>
+    <pre class="contentdesc">
+&lt;!ELEMENT  name         ( ( (surname, given-names?) | given-names),
+                          prefix?, suffix?)                          &gt;
+</pre>
+  </div>
+
+  <div class="contentmodel">
+    <h2 class="header">Expanded Content Model</h2>
+
+    <p class="contentdesc">(((surname, given-names?) | given-names), prefix?, suffix?)</p>
+  </div>
+
+  <div class="modeldesc">
+    <h2 class="header">Description</h2>
+
+    <p class="para">The following, in order:</p>
+
+    <ul class="bullist">
+      <li>Any one of:
+
+        <ul class="bullist">
+          <li>The following, in order:
+
+            <ul class="bullist">
+              <li><a href="n-k4t0.html" target="main" title="Surname"><span class=
+              "elementtag">&lt;surname&gt;</span></a> <a href="n-k4t0.html" target="main" title=
+              "&lt;surname&gt;"><span class="elementname">Surname</span></a></li>
+
+              <li><a href="n-58a0.html" target="main" title="Given (First) Names"><span class=
+              "elementtag">&lt;given-names&gt;</span></a> <a href="n-58a0.html" target="main"
+              title="&lt;given-names&gt;"><span class="elementname">Given (First) Names</span></a>,
+              zero or one</li>
+            </ul>
+          </li>
+
+          <li><a href="n-58a0.html" target="main" title="Given (First) Names"><span class=
+          "elementtag">&lt;given-names&gt;</span></a> <a href="n-58a0.html" target="main" title=
+          "&lt;given-names&gt;"><span class="elementname">Given (First) Names</span></a></li>
+        </ul>
+      </li>
+
+      <li><a href="n-xpx0.html" target="main" title="Prefix"><span class=
+      "elementtag">&lt;prefix&gt;</span></a> <a href="n-xpx0.html" target="main" title=
+      "&lt;prefix&gt;"><span class="elementname">Prefix</span></a>, zero or one</li>
+
+      <li><a href="n-szs0.html" target="main" title="Suffix"><span class=
+      "elementtag">&lt;suffix&gt;</span></a> <a href="n-szs0.html" target="main" title=
+      "&lt;suffix&gt;"><span class="elementname">Suffix</span></a>, zero or one</li>
+    </ul>
+  </div>
+
+  <div class="elementcontext">
+    <h3 class="header">This element may be contained in:</h3>
+
+    <p class="para"><a href="n-mp30.html" target="main" title="Contributor"><span class=
+    "elementtag">&lt;contrib&gt;</span></a>, <a href="n-hk80.html" target="main" title=
+    "Element Citation"><span class="elementtag">&lt;element-citation&gt;</span></a>, <a href=
+    "n-9bu0.html" target="main" title="Mixed Citation"><span class=
+    "elementtag">&lt;mixed-citation&gt;</span></a>, <a href="n-sgw0.html" target="main" title=
+    "Name Alternatives"><span class="elementtag">&lt;name-alternatives&gt;</span></a>, <a href=
+    "n-bhx0.html" target="main" title="Person Group for a Cited Publication"><span class=
+    "elementtag">&lt;person-group&gt;</span></a>, <a href="n-skv0.html" target="main" title=
+    "Principal Award Recipient"><span class=
+    "elementtag">&lt;principal-award-recipient&gt;</span></a>, <a href="n-92v0.html" target="main"
+    title="Principal Investigator"><span class=
+    "elementtag">&lt;principal-investigator&gt;</span></a>, <a href="n-h8v0.html" target="main"
+    title="Product Information"><span class="elementtag">&lt;product&gt;</span></a>, <a href=
+    "n-crv0.html" target="main" title="Related Article Information"><span class=
+    "elementtag">&lt;related-article&gt;</span></a>, <a href="n-y9v0.html" target="main" title=
+    "Related Object Information"><span class="elementtag">&lt;related-object&gt;</span></a></p>
+  </div>
+
+  <div class="examp.group">
+    <h3 class="header">Example 1</h3>
+
+    <p class="para">In an element-style bibliographic reference (punctuation and spacing
+    removed):</p>
+
+    <div class="taggedexamp">
+      <pre class="taggedtext">
 ...
 &lt;ref&gt;
 &lt;element-citation publication-type="journal" publication-format="print"&gt;
@@ -31,7 +213,15 @@ Spanish&lt;/comment&gt;
 ...
 
 
-</pre></div></div><div class="examp.group"><h3 class="header">Example 2</h3><div class="taggedexamp"><pre class="taggedtext">
+</pre>
+    </div>
+  </div>
+
+  <div class="examp.group">
+    <h3 class="header">Example 2</h3>
+
+    <div class="taggedexamp">
+      <pre class="taggedtext">
 ...
 &lt;article-meta&gt;
 &lt;title-group&gt;
@@ -54,4 +244,20 @@ for the Elderly, St Luke&amp;#x2019;s Hospital, Bradford BD5
 &lt;/article-meta&gt;
 ...
 
-</pre></div></div><div class="moduledefined"><h2 class="header">Module</h2><p class="moduledefined">JATS-common1.ent</p></div><div class="pagefooter"><h2 class="headname">Article Authoring Tag Library  NISO JATS version 1.0</h2><h4 class="pubdate">Version of August 2012</h4></div></body></html>
+</pre>
+    </div>
+  </div>
+
+  <div class="moduledefined">
+    <h2 class="header">Module</h2>
+
+    <p class="moduledefined">JATS-common1.ent</p>
+  </div>
+
+  <div class="pagefooter">
+    <h2 class="headname">Article Authoring Tag Library NISO JATS version 1.0</h2>
+
+    <h4 class="pubdate">Version of August 2012</h4>
+  </div>
+</body>
+</html>

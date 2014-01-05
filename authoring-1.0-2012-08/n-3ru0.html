@@ -1,5 +1,100 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008--><link rel="stylesheet" href="auto-css.css" type="text/css"><title>Element: List Item</title></head><body class="main"><div class="pageheader"><h2 class="headname">Article Authoring Tag Library Proposed NISO JATS version 1.0</h2><h4 class="sponsor">National Center for Biotechnology Information (NCBI)<br class="linebrk"> National Library of
-   Medicine (NLM)</h4></div><div class="header"><h1 class="elementtag">&lt;list-item&gt;</h1><h1 class="elementname">List Item</h1></div><div class="definition"><p class="para">Single item (one entry) in a list of items.</p></div><div class="remarks"><h2 class="header">Remarks</h2><p class="para">On display or in print, a list entry may be preceded by a prefix character, such as a bullet or a number. This character is determined by the <a href="n-ivn0.html" target="main" title="Type of List"><span class="attrtag">@list-type</span></a> attribute, possibly combined with the <a href="n-vmn0.html" target="main" title="Prefix Word (For a List Item)"><span class="attrtag">@prefix-word</span></a> attribute. If the <a href="n-mvu0.html" target="main" title="Label (of an Equation, Figure, Reference, etc.)"><span class="elementtag">&lt;label&gt;</span></a> element is used in a <a href="n-3ru0.html" target="main" title="List Item"><span class="elementtag">&lt;list-item&gt;</span></a>, it overrides the <a href="n-ivn0.html" target="main" title="Type of List"><span class="attrtag">@list-type</span></a> and <a href="n-vmn0.html" target="main" title="Prefix Word (For a List Item)"><span class="attrtag">@prefix-word</span></a> attributes.</p></div><div class="attrlist"><h2 class="header">Attributes</h2><h5 class="header"><a href="n-qpg0.html" target="main"><span class="attrtag">id</span></a> <a href="n-qpg0.html" target="main"><span class="attrname">Identifier</span></a></h5><h5 class="header"><a href="n-m8d0.html" target="main"><span class="attrtag">specific-use</span></a> <a href="n-m8d0.html" target="main"><span class="attrname">Specific Use</span></a></h5><h5 class="header"><a href="n-xwr0.html" target="main"><span class="attrtag">xml:lang</span></a> <a href="n-xwr0.html" target="main"><span class="attrname">Language</span></a></h5></div><div class="contentmodel"><h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  list-item    <a href="n-hjp0.html" target="main" title="List Item Model"><span class="petag">%list-item-model;</span></a>                            &gt;</pre></div><div class="contentmodel"><h2 class="header">Expanded Content Model</h2><p class="contentdesc">(p)+</p></div><div class="modeldesc"><h2 class="header">Description</h2><p class="para"><a href="n-yux0.html" target="main" title="Paragraph"><span class="elementtag">&lt;p&gt;</span></a> <a href="n-yux0.html" target="main" title="<p&gt;"><span class="elementname">Paragraph</span></a>, one or more</p></div><div class="elementcontext"><h3 class="header">This element may be contained in:</h3><p class="para"><a href="n-96u0.html" target="main" title="List"><span class="elementtag">&lt;list&gt;</span></a></p></div><div class="examp.group"><h3 class="header">Example</h3><div class="taggedexamp"><pre class="taggedtext">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta name="generator" content="HTML Tidy for Linux/x86 (vers 25 March 2009), see www.w3.org" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008-->
+  <link rel="stylesheet" href="auto-css.css" type="text/css" />
+
+  <title>Element: List Item</title>
+</head>
+
+<body class="main">
+  <div class="pageheader">
+    <h2 class="headname">Article Authoring Tag Library Proposed NISO JATS version 1.0</h2>
+
+    <h4 class="sponsor">National Center for Biotechnology Information (NCBI)<br class="linebrk" />
+    National Library of Medicine (NLM)</h4>
+  </div>
+
+  <div class="header">
+    <h1 class="elementtag">&lt;list-item&gt;</h1>
+
+    <h1 class="elementname">List Item</h1>
+  </div>
+
+  <div class="definition">
+    <p class="para">Single item (one entry) in a list of items.</p>
+  </div>
+
+  <div class="remarks">
+    <h2 class="header">Remarks</h2>
+
+    <p class="para">On display or in print, a list entry may be preceded by a prefix character,
+    such as a bullet or a number. This character is determined by the <a href="n-ivn0.html" target=
+    "main" title="Type of List"><span class="attrtag">@list-type</span></a> attribute, possibly
+    combined with the <a href="n-vmn0.html" target="main" title=
+    "Prefix Word (For a List Item)"><span class="attrtag">@prefix-word</span></a> attribute. If the
+    <a href="n-mvu0.html" target="main" title=
+    "Label (of an Equation, Figure, Reference, etc.)"><span class=
+    "elementtag">&lt;label&gt;</span></a> element is used in a <a href="n-3ru0.html" target="main"
+    title="List Item"><span class="elementtag">&lt;list-item&gt;</span></a>, it overrides the
+    <a href="n-ivn0.html" target="main" title="Type of List"><span class=
+    "attrtag">@list-type</span></a> and <a href="n-vmn0.html" target="main" title=
+    "Prefix Word (For a List Item)"><span class="attrtag">@prefix-word</span></a> attributes.</p>
+  </div>
+
+  <div class="attrlist">
+    <h2 class="header">Attributes</h2>
+
+    <h5 class="header"><a href="n-qpg0.html" target="main"><span class="attrtag">id</span></a>
+    <a href="n-qpg0.html" target="main"><span class="attrname">Identifier</span></a></h5>
+
+    <h5 class="header"><a href="n-m8d0.html" target="main"><span class=
+    "attrtag">specific-use</span></a> <a href="n-m8d0.html" target="main"><span class=
+    "attrname">Specific Use</span></a></h5>
+
+    <h5 class="header"><a href="n-xwr0.html" target="main"><span class=
+    "attrtag">xml:lang</span></a> <a href="n-xwr0.html" target="main"><span class=
+    "attrname">Language</span></a></h5>
+  </div>
+
+  <div class="contentmodel">
+    <h2 class="header first">Content Model</h2>
+    <pre class="contentdesc">
+&lt;!ELEMENT  list-item    <a href="n-hjp0.html" target="main" title="List Item Model"><span class=
+"petag">%list-item-model;</span></a>                            &gt;
+</pre>
+  </div>
+
+  <div class="contentmodel">
+    <h2 class="header">Expanded Content Model</h2>
+
+    <p class="contentdesc">(p)+</p>
+  </div>
+
+  <div class="modeldesc">
+    <h2 class="header">Description</h2>
+
+    <p class="para"><a href="n-yux0.html" target="main" title="Paragraph"><span class=
+    "elementtag">&lt;p&gt;</span></a> <a href="n-yux0.html" target="main" title=
+    "&lt;p&gt;"><span class="elementname">Paragraph</span></a>, one or more</p>
+  </div>
+
+  <div class="elementcontext">
+    <h3 class="header">This element may be contained in:</h3>
+
+    <p class="para"><a href="n-96u0.html" target="main" title="List"><span class=
+    "elementtag">&lt;list&gt;</span></a></p>
+  </div>
+
+  <div class="examp.group">
+    <h3 class="header">Example</h3>
+
+    <div class="taggedexamp">
+      <pre class="taggedtext">
 ...
 &lt;sec&gt;
 &lt;title&gt;Conclusions&lt;/title&gt;
@@ -37,4 +132,20 @@ survivors.&lt;/p&gt;
 &lt;/sec&gt;
 ...
 
-</pre></div></div><div class="moduledefined"><h2 class="header">Module</h2><p class="moduledefined">JATS-list1.ent</p></div><div class="pagefooter"><h2 class="headname">Article Authoring Tag Library Proposed NISO JATS version 1.0</h2><h4 class="pubdate">Version of May 2012</h4></div></body></html>
+</pre>
+    </div>
+  </div>
+
+  <div class="moduledefined">
+    <h2 class="header">Module</h2>
+
+    <p class="moduledefined">JATS-list1.ent</p>
+  </div>
+
+  <div class="pagefooter">
+    <h2 class="headname">Article Authoring Tag Library Proposed NISO JATS version 1.0</h2>
+
+    <h4 class="pubdate">Version of May 2012</h4>
+  </div>
+</body>
+</html>
