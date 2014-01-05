@@ -2004,7 +2004,7 @@
          slug="acknowledgments-structure-diagram"/>
    <item hash="n-xhj2"
          title="Biography structure diagram"
-         slug="biography-structure-diagram"/>
+         slug="biography-structure-diagram-1"/>
    <item hash="n-thj2"
          title="Dedication structure diagram"
          slug="dedication-structure-diagram"/>
@@ -2022,13 +2022,13 @@
          slug="table-of-contents"/>
    <item hash="n-2ij2"
          title="Table of Contents Entry structure diagram"
-         slug="table-of-contents"/>
+         slug="table-of-contents-1"/>
    <item hash="n-8ij2"
          title="Table of Contents Division structure diagram"
-         slug="table-of-contents"/>
+         slug="table-of-contents-2"/>
    <item hash="n-xij2"
          title="Table of Contents Group structure diagram"
-         slug="table-of-contents"/>
+         slug="table-of-contents-3"/>
    <item hash="n-tij2"
          title="Front Matter Part structure diagram"
          slug="front-matter-part"/>
@@ -2097,16 +2097,16 @@
          slug="reference-item-structure"/>
    <item hash="n-3pj2"
          title="Acknowledgments structure diagram"
-         slug="acknowledgments-structure-diagram"/>
+         slug="acknowledgments-structure-diagram-1"/>
    <item hash="n-upj2"
          title="Biography structure diagram"
-         slug="biography-structure-diagram"/>
+         slug="biography-structure-diagram-2"/>
    <item hash="n-4pj2"
          title="Footnote Group structure diagram"
-         slug="footnote-group-structure"/>
+         slug="footnote-group-structure-1"/>
    <item hash="n-epj2"
          title="Glossary Elements List structure diagram"
-         slug="glossary-elements-list"/>
+         slug="glossary-elements-list-1"/>
    <item hash="n-6pj2" title="Block Structures" slug="block-structures"/>
    <item hash="n-rpj2"
          title="Answer to a Question structure diagram"

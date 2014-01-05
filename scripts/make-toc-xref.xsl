@@ -9,11 +9,39 @@
   <xsl:output method="xml" indent='yes'/>
   
   <xsl:template match='/'>
-    <tocXref>
-      <xsl:apply-templates select='/h:html/h:body/h:div[@class="toc"]/h:div[@class="toc-entry"]'/>
-    </tocXref>
+    <xsl:variable name='preprocessed'>
+      <tocXref>
+        <xsl:apply-templates select='/h:html/h:body/h:div[@class="toc"]/h:div[@class="toc-entry"]'/>
+      </tocXref>
+    </xsl:variable>
+    <!-- 
+      Take a pass over the results that we generated, to make sure that all the slugs are 
+      unique.
+    -->
+    <xsl:apply-templates select='$preprocessed' mode='unique-slugs'/>
   </xsl:template>
-  
+
+  <xsl:template match='@*|node()' mode='unique-slugs'>
+    <xsl:copy>
+      <xsl:apply-templates select='@*|node()' mode='unique-slugs'/>
+    </xsl:copy>
+  </xsl:template>
+
+  <xsl:template match='@slug' mode='unique-slugs'>
+    <xsl:variable name='this-slug' select='string(.)'/>
+    <xsl:choose>
+      <xsl:when test="preceding::item[@slug = $this-slug]">
+        <xsl:attribute name='slug'>
+          <xsl:value-of select='concat($this-slug, "-",
+            count(preceding::item[@slug = $this-slug]))'/>
+        </xsl:attribute>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:copy/>
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:template>
+
   <!-- 
     Template for a toc-entry.
   -->
