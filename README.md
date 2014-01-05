@@ -138,8 +138,6 @@ Note that the final converted jatsdoc version of the files do not get
 added back into the Git repository.  They are "pure product" files.
 
 
-
-
 Public domain
 -------------
 
@@ -154,3 +152,4 @@ information.
 The scripts and transformations developed here by Chris Maloney, in this GitHub
 project, to adapt the Tag Library to the jatsdoc framework, are also dedicated
 to the [public domain](http://creativecommons.org/publicdomain/zero/1.0/).
+
