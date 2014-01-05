@@ -1,0 +1,46 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008--><link rel="stylesheet" href="auto-css.css" type="text/css"><title>Element: Caption of a Figure, Table, etc.</title></head><body class="main"><div class="pageheader"><h2 class="headname">Article Authoring Tag Library Proposed NISO JATS version 1.0</h2><h4 class="sponsor">National Center for Biotechnology Information (NCBI)<br class="linebrk"> National Library of
+   Medicine (NLM)</h4></div><div class="header"><h1 class="elementtag">&lt;caption&gt;</h1><h1 class="elementname">Caption of a Figure, Table, etc.</h1></div><div class="definition"><p class="para">Container element for the textual description that is associated with an object (for example, with a <a href="n-ih80.html" target="main" title="Figure"><span class="elementtag">&lt;fig&gt;</span></a> or <a href="n-7st0.html" target="main" title="Table (NISO JATS table model)"><span class="elementtag">&lt;table&gt;</span></a>).</p></div><div class="remarks"><h2 class="header">Remarks</h2><p class="para">A caption is a visible textual description of a table, figure, or similar object. In print or display, a caption is usually recognizable because it is not part of the ordinary text flow; it sits just under, above, beside, or in the same small window or page area as the tabular portions of a table or the graphical portions of a figure. A <a href="n-hec0.html" target="main" title="Caption of a Figure, Table, etc."><span class="elementtag">&lt;caption&gt;</span></a> may contain many kinds of text associated with its object, for example, a title (tagged as <a href="n-7n70.html" target="main" title="Title"><span class="elementtag">&lt;title&gt;</span></a>), a descriptive paragraph (tagged as <a href="n-yux0.html" target="main" title="Paragraph"><span class="elementtag">&lt;p&gt;</span></a>), or a legend (which is not identified as a separate element in this Suite).</p><p class="para">Captions may just contain paragraphs of explanatory text (see example below) or a caption may contain an explicit title as well as text. The title is typically a short, pithy statement that acts as a heading and may be made typographically distinct, for example, set in bold or italics while the following paragraph is in roman.</p></div><div class="attrlist"><h2 class="header">Attributes</h2><h5 class="header"><a href="n-w6f0.html" target="main"><span class="attrtag">content-type</span></a> <a href="n-w6f0.html" target="main"><span class="attrname">Type of Content</span></a></h5><h5 class="header"><a href="n-qpg0.html" target="main"><span class="attrtag">id</span></a> <a href="n-qpg0.html" target="main"><span class="attrname">Identifier</span></a></h5><h5 class="header"><a href="n-m8d0.html" target="main"><span class="attrtag">specific-use</span></a> <a href="n-m8d0.html" target="main"><span class="attrname">Specific Use</span></a></h5><h5 class="header"><a href="n-rtd0.html" target="main"><span class="attrtag">style</span></a> <a href="n-rtd0.html" target="main"><span class="attrname">Style (NISO JATS table model; MathML 2.0 Tag Set)</span></a></h5><h5 class="header"><a href="n-xwr0.html" target="main"><span class="attrtag">xml:lang</span></a> <a href="n-xwr0.html" target="main"><span class="attrname">Language</span></a></h5></div><div class="contentmodel"><h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  caption      <a href="n-tbh0.html" target="main" title="Caption Model"><span class="petag">%caption-model;</span></a>                              &gt;</pre></div><div class="contentmodel"><h2 class="header">Expanded Content Model</h2><p class="contentdesc">(title?, (p)*)</p></div><div class="modeldesc"><h2 class="header">Description</h2><p class="para">The following, in order:<ul class="bullist"><li><a href="n-7n70.html" target="main" title="Title"><span class="elementtag">&lt;title&gt;</span></a> <a href="n-7n70.html" target="main" title="<title&gt;"><span class="elementname">Title</span></a>, zero or one</li><li><a href="n-yux0.html" target="main" title="Paragraph"><span class="elementtag">&lt;p&gt;</span></a> <a href="n-yux0.html" target="main" title="<p&gt;"><span class="elementname">Paragraph</span></a>, zero or more</li></ul></p></div><div class="elementcontext"><h3 class="header">This element may be contained in:</h3><p class="para"><a href="n-qvc0.html" target="main" title="Boxed Text"><span class="elementtag">&lt;boxed-text&gt;</span></a>, <a href="n-ayc0.html" target="main" title="Chemical Structure Wrapper"><span class="elementtag">&lt;chem-struct-wrap&gt;</span></a>, <a href="n-9q50.html" target="main" title="Formula, Display Group"><span class="elementtag">&lt;disp-formula-group&gt;</span></a>, <a href="n-ih80.html" target="main" title="Figure"><span class="elementtag">&lt;fig&gt;</span></a>, <a href="n-cut0.html" target="main" title="Supplementary Material"><span class="elementtag">&lt;supplementary-material&gt;</span></a>, <a href="n-j7t0.html" target="main" title="Table Wrapper"><span class="elementtag">&lt;table-wrap&gt;</span></a></p></div><div class="examp.group"><h3 class="header">Example 1</h3><p class="para">In a figure:
+</p><div class="taggedexamp"><pre class="taggedtext">
+...
+&lt;sec&gt;
+&lt;title&gt;Results&lt;/title&gt;
+&lt;p&gt;We identified .... Details of randomization procedures,
+treatment schedules, and numbers of patients followed up
+are given on the &lt;italic&gt;BMJ&lt;/italic&gt; website.&lt;/p&gt;
+&lt;fig id="F1"&gt;
+<strong><span class="focus">&lt;caption&gt;&lt;title&gt;Deaths among patients receiving day hospital
+care or alternative services.&lt;/title&gt;&lt;p&gt;Odds ratios of death by
+end of follow up were calculated by fixed effects model.
+Heterogeneity between trials is presented as
+&amp;amp;#x03C7;&lt;sup&gt;2&lt;/sup&gt;&lt;/p&gt;&lt;/caption&gt;</span></strong>
+&lt;graphic xmlns:xlink="http://www.w3.org/1999/xlink"
+xlink:href="fors2662.f1"  &gt;
+&lt;object-id&gt;456472&lt;/object-id&gt;
+&lt;/graphic&gt;
+&lt;/fig&gt;
+&lt;p&gt;...&lt;/p&gt;
+&lt;/sec&gt;
+...
+
+</pre></div></div><div class="examp.group"><h3 class="header">Example 2</h3><p class="para">In a table:
+</p><div class="taggedexamp"><pre class="taggedtext">
+...
+&lt;table-wrap id="TN0.170"&gt;
+<strong><span class="focus">&lt;caption&gt;&lt;p&gt;Numbers of patients receiving institutional
+care at the end of scheduled follow up and use of hospital
+beds among those allocated to day hospital or alternative
+services&lt;/p&gt;&lt;/caption&gt;</span></strong>
+&lt;table&gt;
+&lt;tr&gt;
+&lt;th/&gt;
+&lt;th colspan="3" align="center" rowspan="1"&gt;Institutional
+care&lt;/th&gt;
+&lt;th align="left"/&gt; &lt;th colspan="2" align="center"
+rowspan="1"&gt;&amp;#x2003;Bed use (days)&lt;/th&gt;
+&lt;/tr&gt;
+...
+&lt;/table&gt;
+&lt;/table-wrap&gt;
+...
+
+</pre></div></div><div class="moduledefined"><h2 class="header">Module</h2><p class="moduledefined">JATS-display1.ent</p></div><div class="pagefooter"><h2 class="headname">Article Authoring Tag Library Proposed NISO JATS version 1.0</h2><h4 class="pubdate">Version of May 2012</h4></div></body></html>

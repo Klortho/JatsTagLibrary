@@ -1,0 +1,83 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008--><link rel="stylesheet" href="auto-css.css" type="text/css"><title>Element: Uniform Resource Identifier (URI)</title></head><body class="main"><div class="pageheader"><h2 class="headname">Article Authoring Tag Library  NISO JATS version 1.0</h2><h4 class="sponsor">National Center for Biotechnology Information (NCBI)<br class="linebrk"> National Library of
+   Medicine (NLM)</h4></div><div class="header"><h1 class="elementtag">&lt;uri&gt;</h1><h1 class="elementname">Uniform Resource Identifier (URI)</h1></div><div class="definition"><p class="para">Identifies a Uniform Resource Identifier (such as a URL) that may be used as a live link, typically naming a website, such as: <tt>&lt;uri&gt;http://www.mulberrytech.com&lt;/uri&gt;</tt>).</p></div><div class="attrlist"><h2 class="header">Attributes</h2><h5 class="header"><a href="n-r6f0.html" target="main"><span class="attrtag">content-type</span></a> <a href="n-r6f0.html" target="main"><span class="attrname">Type of Content</span></a></h5><h5 class="header"><a href="n-gad0.html" target="main"><span class="attrtag">specific-use</span></a> <a href="n-gad0.html" target="main"><span class="attrname">Specific Use</span></a></h5><h5 class="header"><a href="n-rjd0.html" target="main"><span class="attrtag">xlink:actuate</span></a> <a href="n-rjd0.html" target="main"><span class="attrname">Actuating the Link</span></a></h5><h5 class="header"><a href="n-6qd0.html" target="main"><span class="attrtag">xlink:href</span></a> <a href="n-6qd0.html" target="main"><span class="attrname">Href (Linking Mechanism)</span></a></h5><h5 class="header"><a href="n-g9d0.html" target="main"><span class="attrtag">xlink:role</span></a> <a href="n-g9d0.html" target="main"><span class="attrname">Role of the Link</span></a></h5><h5 class="header"><a href="n-2zd0.html" target="main"><span class="attrtag">xlink:show</span></a> <a href="n-2zd0.html" target="main"><span class="attrname">Showing the Link</span></a></h5><h5 class="header"><a href="n-52r0.html" target="main"><span class="attrtag">xlink:title</span></a> <a href="n-52r0.html" target="main"><span class="attrname">Title of the Link</span></a></h5><h5 class="header"><a href="n-icr0.html" target="main"><span class="attrtag">xlink:type</span></a> <a href="n-icr0.html" target="main"><span class="attrname">Type of Link</span></a></h5><h5 class="header"><a href="n-3ar0.html" target="main"><span class="attrtag">xmlns:xlink</span></a> <a href="n-3ar0.html" target="main"><span class="attrname">XLink Namespace Declaration</span></a></h5><h5 class="header"><a href="n-zwr0.html" target="main"><span class="attrtag">xml:lang</span></a> <a href="n-zwr0.html" target="main"><span class="attrname">Language</span></a></h5></div><div class="relatedelem"><h2 class="header">Related Elements</h2><p class="para"> <a href="n-ny40.html" target="main" title="URI for This Same Article Online"><span class="elementtag">&lt;self-uri&gt;</span></a> is used when a document or document component (such as an article or a chapter) is available in multiple forms, for example, as a means of indicating the online version of a print document. Conversely, a URI that indicates a different book, article, or any other kind of external reference is usually tagged as <a href="n-if80.html" target="main" title="External Link"><span class="elementtag">&lt;ext-link&gt;</span></a>. The <a href="n-75e0.html" target="main" title="Uniform Resource Identifier (URI)"><span class="elementtag">&lt;uri&gt;</span></a> element, although allowed everywhere <a href="n-if80.html" target="main" title="External Link"><span class="elementtag">&lt;ext-link&gt;</span></a> is used, is more typically part of an address, information concerning a contributor, or part of a reference citation. Loosely put, an external link <a href="n-if80.html" target="main" title="External Link"><span class="elementtag">&lt;ext-link&gt;</span></a> element is intended to act as a link; a URI <a href="n-75e0.html" target="main" title="Uniform Resource Identifier (URI)"><span class="elementtag">&lt;uri&gt;</span></a> element identifies a URI (such as a URL) in the text, but may or may not be a traversable link; and the <span class="elementtag">&lt;self-uri&gt;</span> points to another form of the same document.</p><p class="para">The elements used in an address may include the address class elements: <a href="n-2j00.html" target="main" title="Address Line"><span class="elementtag">&lt;addr-line&gt;</span></a>, <a href="n-4u50.html" target="main" title="Country: in an Address"><span class="elementtag">&lt;country&gt;</span></a>, <a href="n-zr80.html" target="main" title="Fax Number: in an Address"><span class="elementtag">&lt;fax&gt;</span></a>, <a href="n-cja0.html" target="main" title="Institution Name: in an Address"><span class="elementtag">&lt;institution&gt;</span></a>, and <a href="n-wjx0.html" target="main" title="Phone Number: in an Address"><span class="elementtag">&lt;phone&gt;</span></a> and the address linking class elements: <a href="n-2t80.html" target="main" title="Email Address"><span class="elementtag">&lt;email&gt;</span></a>, <a href="n-if80.html" target="main" title="External Link"><span class="elementtag">&lt;ext-link&gt;</span></a>, and <a href="n-75e0.html" target="main" title="Uniform Resource Identifier (URI)"><span class="elementtag">&lt;uri&gt;</span></a>.</p></div><div class="contentmodel"><h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  uri          (#PCDATA <a href="n-mem0.html" target="main" title="URI Elements"><span class="petag">%uri-elements;</span></a>)*                    &gt;</pre></div><div class="contentmodel"><h2 class="header">Expanded Content Model</h2><p class="contentdesc">(#PCDATA)*</p></div><div class="modeldesc"><h2 class="header">Description</h2><p class="para">Text, numbers, or special characters, zero or more</p></div><div class="elementcontext"><h3 class="header">This element may be contained in:</h3><p class="para"><a href="n-vb00.html" target="main" title="Address/Contact Information"><span class="elementtag">&lt;address&gt;</span></a>, <a href="n-sm00.html" target="main" title="Affiliation"><span class="elementtag">&lt;aff&gt;</span></a>, <a href="n-v620.html" target="main" title="Article Title"><span class="elementtag">&lt;article-title&gt;</span></a>, <a href="n-pi20.html" target="main" title="Attribution"><span class="elementtag">&lt;attrib&gt;</span></a>, <a href="n-4uc0.html" target="main" title="Bold"><span class="elementtag">&lt;bold&gt;</span></a>, <a href="n-sgc0.html" target="main" title="Chapter Title in a Citation"><span class="elementtag">&lt;chapter-title&gt;</span></a>, <a href="n-96c0.html" target="main" title="Chemical Structure (Display)"><span class="elementtag">&lt;chem-struct&gt;</span></a>, <a href="n-umc0.html" target="main" title="Collaborative (Group) Author"><span class="elementtag">&lt;collab&gt;</span></a>, <a href="n-x330.html" target="main" title="Comment in a Citation"><span class="elementtag">&lt;comment&gt;</span></a>, <a href="n-mp30.html" target="main" title="Contributor"><span class="elementtag">&lt;contrib&gt;</span></a>, <a href="n-rc50.html" target="main" title="Copyright Statement"><span class="elementtag">&lt;copyright-statement&gt;</span></a>, <a href="n-ie50.html" target="main" title="Definition List: Definition Head"><span class="elementtag">&lt;def-head&gt;</span></a>, <a href="n-mi50.html" target="main" title="Formula, Display"><span class="elementtag">&lt;disp-formula&gt;</span></a>, <a href="n-ub50.html" target="main" title="Formula, Display Group"><span class="elementtag">&lt;disp-formula-group&gt;</span></a>, <a href="n-hk80.html" target="main" title="Element Citation"><span class="elementtag">&lt;element-citation&gt;</span></a>, <a href="n-fca0.html" target="main" title="Funding Statement"><span class="elementtag">&lt;funding-statement&gt;</span></a>, <a href="n-pra0.html" target="main" title="Inline Supplementary Material"><span class="elementtag">&lt;inline-supplementary-material&gt;</span></a>, <a href="n-zku0.html" target="main" title="Italic"><span class="elementtag">&lt;italic&gt;</span></a>, <a href="n-etu0.html" target="main" title="License Paragraph"><span class="elementtag">&lt;license-p&gt;</span></a>, <a href="n-9bu0.html" target="main" title="Mixed Citation"><span class="elementtag">&lt;mixed-citation&gt;</span></a>, <a href="n-cxw0.html" target="main" title="Monospace Text (Typewriter Text)"><span class="elementtag">&lt;monospace&gt;</span></a>, <a href="n-bnw0.html" target="main" title="Named Special (Subject) Content"><span class="elementtag">&lt;named-content&gt;</span></a>, <a href="n-g5x0.html" target="main" title="Overline"><span class="elementtag">&lt;overline&gt;</span></a>, <a href="n-8wx0.html" target="main" title="Paragraph"><span class="elementtag">&lt;p&gt;</span></a>, <a href="n-anx0.html" target="main" title="Part Title in a Citation"><span class="elementtag">&lt;part-title&gt;</span></a>, <a href="n-kqx0.html" target="main" title="Preformatted Text"><span class="elementtag">&lt;preformat&gt;</span></a>, <a href="n-h8v0.html" target="main" title="Product Information"><span class="elementtag">&lt;product&gt;</span></a>, <a href="n-crv0.html" target="main" title="Related Article Information"><span class="elementtag">&lt;related-article&gt;</span></a>, <a href="n-y9v0.html" target="main" title="Related Object Information"><span class="elementtag">&lt;related-object&gt;</span></a>, <a href="n-iw40.html" target="main" title="Roman"><span class="elementtag">&lt;roman&gt;</span></a>, <a href="n-gs40.html" target="main" title="Sans Serif"><span class="elementtag">&lt;sans-serif&gt;</span></a>, <a href="n-af40.html" target="main" title="Small Caps"><span class="elementtag">&lt;sc&gt;</span></a>, <a href="n-7940.html" target="main" title="Source"><span class="elementtag">&lt;source&gt;</span></a>, <a href="n-qws0.html" target="main" title="Strike Through"><span class="elementtag">&lt;strike&gt;</span></a>, <a href="n-m7s0.html" target="main" title="Styled Special (Subject) Content"><span class="elementtag">&lt;styled-content&gt;</span></a>, <a href="n-7hs0.html" target="main" title="Subscript"><span class="elementtag">&lt;sub&gt;</span></a>, <a href="n-tps0.html" target="main" title="Document Subtitle"><span class="elementtag">&lt;subtitle&gt;</span></a>, <a href="n-4kt0.html" target="main" title="Superscript"><span class="elementtag">&lt;sup&gt;</span></a>, <a href="n-eut0.html" target="main" title="Supplementary Material"><span class="elementtag">&lt;supplementary-material&gt;</span></a>, <a href="n-hit0.html" target="main" title="Table Data Cell (NISO JATS table model)"><span class="elementtag">&lt;td&gt;</span></a>, <a href="n-xmt0.html" target="main" title="Definition List: Term"><span class="elementtag">&lt;term&gt;</span></a>, <a href="n-7c70.html" target="main" title="Definition List: Term Head"><span class="elementtag">&lt;term-head&gt;</span></a>, <a href="n-c470.html" target="main" title="Table Header Cell (NISO JATS table model)"><span class="elementtag">&lt;th&gt;</span></a>, <a href="n-qn70.html" target="main" title="Title"><span class="elementtag">&lt;title&gt;</span></a>, <a href="n-dj70.html" target="main" title="Translated Source"><span class="elementtag">&lt;trans-source&gt;</span></a>, <a href="n-ab70.html" target="main" title="Translated Title"><span class="elementtag">&lt;trans-title&gt;</span></a>, <a href="n-fke0.html" target="main" title="Underline"><span class="elementtag">&lt;underline&gt;</span></a></p></div><div class="examp.group"><h3 class="header">Example 1</h3><p class="para">In an element-style bibliographic reference (punctuation and spacing removed):</p><div class="taggedexamp"><pre class="taggedtext">
+...
+&lt;ref&gt;
+&lt;element-citation publication-type="book" publication-format="web"&gt;
+&lt;source&gt;Fact sheet: AIDS information resources&lt;/source&gt;
+&lt;comment&gt;[Internet]&lt;/comment&gt;
+&lt;publisher-loc&gt;Bethesda (MD)&lt;/publisher-loc&gt;
+&lt;publisher-name&gt;National Library of Medicine
+(US)&lt;/publisher-name&gt;
+&lt;year iso-8601-date="2003-05-02"&gt;2003&lt;/year&gt;
+&lt;month&gt;May&lt;/month&gt;
+&lt;day&gt;2&lt;/day&gt;
+&lt;date-in-citation content-type="updated"
+iso-8601-date="2005-07-14"&gt;updated 2005 Jul 14&lt;/date-in-citation&gt;
+&lt;date-in-citation content-type="access-date"
+iso-8601-date="2006-11-15"&gt;cited 2006 Nov 15&lt;/date-in-citation&gt;
+&lt;size units="screens"&gt;[about 3 screens]&lt;/size&gt;
+&lt;comment&gt;Available from:
+<strong><span class="focus">&lt;uri&gt;http://www.nlm.nih.gov/pubs/factsheets/aidsinfs.html&lt;/uri&gt;</span></strong>
+&lt;/comment&gt;
+&lt;/element-citation&gt;
+&lt;/ref&gt;
+...
+
+
+</pre></div></div><div class="examp.group"><h3 class="header">Example 2</h3><p class="para">In a mixed-style bibliographic reference (punctuation and spacing preserved):</p><div class="taggedexamp"><pre class="taggedtext">
+...
+&lt;ref&gt;
+&lt;mixed-citation publication-type="book" publication-format="web"&gt;
+&lt;source&gt;Fact sheet: AIDS information resources&lt;/source&gt;
+[Internet]. &lt;publisher-loc&gt;Bethesda
+(MD)&lt;/publisher-loc&gt;: &lt;publisher-name&gt;National
+Library of Medicine (US)&lt;/publisher-name&gt;;
+&lt;year iso-8601-date="2003-05-02"&gt;2003&lt;/year&gt; &lt;month&gt;May&lt;/month&gt;
+&lt;day&gt;2&lt;/day&gt; [updated &lt;date-in-citation content-type="updated"
+iso-8601-date="2005-07-14"&gt;2005 Jul 14&lt;/date-in-citation&gt;; cited
+&lt;date-in-citation content-type="access-date"
+iso-8601-date="2006-11-15"&gt;2006 Nov 15&lt;/date-in-citation&gt;].
+&lt;size units="screens"&gt;[about 3 screens]&lt;/size&gt;.
+Available from:
+<strong><span class="focus">&lt;uri&gt;http://www.nlm.nih.gov/pubs/factsheets/aidsinfs.html&lt;/uri&gt;</span></strong>.
+&lt;/mixed-citation&gt;
+&lt;/ref&gt;
+...
+
+
+</pre></div></div><div class="examp.group"><h3 class="header">Example 3</h3><p class="para">In article metadata:</p><div class="taggedexamp"><pre class="taggedtext">
+...
+&lt;article-meta&gt;
+...
+&lt;contrib-group&gt;
+&lt;contrib contrib-type="author"&gt;
+&lt;name&gt;&lt;surname&gt;Silverstein&lt;/surname&gt;
+&lt;given-names&gt;Michael Q.&lt;/given-names&gt;&lt;/name&gt;
+&lt;aff id="UWW"&gt;
+&lt;institution&gt;Department of Pathobiology
+University of WallieWash&lt;/institution&gt;
+&lt;addr-line&gt;Oberlin, Washington 96204&lt;/addr-line&gt;
+&lt;country&gt;USA&lt;/country&gt;
+&lt;/aff&gt;
+&lt;/contrib&gt;
+&lt;contrib contrib-type="author"&gt;
+&lt;name&gt;&lt;surname&gt;Taylor&lt;/surname&gt;
+&lt;given-names&gt;James C.&lt;/given-names&gt;&lt;/name&gt;
+&lt;degrees&gt;Ph D&lt;/degrees&gt;
+&lt;aff id="affKalakukko"&gt;Kalakukko Corporation&lt;/aff&gt;
+&lt;address&gt;
+&lt;institution&gt;Kalakukko Corporation&lt;/institution&gt;
+&lt;addr-line&gt;17 West Jefferson St.&lt;/addr-line&gt;
+&lt;addr-line&gt;Suite 207&lt;/addr-line&gt;
+&lt;addr-line&gt;New South Finland, MD 20856.&lt;/addr-line&gt;
+&lt;country&gt;USA&lt;/country&gt;
+&lt;phone&gt;(301) 754-5766&lt;/phone&gt;
+&lt;fax&gt;(301) 754-5765&lt;/fax&gt;
+&lt;email&gt;jct@kalakukko.com&lt;/email&gt;
+<strong><span class="focus">&lt;uri&gt;http://www.kalakukko.com&lt;/uri&gt;</span></strong>
+&lt;/address&gt;
+&lt;/contrib&gt;
+&lt;/contrib-group&gt;
+...
+&lt;/article-meta&gt;...
+</pre></div></div><div class="moduledefined"><h2 class="header">Module</h2><p class="moduledefined">JATS-common1.ent</p></div><div class="pagefooter"><h2 class="headname">Article Authoring Tag Library  NISO JATS version 1.0</h2><h4 class="pubdate">Version of August 2012</h4></div></body></html>
