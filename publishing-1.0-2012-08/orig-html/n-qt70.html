@@ -1,5 +1,145 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008--><link rel="stylesheet" href="auto-css.css" type="text/css"><title>Element: Reference Item</title></head><body class="main"><div class="pageheader"><h2 class="headname">Journal Publishing Tag Library  NISO JATS Version 1.0</h2><h4 class="sponsor">National Center for Biotechnology Information (NCBI)<br class="linebrk"> National Library of
-   Medicine (NLM)</h4></div><div class="header"><h1 class="elementtag">&lt;ref&gt;</h1><h1 class="elementname">Reference Item</h1></div><div class="definition"><p class="para">One item in a bibliographic list.</p></div><div class="remarks"><h2 class="header">Remarks</h2><p class="para">A <a href="n-qt70.html" target="main" title="Reference Item"><span class="elementtag">&lt;ref&gt;</span></a> is typically a citation describing a referenced work (see <a href="n-vyu2.html#pub-tag-citation">Tagging References</a>). This Tag Set allows notes as well as citations in a bibliographic list, but best practice is to place notes in an <a href="n-i8w0.html" target="main" title="Footnote Group"><span class="elementtag">&lt;fn-group&gt;</span></a> or <a href="n-wes0.html" target="main" title="Notes"><span class="elementtag">&lt;notes&gt;</span></a> section and use <a href="n-yf70.html" target="main" title="Reference List (Bibliographic)"><span class="elementtag">&lt;ref-list&gt;</span></a> only for bibliographic citations.</p></div><div class="attrlist"><h2 class="header">Attributes</h2><h5 class="header"><a href="n-yfh0.html" target="main"><span class="attrtag">content-type</span></a> <a href="n-yfh0.html" target="main"><span class="attrname">Type of Content</span></a></h5><h5 class="header"><a href="n-9pi0.html" target="main"><span class="attrtag">id</span></a> <a href="n-9pi0.html" target="main"><span class="attrname">Identifier</span></a></h5><h5 class="header"><a href="n-nsp0.html" target="main"><span class="attrtag">specific-use</span></a> <a href="n-nsp0.html" target="main"><span class="attrname">Specific Use</span></a></h5><h5 class="header"><a href="n-j6q0.html" target="main"><span class="attrtag">xml:lang</span></a> <a href="n-j6q0.html" target="main"><span class="attrname">Language</span></a></h5></div><div class="contentmodel"><h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  ref          <a href="n-5932.html" target="main" title="Reference Item Model"><span class="petag">%ref-model;</span></a>                                  &gt;</pre></div><div class="contentmodel"><h2 class="header">Expanded Content Model</h2><p class="contentdesc">(label?, (citation-alternatives | element-citation | mixed-citation | nlm-citation | note)+)</p></div><div class="modeldesc"><h2 class="header">Description</h2><p class="para">The following, in order:<ul class="bullist"><li><a href="n-ixv0.html" target="main" title="Label (of an Equation, Figure, Reference, etc.)"><span class="elementtag">&lt;label&gt;</span></a> <a href="n-ixv0.html" target="main" title="<label&gt;"><span class="elementname">Label (of an Equation, Figure, Reference, etc.)</span></a>, zero or one</li><li>One or more of any of:<ul class="bullist"><li>Citation Elements<ul class="bullist"><li><a href="n-m350.html" target="main" title="Citation Alternatives"><span class="elementtag">&lt;citation-alternatives&gt;</span></a> <a href="n-m350.html" target="main" title="<citation-alternatives&gt;"><span class="elementname">Citation Alternatives</span></a></li><li><a href="n-t2u0.html" target="main" title="Element Citation"><span class="elementtag">&lt;element-citation&gt;</span></a> <a href="n-t2u0.html" target="main" title="<element-citation&gt;"><span class="elementname">Element Citation</span></a></li><li><a href="n-3u40.html" target="main" title="Mixed Citation"><span class="elementtag">&lt;mixed-citation&gt;</span></a> <a href="n-3u40.html" target="main" title="<mixed-citation&gt;"><span class="elementname">Mixed Citation</span></a></li><li><a href="n-yxs0.html" target="main" title="NLM Citation"><span class="elementtag">&lt;nlm-citation&gt;</span></a> <a href="n-yxs0.html" target="main" title="<nlm-citation&gt;"><span class="elementname">NLM Citation</span></a></li></ul></li><li><a href="n-c7s0.html" target="main" title="Note in a Reference List"><span class="elementtag">&lt;note&gt;</span></a> <a href="n-c7s0.html" target="main" title="<note&gt;"><span class="elementname">Note in a Reference List</span></a></li></ul></li></ul></p></div><div class="elementcontext"><h3 class="header">This element may be contained in:</h3><p class="para"><a href="n-yf70.html" target="main" title="Reference List (Bibliographic)"><span class="elementtag">&lt;ref-list&gt;</span></a></p></div><div class="examp.group"><h3 class="header">Example 1</h3><p class="para">Including an element-style bibliographic reference (punctuation and spacing removed): </p><div class="taggedexamp"><pre class="taggedtext">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta name="generator" content="HTML Tidy for Linux/x86 (vers 25 March 2009), see www.w3.org" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008-->
+  <link rel="stylesheet" href="auto-css.css" type="text/css" />
+
+  <title>Element: Reference Item</title>
+</head>
+
+<body class="main">
+  <div class="pageheader">
+    <h2 class="headname">Journal Publishing Tag Library NISO JATS Version 1.0</h2>
+
+    <h4 class="sponsor">National Center for Biotechnology Information (NCBI)<br class="linebrk" />
+    National Library of Medicine (NLM)</h4>
+  </div>
+
+  <div class="header">
+    <h1 class="elementtag">&lt;ref&gt;</h1>
+
+    <h1 class="elementname">Reference Item</h1>
+  </div>
+
+  <div class="definition">
+    <p class="para">One item in a bibliographic list.</p>
+  </div>
+
+  <div class="remarks">
+    <h2 class="header">Remarks</h2>
+
+    <p class="para">A <a href="n-qt70.html" target="main" title="Reference Item"><span class=
+    "elementtag">&lt;ref&gt;</span></a> is typically a citation describing a referenced work (see
+    <a href="n-vyu2.html#pub-tag-citation">Tagging References</a>). This Tag Set allows notes as
+    well as citations in a bibliographic list, but best practice is to place notes in an <a href=
+    "n-i8w0.html" target="main" title="Footnote Group"><span class=
+    "elementtag">&lt;fn-group&gt;</span></a> or <a href="n-wes0.html" target="main" title=
+    "Notes"><span class="elementtag">&lt;notes&gt;</span></a> section and use <a href="n-yf70.html"
+    target="main" title="Reference List (Bibliographic)"><span class=
+    "elementtag">&lt;ref-list&gt;</span></a> only for bibliographic citations.</p>
+  </div>
+
+  <div class="attrlist">
+    <h2 class="header">Attributes</h2>
+
+    <h5 class="header"><a href="n-yfh0.html" target="main"><span class=
+    "attrtag">content-type</span></a> <a href="n-yfh0.html" target="main"><span class=
+    "attrname">Type of Content</span></a></h5>
+
+    <h5 class="header"><a href="n-9pi0.html" target="main"><span class="attrtag">id</span></a>
+    <a href="n-9pi0.html" target="main"><span class="attrname">Identifier</span></a></h5>
+
+    <h5 class="header"><a href="n-nsp0.html" target="main"><span class=
+    "attrtag">specific-use</span></a> <a href="n-nsp0.html" target="main"><span class=
+    "attrname">Specific Use</span></a></h5>
+
+    <h5 class="header"><a href="n-j6q0.html" target="main"><span class=
+    "attrtag">xml:lang</span></a> <a href="n-j6q0.html" target="main"><span class=
+    "attrname">Language</span></a></h5>
+  </div>
+
+  <div class="contentmodel">
+    <h2 class="header first">Content Model</h2>
+    <pre class="contentdesc">
+&lt;!ELEMENT  ref          <a href="n-5932.html" target="main" title=
+"Reference Item Model"><span class=
+"petag">%ref-model;</span></a>                                  &gt;
+</pre>
+  </div>
+
+  <div class="contentmodel">
+    <h2 class="header">Expanded Content Model</h2>
+
+    <p class="contentdesc">(label?, (citation-alternatives | element-citation | mixed-citation |
+    nlm-citation | note)+)</p>
+  </div>
+
+  <div class="modeldesc">
+    <h2 class="header">Description</h2>
+
+    <p class="para">The following, in order:</p>
+
+    <ul class="bullist">
+      <li><a href="n-ixv0.html" target="main" title=
+      "Label (of an Equation, Figure, Reference, etc.)"><span class=
+      "elementtag">&lt;label&gt;</span></a> <a href="n-ixv0.html" target="main" title=
+      "&lt;label&gt;"><span class="elementname">Label (of an Equation, Figure, Reference,
+      etc.)</span></a>, zero or one</li>
+
+      <li>One or more of any of:
+
+        <ul class="bullist">
+          <li>Citation Elements
+
+            <ul class="bullist">
+              <li><a href="n-m350.html" target="main" title="Citation Alternatives"><span class=
+              "elementtag">&lt;citation-alternatives&gt;</span></a> <a href="n-m350.html" target=
+              "main" title="&lt;citation-alternatives&gt;"><span class="elementname">Citation
+              Alternatives</span></a></li>
+
+              <li><a href="n-t2u0.html" target="main" title="Element Citation"><span class=
+              "elementtag">&lt;element-citation&gt;</span></a> <a href="n-t2u0.html" target="main"
+              title="&lt;element-citation&gt;"><span class="elementname">Element
+              Citation</span></a></li>
+
+              <li><a href="n-3u40.html" target="main" title="Mixed Citation"><span class=
+              "elementtag">&lt;mixed-citation&gt;</span></a> <a href="n-3u40.html" target="main"
+              title="&lt;mixed-citation&gt;"><span class="elementname">Mixed
+              Citation</span></a></li>
+
+              <li><a href="n-yxs0.html" target="main" title="NLM Citation"><span class=
+              "elementtag">&lt;nlm-citation&gt;</span></a> <a href="n-yxs0.html" target="main"
+              title="&lt;nlm-citation&gt;"><span class="elementname">NLM Citation</span></a></li>
+            </ul>
+          </li>
+
+          <li><a href="n-c7s0.html" target="main" title="Note in a Reference List"><span class=
+          "elementtag">&lt;note&gt;</span></a> <a href="n-c7s0.html" target="main" title=
+          "&lt;note&gt;"><span class="elementname">Note in a Reference List</span></a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <div class="elementcontext">
+    <h3 class="header">This element may be contained in:</h3>
+
+    <p class="para"><a href="n-yf70.html" target="main" title=
+    "Reference List (Bibliographic)"><span class="elementtag">&lt;ref-list&gt;</span></a></p>
+  </div>
+
+  <div class="examp.group">
+    <h3 class="header">Example 1</h3>
+
+    <p class="para">Including an element-style bibliographic reference (punctuation and spacing
+    removed):</p>
+
+    <div class="taggedexamp">
+      <pre class="taggedtext">
 ...
 &lt;back&gt;&lt;ack&gt;...&lt;/ack&gt;
 &lt;ref-list&gt;
@@ -28,7 +168,18 @@ iso-8601-date="1998-02-28"&gt;[cited 1998 Feb 28]&lt;/date-in-citation&gt;
 &lt;/ref-list&gt;
 ...
 
-</pre></div></div><div class="examp.group"><h3 class="header">Example 2</h3><p class="para">Including a mixed-style bibliographic reference (punctuation and spacing preserved): </p><div class="taggedexamp"><pre class="taggedtext">
+</pre>
+    </div>
+  </div>
+
+  <div class="examp.group">
+    <h3 class="header">Example 2</h3>
+
+    <p class="para">Including a mixed-style bibliographic reference (punctuation and spacing
+    preserved):</p>
+
+    <div class="taggedexamp">
+      <pre class="taggedtext">
 ...
 &lt;back&gt;&lt;ack&gt;...&lt;/ack&gt;
 &lt;ref-list&gt;
@@ -54,4 +205,20 @@ iso-8601-date="1998-02-28"&gt;1998 Feb 28&lt;/date-in-citation&gt;].
 &lt;/back&gt;
 &lt;/article&gt;
 
-</pre></div></div><div class="moduledefined"><h2 class="header">Module</h2><p class="moduledefined">JATS-references1.ent</p></div><div class="pagefooter"><h2 class="headname">Journal Publishing Tag Library  NISO JATS Version 1.0</h2><h4 class="pubdate">Version of August 2012</h4></div></body></html>
+</pre>
+    </div>
+  </div>
+
+  <div class="moduledefined">
+    <h2 class="header">Module</h2>
+
+    <p class="moduledefined">JATS-references1.ent</p>
+  </div>
+
+  <div class="pagefooter">
+    <h2 class="headname">Journal Publishing Tag Library NISO JATS Version 1.0</h2>
+
+    <h4 class="pubdate">Version of August 2012</h4>
+  </div>
+</body>
+</html>

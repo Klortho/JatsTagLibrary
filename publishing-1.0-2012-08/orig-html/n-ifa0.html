@@ -1,14 +1,117 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008--><link rel="stylesheet" href="auto-css.css" type="text/css"><title>Element: Definition List: Definition Item</title></head><body class="main"><div class="pageheader"><h2 class="headname">Journal Publishing Tag Library  NISO JATS Version 1.0</h2><h4 class="sponsor">National Center for Biotechnology Information (NCBI)<br class="linebrk"> National Library of
-   Medicine (NLM)</h4></div><div class="header"><h1 class="elementtag">&lt;def-item&gt;</h1><h1 class="elementname">Definition List: Definition Item</h1></div><div class="definition"><p class="para">Container element for one term/definition pair in
-a definition list.</p></div><div class="attrlist"><h2 class="header">Attributes</h2><h5 class="header"><a href="n-9pi0.html" target="main"><span class="attrtag">id</span></a> <a href="n-9pi0.html" target="main"><span class="attrname">Identifier</span></a></h5><h5 class="header"><a href="n-nsp0.html" target="main"><span class="attrtag">specific-use</span></a> <a href="n-nsp0.html" target="main"><span class="attrname">Specific Use</span></a></h5><h5 class="header"><a href="n-j6q0.html" target="main"><span class="attrtag">xml:lang</span></a> <a href="n-j6q0.html" target="main"><span class="attrname">Language</span></a></h5></div><div class="relatedelem"><h2 class="header">Related Elements</h2><p class="para">A <a href="n-2na0.html" target="main" title="Definition List"><span class="elementtag">&lt;def-list&gt;</span></a> may take a <a href="n-ixv0.html" target="main" title="Label (of an Equation, Figure, Reference, etc.)"><span class="elementtag">&lt;label&gt;</span></a>
-that provides it with a number or other designator, followed by an optional <a href="n-gz60.html" target="main" title="Title"><span class="elementtag">&lt;title&gt;</span></a> naming the entire list, followed by optional headings for
- terms and their definitions. <a href="n-rs60.html" target="main" title="Definition List: Term Head"><span class="elementtag">&lt;term-head&gt;</span></a> contains the
- heading over the first (term) column, and <a href="n-8sa0.html" target="main" title="Definition List: Definition Head"><span class="elementtag">&lt;def-head&gt;</span></a>
- contains the heading for the second (definition) column; neither serves as a
- container element for terms or definitions. Individual <a href="n-su60.html" target="main" title="Definition List: Term"><span class="elementtag">&lt;term&gt;</span></a>s and their <a href="n-ava0.html" target="main" title="Definition List: Definition"><span class="elementtag">&lt;def&gt;</span></a>s are paired
- in <a href="n-ifa0.html" target="main" title="Definition List: Definition Item"><span class="elementtag">&lt;def-item&gt;</span></a>s. Definition lists are recursive, so following all the 
-terms and definitions, there may be one or more embedded <a href="n-2na0.html" target="main" title="Definition List"><span class="elementtag">&lt;def-list&gt;</span></a>
-elements.</p></div><div class="contentmodel"><h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  def-item     <a href="n-ikz0.html" target="main" title="Definition List: Definition Item Model"><span class="petag">%def-item-model;</span></a>                             &gt;</pre></div><div class="contentmodel"><h2 class="header">Expanded Content Model</h2><p class="contentdesc">(term, def*)</p></div><div class="modeldesc"><h2 class="header">Description</h2><p class="para">The following, in order:<ul class="bullist"><li><a href="n-su60.html" target="main" title="Definition List: Term"><span class="elementtag">&lt;term&gt;</span></a> <a href="n-su60.html" target="main" title="<term&gt;"><span class="elementname">Definition List: Term</span></a></li><li><a href="n-ava0.html" target="main" title="Definition List: Definition"><span class="elementtag">&lt;def&gt;</span></a> <a href="n-ava0.html" target="main" title="<def&gt;"><span class="elementname">Definition List: Definition</span></a>, zero or more</li></ul></p></div><div class="elementcontext"><h3 class="header">This element may be contained in:</h3><p class="para"><a href="n-2na0.html" target="main" title="Definition List"><span class="elementtag">&lt;def-list&gt;</span></a></p></div><div class="examp.group"><h3 class="header">Example</h3><div class="taggedexamp"><pre class="taggedtext">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta name="generator" content="HTML Tidy for Linux/x86 (vers 25 March 2009), see www.w3.org" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008-->
+  <link rel="stylesheet" href="auto-css.css" type="text/css" />
+
+  <title>Element: Definition List: Definition Item</title>
+</head>
+
+<body class="main">
+  <div class="pageheader">
+    <h2 class="headname">Journal Publishing Tag Library NISO JATS Version 1.0</h2>
+
+    <h4 class="sponsor">National Center for Biotechnology Information (NCBI)<br class="linebrk" />
+    National Library of Medicine (NLM)</h4>
+  </div>
+
+  <div class="header">
+    <h1 class="elementtag">&lt;def-item&gt;</h1>
+
+    <h1 class="elementname">Definition List: Definition Item</h1>
+  </div>
+
+  <div class="definition">
+    <p class="para">Container element for one term/definition pair in a definition list.</p>
+  </div>
+
+  <div class="attrlist">
+    <h2 class="header">Attributes</h2>
+
+    <h5 class="header"><a href="n-9pi0.html" target="main"><span class="attrtag">id</span></a>
+    <a href="n-9pi0.html" target="main"><span class="attrname">Identifier</span></a></h5>
+
+    <h5 class="header"><a href="n-nsp0.html" target="main"><span class=
+    "attrtag">specific-use</span></a> <a href="n-nsp0.html" target="main"><span class=
+    "attrname">Specific Use</span></a></h5>
+
+    <h5 class="header"><a href="n-j6q0.html" target="main"><span class=
+    "attrtag">xml:lang</span></a> <a href="n-j6q0.html" target="main"><span class=
+    "attrname">Language</span></a></h5>
+  </div>
+
+  <div class="relatedelem">
+    <h2 class="header">Related Elements</h2>
+
+    <p class="para">A <a href="n-2na0.html" target="main" title="Definition List"><span class=
+    "elementtag">&lt;def-list&gt;</span></a> may take a <a href="n-ixv0.html" target="main" title=
+    "Label (of an Equation, Figure, Reference, etc.)"><span class=
+    "elementtag">&lt;label&gt;</span></a> that provides it with a number or other designator,
+    followed by an optional <a href="n-gz60.html" target="main" title="Title"><span class=
+    "elementtag">&lt;title&gt;</span></a> naming the entire list, followed by optional headings for
+    terms and their definitions. <a href="n-rs60.html" target="main" title=
+    "Definition List: Term Head"><span class="elementtag">&lt;term-head&gt;</span></a> contains the
+    heading over the first (term) column, and <a href="n-8sa0.html" target="main" title=
+    "Definition List: Definition Head"><span class="elementtag">&lt;def-head&gt;</span></a>
+    contains the heading for the second (definition) column; neither serves as a container element
+    for terms or definitions. Individual <a href="n-su60.html" target="main" title=
+    "Definition List: Term"><span class="elementtag">&lt;term&gt;</span></a>s and their <a href=
+    "n-ava0.html" target="main" title="Definition List: Definition"><span class=
+    "elementtag">&lt;def&gt;</span></a>s are paired in <a href="n-ifa0.html" target="main" title=
+    "Definition List: Definition Item"><span class="elementtag">&lt;def-item&gt;</span></a>s.
+    Definition lists are recursive, so following all the terms and definitions, there may be one or
+    more embedded <a href="n-2na0.html" target="main" title="Definition List"><span class=
+    "elementtag">&lt;def-list&gt;</span></a> elements.</p>
+  </div>
+
+  <div class="contentmodel">
+    <h2 class="header first">Content Model</h2>
+    <pre class="contentdesc">
+&lt;!ELEMENT  def-item     <a href="n-ikz0.html" target="main" title=
+"Definition List: Definition Item Model"><span class=
+"petag">%def-item-model;</span></a>                             &gt;
+</pre>
+  </div>
+
+  <div class="contentmodel">
+    <h2 class="header">Expanded Content Model</h2>
+
+    <p class="contentdesc">(term, def*)</p>
+  </div>
+
+  <div class="modeldesc">
+    <h2 class="header">Description</h2>
+
+    <p class="para">The following, in order:</p>
+
+    <ul class="bullist">
+      <li><a href="n-su60.html" target="main" title="Definition List: Term"><span class=
+      "elementtag">&lt;term&gt;</span></a> <a href="n-su60.html" target="main" title=
+      "&lt;term&gt;"><span class="elementname">Definition List: Term</span></a></li>
+
+      <li><a href="n-ava0.html" target="main" title="Definition List: Definition"><span class=
+      "elementtag">&lt;def&gt;</span></a> <a href="n-ava0.html" target="main" title=
+      "&lt;def&gt;"><span class="elementname">Definition List: Definition</span></a>, zero or
+      more</li>
+    </ul>
+  </div>
+
+  <div class="elementcontext">
+    <h3 class="header">This element may be contained in:</h3>
+
+    <p class="para"><a href="n-2na0.html" target="main" title="Definition List"><span class=
+    "elementtag">&lt;def-list&gt;</span></a></p>
+  </div>
+
+  <div class="examp.group">
+    <h3 class="header">Example</h3>
+
+    <div class="taggedexamp">
+      <pre class="taggedtext">
 &lt;article&gt;
 ...
 &lt;back&gt;...
@@ -29,4 +132,20 @@ elements.</p></div><div class="contentmodel"><h2 class="header first">Content Mo
 &lt;/back&gt;
 &lt;/article&gt;
 
-</pre></div></div><div class="moduledefined"><h2 class="header">Module</h2><p class="moduledefined">JATS-list1.ent</p></div><div class="pagefooter"><h2 class="headname">Journal Publishing Tag Library  NISO JATS Version 1.0</h2><h4 class="pubdate">Version of August 2012</h4></div></body></html>
+</pre>
+    </div>
+  </div>
+
+  <div class="moduledefined">
+    <h2 class="header">Module</h2>
+
+    <p class="moduledefined">JATS-list1.ent</p>
+  </div>
+
+  <div class="pagefooter">
+    <h2 class="headname">Journal Publishing Tag Library NISO JATS Version 1.0</h2>
+
+    <h4 class="pubdate">Version of August 2012</h4>
+  </div>
+</body>
+</html>
