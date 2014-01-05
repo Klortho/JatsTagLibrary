@@ -1,13 +1,246 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008--><link rel="stylesheet" href="BITS.css" type="text/css"><title>Element: Collection Metadata</title></head><body class="main"><div class="pageheader"><h2 class="headname">Book Interchange Tag Suite (BITS) Version 1.0 Tag Library 
-Version 1.0</h2><h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
-National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
-National Library of Medicine (NLM)</h4></div><div class="header"><h1 class="elementtag">&lt;collection-meta&gt;</h1><h1 class="elementname">Collection Metadata</h1></div><div class="definition"><p class="para">Bibliographic metadata describing a book set or series to which this book or book part
-          belongs.</p></div><div class="remarks"><h2 class="header">Remarks</h2><p class="para"><strong>Note:</strong> This series metadata may not be complete enough to produce a publisher’s
-          catalog; this is just the series metadata that travels with a book or book part wrapper. By
-design, this will NOT include metadata concerning other books in the series.</p><p class="para">The BITS Tag Set is deliberately
-          agnostic concerning the definition of a book series or a book set, leaving the question of
-          definition to the publisher.</p></div><div class="attrlist"><h2 class="header">Attributes</h2><h5 class="header"><a href="n-rua2.html" target="main"><span class="attrtag">collection-type</span></a> <a href="n-rua2.html" target="main"><span class="attrname">Collection, Type of</span></a></h5><h5 class="header"><a href="n-4qu2.html" target="main"><span class="attrtag">id</span></a> <a href="n-4qu2.html" target="main"><span class="attrname">Document Internal Identifier</span></a></h5><h5 class="header"><a href="n-wtv2.html" target="main"><span class="attrtag">seq</span></a> <a href="n-wtv2.html" target="main"><span class="attrname">Sequence</span></a></h5><h5 class="header"><a href="n-rdv2.html" target="main"><span class="attrtag">specific-use</span></a> <a href="n-rdv2.html" target="main"><span class="attrname">Specific Use</span></a></h5><h5 class="header"><a href="n-ib42.html" target="main"><span class="attrtag">xml:base</span></a> <a href="n-ib42.html" target="main"><span class="attrname">Base</span></a></h5><h5 class="header"><a href="n-fas2.html" target="main"><span class="attrtag">xml:lang</span></a> <a href="n-fas2.html" target="main"><span class="attrname">Language</span></a></h5></div><div class="contentmodel"><h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  collection-meta
-                        <a href="n-tve2.html" target="main" title="Collection Metadata"><span class="petag">%collection-meta-model;</span></a>                      &gt;</pre></div><div class="contentmodel"><h2 class="header">Expanded Content Model</h2><p class="contentdesc">(collection-id*, subj-group*, title-group?, (contrib-group | aff | aff-alternatives | x)*, author-notes?, pub-history*, volume-in-collection*, issn*, issn-l?, isbn*, publisher*, edition*, permissions?, self-uri*, (related-article | related-object)*, (abstract)*, trans-abstract*, (kwd-group)*, funding-group*, conference*, counts?, custom-meta-group*, (notes)*)</p></div><div class="modeldesc"><h2 class="header">Description</h2><p class="para">The following, in order:<ul class="bullist"><li><a href="n-h9a0.html" target="main" title="Collection Identifier"><span class="elementtag">&lt;collection-id&gt;</span></a> <a href="n-h9a0.html" target="main" title="<collection-id&gt;"><span class="elementname">Collection Identifier</span></a>, zero or more</li><li><a href="n-i990.html" target="main" title="Subject Group"><span class="elementtag">&lt;subj-group&gt;</span></a> <a href="n-i990.html" target="main" title="<subj-group&gt;"><span class="elementname">Subject Group</span></a>, zero or more</li><li><a href="n-ht22.html" target="main" title="Title Group"><span class="elementtag">&lt;title-group&gt;</span></a> <a href="n-ht22.html" target="main" title="<title-group&gt;"><span class="elementname">Title Group</span></a>, zero or one</li><li>Any combination of:<ul class="bullist"><li><a href="n-45x0.html" target="main" title="Contributor Group"><span class="elementtag">&lt;contrib-group&gt;</span></a> <a href="n-45x0.html" target="main" title="<contrib-group&gt;"><span class="elementname">Contributor Group</span></a></li><li><a href="n-hg20.html" target="main" title="Affiliation"><span class="elementtag">&lt;aff&gt;</span></a> <a href="n-hg20.html" target="main" title="<aff&gt;"><span class="elementname">Affiliation</span></a></li><li><a href="n-gj20.html" target="main" title="Affiliation Alternatives"><span class="elementtag">&lt;aff-alternatives&gt;</span></a> <a href="n-gj20.html" target="main" title="<aff-alternatives&gt;"><span class="elementname">Affiliation Alternatives</span></a></li><li><a href="n-p652.html" target="main" title="X - Generated Text and Punctuation"><span class="elementtag">&lt;x&gt;</span></a> <a href="n-p652.html" target="main" title="<x&gt;"><span class="elementname">X - Generated Text and Punctuation</span></a></li></ul></li><li><a href="n-fg30.html" target="main" title="Author Note Group"><span class="elementtag">&lt;author-notes&gt;</span></a> <a href="n-fg30.html" target="main" title="<author-notes&gt;"><span class="elementname">Author Note Group</span></a>, zero or one</li><li><a href="n-cei0.html" target="main" title="Publication History"><span class="elementtag">&lt;pub-history&gt;</span></a> <a href="n-cei0.html" target="main" title="<pub-history&gt;"><span class="elementname">Publication History</span></a>, zero or more</li><li><a href="n-ua52.html" target="main" title="Volume in Collection"><span class="elementtag">&lt;volume-in-collection&gt;</span></a> <a href="n-ua52.html" target="main" title="<volume-in-collection&gt;"><span class="elementname">Volume in Collection</span></a>, zero or more</li><li><a href="n-v7f0.html" target="main" title="ISSN"><span class="elementtag">&lt;issn&gt;</span></a> <a href="n-v7f0.html" target="main" title="<issn&gt;"><span class="elementname">ISSN</span></a>, zero or more</li><li><a href="n-vef0.html" target="main" title="ISSN-L (Linking ISSN)"><span class="elementtag">&lt;issn-l&gt;</span></a> <a href="n-vef0.html" target="main" title="<issn-l&gt;"><span class="elementname">ISSN-L (Linking ISSN)</span></a>, zero or one</li><li><a href="n-isf0.html" target="main" title="ISBN"><span class="elementtag">&lt;isbn&gt;</span></a> <a href="n-isf0.html" target="main" title="<isbn&gt;"><span class="elementname">ISBN</span></a>, zero or more</li><li><a href="n-sgi0.html" target="main" title="Publisher"><span class="elementtag">&lt;publisher&gt;</span></a> <a href="n-sgi0.html" target="main" title="<publisher&gt;"><span class="elementname">Publisher</span></a>, zero or more</li><li><a href="n-pw40.html" target="main" title="Edition Statement, Cited"><span class="elementtag">&lt;edition&gt;</span></a> <a href="n-pw40.html" target="main" title="<edition&gt;"><span class="elementname">Edition Statement, Cited</span></a>, zero or more</li><li><a href="n-k8h0.html" target="main" title="Permissions"><span class="elementtag">&lt;permissions&gt;</span></a> <a href="n-k8h0.html" target="main" title="<permissions&gt;"><span class="elementname">Permissions</span></a>, zero or one</li><li><a href="n-p5q0.html" target="main" title="URI for Object Online"><span class="elementtag">&lt;self-uri&gt;</span></a> <a href="n-p5q0.html" target="main" title="<self-uri&gt;"><span class="elementname">URI for Object Online</span></a>, zero or more</li><li>Any combination of:<ul class="bullist"><li><a href="n-pgy0.html" target="main" title="Related Article Information"><span class="elementtag">&lt;related-article&gt;</span></a> <a href="n-pgy0.html" target="main" title="<related-article&gt;"><span class="elementname">Related Article Information</span></a></li><li><a href="n-49y0.html" target="main" title="Related Object Information"><span class="elementtag">&lt;related-object&gt;</span></a> <a href="n-49y0.html" target="main" title="<related-object&gt;"><span class="elementname">Related Object Information</span></a></li></ul></li><li><a href="n-2q00.html" target="main" title="Abstract"><span class="elementtag">&lt;abstract&gt;</span></a> <a href="n-2q00.html" target="main" title="<abstract&gt;"><span class="elementname">Abstract</span></a>, zero or more</li><li><a href="n-z8c2.html" target="main" title="Translated Abstract"><span class="elementtag">&lt;trans-abstract&gt;</span></a> <a href="n-z8c2.html" target="main" title="<trans-abstract&gt;"><span class="elementname">Translated Abstract</span></a>, zero or more</li><li><a href="n-xgg0.html" target="main" title="Keyword Group"><span class="elementtag">&lt;kwd-group&gt;</span></a> <a href="n-xgg0.html" target="main" title="<kwd-group&gt;"><span class="elementname">Keyword Group</span></a>, zero or more</li><li><a href="n-xjt0.html" target="main" title="Funding Group"><span class="elementtag">&lt;funding-group&gt;</span></a> <a href="n-xjt0.html" target="main" title="<funding-group&gt;"><span class="elementname">Funding Group</span></a>, zero or more</li><li><a href="n-c9w0.html" target="main" title="Conference Information"><span class="elementtag">&lt;conference&gt;</span></a> <a href="n-c9w0.html" target="main" title="<conference&gt;"><span class="elementname">Conference Information</span></a>, zero or more</li><li><a href="n-vqx0.html" target="main" title="Counts"><span class="elementtag">&lt;counts&gt;</span></a> <a href="n-vqx0.html" target="main" title="<counts&gt;"><span class="elementname">Counts</span></a>, zero or one</li><li><a href="n-dmx0.html" target="main" title="Custom Metadata Group"><span class="elementtag">&lt;custom-meta-group&gt;</span></a> <a href="n-dmx0.html" target="main" title="<custom-meta-group&gt;"><span class="elementname">Custom Metadata Group</span></a>, zero or more</li><li><a href="n-crd0.html" target="main" title="Notes"><span class="elementtag">&lt;notes&gt;</span></a> <a href="n-crd0.html" target="main" title="<notes&gt;"><span class="elementname">Notes</span></a>, zero or more</li></ul></p></div><div class="elementcontext"><h3 class="header">This element may be contained in:</h3><p class="para"><a href="n-5750.html" target="main" title="Book"><span class="elementtag">&lt;book&gt;</span></a>, <a href="n-wk80.html" target="main" title="Book Part Wrapper"><span class="elementtag">&lt;book-part-wrapper&gt;</span></a></p></div><div class="examp.group"><h3 class="header">Example</h3><div class="taggedexamp"><pre class="taggedtext">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta name="generator" content="HTML Tidy for Linux/x86 (vers 25 March 2009), see www.w3.org" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008-->
+  <link rel="stylesheet" href="BITS.css" type="text/css" />
+
+  <title>Element: Collection Metadata</title>
+</head>
+
+<body class="main">
+  <div class="pageheader">
+    <h2 class="headname">Book Interchange Tag Suite (BITS) Version 1.0 Tag Library Version 1.0</h2>
+
+    <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk" />
+    National Center for Biotechnology Information (NCBI)<br class="linebrk" />
+    National Library of Medicine (NLM)</h4>
+  </div>
+
+  <div class="header">
+    <h1 class="elementtag">&lt;collection-meta&gt;</h1>
+
+    <h1 class="elementname">Collection Metadata</h1>
+  </div>
+
+  <div class="definition">
+    <p class="para">Bibliographic metadata describing a book set or series to which this book or
+    book part belongs.</p>
+  </div>
+
+  <div class="remarks">
+    <h2 class="header">Remarks</h2>
+
+    <p class="para"><strong>Note:</strong> This series metadata may not be complete enough to
+    produce a publisher’s catalog; this is just the series metadata that travels with a book or
+    book part wrapper. By design, this will NOT include metadata concerning other books in the
+    series.</p>
+
+    <p class="para">The BITS Tag Set is deliberately agnostic concerning the definition of a book
+    series or a book set, leaving the question of definition to the publisher.</p>
+  </div>
+
+  <div class="attrlist">
+    <h2 class="header">Attributes</h2>
+
+    <h5 class="header"><a href="n-rua2.html" target="main"><span class=
+    "attrtag">collection-type</span></a> <a href="n-rua2.html" target="main"><span class=
+    "attrname">Collection, Type of</span></a></h5>
+
+    <h5 class="header"><a href="n-4qu2.html" target="main"><span class="attrtag">id</span></a>
+    <a href="n-4qu2.html" target="main"><span class="attrname">Document Internal
+    Identifier</span></a></h5>
+
+    <h5 class="header"><a href="n-wtv2.html" target="main"><span class="attrtag">seq</span></a>
+    <a href="n-wtv2.html" target="main"><span class="attrname">Sequence</span></a></h5>
+
+    <h5 class="header"><a href="n-rdv2.html" target="main"><span class=
+    "attrtag">specific-use</span></a> <a href="n-rdv2.html" target="main"><span class=
+    "attrname">Specific Use</span></a></h5>
+
+    <h5 class="header"><a href="n-ib42.html" target="main"><span class=
+    "attrtag">xml:base</span></a> <a href="n-ib42.html" target="main"><span class=
+    "attrname">Base</span></a></h5>
+
+    <h5 class="header"><a href="n-fas2.html" target="main"><span class=
+    "attrtag">xml:lang</span></a> <a href="n-fas2.html" target="main"><span class=
+    "attrname">Language</span></a></h5>
+  </div>
+
+  <div class="contentmodel">
+    <h2 class="header first">Content Model</h2>
+    <pre class="contentdesc">
+&lt;!ELEMENT  collection-meta
+                        <a href="n-tve2.html" target="main" title=
+"Collection Metadata"><span class="petag">%collection-meta-model;</span></a>                      &gt;
+</pre>
+  </div>
+
+  <div class="contentmodel">
+    <h2 class="header">Expanded Content Model</h2>
+
+    <p class="contentdesc">(collection-id*, subj-group*, title-group?, (contrib-group | aff |
+    aff-alternatives | x)*, author-notes?, pub-history*, volume-in-collection*, issn*, issn-l?,
+    isbn*, publisher*, edition*, permissions?, self-uri*, (related-article | related-object)*,
+    (abstract)*, trans-abstract*, (kwd-group)*, funding-group*, conference*, counts?,
+    custom-meta-group*, (notes)*)</p>
+  </div>
+
+  <div class="modeldesc">
+    <h2 class="header">Description</h2>
+
+    <p class="para">The following, in order:</p>
+
+    <ul class="bullist">
+      <li><a href="n-h9a0.html" target="main" title="Collection Identifier"><span class=
+      "elementtag">&lt;collection-id&gt;</span></a> <a href="n-h9a0.html" target="main" title=
+      "&lt;collection-id&gt;"><span class="elementname">Collection Identifier</span></a>, zero or
+      more</li>
+
+      <li><a href="n-i990.html" target="main" title="Subject Group"><span class=
+      "elementtag">&lt;subj-group&gt;</span></a> <a href="n-i990.html" target="main" title=
+      "&lt;subj-group&gt;"><span class="elementname">Subject Group</span></a>, zero or more</li>
+
+      <li><a href="n-ht22.html" target="main" title="Title Group"><span class=
+      "elementtag">&lt;title-group&gt;</span></a> <a href="n-ht22.html" target="main" title=
+      "&lt;title-group&gt;"><span class="elementname">Title Group</span></a>, zero or one</li>
+
+      <li>Any combination of:
+
+        <ul class="bullist">
+          <li><a href="n-45x0.html" target="main" title="Contributor Group"><span class=
+          "elementtag">&lt;contrib-group&gt;</span></a> <a href="n-45x0.html" target="main" title=
+          "&lt;contrib-group&gt;"><span class="elementname">Contributor Group</span></a></li>
+
+          <li><a href="n-hg20.html" target="main" title="Affiliation"><span class=
+          "elementtag">&lt;aff&gt;</span></a> <a href="n-hg20.html" target="main" title=
+          "&lt;aff&gt;"><span class="elementname">Affiliation</span></a></li>
+
+          <li><a href="n-gj20.html" target="main" title="Affiliation Alternatives"><span class=
+          "elementtag">&lt;aff-alternatives&gt;</span></a> <a href="n-gj20.html" target="main"
+          title="&lt;aff-alternatives&gt;"><span class="elementname">Affiliation
+          Alternatives</span></a></li>
+
+          <li><a href="n-p652.html" target="main" title=
+          "X - Generated Text and Punctuation"><span class="elementtag">&lt;x&gt;</span></a>
+          <a href="n-p652.html" target="main" title="&lt;x&gt;"><span class="elementname">X -
+          Generated Text and Punctuation</span></a></li>
+        </ul>
+      </li>
+
+      <li><a href="n-fg30.html" target="main" title="Author Note Group"><span class=
+      "elementtag">&lt;author-notes&gt;</span></a> <a href="n-fg30.html" target="main" title=
+      "&lt;author-notes&gt;"><span class="elementname">Author Note Group</span></a>, zero or
+      one</li>
+
+      <li><a href="n-cei0.html" target="main" title="Publication History"><span class=
+      "elementtag">&lt;pub-history&gt;</span></a> <a href="n-cei0.html" target="main" title=
+      "&lt;pub-history&gt;"><span class="elementname">Publication History</span></a>, zero or
+      more</li>
+
+      <li><a href="n-ua52.html" target="main" title="Volume in Collection"><span class=
+      "elementtag">&lt;volume-in-collection&gt;</span></a> <a href="n-ua52.html" target="main"
+      title="&lt;volume-in-collection&gt;"><span class="elementname">Volume in
+      Collection</span></a>, zero or more</li>
+
+      <li><a href="n-v7f0.html" target="main" title="ISSN"><span class=
+      "elementtag">&lt;issn&gt;</span></a> <a href="n-v7f0.html" target="main" title=
+      "&lt;issn&gt;"><span class="elementname">ISSN</span></a>, zero or more</li>
+
+      <li><a href="n-vef0.html" target="main" title="ISSN-L (Linking ISSN)"><span class=
+      "elementtag">&lt;issn-l&gt;</span></a> <a href="n-vef0.html" target="main" title=
+      "&lt;issn-l&gt;"><span class="elementname">ISSN-L (Linking ISSN)</span></a>, zero or one</li>
+
+      <li><a href="n-isf0.html" target="main" title="ISBN"><span class=
+      "elementtag">&lt;isbn&gt;</span></a> <a href="n-isf0.html" target="main" title=
+      "&lt;isbn&gt;"><span class="elementname">ISBN</span></a>, zero or more</li>
+
+      <li><a href="n-sgi0.html" target="main" title="Publisher"><span class=
+      "elementtag">&lt;publisher&gt;</span></a> <a href="n-sgi0.html" target="main" title=
+      "&lt;publisher&gt;"><span class="elementname">Publisher</span></a>, zero or more</li>
+
+      <li><a href="n-pw40.html" target="main" title="Edition Statement, Cited"><span class=
+      "elementtag">&lt;edition&gt;</span></a> <a href="n-pw40.html" target="main" title=
+      "&lt;edition&gt;"><span class="elementname">Edition Statement, Cited</span></a>, zero or
+      more</li>
+
+      <li><a href="n-k8h0.html" target="main" title="Permissions"><span class=
+      "elementtag">&lt;permissions&gt;</span></a> <a href="n-k8h0.html" target="main" title=
+      "&lt;permissions&gt;"><span class="elementname">Permissions</span></a>, zero or one</li>
+
+      <li><a href="n-p5q0.html" target="main" title="URI for Object Online"><span class=
+      "elementtag">&lt;self-uri&gt;</span></a> <a href="n-p5q0.html" target="main" title=
+      "&lt;self-uri&gt;"><span class="elementname">URI for Object Online</span></a>, zero or
+      more</li>
+
+      <li>Any combination of:
+
+        <ul class="bullist">
+          <li><a href="n-pgy0.html" target="main" title="Related Article Information"><span class=
+          "elementtag">&lt;related-article&gt;</span></a> <a href="n-pgy0.html" target="main"
+          title="&lt;related-article&gt;"><span class="elementname">Related Article
+          Information</span></a></li>
+
+          <li><a href="n-49y0.html" target="main" title="Related Object Information"><span class=
+          "elementtag">&lt;related-object&gt;</span></a> <a href="n-49y0.html" target="main" title=
+          "&lt;related-object&gt;"><span class="elementname">Related Object
+          Information</span></a></li>
+        </ul>
+      </li>
+
+      <li><a href="n-2q00.html" target="main" title="Abstract"><span class=
+      "elementtag">&lt;abstract&gt;</span></a> <a href="n-2q00.html" target="main" title=
+      "&lt;abstract&gt;"><span class="elementname">Abstract</span></a>, zero or more</li>
+
+      <li><a href="n-z8c2.html" target="main" title="Translated Abstract"><span class=
+      "elementtag">&lt;trans-abstract&gt;</span></a> <a href="n-z8c2.html" target="main" title=
+      "&lt;trans-abstract&gt;"><span class="elementname">Translated Abstract</span></a>, zero or
+      more</li>
+
+      <li><a href="n-xgg0.html" target="main" title="Keyword Group"><span class=
+      "elementtag">&lt;kwd-group&gt;</span></a> <a href="n-xgg0.html" target="main" title=
+      "&lt;kwd-group&gt;"><span class="elementname">Keyword Group</span></a>, zero or more</li>
+
+      <li><a href="n-xjt0.html" target="main" title="Funding Group"><span class=
+      "elementtag">&lt;funding-group&gt;</span></a> <a href="n-xjt0.html" target="main" title=
+      "&lt;funding-group&gt;"><span class="elementname">Funding Group</span></a>, zero or more</li>
+
+      <li><a href="n-c9w0.html" target="main" title="Conference Information"><span class=
+      "elementtag">&lt;conference&gt;</span></a> <a href="n-c9w0.html" target="main" title=
+      "&lt;conference&gt;"><span class="elementname">Conference Information</span></a>, zero or
+      more</li>
+
+      <li><a href="n-vqx0.html" target="main" title="Counts"><span class=
+      "elementtag">&lt;counts&gt;</span></a> <a href="n-vqx0.html" target="main" title=
+      "&lt;counts&gt;"><span class="elementname">Counts</span></a>, zero or one</li>
+
+      <li><a href="n-dmx0.html" target="main" title="Custom Metadata Group"><span class=
+      "elementtag">&lt;custom-meta-group&gt;</span></a> <a href="n-dmx0.html" target="main" title=
+      "&lt;custom-meta-group&gt;"><span class="elementname">Custom Metadata Group</span></a>, zero
+      or more</li>
+
+      <li><a href="n-crd0.html" target="main" title="Notes"><span class=
+      "elementtag">&lt;notes&gt;</span></a> <a href="n-crd0.html" target="main" title=
+      "&lt;notes&gt;"><span class="elementname">Notes</span></a>, zero or more</li>
+    </ul>
+  </div>
+
+  <div class="elementcontext">
+    <h3 class="header">This element may be contained in:</h3>
+
+    <p class="para"><a href="n-5750.html" target="main" title="Book"><span class=
+    "elementtag">&lt;book&gt;</span></a>, <a href="n-wk80.html" target="main" title=
+    "Book Part Wrapper"><span class="elementtag">&lt;book-part-wrapper&gt;</span></a></p>
+  </div>
+
+  <div class="examp.group">
+    <h3 class="header">Example</h3>
+
+    <div class="taggedexamp">
+      <pre class="taggedtext">
     
 &lt;book-part-wrapper 
   dtd-version="1.0"
@@ -37,5 +270,15 @@ conferences, symposia, and other markup-related events.&lt;/p&gt;
 ...
 &lt;/book-part-wrapper&gt;
 
-   </pre></div></div><div class="pagefooter"><h2 class="headname">Book Interchange Tag Suite (BITS) Version 1.0 Tag Library 
-Version 1.0</h2><h4 class="pubdate">Version of December 2013</h4></div></body></html>
+   
+</pre>
+    </div>
+  </div>
+
+  <div class="pagefooter">
+    <h2 class="headname">Book Interchange Tag Suite (BITS) Version 1.0 Tag Library Version 1.0</h2>
+
+    <h4 class="pubdate">Version of December 2013</h4>
+  </div>
+</body>
+</html>

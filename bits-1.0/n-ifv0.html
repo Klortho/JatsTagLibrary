@@ -1,15 +1,152 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008--><link rel="stylesheet" href="BITS.css" type="text/css"><title>Element: Definition List: Definition Item</title></head><body class="main"><div class="pageheader"><h2 class="headname">Book Interchange Tag Suite (BITS) Version 1.0 Tag Library 
-Version 1.0</h2><h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
-National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
-National Library of Medicine (NLM)</h4></div><div class="header"><h1 class="elementtag">&lt;def-item&gt;</h1><h1 class="elementname">Definition List: Definition Item</h1></div><div class="definition"><p class="para">One item in a definition (two-part) list.</p></div><div class="remarks"><h2 class="header">Remarks</h2><p class="para"><strong>Best Practice:</strong> While this element contains an optional <a href="n-tdg0.html" target="main" title="Label (of an Equation, Figure, Reference, etc.)"><span class="elementtag">&lt;label&gt;</span></a> element, the <a href="n-tdg0.html" target="main" title="Label (of an Equation, Figure, Reference, etc.)"><span class="elementtag">&lt;label&gt;</span></a> element should be included only in those circumstances where a formatting override is needed; <a href="n-tdg0.html" target="main" title="Label (of an Equation, Figure, Reference, etc.)"><span class="elementtag">&lt;label&gt;</span></a> should NOT be used in the ordinary course of tagging.</p></div><div class="attrlist"><h2 class="header">Attributes</h2><h5 class="header"><a href="n-4qu2.html" target="main"><span class="attrtag">id</span></a> <a href="n-4qu2.html" target="main"><span class="attrname">Document Internal Identifier</span></a></h5><h5 class="header"><a href="n-rdv2.html" target="main"><span class="attrtag">specific-use</span></a> <a href="n-rdv2.html" target="main"><span class="attrname">Specific Use</span></a></h5><h5 class="header"><a href="n-ib42.html" target="main"><span class="attrtag">xml:base</span></a> <a href="n-ib42.html" target="main"><span class="attrname">Base</span></a></h5><h5 class="header"><a href="n-fas2.html" target="main"><span class="attrtag">xml:lang</span></a> <a href="n-fas2.html" target="main"><span class="attrname">Language</span></a></h5></div><div class="relatedelem"><h2 class="header">Related Elements</h2><p class="para">A <a href="n-fnv0.html" target="main" title="Definition List"><span class="elementtag">&lt;def-list&gt;</span></a> may take a <a href="n-tdg0.html" target="main" title="Label (of an Equation, Figure, Reference, etc.)"><span class="elementtag">&lt;label&gt;</span></a>
-that provides it with a number or other designator, followed by an optional <a href="n-da22.html" target="main" title="Title"><span class="elementtag">&lt;title&gt;</span></a> naming the entire list, followed by optional headings for
-terms and their definitions. <a href="n-knk2.html" target="main" title="Definition List: Term Head"><span class="elementtag">&lt;term-head&gt;</span></a> contains the
-heading over the first (term) column, and <a href="n-w4v0.html" target="main" title="Definition List: Definition Head"><span class="elementtag">&lt;def-head&gt;</span></a>
-contains the heading for the second (definition) column; neither serves as a
-container element for terms or definitions. Individual <a href="n-mvk2.html" target="main" title="Definition List: Term"><span class="elementtag">&lt;term&gt;</span></a>s and their <a href="n-vxv0.html" target="main" title="Definition List: Definition"><span class="elementtag">&lt;def&gt;</span></a>s are paired
-in <a href="n-ifv0.html" target="main" title="Definition List: Definition Item"><span class="elementtag">&lt;def-item&gt;</span></a>s. Definition lists are recursive, so following all the 
-terms and definitions, there may be one or more embedded <a href="n-fnv0.html" target="main" title="Definition List"><span class="elementtag">&lt;def-list&gt;</span></a>
-elements.</p></div><div class="contentmodel"><h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  def-item     <a href="n-jtf2.html" target="main" title="Definition List: Definition Item Model"><span class="petag">%def-item-model;</span></a>                             &gt;</pre></div><div class="contentmodel"><h2 class="header">Expanded Content Model</h2><p class="contentdesc">(label?, term*, (def | x)*)</p></div><div class="modeldesc"><h2 class="header">Description</h2><p class="para">The following, in order:<ul class="bullist"><li><a href="n-tdg0.html" target="main" title="Label (of an Equation, Figure, Reference, etc.)"><span class="elementtag">&lt;label&gt;</span></a> <a href="n-tdg0.html" target="main" title="<label&gt;"><span class="elementname">Label (of an Equation, Figure, Reference, etc.)</span></a>, zero or one</li><li><a href="n-mvk2.html" target="main" title="Definition List: Term"><span class="elementtag">&lt;term&gt;</span></a> <a href="n-mvk2.html" target="main" title="<term&gt;"><span class="elementname">Definition List: Term</span></a>, zero or more</li><li>Any combination of:<ul class="bullist"><li><a href="n-vxv0.html" target="main" title="Definition List: Definition"><span class="elementtag">&lt;def&gt;</span></a> <a href="n-vxv0.html" target="main" title="<def&gt;"><span class="elementname">Definition List: Definition</span></a></li><li><a href="n-p652.html" target="main" title="X - Generated Text and Punctuation"><span class="elementtag">&lt;x&gt;</span></a> <a href="n-p652.html" target="main" title="<x&gt;"><span class="elementname">X - Generated Text and Punctuation</span></a></li></ul></li></ul></p></div><div class="elementcontext"><h3 class="header">This element may be contained in:</h3><p class="para"><a href="n-fnv0.html" target="main" title="Definition List"><span class="elementtag">&lt;def-list&gt;</span></a></p></div><div class="examp.group"><h3 class="header">Example</h3><div class="taggedexamp"><pre class="taggedtext">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta name="generator" content="HTML Tidy for Linux/x86 (vers 25 March 2009), see www.w3.org" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008-->
+  <link rel="stylesheet" href="BITS.css" type="text/css" />
+
+  <title>Element: Definition List: Definition Item</title>
+</head>
+
+<body class="main">
+  <div class="pageheader">
+    <h2 class="headname">Book Interchange Tag Suite (BITS) Version 1.0 Tag Library Version 1.0</h2>
+
+    <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk" />
+    National Center for Biotechnology Information (NCBI)<br class="linebrk" />
+    National Library of Medicine (NLM)</h4>
+  </div>
+
+  <div class="header">
+    <h1 class="elementtag">&lt;def-item&gt;</h1>
+
+    <h1 class="elementname">Definition List: Definition Item</h1>
+  </div>
+
+  <div class="definition">
+    <p class="para">One item in a definition (two-part) list.</p>
+  </div>
+
+  <div class="remarks">
+    <h2 class="header">Remarks</h2>
+
+    <p class="para"><strong>Best Practice:</strong> While this element contains an optional
+    <a href="n-tdg0.html" target="main" title=
+    "Label (of an Equation, Figure, Reference, etc.)"><span class=
+    "elementtag">&lt;label&gt;</span></a> element, the <a href="n-tdg0.html" target="main" title=
+    "Label (of an Equation, Figure, Reference, etc.)"><span class=
+    "elementtag">&lt;label&gt;</span></a> element should be included only in those circumstances
+    where a formatting override is needed; <a href="n-tdg0.html" target="main" title=
+    "Label (of an Equation, Figure, Reference, etc.)"><span class=
+    "elementtag">&lt;label&gt;</span></a> should NOT be used in the ordinary course of tagging.</p>
+  </div>
+
+  <div class="attrlist">
+    <h2 class="header">Attributes</h2>
+
+    <h5 class="header"><a href="n-4qu2.html" target="main"><span class="attrtag">id</span></a>
+    <a href="n-4qu2.html" target="main"><span class="attrname">Document Internal
+    Identifier</span></a></h5>
+
+    <h5 class="header"><a href="n-rdv2.html" target="main"><span class=
+    "attrtag">specific-use</span></a> <a href="n-rdv2.html" target="main"><span class=
+    "attrname">Specific Use</span></a></h5>
+
+    <h5 class="header"><a href="n-ib42.html" target="main"><span class=
+    "attrtag">xml:base</span></a> <a href="n-ib42.html" target="main"><span class=
+    "attrname">Base</span></a></h5>
+
+    <h5 class="header"><a href="n-fas2.html" target="main"><span class=
+    "attrtag">xml:lang</span></a> <a href="n-fas2.html" target="main"><span class=
+    "attrname">Language</span></a></h5>
+  </div>
+
+  <div class="relatedelem">
+    <h2 class="header">Related Elements</h2>
+
+    <p class="para">A <a href="n-fnv0.html" target="main" title="Definition List"><span class=
+    "elementtag">&lt;def-list&gt;</span></a> may take a <a href="n-tdg0.html" target="main" title=
+    "Label (of an Equation, Figure, Reference, etc.)"><span class=
+    "elementtag">&lt;label&gt;</span></a> that provides it with a number or other designator,
+    followed by an optional <a href="n-da22.html" target="main" title="Title"><span class=
+    "elementtag">&lt;title&gt;</span></a> naming the entire list, followed by optional headings for
+    terms and their definitions. <a href="n-knk2.html" target="main" title=
+    "Definition List: Term Head"><span class="elementtag">&lt;term-head&gt;</span></a> contains the
+    heading over the first (term) column, and <a href="n-w4v0.html" target="main" title=
+    "Definition List: Definition Head"><span class="elementtag">&lt;def-head&gt;</span></a>
+    contains the heading for the second (definition) column; neither serves as a container element
+    for terms or definitions. Individual <a href="n-mvk2.html" target="main" title=
+    "Definition List: Term"><span class="elementtag">&lt;term&gt;</span></a>s and their <a href=
+    "n-vxv0.html" target="main" title="Definition List: Definition"><span class=
+    "elementtag">&lt;def&gt;</span></a>s are paired in <a href="n-ifv0.html" target="main" title=
+    "Definition List: Definition Item"><span class="elementtag">&lt;def-item&gt;</span></a>s.
+    Definition lists are recursive, so following all the terms and definitions, there may be one or
+    more embedded <a href="n-fnv0.html" target="main" title="Definition List"><span class=
+    "elementtag">&lt;def-list&gt;</span></a> elements.</p>
+  </div>
+
+  <div class="contentmodel">
+    <h2 class="header first">Content Model</h2>
+    <pre class="contentdesc">
+&lt;!ELEMENT  def-item     <a href="n-jtf2.html" target="main" title=
+"Definition List: Definition Item Model"><span class=
+"petag">%def-item-model;</span></a>                             &gt;
+</pre>
+  </div>
+
+  <div class="contentmodel">
+    <h2 class="header">Expanded Content Model</h2>
+
+    <p class="contentdesc">(label?, term*, (def | x)*)</p>
+  </div>
+
+  <div class="modeldesc">
+    <h2 class="header">Description</h2>
+
+    <p class="para">The following, in order:</p>
+
+    <ul class="bullist">
+      <li><a href="n-tdg0.html" target="main" title=
+      "Label (of an Equation, Figure, Reference, etc.)"><span class=
+      "elementtag">&lt;label&gt;</span></a> <a href="n-tdg0.html" target="main" title=
+      "&lt;label&gt;"><span class="elementname">Label (of an Equation, Figure, Reference,
+      etc.)</span></a>, zero or one</li>
+
+      <li><a href="n-mvk2.html" target="main" title="Definition List: Term"><span class=
+      "elementtag">&lt;term&gt;</span></a> <a href="n-mvk2.html" target="main" title=
+      "&lt;term&gt;"><span class="elementname">Definition List: Term</span></a>, zero or more</li>
+
+      <li>Any combination of:
+
+        <ul class="bullist">
+          <li><a href="n-vxv0.html" target="main" title="Definition List: Definition"><span class=
+          "elementtag">&lt;def&gt;</span></a> <a href="n-vxv0.html" target="main" title=
+          "&lt;def&gt;"><span class="elementname">Definition List: Definition</span></a></li>
+
+          <li><a href="n-p652.html" target="main" title=
+          "X - Generated Text and Punctuation"><span class="elementtag">&lt;x&gt;</span></a>
+          <a href="n-p652.html" target="main" title="&lt;x&gt;"><span class="elementname">X -
+          Generated Text and Punctuation</span></a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <div class="elementcontext">
+    <h3 class="header">This element may be contained in:</h3>
+
+    <p class="para"><a href="n-fnv0.html" target="main" title="Definition List"><span class=
+    "elementtag">&lt;def-list&gt;</span></a></p>
+  </div>
+
+  <div class="examp.group">
+    <h3 class="header">Example</h3>
+
+    <div class="taggedexamp">
+      <pre class="taggedtext">
     
 ...
 &lt;glossary&gt;
@@ -29,5 +166,15 @@ elements.</p></div><div class="contentmodel"><h2 class="header first">Content Mo
 &lt;/glossary&gt;
 ...
 
-   </pre></div></div><div class="pagefooter"><h2 class="headname">Book Interchange Tag Suite (BITS) Version 1.0 Tag Library 
-Version 1.0</h2><h4 class="pubdate">Version of December 2013</h4></div></body></html>
+   
+</pre>
+    </div>
+  </div>
+
+  <div class="pagefooter">
+    <h2 class="headname">Book Interchange Tag Suite (BITS) Version 1.0 Tag Library Version 1.0</h2>
+
+    <h4 class="pubdate">Version of December 2013</h4>
+  </div>
+</body>
+</html>

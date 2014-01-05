@@ -1,7 +1,137 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008--><link rel="stylesheet" href="BITS.css" type="text/css"><title>Element: Dedication</title></head><body class="main"><div class="pageheader"><h2 class="headname">Book Interchange Tag Suite (BITS) Version 1.0 Tag Library 
-Version 1.0</h2><h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
-National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
-National Library of Medicine (NLM)</h4></div><div class="header"><h1 class="elementtag">&lt;dedication&gt;</h1><h1 class="elementname">Dedication</h1></div><div class="definition"><p class="para">A named book component that contains text dedicating the book in some fashion.</p><p class="para"><strong>Note:</strong> A publisher could choose to call this component just another <a href="n-bit0.html" target="main" title="Front Matter Part"><span class="elementtag">&lt;front-matter-part&gt;</span></a>, but many publishers specifically identify dedications, so this element was included in the BITS Tag Set.</p></div><div class="attrlist"><h2 class="header">Attributes</h2><h5 class="header"><a href="n-vj82.html" target="main"><span class="attrtag">book-part-type</span></a> <a href="n-vj82.html" target="main"><span class="attrname">Type of Book Part</span></a></h5><h5 class="header"><a href="n-4qu2.html" target="main"><span class="attrtag">id</span></a> <a href="n-4qu2.html" target="main"><span class="attrname">Document Internal Identifier</span></a></h5><h5 class="header"><a href="n-suw2.html" target="main"><span class="attrtag">indexed</span></a> <a href="n-suw2.html" target="main"><span class="attrname">Indexed</span></a></h5><h5 class="header"><a href="n-wtv2.html" target="main"><span class="attrtag">seq</span></a> <a href="n-wtv2.html" target="main"><span class="attrname">Sequence</span></a></h5><h5 class="header"><a href="n-rdv2.html" target="main"><span class="attrtag">specific-use</span></a> <a href="n-rdv2.html" target="main"><span class="attrname">Specific Use</span></a></h5><h5 class="header"><a href="n-ib42.html" target="main"><span class="attrtag">xml:base</span></a> <a href="n-ib42.html" target="main"><span class="attrname">Base</span></a></h5><h5 class="header"><a href="n-fas2.html" target="main"><span class="attrtag">xml:lang</span></a> <a href="n-fas2.html" target="main"><span class="attrname">Language</span></a></h5><h5 class="header"><a href="n-qfs2.html" target="main"><span class="attrtag">xmlns:mml</span></a> <a href="n-qfs2.html" target="main"><span class="attrname">MathML Namespace Declaration</span></a></h5><h5 class="header"><a href="n-pns2.html" target="main"><span class="attrtag">xmlns:xlink</span></a> <a href="n-pns2.html" target="main"><span class="attrname">XLink Namespace Declaration</span></a></h5><h5 class="header"><a href="n-crs2.html" target="main"><span class="attrtag">xmlns:xsi</span></a> <a href="n-crs2.html" target="main"><span class="attrname">XML Schema Namespace Declaration</span></a></h5></div><div class="contentmodel"><h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  dedication   <a href="n-qvf2.html" target="main" title="Dedication Model"><span class="petag">%dedication-model;</span></a>                           &gt;</pre></div><div class="contentmodel"><h2 class="header">Expanded Content Model</h2><p class="contentdesc">(book-part-meta?, named-book-part-body?, back?)</p></div><div class="modeldesc"><h2 class="header">Description</h2><p class="para">The following, in order:<ul class="bullist"><li><a href="n-zq50.html" target="main" title="Book Part Metadata"><span class="elementtag">&lt;book-part-meta&gt;</span></a> <a href="n-zq50.html" target="main" title="<book-part-meta&gt;"><span class="elementname">Book Part Metadata</span></a>, zero or one</li><li><a href="n-ep60.html" target="main" title="Named Book Part Body"><span class="elementtag">&lt;named-book-part-body&gt;</span></a> <a href="n-ep60.html" target="main" title="<named-book-part-body&gt;"><span class="elementname">Named Book Part Body</span></a>, zero or one</li><li><a href="n-4p30.html" target="main" title="Back Matter for a Book Part"><span class="elementtag">&lt;back&gt;</span></a> <a href="n-4p30.html" target="main" title="<back&gt;"><span class="elementname">Back Matter for a Book Part</span></a>, zero or one</li></ul></p></div><div class="elementcontext"><h3 class="header">This element may be contained in:</h3><p class="para"><a href="n-4p30.html" target="main" title="Back Matter for a Book Part"><span class="elementtag">&lt;back&gt;</span></a>, <a href="n-xe50.html" target="main" title="Book Back Matter"><span class="elementtag">&lt;book-back&gt;</span></a>, <a href="n-wk80.html" target="main" title="Book Part Wrapper"><span class="elementtag">&lt;book-part-wrapper&gt;</span></a>, <a href="n-nrt0.html" target="main" title="Front Matter"><span class="elementtag">&lt;front-matter&gt;</span></a></p></div><div class="examp.group"><h3 class="header">Example</h3><div class="taggedexamp"><pre class="taggedtext">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta name="generator" content="HTML Tidy for Linux/x86 (vers 25 March 2009), see www.w3.org" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008-->
+  <link rel="stylesheet" href="BITS.css" type="text/css" />
+
+  <title>Element: Dedication</title>
+</head>
+
+<body class="main">
+  <div class="pageheader">
+    <h2 class="headname">Book Interchange Tag Suite (BITS) Version 1.0 Tag Library Version 1.0</h2>
+
+    <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk" />
+    National Center for Biotechnology Information (NCBI)<br class="linebrk" />
+    National Library of Medicine (NLM)</h4>
+  </div>
+
+  <div class="header">
+    <h1 class="elementtag">&lt;dedication&gt;</h1>
+
+    <h1 class="elementname">Dedication</h1>
+  </div>
+
+  <div class="definition">
+    <p class="para">A named book component that contains text dedicating the book in some
+    fashion.</p>
+
+    <p class="para"><strong>Note:</strong> A publisher could choose to call this component just
+    another <a href="n-bit0.html" target="main" title="Front Matter Part"><span class=
+    "elementtag">&lt;front-matter-part&gt;</span></a>, but many publishers specifically identify
+    dedications, so this element was included in the BITS Tag Set.</p>
+  </div>
+
+  <div class="attrlist">
+    <h2 class="header">Attributes</h2>
+
+    <h5 class="header"><a href="n-vj82.html" target="main"><span class=
+    "attrtag">book-part-type</span></a> <a href="n-vj82.html" target="main"><span class=
+    "attrname">Type of Book Part</span></a></h5>
+
+    <h5 class="header"><a href="n-4qu2.html" target="main"><span class="attrtag">id</span></a>
+    <a href="n-4qu2.html" target="main"><span class="attrname">Document Internal
+    Identifier</span></a></h5>
+
+    <h5 class="header"><a href="n-suw2.html" target="main"><span class="attrtag">indexed</span></a>
+    <a href="n-suw2.html" target="main"><span class="attrname">Indexed</span></a></h5>
+
+    <h5 class="header"><a href="n-wtv2.html" target="main"><span class="attrtag">seq</span></a>
+    <a href="n-wtv2.html" target="main"><span class="attrname">Sequence</span></a></h5>
+
+    <h5 class="header"><a href="n-rdv2.html" target="main"><span class=
+    "attrtag">specific-use</span></a> <a href="n-rdv2.html" target="main"><span class=
+    "attrname">Specific Use</span></a></h5>
+
+    <h5 class="header"><a href="n-ib42.html" target="main"><span class=
+    "attrtag">xml:base</span></a> <a href="n-ib42.html" target="main"><span class=
+    "attrname">Base</span></a></h5>
+
+    <h5 class="header"><a href="n-fas2.html" target="main"><span class=
+    "attrtag">xml:lang</span></a> <a href="n-fas2.html" target="main"><span class=
+    "attrname">Language</span></a></h5>
+
+    <h5 class="header"><a href="n-qfs2.html" target="main"><span class=
+    "attrtag">xmlns:mml</span></a> <a href="n-qfs2.html" target="main"><span class=
+    "attrname">MathML Namespace Declaration</span></a></h5>
+
+    <h5 class="header"><a href="n-pns2.html" target="main"><span class=
+    "attrtag">xmlns:xlink</span></a> <a href="n-pns2.html" target="main"><span class=
+    "attrname">XLink Namespace Declaration</span></a></h5>
+
+    <h5 class="header"><a href="n-crs2.html" target="main"><span class=
+    "attrtag">xmlns:xsi</span></a> <a href="n-crs2.html" target="main"><span class="attrname">XML
+    Schema Namespace Declaration</span></a></h5>
+  </div>
+
+  <div class="contentmodel">
+    <h2 class="header first">Content Model</h2>
+    <pre class="contentdesc">
+&lt;!ELEMENT  dedication   <a href="n-qvf2.html" target="main" title=
+"Dedication Model"><span class="petag">%dedication-model;</span></a>                           &gt;
+</pre>
+  </div>
+
+  <div class="contentmodel">
+    <h2 class="header">Expanded Content Model</h2>
+
+    <p class="contentdesc">(book-part-meta?, named-book-part-body?, back?)</p>
+  </div>
+
+  <div class="modeldesc">
+    <h2 class="header">Description</h2>
+
+    <p class="para">The following, in order:</p>
+
+    <ul class="bullist">
+      <li><a href="n-zq50.html" target="main" title="Book Part Metadata"><span class=
+      "elementtag">&lt;book-part-meta&gt;</span></a> <a href="n-zq50.html" target="main" title=
+      "&lt;book-part-meta&gt;"><span class="elementname">Book Part Metadata</span></a>, zero or
+      one</li>
+
+      <li><a href="n-ep60.html" target="main" title="Named Book Part Body"><span class=
+      "elementtag">&lt;named-book-part-body&gt;</span></a> <a href="n-ep60.html" target="main"
+      title="&lt;named-book-part-body&gt;"><span class="elementname">Named Book Part
+      Body</span></a>, zero or one</li>
+
+      <li><a href="n-4p30.html" target="main" title="Back Matter for a Book Part"><span class=
+      "elementtag">&lt;back&gt;</span></a> <a href="n-4p30.html" target="main" title=
+      "&lt;back&gt;"><span class="elementname">Back Matter for a Book Part</span></a>, zero or
+      one</li>
+    </ul>
+  </div>
+
+  <div class="elementcontext">
+    <h3 class="header">This element may be contained in:</h3>
+
+    <p class="para"><a href="n-4p30.html" target="main" title=
+    "Back Matter for a Book Part"><span class="elementtag">&lt;back&gt;</span></a>, <a href=
+    "n-xe50.html" target="main" title="Book Back Matter"><span class=
+    "elementtag">&lt;book-back&gt;</span></a>, <a href="n-wk80.html" target="main" title=
+    "Book Part Wrapper"><span class="elementtag">&lt;book-part-wrapper&gt;</span></a>, <a href=
+    "n-nrt0.html" target="main" title="Front Matter"><span class=
+    "elementtag">&lt;front-matter&gt;</span></a></p>
+  </div>
+
+  <div class="examp.group">
+    <h3 class="header">Example</h3>
+
+    <div class="taggedexamp">
+      <pre class="taggedtext">
     
 ...
 &lt;front-matter&gt;
@@ -21,5 +151,15 @@ the analysis and strengthened our argument.&lt;/p&gt;
 &lt;/front-matter&gt;
 ...
 
-   </pre></div></div><div class="pagefooter"><h2 class="headname">Book Interchange Tag Suite (BITS) Version 1.0 Tag Library 
-Version 1.0</h2><h4 class="pubdate">Version of December 2013</h4></div></body></html>
+   
+</pre>
+    </div>
+  </div>
+
+  <div class="pagefooter">
+    <h2 class="headname">Book Interchange Tag Suite (BITS) Version 1.0 Tag Library Version 1.0</h2>
+
+    <h4 class="pubdate">Version of December 2013</h4>
+  </div>
+</body>
+</html>

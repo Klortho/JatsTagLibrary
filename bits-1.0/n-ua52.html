@@ -1,8 +1,123 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008--><link rel="stylesheet" href="BITS.css" type="text/css"><title>Element: Volume in Collection</title></head><body class="main"><div class="pageheader"><h2 class="headname">Book Interchange Tag Suite (BITS) Version 1.0 Tag Library 
-Version 1.0</h2><h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
-National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
-National Library of Medicine (NLM)</h4></div><div class="header"><h1 class="elementtag">&lt;volume-in-collection&gt;</h1><h1 class="elementname">Volume in Collection</h1></div><div class="definition"><p class="para">A container element for the volume metadata for a book in a collection, for example, to hold the <a href="n-uu52.html" target="main" title="Volume Number within collection"><span class="elementtag">&lt;volume-number&gt;</span></a>. This element may repeat, with a different language for each set of volume data or a different usage.</p></div><div class="remarks"><h2 class="header">Remarks</h2><p class="para">Volume information for books, encyclopedias, and book series is not the same kind of “volume” as the <a href="n-uq32.html" target="main" title="Volume Number within a Series"><span class="elementtag">&lt;volume&gt;</span></a> that is part of the NISO JATS journal metadata. Large works such as an encyclopedia may be divided into physical, logical, or semantic volumes. A book may be published as a monograph as well as part of one or more collections or monographic series. So volume information is needed at the series (collection) level. In addition, books of articles are published that are similar to the <a href="n-uq32.html" target="main" title="Volume Number within a Series"><span class="elementtag">&lt;volume&gt;</span></a> in a journal article and such volume metadata needs to be specified at the book level.</p></div><div class="attrlist"><h2 class="header">Attributes</h2><h5 class="header"><a href="n-yxa2.html" target="main"><span class="attrtag">content-type</span></a> <a href="n-yxa2.html" target="main"><span class="attrname">Type of Content</span></a></h5><h5 class="header"><a href="n-4qu2.html" target="main"><span class="attrtag">id</span></a> <a href="n-4qu2.html" target="main"><span class="attrname">Document Internal Identifier</span></a></h5><h5 class="header"><a href="n-rdv2.html" target="main"><span class="attrtag">specific-use</span></a> <a href="n-rdv2.html" target="main"><span class="attrname">Specific Use</span></a></h5><h5 class="header"><a href="n-ib42.html" target="main"><span class="attrtag">xml:base</span></a> <a href="n-ib42.html" target="main"><span class="attrname">Base</span></a></h5><h5 class="header"><a href="n-fas2.html" target="main"><span class="attrtag">xml:lang</span></a> <a href="n-fas2.html" target="main"><span class="attrname">Language</span></a></h5></div><div class="contentmodel"><h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  volume-in-collection
-                        <a href="n-g5j2.html" target="main" title="Volume in Collection Model"><span class="petag">%volume-in-collection-model;</span></a>                 &gt;</pre></div><div class="contentmodel"><h2 class="header">Expanded Content Model</h2><p class="contentdesc">(volume-number?, volume-title?)</p></div><div class="modeldesc"><h2 class="header">Description</h2><p class="para">The following, in order:<ul class="bullist"><li><a href="n-uu52.html" target="main" title="Volume Number within collection"><span class="elementtag">&lt;volume-number&gt;</span></a> <a href="n-uu52.html" target="main" title="<volume-number&gt;"><span class="elementname">Volume Number within collection</span></a>, zero or one</li><li><a href="n-rt52.html" target="main" title="Volume Title"><span class="elementtag">&lt;volume-title&gt;</span></a> <a href="n-rt52.html" target="main" title="<volume-title&gt;"><span class="elementname">Volume Title</span></a>, zero or one</li></ul></p></div><div class="elementcontext"><h3 class="header">This element may be contained in:</h3><p class="para"><a href="n-tma0.html" target="main" title="Collection Metadata"><span class="elementtag">&lt;collection-meta&gt;</span></a></p></div><div class="examp.group"><h3 class="header">Example</h3><div class="taggedexamp"><pre class="taggedtext">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta name="generator" content="HTML Tidy for Linux/x86 (vers 25 March 2009), see www.w3.org" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008-->
+  <link rel="stylesheet" href="BITS.css" type="text/css" />
+
+  <title>Element: Volume in Collection</title>
+</head>
+
+<body class="main">
+  <div class="pageheader">
+    <h2 class="headname">Book Interchange Tag Suite (BITS) Version 1.0 Tag Library Version 1.0</h2>
+
+    <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk" />
+    National Center for Biotechnology Information (NCBI)<br class="linebrk" />
+    National Library of Medicine (NLM)</h4>
+  </div>
+
+  <div class="header">
+    <h1 class="elementtag">&lt;volume-in-collection&gt;</h1>
+
+    <h1 class="elementname">Volume in Collection</h1>
+  </div>
+
+  <div class="definition">
+    <p class="para">A container element for the volume metadata for a book in a collection, for
+    example, to hold the <a href="n-uu52.html" target="main" title=
+    "Volume Number within collection"><span class="elementtag">&lt;volume-number&gt;</span></a>.
+    This element may repeat, with a different language for each set of volume data or a different
+    usage.</p>
+  </div>
+
+  <div class="remarks">
+    <h2 class="header">Remarks</h2>
+
+    <p class="para">Volume information for books, encyclopedias, and book series is not the same
+    kind of “volume” as the <a href="n-uq32.html" target="main" title=
+    "Volume Number within a Series"><span class="elementtag">&lt;volume&gt;</span></a> that is part
+    of the NISO JATS journal metadata. Large works such as an encyclopedia may be divided into
+    physical, logical, or semantic volumes. A book may be published as a monograph as well as part
+    of one or more collections or monographic series. So volume information is needed at the series
+    (collection) level. In addition, books of articles are published that are similar to the
+    <a href="n-uq32.html" target="main" title="Volume Number within a Series"><span class=
+    "elementtag">&lt;volume&gt;</span></a> in a journal article and such volume metadata needs to
+    be specified at the book level.</p>
+  </div>
+
+  <div class="attrlist">
+    <h2 class="header">Attributes</h2>
+
+    <h5 class="header"><a href="n-yxa2.html" target="main"><span class=
+    "attrtag">content-type</span></a> <a href="n-yxa2.html" target="main"><span class=
+    "attrname">Type of Content</span></a></h5>
+
+    <h5 class="header"><a href="n-4qu2.html" target="main"><span class="attrtag">id</span></a>
+    <a href="n-4qu2.html" target="main"><span class="attrname">Document Internal
+    Identifier</span></a></h5>
+
+    <h5 class="header"><a href="n-rdv2.html" target="main"><span class=
+    "attrtag">specific-use</span></a> <a href="n-rdv2.html" target="main"><span class=
+    "attrname">Specific Use</span></a></h5>
+
+    <h5 class="header"><a href="n-ib42.html" target="main"><span class=
+    "attrtag">xml:base</span></a> <a href="n-ib42.html" target="main"><span class=
+    "attrname">Base</span></a></h5>
+
+    <h5 class="header"><a href="n-fas2.html" target="main"><span class=
+    "attrtag">xml:lang</span></a> <a href="n-fas2.html" target="main"><span class=
+    "attrname">Language</span></a></h5>
+  </div>
+
+  <div class="contentmodel">
+    <h2 class="header first">Content Model</h2>
+    <pre class="contentdesc">
+&lt;!ELEMENT  volume-in-collection
+                        <a href="n-g5j2.html" target="main" title=
+"Volume in Collection Model"><span class=
+"petag">%volume-in-collection-model;</span></a>                 &gt;
+</pre>
+  </div>
+
+  <div class="contentmodel">
+    <h2 class="header">Expanded Content Model</h2>
+
+    <p class="contentdesc">(volume-number?, volume-title?)</p>
+  </div>
+
+  <div class="modeldesc">
+    <h2 class="header">Description</h2>
+
+    <p class="para">The following, in order:</p>
+
+    <ul class="bullist">
+      <li><a href="n-uu52.html" target="main" title="Volume Number within collection"><span class=
+      "elementtag">&lt;volume-number&gt;</span></a> <a href="n-uu52.html" target="main" title=
+      "&lt;volume-number&gt;"><span class="elementname">Volume Number within collection</span></a>,
+      zero or one</li>
+
+      <li><a href="n-rt52.html" target="main" title="Volume Title"><span class=
+      "elementtag">&lt;volume-title&gt;</span></a> <a href="n-rt52.html" target="main" title=
+      "&lt;volume-title&gt;"><span class="elementname">Volume Title</span></a>, zero or one</li>
+    </ul>
+  </div>
+
+  <div class="elementcontext">
+    <h3 class="header">This element may be contained in:</h3>
+
+    <p class="para"><a href="n-tma0.html" target="main" title="Collection Metadata"><span class=
+    "elementtag">&lt;collection-meta&gt;</span></a></p>
+  </div>
+
+  <div class="examp.group">
+    <h3 class="header">Example</h3>
+
+    <div class="taggedexamp">
+      <pre class="taggedtext">
     
 ...
 &lt;collection-meta&gt;
@@ -26,5 +141,15 @@ conferences, symposia, and other markup-related events.&lt;/p&gt;
 &lt;/collection-meta&gt;
 ...
 
-   </pre></div></div><div class="pagefooter"><h2 class="headname">Book Interchange Tag Suite (BITS) Version 1.0 Tag Library 
-Version 1.0</h2><h4 class="pubdate">Version of December 2013</h4></div></body></html>
+   
+</pre>
+    </div>
+  </div>
+
+  <div class="pagefooter">
+    <h2 class="headname">Book Interchange Tag Suite (BITS) Version 1.0 Tag Library Version 1.0</h2>
+
+    <h4 class="pubdate">Version of December 2013</h4>
+  </div>
+</body>
+</html>

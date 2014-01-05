@@ -1,5 +1,16 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008--><link rel="stylesheet" href="BITS.css" type="text/css"><!--Url parsing based on http://www.faqts.com/knowledge_base/view.phtml/aid/969/fid/129--><script>
-var elems = { 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta name="generator" content="HTML Tidy for Linux/x86 (vers 25 March 2009), see www.w3.org" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008-->
+  <link rel="stylesheet" href="BITS.css" type="text/css" />
+  <!--Url parsing based on http://www.faqts.com/knowledge_base/view.phtml/aid/969/fid/129-->
+  <script type="text/javascript">
+//<![CDATA[
+  var elems = { 
   "abbrev" : "n-ed00.html",
   "abstract" : "n-2q00.html",
   "ack" : "n-wc20.html",
@@ -294,7 +305,7 @@ var elems = {
   "xref" : "n-nj52.html",
   "year" : "n-9z52.html"};
         
-var attrs = { 
+  var attrs = { 
   "abbr" : "n-u582.html",
   "abstract-type" : "n-2882.html",
   "accept" : "n-bw82.html",
@@ -461,7 +472,7 @@ var attrs = {
   "xsi:schemaLocation" : "n-nis2.html",
   "y-size" : "n-wys2.html"};
         
-var pes = { 
+  var pes = { 
   "abbrev-atts" : "n-zqs2.html",
   "abbrev-elements" : "n-fbs2.html",
   "abstract-atts" : "n-29s2.html",
@@ -1261,7 +1272,7 @@ var pes = {
   "xref-elements" : "n-yej2.html",
   "year-atts" : "n-wfj2.html"};
         
-var chaps = { 
+  var chaps = { 
   "bits-chap-intro" : "n-6200.html",
   "bits-nfd" : "n-yfj2.html",
   "bits-tag-practice" : "n-s9j2.html",
@@ -1273,9 +1284,9 @@ var chaps = {
   "pe.sec" : "n-cjs2.html",
   "context.info" : "n-8xb2.html",
   "index.sec" : "n-k7nc.html"
-	};
+        };
         
-function parseQueryString (str) {
+  function parseQueryString (str) {
   str = str ? str : location.search;
   var query = str.charAt(0) == '?' ? str.substring(1) : str;
   var args = new Object();
@@ -1288,9 +1299,9 @@ function parseQueryString (str) {
     }
   }
   return args;
-}
+  }
 
-function redirect () {
+  function redirect () {
   var args = parseQueryString ();
   if (args['elem'] && elems[args['elem']]) {
     frames["main"].location=elems[args['elem']];
@@ -1301,11 +1312,38 @@ function redirect () {
   } else if (args['chap'] && chaps[args['chap']]) {
     frames["main"].location=chaps[args['chap']];
   }
-}</script><title>BITS Tag Library Version 1.0</title></head><frameset cols="20%,*" onload="javascript:redirect()"><frame src="t-2000.html" name="toc"><frame src="n-c000.html" name="main"></frameset><noframes><body><div class="pageheader"><h2 class="headname">Book Interchange Tag Suite (BITS) Version 1.0 Tag Library 
-Version 1.0</h2><h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
-National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
-National Library of Medicine (NLM)</h4></div><h1 class="header">Taglib Viewer</h1>
-           Your browser does not support frames.
-           Please try a different browser.
-           <div class="pagefooter"><h2 class="headname">Book Interchange Tag Suite (BITS) Version 1.0 Tag Library 
-Version 1.0</h2><h4 class="pubdate">Version of December 2013</h4></div></body></noframes></html>
+  }
+  //]]>
+  </script>
+
+  <title>BITS Tag Library Version 1.0</title>
+</head>
+
+<frameset cols="20%,*" onload="javascript:redirect()">
+  <frame src="t-2000.html" name="toc" id="toc" />
+  <frame src="n-c000.html" name="main" id="main" />
+
+  <noframes>
+    <body>
+      <div class="pageheader">
+        <h2 class="headname">Book Interchange Tag Suite (BITS) Version 1.0 Tag Library Version
+        1.0</h2>
+
+        <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk" />
+        National Center for Biotechnology Information (NCBI)<br class="linebrk" />
+        National Library of Medicine (NLM)</h4>
+      </div>
+
+      <h1 class="header">Taglib Viewer</h1>Your browser does not support frames. Please try a
+      different browser.
+
+      <div class="pagefooter">
+        <h2 class="headname">Book Interchange Tag Suite (BITS) Version 1.0 Tag Library Version
+        1.0</h2>
+
+        <h4 class="pubdate">Version of December 2013</h4>
+      </div>
+    </body>
+  </noframes>
+</frameset>
+</html>

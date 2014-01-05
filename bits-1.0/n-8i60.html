@@ -1,40 +1,192 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008--><link rel="stylesheet" href="BITS.css" type="text/css"><title>Element: Name Alternatives</title></head><body class="main"><div class="pageheader"><h2 class="headname">Book Interchange Tag Suite (BITS) Version 1.0 Tag Library 
-Version 1.0</h2><h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
-National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
-National Library of Medicine (NLM)</h4></div><div class="header"><h1 class="elementtag">&lt;name-alternatives&gt;</h1><h1 class="elementname">Name Alternatives</h1></div><div class="definition"><p class="para">Container element for more than one version of a personal name, the element
-          <a href="n-ad60.html" target="main" title="Name of Person"><span class="elementtag">&lt;name&gt;</span></a> (for example, the name written in both
-          Japanese Kana characters and the Latin alphabet).</p></div><div class="remarks"><h2 class="header">Remarks</h2><p class="para">The <a href="n-8i60.html" target="main" title="Name Alternatives"><span class="elementtag">&lt;name-alternatives&gt;</span></a> element is
-          intended to collect multiple versions of a single name without appearing to multiply the
-          number of names. (Three versions of a name is not the same as three different
-          contributors.) Like the similar construction for graphics <span class="elementtag">&lt;alternatives&gt;</span>, it will be up to an application how multiple
-          versions of a single name are to be processed. The <a href="n-rdv2.html" target="main" title="Specific Use"><span class="attrtag">@specific-use</span></a>, <a href="n-yxa2.html" target="main" title="Type of Content"><span class="attrtag">@content-type</span></a>, and <a href="n-fas2.html" target="main" title="Language"><span class="attrtag">@xml:lang</span></a> attributes
-          can be used to distinguish the cases for separate processing.</p><p class="para"><strong>Usage:</strong> The <span class="elementtag">&lt;name-alternatives&gt;</span> element can be used to record:<ul class="bullist"><li>A name in multiple languages (For example, a name in Korean or Chinese-Han
-              characters and a transliterated version of the same name in the Latin
-              alphabet);</li><li>A name in multiple language/script combinations (For example, a name in Japanese
-              [<tt>xml:lang="ja-Jpan"</tt> for Han + Hiragana + Katakana] and the same name
-              written in Kanji [<tt>xml:lang="ja-Hani"</tt>]);</li><li>An alternate name for sorting or searching (For example, a name in French with
-              accented letters [such as an “é”] and a plain-letter lower-ASCII
-              version of the same name with “é” replaced by “e” for
-              sorting. The <a href="n-rdv2.html" target="main" title="Specific Use"><span class="attrtag">@specific-use</span></a> attribute can
-              be used to indicate that the ASCII version is only for
-              “<tt>sort</tt>”, not for display.);</li><li>An alternate name indexing (For example, an XML database may need to record all
-              the name variants found for an individual from “President Thomas
-              Jefferson” to “Long Tom”, with <a href="n-rdv2.html" target="main" title="Specific Use"><span class="attrtag">@specific-use</span></a> used to mark
-              “<tt>primary</tt>” and “<tt>index</tt>”.);
-              or</li><li>Both validated and known-to-be-incorrect names. (For example, in the PubMed DTD,
-              there is an attribute called “<tt>ValidYN</tt>” [valid yes or no],
-              that can be used to record the fact that one version of a name was received, found to
-              be in error and corrected. Only the corrected version should be displayed, but both
-              name variants might be used for searching.)</li></ul></p><p class="para"><strong>ID Attribute:</strong> The names inside a <a href="n-8i60.html" target="main" title="Name Alternatives"><span class="elementtag">&lt;name-alternatives&gt;</span></a> do not take a unique identifier because
-          they are all the same name. This Tag Set assumes that any necessary unique identifier will
-          be placed on the enclosing element (such as the <a href="n-kzw0.html" target="main" title="Contributor"><span class="elementtag">&lt;contrib&gt;</span></a> element or the <a href="n-2zh0.html" target="main" title="Principal Investigator"><span class="elementtag">&lt;principal-investigator&gt;</span></a> element) that contains the name alternatives.</p><p class="para"><strong>String Name:</strong> Both <a href="n-ad60.html" target="main" title="Name of Person"><span class="elementtag">&lt;name&gt;</span></a> and <a href="n-gw90.html" target="main" title="Name of Person (Unstructured)"><span class="elementtag">&lt;string-name&gt;</span></a> are
-          allowed inside <a href="n-8i60.html" target="main" title="Name Alternatives"><span class="elementtag">&lt;name-alternatives&gt;</span></a>. Within a
-          <a href="n-8i60.html" target="main" title="Name Alternatives"><span class="elementtag">&lt;name-alternatives&gt;</span></a> grouping, the element
-          <a href="n-gw90.html" target="main" title="Name of Person (Unstructured)"><span class="elementtag">&lt;string-name&gt;</span></a> can be used to hold an
-          undifferentiated transliteration (one not tagged with specific name elements such as
-          <a href="n-ruz0.html" target="main" title="Surname"><span class="elementtag">&lt;surname&gt;</span></a>) or a search-specific name.</p><p class="para"><strong>Best Practice:</strong> For this Tag Set, the <a href="n-gw90.html" target="main" title="Name of Person (Unstructured)"><span class="elementtag">&lt;string-name&gt;</span></a> within a <a href="n-8i60.html" target="main" title="Name Alternatives"><span class="elementtag">&lt;name-alternatives&gt;</span></a> should not be used for the primary
-          name. The primary name should be tagged with a <a href="n-ad60.html" target="main" title="Name of Person"><span class="elementtag">&lt;name&gt;</span></a> element.</p></div><div class="attrlist"><h2 class="header">Attributes</h2><h5 class="header"><a href="n-4qu2.html" target="main"><span class="attrtag">id</span></a> <a href="n-4qu2.html" target="main"><span class="attrname">Document Internal Identifier</span></a></h5><h5 class="header"><a href="n-ib42.html" target="main"><span class="attrtag">xml:base</span></a> <a href="n-ib42.html" target="main"><span class="attrname">Base</span></a></h5></div><div class="contentmodel"><h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  name-alternatives
-                        <a href="n-vwd2.html" target="main" title="Name Alternatives Model"><span class="petag">%name-alternatives-model;</span></a>                    &gt;</pre></div><div class="contentmodel"><h2 class="header">Expanded Content Model</h2><p class="contentdesc">((name | string-name)+)</p></div><div class="modeldesc"><h2 class="header">Description</h2><p class="para">Any one of:<ul class="bullist"><li>One or more of any of:<ul class="bullist"><li><a href="n-ad60.html" target="main" title="Name of Person"><span class="elementtag">&lt;name&gt;</span></a> <a href="n-ad60.html" target="main" title="<name&gt;"><span class="elementname">Name of Person</span></a></li><li><a href="n-gw90.html" target="main" title="Name of Person (Unstructured)"><span class="elementtag">&lt;string-name&gt;</span></a> <a href="n-gw90.html" target="main" title="<string-name&gt;"><span class="elementname">Name of Person (Unstructured)</span></a></li></ul></li></ul></p></div><div class="elementcontext"><h3 class="header">This element may be contained in:</h3><p class="para"><a href="n-kzw0.html" target="main" title="Contributor"><span class="elementtag">&lt;contrib&gt;</span></a>, <a href="n-f740.html" target="main" title="Element Citation"><span class="elementtag">&lt;element-citation&gt;</span></a>, <a href="n-f9n0.html" target="main" title="Mixed Citation"><span class="elementtag">&lt;mixed-citation&gt;</span></a>, <a href="n-uah0.html" target="main" title="Person Group for a Cited Publication"><span class="elementtag">&lt;person-group&gt;</span></a>, <a href="n-t9h0.html" target="main" title="Principal Award Recipient"><span class="elementtag">&lt;principal-award-recipient&gt;</span></a>, <a href="n-2zh0.html" target="main" title="Principal Investigator"><span class="elementtag">&lt;principal-investigator&gt;</span></a>, <a href="n-qci0.html" target="main" title="Product Information"><span class="elementtag">&lt;product&gt;</span></a>, <a href="n-pgy0.html" target="main" title="Related Article Information"><span class="elementtag">&lt;related-article&gt;</span></a>, <a href="n-49y0.html" target="main" title="Related Object Information"><span class="elementtag">&lt;related-object&gt;</span></a></p></div><div class="examp.group"><h3 class="header">Example 1</h3><p class="para">A name given in two forms:</p><div class="taggedexamp"><pre class="taggedtext">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta name="generator" content="HTML Tidy for Linux/x86 (vers 25 March 2009), see www.w3.org" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008-->
+  <link rel="stylesheet" href="BITS.css" type="text/css" />
+
+  <title>Element: Name Alternatives</title>
+</head>
+
+<body class="main">
+  <div class="pageheader">
+    <h2 class="headname">Book Interchange Tag Suite (BITS) Version 1.0 Tag Library Version 1.0</h2>
+
+    <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk" />
+    National Center for Biotechnology Information (NCBI)<br class="linebrk" />
+    National Library of Medicine (NLM)</h4>
+  </div>
+
+  <div class="header">
+    <h1 class="elementtag">&lt;name-alternatives&gt;</h1>
+
+    <h1 class="elementname">Name Alternatives</h1>
+  </div>
+
+  <div class="definition">
+    <p class="para">Container element for more than one version of a personal name, the element
+    <a href="n-ad60.html" target="main" title="Name of Person"><span class=
+    "elementtag">&lt;name&gt;</span></a> (for example, the name written in both Japanese Kana
+    characters and the Latin alphabet).</p>
+  </div>
+
+  <div class="remarks">
+    <h2 class="header">Remarks</h2>
+
+    <p class="para">The <a href="n-8i60.html" target="main" title="Name Alternatives"><span class=
+    "elementtag">&lt;name-alternatives&gt;</span></a> element is intended to collect multiple
+    versions of a single name without appearing to multiply the number of names. (Three versions of
+    a name is not the same as three different contributors.) Like the similar construction for
+    graphics <span class="elementtag">&lt;alternatives&gt;</span>, it will be up to an application
+    how multiple versions of a single name are to be processed. The <a href="n-rdv2.html" target=
+    "main" title="Specific Use"><span class="attrtag">@specific-use</span></a>, <a href=
+    "n-yxa2.html" target="main" title="Type of Content"><span class=
+    "attrtag">@content-type</span></a>, and <a href="n-fas2.html" target="main" title=
+    "Language"><span class="attrtag">@xml:lang</span></a> attributes can be used to distinguish the
+    cases for separate processing.</p>
+
+    <p class="para"><strong>Usage:</strong> The <span class=
+    "elementtag">&lt;name-alternatives&gt;</span> element can be used to record:</p>
+
+    <ul class="bullist">
+      <li>A name in multiple languages (For example, a name in Korean or Chinese-Han characters and
+      a transliterated version of the same name in the Latin alphabet);</li>
+
+      <li>A name in multiple language/script combinations (For example, a name in Japanese
+      [<tt>xml:lang="ja-Jpan"</tt> for Han + Hiragana + Katakana] and the same name written in
+      Kanji [<tt>xml:lang="ja-Hani"</tt>]);</li>
+
+      <li>An alternate name for sorting or searching (For example, a name in French with accented
+      letters [such as an “é”] and a plain-letter lower-ASCII version of the same name with “é”
+      replaced by “e” for sorting. The <a href="n-rdv2.html" target="main" title=
+      "Specific Use"><span class="attrtag">@specific-use</span></a> attribute can be used to
+      indicate that the ASCII version is only for “<tt>sort</tt>”, not for display.);</li>
+
+      <li>An alternate name indexing (For example, an XML database may need to record all the name
+      variants found for an individual from “President Thomas Jefferson” to “Long Tom”, with
+      <a href="n-rdv2.html" target="main" title="Specific Use"><span class=
+      "attrtag">@specific-use</span></a> used to mark “<tt>primary</tt>” and “<tt>index</tt>”.);
+      or</li>
+
+      <li>Both validated and known-to-be-incorrect names. (For example, in the PubMed DTD, there is
+      an attribute called “<tt>ValidYN</tt>” [valid yes or no], that can be used to record the fact
+      that one version of a name was received, found to be in error and corrected. Only the
+      corrected version should be displayed, but both name variants might be used for
+      searching.)</li>
+    </ul>
+
+    <p class="para"><strong>ID Attribute:</strong> The names inside a <a href="n-8i60.html" target=
+    "main" title="Name Alternatives"><span class="elementtag">&lt;name-alternatives&gt;</span></a>
+    do not take a unique identifier because they are all the same name. This Tag Set assumes that
+    any necessary unique identifier will be placed on the enclosing element (such as the <a href=
+    "n-kzw0.html" target="main" title="Contributor"><span class=
+    "elementtag">&lt;contrib&gt;</span></a> element or the <a href="n-2zh0.html" target="main"
+    title="Principal Investigator"><span class=
+    "elementtag">&lt;principal-investigator&gt;</span></a> element) that contains the name
+    alternatives.</p>
+
+    <p class="para"><strong>String Name:</strong> Both <a href="n-ad60.html" target="main" title=
+    "Name of Person"><span class="elementtag">&lt;name&gt;</span></a> and <a href="n-gw90.html"
+    target="main" title="Name of Person (Unstructured)"><span class=
+    "elementtag">&lt;string-name&gt;</span></a> are allowed inside <a href="n-8i60.html" target=
+    "main" title="Name Alternatives"><span class="elementtag">&lt;name-alternatives&gt;</span></a>.
+    Within a <a href="n-8i60.html" target="main" title="Name Alternatives"><span class=
+    "elementtag">&lt;name-alternatives&gt;</span></a> grouping, the element <a href="n-gw90.html"
+    target="main" title="Name of Person (Unstructured)"><span class=
+    "elementtag">&lt;string-name&gt;</span></a> can be used to hold an undifferentiated
+    transliteration (one not tagged with specific name elements such as <a href="n-ruz0.html"
+    target="main" title="Surname"><span class="elementtag">&lt;surname&gt;</span></a>) or a
+    search-specific name.</p>
+
+    <p class="para"><strong>Best Practice:</strong> For this Tag Set, the <a href="n-gw90.html"
+    target="main" title="Name of Person (Unstructured)"><span class=
+    "elementtag">&lt;string-name&gt;</span></a> within a <a href="n-8i60.html" target="main" title=
+    "Name Alternatives"><span class="elementtag">&lt;name-alternatives&gt;</span></a> should not be
+    used for the primary name. The primary name should be tagged with a <a href="n-ad60.html"
+    target="main" title="Name of Person"><span class="elementtag">&lt;name&gt;</span></a>
+    element.</p>
+  </div>
+
+  <div class="attrlist">
+    <h2 class="header">Attributes</h2>
+
+    <h5 class="header"><a href="n-4qu2.html" target="main"><span class="attrtag">id</span></a>
+    <a href="n-4qu2.html" target="main"><span class="attrname">Document Internal
+    Identifier</span></a></h5>
+
+    <h5 class="header"><a href="n-ib42.html" target="main"><span class=
+    "attrtag">xml:base</span></a> <a href="n-ib42.html" target="main"><span class=
+    "attrname">Base</span></a></h5>
+  </div>
+
+  <div class="contentmodel">
+    <h2 class="header first">Content Model</h2>
+    <pre class="contentdesc">
+&lt;!ELEMENT  name-alternatives
+                        <a href="n-vwd2.html" target="main" title=
+"Name Alternatives Model"><span class=
+"petag">%name-alternatives-model;</span></a>                    &gt;
+</pre>
+  </div>
+
+  <div class="contentmodel">
+    <h2 class="header">Expanded Content Model</h2>
+
+    <p class="contentdesc">((name | string-name)+)</p>
+  </div>
+
+  <div class="modeldesc">
+    <h2 class="header">Description</h2>
+
+    <p class="para">Any one of:</p>
+
+    <ul class="bullist">
+      <li>One or more of any of:
+
+        <ul class="bullist">
+          <li><a href="n-ad60.html" target="main" title="Name of Person"><span class=
+          "elementtag">&lt;name&gt;</span></a> <a href="n-ad60.html" target="main" title=
+          "&lt;name&gt;"><span class="elementname">Name of Person</span></a></li>
+
+          <li><a href="n-gw90.html" target="main" title=
+          "Name of Person (Unstructured)"><span class="elementtag">&lt;string-name&gt;</span></a>
+          <a href="n-gw90.html" target="main" title="&lt;string-name&gt;"><span class=
+          "elementname">Name of Person (Unstructured)</span></a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <div class="elementcontext">
+    <h3 class="header">This element may be contained in:</h3>
+
+    <p class="para"><a href="n-kzw0.html" target="main" title="Contributor"><span class=
+    "elementtag">&lt;contrib&gt;</span></a>, <a href="n-f740.html" target="main" title=
+    "Element Citation"><span class="elementtag">&lt;element-citation&gt;</span></a>, <a href=
+    "n-f9n0.html" target="main" title="Mixed Citation"><span class=
+    "elementtag">&lt;mixed-citation&gt;</span></a>, <a href="n-uah0.html" target="main" title=
+    "Person Group for a Cited Publication"><span class=
+    "elementtag">&lt;person-group&gt;</span></a>, <a href="n-t9h0.html" target="main" title=
+    "Principal Award Recipient"><span class=
+    "elementtag">&lt;principal-award-recipient&gt;</span></a>, <a href="n-2zh0.html" target="main"
+    title="Principal Investigator"><span class=
+    "elementtag">&lt;principal-investigator&gt;</span></a>, <a href="n-qci0.html" target="main"
+    title="Product Information"><span class="elementtag">&lt;product&gt;</span></a>, <a href=
+    "n-pgy0.html" target="main" title="Related Article Information"><span class=
+    "elementtag">&lt;related-article&gt;</span></a>, <a href="n-49y0.html" target="main" title=
+    "Related Object Information"><span class="elementtag">&lt;related-object&gt;</span></a></p>
+  </div>
+
+  <div class="examp.group">
+    <h3 class="header">Example 1</h3>
+
+    <p class="para">A name given in two forms:</p>
+
+    <div class="taggedexamp">
+      <pre class="taggedtext">
 
 ...  
 <strong><span class="focus">&lt;name-alternatives&gt;
@@ -44,7 +196,17 @@ National Library of Medicine (NLM)</h4></div><div class="header"><h1 class="elem
 &lt;/name-alternatives&gt;</span></strong>
 ...
 
-</pre></div></div><div class="examp.group"><h3 class="header">Example 2</h3><p class="para">In metadata, to provide alternative names:</p><div class="taggedexamp"><pre class="taggedtext">
+</pre>
+    </div>
+  </div>
+
+  <div class="examp.group">
+    <h3 class="header">Example 2</h3>
+
+    <p class="para">In metadata, to provide alternative names:</p>
+
+    <div class="taggedexamp">
+      <pre class="taggedtext">
 
 ...
 &lt;contrib-group&gt;
@@ -76,7 +238,18 @@ National Library of Medicine (NLM)</h4></div><div class="header"><h1 class="elem
 &lt;/contrib-group&gt;
 ...
 
-</pre></div></div><div class="examp.group"><h3 class="header">Example 3</h3><p class="para">The name of a contributor given in two languages (one given in two scripts):</p><div class="taggedexamp"><pre class="taggedtext">
+</pre>
+    </div>
+  </div>
+
+  <div class="examp.group">
+    <h3 class="header">Example 3</h3>
+
+    <p class="para">The name of a contributor given in two languages (one given in two
+    scripts):</p>
+
+    <div class="taggedexamp">
+      <pre class="taggedtext">
     
 ...
 &lt;contrib-group&gt;
@@ -109,7 +282,19 @@ Linguistics&lt;/institution&gt;
 &lt;/contrib-group&gt;
 ...
 
-   </pre></div></div><div class="examp.group"><h3 class="header">Example 4</h3><p class="para">The correct name given with an sz ligature, with an alternate name for indexing:</p><div class="taggedexamp"><pre class="taggedtext">
+   
+</pre>
+    </div>
+  </div>
+
+  <div class="examp.group">
+    <h3 class="header">Example 4</h3>
+
+    <p class="para">The correct name given with an sz ligature, with an alternate name for
+    indexing:</p>
+
+    <div class="taggedexamp">
+      <pre class="taggedtext">
     
 ...
 &lt;contrib contrib-type="author"&gt;
@@ -126,7 +311,18 @@ Linguistics&lt;/institution&gt;
 &lt;/contrib&gt;
 ...
 
-   </pre></div></div><div class="examp.group"><h3 class="header">Example 5</h3><p class="para">Preserving both incorrect (as delivered) and as-corrected names:</p><div class="taggedexamp"><pre class="taggedtext">
+   
+</pre>
+    </div>
+  </div>
+
+  <div class="examp.group">
+    <h3 class="header">Example 5</h3>
+
+    <p class="para">Preserving both incorrect (as delivered) and as-corrected names:</p>
+
+    <div class="taggedexamp">
+      <pre class="taggedtext">
     
 ...
 &lt;contrib contrib-type="author"&gt;
@@ -143,5 +339,15 @@ Linguistics&lt;/institution&gt;
 &lt;/contrib&gt;
 ...
 
-   </pre></div></div><div class="pagefooter"><h2 class="headname">Book Interchange Tag Suite (BITS) Version 1.0 Tag Library 
-Version 1.0</h2><h4 class="pubdate">Version of December 2013</h4></div></body></html>
+   
+</pre>
+    </div>
+  </div>
+
+  <div class="pagefooter">
+    <h2 class="headname">Book Interchange Tag Suite (BITS) Version 1.0 Tag Library Version 1.0</h2>
+
+    <h4 class="pubdate">Version of December 2013</h4>
+  </div>
+</body>
+</html>

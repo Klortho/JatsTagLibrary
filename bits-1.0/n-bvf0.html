@@ -1,29 +1,83 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008--><link rel="stylesheet" href="BITS.css" type="text/css"><title>Element: Institution Wrapper</title></head><body class="main"><div class="pageheader"><h2 class="headname">Book Interchange Tag Suite (BITS) Version 1.0 Tag Library 
-Version 1.0</h2><h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
-National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
-National Library of Medicine (NLM)</h4></div><div class="header"><h1 class="elementtag">&lt;institution-wrap&gt;</h1><h1 class="elementname">Institution Wrapper</h1></div><div class="definition"><p class="para">A container element to hold both the name of an institution (<a href="n-92f0.html" target="main" title="Institution Name"><span class="elementtag">&lt;institution&gt;</span></a>) and any identifiers for that institution (<a href="n-cxf0.html" target="main" title="Institution Identifier"><span class="elementtag">&lt;institution-id&gt;</span></a>), for example, an INSI or Ringgold ID.</p></div><div class="remarks"><h2 class="header">Remarks</h2><p class="para"><strong>Common Practice:</strong> All levels of a multi-tier 
-organization are typically listed within a single 
-<span class="elementtag">&lt;institution&gt;</span> element and 
-given a single institution identifier. For example, a program, a 
-department, and a university may be part of the same 
-<a href="n-92f0.html" target="main" title="Institution Name"><span class="elementtag">&lt;institution&gt;</span></a>, inside a single 
-<a href="n-bvf0.html" target="main" title="Institution Wrapper"><span class="elementtag">&lt;institution-wrap&gt;</span></a> with a single 
-<a href="n-cxf0.html" target="main" title="Institution Identifier"><span class="elementtag">&lt;institution-id&gt;</span></a>. Similarly both a corporation and a
-division within the corporation might be inside one <a href="n-92f0.html" target="main" title="Institution Name"><span class="elementtag">&lt;institution&gt;</span></a> element, inside a <a href="n-bvf0.html" target="main" title="Institution Wrapper"><span class="elementtag">&lt;institution-wrap&gt;</span></a> with a single institution
-identifier (<a href="n-cxf0.html" target="main" title="Institution Identifier"><span class="elementtag">&lt;institution-id&gt;</span></a>.</p><div class="codeblock"><pre>&lt;institution-wrap&gt;
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta name="generator" content="HTML Tidy for Linux/x86 (vers 25 March 2009), see www.w3.org" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008-->
+  <link rel="stylesheet" href="BITS.css" type="text/css" />
+
+  <title>Element: Institution Wrapper</title>
+</head>
+
+<body class="main">
+  <div class="pageheader">
+    <h2 class="headname">Book Interchange Tag Suite (BITS) Version 1.0 Tag Library Version 1.0</h2>
+
+    <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk" />
+    National Center for Biotechnology Information (NCBI)<br class="linebrk" />
+    National Library of Medicine (NLM)</h4>
+  </div>
+
+  <div class="header">
+    <h1 class="elementtag">&lt;institution-wrap&gt;</h1>
+
+    <h1 class="elementname">Institution Wrapper</h1>
+  </div>
+
+  <div class="definition">
+    <p class="para">A container element to hold both the name of an institution (<a href=
+    "n-92f0.html" target="main" title="Institution Name"><span class=
+    "elementtag">&lt;institution&gt;</span></a>) and any identifiers for that institution (<a href=
+    "n-cxf0.html" target="main" title="Institution Identifier"><span class=
+    "elementtag">&lt;institution-id&gt;</span></a>), for example, an INSI or Ringgold ID.</p>
+  </div>
+
+  <div class="remarks">
+    <h2 class="header">Remarks</h2>
+
+    <p class="para"><strong>Common Practice:</strong> All levels of a multi-tier organization are
+    typically listed within a single <span class="elementtag">&lt;institution&gt;</span> element
+    and given a single institution identifier. For example, a program, a department, and a
+    university may be part of the same <a href="n-92f0.html" target="main" title=
+    "Institution Name"><span class="elementtag">&lt;institution&gt;</span></a>, inside a single
+    <a href="n-bvf0.html" target="main" title="Institution Wrapper"><span class=
+    "elementtag">&lt;institution-wrap&gt;</span></a> with a single <a href="n-cxf0.html" target=
+    "main" title="Institution Identifier"><span class=
+    "elementtag">&lt;institution-id&gt;</span></a>. Similarly both a corporation and a division
+    within the corporation might be inside one <a href="n-92f0.html" target="main" title=
+    "Institution Name"><span class="elementtag">&lt;institution&gt;</span></a> element, inside a
+    <a href="n-bvf0.html" target="main" title="Institution Wrapper"><span class=
+    "elementtag">&lt;institution-wrap&gt;</span></a> with a single institution identifier (<a href=
+    "n-cxf0.html" target="main" title="Institution Identifier"><span class=
+    "elementtag">&lt;institution-id&gt;</span></a>.</p>
+
+    <div class="codeblock">
+      <pre>
+&lt;institution-wrap&gt;
 &lt;institution-id&gt;Moo-U-41&lt;/institution-id&gt;
 &lt;institution content-type="edu"&gt;
 University of Frostbite Falls, Dept of Campus Security, 
 Dept of Moose and Squirrel Security, 
 Office of the Acting Dean&lt;/institution&gt;
-&lt;/institution-wrap&gt;</pre></div><p class="para">Alternatively, a divisional distinction such as an
-“organization” element with subordinate “dept” and an “office”
-inside a department could tagged using multiple 
-<a href="n-92f0.html" target="main" title="Institution Name"><span class="elementtag">&lt;institution&gt;</span></a> elements with the 
-<a href="n-yxa2.html" target="main" title="Type of Content"><span class="attrtag">@content-type</span></a> attribute differentiating institution, department, and
-office. Each of these divisions could be assigned an institutional identifier 
-(<a href="n-cxf0.html" target="main" title="Institution Identifier"><span class="elementtag">&lt;institution-id&gt;</span></a>), which would require the wrapper element  
-<a href="n-bvf0.html" target="main" title="Institution Wrapper"><span class="elementtag">&lt;institution-wrap&gt;</span></a>.</p><div class="codeblock"><pre>
+&lt;/institution-wrap&gt;
+</pre>
+    </div>
+
+    <p class="para">Alternatively, a divisional distinction such as an “organization” element with
+    subordinate “dept” and an “office” inside a department could tagged using multiple <a href=
+    "n-92f0.html" target="main" title="Institution Name"><span class=
+    "elementtag">&lt;institution&gt;</span></a> elements with the <a href="n-yxa2.html" target=
+    "main" title="Type of Content"><span class="attrtag">@content-type</span></a> attribute
+    differentiating institution, department, and office. Each of these divisions could be assigned
+    an institutional identifier (<a href="n-cxf0.html" target="main" title=
+    "Institution Identifier"><span class="elementtag">&lt;institution-id&gt;</span></a>), which
+    would require the wrapper element <a href="n-bvf0.html" target="main" title=
+    "Institution Wrapper"><span class="elementtag">&lt;institution-wrap&gt;</span></a>.</p>
+
+    <div class="codeblock">
+      <pre>
 &lt;institution-wrap&gt;
   &lt;institution content-type="edu"&gt;
     University of Frostbite Falls&lt;/institution&gt;
@@ -43,8 +97,95 @@ office. Each of these divisions could be assigned an institutional identifier
   &lt;institution content-type="office"&gt;
       Office of the Acting Dean&lt;/institution&gt;
   &lt;institution-id&gt;4850ws&lt;/institution-id&gt;
-&lt;/institution-wrap&gt;</pre></div></div><div class="attrlist"><h2 class="header">Attributes</h2><h5 class="header"><a href="n-4qu2.html" target="main"><span class="attrtag">id</span></a> <a href="n-4qu2.html" target="main"><span class="attrname">Document Internal Identifier</span></a></h5><h5 class="header"><a href="n-ib42.html" target="main"><span class="attrtag">xml:base</span></a> <a href="n-ib42.html" target="main"><span class="attrname">Base</span></a></h5></div><div class="contentmodel"><h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  institution-wrap  
-                        <a href="n-8dn2.html" target="main" title="Institution Wrapper Model"><span class="petag">%institution-wrap-model;</span></a>                     &gt;</pre></div><div class="contentmodel"><h2 class="header">Expanded Content Model</h2><p class="contentdesc">(institution | institution-id)*</p></div><div class="modeldesc"><h2 class="header">Description</h2><p class="para">Any combination of:<ul class="bullist"><li><a href="n-92f0.html" target="main" title="Institution Name"><span class="elementtag">&lt;institution&gt;</span></a> <a href="n-92f0.html" target="main" title="<institution&gt;"><span class="elementname">Institution Name</span></a></li><li><a href="n-cxf0.html" target="main" title="Institution Identifier"><span class="elementtag">&lt;institution-id&gt;</span></a> <a href="n-cxf0.html" target="main" title="<institution-id&gt;"><span class="elementname">Institution Identifier</span></a></li></ul></p></div><div class="elementcontext"><h3 class="header">This element may be contained in:</h3><p class="para"><a href="n-j720.html" target="main" title="Address/Contact Information"><span class="elementtag">&lt;address&gt;</span></a>, <a href="n-qu20.html" target="main" title="Address Line"><span class="elementtag">&lt;addr-line&gt;</span></a>, <a href="n-hg20.html" target="main" title="Affiliation"><span class="elementtag">&lt;aff&gt;</span></a>, <a href="n-xra0.html" target="main" title="Collaborative (Group) Author"><span class="elementtag">&lt;collab&gt;</span></a>, <a href="n-agw0.html" target="main" title="Conference Sponsor"><span class="elementtag">&lt;conf-sponsor&gt;</span></a>, <a href="n-qwx0.html" target="main" title="Copyright Holder"><span class="elementtag">&lt;copyright-holder&gt;</span></a>, <a href="n-tnx0.html" target="main" title="Correspondence Information"><span class="elementtag">&lt;corresp&gt;</span></a>, <a href="n-f740.html" target="main" title="Element Citation"><span class="elementtag">&lt;element-citation&gt;</span></a>, <a href="n-rpt0.html" target="main" title="Funding Source"><span class="elementtag">&lt;funding-source&gt;</span></a>, <a href="n-f9n0.html" target="main" title="Mixed Citation"><span class="elementtag">&lt;mixed-citation&gt;</span></a>, <a href="n-umd0.html" target="main" title="On Behalf of"><span class="elementtag">&lt;on-behalf-of&gt;</span></a>, <a href="n-t9h0.html" target="main" title="Principal Award Recipient"><span class="elementtag">&lt;principal-award-recipient&gt;</span></a>, <a href="n-qci0.html" target="main" title="Product Information"><span class="elementtag">&lt;product&gt;</span></a>, <a href="n-7ni0.html" target="main" title="Publisher’s Location"><span class="elementtag">&lt;publisher-loc&gt;</span></a>, <a href="n-aji0.html" target="main" title="Publisher’s Name"><span class="elementtag">&lt;publisher-name&gt;</span></a>, <a href="n-pgy0.html" target="main" title="Related Article Information"><span class="elementtag">&lt;related-article&gt;</span></a>, <a href="n-49y0.html" target="main" title="Related Object Information"><span class="elementtag">&lt;related-object&gt;</span></a>, <a href="n-9fb0.html" target="main" title="Standards Organization"><span class="elementtag">&lt;std-organization&gt;</span></a></p></div><div class="examp.group"><h3 class="header">Example 1</h3><p class="para">In metadata, inside an affiliation:</p><div class="taggedexamp"><pre class="taggedtext">
+&lt;/institution-wrap&gt;
+</pre>
+    </div>
+  </div>
+
+  <div class="attrlist">
+    <h2 class="header">Attributes</h2>
+
+    <h5 class="header"><a href="n-4qu2.html" target="main"><span class="attrtag">id</span></a>
+    <a href="n-4qu2.html" target="main"><span class="attrname">Document Internal
+    Identifier</span></a></h5>
+
+    <h5 class="header"><a href="n-ib42.html" target="main"><span class=
+    "attrtag">xml:base</span></a> <a href="n-ib42.html" target="main"><span class=
+    "attrname">Base</span></a></h5>
+  </div>
+
+  <div class="contentmodel">
+    <h2 class="header first">Content Model</h2>
+    <pre class="contentdesc">
+&lt;!ELEMENT  institution-wrap  
+                        <a href="n-8dn2.html" target="main" title=
+"Institution Wrapper Model"><span class=
+"petag">%institution-wrap-model;</span></a>                     &gt;
+</pre>
+  </div>
+
+  <div class="contentmodel">
+    <h2 class="header">Expanded Content Model</h2>
+
+    <p class="contentdesc">(institution | institution-id)*</p>
+  </div>
+
+  <div class="modeldesc">
+    <h2 class="header">Description</h2>
+
+    <p class="para">Any combination of:</p>
+
+    <ul class="bullist">
+      <li><a href="n-92f0.html" target="main" title="Institution Name"><span class=
+      "elementtag">&lt;institution&gt;</span></a> <a href="n-92f0.html" target="main" title=
+      "&lt;institution&gt;"><span class="elementname">Institution Name</span></a></li>
+
+      <li><a href="n-cxf0.html" target="main" title="Institution Identifier"><span class=
+      "elementtag">&lt;institution-id&gt;</span></a> <a href="n-cxf0.html" target="main" title=
+      "&lt;institution-id&gt;"><span class="elementname">Institution Identifier</span></a></li>
+    </ul>
+  </div>
+
+  <div class="elementcontext">
+    <h3 class="header">This element may be contained in:</h3>
+
+    <p class="para"><a href="n-j720.html" target="main" title=
+    "Address/Contact Information"><span class="elementtag">&lt;address&gt;</span></a>, <a href=
+    "n-qu20.html" target="main" title="Address Line"><span class=
+    "elementtag">&lt;addr-line&gt;</span></a>, <a href="n-hg20.html" target="main" title=
+    "Affiliation"><span class="elementtag">&lt;aff&gt;</span></a>, <a href="n-xra0.html" target=
+    "main" title="Collaborative (Group) Author"><span class="elementtag">&lt;collab&gt;</span></a>,
+    <a href="n-agw0.html" target="main" title="Conference Sponsor"><span class=
+    "elementtag">&lt;conf-sponsor&gt;</span></a>, <a href="n-qwx0.html" target="main" title=
+    "Copyright Holder"><span class="elementtag">&lt;copyright-holder&gt;</span></a>, <a href=
+    "n-tnx0.html" target="main" title="Correspondence Information"><span class=
+    "elementtag">&lt;corresp&gt;</span></a>, <a href="n-f740.html" target="main" title=
+    "Element Citation"><span class="elementtag">&lt;element-citation&gt;</span></a>, <a href=
+    "n-rpt0.html" target="main" title="Funding Source"><span class=
+    "elementtag">&lt;funding-source&gt;</span></a>, <a href="n-f9n0.html" target="main" title=
+    "Mixed Citation"><span class="elementtag">&lt;mixed-citation&gt;</span></a>, <a href=
+    "n-umd0.html" target="main" title="On Behalf of"><span class=
+    "elementtag">&lt;on-behalf-of&gt;</span></a>, <a href="n-t9h0.html" target="main" title=
+    "Principal Award Recipient"><span class=
+    "elementtag">&lt;principal-award-recipient&gt;</span></a>, <a href="n-qci0.html" target="main"
+    title="Product Information"><span class="elementtag">&lt;product&gt;</span></a>, <a href=
+    "n-7ni0.html" target="main" title="Publisher’s Location"><span class=
+    "elementtag">&lt;publisher-loc&gt;</span></a>, <a href="n-aji0.html" target="main" title=
+    "Publisher’s Name"><span class="elementtag">&lt;publisher-name&gt;</span></a>, <a href=
+    "n-pgy0.html" target="main" title="Related Article Information"><span class=
+    "elementtag">&lt;related-article&gt;</span></a>, <a href="n-49y0.html" target="main" title=
+    "Related Object Information"><span class="elementtag">&lt;related-object&gt;</span></a>,
+    <a href="n-9fb0.html" target="main" title="Standards Organization"><span class=
+    "elementtag">&lt;std-organization&gt;</span></a></p>
+  </div>
+
+  <div class="examp.group">
+    <h3 class="header">Example 1</h3>
+
+    <p class="para">In metadata, inside an affiliation:</p>
+
+    <div class="taggedexamp">
+      <pre class="taggedtext">
   
 ...  
 &lt;book-meta&gt;
@@ -75,7 +216,18 @@ office. Each of these divisions could be assigned an institutional identifier
 ...
 
 
-  </pre></div></div><div class="examp.group"><h3 class="header">Example 2</h3><p class="para">In metadata, inside a funding group:</p><div class="taggedexamp"><pre class="taggedtext">
+  
+</pre>
+    </div>
+  </div>
+
+  <div class="examp.group">
+    <h3 class="header">Example 2</h3>
+
+    <p class="para">In metadata, inside a funding group:</p>
+
+    <div class="taggedexamp">
+      <pre class="taggedtext">
   
 ...
 &lt;funding-group&gt;
@@ -117,5 +269,15 @@ Computing Center&lt;/institution&gt;
 ...
 
 
-  </pre></div></div><div class="pagefooter"><h2 class="headname">Book Interchange Tag Suite (BITS) Version 1.0 Tag Library 
-Version 1.0</h2><h4 class="pubdate">Version of December 2013</h4></div></body></html>
+  
+</pre>
+    </div>
+  </div>
+
+  <div class="pagefooter">
+    <h2 class="headname">Book Interchange Tag Suite (BITS) Version 1.0 Tag Library Version 1.0</h2>
+
+    <h4 class="pubdate">Version of December 2013</h4>
+  </div>
+</body>
+</html>

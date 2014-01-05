@@ -1,18 +1,240 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008--><link rel="stylesheet" href="BITS.css" type="text/css"><title>Element: Date within a Citation</title></head><body class="main"><div class="pageheader"><h2 class="headname">Book Interchange Tag Suite (BITS) Version 1.0 Tag Library 
-Version 1.0</h2><h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
-National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
-National Library of Medicine (NLM)</h4></div><div class="header"><h1 class="elementtag">&lt;date-in-citation&gt;</h1><h1 class="elementname">Date within a Citation</h1></div><div class="definition"><p class="para">Non-publication date used within a bibliographic reference, for example, an access-date or
-a time-stamp.</p></div><div class="remarks"><h2 class="header">Remarks</h2><p class="para">A <a href="n-icv0.html" target="main" title="Date within a Citation"><span class="elementtag">&lt;date-in-citation&gt;</span></a> element should
-<em>not</em> be used to record the publication date (use
-<a href="n-dzx0.html" target="main" title="Date"><span class="elementtag">&lt;date&gt;</span></a>). This element can be used to
-record dates such as access dates, copyright dates, patent application dates, or time
-stamps indicating the exact time the work was published for a continuously or frequently
-updated source.</p></div><div class="attrlist"><h2 class="header">Attributes</h2><h5 class="header"><a href="n-yq82.html" target="main"><span class="attrtag">calendar</span></a> <a href="n-yq82.html" target="main"><span class="attrname">Calendar</span></a></h5><h5 class="header"><a href="n-yxa2.html" target="main"><span class="attrtag">content-type</span></a> <a href="n-yxa2.html" target="main"><span class="attrname">Type of Content</span></a></h5><h5 class="header"><a href="n-4qu2.html" target="main"><span class="attrtag">id</span></a> <a href="n-4qu2.html" target="main"><span class="attrname">Document Internal Identifier</span></a></h5><h5 class="header"><a href="n-avw2.html" target="main"><span class="attrtag">iso-8601-date</span></a> <a href="n-avw2.html" target="main"><span class="attrname">ISO-8601 Formatted Date</span></a></h5><h5 class="header"><a href="n-rdv2.html" target="main"><span class="attrtag">specific-use</span></a> <a href="n-rdv2.html" target="main"><span class="attrname">Specific Use</span></a></h5><h5 class="header"><a href="n-ib42.html" target="main"><span class="attrtag">xml:base</span></a> <a href="n-ib42.html" target="main"><span class="attrname">Base</span></a></h5><h5 class="header"><a href="n-fas2.html" target="main"><span class="attrtag">xml:lang</span></a> <a href="n-fas2.html" target="main"><span class="attrname">Language</span></a></h5></div><div class="relatedelem"><h2 class="header">Related Elements</h2><p class="para">Within citations (<a href="n-f740.html" target="main" title="Element Citation"><span class="elementtag">&lt;element-citation&gt;</span></a> and
-          <a href="n-f9n0.html" target="main" title="Mixed Citation"><span class="elementtag">&lt;mixed-citation&gt;</span></a>), the elements <a href="n-9z52.html" target="main" title="Year"><span class="elementtag">&lt;year&gt;</span></a>, <a href="n-dzx0.html" target="main" title="Date"><span class="elementtag">&lt;date&gt;</span></a>, <a href="n-7av0.html" target="main" title="Day"><span class="elementtag">&lt;day&gt;</span></a>, <a href="n-mg60.html" target="main" title="Month"><span class="elementtag">&lt;month&gt;</span></a>, and <a href="n-75p0.html" target="main" title="Season"><span class="elementtag">&lt;season&gt;</span></a> may all be used to describe the date a cited resource was published.
-          Other dates inside a citation, such as a copyright date, the date on which the author
-          accessed the resource, or a withdrawal date, should be tagged using <a href="n-icv0.html" target="main" title="Date within a Citation"><span class="elementtag">&lt;date-in-citation&gt;</span></a> with the <a href="n-yxa2.html" target="main" title="Type of Content"><span class="attrtag">@content-type</span></a> attribute used to name the type of date
-          (<tt>copyright</tt>, <tt>access-date</tt>, <tt>time-stamp</tt>, etc.).</p></div><div class="contentmodel"><h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  date-in-citation
-                        (#PCDATA <a href="n-quf2.html" target="main" title="Date in Citation Elements"><span class="petag">%date-in-citation-elements;</span></a>)*       &gt;</pre></div><div class="contentmodel"><h2 class="header">Expanded Content Model</h2><p class="contentdesc">(#PCDATA | day | era | month | season | year | bold | fixed-case | italic | monospace | overline | overline-start | overline-end | roman | sans-serif | sc | strike | underline | underline-start | underline-end | ruby | x)*</p></div><div class="modeldesc"><h2 class="header">Description</h2><p class="para">Any combination of:<ul class="bullist"><li>Text, numbers, or special characters</li><li><a href="n-7av0.html" target="main" title="Day"><span class="elementtag">&lt;day&gt;</span></a> <a href="n-7av0.html" target="main" title="<day&gt;"><span class="elementname">Day</span></a></li><li><a href="n-u5s0.html" target="main" title="Era of Time"><span class="elementtag">&lt;era&gt;</span></a> <a href="n-u5s0.html" target="main" title="<era&gt;"><span class="elementname">Era of Time</span></a></li><li><a href="n-mg60.html" target="main" title="Month"><span class="elementtag">&lt;month&gt;</span></a> <a href="n-mg60.html" target="main" title="<month&gt;"><span class="elementname">Month</span></a></li><li><a href="n-75p0.html" target="main" title="Season"><span class="elementtag">&lt;season&gt;</span></a> <a href="n-75p0.html" target="main" title="<season&gt;"><span class="elementname">Season</span></a></li><li><a href="n-9z52.html" target="main" title="Year"><span class="elementtag">&lt;year&gt;</span></a> <a href="n-9z52.html" target="main" title="<year&gt;"><span class="elementname">Year</span></a></li><li>Emphasis Elements<ul class="bullist"><li><a href="n-8w50.html" target="main" title="Bold"><span class="elementtag">&lt;bold&gt;</span></a> <a href="n-8w50.html" target="main" title="<bold&gt;"><span class="elementname">Bold</span></a></li><li><a href="n-hut0.html" target="main" title="Fixed Case"><span class="elementtag">&lt;fixed-case&gt;</span></a> <a href="n-hut0.html" target="main" title="<fixed-case&gt;"><span class="elementname">Fixed Case</span></a></li><li><a href="n-vcg0.html" target="main" title="Italic"><span class="elementtag">&lt;italic&gt;</span></a> <a href="n-vcg0.html" target="main" title="<italic&gt;"><span class="elementname">Italic</span></a></li><li><a href="n-ts60.html" target="main" title="Monospace Text (Typewriter Text)"><span class="elementtag">&lt;monospace&gt;</span></a> <a href="n-ts60.html" target="main" title="<monospace&gt;"><span class="elementname">Monospace Text (Typewriter Text)</span></a></li><li><a href="n-48r0.html" target="main" title="Overline"><span class="elementtag">&lt;overline&gt;</span></a> <a href="n-48r0.html" target="main" title="<overline&gt;"><span class="elementname">Overline</span></a></li><li><a href="n-csr0.html" target="main" title="Overline Start"><span class="elementtag">&lt;overline-start&gt;</span></a> <a href="n-csr0.html" target="main" title="<overline-start&gt;"><span class="elementname">Overline Start</span></a></li><li><a href="n-hvr0.html" target="main" title="Overline End"><span class="elementtag">&lt;overline-end&gt;</span></a> <a href="n-hvr0.html" target="main" title="<overline-end&gt;"><span class="elementname">Overline End</span></a></li><li><a href="n-eej0.html" target="main" title="Roman"><span class="elementtag">&lt;roman&gt;</span></a> <a href="n-eej0.html" target="main" title="<roman&gt;"><span class="elementname">Roman</span></a></li><li><a href="n-yyj0.html" target="main" title="Sans Serif"><span class="elementtag">&lt;sans-serif&gt;</span></a> <a href="n-yyj0.html" target="main" title="<sans-serif&gt;"><span class="elementname">Sans Serif</span></a></li><li><a href="n-nmj0.html" target="main" title="Small Caps"><span class="elementtag">&lt;sc&gt;</span></a> <a href="n-nmj0.html" target="main" title="<sc&gt;"><span class="elementname">Small Caps</span></a></li><li><a href="n-fhb0.html" target="main" title="Strike Through"><span class="elementtag">&lt;strike&gt;</span></a> <a href="n-fhb0.html" target="main" title="<strike&gt;"><span class="elementname">Strike Through</span></a></li><li><a href="n-wk32.html" target="main" title="Underline"><span class="elementtag">&lt;underline&gt;</span></a> <a href="n-wk32.html" target="main" title="<underline&gt;"><span class="elementname">Underline</span></a></li><li><a href="n-au32.html" target="main" title="Underline Start"><span class="elementtag">&lt;underline-start&gt;</span></a> <a href="n-au32.html" target="main" title="<underline-start&gt;"><span class="elementname">Underline Start</span></a></li><li><a href="n-9832.html" target="main" title="Underline End"><span class="elementtag">&lt;underline-end&gt;</span></a> <a href="n-9832.html" target="main" title="<underline-end&gt;"><span class="elementname">Underline End</span></a></li><li><a href="n-hhj0.html" target="main" title="Ruby Annotation Wrapper"><span class="elementtag">&lt;ruby&gt;</span></a> <a href="n-hhj0.html" target="main" title="<ruby&gt;"><span class="elementname">Ruby Annotation Wrapper</span></a></li></ul></li><li><a href="n-p652.html" target="main" title="X - Generated Text and Punctuation"><span class="elementtag">&lt;x&gt;</span></a> <a href="n-p652.html" target="main" title="<x&gt;"><span class="elementname">X - Generated Text and Punctuation</span></a></li></ul></p></div><div class="elementcontext"><h3 class="header">This element may be contained in:</h3><p class="para"><a href="n-f740.html" target="main" title="Element Citation"><span class="elementtag">&lt;element-citation&gt;</span></a>, <a href="n-f9n0.html" target="main" title="Mixed Citation"><span class="elementtag">&lt;mixed-citation&gt;</span></a>, <a href="n-qci0.html" target="main" title="Product Information"><span class="elementtag">&lt;product&gt;</span></a>, <a href="n-pgy0.html" target="main" title="Related Article Information"><span class="elementtag">&lt;related-article&gt;</span></a>, <a href="n-49y0.html" target="main" title="Related Object Information"><span class="elementtag">&lt;related-object&gt;</span></a></p></div><div class="examp.group"><h3 class="header">Example 1</h3><p class="para">In an element-style bibliographic reference (punctuation and spacing removed):</p><div class="taggedexamp"><pre class="taggedtext">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta name="generator" content="HTML Tidy for Linux/x86 (vers 25 March 2009), see www.w3.org" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008-->
+  <link rel="stylesheet" href="BITS.css" type="text/css" />
+
+  <title>Element: Date within a Citation</title>
+</head>
+
+<body class="main">
+  <div class="pageheader">
+    <h2 class="headname">Book Interchange Tag Suite (BITS) Version 1.0 Tag Library Version 1.0</h2>
+
+    <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk" />
+    National Center for Biotechnology Information (NCBI)<br class="linebrk" />
+    National Library of Medicine (NLM)</h4>
+  </div>
+
+  <div class="header">
+    <h1 class="elementtag">&lt;date-in-citation&gt;</h1>
+
+    <h1 class="elementname">Date within a Citation</h1>
+  </div>
+
+  <div class="definition">
+    <p class="para">Non-publication date used within a bibliographic reference, for example, an
+    access-date or a time-stamp.</p>
+  </div>
+
+  <div class="remarks">
+    <h2 class="header">Remarks</h2>
+
+    <p class="para">A <a href="n-icv0.html" target="main" title=
+    "Date within a Citation"><span class="elementtag">&lt;date-in-citation&gt;</span></a> element
+    should <em>not</em> be used to record the publication date (use <a href="n-dzx0.html" target=
+    "main" title="Date"><span class="elementtag">&lt;date&gt;</span></a>). This element can be used
+    to record dates such as access dates, copyright dates, patent application dates, or time stamps
+    indicating the exact time the work was published for a continuously or frequently updated
+    source.</p>
+  </div>
+
+  <div class="attrlist">
+    <h2 class="header">Attributes</h2>
+
+    <h5 class="header"><a href="n-yq82.html" target="main"><span class=
+    "attrtag">calendar</span></a> <a href="n-yq82.html" target="main"><span class=
+    "attrname">Calendar</span></a></h5>
+
+    <h5 class="header"><a href="n-yxa2.html" target="main"><span class=
+    "attrtag">content-type</span></a> <a href="n-yxa2.html" target="main"><span class=
+    "attrname">Type of Content</span></a></h5>
+
+    <h5 class="header"><a href="n-4qu2.html" target="main"><span class="attrtag">id</span></a>
+    <a href="n-4qu2.html" target="main"><span class="attrname">Document Internal
+    Identifier</span></a></h5>
+
+    <h5 class="header"><a href="n-avw2.html" target="main"><span class=
+    "attrtag">iso-8601-date</span></a> <a href="n-avw2.html" target="main"><span class=
+    "attrname">ISO-8601 Formatted Date</span></a></h5>
+
+    <h5 class="header"><a href="n-rdv2.html" target="main"><span class=
+    "attrtag">specific-use</span></a> <a href="n-rdv2.html" target="main"><span class=
+    "attrname">Specific Use</span></a></h5>
+
+    <h5 class="header"><a href="n-ib42.html" target="main"><span class=
+    "attrtag">xml:base</span></a> <a href="n-ib42.html" target="main"><span class=
+    "attrname">Base</span></a></h5>
+
+    <h5 class="header"><a href="n-fas2.html" target="main"><span class=
+    "attrtag">xml:lang</span></a> <a href="n-fas2.html" target="main"><span class=
+    "attrname">Language</span></a></h5>
+  </div>
+
+  <div class="relatedelem">
+    <h2 class="header">Related Elements</h2>
+
+    <p class="para">Within citations (<a href="n-f740.html" target="main" title=
+    "Element Citation"><span class="elementtag">&lt;element-citation&gt;</span></a> and <a href=
+    "n-f9n0.html" target="main" title="Mixed Citation"><span class=
+    "elementtag">&lt;mixed-citation&gt;</span></a>), the elements <a href="n-9z52.html" target=
+    "main" title="Year"><span class="elementtag">&lt;year&gt;</span></a>, <a href="n-dzx0.html"
+    target="main" title="Date"><span class="elementtag">&lt;date&gt;</span></a>, <a href=
+    "n-7av0.html" target="main" title="Day"><span class="elementtag">&lt;day&gt;</span></a>,
+    <a href="n-mg60.html" target="main" title="Month"><span class=
+    "elementtag">&lt;month&gt;</span></a>, and <a href="n-75p0.html" target="main" title=
+    "Season"><span class="elementtag">&lt;season&gt;</span></a> may all be used to describe the
+    date a cited resource was published. Other dates inside a citation, such as a copyright date,
+    the date on which the author accessed the resource, or a withdrawal date, should be tagged
+    using <a href="n-icv0.html" target="main" title="Date within a Citation"><span class=
+    "elementtag">&lt;date-in-citation&gt;</span></a> with the <a href="n-yxa2.html" target="main"
+    title="Type of Content"><span class="attrtag">@content-type</span></a> attribute used to name
+    the type of date (<tt>copyright</tt>, <tt>access-date</tt>, <tt>time-stamp</tt>, etc.).</p>
+  </div>
+
+  <div class="contentmodel">
+    <h2 class="header first">Content Model</h2>
+    <pre class="contentdesc">
+&lt;!ELEMENT  date-in-citation
+                        (#PCDATA <a href="n-quf2.html" target="main" title=
+"Date in Citation Elements"><span class="petag">%date-in-citation-elements;</span></a>)*       &gt;
+</pre>
+  </div>
+
+  <div class="contentmodel">
+    <h2 class="header">Expanded Content Model</h2>
+
+    <p class="contentdesc">(#PCDATA | day | era | month | season | year | bold | fixed-case |
+    italic | monospace | overline | overline-start | overline-end | roman | sans-serif | sc |
+    strike | underline | underline-start | underline-end | ruby | x)*</p>
+  </div>
+
+  <div class="modeldesc">
+    <h2 class="header">Description</h2>
+
+    <p class="para">Any combination of:</p>
+
+    <ul class="bullist">
+      <li>Text, numbers, or special characters</li>
+
+      <li><a href="n-7av0.html" target="main" title="Day"><span class=
+      "elementtag">&lt;day&gt;</span></a> <a href="n-7av0.html" target="main" title=
+      "&lt;day&gt;"><span class="elementname">Day</span></a></li>
+
+      <li><a href="n-u5s0.html" target="main" title="Era of Time"><span class=
+      "elementtag">&lt;era&gt;</span></a> <a href="n-u5s0.html" target="main" title=
+      "&lt;era&gt;"><span class="elementname">Era of Time</span></a></li>
+
+      <li><a href="n-mg60.html" target="main" title="Month"><span class=
+      "elementtag">&lt;month&gt;</span></a> <a href="n-mg60.html" target="main" title=
+      "&lt;month&gt;"><span class="elementname">Month</span></a></li>
+
+      <li><a href="n-75p0.html" target="main" title="Season"><span class=
+      "elementtag">&lt;season&gt;</span></a> <a href="n-75p0.html" target="main" title=
+      "&lt;season&gt;"><span class="elementname">Season</span></a></li>
+
+      <li><a href="n-9z52.html" target="main" title="Year"><span class=
+      "elementtag">&lt;year&gt;</span></a> <a href="n-9z52.html" target="main" title=
+      "&lt;year&gt;"><span class="elementname">Year</span></a></li>
+
+      <li>Emphasis Elements
+
+        <ul class="bullist">
+          <li><a href="n-8w50.html" target="main" title="Bold"><span class=
+          "elementtag">&lt;bold&gt;</span></a> <a href="n-8w50.html" target="main" title=
+          "&lt;bold&gt;"><span class="elementname">Bold</span></a></li>
+
+          <li><a href="n-hut0.html" target="main" title="Fixed Case"><span class=
+          "elementtag">&lt;fixed-case&gt;</span></a> <a href="n-hut0.html" target="main" title=
+          "&lt;fixed-case&gt;"><span class="elementname">Fixed Case</span></a></li>
+
+          <li><a href="n-vcg0.html" target="main" title="Italic"><span class=
+          "elementtag">&lt;italic&gt;</span></a> <a href="n-vcg0.html" target="main" title=
+          "&lt;italic&gt;"><span class="elementname">Italic</span></a></li>
+
+          <li><a href="n-ts60.html" target="main" title=
+          "Monospace Text (Typewriter Text)"><span class="elementtag">&lt;monospace&gt;</span></a>
+          <a href="n-ts60.html" target="main" title="&lt;monospace&gt;"><span class=
+          "elementname">Monospace Text (Typewriter Text)</span></a></li>
+
+          <li><a href="n-48r0.html" target="main" title="Overline"><span class=
+          "elementtag">&lt;overline&gt;</span></a> <a href="n-48r0.html" target="main" title=
+          "&lt;overline&gt;"><span class="elementname">Overline</span></a></li>
+
+          <li><a href="n-csr0.html" target="main" title="Overline Start"><span class=
+          "elementtag">&lt;overline-start&gt;</span></a> <a href="n-csr0.html" target="main" title=
+          "&lt;overline-start&gt;"><span class="elementname">Overline Start</span></a></li>
+
+          <li><a href="n-hvr0.html" target="main" title="Overline End"><span class=
+          "elementtag">&lt;overline-end&gt;</span></a> <a href="n-hvr0.html" target="main" title=
+          "&lt;overline-end&gt;"><span class="elementname">Overline End</span></a></li>
+
+          <li><a href="n-eej0.html" target="main" title="Roman"><span class=
+          "elementtag">&lt;roman&gt;</span></a> <a href="n-eej0.html" target="main" title=
+          "&lt;roman&gt;"><span class="elementname">Roman</span></a></li>
+
+          <li><a href="n-yyj0.html" target="main" title="Sans Serif"><span class=
+          "elementtag">&lt;sans-serif&gt;</span></a> <a href="n-yyj0.html" target="main" title=
+          "&lt;sans-serif&gt;"><span class="elementname">Sans Serif</span></a></li>
+
+          <li><a href="n-nmj0.html" target="main" title="Small Caps"><span class=
+          "elementtag">&lt;sc&gt;</span></a> <a href="n-nmj0.html" target="main" title=
+          "&lt;sc&gt;"><span class="elementname">Small Caps</span></a></li>
+
+          <li><a href="n-fhb0.html" target="main" title="Strike Through"><span class=
+          "elementtag">&lt;strike&gt;</span></a> <a href="n-fhb0.html" target="main" title=
+          "&lt;strike&gt;"><span class="elementname">Strike Through</span></a></li>
+
+          <li><a href="n-wk32.html" target="main" title="Underline"><span class=
+          "elementtag">&lt;underline&gt;</span></a> <a href="n-wk32.html" target="main" title=
+          "&lt;underline&gt;"><span class="elementname">Underline</span></a></li>
+
+          <li><a href="n-au32.html" target="main" title="Underline Start"><span class=
+          "elementtag">&lt;underline-start&gt;</span></a> <a href="n-au32.html" target="main"
+          title="&lt;underline-start&gt;"><span class="elementname">Underline Start</span></a></li>
+
+          <li><a href="n-9832.html" target="main" title="Underline End"><span class=
+          "elementtag">&lt;underline-end&gt;</span></a> <a href="n-9832.html" target="main" title=
+          "&lt;underline-end&gt;"><span class="elementname">Underline End</span></a></li>
+
+          <li><a href="n-hhj0.html" target="main" title="Ruby Annotation Wrapper"><span class=
+          "elementtag">&lt;ruby&gt;</span></a> <a href="n-hhj0.html" target="main" title=
+          "&lt;ruby&gt;"><span class="elementname">Ruby Annotation Wrapper</span></a></li>
+        </ul>
+      </li>
+
+      <li><a href="n-p652.html" target="main" title=
+      "X - Generated Text and Punctuation"><span class="elementtag">&lt;x&gt;</span></a> <a href=
+      "n-p652.html" target="main" title="&lt;x&gt;"><span class="elementname">X - Generated Text
+      and Punctuation</span></a></li>
+    </ul>
+  </div>
+
+  <div class="elementcontext">
+    <h3 class="header">This element may be contained in:</h3>
+
+    <p class="para"><a href="n-f740.html" target="main" title="Element Citation"><span class=
+    "elementtag">&lt;element-citation&gt;</span></a>, <a href="n-f9n0.html" target="main" title=
+    "Mixed Citation"><span class="elementtag">&lt;mixed-citation&gt;</span></a>, <a href=
+    "n-qci0.html" target="main" title="Product Information"><span class=
+    "elementtag">&lt;product&gt;</span></a>, <a href="n-pgy0.html" target="main" title=
+    "Related Article Information"><span class="elementtag">&lt;related-article&gt;</span></a>,
+    <a href="n-49y0.html" target="main" title="Related Object Information"><span class=
+    "elementtag">&lt;related-object&gt;</span></a></p>
+  </div>
+
+  <div class="examp.group">
+    <h3 class="header">Example 1</h3>
+
+    <p class="para">In an element-style bibliographic reference (punctuation and spacing
+    removed):</p>
+
+    <div class="taggedexamp">
+      <pre class="taggedtext">
     
 ...
 &lt;ref&gt;
@@ -37,7 +259,19 @@ iso-8601-date="2006-11-15"&gt;cited 2006 Nov 15&lt;/date-in-citation&gt;</span><
 &lt;/ref&gt;
 ...
 
-   </pre></div></div><div class="examp.group"><h3 class="header">Example 2</h3><p class="para">In a mixed-style bibliographic reference (punctuation and spacing preserved):</p><div class="taggedexamp"><pre class="taggedtext">
+   
+</pre>
+    </div>
+  </div>
+
+  <div class="examp.group">
+    <h3 class="header">Example 2</h3>
+
+    <p class="para">In a mixed-style bibliographic reference (punctuation and spacing
+    preserved):</p>
+
+    <div class="taggedexamp">
+      <pre class="taggedtext">
     
 ...
 &lt;ref&gt;
@@ -47,7 +281,8 @@ iso-8601-date="2006-11-15"&gt;cited 2006 Nov 15&lt;/date-in-citation&gt;</span><
 (MD)&lt;/publisher-loc&gt;: &lt;publisher-name&gt;National
 Library of Medicine (US)&lt;/publisher-name&gt;;
 &lt;year iso-8601-date="2003-05-02"&gt;2003&lt;/year&gt; &lt;month&gt;May&lt;/month&gt;
-&lt;day&gt;2&lt;/day&gt; [updated <strong><span class="focus">&lt;date-in-citation content-type="updated"
+&lt;day&gt;2&lt;/day&gt; [updated <strong><span class=
+"focus">&lt;date-in-citation content-type="updated"
 iso-8601-date="2005-07-14"&gt;2005 Jul 14&lt;/date-in-citation&gt;</span></strong>; cited
 <strong><span class="focus">&lt;date-in-citation content-type="access-date"
 iso-8601-date="2006-11-15"&gt;2006 Nov 15&lt;/date-in-citation&gt;</span></strong>].
@@ -58,5 +293,15 @@ Available from:
 &lt;/ref&gt;
 ...
 
-   </pre></div></div><div class="pagefooter"><h2 class="headname">Book Interchange Tag Suite (BITS) Version 1.0 Tag Library 
-Version 1.0</h2><h4 class="pubdate">Version of December 2013</h4></div></body></html>
+   
+</pre>
+    </div>
+  </div>
+
+  <div class="pagefooter">
+    <h2 class="headname">Book Interchange Tag Suite (BITS) Version 1.0 Tag Library Version 1.0</h2>
+
+    <h4 class="pubdate">Version of December 2013</h4>
+  </div>
+</body>
+</html>

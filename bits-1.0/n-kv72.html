@@ -1,17 +1,77 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008--><link rel="stylesheet" href="BITS.css" type="text/css"><title>Parameter entity: Book Part Wrapper Attributes</title></head><body class="main"><div class="pageheader"><h2 class="headname">Book Interchange Tag Suite (BITS) Version 1.0 Tag Library 
-Version 1.0</h2><h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
-National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
-National Library of Medicine (NLM)</h4></div><div class="header"><h1 class="petag">%book-part-wrapper-atts;</h1><h1 class="pename">Book Part Wrapper Attributes</h1></div><div class="definition"><p class="para">Attributes used with the <a href="n-wk80.html" target="main" title="Book Part Wrapper"><span class="elementtag">&lt;book-part-wrapper&gt;</span></a> element.</p></div><div class="contentmodel"><h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ENTITY % book-part-wrapper-atts
-           "<a href="n-9862.html" target="main" title="JATS Common Attributes"><span class="petag">%jats-common-atts;</span></a>                                        
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta name="generator" content="HTML Tidy for Linux/x86 (vers 25 March 2009), see www.w3.org" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008-->
+  <link rel="stylesheet" href="BITS.css" type="text/css" />
+
+  <title>Parameter entity: Book Part Wrapper Attributes</title>
+</head>
+
+<body class="main">
+  <div class="pageheader">
+    <h2 class="headname">Book Interchange Tag Suite (BITS) Version 1.0 Tag Library Version 1.0</h2>
+
+    <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk" />
+    National Center for Biotechnology Information (NCBI)<br class="linebrk" />
+    National Library of Medicine (NLM)</h4>
+  </div>
+
+  <div class="header">
+    <h1 class="petag">%book-part-wrapper-atts;</h1>
+
+    <h1 class="pename">Book Part Wrapper Attributes</h1>
+  </div>
+
+  <div class="definition">
+    <p class="para">Attributes used with the <a href="n-wk80.html" target="main" title=
+    "Book Part Wrapper"><span class="elementtag">&lt;book-part-wrapper&gt;</span></a> element.</p>
+  </div>
+
+  <div class="contentmodel">
+    <h2 class="header first">Content Model</h2>
+    <pre class="contentdesc">
+&lt;!ENTITY % book-part-wrapper-atts
+           "<a href="n-9862.html" target="main" title="JATS Common Attributes"><span class=
+"petag">%jats-common-atts;</span></a>                                        
              content-type
                         CDATA                             #IMPLIED
-             <a href="n-iyf2.html" target="main" title="DTD Version"><span class="petag">%dtd-version;</span></a>   
-             from-where (<a href="n-su72.html" target="main" title="Book Part Locations"><span class="petag">%book-part-locations;</span></a>)           #IMPLIED
+             <a href="n-iyf2.html" target="main" title="DTD Version"><span class=
+"petag">%dtd-version;</span></a>   
+             from-where (<a href="n-su72.html" target="main" title=
+"Book Part Locations"><span class="petag">%book-part-locations;</span></a>)           #IMPLIED
              specific-use
                         CDATA                             #IMPLIED
              xml:lang   NMTOKEN                           #IMPLIED
-             <a href="n-htj2.html" target="main" title="XLink Namespace Declaration"><span class="petag">%XLINK.xmlns.attrib;</span></a>
-             <a href="n-fm62.html" target="main" title="MathML Namespace Declaration"><span class="petag">%MATHML.xmlns.attrib;</span></a>
-             <a href="n-atj2.html" target="main" title="XInclude Namespace Psuedo-attribute"><span class="petag">%xinclude.xmlns.attrib;</span></a>
-             <a href="n-c4h2.html" target="main" title="Schema Namespace Declaration"><span class="petag">%Schema.xmlns.attrib;</span></a>"                                  &gt;</pre></div><div class="contentmodel"><h2 class="header">Expanded Content Model</h2><p class="contentdesc">id ID #IMPLIED xml:base CDATA #IMPLIED content-type CDATA #IMPLIED dtd-version CDATA #FIXED '1.0' from-where (front-matter | body | back | supplemental) #IMPLIED specific-use CDATA #IMPLIED xml:lang NMTOKEN #IMPLIED xmlns:xlink CDATA #FIXED 'http://www.w3.org/1999/xlink' xmlns:mml CDATA #FIXED 'http://www.w3.org/1998/Math/MathML'  xmlns:xi CDATA #FIXED 'http://www.w3.org/2001/XInclude' xmlns:xsi CDATA #FIXED 'http://www.w3.org/2001/XMLSchema-instance'</p></div><div class="pagefooter"><h2 class="headname">Book Interchange Tag Suite (BITS) Version 1.0 Tag Library 
-Version 1.0</h2><h4 class="pubdate">Version of December 2013</h4></div></body></html>
+             <a href="n-htj2.html" target="main" title="XLink Namespace Declaration"><span class=
+"petag">%XLINK.xmlns.attrib;</span></a>
+             <a href="n-fm62.html" target="main" title="MathML Namespace Declaration"><span class=
+"petag">%MATHML.xmlns.attrib;</span></a>
+             <a href="n-atj2.html" target="main" title=
+"XInclude Namespace Psuedo-attribute"><span class="petag">%xinclude.xmlns.attrib;</span></a>
+             <a href="n-c4h2.html" target="main" title="Schema Namespace Declaration"><span class=
+"petag">%Schema.xmlns.attrib;</span></a>"                                  &gt;
+</pre>
+  </div>
+
+  <div class="contentmodel">
+    <h2 class="header">Expanded Content Model</h2>
+
+    <p class="contentdesc">id ID #IMPLIED xml:base CDATA #IMPLIED content-type CDATA #IMPLIED
+    dtd-version CDATA #FIXED '1.0' from-where (front-matter | body | back | supplemental) #IMPLIED
+    specific-use CDATA #IMPLIED xml:lang NMTOKEN #IMPLIED xmlns:xlink CDATA #FIXED
+    'http://www.w3.org/1999/xlink' xmlns:mml CDATA #FIXED 'http://www.w3.org/1998/Math/MathML'
+    xmlns:xi CDATA #FIXED 'http://www.w3.org/2001/XInclude' xmlns:xsi CDATA #FIXED
+    'http://www.w3.org/2001/XMLSchema-instance'</p>
+  </div>
+
+  <div class="pagefooter">
+    <h2 class="headname">Book Interchange Tag Suite (BITS) Version 1.0 Tag Library Version 1.0</h2>
+
+    <h4 class="pubdate">Version of December 2013</h4>
+  </div>
+</body>
+</html>

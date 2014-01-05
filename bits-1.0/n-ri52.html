@@ -1,7 +1,95 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008--><link rel="stylesheet" href="BITS.css" type="text/css"><title>Element: XInclude Fallback</title></head><body class="main"><div class="pageheader"><h2 class="headname">Book Interchange Tag Suite (BITS) Version 1.0 Tag Library 
-Version 1.0</h2><h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
-National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
-National Library of Medicine (NLM)</h4></div><div class="header"><h1 class="elementtag">&lt;xi:fallback&gt;</h1><h1 class="elementname">XInclude Fallback</h1></div><div class="definition"><p class="para">To quote the XInclude Recommendation, “the <span class="elementtag">&lt;xi:fallback&gt;</span> element appears as a child of an <a href="n-dy52.html" target="main" title="XInclude"><span class="elementtag">&lt;xi:include&gt;</span></a> element. It provides a mechanism for recovering from missing resources. When a resource error is encountered, the <a href="n-dy52.html" target="main" title="XInclude"><span class="elementtag">&lt;xi:include&gt;</span></a> element is replaced with the contents of the <span class="elementtag">&lt;xi:fallback&gt;</span> element. If the <span class="elementtag">&lt;xi:fallback&gt;</span> element is empty, the <a href="n-dy52.html" target="main" title="XInclude"><span class="elementtag">&lt;xi:include&gt;</span></a> element is removed from the result.</p></div><div class="remarks"><h2 class="header">Remarks</h2><p class="para">Since it is not the business of this Tag Set to specify processing, the <span class="elementtag">&lt;xi:fallback&gt;</span> element will default to <tt>EMPTY</tt>, but the parameter entity <a href="n-y8g2.html" target="main" title="XInclude Fallback Model"><span class="petag">%fallback-model;</span></a> can be redefined in the customization of any user organization that desires a different fallback result.</p></div><div class="attrlist"><h2 class="header">Attribute</h2><h5 class="header"><a href="n-bgs2.html" target="main"><span class="attrtag">xmlns:xi</span></a> <a href="n-bgs2.html" target="main"><span class="attrname">XInclude Namespace Declaration</span></a></h5></div><div class="contentmodel"><h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  xi:fallback  <a href="n-y8g2.html" target="main" title="XInclude Fallback Model"><span class="petag">%fallback-model;</span></a>                             &gt;</pre></div><div class="contentmodel"><h2 class="header">Expanded Content Model</h2><p class="contentdesc">(#PCDATA)</p></div><div class="modeldesc"><h2 class="header">Description</h2><p class="para">Text, numbers, or special characters</p></div><div class="elementcontext"><h3 class="header">This element may be contained in:</h3><p class="para"><a href="n-dy52.html" target="main" title="XInclude"><span class="elementtag">&lt;xi:include&gt;</span></a></p></div><div class="examp.group"><h3 class="header">Example</h3><div class="taggedexamp"><pre class="taggedtext">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta name="generator" content="HTML Tidy for Linux/x86 (vers 25 March 2009), see www.w3.org" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008-->
+  <link rel="stylesheet" href="BITS.css" type="text/css" />
+
+  <title>Element: XInclude Fallback</title>
+</head>
+
+<body class="main">
+  <div class="pageheader">
+    <h2 class="headname">Book Interchange Tag Suite (BITS) Version 1.0 Tag Library Version 1.0</h2>
+
+    <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk" />
+    National Center for Biotechnology Information (NCBI)<br class="linebrk" />
+    National Library of Medicine (NLM)</h4>
+  </div>
+
+  <div class="header">
+    <h1 class="elementtag">&lt;xi:fallback&gt;</h1>
+
+    <h1 class="elementname">XInclude Fallback</h1>
+  </div>
+
+  <div class="definition">
+    <p class="para">To quote the XInclude Recommendation, “the <span class=
+    "elementtag">&lt;xi:fallback&gt;</span> element appears as a child of an <a href="n-dy52.html"
+    target="main" title="XInclude"><span class="elementtag">&lt;xi:include&gt;</span></a> element.
+    It provides a mechanism for recovering from missing resources. When a resource error is
+    encountered, the <a href="n-dy52.html" target="main" title="XInclude"><span class=
+    "elementtag">&lt;xi:include&gt;</span></a> element is replaced with the contents of the
+    <span class="elementtag">&lt;xi:fallback&gt;</span> element. If the <span class=
+    "elementtag">&lt;xi:fallback&gt;</span> element is empty, the <a href="n-dy52.html" target=
+    "main" title="XInclude"><span class="elementtag">&lt;xi:include&gt;</span></a> element is
+    removed from the result.</p>
+  </div>
+
+  <div class="remarks">
+    <h2 class="header">Remarks</h2>
+
+    <p class="para">Since it is not the business of this Tag Set to specify processing, the
+    <span class="elementtag">&lt;xi:fallback&gt;</span> element will default to <tt>EMPTY</tt>, but
+    the parameter entity <a href="n-y8g2.html" target="main" title=
+    "XInclude Fallback Model"><span class="petag">%fallback-model;</span></a> can be redefined in
+    the customization of any user organization that desires a different fallback result.</p>
+  </div>
+
+  <div class="attrlist">
+    <h2 class="header">Attribute</h2>
+
+    <h5 class="header"><a href="n-bgs2.html" target="main"><span class=
+    "attrtag">xmlns:xi</span></a> <a href="n-bgs2.html" target="main"><span class=
+    "attrname">XInclude Namespace Declaration</span></a></h5>
+  </div>
+
+  <div class="contentmodel">
+    <h2 class="header first">Content Model</h2>
+    <pre class="contentdesc">
+&lt;!ELEMENT  xi:fallback  <a href="n-y8g2.html" target="main" title=
+"XInclude Fallback Model"><span class=
+"petag">%fallback-model;</span></a>                             &gt;
+</pre>
+  </div>
+
+  <div class="contentmodel">
+    <h2 class="header">Expanded Content Model</h2>
+
+    <p class="contentdesc">(#PCDATA)</p>
+  </div>
+
+  <div class="modeldesc">
+    <h2 class="header">Description</h2>
+
+    <p class="para">Text, numbers, or special characters</p>
+  </div>
+
+  <div class="elementcontext">
+    <h3 class="header">This element may be contained in:</h3>
+
+    <p class="para"><a href="n-dy52.html" target="main" title="XInclude"><span class=
+    "elementtag">&lt;xi:include&gt;</span></a></p>
+  </div>
+
+  <div class="examp.group">
+    <h3 class="header">Example</h3>
+
+    <div class="taggedexamp">
+      <pre class="taggedtext">
     
 &lt;book 
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -36,5 +124,15 @@ National Library of Medicine (NLM)</h4></div><div class="header"><h1 class="elem
 
 &lt;/book&gt;
 
-   </pre></div></div><div class="pagefooter"><h2 class="headname">Book Interchange Tag Suite (BITS) Version 1.0 Tag Library 
-Version 1.0</h2><h4 class="pubdate">Version of December 2013</h4></div></body></html>
+   
+</pre>
+    </div>
+  </div>
+
+  <div class="pagefooter">
+    <h2 class="headname">Book Interchange Tag Suite (BITS) Version 1.0 Tag Library Version 1.0</h2>
+
+    <h4 class="pubdate">Version of December 2013</h4>
+  </div>
+</body>
+</html>

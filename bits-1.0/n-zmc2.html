@@ -1,13 +1,129 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008--><link rel="stylesheet" href="BITS.css" type="text/css"><title>Element: Translated Title Group</title></head><body class="main"><div class="pageheader"><h2 class="headname">Book Interchange Tag Suite (BITS) Version 1.0 Tag Library 
-Version 1.0</h2><h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
-National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
-National Library of Medicine (NLM)</h4></div><div class="header"><h1 class="elementtag">&lt;trans-title-group&gt;</h1><h1 class="elementname">Translated Title Group</h1></div><div class="definition"><p class="para">Container element for translated and transliterated titles.</p></div><div class="remarks"><h2 class="header">Remarks</h2><p class="para">This element may be repeated, for example, to provide translations in multiple
-          languages, with the language indicated using the <a href="n-fas2.html" target="main" title="Language"><span class="attrtag">@xml:lang</span></a> attribute.</p><p class="para"><strong>Best Practice:</strong> Although, for reasons of backwards
-          compatibility with older versions of JATS, the <a href="n-fas2.html" target="main" title="Language"><span class="attrtag">@xml:lang</span></a>
-          attribute may be placed on the elements <em>inside</em> this
-          element, best practice is to use <a href="n-fas2.html" target="main" title="Language"><span class="attrtag">@xml:lang</span></a>
-          on this element, the container for the alternative language titles.</p></div><div class="attrlist"><h2 class="header">Attributes</h2><h5 class="header"><a href="n-yxa2.html" target="main"><span class="attrtag">content-type</span></a> <a href="n-yxa2.html" target="main"><span class="attrname">Type of Content</span></a></h5><h5 class="header"><a href="n-4qu2.html" target="main"><span class="attrtag">id</span></a> <a href="n-4qu2.html" target="main"><span class="attrname">Document Internal Identifier</span></a></h5><h5 class="header"><a href="n-rdv2.html" target="main"><span class="attrtag">specific-use</span></a> <a href="n-rdv2.html" target="main"><span class="attrname">Specific Use</span></a></h5><h5 class="header"><a href="n-ib42.html" target="main"><span class="attrtag">xml:base</span></a> <a href="n-ib42.html" target="main"><span class="attrname">Base</span></a></h5><h5 class="header"><a href="n-fas2.html" target="main"><span class="attrtag">xml:lang</span></a> <a href="n-fas2.html" target="main"><span class="attrname">Language</span></a></h5></div><div class="contentmodel"><h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  trans-title-group
-                        <a href="n-2qy2.html" target="main" title="Translated Title Group Model"><span class="petag">%trans-title-group-model;</span></a>                    &gt;</pre></div><div class="contentmodel"><h2 class="header">Expanded Content Model</h2><p class="contentdesc">(label?, trans-title, trans-subtitle*)</p></div><div class="modeldesc"><h2 class="header">Description</h2><p class="para">The following, in order:<ul class="bullist"><li><a href="n-tdg0.html" target="main" title="Label (of an Equation, Figure, Reference, etc.)"><span class="elementtag">&lt;label&gt;</span></a> <a href="n-tdg0.html" target="main" title="<label&gt;"><span class="elementname">Label (of an Equation, Figure, Reference, etc.)</span></a>, zero or one</li><li><a href="n-gic2.html" target="main" title="Translated Title"><span class="elementtag">&lt;trans-title&gt;</span></a> <a href="n-gic2.html" target="main" title="<trans-title&gt;"><span class="elementname">Translated Title</span></a></li><li><a href="n-kgc2.html" target="main" title="Translated Subtitle"><span class="elementtag">&lt;trans-subtitle&gt;</span></a> <a href="n-kgc2.html" target="main" title="<trans-subtitle&gt;"><span class="elementname">Translated Subtitle</span></a>, zero or more</li></ul></p></div><div class="elementcontext"><h3 class="header">This element may be contained in:</h3><p class="para"><a href="n-ew80.html" target="main" title="Book Title Group"><span class="elementtag">&lt;book-title-group&gt;</span></a>, <a href="n-ht22.html" target="main" title="Title Group"><span class="elementtag">&lt;title-group&gt;</span></a></p></div><div class="examp.group"><h3 class="header">Example</h3><p class="para">This example shows basic use of a <span class="elementtag">&lt;trans-title&gt;</span>:</p><div class="taggedexamp"><pre class="taggedtext">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta name="generator" content="HTML Tidy for Linux/x86 (vers 25 March 2009), see www.w3.org" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008-->
+  <link rel="stylesheet" href="BITS.css" type="text/css" />
+
+  <title>Element: Translated Title Group</title>
+</head>
+
+<body class="main">
+  <div class="pageheader">
+    <h2 class="headname">Book Interchange Tag Suite (BITS) Version 1.0 Tag Library Version 1.0</h2>
+
+    <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk" />
+    National Center for Biotechnology Information (NCBI)<br class="linebrk" />
+    National Library of Medicine (NLM)</h4>
+  </div>
+
+  <div class="header">
+    <h1 class="elementtag">&lt;trans-title-group&gt;</h1>
+
+    <h1 class="elementname">Translated Title Group</h1>
+  </div>
+
+  <div class="definition">
+    <p class="para">Container element for translated and transliterated titles.</p>
+  </div>
+
+  <div class="remarks">
+    <h2 class="header">Remarks</h2>
+
+    <p class="para">This element may be repeated, for example, to provide translations in multiple
+    languages, with the language indicated using the <a href="n-fas2.html" target="main" title=
+    "Language"><span class="attrtag">@xml:lang</span></a> attribute.</p>
+
+    <p class="para"><strong>Best Practice:</strong> Although, for reasons of backwards
+    compatibility with older versions of JATS, the <a href="n-fas2.html" target="main" title=
+    "Language"><span class="attrtag">@xml:lang</span></a> attribute may be placed on the elements
+    <em>inside</em> this element, best practice is to use <a href="n-fas2.html" target="main"
+    title="Language"><span class="attrtag">@xml:lang</span></a> on this element, the container for
+    the alternative language titles.</p>
+  </div>
+
+  <div class="attrlist">
+    <h2 class="header">Attributes</h2>
+
+    <h5 class="header"><a href="n-yxa2.html" target="main"><span class=
+    "attrtag">content-type</span></a> <a href="n-yxa2.html" target="main"><span class=
+    "attrname">Type of Content</span></a></h5>
+
+    <h5 class="header"><a href="n-4qu2.html" target="main"><span class="attrtag">id</span></a>
+    <a href="n-4qu2.html" target="main"><span class="attrname">Document Internal
+    Identifier</span></a></h5>
+
+    <h5 class="header"><a href="n-rdv2.html" target="main"><span class=
+    "attrtag">specific-use</span></a> <a href="n-rdv2.html" target="main"><span class=
+    "attrname">Specific Use</span></a></h5>
+
+    <h5 class="header"><a href="n-ib42.html" target="main"><span class=
+    "attrtag">xml:base</span></a> <a href="n-ib42.html" target="main"><span class=
+    "attrname">Base</span></a></h5>
+
+    <h5 class="header"><a href="n-fas2.html" target="main"><span class=
+    "attrtag">xml:lang</span></a> <a href="n-fas2.html" target="main"><span class=
+    "attrname">Language</span></a></h5>
+  </div>
+
+  <div class="contentmodel">
+    <h2 class="header first">Content Model</h2>
+    <pre class="contentdesc">
+&lt;!ELEMENT  trans-title-group
+                        <a href="n-2qy2.html" target="main" title=
+"Translated Title Group Model"><span class=
+"petag">%trans-title-group-model;</span></a>                    &gt;
+</pre>
+  </div>
+
+  <div class="contentmodel">
+    <h2 class="header">Expanded Content Model</h2>
+
+    <p class="contentdesc">(label?, trans-title, trans-subtitle*)</p>
+  </div>
+
+  <div class="modeldesc">
+    <h2 class="header">Description</h2>
+
+    <p class="para">The following, in order:</p>
+
+    <ul class="bullist">
+      <li><a href="n-tdg0.html" target="main" title=
+      "Label (of an Equation, Figure, Reference, etc.)"><span class=
+      "elementtag">&lt;label&gt;</span></a> <a href="n-tdg0.html" target="main" title=
+      "&lt;label&gt;"><span class="elementname">Label (of an Equation, Figure, Reference,
+      etc.)</span></a>, zero or one</li>
+
+      <li><a href="n-gic2.html" target="main" title="Translated Title"><span class=
+      "elementtag">&lt;trans-title&gt;</span></a> <a href="n-gic2.html" target="main" title=
+      "&lt;trans-title&gt;"><span class="elementname">Translated Title</span></a></li>
+
+      <li><a href="n-kgc2.html" target="main" title="Translated Subtitle"><span class=
+      "elementtag">&lt;trans-subtitle&gt;</span></a> <a href="n-kgc2.html" target="main" title=
+      "&lt;trans-subtitle&gt;"><span class="elementname">Translated Subtitle</span></a>, zero or
+      more</li>
+    </ul>
+  </div>
+
+  <div class="elementcontext">
+    <h3 class="header">This element may be contained in:</h3>
+
+    <p class="para"><a href="n-ew80.html" target="main" title="Book Title Group"><span class=
+    "elementtag">&lt;book-title-group&gt;</span></a>, <a href="n-ht22.html" target="main" title=
+    "Title Group"><span class="elementtag">&lt;title-group&gt;</span></a></p>
+  </div>
+
+  <div class="examp.group">
+    <h3 class="header">Example</h3>
+
+    <p class="para">This example shows basic use of a <span class=
+    "elementtag">&lt;trans-title&gt;</span>:</p>
+
+    <div class="taggedexamp">
+      <pre class="taggedtext">
     
 ...
 &lt;book-meta&gt;
@@ -25,5 +141,15 @@ National Library of Medicine (NLM)</h4></div><div class="header"><h1 class="elem
 &lt;/book-meta&gt;
 ...
 
-   </pre></div></div><div class="pagefooter"><h2 class="headname">Book Interchange Tag Suite (BITS) Version 1.0 Tag Library 
-Version 1.0</h2><h4 class="pubdate">Version of December 2013</h4></div></body></html>
+   
+</pre>
+    </div>
+  </div>
+
+  <div class="pagefooter">
+    <h2 class="headname">Book Interchange Tag Suite (BITS) Version 1.0 Tag Library Version 1.0</h2>
+
+    <h4 class="pubdate">Version of December 2013</h4>
+  </div>
+</body>
+</html>

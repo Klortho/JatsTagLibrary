@@ -1,7 +1,118 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008--><link rel="stylesheet" href="BITS.css" type="text/css"><title>Element: XInclude</title></head><body class="main"><div class="pageheader"><h2 class="headname">Book Interchange Tag Suite (BITS) Version 1.0 Tag Library 
-Version 1.0</h2><h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
-National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
-National Library of Medicine (NLM)</h4></div><div class="header"><h1 class="elementtag">&lt;xi:include&gt;</h1><h1 class="elementname">XInclude</h1></div><div class="definition"><p class="para">Which added the XInclude mechanism to the BITS Tag Set, so that books and book parts can be managed as separate files and “included” as needed into a final document.</p></div><div class="remarks"><h2 class="header">Remarks</h2><p class="para">For detains concerning the use of XInclude, see <a href="http://www.w3.org/TR/xinclude/" target="_new" class="external">http://www.w3.org/TR/xinclude/</a>.</p><p class="para">The optional <a href="n-ri52.html" target="main" title="XInclude Fallback"><span class="elementtag">&lt;xi:fallback&gt;</span></a> child can be used to specify alternative content when the resource to be included was not found.</p></div><div class="attrlist"><h2 class="header">Attributes</h2><h5 class="header"><a href="n-bw82.html" target="main"><span class="attrtag">accept</span></a> <a href="n-bw82.html" target="main"><span class="attrname">XInclude Accept Header</span></a></h5><h5 class="header"><a href="n-nx82.html" target="main"><span class="attrtag">accept-language</span></a> <a href="n-nx82.html" target="main"><span class="attrname">XInclude Accept Language Header</span></a></h5><h5 class="header"><a href="n-yau2.html" target="main"><span class="attrtag">encoding</span></a> <a href="n-yau2.html" target="main"><span class="attrname">XInclude Encoding</span></a></h5><h5 class="header"><a href="n-spu2.html" target="main"><span class="attrtag">href</span></a> <a href="n-spu2.html" target="main"><span class="attrname">XInclude Href Linking Mechanism</span></a></h5><h5 class="header"><a href="n-txx2.html" target="main"><span class="attrtag">parse</span></a> <a href="n-txx2.html" target="main"><span class="attrname">XInclude Parse Flag</span></a></h5><h5 class="header"><a href="n-bgs2.html" target="main"><span class="attrtag">xmlns:xi</span></a> <a href="n-bgs2.html" target="main"><span class="attrname">XInclude Namespace Declaration</span></a></h5><h5 class="header"><a href="n-5hs2.html" target="main"><span class="attrtag">xpointer</span></a> <a href="n-5hs2.html" target="main"><span class="attrname">XInclude Xpointer</span></a></h5></div><div class="contentmodel"><h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  xi:include   <a href="n-pkn2.html" target="main" title="XInclude Model"><span class="petag">%include-model;</span></a>                              &gt;</pre></div><div class="contentmodel"><h2 class="header">Expanded Content Model</h2><p class="contentdesc">(xi:fallback?)</p></div><div class="modeldesc"><h2 class="header">Description</h2><p class="para"><a href="n-ri52.html" target="main" title="XInclude Fallback"><span class="elementtag">&lt;xi:fallback&gt;</span></a> <a href="n-ri52.html" target="main" title="<xi:fallback&gt;"><span class="elementname">XInclude Fallback</span></a>, zero or one</p></div><div class="elementcontext"><h3 class="header">This element may be contained in:</h3><p class="para"><a href="n-8350.html" target="main" title="Body of a Book Part"><span class="elementtag">&lt;body&gt;</span></a>, <a href="n-xe50.html" target="main" title="Book Back Matter"><span class="elementtag">&lt;book-back&gt;</span></a>, <a href="n-sn50.html" target="main" title="Body of the Book"><span class="elementtag">&lt;book-body&gt;</span></a>, <a href="n-wk80.html" target="main" title="Book Part Wrapper"><span class="elementtag">&lt;book-part-wrapper&gt;</span></a>, <a href="n-nrt0.html" target="main" title="Front Matter"><span class="elementtag">&lt;front-matter&gt;</span></a></p></div><div class="examp.group"><h3 class="header">Example</h3><div class="taggedexamp"><pre class="taggedtext">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta name="generator" content="HTML Tidy for Linux/x86 (vers 25 March 2009), see www.w3.org" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008-->
+  <link rel="stylesheet" href="BITS.css" type="text/css" />
+
+  <title>Element: XInclude</title>
+</head>
+
+<body class="main">
+  <div class="pageheader">
+    <h2 class="headname">Book Interchange Tag Suite (BITS) Version 1.0 Tag Library Version 1.0</h2>
+
+    <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk" />
+    National Center for Biotechnology Information (NCBI)<br class="linebrk" />
+    National Library of Medicine (NLM)</h4>
+  </div>
+
+  <div class="header">
+    <h1 class="elementtag">&lt;xi:include&gt;</h1>
+
+    <h1 class="elementname">XInclude</h1>
+  </div>
+
+  <div class="definition">
+    <p class="para">Which added the XInclude mechanism to the BITS Tag Set, so that books and book
+    parts can be managed as separate files and “included” as needed into a final document.</p>
+  </div>
+
+  <div class="remarks">
+    <h2 class="header">Remarks</h2>
+
+    <p class="para">For detains concerning the use of XInclude, see <a href=
+    "http://www.w3.org/TR/xinclude/" target="_new" class=
+    "external">http://www.w3.org/TR/xinclude/</a>.</p>
+
+    <p class="para">The optional <a href="n-ri52.html" target="main" title=
+    "XInclude Fallback"><span class="elementtag">&lt;xi:fallback&gt;</span></a> child can be used
+    to specify alternative content when the resource to be included was not found.</p>
+  </div>
+
+  <div class="attrlist">
+    <h2 class="header">Attributes</h2>
+
+    <h5 class="header"><a href="n-bw82.html" target="main"><span class="attrtag">accept</span></a>
+    <a href="n-bw82.html" target="main"><span class="attrname">XInclude Accept
+    Header</span></a></h5>
+
+    <h5 class="header"><a href="n-nx82.html" target="main"><span class=
+    "attrtag">accept-language</span></a> <a href="n-nx82.html" target="main"><span class=
+    "attrname">XInclude Accept Language Header</span></a></h5>
+
+    <h5 class="header"><a href="n-yau2.html" target="main"><span class=
+    "attrtag">encoding</span></a> <a href="n-yau2.html" target="main"><span class=
+    "attrname">XInclude Encoding</span></a></h5>
+
+    <h5 class="header"><a href="n-spu2.html" target="main"><span class="attrtag">href</span></a>
+    <a href="n-spu2.html" target="main"><span class="attrname">XInclude Href Linking
+    Mechanism</span></a></h5>
+
+    <h5 class="header"><a href="n-txx2.html" target="main"><span class="attrtag">parse</span></a>
+    <a href="n-txx2.html" target="main"><span class="attrname">XInclude Parse Flag</span></a></h5>
+
+    <h5 class="header"><a href="n-bgs2.html" target="main"><span class=
+    "attrtag">xmlns:xi</span></a> <a href="n-bgs2.html" target="main"><span class=
+    "attrname">XInclude Namespace Declaration</span></a></h5>
+
+    <h5 class="header"><a href="n-5hs2.html" target="main"><span class=
+    "attrtag">xpointer</span></a> <a href="n-5hs2.html" target="main"><span class=
+    "attrname">XInclude Xpointer</span></a></h5>
+  </div>
+
+  <div class="contentmodel">
+    <h2 class="header first">Content Model</h2>
+    <pre class="contentdesc">
+&lt;!ELEMENT  xi:include   <a href="n-pkn2.html" target="main" title="XInclude Model"><span class=
+"petag">%include-model;</span></a>                              &gt;
+</pre>
+  </div>
+
+  <div class="contentmodel">
+    <h2 class="header">Expanded Content Model</h2>
+
+    <p class="contentdesc">(xi:fallback?)</p>
+  </div>
+
+  <div class="modeldesc">
+    <h2 class="header">Description</h2>
+
+    <p class="para"><a href="n-ri52.html" target="main" title="XInclude Fallback"><span class=
+    "elementtag">&lt;xi:fallback&gt;</span></a> <a href="n-ri52.html" target="main" title=
+    "&lt;xi:fallback&gt;"><span class="elementname">XInclude Fallback</span></a>, zero or one</p>
+  </div>
+
+  <div class="elementcontext">
+    <h3 class="header">This element may be contained in:</h3>
+
+    <p class="para"><a href="n-8350.html" target="main" title="Body of a Book Part"><span class=
+    "elementtag">&lt;body&gt;</span></a>, <a href="n-xe50.html" target="main" title=
+    "Book Back Matter"><span class="elementtag">&lt;book-back&gt;</span></a>, <a href="n-sn50.html"
+    target="main" title="Body of the Book"><span class="elementtag">&lt;book-body&gt;</span></a>,
+    <a href="n-wk80.html" target="main" title="Book Part Wrapper"><span class=
+    "elementtag">&lt;book-part-wrapper&gt;</span></a>, <a href="n-nrt0.html" target="main" title=
+    "Front Matter"><span class="elementtag">&lt;front-matter&gt;</span></a></p>
+  </div>
+
+  <div class="examp.group">
+    <h3 class="header">Example</h3>
+
+    <div class="taggedexamp">
+      <pre class="taggedtext">
     
 &lt;book 
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -21,11 +132,14 @@ National Library of Medicine (NLM)</h4></div><div class="header"><h1 class="elem
 
 &lt;!-- =============== Body Matter (Content) =========== --&gt;
 &lt;book-body&gt;
-<strong><span class="focus">&lt;xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="bits-book-part1.xml"&gt;
+<strong><span class=
+"focus">&lt;xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="bits-book-part1.xml"&gt;
 &lt;xi:fallback/&gt;
 &lt;/xi:include&gt;</span></strong>
-<strong><span class="focus">&lt;xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="bits-book-part2.xml"&gt;&lt;/xi:include&gt;</span></strong>
-<strong><span class="focus">&lt;xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="bits-book-part3.xml"&gt;&lt;/xi:include&gt;</span></strong>
+<strong><span class=
+"focus">&lt;xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="bits-book-part2.xml"&gt;&lt;/xi:include&gt;</span></strong>
+<strong><span class=
+"focus">&lt;xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="bits-book-part3.xml"&gt;&lt;/xi:include&gt;</span></strong>
 &lt;/book-body&gt;
 
 &lt;!-- =============== Back Matter (Ancillary) ======= --&gt;
@@ -36,5 +150,15 @@ National Library of Medicine (NLM)</h4></div><div class="header"><h1 class="elem
 
 &lt;/book&gt;
 
-   </pre></div></div><div class="pagefooter"><h2 class="headname">Book Interchange Tag Suite (BITS) Version 1.0 Tag Library 
-Version 1.0</h2><h4 class="pubdate">Version of December 2013</h4></div></body></html>
+   
+</pre>
+    </div>
+  </div>
+
+  <div class="pagefooter">
+    <h2 class="headname">Book Interchange Tag Suite (BITS) Version 1.0 Tag Library Version 1.0</h2>
+
+    <h4 class="pubdate">Version of December 2013</h4>
+  </div>
+</body>
+</html>

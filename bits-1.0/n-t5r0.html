@@ -1,14 +1,115 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008--><link rel="stylesheet" href="BITS.css" type="text/css"><title>Element: Open Access</title></head><body class="main"><div class="pageheader"><h2 class="headname">Book Interchange Tag Suite (BITS) Version 1.0 Tag Library 
-Version 1.0</h2><h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
-National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
-National Library of Medicine (NLM)</h4></div><div class="header"><h1 class="elementtag">&lt;open-access&gt;</h1><h1 class="elementname">Open Access</h1></div><div class="definition"><p class="para">Open access provisions that apply to a work or the funding information that provided
-          the open access provisions.</p></div><div class="remarks"><h2 class="header">Remarks</h2><p class="para">This tag is for in-line discussions of open access that cannot readily be captured in
-          the <a href="n-eqg0.html" target="main" title="License Information"><span class="elementtag">&lt;license&gt;</span></a>, or that are in addition to the
-          information there. If there is a paragraph in the text that mentions that this is an open
-          access document, there should be a license element that describes it.</p><p class="para">Also, <a href="n-t5r0.html" target="main" title="Open Access"><span class="elementtag">&lt;open-access&gt;</span></a> can also be used
-          inside <a href="n-xjt0.html" target="main" title="Funding Group"><span class="elementtag">&lt;funding-group&gt;</span></a>, for statements about
-          who paid the fees to make a document open access. Both may occur in the same document, but
-          that is not required.</p></div><div class="attrlist"><h2 class="header">Attributes</h2><h5 class="header"><a href="n-4qu2.html" target="main"><span class="attrtag">id</span></a> <a href="n-4qu2.html" target="main"><span class="attrname">Document Internal Identifier</span></a></h5><h5 class="header"><a href="n-rdv2.html" target="main"><span class="attrtag">specific-use</span></a> <a href="n-rdv2.html" target="main"><span class="attrname">Specific Use</span></a></h5><h5 class="header"><a href="n-ib42.html" target="main"><span class="attrtag">xml:base</span></a> <a href="n-ib42.html" target="main"><span class="attrname">Base</span></a></h5><h5 class="header"><a href="n-fas2.html" target="main"><span class="attrtag">xml:lang</span></a> <a href="n-fas2.html" target="main"><span class="attrname">Language</span></a></h5></div><div class="contentmodel"><h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  open-access  <a href="n-jid2.html" target="main" title="Open Access Model"><span class="petag">%open-access-model;</span></a>                          &gt;</pre></div><div class="contentmodel"><h2 class="header">Expanded Content Model</h2><p class="contentdesc">((p)+)</p></div><div class="modeldesc"><h2 class="header">Description</h2><p class="para">Any one of:<ul class="bullist"><li><a href="n-7tr0.html" target="main" title="Paragraph"><span class="elementtag">&lt;p&gt;</span></a> <a href="n-7tr0.html" target="main" title="<p&gt;"><span class="elementname">Paragraph</span></a>, one or more</li></ul></p></div><div class="elementcontext"><h3 class="header">This element may be contained in:</h3><p class="para"><a href="n-xjt0.html" target="main" title="Funding Group"><span class="elementtag">&lt;funding-group&gt;</span></a>, <a href="n-vk70.html" target="main" title="Funding Statement"><span class="elementtag">&lt;funding-statement&gt;</span></a>, <a href="n-nbg0.html" target="main" title="License Paragraph"><span class="elementtag">&lt;license-p&gt;</span></a>, <a href="n-7tr0.html" target="main" title="Paragraph"><span class="elementtag">&lt;p&gt;</span></a></p></div><div class="examp.group"><h3 class="header">Example</h3><div class="taggedexamp"><pre class="taggedtext">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta name="generator" content="HTML Tidy for Linux/x86 (vers 25 March 2009), see www.w3.org" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008-->
+  <link rel="stylesheet" href="BITS.css" type="text/css" />
+
+  <title>Element: Open Access</title>
+</head>
+
+<body class="main">
+  <div class="pageheader">
+    <h2 class="headname">Book Interchange Tag Suite (BITS) Version 1.0 Tag Library Version 1.0</h2>
+
+    <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk" />
+    National Center for Biotechnology Information (NCBI)<br class="linebrk" />
+    National Library of Medicine (NLM)</h4>
+  </div>
+
+  <div class="header">
+    <h1 class="elementtag">&lt;open-access&gt;</h1>
+
+    <h1 class="elementname">Open Access</h1>
+  </div>
+
+  <div class="definition">
+    <p class="para">Open access provisions that apply to a work or the funding information that
+    provided the open access provisions.</p>
+  </div>
+
+  <div class="remarks">
+    <h2 class="header">Remarks</h2>
+
+    <p class="para">This tag is for in-line discussions of open access that cannot readily be
+    captured in the <a href="n-eqg0.html" target="main" title="License Information"><span class=
+    "elementtag">&lt;license&gt;</span></a>, or that are in addition to the information there. If
+    there is a paragraph in the text that mentions that this is an open access document, there
+    should be a license element that describes it.</p>
+
+    <p class="para">Also, <a href="n-t5r0.html" target="main" title="Open Access"><span class=
+    "elementtag">&lt;open-access&gt;</span></a> can also be used inside <a href="n-xjt0.html"
+    target="main" title="Funding Group"><span class="elementtag">&lt;funding-group&gt;</span></a>,
+    for statements about who paid the fees to make a document open access. Both may occur in the
+    same document, but that is not required.</p>
+  </div>
+
+  <div class="attrlist">
+    <h2 class="header">Attributes</h2>
+
+    <h5 class="header"><a href="n-4qu2.html" target="main"><span class="attrtag">id</span></a>
+    <a href="n-4qu2.html" target="main"><span class="attrname">Document Internal
+    Identifier</span></a></h5>
+
+    <h5 class="header"><a href="n-rdv2.html" target="main"><span class=
+    "attrtag">specific-use</span></a> <a href="n-rdv2.html" target="main"><span class=
+    "attrname">Specific Use</span></a></h5>
+
+    <h5 class="header"><a href="n-ib42.html" target="main"><span class=
+    "attrtag">xml:base</span></a> <a href="n-ib42.html" target="main"><span class=
+    "attrname">Base</span></a></h5>
+
+    <h5 class="header"><a href="n-fas2.html" target="main"><span class=
+    "attrtag">xml:lang</span></a> <a href="n-fas2.html" target="main"><span class=
+    "attrname">Language</span></a></h5>
+  </div>
+
+  <div class="contentmodel">
+    <h2 class="header first">Content Model</h2>
+    <pre class="contentdesc">
+&lt;!ELEMENT  open-access  <a href="n-jid2.html" target="main" title=
+"Open Access Model"><span class=
+"petag">%open-access-model;</span></a>                          &gt;
+</pre>
+  </div>
+
+  <div class="contentmodel">
+    <h2 class="header">Expanded Content Model</h2>
+
+    <p class="contentdesc">((p)+)</p>
+  </div>
+
+  <div class="modeldesc">
+    <h2 class="header">Description</h2>
+
+    <p class="para">Any one of:</p>
+
+    <ul class="bullist">
+      <li><a href="n-7tr0.html" target="main" title="Paragraph"><span class=
+      "elementtag">&lt;p&gt;</span></a> <a href="n-7tr0.html" target="main" title=
+      "&lt;p&gt;"><span class="elementname">Paragraph</span></a>, one or more</li>
+    </ul>
+  </div>
+
+  <div class="elementcontext">
+    <h3 class="header">This element may be contained in:</h3>
+
+    <p class="para"><a href="n-xjt0.html" target="main" title="Funding Group"><span class=
+    "elementtag">&lt;funding-group&gt;</span></a>, <a href="n-vk70.html" target="main" title=
+    "Funding Statement"><span class="elementtag">&lt;funding-statement&gt;</span></a>, <a href=
+    "n-nbg0.html" target="main" title="License Paragraph"><span class=
+    "elementtag">&lt;license-p&gt;</span></a>, <a href="n-7tr0.html" target="main" title=
+    "Paragraph"><span class="elementtag">&lt;p&gt;</span></a></p>
+  </div>
+
+  <div class="examp.group">
+    <h3 class="header">Example</h3>
+
+    <div class="taggedexamp">
+      <pre class="taggedtext">
     
 &lt;book dtd-version="1.0"&gt;  
 &lt;book-meta&gt;
@@ -63,5 +164,15 @@ by the grant-in-aid for scientific research.&lt;/p&gt;
 &lt;/book-back&gt;
 &lt;/book&gt;
 
-   </pre></div></div><div class="pagefooter"><h2 class="headname">Book Interchange Tag Suite (BITS) Version 1.0 Tag Library 
-Version 1.0</h2><h4 class="pubdate">Version of December 2013</h4></div></body></html>
+   
+</pre>
+    </div>
+  </div>
+
+  <div class="pagefooter">
+    <h2 class="headname">Book Interchange Tag Suite (BITS) Version 1.0 Tag Library Version 1.0</h2>
+
+    <h4 class="pubdate">Version of December 2013</h4>
+  </div>
+</body>
+</html>

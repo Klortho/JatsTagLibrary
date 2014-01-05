@@ -1,15 +1,250 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008--><link rel="stylesheet" href="BITS.css" type="text/css"><title>Element: Figure Group</title></head><body class="main"><div class="pageheader"><h2 class="headname">Book Interchange Tag Suite (BITS) Version 1.0 Tag Library 
-Version 1.0</h2><h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
-National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
-National Library of Medicine (NLM)</h4></div><div class="header"><h1 class="elementtag">&lt;fig-group&gt;</h1><h1 class="elementname">Figure Group</h1></div><div class="definition"><p class="para">Container element for figures that are to be displayed together.</p></div><div class="remarks"><h2 class="header">Remarks</h2><p class="para">One figure may contain many graphics; this container element has been defined to
-          combine more than one <a href="n-ems0.html" target="main" title="Figure"><span class="elementtag">&lt;fig&gt;</span></a> elements.</p><p class="para"><strong>Related Essay:</strong> For a discussion on the use of
-          <span class="elementtag">&lt;fig-group&gt;</span>, see <a href="n-63q2.html#bits-tag-fig-graphic">Figures and Graphics</a>.</p><p class="para"><strong>Position:</strong> The <a href="n-2tx2.html" target="main" title="Position"><span class="attrtag">@position</span></a> attribute may be used to indicate whether this element must be anchored
-          at its exact location within the text or whether it may float, for example, to the top of
-          the next page, into the next column, to the end of a logical file, or within a separate
-          window.</p></div><div class="attrlist"><h2 class="header">Attributes</h2><h5 class="header"><a href="n-yxa2.html" target="main"><span class="attrtag">content-type</span></a> <a href="n-yxa2.html" target="main"><span class="attrname">Type of Content</span></a></h5><h5 class="header"><a href="n-4qu2.html" target="main"><span class="attrtag">id</span></a> <a href="n-4qu2.html" target="main"><span class="attrname">Document Internal Identifier</span></a></h5><h5 class="header"><a href="n-28x2.html" target="main"><span class="attrtag">orientation</span></a> <a href="n-28x2.html" target="main"><span class="attrname">Orientation</span></a></h5><h5 class="header"><a href="n-2tx2.html" target="main"><span class="attrtag">position</span></a> <a href="n-2tx2.html" target="main"><span class="attrname">Position</span></a></h5><h5 class="header"><a href="n-rdv2.html" target="main"><span class="attrtag">specific-use</span></a> <a href="n-rdv2.html" target="main"><span class="attrname">Specific Use</span></a></h5><h5 class="header"><a href="n-ib42.html" target="main"><span class="attrtag">xml:base</span></a> <a href="n-ib42.html" target="main"><span class="attrname">Base</span></a></h5><h5 class="header"><a href="n-fas2.html" target="main"><span class="attrtag">xml:lang</span></a> <a href="n-fas2.html" target="main"><span class="attrname">Language</span></a></h5></div><div class="relatedelem"><h2 class="header">Related Elements</h2><p class="para">Both figures (<a href="n-ems0.html" target="main" title="Figure"><span class="elementtag">&lt;fig&gt;</span></a>) and graphics
-          (<a href="n-zj70.html" target="main" title="Graphic"><span class="elementtag">&lt;graphic&gt;</span></a>) may appear either grouped within
-          a <a href="n-j5t0.html" target="main" title="Figure Group"><span class="elementtag">&lt;fig-group&gt;</span></a> or singly within textual
-          material.</p></div><div class="contentmodel"><h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  fig-group    <a href="n-axg2.html" target="main" title="Figure Group Model"><span class="petag">%fig-group-model;</span></a>                            &gt;</pre></div><div class="contentmodel"><h2 class="header">Expanded Content Model</h2><p class="contentdesc">((object-id)*, label?, (caption)?, (abstract)*, (kwd-group)*, (alt-text | long-desc | email | ext-link | uri)*, (fig | alternatives | graphic | media)*)</p></div><div class="modeldesc"><h2 class="header">Description</h2><p class="para">The following, in order:<ul class="bullist"><li><a href="n-4bd0.html" target="main" title="Object Identifier"><span class="elementtag">&lt;object-id&gt;</span></a> <a href="n-4bd0.html" target="main" title="<object-id&gt;"><span class="elementname">Object Identifier</span></a>, zero or more</li><li><a href="n-tdg0.html" target="main" title="Label (of an Equation, Figure, Reference, etc.)"><span class="elementtag">&lt;label&gt;</span></a> <a href="n-tdg0.html" target="main" title="<label&gt;"><span class="elementname">Label (of an Equation, Figure, Reference, etc.)</span></a>, zero or one</li><li><a href="n-5q80.html" target="main" title="Caption of a Figure, Table, etc."><span class="elementtag">&lt;caption&gt;</span></a> <a href="n-5q80.html" target="main" title="<caption&gt;"><span class="elementname">Caption of a Figure, Table, etc.</span></a>, zero or one</li><li><a href="n-2q00.html" target="main" title="Abstract"><span class="elementtag">&lt;abstract&gt;</span></a> <a href="n-2q00.html" target="main" title="<abstract&gt;"><span class="elementname">Abstract</span></a>, zero or more</li><li><a href="n-xgg0.html" target="main" title="Keyword Group"><span class="elementtag">&lt;kwd-group&gt;</span></a> <a href="n-xgg0.html" target="main" title="<kwd-group&gt;"><span class="elementname">Keyword Group</span></a>, zero or more</li><li>Any combination of:<ul class="bullist"><li><a href="n-xq20.html" target="main" title="Alternate Text Name (for a figure, etc.)"><span class="elementtag">&lt;alt-text&gt;</span></a> <a href="n-xq20.html" target="main" title="<alt-text&gt;"><span class="elementname">Alternate Text Name (for a figure, etc.)</span></a></li><li><a href="n-4wn0.html" target="main" title="Long Description"><span class="elementtag">&lt;long-desc&gt;</span></a> <a href="n-4wn0.html" target="main" title="<long-desc&gt;"><span class="elementname">Long Description</span></a></li><li>Linking Elements<ul class="bullist"><li><a href="n-s940.html" target="main" title="Email Address"><span class="elementtag">&lt;email&gt;</span></a> <a href="n-s940.html" target="main" title="<email&gt;"><span class="elementname">Email Address</span></a></li><li><a href="n-5fs0.html" target="main" title="External Link"><span class="elementtag">&lt;ext-link&gt;</span></a> <a href="n-5fs0.html" target="main" title="<ext-link&gt;"><span class="elementname">External Link</span></a></li><li><a href="n-6t32.html" target="main" title="Uniform Resource Identifier (URI)"><span class="elementtag">&lt;uri&gt;</span></a> <a href="n-6t32.html" target="main" title="<uri&gt;"><span class="elementname">Uniform Resource Identifier (URI)</span></a></li></ul></li></ul></li><li>Any combination of:<ul class="bullist"><li><a href="n-ems0.html" target="main" title="Figure"><span class="elementtag">&lt;fig&gt;</span></a> <a href="n-ems0.html" target="main" title="<fig&gt;"><span class="elementname">Figure</span></a></li><li><a href="n-i3c0.html" target="main" title="Alternatives For Processing"><span class="elementtag">&lt;alternatives&gt;</span></a> <a href="n-i3c0.html" target="main" title="<alternatives&gt;"><span class="elementname">Alternatives For Processing</span></a></li><li><a href="n-zj70.html" target="main" title="Graphic"><span class="elementtag">&lt;graphic&gt;</span></a> <a href="n-zj70.html" target="main" title="<graphic&gt;"><span class="elementname">Graphic</span></a></li><li><a href="n-vsn0.html" target="main" title="Media Object"><span class="elementtag">&lt;media&gt;</span></a> <a href="n-vsn0.html" target="main" title="<media&gt;"><span class="elementname">Media Object</span></a></li></ul></li></ul></p></div><div class="elementcontext"><h3 class="header">This element may be contained in:</h3><p class="para"><a href="n-2q00.html" target="main" title="Abstract"><span class="elementtag">&lt;abstract&gt;</span></a>, <a href="n-wc20.html" target="main" title="Acknowledgments"><span class="elementtag">&lt;ack&gt;</span></a>, <a href="n-ztc0.html" target="main" title="Answer to a Question"><span class="elementtag">&lt;answer&gt;</span></a>, <a href="n-urc0.html" target="main" title="Appendix"><span class="elementtag">&lt;app&gt;</span></a>, <a href="n-3qc0.html" target="main" title="Appendix Group"><span class="elementtag">&lt;app-group&gt;</span></a>, <a href="n-x930.html" target="main" title="Biography"><span class="elementtag">&lt;bio&gt;</span></a>, <a href="n-8350.html" target="main" title="Body of a Book Part"><span class="elementtag">&lt;body&gt;</span></a>, <a href="n-3d80.html" target="main" title="Boxed Text"><span class="elementtag">&lt;boxed-text&gt;</span></a>, <a href="n-p340.html" target="main" title="Quote, Displayed"><span class="elementtag">&lt;disp-quote&gt;</span></a>, <a href="n-8tt0.html" target="main" title="Floating Element Group"><span class="elementtag">&lt;floats-group&gt;</span></a>, <a href="n-4t70.html" target="main" title="Glossary Elements List"><span class="elementtag">&lt;glossary&gt;</span></a>, <a href="n-pz70.html" target="main" title="Index"><span class="elementtag">&lt;index&gt;</span></a>, <a href="n-i5e0.html" target="main" title="Index Division"><span class="elementtag">&lt;index-div&gt;</span></a>, <a href="n-wse0.html" target="main" title="Index Group"><span class="elementtag">&lt;index-group&gt;</span></a>, <a href="n-nbg0.html" target="main" title="License Paragraph"><span class="elementtag">&lt;license-p&gt;</span></a>, <a href="n-ep60.html" target="main" title="Named Book Part Body"><span class="elementtag">&lt;named-book-part-body&gt;</span></a>, <a href="n-zm60.html" target="main" title="Named Special (Subject) Content"><span class="elementtag">&lt;named-content&gt;</span></a>, <a href="n-crd0.html" target="main" title="Notes"><span class="elementtag">&lt;notes&gt;</span></a>, <a href="n-7tr0.html" target="main" title="Paragraph"><span class="elementtag">&lt;p&gt;</span></a>, <a href="n-ezi0.html" target="main" title="Question"><span class="elementtag">&lt;question&gt;</span></a>, <a href="n-gsy0.html" target="main" title="Reference List (Bibliographic)"><span class="elementtag">&lt;ref-list&gt;</span></a>, <a href="n-cap0.html" target="main" title="Section"><span class="elementtag">&lt;sec&gt;</span></a>, <a href="n-2f90.html" target="main" title="Styled Special (Subject) Content"><span class="elementtag">&lt;styled-content&gt;</span></a>, <a href="n-ve22.html" target="main" title="Table of Contents"><span class="elementtag">&lt;toc&gt;</span></a>, <a href="n-kd22.html" target="main" title="Table of Contents Division"><span class="elementtag">&lt;toc-div&gt;</span></a>, <a href="n-8j22.html" target="main" title="Table of Contents Entry"><span class="elementtag">&lt;toc-entry&gt;</span></a>, <a href="n-fkc2.html" target="main" title="Table of Contents Group"><span class="elementtag">&lt;toc-group&gt;</span></a>, <a href="n-z8c2.html" target="main" title="Translated Abstract"><span class="elementtag">&lt;trans-abstract&gt;</span></a></p></div><div class="examp.group"><h3 class="header">Example</h3><p class="para">No context is shown because <span class="elementtag">&lt;fig-group&gt;</span> is typically an artifact of the print layout process outside the narrative flow of the document.</p><div class="taggedexamp"><pre class="taggedtext">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta name="generator" content="HTML Tidy for Linux/x86 (vers 25 March 2009), see www.w3.org" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008-->
+  <link rel="stylesheet" href="BITS.css" type="text/css" />
+
+  <title>Element: Figure Group</title>
+</head>
+
+<body class="main">
+  <div class="pageheader">
+    <h2 class="headname">Book Interchange Tag Suite (BITS) Version 1.0 Tag Library Version 1.0</h2>
+
+    <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk" />
+    National Center for Biotechnology Information (NCBI)<br class="linebrk" />
+    National Library of Medicine (NLM)</h4>
+  </div>
+
+  <div class="header">
+    <h1 class="elementtag">&lt;fig-group&gt;</h1>
+
+    <h1 class="elementname">Figure Group</h1>
+  </div>
+
+  <div class="definition">
+    <p class="para">Container element for figures that are to be displayed together.</p>
+  </div>
+
+  <div class="remarks">
+    <h2 class="header">Remarks</h2>
+
+    <p class="para">One figure may contain many graphics; this container element has been defined
+    to combine more than one <a href="n-ems0.html" target="main" title="Figure"><span class=
+    "elementtag">&lt;fig&gt;</span></a> elements.</p>
+
+    <p class="para"><strong>Related Essay:</strong> For a discussion on the use of <span class=
+    "elementtag">&lt;fig-group&gt;</span>, see <a href="n-63q2.html#bits-tag-fig-graphic">Figures
+    and Graphics</a>.</p>
+
+    <p class="para"><strong>Position:</strong> The <a href="n-2tx2.html" target="main" title=
+    "Position"><span class="attrtag">@position</span></a> attribute may be used to indicate whether
+    this element must be anchored at its exact location within the text or whether it may float,
+    for example, to the top of the next page, into the next column, to the end of a logical file,
+    or within a separate window.</p>
+  </div>
+
+  <div class="attrlist">
+    <h2 class="header">Attributes</h2>
+
+    <h5 class="header"><a href="n-yxa2.html" target="main"><span class=
+    "attrtag">content-type</span></a> <a href="n-yxa2.html" target="main"><span class=
+    "attrname">Type of Content</span></a></h5>
+
+    <h5 class="header"><a href="n-4qu2.html" target="main"><span class="attrtag">id</span></a>
+    <a href="n-4qu2.html" target="main"><span class="attrname">Document Internal
+    Identifier</span></a></h5>
+
+    <h5 class="header"><a href="n-28x2.html" target="main"><span class=
+    "attrtag">orientation</span></a> <a href="n-28x2.html" target="main"><span class=
+    "attrname">Orientation</span></a></h5>
+
+    <h5 class="header"><a href="n-2tx2.html" target="main"><span class=
+    "attrtag">position</span></a> <a href="n-2tx2.html" target="main"><span class=
+    "attrname">Position</span></a></h5>
+
+    <h5 class="header"><a href="n-rdv2.html" target="main"><span class=
+    "attrtag">specific-use</span></a> <a href="n-rdv2.html" target="main"><span class=
+    "attrname">Specific Use</span></a></h5>
+
+    <h5 class="header"><a href="n-ib42.html" target="main"><span class=
+    "attrtag">xml:base</span></a> <a href="n-ib42.html" target="main"><span class=
+    "attrname">Base</span></a></h5>
+
+    <h5 class="header"><a href="n-fas2.html" target="main"><span class=
+    "attrtag">xml:lang</span></a> <a href="n-fas2.html" target="main"><span class=
+    "attrname">Language</span></a></h5>
+  </div>
+
+  <div class="relatedelem">
+    <h2 class="header">Related Elements</h2>
+
+    <p class="para">Both figures (<a href="n-ems0.html" target="main" title="Figure"><span class=
+    "elementtag">&lt;fig&gt;</span></a>) and graphics (<a href="n-zj70.html" target="main" title=
+    "Graphic"><span class="elementtag">&lt;graphic&gt;</span></a>) may appear either grouped within
+    a <a href="n-j5t0.html" target="main" title="Figure Group"><span class=
+    "elementtag">&lt;fig-group&gt;</span></a> or singly within textual material.</p>
+  </div>
+
+  <div class="contentmodel">
+    <h2 class="header first">Content Model</h2>
+    <pre class="contentdesc">
+&lt;!ELEMENT  fig-group    <a href="n-axg2.html" target="main" title=
+"Figure Group Model"><span class=
+"petag">%fig-group-model;</span></a>                            &gt;
+</pre>
+  </div>
+
+  <div class="contentmodel">
+    <h2 class="header">Expanded Content Model</h2>
+
+    <p class="contentdesc">((object-id)*, label?, (caption)?, (abstract)*, (kwd-group)*, (alt-text
+    | long-desc | email | ext-link | uri)*, (fig | alternatives | graphic | media)*)</p>
+  </div>
+
+  <div class="modeldesc">
+    <h2 class="header">Description</h2>
+
+    <p class="para">The following, in order:</p>
+
+    <ul class="bullist">
+      <li><a href="n-4bd0.html" target="main" title="Object Identifier"><span class=
+      "elementtag">&lt;object-id&gt;</span></a> <a href="n-4bd0.html" target="main" title=
+      "&lt;object-id&gt;"><span class="elementname">Object Identifier</span></a>, zero or more</li>
+
+      <li><a href="n-tdg0.html" target="main" title=
+      "Label (of an Equation, Figure, Reference, etc.)"><span class=
+      "elementtag">&lt;label&gt;</span></a> <a href="n-tdg0.html" target="main" title=
+      "&lt;label&gt;"><span class="elementname">Label (of an Equation, Figure, Reference,
+      etc.)</span></a>, zero or one</li>
+
+      <li><a href="n-5q80.html" target="main" title="Caption of a Figure, Table, etc."><span class=
+      "elementtag">&lt;caption&gt;</span></a> <a href="n-5q80.html" target="main" title=
+      "&lt;caption&gt;"><span class="elementname">Caption of a Figure, Table, etc.</span></a>, zero
+      or one</li>
+
+      <li><a href="n-2q00.html" target="main" title="Abstract"><span class=
+      "elementtag">&lt;abstract&gt;</span></a> <a href="n-2q00.html" target="main" title=
+      "&lt;abstract&gt;"><span class="elementname">Abstract</span></a>, zero or more</li>
+
+      <li><a href="n-xgg0.html" target="main" title="Keyword Group"><span class=
+      "elementtag">&lt;kwd-group&gt;</span></a> <a href="n-xgg0.html" target="main" title=
+      "&lt;kwd-group&gt;"><span class="elementname">Keyword Group</span></a>, zero or more</li>
+
+      <li>Any combination of:
+
+        <ul class="bullist">
+          <li><a href="n-xq20.html" target="main" title=
+          "Alternate Text Name (for a figure, etc.)"><span class=
+          "elementtag">&lt;alt-text&gt;</span></a> <a href="n-xq20.html" target="main" title=
+          "&lt;alt-text&gt;"><span class="elementname">Alternate Text Name (for a figure,
+          etc.)</span></a></li>
+
+          <li><a href="n-4wn0.html" target="main" title="Long Description"><span class=
+          "elementtag">&lt;long-desc&gt;</span></a> <a href="n-4wn0.html" target="main" title=
+          "&lt;long-desc&gt;"><span class="elementname">Long Description</span></a></li>
+
+          <li>Linking Elements
+
+            <ul class="bullist">
+              <li><a href="n-s940.html" target="main" title="Email Address"><span class=
+              "elementtag">&lt;email&gt;</span></a> <a href="n-s940.html" target="main" title=
+              "&lt;email&gt;"><span class="elementname">Email Address</span></a></li>
+
+              <li><a href="n-5fs0.html" target="main" title="External Link"><span class=
+              "elementtag">&lt;ext-link&gt;</span></a> <a href="n-5fs0.html" target="main" title=
+              "&lt;ext-link&gt;"><span class="elementname">External Link</span></a></li>
+
+              <li><a href="n-6t32.html" target="main" title=
+              "Uniform Resource Identifier (URI)"><span class="elementtag">&lt;uri&gt;</span></a>
+              <a href="n-6t32.html" target="main" title="&lt;uri&gt;"><span class=
+              "elementname">Uniform Resource Identifier (URI)</span></a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <li>Any combination of:
+
+        <ul class="bullist">
+          <li><a href="n-ems0.html" target="main" title="Figure"><span class=
+          "elementtag">&lt;fig&gt;</span></a> <a href="n-ems0.html" target="main" title=
+          "&lt;fig&gt;"><span class="elementname">Figure</span></a></li>
+
+          <li><a href="n-i3c0.html" target="main" title="Alternatives For Processing"><span class=
+          "elementtag">&lt;alternatives&gt;</span></a> <a href="n-i3c0.html" target="main" title=
+          "&lt;alternatives&gt;"><span class="elementname">Alternatives For
+          Processing</span></a></li>
+
+          <li><a href="n-zj70.html" target="main" title="Graphic"><span class=
+          "elementtag">&lt;graphic&gt;</span></a> <a href="n-zj70.html" target="main" title=
+          "&lt;graphic&gt;"><span class="elementname">Graphic</span></a></li>
+
+          <li><a href="n-vsn0.html" target="main" title="Media Object"><span class=
+          "elementtag">&lt;media&gt;</span></a> <a href="n-vsn0.html" target="main" title=
+          "&lt;media&gt;"><span class="elementname">Media Object</span></a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <div class="elementcontext">
+    <h3 class="header">This element may be contained in:</h3>
+
+    <p class="para"><a href="n-2q00.html" target="main" title="Abstract"><span class=
+    "elementtag">&lt;abstract&gt;</span></a>, <a href="n-wc20.html" target="main" title=
+    "Acknowledgments"><span class="elementtag">&lt;ack&gt;</span></a>, <a href="n-ztc0.html"
+    target="main" title="Answer to a Question"><span class="elementtag">&lt;answer&gt;</span></a>,
+    <a href="n-urc0.html" target="main" title="Appendix"><span class=
+    "elementtag">&lt;app&gt;</span></a>, <a href="n-3qc0.html" target="main" title=
+    "Appendix Group"><span class="elementtag">&lt;app-group&gt;</span></a>, <a href="n-x930.html"
+    target="main" title="Biography"><span class="elementtag">&lt;bio&gt;</span></a>, <a href=
+    "n-8350.html" target="main" title="Body of a Book Part"><span class=
+    "elementtag">&lt;body&gt;</span></a>, <a href="n-3d80.html" target="main" title=
+    "Boxed Text"><span class="elementtag">&lt;boxed-text&gt;</span></a>, <a href="n-p340.html"
+    target="main" title="Quote, Displayed"><span class="elementtag">&lt;disp-quote&gt;</span></a>,
+    <a href="n-8tt0.html" target="main" title="Floating Element Group"><span class=
+    "elementtag">&lt;floats-group&gt;</span></a>, <a href="n-4t70.html" target="main" title=
+    "Glossary Elements List"><span class="elementtag">&lt;glossary&gt;</span></a>, <a href=
+    "n-pz70.html" target="main" title="Index"><span class="elementtag">&lt;index&gt;</span></a>,
+    <a href="n-i5e0.html" target="main" title="Index Division"><span class=
+    "elementtag">&lt;index-div&gt;</span></a>, <a href="n-wse0.html" target="main" title=
+    "Index Group"><span class="elementtag">&lt;index-group&gt;</span></a>, <a href="n-nbg0.html"
+    target="main" title="License Paragraph"><span class="elementtag">&lt;license-p&gt;</span></a>,
+    <a href="n-ep60.html" target="main" title="Named Book Part Body"><span class=
+    "elementtag">&lt;named-book-part-body&gt;</span></a>, <a href="n-zm60.html" target="main"
+    title="Named Special (Subject) Content"><span class=
+    "elementtag">&lt;named-content&gt;</span></a>, <a href="n-crd0.html" target="main" title=
+    "Notes"><span class="elementtag">&lt;notes&gt;</span></a>, <a href="n-7tr0.html" target="main"
+    title="Paragraph"><span class="elementtag">&lt;p&gt;</span></a>, <a href="n-ezi0.html" target=
+    "main" title="Question"><span class="elementtag">&lt;question&gt;</span></a>, <a href=
+    "n-gsy0.html" target="main" title="Reference List (Bibliographic)"><span class=
+    "elementtag">&lt;ref-list&gt;</span></a>, <a href="n-cap0.html" target="main" title=
+    "Section"><span class="elementtag">&lt;sec&gt;</span></a>, <a href="n-2f90.html" target="main"
+    title="Styled Special (Subject) Content"><span class=
+    "elementtag">&lt;styled-content&gt;</span></a>, <a href="n-ve22.html" target="main" title=
+    "Table of Contents"><span class="elementtag">&lt;toc&gt;</span></a>, <a href="n-kd22.html"
+    target="main" title="Table of Contents Division"><span class=
+    "elementtag">&lt;toc-div&gt;</span></a>, <a href="n-8j22.html" target="main" title=
+    "Table of Contents Entry"><span class="elementtag">&lt;toc-entry&gt;</span></a>, <a href=
+    "n-fkc2.html" target="main" title="Table of Contents Group"><span class=
+    "elementtag">&lt;toc-group&gt;</span></a>, <a href="n-z8c2.html" target="main" title=
+    "Translated Abstract"><span class="elementtag">&lt;trans-abstract&gt;</span></a></p>
+  </div>
+
+  <div class="examp.group">
+    <h3 class="header">Example</h3>
+
+    <p class="para">No context is shown because <span class="elementtag">&lt;fig-group&gt;</span>
+    is typically an artifact of the print layout process outside the narrative flow of the
+    document.</p>
+
+    <div class="taggedexamp">
+      <pre class="taggedtext">
     
 ...
 <strong><span class="focus">&lt;fig-group id="dogpix4"&gt;
@@ -35,5 +270,15 @@ National Library of Medicine (NLM)</h4></div><div class="header"><h1 class="elem
 &lt;/fig-group&gt;</span></strong>
 ...
 
-   </pre></div></div><div class="pagefooter"><h2 class="headname">Book Interchange Tag Suite (BITS) Version 1.0 Tag Library 
-Version 1.0</h2><h4 class="pubdate">Version of December 2013</h4></div></body></html>
+   
+</pre>
+    </div>
+  </div>
+
+  <div class="pagefooter">
+    <h2 class="headname">Book Interchange Tag Suite (BITS) Version 1.0 Tag Library Version 1.0</h2>
+
+    <h4 class="pubdate">Version of December 2013</h4>
+  </div>
+</body>
+</html>

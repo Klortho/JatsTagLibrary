@@ -1,7 +1,130 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008--><link rel="stylesheet" href="BITS.css" type="text/css"><title>Element: Country: in an Address</title></head><body class="main"><div class="pageheader"><h2 class="headname">Book Interchange Tag Suite (BITS) Version 1.0 Tag Library 
-Version 1.0</h2><h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
-National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
-National Library of Medicine (NLM)</h4></div><div class="header"><h1 class="elementtag">&lt;country&gt;</h1><h1 class="elementname">Country: in an Address</h1></div><div class="definition"><p class="para">Country name used within an address.</p></div><div class="attrlist"><h2 class="header">Attributes</h2><h5 class="header"><a href="n-yxa2.html" target="main"><span class="attrtag">content-type</span></a> <a href="n-yxa2.html" target="main"><span class="attrname">Type of Content</span></a></h5><h5 class="header"><a href="n-cia2.html" target="main"><span class="attrtag">country</span></a> <a href="n-cia2.html" target="main"><span class="attrname">Country</span></a></h5><h5 class="header"><a href="n-4qu2.html" target="main"><span class="attrtag">id</span></a> <a href="n-4qu2.html" target="main"><span class="attrname">Document Internal Identifier</span></a></h5><h5 class="header"><a href="n-rdv2.html" target="main"><span class="attrtag">specific-use</span></a> <a href="n-rdv2.html" target="main"><span class="attrname">Specific Use</span></a></h5><h5 class="header"><a href="n-ib42.html" target="main"><span class="attrtag">xml:base</span></a> <a href="n-ib42.html" target="main"><span class="attrname">Base</span></a></h5><h5 class="header"><a href="n-fas2.html" target="main"><span class="attrtag">xml:lang</span></a> <a href="n-fas2.html" target="main"><span class="attrname">Language</span></a></h5></div><div class="relatedelem"><h2 class="header">Related Elements</h2><p class="para">The elements used in an address may include the address class elements: <a href="n-qu20.html" target="main" title="Address Line"><span class="elementtag">&lt;addr-line&gt;</span></a>, <a href="n-8px0.html" target="main" title="Country: in an Address"><span class="elementtag">&lt;country&gt;</span></a>, <a href="n-zys0.html" target="main" title="Fax Number: in an Address"><span class="elementtag">&lt;fax&gt;</span></a>, <a href="n-92f0.html" target="main" title="Institution Name"><span class="elementtag">&lt;institution&gt;</span></a>,  <a href="n-bvf0.html" target="main" title="Institution Wrapper"><span class="elementtag">&lt;institution-wrap&gt;</span></a>, and <a href="n-hwh0.html" target="main" title="Phone Number: in an Address"><span class="elementtag">&lt;phone&gt;</span></a> and the address linking class elements: <a href="n-s940.html" target="main" title="Email Address"><span class="elementtag">&lt;email&gt;</span></a>, <a href="n-5fs0.html" target="main" title="External Link"><span class="elementtag">&lt;ext-link&gt;</span></a>, and <a href="n-6t32.html" target="main" title="Uniform Resource Identifier (URI)"><span class="elementtag">&lt;uri&gt;</span></a>.</p></div><div class="contentmodel"><h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  country      (#PCDATA <a href="n-t3f2.html" target="main" title="Country Elements"><span class="petag">%country-elements;</span></a>)*                &gt;</pre></div><div class="contentmodel"><h2 class="header">Expanded Content Model</h2><p class="contentdesc">(#PCDATA | x)*</p></div><div class="modeldesc"><h2 class="header">Description</h2><p class="para">Any combination of:<ul class="bullist"><li>Text, numbers, or special characters</li><li><a href="n-p652.html" target="main" title="X - Generated Text and Punctuation"><span class="elementtag">&lt;x&gt;</span></a> <a href="n-p652.html" target="main" title="<x&gt;"><span class="elementname">X - Generated Text and Punctuation</span></a></li></ul></p></div><div class="elementcontext"><h3 class="header">This element may be contained in:</h3><p class="para"><a href="n-j720.html" target="main" title="Address/Contact Information"><span class="elementtag">&lt;address&gt;</span></a>, <a href="n-qu20.html" target="main" title="Address Line"><span class="elementtag">&lt;addr-line&gt;</span></a>, <a href="n-hg20.html" target="main" title="Affiliation"><span class="elementtag">&lt;aff&gt;</span></a>, <a href="n-xra0.html" target="main" title="Collaborative (Group) Author"><span class="elementtag">&lt;collab&gt;</span></a>, <a href="n-tnx0.html" target="main" title="Correspondence Information"><span class="elementtag">&lt;corresp&gt;</span></a>, <a href="n-7ni0.html" target="main" title="Publisher’s Location"><span class="elementtag">&lt;publisher-loc&gt;</span></a></p></div><div class="examp.group"><h3 class="header">Example</h3><div class="taggedexamp"><pre class="taggedtext">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta name="generator" content="HTML Tidy for Linux/x86 (vers 25 March 2009), see www.w3.org" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008-->
+  <link rel="stylesheet" href="BITS.css" type="text/css" />
+
+  <title>Element: Country: in an Address</title>
+</head>
+
+<body class="main">
+  <div class="pageheader">
+    <h2 class="headname">Book Interchange Tag Suite (BITS) Version 1.0 Tag Library Version 1.0</h2>
+
+    <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk" />
+    National Center for Biotechnology Information (NCBI)<br class="linebrk" />
+    National Library of Medicine (NLM)</h4>
+  </div>
+
+  <div class="header">
+    <h1 class="elementtag">&lt;country&gt;</h1>
+
+    <h1 class="elementname">Country: in an Address</h1>
+  </div>
+
+  <div class="definition">
+    <p class="para">Country name used within an address.</p>
+  </div>
+
+  <div class="attrlist">
+    <h2 class="header">Attributes</h2>
+
+    <h5 class="header"><a href="n-yxa2.html" target="main"><span class=
+    "attrtag">content-type</span></a> <a href="n-yxa2.html" target="main"><span class=
+    "attrname">Type of Content</span></a></h5>
+
+    <h5 class="header"><a href="n-cia2.html" target="main"><span class="attrtag">country</span></a>
+    <a href="n-cia2.html" target="main"><span class="attrname">Country</span></a></h5>
+
+    <h5 class="header"><a href="n-4qu2.html" target="main"><span class="attrtag">id</span></a>
+    <a href="n-4qu2.html" target="main"><span class="attrname">Document Internal
+    Identifier</span></a></h5>
+
+    <h5 class="header"><a href="n-rdv2.html" target="main"><span class=
+    "attrtag">specific-use</span></a> <a href="n-rdv2.html" target="main"><span class=
+    "attrname">Specific Use</span></a></h5>
+
+    <h5 class="header"><a href="n-ib42.html" target="main"><span class=
+    "attrtag">xml:base</span></a> <a href="n-ib42.html" target="main"><span class=
+    "attrname">Base</span></a></h5>
+
+    <h5 class="header"><a href="n-fas2.html" target="main"><span class=
+    "attrtag">xml:lang</span></a> <a href="n-fas2.html" target="main"><span class=
+    "attrname">Language</span></a></h5>
+  </div>
+
+  <div class="relatedelem">
+    <h2 class="header">Related Elements</h2>
+
+    <p class="para">The elements used in an address may include the address class elements:
+    <a href="n-qu20.html" target="main" title="Address Line"><span class=
+    "elementtag">&lt;addr-line&gt;</span></a>, <a href="n-8px0.html" target="main" title=
+    "Country: in an Address"><span class="elementtag">&lt;country&gt;</span></a>, <a href=
+    "n-zys0.html" target="main" title="Fax Number: in an Address"><span class=
+    "elementtag">&lt;fax&gt;</span></a>, <a href="n-92f0.html" target="main" title=
+    "Institution Name"><span class="elementtag">&lt;institution&gt;</span></a>, <a href=
+    "n-bvf0.html" target="main" title="Institution Wrapper"><span class=
+    "elementtag">&lt;institution-wrap&gt;</span></a>, and <a href="n-hwh0.html" target="main"
+    title="Phone Number: in an Address"><span class="elementtag">&lt;phone&gt;</span></a> and the
+    address linking class elements: <a href="n-s940.html" target="main" title=
+    "Email Address"><span class="elementtag">&lt;email&gt;</span></a>, <a href="n-5fs0.html"
+    target="main" title="External Link"><span class="elementtag">&lt;ext-link&gt;</span></a>, and
+    <a href="n-6t32.html" target="main" title="Uniform Resource Identifier (URI)"><span class=
+    "elementtag">&lt;uri&gt;</span></a>.</p>
+  </div>
+
+  <div class="contentmodel">
+    <h2 class="header first">Content Model</h2>
+    <pre class="contentdesc">
+&lt;!ELEMENT  country      (#PCDATA <a href="n-t3f2.html" target="main" title=
+"Country Elements"><span class="petag">%country-elements;</span></a>)*                &gt;
+</pre>
+  </div>
+
+  <div class="contentmodel">
+    <h2 class="header">Expanded Content Model</h2>
+
+    <p class="contentdesc">(#PCDATA | x)*</p>
+  </div>
+
+  <div class="modeldesc">
+    <h2 class="header">Description</h2>
+
+    <p class="para">Any combination of:</p>
+
+    <ul class="bullist">
+      <li>Text, numbers, or special characters</li>
+
+      <li><a href="n-p652.html" target="main" title=
+      "X - Generated Text and Punctuation"><span class="elementtag">&lt;x&gt;</span></a> <a href=
+      "n-p652.html" target="main" title="&lt;x&gt;"><span class="elementname">X - Generated Text
+      and Punctuation</span></a></li>
+    </ul>
+  </div>
+
+  <div class="elementcontext">
+    <h3 class="header">This element may be contained in:</h3>
+
+    <p class="para"><a href="n-j720.html" target="main" title=
+    "Address/Contact Information"><span class="elementtag">&lt;address&gt;</span></a>, <a href=
+    "n-qu20.html" target="main" title="Address Line"><span class=
+    "elementtag">&lt;addr-line&gt;</span></a>, <a href="n-hg20.html" target="main" title=
+    "Affiliation"><span class="elementtag">&lt;aff&gt;</span></a>, <a href="n-xra0.html" target=
+    "main" title="Collaborative (Group) Author"><span class="elementtag">&lt;collab&gt;</span></a>,
+    <a href="n-tnx0.html" target="main" title="Correspondence Information"><span class=
+    "elementtag">&lt;corresp&gt;</span></a>, <a href="n-7ni0.html" target="main" title=
+    "Publisher’s Location"><span class="elementtag">&lt;publisher-loc&gt;</span></a></p>
+  </div>
+
+  <div class="examp.group">
+    <h3 class="header">Example</h3>
+
+    <div class="taggedexamp">
+      <pre class="taggedtext">
     
 ...
 &lt;contrib contrib-type="author" id="a4762"&gt;
@@ -17,12 +140,23 @@ National Library of Medicine (NLM)</h4></div><div class="header"><h1 class="elem
 of Family Medicine&lt;/institution&gt;
 &lt;addr-line&gt;2231 N. High St.&lt;/addr-line&gt;
 &lt;addr-line&gt;Columbus, OH 43201&lt;/addr-line&gt;
-<strong><span class="focus">&lt;country country="US"&gt;United States&lt;/country&gt;</span></strong>
+<strong><span class=
+"focus">&lt;country country="US"&gt;United States&lt;/country&gt;</span></strong>
 &lt;email&gt;doug.knutson@osumc.edu&lt;/email&gt;
 &lt;/address&gt;
 ...
 &lt;/contrib&gt;
 ...
 
-   </pre></div></div><div class="pagefooter"><h2 class="headname">Book Interchange Tag Suite (BITS) Version 1.0 Tag Library 
-Version 1.0</h2><h4 class="pubdate">Version of December 2013</h4></div></body></html>
+   
+</pre>
+    </div>
+  </div>
+
+  <div class="pagefooter">
+    <h2 class="headname">Book Interchange Tag Suite (BITS) Version 1.0 Tag Library Version 1.0</h2>
+
+    <h4 class="pubdate">Version of December 2013</h4>
+  </div>
+</body>
+</html>

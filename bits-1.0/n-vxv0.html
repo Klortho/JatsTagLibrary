@@ -1,29 +1,160 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008--><link rel="stylesheet" href="BITS.css" type="text/css"><title>Element: Definition List: Definition</title></head><body class="main"><div class="pageheader"><h2 class="headname">Book Interchange Tag Suite (BITS) Version 1.0 Tag Library 
-Version 1.0</h2><h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
-National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
-National Library of Medicine (NLM)</h4></div><div class="header"><h1 class="elementtag">&lt;def&gt;</h1><h1 class="elementname">Definition List: Definition</h1></div><div class="definition"><p class="para">Definition, explanation, or expansion of a word, phrase, or abbreviation.</p></div><div class="remarks"><h2 class="header">Remarks</h2><p class="para">This element is used in two contexts:<ol class="olist"><li>Within a two-part list (<a href="n-fnv0.html" target="main" title="Definition List"><span class="elementtag">&lt;def-list&gt;</span></a>),
-              <span class="elementtag">&lt;def&gt;</span> contains the definition or
-              description of a word or phrase. In this usage, <span class="elementtag">&lt;def&gt;</span> is half of a <a href="n-mvk2.html" target="main" title="Definition List: Term"><span class="elementtag">&lt;term&gt;</span></a>/<span class="elementtag">&lt;def&gt;</span> pair within an item
-              (<a href="n-ifv0.html" target="main" title="Definition List: Definition Item"><span class="elementtag">&lt;def-item&gt;</span></a>) in the definition
-              list.<br class="br">The term <a href="n-mvk2.html" target="main" title="Definition List: Term"><span class="elementtag">&lt;term&gt;</span></a> part of a definition
-              item may be a term, a word, a phrase, a picture or icon, an equation, a variable, or
-              anything else that is to be explained. The definition <a href="n-vxv0.html" target="main" title="Definition List: Definition"><span class="elementtag">&lt;def&gt;</span></a> part of an item in a two-part (definition) list
-              need not be a “definition” in the strict dictionary sense of that word.
-              Such a definition could be a discussion, explanation, expansion, or just a few words
-              that tell the reader about the <a href="n-mvk2.html" target="main" title="Definition List: Term"><span class="elementtag">&lt;term&gt;</span></a>.
-              When a <a href="n-fnv0.html" target="main" title="Definition List"><span class="elementtag">&lt;def-list&gt;</span></a> is within a
-              <a href="n-4t70.html" target="main" title="Glossary Elements List"><span class="elementtag">&lt;glossary&gt;</span></a> element, the definitions are
-              assumed to be real definitions.</li><li>Within an <a href="n-ed00.html" target="main" title="Abbreviation or Acronym"><span class="elementtag">&lt;abbrev&gt;</span></a> element,
-              <span class="elementtag">&lt;def&gt;</span> contains the definition or expansion
-              of an abbreviation, acronym, or emoticon (“;-)”).</li></ol>
-</p></div><div class="attrlist"><h2 class="header">Attributes</h2><h5 class="header"><a href="n-4qu2.html" target="main"><span class="attrtag">id</span></a> <a href="n-4qu2.html" target="main"><span class="attrname">Document Internal Identifier</span></a></h5><h5 class="header"><a href="n-45v2.html" target="main"><span class="attrtag">rid</span></a> <a href="n-45v2.html" target="main"><span class="attrname">Reference to an Identifier</span></a></h5><h5 class="header"><a href="n-rdv2.html" target="main"><span class="attrtag">specific-use</span></a> <a href="n-rdv2.html" target="main"><span class="attrname">Specific Use</span></a></h5><h5 class="header"><a href="n-ib42.html" target="main"><span class="attrtag">xml:base</span></a> <a href="n-ib42.html" target="main"><span class="attrname">Base</span></a></h5><h5 class="header"><a href="n-fas2.html" target="main"><span class="attrtag">xml:lang</span></a> <a href="n-fas2.html" target="main"><span class="attrname">Language</span></a></h5></div><div class="relatedelem"><h2 class="header">Related Elements</h2><p class="para">A <a href="n-fnv0.html" target="main" title="Definition List"><span class="elementtag">&lt;def-list&gt;</span></a> may take a <a href="n-tdg0.html" target="main" title="Label (of an Equation, Figure, Reference, etc.)"><span class="elementtag">&lt;label&gt;</span></a> that provides it with a number or other designator,
-          followed by an optional <a href="n-da22.html" target="main" title="Title"><span class="elementtag">&lt;title&gt;</span></a> naming the
-          entire list, followed by optional headings for terms and their definitions. <a href="n-knk2.html" target="main" title="Definition List: Term Head"><span class="elementtag">&lt;term-head&gt;</span></a> contains the heading over the first (term)
-          column, and <a href="n-w4v0.html" target="main" title="Definition List: Definition Head"><span class="elementtag">&lt;def-head&gt;</span></a> contains the heading
-          for the second (definition) column; neither serves as a container element for terms or
-          definitions. Individual <a href="n-mvk2.html" target="main" title="Definition List: Term"><span class="elementtag">&lt;term&gt;</span></a>s and their
-          <a href="n-vxv0.html" target="main" title="Definition List: Definition"><span class="elementtag">&lt;def&gt;</span></a>s are paired in <a href="n-ifv0.html" target="main" title="Definition List: Definition Item"><span class="elementtag">&lt;def-item&gt;</span></a>s. Definition lists are recursive, so following
-          all the terms and definitions, there may be one or more embedded <a href="n-fnv0.html" target="main" title="Definition List"><span class="elementtag">&lt;def-list&gt;</span></a> elements.</p></div><div class="contentmodel"><h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  def          <a href="n-4ff2.html" target="main" title="Definition List: Definition Model"><span class="petag">%def-model;</span></a>                                  &gt;</pre></div><div class="contentmodel"><h2 class="header">Expanded Content Model</h2><p class="contentdesc">((p)+)</p></div><div class="modeldesc"><h2 class="header">Description</h2><p class="para">Any one of:<ul class="bullist"><li><a href="n-7tr0.html" target="main" title="Paragraph"><span class="elementtag">&lt;p&gt;</span></a> <a href="n-7tr0.html" target="main" title="<p&gt;"><span class="elementname">Paragraph</span></a>, one or more</li></ul></p></div><div class="elementcontext"><h3 class="header">This element may be contained in:</h3><p class="para"><a href="n-ed00.html" target="main" title="Abbreviation or Acronym"><span class="elementtag">&lt;abbrev&gt;</span></a>, <a href="n-ifv0.html" target="main" title="Definition List: Definition Item"><span class="elementtag">&lt;def-item&gt;</span></a></p></div><div class="examp.group"><h3 class="header">Example</h3><div class="taggedexamp"><pre class="taggedtext">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta name="generator" content="HTML Tidy for Linux/x86 (vers 25 March 2009), see www.w3.org" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008-->
+  <link rel="stylesheet" href="BITS.css" type="text/css" />
+
+  <title>Element: Definition List: Definition</title>
+</head>
+
+<body class="main">
+  <div class="pageheader">
+    <h2 class="headname">Book Interchange Tag Suite (BITS) Version 1.0 Tag Library Version 1.0</h2>
+
+    <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk" />
+    National Center for Biotechnology Information (NCBI)<br class="linebrk" />
+    National Library of Medicine (NLM)</h4>
+  </div>
+
+  <div class="header">
+    <h1 class="elementtag">&lt;def&gt;</h1>
+
+    <h1 class="elementname">Definition List: Definition</h1>
+  </div>
+
+  <div class="definition">
+    <p class="para">Definition, explanation, or expansion of a word, phrase, or abbreviation.</p>
+  </div>
+
+  <div class="remarks">
+    <h2 class="header">Remarks</h2>
+
+    <p class="para">This element is used in two contexts:</p>
+
+    <ol class="olist">
+      <li>Within a two-part list (<a href="n-fnv0.html" target="main" title=
+      "Definition List"><span class="elementtag">&lt;def-list&gt;</span></a>), <span class=
+      "elementtag">&lt;def&gt;</span> contains the definition or description of a word or phrase.
+      In this usage, <span class="elementtag">&lt;def&gt;</span> is half of a <a href="n-mvk2.html"
+      target="main" title="Definition List: Term"><span class=
+      "elementtag">&lt;term&gt;</span></a>/<span class="elementtag">&lt;def&gt;</span> pair within
+      an item (<a href="n-ifv0.html" target="main" title=
+      "Definition List: Definition Item"><span class="elementtag">&lt;def-item&gt;</span></a>) in
+      the definition list.<br class="br" />
+      The term <a href="n-mvk2.html" target="main" title="Definition List: Term"><span class=
+      "elementtag">&lt;term&gt;</span></a> part of a definition item may be a term, a word, a
+      phrase, a picture or icon, an equation, a variable, or anything else that is to be explained.
+      The definition <a href="n-vxv0.html" target="main" title=
+      "Definition List: Definition"><span class="elementtag">&lt;def&gt;</span></a> part of an item
+      in a two-part (definition) list need not be a “definition” in the strict dictionary sense of
+      that word. Such a definition could be a discussion, explanation, expansion, or just a few
+      words that tell the reader about the <a href="n-mvk2.html" target="main" title=
+      "Definition List: Term"><span class="elementtag">&lt;term&gt;</span></a>. When a <a href=
+      "n-fnv0.html" target="main" title="Definition List"><span class=
+      "elementtag">&lt;def-list&gt;</span></a> is within a <a href="n-4t70.html" target="main"
+      title="Glossary Elements List"><span class="elementtag">&lt;glossary&gt;</span></a> element,
+      the definitions are assumed to be real definitions.</li>
+
+      <li>Within an <a href="n-ed00.html" target="main" title=
+      "Abbreviation or Acronym"><span class="elementtag">&lt;abbrev&gt;</span></a> element,
+      <span class="elementtag">&lt;def&gt;</span> contains the definition or expansion of an
+      abbreviation, acronym, or emoticon (“;-)”).</li>
+    </ol>
+  </div>
+
+  <div class="attrlist">
+    <h2 class="header">Attributes</h2>
+
+    <h5 class="header"><a href="n-4qu2.html" target="main"><span class="attrtag">id</span></a>
+    <a href="n-4qu2.html" target="main"><span class="attrname">Document Internal
+    Identifier</span></a></h5>
+
+    <h5 class="header"><a href="n-45v2.html" target="main"><span class="attrtag">rid</span></a>
+    <a href="n-45v2.html" target="main"><span class="attrname">Reference to an
+    Identifier</span></a></h5>
+
+    <h5 class="header"><a href="n-rdv2.html" target="main"><span class=
+    "attrtag">specific-use</span></a> <a href="n-rdv2.html" target="main"><span class=
+    "attrname">Specific Use</span></a></h5>
+
+    <h5 class="header"><a href="n-ib42.html" target="main"><span class=
+    "attrtag">xml:base</span></a> <a href="n-ib42.html" target="main"><span class=
+    "attrname">Base</span></a></h5>
+
+    <h5 class="header"><a href="n-fas2.html" target="main"><span class=
+    "attrtag">xml:lang</span></a> <a href="n-fas2.html" target="main"><span class=
+    "attrname">Language</span></a></h5>
+  </div>
+
+  <div class="relatedelem">
+    <h2 class="header">Related Elements</h2>
+
+    <p class="para">A <a href="n-fnv0.html" target="main" title="Definition List"><span class=
+    "elementtag">&lt;def-list&gt;</span></a> may take a <a href="n-tdg0.html" target="main" title=
+    "Label (of an Equation, Figure, Reference, etc.)"><span class=
+    "elementtag">&lt;label&gt;</span></a> that provides it with a number or other designator,
+    followed by an optional <a href="n-da22.html" target="main" title="Title"><span class=
+    "elementtag">&lt;title&gt;</span></a> naming the entire list, followed by optional headings for
+    terms and their definitions. <a href="n-knk2.html" target="main" title=
+    "Definition List: Term Head"><span class="elementtag">&lt;term-head&gt;</span></a> contains the
+    heading over the first (term) column, and <a href="n-w4v0.html" target="main" title=
+    "Definition List: Definition Head"><span class="elementtag">&lt;def-head&gt;</span></a>
+    contains the heading for the second (definition) column; neither serves as a container element
+    for terms or definitions. Individual <a href="n-mvk2.html" target="main" title=
+    "Definition List: Term"><span class="elementtag">&lt;term&gt;</span></a>s and their <a href=
+    "n-vxv0.html" target="main" title="Definition List: Definition"><span class=
+    "elementtag">&lt;def&gt;</span></a>s are paired in <a href="n-ifv0.html" target="main" title=
+    "Definition List: Definition Item"><span class="elementtag">&lt;def-item&gt;</span></a>s.
+    Definition lists are recursive, so following all the terms and definitions, there may be one or
+    more embedded <a href="n-fnv0.html" target="main" title="Definition List"><span class=
+    "elementtag">&lt;def-list&gt;</span></a> elements.</p>
+  </div>
+
+  <div class="contentmodel">
+    <h2 class="header first">Content Model</h2>
+    <pre class="contentdesc">
+&lt;!ELEMENT  def          <a href="n-4ff2.html" target="main" title=
+"Definition List: Definition Model"><span class=
+"petag">%def-model;</span></a>                                  &gt;
+</pre>
+  </div>
+
+  <div class="contentmodel">
+    <h2 class="header">Expanded Content Model</h2>
+
+    <p class="contentdesc">((p)+)</p>
+  </div>
+
+  <div class="modeldesc">
+    <h2 class="header">Description</h2>
+
+    <p class="para">Any one of:</p>
+
+    <ul class="bullist">
+      <li><a href="n-7tr0.html" target="main" title="Paragraph"><span class=
+      "elementtag">&lt;p&gt;</span></a> <a href="n-7tr0.html" target="main" title=
+      "&lt;p&gt;"><span class="elementname">Paragraph</span></a>, one or more</li>
+    </ul>
+  </div>
+
+  <div class="elementcontext">
+    <h3 class="header">This element may be contained in:</h3>
+
+    <p class="para"><a href="n-ed00.html" target="main" title=
+    "Abbreviation or Acronym"><span class="elementtag">&lt;abbrev&gt;</span></a>, <a href=
+    "n-ifv0.html" target="main" title="Definition List: Definition Item"><span class=
+    "elementtag">&lt;def-item&gt;</span></a></p>
+  </div>
+
+  <div class="examp.group">
+    <h3 class="header">Example</h3>
+
+    <div class="taggedexamp">
+      <pre class="taggedtext">
     
 ...
 &lt;glossary&gt;
@@ -32,10 +163,12 @@ National Library of Medicine (NLM)</h4></div><div class="header"><h1 class="elem
 &lt;term-head&gt;Abbreviation&lt;/term-head&gt;
 &lt;def-head&gt;Expansion&lt;/def-head&gt;
 &lt;def-item&gt;&lt;term id="G1"&gt;PAP I&lt;/term&gt;
-<strong><span class="focus">&lt;def&gt;&lt;p&gt;poly(A)polymerase I&lt;/p&gt;&lt;/def&gt;</span></strong>
+<strong><span class=
+"focus">&lt;def&gt;&lt;p&gt;poly(A)polymerase I&lt;/p&gt;&lt;/def&gt;</span></strong>
 &lt;/def-item&gt;
 &lt;def-item&gt;&lt;term id="G2"&gt;PNPase&lt;/term&gt;
-<strong><span class="focus">&lt;def&gt;&lt;p&gt;polynucleotide phosphorylase&lt;/p&gt;&lt;/def&gt;</span></strong>
+<strong><span class=
+"focus">&lt;def&gt;&lt;p&gt;polynucleotide phosphorylase&lt;/p&gt;&lt;/def&gt;</span></strong>
 &lt;/def-item&gt;
 &lt;def-item&gt;...&lt;/def-item&gt;
 ...
@@ -43,5 +176,15 @@ National Library of Medicine (NLM)</h4></div><div class="header"><h1 class="elem
 &lt;/glossary&gt;
 ...
 
-   </pre></div></div><div class="pagefooter"><h2 class="headname">Book Interchange Tag Suite (BITS) Version 1.0 Tag Library 
-Version 1.0</h2><h4 class="pubdate">Version of December 2013</h4></div></body></html>
+   
+</pre>
+    </div>
+  </div>
+
+  <div class="pagefooter">
+    <h2 class="headname">Book Interchange Tag Suite (BITS) Version 1.0 Tag Library Version 1.0</h2>
+
+    <h4 class="pubdate">Version of December 2013</h4>
+  </div>
+</body>
+</html>

@@ -1,18 +1,141 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008--><link rel="stylesheet" href="BITS.css" type="text/css"><title>Element: Alternate Text Name (for a figure, etc.)</title></head><body class="main"><div class="pageheader"><h2 class="headname">Book Interchange Tag Suite (BITS) Version 1.0 Tag Library 
-Version 1.0</h2><h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
-National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
-National Library of Medicine (NLM)</h4></div><div class="header"><h1 class="elementtag">&lt;alt-text&gt;</h1><h1 class="elementname">Alternate Text Name (for a figure, etc.)</h1></div><div class="definition"><p class="para">Word or phrase used to provide a very short textual name, description, or
-          purpose-statement for a structure such as a graphic or figure.</p></div><div class="remarks"><h2 class="header">Remarks</h2><p class="para"><strong>Accessibility:</strong> The short <span class="elementtag">&lt;alt-text&gt;</span> element can be used for special accessibility display or
-          presentation on graphic-limited websites or devices, as an alternative to providing the
-          full graphic. (For example, the <span class="elementtag">&lt;alt-text&gt;</span>
-          element is typically read by screen readers, and <span class="elementtag">&lt;alt-text&gt;</span> may also be used to display a few words “behind” a figure
-          or graphic for devices with limited graphics capacity.)</p><p class="para"><em>Please</em> reserve this tag for accessibility uses such
-          as pronouncing screen readers. This element should <em>not</em> be used as a replacement for <a href="n-5q80.html" target="main" title="Caption of a Figure, Table, etc."><span class="elementtag">&lt;caption&gt;</span></a>, which
-          is a visual element typically displayed alongside a figure, table, etc. The <span class="elementtag">&lt;alt-text&gt;</span> element is not a visual element, unless the figure,
-          caption, or other major element that holds <span class="elementtag">&lt;alt-text&gt;</span> is not available or cannot be processed by the person or device-type being
-          addressed. Since it is not visual, <span class="elementtag">&lt;alt-text&gt;</span>
-          does not allow face markup inside it; a simplified textual alternative for a graphical
-          object (including face markup) can be created using the <a href="n-vyk2.html" target="main" title="Textual Form"><span class="elementtag">&lt;textual-form&gt;</span></a> element.</p></div><div class="attrlist"><h2 class="header">Attributes</h2><h5 class="header"><a href="n-yxa2.html" target="main"><span class="attrtag">content-type</span></a> <a href="n-yxa2.html" target="main"><span class="attrname">Type of Content</span></a></h5><h5 class="header"><a href="n-4qu2.html" target="main"><span class="attrtag">id</span></a> <a href="n-4qu2.html" target="main"><span class="attrname">Document Internal Identifier</span></a></h5><h5 class="header"><a href="n-rdv2.html" target="main"><span class="attrtag">specific-use</span></a> <a href="n-rdv2.html" target="main"><span class="attrname">Specific Use</span></a></h5><h5 class="header"><a href="n-ib42.html" target="main"><span class="attrtag">xml:base</span></a> <a href="n-ib42.html" target="main"><span class="attrname">Base</span></a></h5><h5 class="header"><a href="n-fas2.html" target="main"><span class="attrtag">xml:lang</span></a> <a href="n-fas2.html" target="main"><span class="attrname">Language</span></a></h5></div><div class="relatedelem"><h2 class="header">Related Elements</h2><p class="para">The similarly non-visual element <a href="n-4wn0.html" target="main" title="Long Description"><span class="elementtag">&lt;long-desc&gt;</span></a> is meant for an extended description of the figure, table, etc.</p></div><div class="contentmodel"><h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  alt-text     (#PCDATA)                                    &gt;</pre></div><div class="modeldesc"><h2 class="header">Description</h2><p class="para">Text, numbers, or special characters</p></div><div class="elementcontext"><h3 class="header">This element may be contained in:</h3><p class="para"><a href="n-4k30.html" target="main" title="Array (Simple Tabulation)"><span class="elementtag">&lt;array&gt;</span></a>, <a href="n-yca0.html" target="main" title="Chemical Structure (Display)"><span class="elementtag">&lt;chem-struct&gt;</span></a>, <a href="n-bxa0.html" target="main" title="Chemical Structure Wrapper"><span class="elementtag">&lt;chem-struct-wrap&gt;</span></a>, <a href="n-rpv0.html" target="main" title="Formula, Display"><span class="elementtag">&lt;disp-formula&gt;</span></a>, <a href="n-i240.html" target="main" title="Formula, Display Group"><span class="elementtag">&lt;disp-formula-group&gt;</span></a>, <a href="n-ems0.html" target="main" title="Figure"><span class="elementtag">&lt;fig&gt;</span></a>, <a href="n-j5t0.html" target="main" title="Figure Group"><span class="elementtag">&lt;fig-group&gt;</span></a>, <a href="n-zj70.html" target="main" title="Graphic"><span class="elementtag">&lt;graphic&gt;</span></a>, <a href="n-eje0.html" target="main" title="Graphic, Inline"><span class="elementtag">&lt;inline-graphic&gt;</span></a>, <a href="n-jqe0.html" target="main" title="Inline Supplementary Material"><span class="elementtag">&lt;inline-supplementary-material&gt;</span></a>, <a href="n-vsn0.html" target="main" title="Media Object"><span class="elementtag">&lt;media&gt;</span></a>, <a href="n-rdh0.html" target="main" title="Preformatted Text"><span class="elementtag">&lt;preformat&gt;</span></a>, <a href="n-ikz0.html" target="main" title="Supplementary Material"><span class="elementtag">&lt;supplementary-material&gt;</span></a>, <a href="n-d6z0.html" target="main" title="Table Wrapper"><span class="elementtag">&lt;table-wrap&gt;</span></a>, <a href="n-fpz0.html" target="main" title="Table Wrapper Group"><span class="elementtag">&lt;table-wrap-group&gt;</span></a></p></div><div class="examp.group"><h3 class="header">Example 1</h3><p class="para">Short description of an image in a figure:</p><div class="taggedexamp"><pre class="taggedtext">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta name="generator" content="HTML Tidy for Linux/x86 (vers 25 March 2009), see www.w3.org" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008-->
+  <link rel="stylesheet" href="BITS.css" type="text/css" />
+
+  <title>Element: Alternate Text Name (for a figure, etc.)</title>
+</head>
+
+<body class="main">
+  <div class="pageheader">
+    <h2 class="headname">Book Interchange Tag Suite (BITS) Version 1.0 Tag Library Version 1.0</h2>
+
+    <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk" />
+    National Center for Biotechnology Information (NCBI)<br class="linebrk" />
+    National Library of Medicine (NLM)</h4>
+  </div>
+
+  <div class="header">
+    <h1 class="elementtag">&lt;alt-text&gt;</h1>
+
+    <h1 class="elementname">Alternate Text Name (for a figure, etc.)</h1>
+  </div>
+
+  <div class="definition">
+    <p class="para">Word or phrase used to provide a very short textual name, description, or
+    purpose-statement for a structure such as a graphic or figure.</p>
+  </div>
+
+  <div class="remarks">
+    <h2 class="header">Remarks</h2>
+
+    <p class="para"><strong>Accessibility:</strong> The short <span class=
+    "elementtag">&lt;alt-text&gt;</span> element can be used for special accessibility display or
+    presentation on graphic-limited websites or devices, as an alternative to providing the full
+    graphic. (For example, the <span class="elementtag">&lt;alt-text&gt;</span> element is
+    typically read by screen readers, and <span class="elementtag">&lt;alt-text&gt;</span> may also
+    be used to display a few words “behind” a figure or graphic for devices with limited graphics
+    capacity.)</p>
+
+    <p class="para"><em>Please</em> reserve this tag for accessibility uses such as pronouncing
+    screen readers. This element should <em>not</em> be used as a replacement for <a href=
+    "n-5q80.html" target="main" title="Caption of a Figure, Table, etc."><span class=
+    "elementtag">&lt;caption&gt;</span></a>, which is a visual element typically displayed
+    alongside a figure, table, etc. The <span class="elementtag">&lt;alt-text&gt;</span> element is
+    not a visual element, unless the figure, caption, or other major element that holds
+    <span class="elementtag">&lt;alt-text&gt;</span> is not available or cannot be processed by the
+    person or device-type being addressed. Since it is not visual, <span class=
+    "elementtag">&lt;alt-text&gt;</span> does not allow face markup inside it; a simplified textual
+    alternative for a graphical object (including face markup) can be created using the <a href=
+    "n-vyk2.html" target="main" title="Textual Form"><span class=
+    "elementtag">&lt;textual-form&gt;</span></a> element.</p>
+  </div>
+
+  <div class="attrlist">
+    <h2 class="header">Attributes</h2>
+
+    <h5 class="header"><a href="n-yxa2.html" target="main"><span class=
+    "attrtag">content-type</span></a> <a href="n-yxa2.html" target="main"><span class=
+    "attrname">Type of Content</span></a></h5>
+
+    <h5 class="header"><a href="n-4qu2.html" target="main"><span class="attrtag">id</span></a>
+    <a href="n-4qu2.html" target="main"><span class="attrname">Document Internal
+    Identifier</span></a></h5>
+
+    <h5 class="header"><a href="n-rdv2.html" target="main"><span class=
+    "attrtag">specific-use</span></a> <a href="n-rdv2.html" target="main"><span class=
+    "attrname">Specific Use</span></a></h5>
+
+    <h5 class="header"><a href="n-ib42.html" target="main"><span class=
+    "attrtag">xml:base</span></a> <a href="n-ib42.html" target="main"><span class=
+    "attrname">Base</span></a></h5>
+
+    <h5 class="header"><a href="n-fas2.html" target="main"><span class=
+    "attrtag">xml:lang</span></a> <a href="n-fas2.html" target="main"><span class=
+    "attrname">Language</span></a></h5>
+  </div>
+
+  <div class="relatedelem">
+    <h2 class="header">Related Elements</h2>
+
+    <p class="para">The similarly non-visual element <a href="n-4wn0.html" target="main" title=
+    "Long Description"><span class="elementtag">&lt;long-desc&gt;</span></a> is meant for an
+    extended description of the figure, table, etc.</p>
+  </div>
+
+  <div class="contentmodel">
+    <h2 class="header first">Content Model</h2>
+    <pre class="contentdesc">
+&lt;!ELEMENT  alt-text     (#PCDATA)                                    &gt;
+</pre>
+  </div>
+
+  <div class="modeldesc">
+    <h2 class="header">Description</h2>
+
+    <p class="para">Text, numbers, or special characters</p>
+  </div>
+
+  <div class="elementcontext">
+    <h3 class="header">This element may be contained in:</h3>
+
+    <p class="para"><a href="n-4k30.html" target="main" title=
+    "Array (Simple Tabulation)"><span class="elementtag">&lt;array&gt;</span></a>, <a href=
+    "n-yca0.html" target="main" title="Chemical Structure (Display)"><span class=
+    "elementtag">&lt;chem-struct&gt;</span></a>, <a href="n-bxa0.html" target="main" title=
+    "Chemical Structure Wrapper"><span class="elementtag">&lt;chem-struct-wrap&gt;</span></a>,
+    <a href="n-rpv0.html" target="main" title="Formula, Display"><span class=
+    "elementtag">&lt;disp-formula&gt;</span></a>, <a href="n-i240.html" target="main" title=
+    "Formula, Display Group"><span class="elementtag">&lt;disp-formula-group&gt;</span></a>,
+    <a href="n-ems0.html" target="main" title="Figure"><span class=
+    "elementtag">&lt;fig&gt;</span></a>, <a href="n-j5t0.html" target="main" title=
+    "Figure Group"><span class="elementtag">&lt;fig-group&gt;</span></a>, <a href="n-zj70.html"
+    target="main" title="Graphic"><span class="elementtag">&lt;graphic&gt;</span></a>, <a href=
+    "n-eje0.html" target="main" title="Graphic, Inline"><span class=
+    "elementtag">&lt;inline-graphic&gt;</span></a>, <a href="n-jqe0.html" target="main" title=
+    "Inline Supplementary Material"><span class=
+    "elementtag">&lt;inline-supplementary-material&gt;</span></a>, <a href="n-vsn0.html" target=
+    "main" title="Media Object"><span class="elementtag">&lt;media&gt;</span></a>, <a href=
+    "n-rdh0.html" target="main" title="Preformatted Text"><span class=
+    "elementtag">&lt;preformat&gt;</span></a>, <a href="n-ikz0.html" target="main" title=
+    "Supplementary Material"><span class="elementtag">&lt;supplementary-material&gt;</span></a>,
+    <a href="n-d6z0.html" target="main" title="Table Wrapper"><span class=
+    "elementtag">&lt;table-wrap&gt;</span></a>, <a href="n-fpz0.html" target="main" title=
+    "Table Wrapper Group"><span class="elementtag">&lt;table-wrap-group&gt;</span></a></p>
+  </div>
+
+  <div class="examp.group">
+    <h3 class="header">Example 1</h3>
+
+    <p class="para">Short description of an image in a figure:</p>
+
+    <div class="taggedexamp">
+      <pre class="taggedtext">
     
 ...
 &lt;sec&gt;
@@ -29,14 +152,26 @@ or alternative services.&lt;/title&gt;
 by fixed effects model. Heterogeneity between trials is presented 
 as &amp;#x03C7;&lt;sup&gt;2&lt;/sup&gt;&lt;/p&gt;
 &lt;/caption&gt;
-<strong><span class="focus">&lt;alt-text&gt;Deaths in hospitals or with alternative services&lt;/alt-text&gt;</span></strong>
+<strong><span class=
+"focus">&lt;alt-text&gt;Deaths in hospitals or with alternative services&lt;/alt-text&gt;</span></strong>
 &lt;graphic xmlns:xlink="http://www.w3.org/1999/xlink"
 xlink:href="fors2662.f1"/&gt;
 &lt;/fig&gt;
 &lt;/sec&gt;
 ...
 
-   </pre></div></div><div class="examp.group"><h3 class="header">Example 2</h3><p class="para">For speaking an inline graphic:</p><div class="taggedexamp"><pre class="taggedtext">
+   
+</pre>
+    </div>
+  </div>
+
+  <div class="examp.group">
+    <h3 class="header">Example 2</h3>
+
+    <p class="para">For speaking an inline graphic:</p>
+
+    <div class="taggedexamp">
+      <pre class="taggedtext">
     
 ...
 &lt;p&gt;The MacDuck Corporation &lt;inline-graphic
@@ -46,7 +181,18 @@ xlink:href="images/1742-9994-3-18-1.jpg"&gt;
 programs in 2005 ...&lt;/p&gt;
 ...
 
-   </pre></div></div><div class="examp.group"><h3 class="header">Example 3</h3><p class="para">Short description of an image in a boxed text:</p><div class="taggedexamp"><pre class="taggedtext">
+   
+</pre>
+    </div>
+  </div>
+
+  <div class="examp.group">
+    <h3 class="header">Example 3</h3>
+
+    <p class="para">Short description of an image in a boxed text:</p>
+
+    <div class="taggedexamp">
+      <pre class="taggedtext">
     
 ...
 &lt;boxed-text position="float" id="B1"&gt;
@@ -64,13 +210,25 @@ hens, and the time in minutes and hours elapsed since the group
 was introduced is indicated above each block of the graph.&lt;/p&gt;
 &lt;/caption&gt;
 &lt;graphic xlink:href="images/1742-9994-3-18-1.jpg"&gt;
-<strong><span class="focus">&lt;alt-text&gt;music notation graph of first meeting&lt;/alt-text&gt;</span></strong>
+<strong><span class=
+"focus">&lt;alt-text&gt;music notation graph of first meeting&lt;/alt-text&gt;</span></strong>
 &lt;/graphic&gt;
 &lt;/boxed-text&gt;
 ...
 
 
-   </pre></div></div><div class="examp.group"><h3 class="header">Example 4</h3><p class="para">The alternative text is descriptive and need not echo the caption:</p><div class="taggedexamp"><pre class="taggedtext">
+   
+</pre>
+    </div>
+  </div>
+
+  <div class="examp.group">
+    <h3 class="header">Example 4</h3>
+
+    <p class="para">The alternative text is descriptive and need not echo the caption:</p>
+
+    <div class="taggedexamp">
+      <pre class="taggedtext">
     
 ...
 &lt;fig id="fg-3"&gt;
@@ -83,5 +241,15 @@ was introduced is indicated above each block of the graph.&lt;/p&gt;
 &lt;/fig&gt;
 ...
 
-   </pre></div></div><div class="pagefooter"><h2 class="headname">Book Interchange Tag Suite (BITS) Version 1.0 Tag Library 
-Version 1.0</h2><h4 class="pubdate">Version of December 2013</h4></div></body></html>
+   
+</pre>
+    </div>
+  </div>
+
+  <div class="pagefooter">
+    <h2 class="headname">Book Interchange Tag Suite (BITS) Version 1.0 Tag Library Version 1.0</h2>
+
+    <h4 class="pubdate">Version of December 2013</h4>
+  </div>
+</body>
+</html>

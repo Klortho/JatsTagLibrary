@@ -1,8 +1,148 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008--><link rel="stylesheet" href="BITS.css" type="text/css"><title>Element: Index Entry</title></head><body class="main"><div class="pageheader"><h2 class="headname">Book Interchange Tag Suite (BITS) Version 1.0 Tag Library 
-Version 1.0</h2><h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk"> 
-National Center for Biotechnology Information (NCBI)<br class="linebrk"> 
-National Library of Medicine (NLM)</h4></div><div class="header"><h1 class="elementtag">&lt;index-entry&gt;</h1><h1 class="elementname">Index Entry</h1></div><div class="definition"><p class="para">One entry, with all its subdivisions, see and see also terms, and navigational pointers
- (if any) in a structural index.</p></div><div class="attrlist"><h2 class="header">Attributes</h2><h5 class="header"><a href="n-yxa2.html" target="main"><span class="attrtag">content-type</span></a> <a href="n-yxa2.html" target="main"><span class="attrname">Type of Content</span></a></h5><h5 class="header"><a href="n-4qu2.html" target="main"><span class="attrtag">id</span></a> <a href="n-4qu2.html" target="main"><span class="attrname">Document Internal Identifier</span></a></h5><h5 class="header"><a href="n-iev2.html" target="main"><span class="attrtag">sort-key</span></a> <a href="n-iev2.html" target="main"><span class="attrname">Sort Key for Index Entry</span></a></h5><h5 class="header"><a href="n-rdv2.html" target="main"><span class="attrtag">specific-use</span></a> <a href="n-rdv2.html" target="main"><span class="attrname">Specific Use</span></a></h5><h5 class="header"><a href="n-ib42.html" target="main"><span class="attrtag">xml:base</span></a> <a href="n-ib42.html" target="main"><span class="attrname">Base</span></a></h5><h5 class="header"><a href="n-fas2.html" target="main"><span class="attrtag">xml:lang</span></a> <a href="n-fas2.html" target="main"><span class="attrname">Language</span></a></h5></div><div class="contentmodel"><h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  index-entry  <a href="n-y3n2.html" target="main" title="Index Entry Model"><span class="petag">%index-entry-model;</span></a>                          &gt;</pre></div><div class="contentmodel"><h2 class="header">Expanded Content Model</h2><p class="contentdesc">(term, (ext-link | nav-pointer | nav-pointer-group)*, (index-entry | see-entry | see-also-entry | x)*)</p></div><div class="modeldesc"><h2 class="header">Description</h2><p class="para">The following, in order:<ul class="bullist"><li><a href="n-mvk2.html" target="main" title="Definition List: Term"><span class="elementtag">&lt;term&gt;</span></a> <a href="n-mvk2.html" target="main" title="<term&gt;"><span class="elementname">Definition List: Term</span></a></li><li>Any combination of:<ul class="bullist"><li><a href="n-5fs0.html" target="main" title="External Link"><span class="elementtag">&lt;ext-link&gt;</span></a> <a href="n-5fs0.html" target="main" title="<ext-link&gt;"><span class="elementname">External Link</span></a></li><li><a href="n-uwd0.html" target="main" title="Navigation Pointer"><span class="elementtag">&lt;nav-pointer&gt;</span></a> <a href="n-uwd0.html" target="main" title="<nav-pointer&gt;"><span class="elementname">Navigation Pointer</span></a></li><li><a href="n-red0.html" target="main" title="Navigation Pointer Group"><span class="elementtag">&lt;nav-pointer-group&gt;</span></a> <a href="n-red0.html" target="main" title="<nav-pointer-group&gt;"><span class="elementname">Navigation Pointer Group</span></a></li></ul></li><li>Any combination of:<ul class="bullist"><li><a href="n-nxe0.html" target="main" title="Index Entry"><span class="elementtag">&lt;index-entry&gt;</span></a> <a href="n-nxe0.html" target="main" title="<index-entry&gt;"><span class="elementname">Index Entry</span></a></li><li><a href="n-rmp0.html" target="main" title="See Index Entry"><span class="elementtag">&lt;see-entry&gt;</span></a> <a href="n-rmp0.html" target="main" title="<see-entry&gt;"><span class="elementname">See Index Entry</span></a></li><li><a href="n-iyp0.html" target="main" title="See-Also Index Entry"><span class="elementtag">&lt;see-also-entry&gt;</span></a> <a href="n-iyp0.html" target="main" title="<see-also-entry&gt;"><span class="elementname">See-Also Index Entry</span></a></li><li><a href="n-p652.html" target="main" title="X - Generated Text and Punctuation"><span class="elementtag">&lt;x&gt;</span></a> <a href="n-p652.html" target="main" title="<x&gt;"><span class="elementname">X - Generated Text and Punctuation</span></a></li></ul></li></ul></p></div><div class="elementcontext"><h3 class="header">This element may be contained in:</h3><p class="para"><a href="n-pz70.html" target="main" title="Index"><span class="elementtag">&lt;index&gt;</span></a>, <a href="n-i5e0.html" target="main" title="Index Division"><span class="elementtag">&lt;index-div&gt;</span></a>, <a href="n-nxe0.html" target="main" title="Index Entry"><span class="elementtag">&lt;index-entry&gt;</span></a></p></div><div class="examp.group"><h3 class="header">Example 1</h3><p class="para">Back of Book Index with links into the text:</p><div class="taggedexamp"><pre class="taggedtext">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta name="generator" content="HTML Tidy for Linux/x86 (vers 25 March 2009), see www.w3.org" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008-->
+  <link rel="stylesheet" href="BITS.css" type="text/css" />
+
+  <title>Element: Index Entry</title>
+</head>
+
+<body class="main">
+  <div class="pageheader">
+    <h2 class="headname">Book Interchange Tag Suite (BITS) Version 1.0 Tag Library Version 1.0</h2>
+
+    <h4 class="sponsor">Digital Archive of Journal Articles<br class="linebrk" />
+    National Center for Biotechnology Information (NCBI)<br class="linebrk" />
+    National Library of Medicine (NLM)</h4>
+  </div>
+
+  <div class="header">
+    <h1 class="elementtag">&lt;index-entry&gt;</h1>
+
+    <h1 class="elementname">Index Entry</h1>
+  </div>
+
+  <div class="definition">
+    <p class="para">One entry, with all its subdivisions, see and see also terms, and navigational
+    pointers (if any) in a structural index.</p>
+  </div>
+
+  <div class="attrlist">
+    <h2 class="header">Attributes</h2>
+
+    <h5 class="header"><a href="n-yxa2.html" target="main"><span class=
+    "attrtag">content-type</span></a> <a href="n-yxa2.html" target="main"><span class=
+    "attrname">Type of Content</span></a></h5>
+
+    <h5 class="header"><a href="n-4qu2.html" target="main"><span class="attrtag">id</span></a>
+    <a href="n-4qu2.html" target="main"><span class="attrname">Document Internal
+    Identifier</span></a></h5>
+
+    <h5 class="header"><a href="n-iev2.html" target="main"><span class=
+    "attrtag">sort-key</span></a> <a href="n-iev2.html" target="main"><span class="attrname">Sort
+    Key for Index Entry</span></a></h5>
+
+    <h5 class="header"><a href="n-rdv2.html" target="main"><span class=
+    "attrtag">specific-use</span></a> <a href="n-rdv2.html" target="main"><span class=
+    "attrname">Specific Use</span></a></h5>
+
+    <h5 class="header"><a href="n-ib42.html" target="main"><span class=
+    "attrtag">xml:base</span></a> <a href="n-ib42.html" target="main"><span class=
+    "attrname">Base</span></a></h5>
+
+    <h5 class="header"><a href="n-fas2.html" target="main"><span class=
+    "attrtag">xml:lang</span></a> <a href="n-fas2.html" target="main"><span class=
+    "attrname">Language</span></a></h5>
+  </div>
+
+  <div class="contentmodel">
+    <h2 class="header first">Content Model</h2>
+    <pre class="contentdesc">
+&lt;!ELEMENT  index-entry  <a href="n-y3n2.html" target="main" title=
+"Index Entry Model"><span class=
+"petag">%index-entry-model;</span></a>                          &gt;
+</pre>
+  </div>
+
+  <div class="contentmodel">
+    <h2 class="header">Expanded Content Model</h2>
+
+    <p class="contentdesc">(term, (ext-link | nav-pointer | nav-pointer-group)*, (index-entry |
+    see-entry | see-also-entry | x)*)</p>
+  </div>
+
+  <div class="modeldesc">
+    <h2 class="header">Description</h2>
+
+    <p class="para">The following, in order:</p>
+
+    <ul class="bullist">
+      <li><a href="n-mvk2.html" target="main" title="Definition List: Term"><span class=
+      "elementtag">&lt;term&gt;</span></a> <a href="n-mvk2.html" target="main" title=
+      "&lt;term&gt;"><span class="elementname">Definition List: Term</span></a></li>
+
+      <li>Any combination of:
+
+        <ul class="bullist">
+          <li><a href="n-5fs0.html" target="main" title="External Link"><span class=
+          "elementtag">&lt;ext-link&gt;</span></a> <a href="n-5fs0.html" target="main" title=
+          "&lt;ext-link&gt;"><span class="elementname">External Link</span></a></li>
+
+          <li><a href="n-uwd0.html" target="main" title="Navigation Pointer"><span class=
+          "elementtag">&lt;nav-pointer&gt;</span></a> <a href="n-uwd0.html" target="main" title=
+          "&lt;nav-pointer&gt;"><span class="elementname">Navigation Pointer</span></a></li>
+
+          <li><a href="n-red0.html" target="main" title="Navigation Pointer Group"><span class=
+          "elementtag">&lt;nav-pointer-group&gt;</span></a> <a href="n-red0.html" target="main"
+          title="&lt;nav-pointer-group&gt;"><span class="elementname">Navigation Pointer
+          Group</span></a></li>
+        </ul>
+      </li>
+
+      <li>Any combination of:
+
+        <ul class="bullist">
+          <li><a href="n-nxe0.html" target="main" title="Index Entry"><span class=
+          "elementtag">&lt;index-entry&gt;</span></a> <a href="n-nxe0.html" target="main" title=
+          "&lt;index-entry&gt;"><span class="elementname">Index Entry</span></a></li>
+
+          <li><a href="n-rmp0.html" target="main" title="See Index Entry"><span class=
+          "elementtag">&lt;see-entry&gt;</span></a> <a href="n-rmp0.html" target="main" title=
+          "&lt;see-entry&gt;"><span class="elementname">See Index Entry</span></a></li>
+
+          <li><a href="n-iyp0.html" target="main" title="See-Also Index Entry"><span class=
+          "elementtag">&lt;see-also-entry&gt;</span></a> <a href="n-iyp0.html" target="main" title=
+          "&lt;see-also-entry&gt;"><span class="elementname">See-Also Index Entry</span></a></li>
+
+          <li><a href="n-p652.html" target="main" title=
+          "X - Generated Text and Punctuation"><span class="elementtag">&lt;x&gt;</span></a>
+          <a href="n-p652.html" target="main" title="&lt;x&gt;"><span class="elementname">X -
+          Generated Text and Punctuation</span></a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <div class="elementcontext">
+    <h3 class="header">This element may be contained in:</h3>
+
+    <p class="para"><a href="n-pz70.html" target="main" title="Index"><span class=
+    "elementtag">&lt;index&gt;</span></a>, <a href="n-i5e0.html" target="main" title=
+    "Index Division"><span class="elementtag">&lt;index-div&gt;</span></a>, <a href="n-nxe0.html"
+    target="main" title="Index Entry"><span class="elementtag">&lt;index-entry&gt;</span></a></p>
+  </div>
+
+  <div class="examp.group">
+    <h3 class="header">Example 1</h3>
+
+    <p class="para">Back of Book Index with links into the text:</p>
+
+    <div class="taggedexamp">
+      <pre class="taggedtext">
     
 ...
 &lt;book-back&gt;
@@ -48,7 +188,14 @@ National Library of Medicine (NLM)</h4></div><div class="header"><h1 class="elem
 &lt;/index&gt;&lt;/book-back&gt;
 ...
 
-   </pre></div><p class="para">Back of Book Index with print page numbers:</p><div class="taggedexamp"><pre class="taggedtext">
+   
+</pre>
+    </div>
+
+    <p class="para">Back of Book Index with print page numbers:</p>
+
+    <div class="taggedexamp">
+      <pre class="taggedtext">
     
 ...
 &lt;book-back&gt;
@@ -94,7 +241,18 @@ National Library of Medicine (NLM)</h4></div><div class="header"><h1 class="elem
 &lt;/index&gt;&lt;/book-back&gt;
 ...
 
-   </pre></div></div><div class="examp.group"><h3 class="header">Example 2</h3><p class="para">Back of Book Index with nested index terms and links into the text:</p><div class="taggedexamp"><pre class="taggedtext">
+   
+</pre>
+    </div>
+  </div>
+
+  <div class="examp.group">
+    <h3 class="header">Example 2</h3>
+
+    <p class="para">Back of Book Index with nested index terms and links into the text:</p>
+
+    <div class="taggedexamp">
+      <pre class="taggedtext">
     
 ...
 &lt;book-back&gt;
@@ -166,7 +324,14 @@ National Library of Medicine (NLM)</h4></div><div class="header"><h1 class="elem
 ...
 
 
-   </pre></div><p class="para">Back of Book Index with nested terms and print page numbers:</p><div class="taggedexamp"><pre class="taggedtext">
+   
+</pre>
+    </div>
+
+    <p class="para">Back of Book Index with nested terms and print page numbers:</p>
+
+    <div class="taggedexamp">
+      <pre class="taggedtext">
     
 ...
 &lt;book-back&gt;
@@ -237,5 +402,15 @@ National Library of Medicine (NLM)</h4></div><div class="header"><h1 class="elem
 &lt;/book-back&gt;
 ...
 
-   </pre></div></div><div class="pagefooter"><h2 class="headname">Book Interchange Tag Suite (BITS) Version 1.0 Tag Library 
-Version 1.0</h2><h4 class="pubdate">Version of December 2013</h4></div></body></html>
+   
+</pre>
+    </div>
+  </div>
+
+  <div class="pagefooter">
+    <h2 class="headname">Book Interchange Tag Suite (BITS) Version 1.0 Tag Library Version 1.0</h2>
+
+    <h4 class="pubdate">Version of December 2013</h4>
+  </div>
+</body>
+</html>
