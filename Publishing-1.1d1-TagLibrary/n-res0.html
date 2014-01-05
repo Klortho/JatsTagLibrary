@@ -1,19 +1,364 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008--><link rel="stylesheet" href="auto-css.css" type="text/css"><title>Element: Media Object</title></head><body class="main"><div class="pageheader"><h2 class="headname">Journal Publishing Tag Library  NISO JATS Draft Version 1.1d1</h2><h4 class="sponsor">National Center for Biotechnology Information (NCBI)<br class="linebrk"> National Library of
-   Medicine (NLM)</h4></div><div class="header"><h1 class="elementtag">&lt;media&gt;</h1><h1 class="elementname">Media Object</h1></div><div class="definition"><p class="para">Description of and pointer to an external file that holds a media object (for example, an animation, a movie).</p></div><div class="remarks"><h2 class="header">Remarks</h2><p class="para">The “content” of the <a href="n-res0.html" target="main" title="Media Object"><span class="elementtag">&lt;media&gt;</span></a> element is not the media object itself, but information concerning the object. The external file that contains the object is named by the <a href="n-5vm0.html" target="main" title="Href (Linking Mechanism)"><span class="attrtag">@xlink:href</span></a> attribute.</p><p class="para"><strong>Position:</strong> The <a href="n-82b0.html" target="main" title="Position"><span class="attrtag">@position</span></a> attribute <em>may</em> be used to indicate whether this element must be anchored at its exact
-location within the text or whether it may float, but best practice is to anchor graphics and media objects. The few media objects that float loose in text should be anchored there, and all the media objects inside figures, tables, etc., should be anchored as well, although the outer structure (figure, boxed text) may be allowed to float.</p><p class="para"><strong>Usage:</strong> Display component elements, such as <a href="n-t850.html" target="main" title="Caption of a Figure, Table, etc."><span class="elementtag">&lt;caption&gt;</span></a>, should always be used at the highest possible level; in other words, if a <a href="n-res0.html" target="main" title="Media Object"><span class="elementtag">&lt;media&gt;</span></a> element is inside a <a href="n-mhw0.html" target="main" title="Figure"><span class="elementtag">&lt;fig&gt;</span></a>, the <a href="n-t850.html" target="main" title="Caption of a Figure, Table, etc."><span class="elementtag">&lt;caption&gt;</span></a>, <a href="n-p4s0.html" target="main" title="Long Description"><span class="elementtag">&lt;long-desc&gt;</span></a>, etc., should be part of the <a href="n-mhw0.html" target="main" title="Figure"><span class="elementtag">&lt;fig&gt;</span></a>, not part of the <a href="n-res0.html" target="main" title="Media Object"><span class="elementtag">&lt;media&gt;</span></a>. Use a <a href="n-t850.html" target="main" title="Caption of a Figure, Table, etc."><span class="elementtag">&lt;caption&gt;</span></a> element on a <a href="n-res0.html" target="main" title="Media Object"><span class="elementtag">&lt;media&gt;</span></a> only when the media object is not enclosed in any other structure or when a figure contains multiple media objects, each of which must have its own <a href="n-t850.html" target="main" title="Caption of a Figure, Table, etc."><span class="elementtag">&lt;caption&gt;</span></a>. For similar reasons, the <a href="n-82b0.html" target="main" title="Position"><span class="attrtag">@position</span></a> attribute should be set to “anchor” for a <a href="n-res0.html" target="main" title="Media Object"><span class="elementtag">&lt;media&gt;</span></a> element that is inside a larger display container such as a <a href="n-mhw0.html" target="main" title="Figure"><span class="elementtag">&lt;fig&gt;</span></a>.</p></div><div class="attrlist"><h2 class="header">Attributes</h2><h5 class="header"><a href="n-kxj0.html" target="main"><span class="attrtag">content-type</span></a> <a href="n-kxj0.html" target="main"><span class="attrname">Type of Content</span></a></h5><h5 class="header"><a href="n-fdp0.html" target="main"><span class="attrtag">id</span></a> <a href="n-fdp0.html" target="main"><span class="attrname">Document Internal Identifier</span></a></h5><h5 class="header"><a href="n-aeq0.html" target="main"><span class="attrtag">mime-subtype</span></a> <a href="n-aeq0.html" target="main"><span class="attrname">Mime Subtype</span></a></h5><h5 class="header"><a href="n-8fq0.html" target="main"><span class="attrtag">mimetype</span></a> <a href="n-8fq0.html" target="main"><span class="attrname">Mime Type</span></a></h5><h5 class="header"><a href="n-wpq0.html" target="main"><span class="attrtag">orientation</span></a> <a href="n-wpq0.html" target="main"><span class="attrname">Orientation</span></a></h5><h5 class="header"><a href="n-82b0.html" target="main"><span class="attrtag">position</span></a> <a href="n-82b0.html" target="main"><span class="attrname">Position</span></a></h5><h5 class="header"><a href="n-t790.html" target="main"><span class="attrtag">specific-use</span></a> <a href="n-t790.html" target="main"><span class="attrname">Specific Use</span></a></h5><h5 class="header"><a href="n-8wm0.html" target="main"><span class="attrtag">xlink:actuate</span></a> <a href="n-8wm0.html" target="main"><span class="attrname">Actuating the Link</span></a></h5><h5 class="header"><a href="n-5vm0.html" target="main"><span class="attrtag">xlink:href</span></a> <a href="n-5vm0.html" target="main"><span class="attrname">Href (Linking Mechanism)</span></a></h5><h5 class="header"><a href="n-asm0.html" target="main"><span class="attrtag">xlink:role</span></a> <a href="n-asm0.html" target="main"><span class="attrname">Role of the Link</span></a></h5><h5 class="header"><a href="n-itm0.html" target="main"><span class="attrtag">xlink:show</span></a> <a href="n-itm0.html" target="main"><span class="attrname">Showing the Link</span></a></h5><h5 class="header"><a href="n-qem0.html" target="main"><span class="attrtag">xlink:title</span></a> <a href="n-qem0.html" target="main"><span class="attrname">Title of the Link</span></a></h5><h5 class="header"><a href="n-egm0.html" target="main"><span class="attrtag">xlink:type</span></a> <a href="n-egm0.html" target="main"><span class="attrname">Type of Link</span></a></h5><h5 class="header"><a href="n-bdm0.html" target="main"><span class="attrtag">xmlns:xlink</span></a> <a href="n-bdm0.html" target="main"><span class="attrname">XLink Namespace Declaration</span></a></h5><h5 class="header"><a href="n-jim0.html" target="main"><span class="attrtag">xml:base</span></a> <a href="n-jim0.html" target="main"><span class="attrname">Base</span></a></h5><h5 class="header"><a href="n-tkz0.html" target="main"><span class="attrtag">xml:lang</span></a> <a href="n-tkz0.html" target="main"><span class="attrname">Language</span></a></h5></div><div class="relatedelem"><h2 class="header">Related Elements</h2><p class="para">This Suite contains several elements that describe and point to non-XML material: <a href="n-3xv0.html" target="main" title="Graphic"><span class="elementtag">&lt;graphic&gt;</span></a>, <a href="n-5dv0.html" target="main" title="Graphic, Inline"><span class="elementtag">&lt;inline-graphic&gt;</span></a>, <a href="n-res0.html" target="main" title="Media Object"><span class="elementtag">&lt;media&gt;</span></a>, <a href="n-uhd0.html" target="main" title="Supplementary Material"><span class="elementtag">&lt;supplementary-material&gt;</span></a>, and
-<a href="n-ahv0.html" target="main" title="Inline Supplementary Material"><span class="elementtag">&lt;inline-supplementary-material&gt;</span></a>. The elements <a href="n-3xv0.html" target="main" title="Graphic"><span class="elementtag">&lt;graphic&gt;</span></a> and <a href="n-5dv0.html" target="main" title="Graphic, Inline"><span class="elementtag">&lt;inline-graphic&gt;</span></a> contain a pointer to a still image (such as a photograph, diagram, line drawing, etc.) that is part of the document. The element <a href="n-res0.html" target="main" title="Media Object"><span class="elementtag">&lt;media&gt;</span></a> contains a pointer to a non-XML, frequently binary, object (such as a movie,
-audio clip, dataset, or other non-XML format) that is integral to the document’s content, where &nbsp;“integral” means that the media object is discussed within (and possibly displayed within) the document; the media object is part of the document.</p><p class="para">In contrast, the elements <a href="n-uhd0.html" target="main" title="Supplementary Material"><span class="elementtag">&lt;supplementary-material&gt;</span></a> and <a href="n-ahv0.html" target="main" title="Inline Supplementary Material"><span class="elementtag">&lt;inline-supplementary-material&gt;</span></a> are used to <em>describe</em> either XML material (such as figures, tables, and sections) or non-XML material (such as graphics, films, audio clips, datasets, or other material) that are considered to be “additional material” (non-integral) accompanying a document. Like <a href="n-3xv0.html" target="main" title="Graphic"><span class="elementtag">&lt;graphic&gt;</span></a>, <a href="n-5dv0.html" target="main" title="Graphic, Inline"><span class="elementtag">&lt;inline-graphic&gt;</span></a>, and <a href="n-res0.html" target="main" title="Media Object"><span class="elementtag">&lt;media&gt;</span></a>, the supplementary material elements never contain the object they describe,
-even if it is an XML object such as a figure, although they may point to it.</p><p class="para">The element <a href="n-ahv0.html" target="main" title="Inline Supplementary Material"><span class="elementtag">&lt;inline-supplementary-material&gt;</span></a> is used to mark up references to additional material, where the reference appears within the regular flow of the text and does not have a preview image or separate caption. The <a href="n-uhd0.html" target="main" title="Supplementary Material"><span class="elementtag">&lt;supplementary-material&gt;</span></a> element is used to describe a more complicated reference, where the description of the supplementary object resembles a figure in that it can be positioned as a floating or anchored object and may take a caption.</p><p class="para"><strong>Best Practice:</strong> Unlabeled media objects should be tagged as <a href="n-res0.html" target="main" title="Media Object"><span class="elementtag">&lt;media&gt;</span></a>s, not as <a href="n-mhw0.html" target="main" title="Figure"><span class="elementtag">&lt;fig&gt;</span></a>s. A common test to determine whether an object is a  <a href="n-mhw0.html" target="main" title="Figure"><span class="elementtag">&lt;fig&gt;</span></a> versus a  <a href="n-res0.html" target="main" title="Media Object"><span class="elementtag">&lt;media&gt;</span></a> is to ask, “If there were a “List of Figures” for this article, should this object appear in that list?”
-      </p></div><div class="contentmodel"><h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  media        <a href="n-3ea2.html" target="main" title="Media Model"><span class="petag">%media-model;</span></a>                                &gt;</pre></div><div class="contentmodel"><h2 class="header">Expanded Content Model</h2><p class="contentdesc">(alt-text | long-desc | abstract | email | ext-link | uri | caption | object-id | kwd-group | label | attrib | permissions)*</p></div><div class="modeldesc"><h2 class="header">Description</h2><p class="para">Any combination of:<ul class="bullist"><li>Accessibility Elements<ul class="bullist"><li><a href="n-4n20.html" target="main" title="Alternate Text Name (for a figure, etc.)"><span class="elementtag">&lt;alt-text&gt;</span></a> <a href="n-4n20.html" target="main" title="<alt-text&gt;"><span class="elementname">Alternate Text Name (for a figure, etc.)</span></a></li><li><a href="n-p4s0.html" target="main" title="Long Description"><span class="elementtag">&lt;long-desc&gt;</span></a> <a href="n-p4s0.html" target="main" title="<long-desc&gt;"><span class="elementname">Long Description</span></a></li></ul></li><li><a href="n-8m00.html" target="main" title="Abstract"><span class="elementtag">&lt;abstract&gt;</span></a> <a href="n-8m00.html" target="main" title="<abstract&gt;"><span class="elementname">Abstract</span></a></li><li>Linking Elements<ul class="bullist"><li><a href="n-gvw0.html" target="main" title="Email Address"><span class="elementtag">&lt;email&gt;</span></a> <a href="n-gvw0.html" target="main" title="<email&gt;"><span class="elementname">Email Address</span></a></li><li><a href="n-3fw0.html" target="main" title="External Link"><span class="elementtag">&lt;ext-link&gt;</span></a> <a href="n-3fw0.html" target="main" title="<ext-link&gt;"><span class="elementname">External Link</span></a></li><li><a href="n-6gi0.html" target="main" title="Uniform Resource Identifier (URI)"><span class="elementtag">&lt;uri&gt;</span></a> <a href="n-6gi0.html" target="main" title="<uri&gt;"><span class="elementname">Uniform Resource Identifier (URI)</span></a></li></ul></li><li><a href="n-t850.html" target="main" title="Caption of a Figure, Table, etc."><span class="elementtag">&lt;caption&gt;</span></a> <a href="n-t850.html" target="main" title="<caption&gt;"><span class="elementname">Caption of a Figure, Table, etc.</span></a></li><li><a href="n-gt70.html" target="main" title="Object Identifier"><span class="elementtag">&lt;object-id&gt;</span></a> <a href="n-gt70.html" target="main" title="<object-id&gt;"><span class="elementname">Object Identifier</span></a></li><li><a href="n-py40.html" target="main" title="Keyword Group"><span class="elementtag">&lt;kwd-group&gt;</span></a> <a href="n-py40.html" target="main" title="<kwd-group&gt;"><span class="elementname">Keyword Group</span></a></li><li><a href="n-rq40.html" target="main" title="Label (of an Equation, Figure, Reference, etc.)"><span class="elementtag">&lt;label&gt;</span></a> <a href="n-rq40.html" target="main" title="<label&gt;"><span class="elementname">Label (of an Equation, Figure, Reference, etc.)</span></a></li><li>Ownership Elements<ul class="bullist"><li><a href="n-3k30.html" target="main" title="Attribution"><span class="elementtag">&lt;attrib&gt;</span></a> <a href="n-3k30.html" target="main" title="<attrib&gt;"><span class="elementname">Attribution</span></a></li><li><a href="n-9ue0.html" target="main" title="Permissions"><span class="elementtag">&lt;permissions&gt;</span></a> <a href="n-9ue0.html" target="main" title="<permissions&gt;"><span class="elementname">Permissions</span></a></li></ul></li></ul></p></div><div class="elementcontext"><h3 class="header">This element may be contained in:</h3><p class="para"><a href="n-hj20.html" target="main" title="Alternatives For Processing"><span class="elementtag">&lt;alternatives&gt;</span></a>, <a href="n-dz20.html" target="main" title="Appendix"><span class="elementtag">&lt;app&gt;</span></a>, <a href="n-i5c0.html" target="main" title="Appendix Group"><span class="elementtag">&lt;app-group&gt;</span></a>, <a href="n-vxc0.html" target="main" title="Array (Simple Tabulation)"><span class="elementtag">&lt;array&gt;</span></a>, <a href="n-9e30.html" target="main" title="Biography"><span class="elementtag">&lt;bio&gt;</span></a>, <a href="n-hd30.html" target="main" title="Body of the Document"><span class="elementtag">&lt;body&gt;</span></a>, <a href="n-jm30.html" target="main" title="Boxed Text"><span class="elementtag">&lt;boxed-text&gt;</span></a>, <a href="n-vv50.html" target="main" title="Chemical Structure (Display)"><span class="elementtag">&lt;chem-struct&gt;</span></a>, <a href="n-cf50.html" target="main" title="Chemical Structure Wrapper"><span class="elementtag">&lt;chem-struct-wrap&gt;</span></a>, <a href="n-meu0.html" target="main" title="Formula, Display"><span class="elementtag">&lt;disp-formula&gt;</span></a>, <a href="n-wiu0.html" target="main" title="Quote, Displayed"><span class="elementtag">&lt;disp-quote&gt;</span></a>, <a href="n-mhw0.html" target="main" title="Figure"><span class="elementtag">&lt;fig&gt;</span></a>, <a href="n-s9w0.html" target="main" title="Figure Group"><span class="elementtag">&lt;fig-group&gt;</span></a>, <a href="n-95x0.html" target="main" title="Floating Element Group"><span class="elementtag">&lt;floats-group&gt;</span></a>, <a href="n-xzx0.html" target="main" title="Glossary Elements List"><span class="elementtag">&lt;glossary&gt;</span></a>, <a href="n-mks0.html" target="main" title="License Paragraph"><span class="elementtag">&lt;license-p&gt;</span></a>, <a href="n-6ht0.html" target="main" title="Named Special (Subject) Content"><span class="elementtag">&lt;named-content&gt;</span></a>, <a href="n-4u70.html" target="main" title="Notes"><span class="elementtag">&lt;notes&gt;</span></a>, <a href="n-mi70.html" target="main" title="Paragraph"><span class="elementtag">&lt;p&gt;</span></a>, <a href="n-pef0.html" target="main" title="Reference List (Bibliographic)"><span class="elementtag">&lt;ref-list&gt;</span></a>, <a href="n-gzg0.html" target="main" title="Section"><span class="elementtag">&lt;sec&gt;</span></a>, <a href="n-ien0.html" target="main" title="Signature"><span class="elementtag">&lt;sig&gt;</span></a>, <a href="n-k6n0.html" target="main" title="Signature Block"><span class="elementtag">&lt;sig-block&gt;</span></a>, <a href="n-9760.html" target="main" title="Styled Special (Subject) Content"><span class="elementtag">&lt;styled-content&gt;</span></a>, <a href="n-uhd0.html" target="main" title="Supplementary Material"><span class="elementtag">&lt;supplementary-material&gt;</span></a>, <a href="n-65r0.html" target="main" title="Table Wrapper"><span class="elementtag">&lt;table-wrap&gt;</span></a>, <a href="n-5gr0.html" target="main" title="Table Data Cell (NISO JATS table model)"><span class="elementtag">&lt;td&gt;</span></a>, <a href="n-zyr0.html" target="main" title="Definition List: Term"><span class="elementtag">&lt;term&gt;</span></a>, <a href="n-gxh0.html" target="main" title="Table Header Cell (NISO JATS table model)"><span class="elementtag">&lt;th&gt;</span></a></p></div><div class="examp.group"><h3 class="header">Example 1</h3><div class="taggedexamp"><pre class="taggedtext">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta name="generator" content="HTML Tidy for Linux/x86 (vers 25 March 2009), see www.w3.org" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008-->
+  <link rel="stylesheet" href="auto-css.css" type="text/css" />
+
+  <title>Element: Media Object</title>
+</head>
+
+<body class="main">
+  <div class="pageheader">
+    <h2 class="headname">Journal Publishing Tag Library NISO JATS Draft Version 1.1d1</h2>
+
+    <h4 class="sponsor">National Center for Biotechnology Information (NCBI)<br class="linebrk" />
+    National Library of Medicine (NLM)</h4>
+  </div>
+
+  <div class="header">
+    <h1 class="elementtag">&lt;media&gt;</h1>
+
+    <h1 class="elementname">Media Object</h1>
+  </div>
+
+  <div class="definition">
+    <p class="para">Description of and pointer to an external file that holds a media object (for
+    example, an animation, a movie).</p>
+  </div>
+
+  <div class="remarks">
+    <h2 class="header">Remarks</h2>
+
+    <p class="para">The “content” of the <a href="n-res0.html" target="main" title=
+    "Media Object"><span class="elementtag">&lt;media&gt;</span></a> element is not the media
+    object itself, but information concerning the object. The external file that contains the
+    object is named by the <a href="n-5vm0.html" target="main" title=
+    "Href (Linking Mechanism)"><span class="attrtag">@xlink:href</span></a> attribute.</p>
+
+    <p class="para"><strong>Position:</strong> The <a href="n-82b0.html" target="main" title=
+    "Position"><span class="attrtag">@position</span></a> attribute <em>may</em> be used to
+    indicate whether this element must be anchored at its exact location within the text or whether
+    it may float, but best practice is to anchor graphics and media objects. The few media objects
+    that float loose in text should be anchored there, and all the media objects inside figures,
+    tables, etc., should be anchored as well, although the outer structure (figure, boxed text) may
+    be allowed to float.</p>
+
+    <p class="para"><strong>Usage:</strong> Display component elements, such as <a href=
+    "n-t850.html" target="main" title="Caption of a Figure, Table, etc."><span class=
+    "elementtag">&lt;caption&gt;</span></a>, should always be used at the highest possible level;
+    in other words, if a <a href="n-res0.html" target="main" title="Media Object"><span class=
+    "elementtag">&lt;media&gt;</span></a> element is inside a <a href="n-mhw0.html" target="main"
+    title="Figure"><span class="elementtag">&lt;fig&gt;</span></a>, the <a href="n-t850.html"
+    target="main" title="Caption of a Figure, Table, etc."><span class=
+    "elementtag">&lt;caption&gt;</span></a>, <a href="n-p4s0.html" target="main" title=
+    "Long Description"><span class="elementtag">&lt;long-desc&gt;</span></a>, etc., should be part
+    of the <a href="n-mhw0.html" target="main" title="Figure"><span class=
+    "elementtag">&lt;fig&gt;</span></a>, not part of the <a href="n-res0.html" target="main" title=
+    "Media Object"><span class="elementtag">&lt;media&gt;</span></a>. Use a <a href="n-t850.html"
+    target="main" title="Caption of a Figure, Table, etc."><span class=
+    "elementtag">&lt;caption&gt;</span></a> element on a <a href="n-res0.html" target="main" title=
+    "Media Object"><span class="elementtag">&lt;media&gt;</span></a> only when the media object is
+    not enclosed in any other structure or when a figure contains multiple media objects, each of
+    which must have its own <a href="n-t850.html" target="main" title=
+    "Caption of a Figure, Table, etc."><span class="elementtag">&lt;caption&gt;</span></a>. For
+    similar reasons, the <a href="n-82b0.html" target="main" title="Position"><span class=
+    "attrtag">@position</span></a> attribute should be set to “anchor” for a <a href="n-res0.html"
+    target="main" title="Media Object"><span class="elementtag">&lt;media&gt;</span></a> element
+    that is inside a larger display container such as a <a href="n-mhw0.html" target="main" title=
+    "Figure"><span class="elementtag">&lt;fig&gt;</span></a>.</p>
+  </div>
+
+  <div class="attrlist">
+    <h2 class="header">Attributes</h2>
+
+    <h5 class="header"><a href="n-kxj0.html" target="main"><span class=
+    "attrtag">content-type</span></a> <a href="n-kxj0.html" target="main"><span class=
+    "attrname">Type of Content</span></a></h5>
+
+    <h5 class="header"><a href="n-fdp0.html" target="main"><span class="attrtag">id</span></a>
+    <a href="n-fdp0.html" target="main"><span class="attrname">Document Internal
+    Identifier</span></a></h5>
+
+    <h5 class="header"><a href="n-aeq0.html" target="main"><span class=
+    "attrtag">mime-subtype</span></a> <a href="n-aeq0.html" target="main"><span class=
+    "attrname">Mime Subtype</span></a></h5>
+
+    <h5 class="header"><a href="n-8fq0.html" target="main"><span class=
+    "attrtag">mimetype</span></a> <a href="n-8fq0.html" target="main"><span class="attrname">Mime
+    Type</span></a></h5>
+
+    <h5 class="header"><a href="n-wpq0.html" target="main"><span class=
+    "attrtag">orientation</span></a> <a href="n-wpq0.html" target="main"><span class=
+    "attrname">Orientation</span></a></h5>
+
+    <h5 class="header"><a href="n-82b0.html" target="main"><span class=
+    "attrtag">position</span></a> <a href="n-82b0.html" target="main"><span class=
+    "attrname">Position</span></a></h5>
+
+    <h5 class="header"><a href="n-t790.html" target="main"><span class=
+    "attrtag">specific-use</span></a> <a href="n-t790.html" target="main"><span class=
+    "attrname">Specific Use</span></a></h5>
+
+    <h5 class="header"><a href="n-8wm0.html" target="main"><span class=
+    "attrtag">xlink:actuate</span></a> <a href="n-8wm0.html" target="main"><span class=
+    "attrname">Actuating the Link</span></a></h5>
+
+    <h5 class="header"><a href="n-5vm0.html" target="main"><span class=
+    "attrtag">xlink:href</span></a> <a href="n-5vm0.html" target="main"><span class="attrname">Href
+    (Linking Mechanism)</span></a></h5>
+
+    <h5 class="header"><a href="n-asm0.html" target="main"><span class=
+    "attrtag">xlink:role</span></a> <a href="n-asm0.html" target="main"><span class="attrname">Role
+    of the Link</span></a></h5>
+
+    <h5 class="header"><a href="n-itm0.html" target="main"><span class=
+    "attrtag">xlink:show</span></a> <a href="n-itm0.html" target="main"><span class=
+    "attrname">Showing the Link</span></a></h5>
+
+    <h5 class="header"><a href="n-qem0.html" target="main"><span class=
+    "attrtag">xlink:title</span></a> <a href="n-qem0.html" target="main"><span class=
+    "attrname">Title of the Link</span></a></h5>
+
+    <h5 class="header"><a href="n-egm0.html" target="main"><span class=
+    "attrtag">xlink:type</span></a> <a href="n-egm0.html" target="main"><span class="attrname">Type
+    of Link</span></a></h5>
+
+    <h5 class="header"><a href="n-bdm0.html" target="main"><span class=
+    "attrtag">xmlns:xlink</span></a> <a href="n-bdm0.html" target="main"><span class=
+    "attrname">XLink Namespace Declaration</span></a></h5>
+
+    <h5 class="header"><a href="n-jim0.html" target="main"><span class=
+    "attrtag">xml:base</span></a> <a href="n-jim0.html" target="main"><span class=
+    "attrname">Base</span></a></h5>
+
+    <h5 class="header"><a href="n-tkz0.html" target="main"><span class=
+    "attrtag">xml:lang</span></a> <a href="n-tkz0.html" target="main"><span class=
+    "attrname">Language</span></a></h5>
+  </div>
+
+  <div class="relatedelem">
+    <h2 class="header">Related Elements</h2>
+
+    <p class="para">This Suite contains several elements that describe and point to non-XML
+    material: <a href="n-3xv0.html" target="main" title="Graphic"><span class=
+    "elementtag">&lt;graphic&gt;</span></a>, <a href="n-5dv0.html" target="main" title=
+    "Graphic, Inline"><span class="elementtag">&lt;inline-graphic&gt;</span></a>, <a href=
+    "n-res0.html" target="main" title="Media Object"><span class=
+    "elementtag">&lt;media&gt;</span></a>, <a href="n-uhd0.html" target="main" title=
+    "Supplementary Material"><span class="elementtag">&lt;supplementary-material&gt;</span></a>,
+    and <a href="n-ahv0.html" target="main" title="Inline Supplementary Material"><span class=
+    "elementtag">&lt;inline-supplementary-material&gt;</span></a>. The elements <a href=
+    "n-3xv0.html" target="main" title="Graphic"><span class="elementtag">&lt;graphic&gt;</span></a>
+    and <a href="n-5dv0.html" target="main" title="Graphic, Inline"><span class=
+    "elementtag">&lt;inline-graphic&gt;</span></a> contain a pointer to a still image (such as a
+    photograph, diagram, line drawing, etc.) that is part of the document. The element <a href=
+    "n-res0.html" target="main" title="Media Object"><span class=
+    "elementtag">&lt;media&gt;</span></a> contains a pointer to a non-XML, frequently binary,
+    object (such as a movie, audio clip, dataset, or other non-XML format) that is integral to the
+    document’s content, where &#160;“integral” means that the media object is discussed within (and
+    possibly displayed within) the document; the media object is part of the document.</p>
+
+    <p class="para">In contrast, the elements <a href="n-uhd0.html" target="main" title=
+    "Supplementary Material"><span class="elementtag">&lt;supplementary-material&gt;</span></a> and
+    <a href="n-ahv0.html" target="main" title="Inline Supplementary Material"><span class=
+    "elementtag">&lt;inline-supplementary-material&gt;</span></a> are used to <em>describe</em>
+    either XML material (such as figures, tables, and sections) or non-XML material (such as
+    graphics, films, audio clips, datasets, or other material) that are considered to be
+    “additional material” (non-integral) accompanying a document. Like <a href="n-3xv0.html"
+    target="main" title="Graphic"><span class="elementtag">&lt;graphic&gt;</span></a>, <a href=
+    "n-5dv0.html" target="main" title="Graphic, Inline"><span class=
+    "elementtag">&lt;inline-graphic&gt;</span></a>, and <a href="n-res0.html" target="main" title=
+    "Media Object"><span class="elementtag">&lt;media&gt;</span></a>, the supplementary material
+    elements never contain the object they describe, even if it is an XML object such as a figure,
+    although they may point to it.</p>
+
+    <p class="para">The element <a href="n-ahv0.html" target="main" title=
+    "Inline Supplementary Material"><span class=
+    "elementtag">&lt;inline-supplementary-material&gt;</span></a> is used to mark up references to
+    additional material, where the reference appears within the regular flow of the text and does
+    not have a preview image or separate caption. The <a href="n-uhd0.html" target="main" title=
+    "Supplementary Material"><span class="elementtag">&lt;supplementary-material&gt;</span></a>
+    element is used to describe a more complicated reference, where the description of the
+    supplementary object resembles a figure in that it can be positioned as a floating or anchored
+    object and may take a caption.</p>
+
+    <p class="para"><strong>Best Practice:</strong> Unlabeled media objects should be tagged as
+    <a href="n-res0.html" target="main" title="Media Object"><span class=
+    "elementtag">&lt;media&gt;</span></a>s, not as <a href="n-mhw0.html" target="main" title=
+    "Figure"><span class="elementtag">&lt;fig&gt;</span></a>s. A common test to determine whether
+    an object is a <a href="n-mhw0.html" target="main" title="Figure"><span class=
+    "elementtag">&lt;fig&gt;</span></a> versus a <a href="n-res0.html" target="main" title=
+    "Media Object"><span class="elementtag">&lt;media&gt;</span></a> is to ask, “If there were a
+    “List of Figures” for this article, should this object appear in that list?”</p>
+  </div>
+
+  <div class="contentmodel">
+    <h2 class="header first">Content Model</h2>
+    <pre class="contentdesc">
+&lt;!ELEMENT  media        <a href="n-3ea2.html" target="main" title="Media Model"><span class=
+"petag">%media-model;</span></a>                                &gt;
+</pre>
+  </div>
+
+  <div class="contentmodel">
+    <h2 class="header">Expanded Content Model</h2>
+
+    <p class="contentdesc">(alt-text | long-desc | abstract | email | ext-link | uri | caption |
+    object-id | kwd-group | label | attrib | permissions)*</p>
+  </div>
+
+  <div class="modeldesc">
+    <h2 class="header">Description</h2>
+
+    <p class="para">Any combination of:</p>
+
+    <ul class="bullist">
+      <li>Accessibility Elements
+
+        <ul class="bullist">
+          <li><a href="n-4n20.html" target="main" title=
+          "Alternate Text Name (for a figure, etc.)"><span class=
+          "elementtag">&lt;alt-text&gt;</span></a> <a href="n-4n20.html" target="main" title=
+          "&lt;alt-text&gt;"><span class="elementname">Alternate Text Name (for a figure,
+          etc.)</span></a></li>
+
+          <li><a href="n-p4s0.html" target="main" title="Long Description"><span class=
+          "elementtag">&lt;long-desc&gt;</span></a> <a href="n-p4s0.html" target="main" title=
+          "&lt;long-desc&gt;"><span class="elementname">Long Description</span></a></li>
+        </ul>
+      </li>
+
+      <li><a href="n-8m00.html" target="main" title="Abstract"><span class=
+      "elementtag">&lt;abstract&gt;</span></a> <a href="n-8m00.html" target="main" title=
+      "&lt;abstract&gt;"><span class="elementname">Abstract</span></a></li>
+
+      <li>Linking Elements
+
+        <ul class="bullist">
+          <li><a href="n-gvw0.html" target="main" title="Email Address"><span class=
+          "elementtag">&lt;email&gt;</span></a> <a href="n-gvw0.html" target="main" title=
+          "&lt;email&gt;"><span class="elementname">Email Address</span></a></li>
+
+          <li><a href="n-3fw0.html" target="main" title="External Link"><span class=
+          "elementtag">&lt;ext-link&gt;</span></a> <a href="n-3fw0.html" target="main" title=
+          "&lt;ext-link&gt;"><span class="elementname">External Link</span></a></li>
+
+          <li><a href="n-6gi0.html" target="main" title=
+          "Uniform Resource Identifier (URI)"><span class="elementtag">&lt;uri&gt;</span></a>
+          <a href="n-6gi0.html" target="main" title="&lt;uri&gt;"><span class="elementname">Uniform
+          Resource Identifier (URI)</span></a></li>
+        </ul>
+      </li>
+
+      <li><a href="n-t850.html" target="main" title="Caption of a Figure, Table, etc."><span class=
+      "elementtag">&lt;caption&gt;</span></a> <a href="n-t850.html" target="main" title=
+      "&lt;caption&gt;"><span class="elementname">Caption of a Figure, Table, etc.</span></a></li>
+
+      <li><a href="n-gt70.html" target="main" title="Object Identifier"><span class=
+      "elementtag">&lt;object-id&gt;</span></a> <a href="n-gt70.html" target="main" title=
+      "&lt;object-id&gt;"><span class="elementname">Object Identifier</span></a></li>
+
+      <li><a href="n-py40.html" target="main" title="Keyword Group"><span class=
+      "elementtag">&lt;kwd-group&gt;</span></a> <a href="n-py40.html" target="main" title=
+      "&lt;kwd-group&gt;"><span class="elementname">Keyword Group</span></a></li>
+
+      <li><a href="n-rq40.html" target="main" title=
+      "Label (of an Equation, Figure, Reference, etc.)"><span class=
+      "elementtag">&lt;label&gt;</span></a> <a href="n-rq40.html" target="main" title=
+      "&lt;label&gt;"><span class="elementname">Label (of an Equation, Figure, Reference,
+      etc.)</span></a></li>
+
+      <li>Ownership Elements
+
+        <ul class="bullist">
+          <li><a href="n-3k30.html" target="main" title="Attribution"><span class=
+          "elementtag">&lt;attrib&gt;</span></a> <a href="n-3k30.html" target="main" title=
+          "&lt;attrib&gt;"><span class="elementname">Attribution</span></a></li>
+
+          <li><a href="n-9ue0.html" target="main" title="Permissions"><span class=
+          "elementtag">&lt;permissions&gt;</span></a> <a href="n-9ue0.html" target="main" title=
+          "&lt;permissions&gt;"><span class="elementname">Permissions</span></a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <div class="elementcontext">
+    <h3 class="header">This element may be contained in:</h3>
+
+    <p class="para"><a href="n-hj20.html" target="main" title=
+    "Alternatives For Processing"><span class="elementtag">&lt;alternatives&gt;</span></a>,
+    <a href="n-dz20.html" target="main" title="Appendix"><span class=
+    "elementtag">&lt;app&gt;</span></a>, <a href="n-i5c0.html" target="main" title=
+    "Appendix Group"><span class="elementtag">&lt;app-group&gt;</span></a>, <a href="n-vxc0.html"
+    target="main" title="Array (Simple Tabulation)"><span class=
+    "elementtag">&lt;array&gt;</span></a>, <a href="n-9e30.html" target="main" title=
+    "Biography"><span class="elementtag">&lt;bio&gt;</span></a>, <a href="n-hd30.html" target=
+    "main" title="Body of the Document"><span class="elementtag">&lt;body&gt;</span></a>, <a href=
+    "n-jm30.html" target="main" title="Boxed Text"><span class=
+    "elementtag">&lt;boxed-text&gt;</span></a>, <a href="n-vv50.html" target="main" title=
+    "Chemical Structure (Display)"><span class="elementtag">&lt;chem-struct&gt;</span></a>,
+    <a href="n-cf50.html" target="main" title="Chemical Structure Wrapper"><span class=
+    "elementtag">&lt;chem-struct-wrap&gt;</span></a>, <a href="n-meu0.html" target="main" title=
+    "Formula, Display"><span class="elementtag">&lt;disp-formula&gt;</span></a>, <a href=
+    "n-wiu0.html" target="main" title="Quote, Displayed"><span class=
+    "elementtag">&lt;disp-quote&gt;</span></a>, <a href="n-mhw0.html" target="main" title=
+    "Figure"><span class="elementtag">&lt;fig&gt;</span></a>, <a href="n-s9w0.html" target="main"
+    title="Figure Group"><span class="elementtag">&lt;fig-group&gt;</span></a>, <a href=
+    "n-95x0.html" target="main" title="Floating Element Group"><span class=
+    "elementtag">&lt;floats-group&gt;</span></a>, <a href="n-xzx0.html" target="main" title=
+    "Glossary Elements List"><span class="elementtag">&lt;glossary&gt;</span></a>, <a href=
+    "n-mks0.html" target="main" title="License Paragraph"><span class=
+    "elementtag">&lt;license-p&gt;</span></a>, <a href="n-6ht0.html" target="main" title=
+    "Named Special (Subject) Content"><span class="elementtag">&lt;named-content&gt;</span></a>,
+    <a href="n-4u70.html" target="main" title="Notes"><span class=
+    "elementtag">&lt;notes&gt;</span></a>, <a href="n-mi70.html" target="main" title=
+    "Paragraph"><span class="elementtag">&lt;p&gt;</span></a>, <a href="n-pef0.html" target="main"
+    title="Reference List (Bibliographic)"><span class="elementtag">&lt;ref-list&gt;</span></a>,
+    <a href="n-gzg0.html" target="main" title="Section"><span class=
+    "elementtag">&lt;sec&gt;</span></a>, <a href="n-ien0.html" target="main" title=
+    "Signature"><span class="elementtag">&lt;sig&gt;</span></a>, <a href="n-k6n0.html" target=
+    "main" title="Signature Block"><span class="elementtag">&lt;sig-block&gt;</span></a>, <a href=
+    "n-9760.html" target="main" title="Styled Special (Subject) Content"><span class=
+    "elementtag">&lt;styled-content&gt;</span></a>, <a href="n-uhd0.html" target="main" title=
+    "Supplementary Material"><span class="elementtag">&lt;supplementary-material&gt;</span></a>,
+    <a href="n-65r0.html" target="main" title="Table Wrapper"><span class=
+    "elementtag">&lt;table-wrap&gt;</span></a>, <a href="n-5gr0.html" target="main" title=
+    "Table Data Cell (NISO JATS table model)"><span class="elementtag">&lt;td&gt;</span></a>,
+    <a href="n-zyr0.html" target="main" title="Definition List: Term"><span class=
+    "elementtag">&lt;term&gt;</span></a>, <a href="n-gxh0.html" target="main" title=
+    "Table Header Cell (NISO JATS table model)"><span class="elementtag">&lt;th&gt;</span></a></p>
+  </div>
+
+  <div class="examp.group">
+    <h3 class="header">Example 1</h3>
+
+    <div class="taggedexamp">
+      <pre class="taggedtext">
 
 ...
-<strong><span class="focus">&lt;media id="v1" mime-subtype="avi" mimetype="video" orientation="portrait" 
+<strong><span class=
+"focus">&lt;media id="v1" mime-subtype="avi" mimetype="video" orientation="portrait" 
 position="anchor" specific-use="original-format" xlink:href="v1"&gt;
 &lt;object-id pub-id-type="doi" specific-use="metadata"&gt;10.1063/1.4807071.1&lt;/object-id&gt;
 &lt;/media&gt;</span></strong>
 ...
 
-</pre></div></div><div class="examp.group"><h3 class="header">Example 2</h3><p class="para">Alternative media objects:</p><div class="taggedexamp"><pre class="taggedtext">
+</pre>
+    </div>
+  </div>
+
+  <div class="examp.group">
+    <h3 class="header">Example 2</h3>
+
+    <p class="para">Alternative media objects:</p>
+
+    <div class="taggedexamp">
+      <pre class="taggedtext">
 
 ...
 &lt;fig id="f1" orientation="portrait" position="float"&gt;
@@ -26,7 +371,8 @@ in HFM, and (d) schematic of the trapping location regulation (enhanced online).
 [URL: &lt;ext-link ext-link-type="uri" xlink:href="http://dx.doi.org/10.1063/1.4762852.1"&gt;
 http://dx.doi.org/10.1063/1.4762852.1&lt;/ext-link&gt;]
 &lt;alternatives&gt;
-<strong><span class="focus">&lt;media id="v1" mime-subtype="avi" mimetype="video" orientation="portrait"
+<strong><span class=
+"focus">&lt;media id="v1" mime-subtype="avi" mimetype="video" orientation="portrait"
 position="anchor" specific-use="original-format" xlink:href="v1"&gt;
 &lt;object-id pub-id-type="doi" specific-use="metadata"&gt;10.1063/1.4762852.1&lt;/object-id&gt;
 &lt;/media&gt;</span></strong>
@@ -45,4 +391,20 @@ position="anchor" specific-use="online-format" xlink:href="v1"&gt;&lt;/media&gt;
 &lt;/fig&gt;
 ...
 
-</pre></div></div><div class="moduledefined"><h2 class="header">Module</h2><p class="moduledefined">JATS-display1.ent</p></div><div class="pagefooter"><h2 class="headname">Journal Publishing Tag Library  NISO JATS Draft Version 1.1d1</h2><h4 class="pubdate">Version of December 2013</h4></div></body></html>
+</pre>
+    </div>
+  </div>
+
+  <div class="moduledefined">
+    <h2 class="header">Module</h2>
+
+    <p class="moduledefined">JATS-display1.ent</p>
+  </div>
+
+  <div class="pagefooter">
+    <h2 class="headname">Journal Publishing Tag Library NISO JATS Draft Version 1.1d1</h2>
+
+    <h4 class="pubdate">Version of December 2013</h4>
+  </div>
+</body>
+</html>

@@ -1,5 +1,98 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008--><link rel="stylesheet" href="auto-css.css" type="text/css"><title>Element: Citation Alternatives</title></head><body class="main"><div class="pageheader"><h2 class="headname">Journal Publishing Tag Library  NISO JATS Draft Version 1.1d1</h2><h4 class="sponsor">National Center for Biotechnology Information (NCBI)<br class="linebrk"> National Library of
-   Medicine (NLM)</h4></div><div class="header"><h1 class="elementtag">&lt;citation-alternatives&gt;</h1><h1 class="elementname">Citation Alternatives</h1></div><div class="definition"><p class="para">Holds alternative versions of a single citation, for example, the same citation in multiple languages or a single citation tagged as both a <a href="n-pqs0.html" target="main" title="Mixed Citation"><span class="elementtag">&lt;mixed-citation&gt;</span></a> complete with punctuation and spacing preserved and as an <a href="n-zbu0.html" target="main" title="Element Citation"><span class="elementtag">&lt;element-citation&gt;</span></a> with punctuation and spacing removed.</p></div><div class="attrlist"><h2 class="header">Attributes</h2><h5 class="header"><a href="n-fdp0.html" target="main"><span class="attrtag">id</span></a> <a href="n-fdp0.html" target="main"><span class="attrname">Document Internal Identifier</span></a></h5><h5 class="header"><a href="n-jim0.html" target="main"><span class="attrtag">xml:base</span></a> <a href="n-jim0.html" target="main"><span class="attrname">Base</span></a></h5></div><div class="contentmodel"><h2 class="header first">Expanded Content Model</h2><p class="contentdesc">(element-citation | mixed-citation | nlm-citation)+</p></div><div class="modeldesc"><h2 class="header">Description</h2><p class="para">One or more of any of:<ul class="bullist"><li><a href="n-zbu0.html" target="main" title="Element Citation"><span class="elementtag">&lt;element-citation&gt;</span></a> <a href="n-zbu0.html" target="main" title="<element-citation&gt;"><span class="elementname">Element Citation</span></a></li><li><a href="n-pqs0.html" target="main" title="Mixed Citation"><span class="elementtag">&lt;mixed-citation&gt;</span></a> <a href="n-pqs0.html" target="main" title="<mixed-citation&gt;"><span class="elementname">Mixed Citation</span></a></li><li><a href="n-h270.html" target="main" title="NLM Citation"><span class="elementtag">&lt;nlm-citation&gt;</span></a> <a href="n-h270.html" target="main" title="<nlm-citation&gt;"><span class="elementname">NLM Citation</span></a></li></ul></p></div><div class="elementcontext"><h3 class="header">This element may be contained in:</h3><p class="para"><a href="n-mks0.html" target="main" title="License Paragraph"><span class="elementtag">&lt;license-p&gt;</span></a>, <a href="n-mi70.html" target="main" title="Paragraph"><span class="elementtag">&lt;p&gt;</span></a>, <a href="n-hsf0.html" target="main" title="Reference Item"><span class="elementtag">&lt;ref&gt;</span></a>, <a href="n-5gr0.html" target="main" title="Table Data Cell (NISO JATS table model)"><span class="elementtag">&lt;td&gt;</span></a>, <a href="n-gxh0.html" target="main" title="Table Header Cell (NISO JATS table model)"><span class="elementtag">&lt;th&gt;</span></a>, <a href="n-8nh0.html" target="main" title="Title"><span class="elementtag">&lt;title&gt;</span></a></p></div><div class="examp.group"><h3 class="header">Example 1</h3><p class="para">A single citation in two languages/scripts:</p><div class="taggedexamp"><pre class="taggedtext">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta name="generator" content="HTML Tidy for Linux/x86 (vers 25 March 2009), see www.w3.org" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008-->
+  <link rel="stylesheet" href="auto-css.css" type="text/css" />
+
+  <title>Element: Citation Alternatives</title>
+</head>
+
+<body class="main">
+  <div class="pageheader">
+    <h2 class="headname">Journal Publishing Tag Library NISO JATS Draft Version 1.1d1</h2>
+
+    <h4 class="sponsor">National Center for Biotechnology Information (NCBI)<br class="linebrk" />
+    National Library of Medicine (NLM)</h4>
+  </div>
+
+  <div class="header">
+    <h1 class="elementtag">&lt;citation-alternatives&gt;</h1>
+
+    <h1 class="elementname">Citation Alternatives</h1>
+  </div>
+
+  <div class="definition">
+    <p class="para">Holds alternative versions of a single citation, for example, the same citation
+    in multiple languages or a single citation tagged as both a <a href="n-pqs0.html" target="main"
+    title="Mixed Citation"><span class="elementtag">&lt;mixed-citation&gt;</span></a> complete with
+    punctuation and spacing preserved and as an <a href="n-zbu0.html" target="main" title=
+    "Element Citation"><span class="elementtag">&lt;element-citation&gt;</span></a> with
+    punctuation and spacing removed.</p>
+  </div>
+
+  <div class="attrlist">
+    <h2 class="header">Attributes</h2>
+
+    <h5 class="header"><a href="n-fdp0.html" target="main"><span class="attrtag">id</span></a>
+    <a href="n-fdp0.html" target="main"><span class="attrname">Document Internal
+    Identifier</span></a></h5>
+
+    <h5 class="header"><a href="n-jim0.html" target="main"><span class=
+    "attrtag">xml:base</span></a> <a href="n-jim0.html" target="main"><span class=
+    "attrname">Base</span></a></h5>
+  </div>
+
+  <div class="contentmodel">
+    <h2 class="header first">Expanded Content Model</h2>
+
+    <p class="contentdesc">(element-citation | mixed-citation | nlm-citation)+</p>
+  </div>
+
+  <div class="modeldesc">
+    <h2 class="header">Description</h2>
+
+    <p class="para">One or more of any of:</p>
+
+    <ul class="bullist">
+      <li><a href="n-zbu0.html" target="main" title="Element Citation"><span class=
+      "elementtag">&lt;element-citation&gt;</span></a> <a href="n-zbu0.html" target="main" title=
+      "&lt;element-citation&gt;"><span class="elementname">Element Citation</span></a></li>
+
+      <li><a href="n-pqs0.html" target="main" title="Mixed Citation"><span class=
+      "elementtag">&lt;mixed-citation&gt;</span></a> <a href="n-pqs0.html" target="main" title=
+      "&lt;mixed-citation&gt;"><span class="elementname">Mixed Citation</span></a></li>
+
+      <li><a href="n-h270.html" target="main" title="NLM Citation"><span class=
+      "elementtag">&lt;nlm-citation&gt;</span></a> <a href="n-h270.html" target="main" title=
+      "&lt;nlm-citation&gt;"><span class="elementname">NLM Citation</span></a></li>
+    </ul>
+  </div>
+
+  <div class="elementcontext">
+    <h3 class="header">This element may be contained in:</h3>
+
+    <p class="para"><a href="n-mks0.html" target="main" title="License Paragraph"><span class=
+    "elementtag">&lt;license-p&gt;</span></a>, <a href="n-mi70.html" target="main" title=
+    "Paragraph"><span class="elementtag">&lt;p&gt;</span></a>, <a href="n-hsf0.html" target="main"
+    title="Reference Item"><span class="elementtag">&lt;ref&gt;</span></a>, <a href="n-5gr0.html"
+    target="main" title="Table Data Cell (NISO JATS table model)"><span class=
+    "elementtag">&lt;td&gt;</span></a>, <a href="n-gxh0.html" target="main" title=
+    "Table Header Cell (NISO JATS table model)"><span class="elementtag">&lt;th&gt;</span></a>,
+    <a href="n-8nh0.html" target="main" title="Title"><span class=
+    "elementtag">&lt;title&gt;</span></a></p>
+  </div>
+
+  <div class="examp.group">
+    <h3 class="header">Example 1</h3>
+
+    <p class="para">A single citation in two languages/scripts:</p>
+
+    <div class="taggedexamp">
+      <pre class="taggedtext">
 
 ...
 &lt;ref id="B30"&gt;
@@ -29,8 +122,18 @@ Hyoronsha&lt;/publisher-name&gt;  (in Japanese)&lt;/mixed-citation&gt;
 ...
 
 
-</pre></div></div><div class="examp.group"><h3 class="header">Example 2</h3><p class="para">A single citation tagged as both an element citation
-and as a mixed citation:</p><div class="taggedexamp"><pre class="taggedtext">
+</pre>
+    </div>
+  </div>
+
+  <div class="examp.group">
+    <h3 class="header">Example 2</h3>
+
+    <p class="para">A single citation tagged as both an element citation and as a mixed
+    citation:</p>
+
+    <div class="taggedexamp">
+      <pre class="taggedtext">
 
 ...
 &lt;ref id="B8"&gt;&lt;label&gt;8&lt;/label&gt;
@@ -80,4 +183,20 @@ experiment&lt;/article-title&gt;. &lt;source&gt;Medical Care&lt;/source&gt;
 ...
 
 
-</pre></div></div><div class="moduledefined"><h2 class="header">Module</h2><p class="moduledefined">JATS-common1.ent</p></div><div class="pagefooter"><h2 class="headname">Journal Publishing Tag Library  NISO JATS Draft Version 1.1d1</h2><h4 class="pubdate">Version of December 2013</h4></div></body></html>
+</pre>
+    </div>
+  </div>
+
+  <div class="moduledefined">
+    <h2 class="header">Module</h2>
+
+    <p class="moduledefined">JATS-common1.ent</p>
+  </div>
+
+  <div class="pagefooter">
+    <h2 class="headname">Journal Publishing Tag Library NISO JATS Draft Version 1.1d1</h2>
+
+    <h4 class="pubdate">Version of December 2013</h4>
+  </div>
+</body>
+</html>

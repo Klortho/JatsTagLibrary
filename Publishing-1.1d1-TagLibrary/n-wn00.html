@@ -1,24 +1,404 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008--><link rel="stylesheet" href="auto-css.css" type="text/css"><title>Selecting a JATS Model and Expression Language</title></head><body class="main"><div class="pageheader"><h2 class="headname">Journal Publishing Tag Library  NISO JATS Draft Version 1.1d1</h2><h4 class="sponsor">National Center for Biotechnology Information (NCBI)<br class="linebrk"> National Library of
-   Medicine (NLM)</h4></div><h1 class="sectiontitle">Selecting a JATS Model and Expression Language</h1><p class="para">After deciding to use JATS, a project or organization is faced with many decisions:
-<ul class="bullist"><li>Which Tag Set?</li><li>Which options within that Tag Set?</li><li>What expression language or version of the model to use</li></ul>
-In this essay we describe these choices and help make those decisions.</p><div class="section"><a name=""></a><h3 class="header">Which Tag Set</h3><p class="para">There are three JATS Tag Sets:
-<ul class="bullist"><li>Journal Archiving and Interchange is the most permissive of the Tag Sets. The Archiving and Interchange Tag Set defines elements and attributes that describe the content and metadata of journal articles, including research and non-research articles, letters, editorials, and book and product reviews. The Tag Set allows for descriptions of the full article content or just the article header metadata. It also allows for preservation of the sequence of content and generated text. Read more about the intent of this Tag Set at: <a href="http://jats.nlm.nih.gov/archiving/" target="_new" class="external">http://jats.nlm.nih.gov/archiving/</a></li><li>The Journal Publishing Tag Set is a moderately prescriptive set, optimized for the archives who wish to regularize and control their content, not to accept the sequence and arrangement presented to them by any particular publisher. Publishing is also intended for use by publishers for the initial XML tagging of journal material, usually as converted from an authoring form like Microsoft Word. Read more about the intent of this Tag Set at: <a href="http://jats.nlm.nih.gov/publishing/" target="_new" class="external">http://jats.nlm.nih.gov/publishing/</a></li><li>Article Authoring is the most prescriptive of the Tag Sets. The Article Authoring Tag Set is optimized for authorship of new journal articles, where regularization and control of content is important, and where it is useful rather than harmful to have only one way to tag a structure. This Tag Set is more prescriptive than descriptive and includes many elements whose content must occur in a specified order. Read more about the intent of this Tag Set at: <a href="http://jats.nlm.nih.gov/articleauthoring/" target="_new" class="external">http://jats.nlm.nih.gov/articleauthoring/</a></li></ul>
-In consultation with the partners with which you want to interchange JATS documents, you should select the model that best meets your needs.</p></div><div class="section"><a name=""></a><h3 class="header">Options?</h3><p class="para">Each Tag Set presents options for table modeling and math.</p><p class="para">Tables: Each Tag Set is available with either: 
-<ul class="bullist"><li>a table model based on the XHTML table model, or</li><li>both the XHTML and OASIS/CALS table models.</li></ul>
-</p><p class="para">Many JATS users prefer the XHTML-based table model because it is easy to use in web-based and other electronic publications. Some users prefer the OASIS/CALS table model because they have tools that require this model or because they believe that it is easier to format complex print tables using it.</p><p class="para">Each Tag Set is available with either:
-<ul class="bullist"><li>MathML version 2.0, or</li><li>MathML version 3.0.</li></ul>
-If you do not have MathML, we recommend starting with version 3.0.</p><p class="para">We provide versions of the tag sets with MathML 2.0 for backwards compatibility. Some users of
-MathML version 2 find that their MathML 2.0 is also valid MathML 3.0, and they can more effortlessly
-into MathML 3. However, MathML 3.0 enforces rules that were not enforced in the version of the MathML
-2.0 DTD used in JATS. The rules were in the textual documentation for MathML 2.0 and in some
-versions of the MathML 2.0 DTD, but some users may find that their existing documents are not
-forwards-compatible with MathML 3.0.</p><p class="para"><strong>Note:</strong> MathML 2.0 that is not valid against MathML 3.0 may render incorrectly on display.</p><p class="para"><strong>Note:</strong> It is likely that JATS will move to MathML 3.0, and
-stop supporting MathML 2.0 in a future version.</p></div><div class="section"><a name=""></a><h3 class="header">Expression Language (Constraint Language)</h3><p class="para">XML Tag Sets may be expressed as schema languages (also called “Constraint Languages”). These schemas are used by XML software to enforce the rules of the language and to guide authoring applications. The formal rules of JATS are expressed in the prose of ANSI/NISO Z39.96-2012. In addition, for the convenience of users, schemas for several options of each of the Tag Sets are provided by the NLM.
-<ul class="bullist"><li>DTD, or Document Type Definitions, are the oldest of XML modeling languages. DTDs are used in many environments that work primarily with textual documents. DTDs are defined in the XML Specification.</li><li>XSD, or W3C XML Schema, is a modeling language specified by the W3C. Among the strengths of XSD are strong datatyping, context-based models, and the fact that XSD documents are in XML document syntax.</li><li>RNG, or Relax NG Schema, is a modeling language for XML documents that enables strong datatyping, a wide variety of modeling types, and both a compact and an XML document syntax.</li></ul>
-Users usually use the modeling language that best suits the tools they are using. It is not unusual for an organization to use one version of the modeling language in authoring and/or receipt of documents from partners and another in their database environment.</p></div><div class="section"><a name=""></a><h3 class="header">Decision Tree</h3><p class="para">At each level of the tree below, select only one option. When you get to the end node, you will see the name of the appropriate model for you and a link to that model on the NCBI FTP site:</p><p class="para">Archiving
-<ul class="bullist"><li>XHTML-based tables only<ul class="bullist"><li>MathML 2.0<ul class="bullist"><li>DTD (the model in DTD format) is at <a href="ftp://ftp.ncbi.nih.gov/pub/jats/archiving/1.1d1/JATS-archivearticle1.zip" target="_new" class="external">ftp://ftp.ncbi.nih.gov/pub/jats/archiving/1.1d1/JATS-archivearticle1.zip</a></li><li>XSD (the model in W3C XML Schema format) is at <a href="ftp://ftp.ncbi.nih.gov/pub/jats/archiving/1.1d1/xsd/JATS-archivearticle1.zip" target="_new" class="external">ftp://ftp.ncbi.nih.gov/pub/jats/archiving/1.1d1/xsd/JATS-archivearticle1.zip</a></li><li>RNG (the model in Relax NG format) is at <a href="ftp://ftp.ncbi.nih.gov/pub/jats/archiving/1.1d1/rng/JATS-archivearticle1.zip" target="_new" class="external">ftp://ftp.ncbi.nih.gov/pub/jats/archiving/1.1d1/rng/JATS-archivearticle1.zip</a></li></ul></li></ul><ul class="bullist"><li>MathML 3.0<ul class="bullist"><li>DTD (the model in DTD format) is at <a href="ftp://ftp.ncbi.nih.gov/pub/jats/archiving/1.1d1/JATS-archivearticle1-mathml3.zip" target="_new" class="external">ftp://ftp.ncbi.nih.gov/pub/jats/archiving/1.1d1/JATS-archivearticle1-mathml3.zip</a></li><li>XSD (the model in W3C XML Schema format) is at <a href="ftp://ftp.ncbi.nih.gov/pub/jats/archiving/1.1d1/xsd/JATS-archivearticle1-mathml3.zip" target="_new" class="external">ftp://ftp.ncbi.nih.gov/pub/jats/archiving/1.1d1/xsd/JATS-archivearticle1-mathml3.zip</a></li><li>RNG (the model in Relax NG format) is at <a href="ftp://ftp.ncbi.nih.gov/pub/jats/archiving/1.1d1/rng/JATS-archivearticle1-mathml3.zip" target="_new" class="external">ftp://ftp.ncbi.nih.gov/pub/jats/archiving/1.1d1/rng/JATS-archivearticle1-mathml3.zip</a></li></ul></li></ul></li><li>OASIS/CALS and XHTML-based tables<ul class="bullist"><li>MathML 2.0<ul class="bullist"><li>DTD (the model in DTD format) is at <a href="ftp://ftp.ncbi.nih.gov/pub/jats/archiving/1.1d1/JATS-archive-oasis-article1.zip" target="_new" class="external">ftp://ftp.ncbi.nih.gov/pub/jats/archiving/1.1d1/JATS-archive-oasis-article1.zip</a></li><li>XSD (the model in W3C XML Schema format) is at <a href="ftp://ftp.ncbi.nih.gov/pub/jats/archiving/1.1d1/xsd/JATS-archive-oasis-article1.zip" target="_new" class="external">ftp://ftp.ncbi.nih.gov/pub/jats/archiving/1.1d1/xsd/JATS-archive-oasis-article1.zip</a></li><li>RNG (the model in Relax NG format) is at <a href="ftp://ftp.ncbi.nih.gov/pub/jats/archiving/1.1d1/rng/JATS-archive-oasis-article1.zip" target="_new" class="external">ftp://ftp.ncbi.nih.gov/pub/jats/archiving/1.1d1/rng/JATS-archive-oasis-article1.zip</a></li></ul></li></ul><ul class="bullist"><li>MathML 3.0<ul class="bullist"><li>DTD (the model in DTD format) is at <a href="ftp://ftp.ncbi.nih.gov/pub/jats/archiving/1.1d1/JATS-archive-oasis-article1-mathml3.zip" target="_new" class="external">ftp://ftp.ncbi.nih.gov/pub/jats/archiving/1.1d1/JATS-archive-oasis-article1-mathml3.zip</a></li><li>XSD (the model in W3C XML Schema format) is at <a href="ftp://ftp.ncbi.nih.gov/pub/jats/archiving/1.1d1/xsd/JATS-archive-oasis-article1-mathml3.zip" target="_new" class="external">ftp://ftp.ncbi.nih.gov/pub/jats/archiving/1.1d1/xsd/JATS-archive-oasis-article1-mathml3.zip</a></li><li>RNG (the model in Relax NG format) is at <a href="ftp://ftp.ncbi.nih.gov/pub/jats/archiving/1.1d1/rng/JATS-archive-oasis-article1-mathml3.zip" target="_new" class="external">ftp://ftp.ncbi.nih.gov/pub/jats/archiving/1.1d1/rng/JATS-archive-oasis-article1-mathml3.zip</a></li></ul></li></ul></li></ul>
-</p><p class="para">Publishing
-<ul class="bullist"><li>XHTML-based tables only<ul class="bullist"><li>MathML 2.0<ul class="bullist"><li>DTD (the model in DTD format) is at <a href="ftp://ftp.ncbi.nih.gov/pub/jats/publishing/1.1d1/JATS-journalpublishing1.zip" target="_new" class="external">ftp://ftp.ncbi.nih.gov/pub/jats/publishing/1.1d1/JATS-journalpublishing1.zip</a></li><li>XSD (the model in W3C XML Schema format) is at <a href="ftp://ftp.ncbi.nih.gov/pub/jats/publishing/1.1d1/xsd/JATS-journalpublishing1.zip" target="_new" class="external">ftp://ftp.ncbi.nih.gov/pub/jats/publishing/1.1d1/xsd/JATS-journalpublishing1.zip</a></li><li>RNG (the model in Relax NG format) is at <a href="ftp://ftp.ncbi.nih.gov/pub/jats/publishing/1.1d1/rng/JATS-journalpublishing1.zip" target="_new" class="external">ftp://ftp.ncbi.nih.gov/pub/jats/publishing/1.1d1/rng/JATS-journalpublishing1.zip</a></li></ul></li></ul><ul class="bullist"><li>MathML 3.0<ul class="bullist"><li>DTD (the model in DTD format) ) is at <a href="ftp://ftp.ncbi.nih.gov/pub/jats/publishing/1.1d1/JATS-journalpublishing1-mathml3.zip" target="_new" class="external">ftp://ftp.ncbi.nih.gov/pub/jats/publishing/1.1d1/JATS-journalpublishing1-mathml3.zip</a></li><li>XSD (the model in W3C XML Schema format) is at <a href="ftp://ftp.ncbi.nih.gov/pub/jats/publishing/1.1d1/xsd/JATS-journalpublishing1-mathml3.zip" target="_new" class="external">ftp://ftp.ncbi.nih.gov/pub/jats/publishing/1.1d1/xsd/JATS-journalpublishing1-mathml3.zip</a></li><li>RNG (the model in Relax NG format) is at <a href="ftp://ftp.ncbi.nih.gov/pub/jats/publishing/1.1d1/rng/JATS-journalpublishing1-mathml3.zip" target="_new" class="external">ftp://ftp.ncbi.nih.gov/pub/jats/publishing/1.1d1/rng/JATS-journalpublishing1-mathml3.zip</a></li></ul></li></ul></li><li>OASIS/CALS and XHTML-based tables<ul class="bullist"><li>MathML 2.0<ul class="bullist"><li>DTD (the model in DTD format) ) is at <a href="ftp://ftp.ncbi.nih.gov/pub/jats/publishing/1.1d1/JATS-journalpublishing-oasis-article1.zip" target="_new" class="external">ftp://ftp.ncbi.nih.gov/pub/jats/publishing/1.1d1/JATS-journalpublishing-oasis-article1.zip</a></li><li>XSD (the model in W3C XML Schema format) <a href="ftp://ftp.ncbi.nih.gov/pub/jats/publishing/1.1d1/xsd/JATS-journalpublishing-oasis-article1.zip" target="_new" class="external">ftp://ftp.ncbi.nih.gov/pub/jats/publishing/1.1d1/xsd/JATS-journalpublishing-oasis-article1.zip</a></li><li>RNG (the model in Relax NG format) <a href="ftp://ftp.ncbi.nih.gov/pub/jats/publishing/1.1d1/rng/JATS-journalpublishing-oasis-article1.zip" target="_new" class="external">ftp://ftp.ncbi.nih.gov/pub/jats/publishing/1.1d1/rng/JATS-journalpublishing-oasis-article1.zip</a></li></ul></li></ul><ul class="bullist"><li>MathML 3.0<ul class="bullist"><li>DTD (the model in DTD format) is at <a href="ftp://ftp.ncbi.nih.gov/pub/jats/publishing/1.1d1/JATS-journalpublishing-oasis-article1-mathml3.zip" target="_new" class="external">ftp://ftp.ncbi.nih.gov/pub/jats/publishing/1.1d1/JATS-journalpublishing-oasis-article1-mathml3.zip</a></li><li>XSD (the model in W3C XML Schema format) is at <a href="ftp://ftp.ncbi.nih.gov/pub/jats/publishing/1.1d1/xsd/JATS-journalpublishing-oasis-article1-mathml3.zip" target="_new" class="external">ftp://ftp.ncbi.nih.gov/pub/jats/publishing/1.1d1/xsd/JATS-journalpublishing-oasis-article1-mathml3.zip</a></li><li>RNG (the model in Relax NG format) is at <a href="ftp://ftp.ncbi.nih.gov/pub/jats/publishing/1.1d1/rng/JATS-journalpublishing-oasis-article1-mathml3.zip" target="_new" class="external">ftp://ftp.ncbi.nih.gov/pub/jats/publishing/1.1d1/rng/JATS-journalpublishing-oasis-article1-mathml3.zip</a></li></ul></li></ul></li></ul>
-</p><p class="para">Authoring
-<ul class="bullist"><li>XHTML-based tables only<ul class="bullist"><li>MathML 2.0<ul class="bullist"><li>DTD (the model in DTD format) is at <a href="ftp://ftp.ncbi.nih.gov/pub/jats/articleauthoring/1.1d1/JATS-articleauthoring1.zip" target="_new" class="external">ftp://ftp.ncbi.nih.gov/pub/jats/articleauthoring/1.1d1/JATS-articleauthoring1.zip</a></li><li>XSD (the model in W3C XML Schema format) is at <a href="ftp://ftp.ncbi.nih.gov/pub/jats/articleauthoring/1.1d1/xsd/JATS-articleauthoring1.zip" target="_new" class="external">ftp://ftp.ncbi.nih.gov/pub/jats/articleauthoring/1.1d1/xsd/JATS-articleauthoring1.zip</a></li><li>RNG (the model in Relax NG format) is at <a href="ftp://ftp.ncbi.nih.gov/pub/jats/articleauthoring/1.1d1/rng/JATS-articleauthoring1.zip" target="_new" class="external">ftp://ftp.ncbi.nih.gov/pub/jats/articleauthoring/1.1d1/rng/JATS-articleauthoring1.zip</a></li></ul></li></ul><ul class="bullist"><li>MathML 3.0<ul class="bullist"><li>DTD (the model in DTD format) is at <a href="ftp://ftp.ncbi.nih.gov/pub/jats/articleauthoring/1.1d1/JATS-articleauthoring1-mathml3.zip" target="_new" class="external">ftp://ftp.ncbi.nih.gov/pub/jats/articleauthoring/1.1d1/JATS-articleauthoring1-mathml3.zip</a></li><li>XSD (the model in W3C XML Schema format) is at <a href="ftp://ftp.ncbi.nih.gov/pub/jats/articleauthoring/1.1d1/xsd/JATS-articleauthoring1-mathml3.zip" target="_new" class="external">ftp://ftp.ncbi.nih.gov/pub/jats/articleauthoring/1.1d1/xsd/JATS-articleauthoring1-mathml3.zip</a></li><li>RNG (the model in Relax NG format) is at <a href="ftp://ftp.ncbi.nih.gov/pub/jats/articleauthoring/1.1d1/rng/JATS-articleauthoring1-mathml3.zip" target="_new" class="external">ftp://ftp.ncbi.nih.gov/pub/jats/articleauthoring/1.1d1/rng/JATS-articleauthoring1-mathml3.zip</a></li></ul></li></ul></li></ul>
-</p></div><div class="pagefooter"><h2 class="headname">Journal Publishing Tag Library  NISO JATS Draft Version 1.1d1</h2><h4 class="pubdate">Version of December 2013</h4></div></body></html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta name="generator" content="HTML Tidy for Linux/x86 (vers 25 March 2009), see www.w3.org" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008-->
+  <link rel="stylesheet" href="auto-css.css" type="text/css" />
+
+  <title>Selecting a JATS Model and Expression Language</title>
+</head>
+
+<body class="main">
+  <div class="pageheader">
+    <h2 class="headname">Journal Publishing Tag Library NISO JATS Draft Version 1.1d1</h2>
+
+    <h4 class="sponsor">National Center for Biotechnology Information (NCBI)<br class="linebrk" />
+    National Library of Medicine (NLM)</h4>
+  </div>
+
+  <h1 class="sectiontitle">Selecting a JATS Model and Expression Language</h1>
+
+  <p class="para">After deciding to use JATS, a project or organization is faced with many
+  decisions:</p>
+
+  <ul class="bullist">
+    <li>Which Tag Set?</li>
+
+    <li>Which options within that Tag Set?</li>
+
+    <li>What expression language or version of the model to use</li>
+  </ul>In this essay we describe these choices and help make those decisions.
+
+  <div class="section">
+    <a name=""></a>
+
+    <h3 class="header">Which Tag Set</h3>
+
+    <p class="para">There are three JATS Tag Sets:</p>
+
+    <ul class="bullist">
+      <li>Journal Archiving and Interchange is the most permissive of the Tag Sets. The Archiving
+      and Interchange Tag Set defines elements and attributes that describe the content and
+      metadata of journal articles, including research and non-research articles, letters,
+      editorials, and book and product reviews. The Tag Set allows for descriptions of the full
+      article content or just the article header metadata. It also allows for preservation of the
+      sequence of content and generated text. Read more about the intent of this Tag Set at:
+      <a href="http://jats.nlm.nih.gov/archiving/" target="_new" class=
+      "external">http://jats.nlm.nih.gov/archiving/</a></li>
+
+      <li>The Journal Publishing Tag Set is a moderately prescriptive set, optimized for the
+      archives who wish to regularize and control their content, not to accept the sequence and
+      arrangement presented to them by any particular publisher. Publishing is also intended for
+      use by publishers for the initial XML tagging of journal material, usually as converted from
+      an authoring form like Microsoft Word. Read more about the intent of this Tag Set at:
+      <a href="http://jats.nlm.nih.gov/publishing/" target="_new" class=
+      "external">http://jats.nlm.nih.gov/publishing/</a></li>
+
+      <li>Article Authoring is the most prescriptive of the Tag Sets. The Article Authoring Tag Set
+      is optimized for authorship of new journal articles, where regularization and control of
+      content is important, and where it is useful rather than harmful to have only one way to tag
+      a structure. This Tag Set is more prescriptive than descriptive and includes many elements
+      whose content must occur in a specified order. Read more about the intent of this Tag Set at:
+      <a href="http://jats.nlm.nih.gov/articleauthoring/" target="_new" class=
+      "external">http://jats.nlm.nih.gov/articleauthoring/</a></li>
+    </ul>In consultation with the partners with which you want to interchange JATS documents, you
+    should select the model that best meets your needs.
+  </div>
+
+  <div class="section">
+    <a name=""></a>
+
+    <h3 class="header">Options?</h3>
+
+    <p class="para">Each Tag Set presents options for table modeling and math.</p>
+
+    <p class="para">Tables: Each Tag Set is available with either:</p>
+
+    <ul class="bullist">
+      <li>a table model based on the XHTML table model, or</li>
+
+      <li>both the XHTML and OASIS/CALS table models.</li>
+    </ul>
+
+    <p class="para">Many JATS users prefer the XHTML-based table model because it is easy to use in
+    web-based and other electronic publications. Some users prefer the OASIS/CALS table model
+    because they have tools that require this model or because they believe that it is easier to
+    format complex print tables using it.</p>
+
+    <p class="para">Each Tag Set is available with either:</p>
+
+    <ul class="bullist">
+      <li>MathML version 2.0, or</li>
+
+      <li>MathML version 3.0.</li>
+    </ul>If you do not have MathML, we recommend starting with version 3.0.
+
+    <p class="para">We provide versions of the tag sets with MathML 2.0 for backwards
+    compatibility. Some users of MathML version 2 find that their MathML 2.0 is also valid MathML
+    3.0, and they can more effortlessly into MathML 3. However, MathML 3.0 enforces rules that were
+    not enforced in the version of the MathML 2.0 DTD used in JATS. The rules were in the textual
+    documentation for MathML 2.0 and in some versions of the MathML 2.0 DTD, but some users may
+    find that their existing documents are not forwards-compatible with MathML 3.0.</p>
+
+    <p class="para"><strong>Note:</strong> MathML 2.0 that is not valid against MathML 3.0 may
+    render incorrectly on display.</p>
+
+    <p class="para"><strong>Note:</strong> It is likely that JATS will move to MathML 3.0, and stop
+    supporting MathML 2.0 in a future version.</p>
+  </div>
+
+  <div class="section">
+    <a name=""></a>
+
+    <h3 class="header">Expression Language (Constraint Language)</h3>
+
+    <p class="para">XML Tag Sets may be expressed as schema languages (also called “Constraint
+    Languages”). These schemas are used by XML software to enforce the rules of the language and to
+    guide authoring applications. The formal rules of JATS are expressed in the prose of ANSI/NISO
+    Z39.96-2012. In addition, for the convenience of users, schemas for several options of each of
+    the Tag Sets are provided by the NLM.</p>
+
+    <ul class="bullist">
+      <li>DTD, or Document Type Definitions, are the oldest of XML modeling languages. DTDs are
+      used in many environments that work primarily with textual documents. DTDs are defined in the
+      XML Specification.</li>
+
+      <li>XSD, or W3C XML Schema, is a modeling language specified by the W3C. Among the strengths
+      of XSD are strong datatyping, context-based models, and the fact that XSD documents are in
+      XML document syntax.</li>
+
+      <li>RNG, or Relax NG Schema, is a modeling language for XML documents that enables strong
+      datatyping, a wide variety of modeling types, and both a compact and an XML document
+      syntax.</li>
+    </ul>Users usually use the modeling language that best suits the tools they are using. It is
+    not unusual for an organization to use one version of the modeling language in authoring and/or
+    receipt of documents from partners and another in their database environment.
+  </div>
+
+  <div class="section">
+    <a name=""></a>
+
+    <h3 class="header">Decision Tree</h3>
+
+    <p class="para">At each level of the tree below, select only one option. When you get to the
+    end node, you will see the name of the appropriate model for you and a link to that model on
+    the NCBI FTP site:</p>
+
+    <p class="para">Archiving</p>
+
+    <ul class="bullist">
+      <li>XHTML-based tables only
+
+        <ul class="bullist">
+          <li>MathML 2.0
+
+            <ul class="bullist">
+              <li>DTD (the model in DTD format) is at <a href=
+              "ftp://ftp.ncbi.nih.gov/pub/jats/archiving/1.1d1/JATS-archivearticle1.zip" target=
+              "_new" class=
+              "external">ftp://ftp.ncbi.nih.gov/pub/jats/archiving/1.1d1/JATS-archivearticle1.zip</a></li>
+
+              <li>XSD (the model in W3C XML Schema format) is at <a href=
+              "ftp://ftp.ncbi.nih.gov/pub/jats/archiving/1.1d1/xsd/JATS-archivearticle1.zip"
+              target="_new" class=
+              "external">ftp://ftp.ncbi.nih.gov/pub/jats/archiving/1.1d1/xsd/JATS-archivearticle1.zip</a></li>
+
+              <li>RNG (the model in Relax NG format) is at <a href=
+              "ftp://ftp.ncbi.nih.gov/pub/jats/archiving/1.1d1/rng/JATS-archivearticle1.zip"
+              target="_new" class=
+              "external">ftp://ftp.ncbi.nih.gov/pub/jats/archiving/1.1d1/rng/JATS-archivearticle1.zip</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <ul class="bullist">
+          <li>MathML 3.0
+
+            <ul class="bullist">
+              <li>DTD (the model in DTD format) is at <a href=
+              "ftp://ftp.ncbi.nih.gov/pub/jats/archiving/1.1d1/JATS-archivearticle1-mathml3.zip"
+              target="_new" class=
+              "external">ftp://ftp.ncbi.nih.gov/pub/jats/archiving/1.1d1/JATS-archivearticle1-mathml3.zip</a></li>
+
+              <li>XSD (the model in W3C XML Schema format) is at <a href=
+              "ftp://ftp.ncbi.nih.gov/pub/jats/archiving/1.1d1/xsd/JATS-archivearticle1-mathml3.zip"
+              target="_new" class=
+              "external">ftp://ftp.ncbi.nih.gov/pub/jats/archiving/1.1d1/xsd/JATS-archivearticle1-mathml3.zip</a></li>
+
+              <li>RNG (the model in Relax NG format) is at <a href=
+              "ftp://ftp.ncbi.nih.gov/pub/jats/archiving/1.1d1/rng/JATS-archivearticle1-mathml3.zip"
+              target="_new" class=
+              "external">ftp://ftp.ncbi.nih.gov/pub/jats/archiving/1.1d1/rng/JATS-archivearticle1-mathml3.zip</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <li>OASIS/CALS and XHTML-based tables
+
+        <ul class="bullist">
+          <li>MathML 2.0
+
+            <ul class="bullist">
+              <li>DTD (the model in DTD format) is at <a href=
+              "ftp://ftp.ncbi.nih.gov/pub/jats/archiving/1.1d1/JATS-archive-oasis-article1.zip"
+              target="_new" class=
+              "external">ftp://ftp.ncbi.nih.gov/pub/jats/archiving/1.1d1/JATS-archive-oasis-article1.zip</a></li>
+
+              <li>XSD (the model in W3C XML Schema format) is at <a href=
+              "ftp://ftp.ncbi.nih.gov/pub/jats/archiving/1.1d1/xsd/JATS-archive-oasis-article1.zip"
+              target="_new" class=
+              "external">ftp://ftp.ncbi.nih.gov/pub/jats/archiving/1.1d1/xsd/JATS-archive-oasis-article1.zip</a></li>
+
+              <li>RNG (the model in Relax NG format) is at <a href=
+              "ftp://ftp.ncbi.nih.gov/pub/jats/archiving/1.1d1/rng/JATS-archive-oasis-article1.zip"
+              target="_new" class=
+              "external">ftp://ftp.ncbi.nih.gov/pub/jats/archiving/1.1d1/rng/JATS-archive-oasis-article1.zip</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <ul class="bullist">
+          <li>MathML 3.0
+
+            <ul class="bullist">
+              <li>DTD (the model in DTD format) is at <a href=
+              "ftp://ftp.ncbi.nih.gov/pub/jats/archiving/1.1d1/JATS-archive-oasis-article1-mathml3.zip"
+              target="_new" class=
+              "external">ftp://ftp.ncbi.nih.gov/pub/jats/archiving/1.1d1/JATS-archive-oasis-article1-mathml3.zip</a></li>
+
+              <li>XSD (the model in W3C XML Schema format) is at <a href=
+              "ftp://ftp.ncbi.nih.gov/pub/jats/archiving/1.1d1/xsd/JATS-archive-oasis-article1-mathml3.zip"
+              target="_new" class=
+              "external">ftp://ftp.ncbi.nih.gov/pub/jats/archiving/1.1d1/xsd/JATS-archive-oasis-article1-mathml3.zip</a></li>
+
+              <li>RNG (the model in Relax NG format) is at <a href=
+              "ftp://ftp.ncbi.nih.gov/pub/jats/archiving/1.1d1/rng/JATS-archive-oasis-article1-mathml3.zip"
+              target="_new" class=
+              "external">ftp://ftp.ncbi.nih.gov/pub/jats/archiving/1.1d1/rng/JATS-archive-oasis-article1-mathml3.zip</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <p class="para">Publishing</p>
+
+    <ul class="bullist">
+      <li>XHTML-based tables only
+
+        <ul class="bullist">
+          <li>MathML 2.0
+
+            <ul class="bullist">
+              <li>DTD (the model in DTD format) is at <a href=
+              "ftp://ftp.ncbi.nih.gov/pub/jats/publishing/1.1d1/JATS-journalpublishing1.zip"
+              target="_new" class=
+              "external">ftp://ftp.ncbi.nih.gov/pub/jats/publishing/1.1d1/JATS-journalpublishing1.zip</a></li>
+
+              <li>XSD (the model in W3C XML Schema format) is at <a href=
+              "ftp://ftp.ncbi.nih.gov/pub/jats/publishing/1.1d1/xsd/JATS-journalpublishing1.zip"
+              target="_new" class=
+              "external">ftp://ftp.ncbi.nih.gov/pub/jats/publishing/1.1d1/xsd/JATS-journalpublishing1.zip</a></li>
+
+              <li>RNG (the model in Relax NG format) is at <a href=
+              "ftp://ftp.ncbi.nih.gov/pub/jats/publishing/1.1d1/rng/JATS-journalpublishing1.zip"
+              target="_new" class=
+              "external">ftp://ftp.ncbi.nih.gov/pub/jats/publishing/1.1d1/rng/JATS-journalpublishing1.zip</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <ul class="bullist">
+          <li>MathML 3.0
+
+            <ul class="bullist">
+              <li>DTD (the model in DTD format) ) is at <a href=
+              "ftp://ftp.ncbi.nih.gov/pub/jats/publishing/1.1d1/JATS-journalpublishing1-mathml3.zip"
+              target="_new" class=
+              "external">ftp://ftp.ncbi.nih.gov/pub/jats/publishing/1.1d1/JATS-journalpublishing1-mathml3.zip</a></li>
+
+              <li>XSD (the model in W3C XML Schema format) is at <a href=
+              "ftp://ftp.ncbi.nih.gov/pub/jats/publishing/1.1d1/xsd/JATS-journalpublishing1-mathml3.zip"
+              target="_new" class=
+              "external">ftp://ftp.ncbi.nih.gov/pub/jats/publishing/1.1d1/xsd/JATS-journalpublishing1-mathml3.zip</a></li>
+
+              <li>RNG (the model in Relax NG format) is at <a href=
+              "ftp://ftp.ncbi.nih.gov/pub/jats/publishing/1.1d1/rng/JATS-journalpublishing1-mathml3.zip"
+              target="_new" class=
+              "external">ftp://ftp.ncbi.nih.gov/pub/jats/publishing/1.1d1/rng/JATS-journalpublishing1-mathml3.zip</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <li>OASIS/CALS and XHTML-based tables
+
+        <ul class="bullist">
+          <li>MathML 2.0
+
+            <ul class="bullist">
+              <li>DTD (the model in DTD format) ) is at <a href=
+              "ftp://ftp.ncbi.nih.gov/pub/jats/publishing/1.1d1/JATS-journalpublishing-oasis-article1.zip"
+              target="_new" class=
+              "external">ftp://ftp.ncbi.nih.gov/pub/jats/publishing/1.1d1/JATS-journalpublishing-oasis-article1.zip</a></li>
+
+              <li>XSD (the model in W3C XML Schema format) <a href=
+              "ftp://ftp.ncbi.nih.gov/pub/jats/publishing/1.1d1/xsd/JATS-journalpublishing-oasis-article1.zip"
+              target="_new" class=
+              "external">ftp://ftp.ncbi.nih.gov/pub/jats/publishing/1.1d1/xsd/JATS-journalpublishing-oasis-article1.zip</a></li>
+
+              <li>RNG (the model in Relax NG format) <a href=
+              "ftp://ftp.ncbi.nih.gov/pub/jats/publishing/1.1d1/rng/JATS-journalpublishing-oasis-article1.zip"
+              target="_new" class=
+              "external">ftp://ftp.ncbi.nih.gov/pub/jats/publishing/1.1d1/rng/JATS-journalpublishing-oasis-article1.zip</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <ul class="bullist">
+          <li>MathML 3.0
+
+            <ul class="bullist">
+              <li>DTD (the model in DTD format) is at <a href=
+              "ftp://ftp.ncbi.nih.gov/pub/jats/publishing/1.1d1/JATS-journalpublishing-oasis-article1-mathml3.zip"
+              target="_new" class=
+              "external">ftp://ftp.ncbi.nih.gov/pub/jats/publishing/1.1d1/JATS-journalpublishing-oasis-article1-mathml3.zip</a></li>
+
+              <li>XSD (the model in W3C XML Schema format) is at <a href=
+              "ftp://ftp.ncbi.nih.gov/pub/jats/publishing/1.1d1/xsd/JATS-journalpublishing-oasis-article1-mathml3.zip"
+              target="_new" class=
+              "external">ftp://ftp.ncbi.nih.gov/pub/jats/publishing/1.1d1/xsd/JATS-journalpublishing-oasis-article1-mathml3.zip</a></li>
+
+              <li>RNG (the model in Relax NG format) is at <a href=
+              "ftp://ftp.ncbi.nih.gov/pub/jats/publishing/1.1d1/rng/JATS-journalpublishing-oasis-article1-mathml3.zip"
+              target="_new" class=
+              "external">ftp://ftp.ncbi.nih.gov/pub/jats/publishing/1.1d1/rng/JATS-journalpublishing-oasis-article1-mathml3.zip</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <p class="para">Authoring</p>
+
+    <ul class="bullist">
+      <li>XHTML-based tables only
+
+        <ul class="bullist">
+          <li>MathML 2.0
+
+            <ul class="bullist">
+              <li>DTD (the model in DTD format) is at <a href=
+              "ftp://ftp.ncbi.nih.gov/pub/jats/articleauthoring/1.1d1/JATS-articleauthoring1.zip"
+              target="_new" class=
+              "external">ftp://ftp.ncbi.nih.gov/pub/jats/articleauthoring/1.1d1/JATS-articleauthoring1.zip</a></li>
+
+              <li>XSD (the model in W3C XML Schema format) is at <a href=
+              "ftp://ftp.ncbi.nih.gov/pub/jats/articleauthoring/1.1d1/xsd/JATS-articleauthoring1.zip"
+              target="_new" class=
+              "external">ftp://ftp.ncbi.nih.gov/pub/jats/articleauthoring/1.1d1/xsd/JATS-articleauthoring1.zip</a></li>
+
+              <li>RNG (the model in Relax NG format) is at <a href=
+              "ftp://ftp.ncbi.nih.gov/pub/jats/articleauthoring/1.1d1/rng/JATS-articleauthoring1.zip"
+              target="_new" class=
+              "external">ftp://ftp.ncbi.nih.gov/pub/jats/articleauthoring/1.1d1/rng/JATS-articleauthoring1.zip</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <ul class="bullist">
+          <li>MathML 3.0
+
+            <ul class="bullist">
+              <li>DTD (the model in DTD format) is at <a href=
+              "ftp://ftp.ncbi.nih.gov/pub/jats/articleauthoring/1.1d1/JATS-articleauthoring1-mathml3.zip"
+              target="_new" class=
+              "external">ftp://ftp.ncbi.nih.gov/pub/jats/articleauthoring/1.1d1/JATS-articleauthoring1-mathml3.zip</a></li>
+
+              <li>XSD (the model in W3C XML Schema format) is at <a href=
+              "ftp://ftp.ncbi.nih.gov/pub/jats/articleauthoring/1.1d1/xsd/JATS-articleauthoring1-mathml3.zip"
+              target="_new" class=
+              "external">ftp://ftp.ncbi.nih.gov/pub/jats/articleauthoring/1.1d1/xsd/JATS-articleauthoring1-mathml3.zip</a></li>
+
+              <li>RNG (the model in Relax NG format) is at <a href=
+              "ftp://ftp.ncbi.nih.gov/pub/jats/articleauthoring/1.1d1/rng/JATS-articleauthoring1-mathml3.zip"
+              target="_new" class=
+              "external">ftp://ftp.ncbi.nih.gov/pub/jats/articleauthoring/1.1d1/rng/JATS-articleauthoring1-mathml3.zip</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <div class="pagefooter">
+    <h2 class="headname">Journal Publishing Tag Library NISO JATS Draft Version 1.1d1</h2>
+
+    <h4 class="pubdate">Version of December 2013</h4>
+  </div>
+</body>
+</html>

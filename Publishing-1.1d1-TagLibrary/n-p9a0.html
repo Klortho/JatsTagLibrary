@@ -1,5 +1,188 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008--><link rel="stylesheet" href="auto-css.css" type="text/css"><title>Element: Date</title></head><body class="main"><div class="pageheader"><h2 class="headname">Journal Publishing Tag Library  NISO JATS Draft Version 1.1d1</h2><h4 class="sponsor">National Center for Biotechnology Information (NCBI)<br class="linebrk"> National Library of
-   Medicine (NLM)</h4></div><div class="header"><h1 class="elementtag">&lt;date&gt;</h1><h1 class="elementname">Date</h1></div><div class="definition"><p class="para">Container element for the parts of a single calendar date.</p></div><div class="remarks"><h2 class="header">Remarks</h2><p class="para"><strong>Usage:</strong>  A <span class="elementtag">&lt;date&gt;</span> element may contain date components such as <a href="n-ycu0.html" target="main" title="Day"><span class="elementtag">&lt;day&gt;</span></a>, <a href="n-87t0.html" target="main" title="Month"><span class="elementtag">&lt;month&gt;</span></a>, and <a href="n-nky0.html" target="main" title="Year"><span class="elementtag">&lt;year&gt;</span></a> (which are typically given numeric values), as well as non-numeric elements such as <a href="n-99g0.html" target="main" title="Season"><span class="elementtag">&lt;season&gt;</span></a> (which is a text string).</p><p class="para">When used within citations (<a href="n-zbu0.html" target="main" title="Element Citation"><span class="elementtag">&lt;element-citation&gt;</span></a> and <a href="n-pqs0.html" target="main" title="Mixed Citation"><span class="elementtag">&lt;mixed-citation&gt;</span></a>), this element names the publication date of the cited source. When used as part of <a href="n-a7v0.html" target="main" title="History: Document History"><span class="elementtag">&lt;history&gt;</span></a>, this element holds one of the publication history dates that may be preserved for an article, such as when it was received or when it was accepted.</p><p class="para"><strong>Related Essay:</strong> For a discussion on the use of <span class="elementtag">&lt;date&gt;</span>, see <a href="n-qhs2.html#pub-tag-cite-dates">Dates in Citations</a>.</p></div><div class="attrlist"><h2 class="header">Attributes</h2><h5 class="header"><a href="n-jby0.html" target="main"><span class="attrtag">calendar</span></a> <a href="n-jby0.html" target="main"><span class="attrname">Calendar</span></a></h5><h5 class="header"><a href="n-ujj0.html" target="main"><span class="attrtag">date-type</span></a> <a href="n-ujj0.html" target="main"><span class="attrname">Type of Date</span></a></h5><h5 class="header"><a href="n-fdp0.html" target="main"><span class="attrtag">id</span></a> <a href="n-fdp0.html" target="main"><span class="attrname">Document Internal Identifier</span></a></h5><h5 class="header"><a href="n-zkq0.html" target="main"><span class="attrtag">iso-8601-date</span></a> <a href="n-zkq0.html" target="main"><span class="attrname">ISO-8601 Formatted Date</span></a></h5><h5 class="header"><a href="n-3gb0.html" target="main"><span class="attrtag">publication-format</span></a> <a href="n-3gb0.html" target="main"><span class="attrname">Format of Publication</span></a></h5><h5 class="header"><a href="n-t790.html" target="main"><span class="attrtag">specific-use</span></a> <a href="n-t790.html" target="main"><span class="attrname">Specific Use</span></a></h5><h5 class="header"><a href="n-jim0.html" target="main"><span class="attrtag">xml:base</span></a> <a href="n-jim0.html" target="main"><span class="attrname">Base</span></a></h5></div><div class="relatedelem"><h2 class="header">Related Elements</h2><p class="para">Within citations (<a href="n-zbu0.html" target="main" title="Element Citation"><span class="elementtag">&lt;element-citation&gt;</span></a> and <a href="n-pqs0.html" target="main" title="Mixed Citation"><span class="elementtag">&lt;mixed-citation&gt;</span></a>), this element is used to name the date of publication of the cited source. The elements <a href="n-nky0.html" target="main" title="Year"><span class="elementtag">&lt;year&gt;</span></a>, <a href="n-p9a0.html" target="main" title="Date"><span class="elementtag">&lt;date&gt;</span></a>, <a href="n-ycu0.html" target="main" title="Day"><span class="elementtag">&lt;day&gt;</span></a>, <a href="n-87t0.html" target="main" title="Month"><span class="elementtag">&lt;month&gt;</span></a>, and <a href="n-99g0.html" target="main" title="Season"><span class="elementtag">&lt;season&gt;</span></a> may all be used to describe the date a cited resource was published. Other dates inside a citation, such as a copyright date, the date on which the author accessed the resource, or a withdrawal date, should be tagged using <a href="n-nku0.html" target="main" title="Date within a Citation"><span class="elementtag">&lt;date-in-citation&gt;</span></a> with the <a href="n-kxj0.html" target="main" title="Type of Content"><span class="attrtag">@content-type</span></a> attribute used to name the type of date (<tt>copyright</tt>, <tt>access-date</tt>, <tt>time-stamp</tt>, etc.).</p></div><div class="contentmodel"><h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  date         <a href="n-s6c2.html" target="main" title="Date Elements Model"><span class="petag">%date-model;</span></a>                                 &gt;</pre></div><div class="contentmodel"><h2 class="header">Expanded Content Model</h2><p class="contentdesc">(((day?, month?) | season)?, year, era?)</p></div><div class="modeldesc"><h2 class="header">Description</h2><p class="para">The following, in order:<ul class="bullist"><li>Optionally any one of:<ul class="bullist"><li>The following, in order:<ul class="bullist"><li><a href="n-ycu0.html" target="main" title="Day"><span class="elementtag">&lt;day&gt;</span></a> <a href="n-ycu0.html" target="main" title="<day&gt;"><span class="elementname">Day</span></a>, zero or one</li><li><a href="n-87t0.html" target="main" title="Month"><span class="elementtag">&lt;month&gt;</span></a> <a href="n-87t0.html" target="main" title="<month&gt;"><span class="elementname">Month</span></a>, zero or one</li></ul></li><li><a href="n-99g0.html" target="main" title="Season"><span class="elementtag">&lt;season&gt;</span></a> <a href="n-99g0.html" target="main" title="<season&gt;"><span class="elementname">Season</span></a></li></ul></li><li><a href="n-nky0.html" target="main" title="Year"><span class="elementtag">&lt;year&gt;</span></a> <a href="n-nky0.html" target="main" title="<year&gt;"><span class="elementname">Year</span></a></li><li><a href="n-9sw0.html" target="main" title="Era of Time"><span class="elementtag">&lt;era&gt;</span></a> <a href="n-9sw0.html" target="main" title="<era&gt;"><span class="elementname">Era of Time</span></a>, zero or one</li></ul></p></div><div class="elementcontext"><h3 class="header">This element may be contained in:</h3><p class="para"><a href="n-zbu0.html" target="main" title="Element Citation"><span class="elementtag">&lt;element-citation&gt;</span></a>, <a href="n-a7v0.html" target="main" title="History: Document History"><span class="elementtag">&lt;history&gt;</span></a>, <a href="n-pqs0.html" target="main" title="Mixed Citation"><span class="elementtag">&lt;mixed-citation&gt;</span></a>, <a href="n-8je0.html" target="main" title="Product Information"><span class="elementtag">&lt;product&gt;</span></a>, <a href="n-tdf0.html" target="main" title="Related Article Information"><span class="elementtag">&lt;related-article&gt;</span></a>, <a href="n-t9f0.html" target="main" title="Related Object Information"><span class="elementtag">&lt;related-object&gt;</span></a></p></div><div class="examp.group"><h3 class="header">Example 1</h3><p class="para">Date approved:</p><div class="taggedexamp"><pre class="taggedtext">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta name="generator" content="HTML Tidy for Linux/x86 (vers 25 March 2009), see www.w3.org" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008-->
+  <link rel="stylesheet" href="auto-css.css" type="text/css" />
+
+  <title>Element: Date</title>
+</head>
+
+<body class="main">
+  <div class="pageheader">
+    <h2 class="headname">Journal Publishing Tag Library NISO JATS Draft Version 1.1d1</h2>
+
+    <h4 class="sponsor">National Center for Biotechnology Information (NCBI)<br class="linebrk" />
+    National Library of Medicine (NLM)</h4>
+  </div>
+
+  <div class="header">
+    <h1 class="elementtag">&lt;date&gt;</h1>
+
+    <h1 class="elementname">Date</h1>
+  </div>
+
+  <div class="definition">
+    <p class="para">Container element for the parts of a single calendar date.</p>
+  </div>
+
+  <div class="remarks">
+    <h2 class="header">Remarks</h2>
+
+    <p class="para"><strong>Usage:</strong> A <span class="elementtag">&lt;date&gt;</span> element
+    may contain date components such as <a href="n-ycu0.html" target="main" title=
+    "Day"><span class="elementtag">&lt;day&gt;</span></a>, <a href="n-87t0.html" target="main"
+    title="Month"><span class="elementtag">&lt;month&gt;</span></a>, and <a href="n-nky0.html"
+    target="main" title="Year"><span class="elementtag">&lt;year&gt;</span></a> (which are
+    typically given numeric values), as well as non-numeric elements such as <a href="n-99g0.html"
+    target="main" title="Season"><span class="elementtag">&lt;season&gt;</span></a> (which is a
+    text string).</p>
+
+    <p class="para">When used within citations (<a href="n-zbu0.html" target="main" title=
+    "Element Citation"><span class="elementtag">&lt;element-citation&gt;</span></a> and <a href=
+    "n-pqs0.html" target="main" title="Mixed Citation"><span class=
+    "elementtag">&lt;mixed-citation&gt;</span></a>), this element names the publication date of the
+    cited source. When used as part of <a href="n-a7v0.html" target="main" title=
+    "History: Document History"><span class="elementtag">&lt;history&gt;</span></a>, this element
+    holds one of the publication history dates that may be preserved for an article, such as when
+    it was received or when it was accepted.</p>
+
+    <p class="para"><strong>Related Essay:</strong> For a discussion on the use of <span class=
+    "elementtag">&lt;date&gt;</span>, see <a href="n-qhs2.html#pub-tag-cite-dates">Dates in
+    Citations</a>.</p>
+  </div>
+
+  <div class="attrlist">
+    <h2 class="header">Attributes</h2>
+
+    <h5 class="header"><a href="n-jby0.html" target="main"><span class=
+    "attrtag">calendar</span></a> <a href="n-jby0.html" target="main"><span class=
+    "attrname">Calendar</span></a></h5>
+
+    <h5 class="header"><a href="n-ujj0.html" target="main"><span class=
+    "attrtag">date-type</span></a> <a href="n-ujj0.html" target="main"><span class="attrname">Type
+    of Date</span></a></h5>
+
+    <h5 class="header"><a href="n-fdp0.html" target="main"><span class="attrtag">id</span></a>
+    <a href="n-fdp0.html" target="main"><span class="attrname">Document Internal
+    Identifier</span></a></h5>
+
+    <h5 class="header"><a href="n-zkq0.html" target="main"><span class=
+    "attrtag">iso-8601-date</span></a> <a href="n-zkq0.html" target="main"><span class=
+    "attrname">ISO-8601 Formatted Date</span></a></h5>
+
+    <h5 class="header"><a href="n-3gb0.html" target="main"><span class=
+    "attrtag">publication-format</span></a> <a href="n-3gb0.html" target="main"><span class=
+    "attrname">Format of Publication</span></a></h5>
+
+    <h5 class="header"><a href="n-t790.html" target="main"><span class=
+    "attrtag">specific-use</span></a> <a href="n-t790.html" target="main"><span class=
+    "attrname">Specific Use</span></a></h5>
+
+    <h5 class="header"><a href="n-jim0.html" target="main"><span class=
+    "attrtag">xml:base</span></a> <a href="n-jim0.html" target="main"><span class=
+    "attrname">Base</span></a></h5>
+  </div>
+
+  <div class="relatedelem">
+    <h2 class="header">Related Elements</h2>
+
+    <p class="para">Within citations (<a href="n-zbu0.html" target="main" title=
+    "Element Citation"><span class="elementtag">&lt;element-citation&gt;</span></a> and <a href=
+    "n-pqs0.html" target="main" title="Mixed Citation"><span class=
+    "elementtag">&lt;mixed-citation&gt;</span></a>), this element is used to name the date of
+    publication of the cited source. The elements <a href="n-nky0.html" target="main" title=
+    "Year"><span class="elementtag">&lt;year&gt;</span></a>, <a href="n-p9a0.html" target="main"
+    title="Date"><span class="elementtag">&lt;date&gt;</span></a>, <a href="n-ycu0.html" target=
+    "main" title="Day"><span class="elementtag">&lt;day&gt;</span></a>, <a href="n-87t0.html"
+    target="main" title="Month"><span class="elementtag">&lt;month&gt;</span></a>, and <a href=
+    "n-99g0.html" target="main" title="Season"><span class="elementtag">&lt;season&gt;</span></a>
+    may all be used to describe the date a cited resource was published. Other dates inside a
+    citation, such as a copyright date, the date on which the author accessed the resource, or a
+    withdrawal date, should be tagged using <a href="n-nku0.html" target="main" title=
+    "Date within a Citation"><span class="elementtag">&lt;date-in-citation&gt;</span></a> with the
+    <a href="n-kxj0.html" target="main" title="Type of Content"><span class=
+    "attrtag">@content-type</span></a> attribute used to name the type of date (<tt>copyright</tt>,
+    <tt>access-date</tt>, <tt>time-stamp</tt>, etc.).</p>
+  </div>
+
+  <div class="contentmodel">
+    <h2 class="header first">Content Model</h2>
+    <pre class="contentdesc">
+&lt;!ELEMENT  date         <a href="n-s6c2.html" target="main" title=
+"Date Elements Model"><span class=
+"petag">%date-model;</span></a>                                 &gt;
+</pre>
+  </div>
+
+  <div class="contentmodel">
+    <h2 class="header">Expanded Content Model</h2>
+
+    <p class="contentdesc">(((day?, month?) | season)?, year, era?)</p>
+  </div>
+
+  <div class="modeldesc">
+    <h2 class="header">Description</h2>
+
+    <p class="para">The following, in order:</p>
+
+    <ul class="bullist">
+      <li>Optionally any one of:
+
+        <ul class="bullist">
+          <li>The following, in order:
+
+            <ul class="bullist">
+              <li><a href="n-ycu0.html" target="main" title="Day"><span class=
+              "elementtag">&lt;day&gt;</span></a> <a href="n-ycu0.html" target="main" title=
+              "&lt;day&gt;"><span class="elementname">Day</span></a>, zero or one</li>
+
+              <li><a href="n-87t0.html" target="main" title="Month"><span class=
+              "elementtag">&lt;month&gt;</span></a> <a href="n-87t0.html" target="main" title=
+              "&lt;month&gt;"><span class="elementname">Month</span></a>, zero or one</li>
+            </ul>
+          </li>
+
+          <li><a href="n-99g0.html" target="main" title="Season"><span class=
+          "elementtag">&lt;season&gt;</span></a> <a href="n-99g0.html" target="main" title=
+          "&lt;season&gt;"><span class="elementname">Season</span></a></li>
+        </ul>
+      </li>
+
+      <li><a href="n-nky0.html" target="main" title="Year"><span class=
+      "elementtag">&lt;year&gt;</span></a> <a href="n-nky0.html" target="main" title=
+      "&lt;year&gt;"><span class="elementname">Year</span></a></li>
+
+      <li><a href="n-9sw0.html" target="main" title="Era of Time"><span class=
+      "elementtag">&lt;era&gt;</span></a> <a href="n-9sw0.html" target="main" title=
+      "&lt;era&gt;"><span class="elementname">Era of Time</span></a>, zero or one</li>
+    </ul>
+  </div>
+
+  <div class="elementcontext">
+    <h3 class="header">This element may be contained in:</h3>
+
+    <p class="para"><a href="n-zbu0.html" target="main" title="Element Citation"><span class=
+    "elementtag">&lt;element-citation&gt;</span></a>, <a href="n-a7v0.html" target="main" title=
+    "History: Document History"><span class="elementtag">&lt;history&gt;</span></a>, <a href=
+    "n-pqs0.html" target="main" title="Mixed Citation"><span class=
+    "elementtag">&lt;mixed-citation&gt;</span></a>, <a href="n-8je0.html" target="main" title=
+    "Product Information"><span class="elementtag">&lt;product&gt;</span></a>, <a href=
+    "n-tdf0.html" target="main" title="Related Article Information"><span class=
+    "elementtag">&lt;related-article&gt;</span></a>, <a href="n-t9f0.html" target="main" title=
+    "Related Object Information"><span class="elementtag">&lt;related-object&gt;</span></a></p>
+  </div>
+
+  <div class="examp.group">
+    <h3 class="header">Example 1</h3>
+
+    <p class="para">Date approved:</p>
+
+    <div class="taggedexamp">
+      <pre class="taggedtext">
 
 ...
 &lt;article-meta&gt;
@@ -24,7 +207,17 @@ Subcommittee SC 2&lt;/collab&gt;
 &lt;/article-meta&gt;
 ...
 
-</pre></div></div><div class="examp.group"><h3 class="header">Example 2</h3><p class="para">Date accepted:</p><div class="taggedexamp"><pre class="taggedtext">
+</pre>
+    </div>
+  </div>
+
+  <div class="examp.group">
+    <h3 class="header">Example 2</h3>
+
+    <p class="para">Date accepted:</p>
+
+    <div class="taggedexamp">
+      <pre class="taggedtext">
 ...
 &lt;article-meta&gt;
 &lt;article-id pub-id-type="pmid"&gt;...&lt;/article-id&gt;
@@ -58,7 +251,17 @@ people.&lt;/p&gt;
 &lt;/article-meta&gt;
 ...
 
-</pre></div></div><div class="examp.group"><h3 class="header">Example 3</h3><p class="para">Date in a non-Gregorian calendar:</p><div class="taggedexamp"><pre class="taggedtext">
+</pre>
+    </div>
+  </div>
+
+  <div class="examp.group">
+    <h3 class="header">Example 3</h3>
+
+    <p class="para">Date in a non-Gregorian calendar:</p>
+
+    <div class="taggedexamp">
+      <pre class="taggedtext">
 ...
 &lt;date date-type="received" calendar="Japanese" 
 iso-8601-date="1947-07-01"&gt;
@@ -69,7 +272,17 @@ iso-8601-date="1947-07-01"&gt;
 &lt;/date&gt;
 ...
 
-</pre></div></div><div class="examp.group"><h3 class="header">Example 4</h3><p class="para">Inside a citation to hold the publication date of the cited book:</p><div class="taggedexamp"><pre class="taggedtext">
+</pre>
+    </div>
+  </div>
+
+  <div class="examp.group">
+    <h3 class="header">Example 4</h3>
+
+    <p class="para">Inside a citation to hold the publication date of the cited book:</p>
+
+    <div class="taggedexamp">
+      <pre class="taggedtext">
 
 ...
 &lt;ref id="B14"&gt;
@@ -90,7 +303,11 @@ part in the health of the community&lt;/source&gt;
 
 
 
-</pre></div><div class="taggedexamp"><pre class="taggedtext">
+</pre>
+    </div>
+
+    <div class="taggedexamp">
+      <pre class="taggedtext">
 
 ...
 &lt;ref id="B14"&gt;
@@ -110,4 +327,20 @@ part in the health of the community&lt;/source&gt;.
 
 
 
-</pre></div></div><div class="moduledefined"><h2 class="header">Module</h2><p class="moduledefined">JATS-common1.ent</p></div><div class="pagefooter"><h2 class="headname">Journal Publishing Tag Library  NISO JATS Draft Version 1.1d1</h2><h4 class="pubdate">Version of December 2013</h4></div></body></html>
+</pre>
+    </div>
+  </div>
+
+  <div class="moduledefined">
+    <h2 class="header">Module</h2>
+
+    <p class="moduledefined">JATS-common1.ent</p>
+  </div>
+
+  <div class="pagefooter">
+    <h2 class="headname">Journal Publishing Tag Library NISO JATS Draft Version 1.1d1</h2>
+
+    <h4 class="pubdate">Version of December 2013</h4>
+  </div>
+</body>
+</html>

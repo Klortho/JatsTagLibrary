@@ -1,24 +1,74 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008--><link rel="stylesheet" href="auto-css.css" type="text/css"><title>Version 1.1d1 Change Report</title></head><body class="main"><div class="pageheader"><h2 class="headname">Journal Publishing Tag Library  NISO JATS Draft Version 1.1d1</h2><h4 class="sponsor">National Center for Biotechnology Information (NCBI)<br class="linebrk"> National Library of
-   Medicine (NLM)</h4></div><h1 class="sectiontitle">Version 1.1d1 Change Report</h1><div class="section"><a name="pub-chg-1.1d1-1"></a><h3 class="header">Recommended Changes to the Models</h3><p class="para">This version of the Tag Sets includes the 
-   changes recommended by the NISO JATS Standing Committee in response to pubic comments received through the end of August 2013. The committee recommendations are documented in <a href="http://www.somethingxxx.org" target="_new" class="external">“NISO JATS Standing Committee
-    Recommendations
-    in Response to Comments to on
-    NISO Z39.96-2012 through August 2013”</a>, available from NISO.</p></div><div class="section"><a name="pub-chg-1.1d1-2"></a><h3 class="header">Possible Impact on Customized Versions</h3><p class="para">In response to comment 00258, a change was made that might require people using customized versions of the DTD implementation of this tag set to adjust their customizations when moving to this draft. Previously, the <a href="n-t850.html" target="main" title="Caption of a Figure, Table, etc."><span class="elementtag">&lt;caption&gt;</span></a>  element's base attributes were 
-   were declared in the JATS-display.ent module and additional 
-   attributes (in the published XHTML, only <a href="n-ui90.html" target="main" title="Style (NISO JATS table model; MathML Tag Set)"><span class="attrtag">@style</span></a> ) for it 
-   were declared in the XHTML Table Module. The <a href="n-ui90.html" target="main" title="Style (NISO JATS table model; MathML Tag Set)"><span class="attrtag">@style</span></a> 
-   attribute is now declared with all the other <a href="n-t850.html" target="main" title="Caption of a Figure, Table, etc."><span class="elementtag">&lt;caption&gt;</span></a>
-   attributes in the  JATS-display.ent module, and the caption 
-   attributes in the XHTML table model have been set to IGNORE. 
-   This was done to prevent duplicate (harmless but annoying)
-   attribute warning messages.</p><p class="para"><strong>CAUTION</strong>: If your XHTML customization has added attributes
-   by redefining the parameter entity 
-   "Core.extra.attrib"
-   you will need to uncomment the lines in this
-   module that add that parameter entity to the
-   contents of the <a href="n-t850.html" target="main" title="Caption of a Figure, Table, etc."><span class="elementtag">&lt;caption&gt;</span></a> attribute list.
-   Otherwise, your new attributes will not be
-   added to <a href="n-t850.html" target="main" title="Caption of a Figure, Table, etc."><span class="elementtag">&lt;caption&gt;</span></a>. When you uncomment this
-   line, you will get a duplicative attribute
-   warning message on the <a href="n-ui90.html" target="main" title="Style (NISO JATS table model; MathML Tag Set)"><span class="attrtag">@style</span></a> attribute,
-   which you may ignore.</p></div><div class="pagefooter"><h2 class="headname">Journal Publishing Tag Library  NISO JATS Draft Version 1.1d1</h2><h4 class="pubdate">Version of December 2013</h4></div></body></html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta name="generator" content="HTML Tidy for Linux/x86 (vers 25 March 2009), see www.w3.org" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008-->
+  <link rel="stylesheet" href="auto-css.css" type="text/css" />
+
+  <title>Version 1.1d1 Change Report</title>
+</head>
+
+<body class="main">
+  <div class="pageheader">
+    <h2 class="headname">Journal Publishing Tag Library NISO JATS Draft Version 1.1d1</h2>
+
+    <h4 class="sponsor">National Center for Biotechnology Information (NCBI)<br class="linebrk" />
+    National Library of Medicine (NLM)</h4>
+  </div>
+
+  <h1 class="sectiontitle">Version 1.1d1 Change Report</h1>
+
+  <div class="section">
+    <a name="pub-chg-1.1d1-1" id="pub-chg-1.1d1-1"></a>
+
+    <h3 class="header">Recommended Changes to the Models</h3>
+
+    <p class="para">This version of the Tag Sets includes the changes recommended by the NISO JATS
+    Standing Committee in response to pubic comments received through the end of August 2013. The
+    committee recommendations are documented in <a href="http://www.somethingxxx.org" target="_new"
+    class="external">“NISO JATS Standing Committee Recommendations in Response to Comments to on
+    NISO Z39.96-2012 through August 2013”</a>, available from NISO.</p>
+  </div>
+
+  <div class="section">
+    <a name="pub-chg-1.1d1-2" id="pub-chg-1.1d1-2"></a>
+
+    <h3 class="header">Possible Impact on Customized Versions</h3>
+
+    <p class="para">In response to comment 00258, a change was made that might require people using
+    customized versions of the DTD implementation of this tag set to adjust their customizations
+    when moving to this draft. Previously, the <a href="n-t850.html" target="main" title=
+    "Caption of a Figure, Table, etc."><span class="elementtag">&lt;caption&gt;</span></a>
+    element's base attributes were were declared in the JATS-display.ent module and additional
+    attributes (in the published XHTML, only <a href="n-ui90.html" target="main" title=
+    "Style (NISO JATS table model; MathML Tag Set)"><span class="attrtag">@style</span></a> ) for
+    it were declared in the XHTML Table Module. The <a href="n-ui90.html" target="main" title=
+    "Style (NISO JATS table model; MathML Tag Set)"><span class="attrtag">@style</span></a>
+    attribute is now declared with all the other <a href="n-t850.html" target="main" title=
+    "Caption of a Figure, Table, etc."><span class="elementtag">&lt;caption&gt;</span></a>
+    attributes in the JATS-display.ent module, and the caption attributes in the XHTML table model
+    have been set to IGNORE. This was done to prevent duplicate (harmless but annoying) attribute
+    warning messages.</p>
+
+    <p class="para"><strong>CAUTION</strong>: If your XHTML customization has added attributes by
+    redefining the parameter entity "Core.extra.attrib" you will need to uncomment the lines in
+    this module that add that parameter entity to the contents of the <a href="n-t850.html" target=
+    "main" title="Caption of a Figure, Table, etc."><span class=
+    "elementtag">&lt;caption&gt;</span></a> attribute list. Otherwise, your new attributes will not
+    be added to <a href="n-t850.html" target="main" title=
+    "Caption of a Figure, Table, etc."><span class="elementtag">&lt;caption&gt;</span></a>. When
+    you uncomment this line, you will get a duplicative attribute warning message on the <a href=
+    "n-ui90.html" target="main" title="Style (NISO JATS table model; MathML Tag Set)"><span class=
+    "attrtag">@style</span></a> attribute, which you may ignore.</p>
+  </div>
+
+  <div class="pagefooter">
+    <h2 class="headname">Journal Publishing Tag Library NISO JATS Draft Version 1.1d1</h2>
+
+    <h4 class="pubdate">Version of December 2013</h4>
+  </div>
+</body>
+</html>

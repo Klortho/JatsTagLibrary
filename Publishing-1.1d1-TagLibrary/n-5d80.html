@@ -1,5 +1,125 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008--><link rel="stylesheet" href="auto-css.css" type="text/css"><title>Element: Conference Acronym</title></head><body class="main"><div class="pageheader"><h2 class="headname">Journal Publishing Tag Library  NISO JATS Draft Version 1.1d1</h2><h4 class="sponsor">National Center for Biotechnology Information (NCBI)<br class="linebrk"> National Library of
-   Medicine (NLM)</h4></div><div class="header"><h1 class="elementtag">&lt;conf-acronym&gt;</h1><h1 class="elementname">Conference Acronym</h1></div><div class="definition"><p class="para">Short, popular, or jargon name for a conference (for example, “Extreme” for Extreme Markup Languages, “SIGGRAPH” for Special Interest Group on Computer Graphics).</p></div><div class="remarks"><h2 class="header">Remarks</h2><p class="para">This element has been provided for searching convenience when the jargon name is better known than the full formal conference name.</p><p class="para">A conference acronym often includes the year of the conference (for example, “SGML ’97”) or, less often, the conference number (for example, “AMBA 6”). It is preferred, but not required, that the acronym exclude this year or number (thus using “SGML” or “AMBA”) and putting the year or number in the <a href="n-fr80.html" target="main" title="Conference Date"><span class="elementtag">&lt;conf-date&gt;</span></a> and <a href="n-5p80.html" target="main" title="Conference Number"><span class="elementtag">&lt;conf-num&gt;</span></a> elements, respectively.</p></div><div class="attrlist"><h2 class="header">Attributes</h2><h5 class="header"><a href="n-kxj0.html" target="main"><span class="attrtag">content-type</span></a> <a href="n-kxj0.html" target="main"><span class="attrname">Type of Content</span></a></h5><h5 class="header"><a href="n-fdp0.html" target="main"><span class="attrtag">id</span></a> <a href="n-fdp0.html" target="main"><span class="attrname">Document Internal Identifier</span></a></h5><h5 class="header"><a href="n-t790.html" target="main"><span class="attrtag">specific-use</span></a> <a href="n-t790.html" target="main"><span class="attrname">Specific Use</span></a></h5><h5 class="header"><a href="n-jim0.html" target="main"><span class="attrtag">xml:base</span></a> <a href="n-jim0.html" target="main"><span class="attrname">Base</span></a></h5><h5 class="header"><a href="n-tkz0.html" target="main"><span class="attrtag">xml:lang</span></a> <a href="n-tkz0.html" target="main"><span class="attrname">Language</span></a></h5></div><div class="relatedelem"><h2 class="header">Related Elements</h2><p class="para">The container element <a href="n-hka0.html" target="main" title="Conference Information"><span class="elementtag">&lt;conference&gt;</span></a> holds all of the elements that may be used to describe a conference, when an article was originally presented at a conference. Those elements include: <a href="n-fr80.html" target="main" title="Conference Date"><span class="elementtag">&lt;conf-date&gt;</span></a>, <a href="n-by80.html" target="main" title="Conference Name"><span class="elementtag">&lt;conf-name&gt;</span></a>, <a href="n-5d80.html" target="main" title="Conference Acronym"><span class="elementtag">&lt;conf-acronym&gt;</span></a>, <a href="n-5p80.html" target="main" title="Conference Number"><span class="elementtag">&lt;conf-num&gt;</span></a>, <a href="n-vi80.html" target="main" title="Conference Location"><span class="elementtag">&lt;conf-loc&gt;</span></a>, <a href="n-xq80.html" target="main" title="Conference Sponsor"><span class="elementtag">&lt;conf-sponsor&gt;</span></a>, and <a href="n-mb80.html" target="main" title="Conference Theme"><span class="elementtag">&lt;conf-theme&gt;</span></a>.</p></div><div class="contentmodel"><h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  conf-acronym (#PCDATA <a href="n-sp22.html" target="main" title="Conference Acronym Elements"><span class="petag">%conf-acronym-elements;</span></a>)*           &gt;</pre></div><div class="contentmodel"><h2 class="header">Expanded Content Model</h2><p class="contentdesc">(#PCDATA)*</p></div><div class="modeldesc"><h2 class="header">Description</h2><p class="para">Text, numbers, or special characters, zero or more</p></div><div class="elementcontext"><h3 class="header">This element may be contained in:</h3><p class="para"><a href="n-hka0.html" target="main" title="Conference Information"><span class="elementtag">&lt;conference&gt;</span></a></p></div><div class="examp.group"><h3 class="header">Example</h3><div class="taggedexamp"><pre class="taggedtext">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta name="generator" content="HTML Tidy for Linux/x86 (vers 25 March 2009), see www.w3.org" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008-->
+  <link rel="stylesheet" href="auto-css.css" type="text/css" />
+
+  <title>Element: Conference Acronym</title>
+</head>
+
+<body class="main">
+  <div class="pageheader">
+    <h2 class="headname">Journal Publishing Tag Library NISO JATS Draft Version 1.1d1</h2>
+
+    <h4 class="sponsor">National Center for Biotechnology Information (NCBI)<br class="linebrk" />
+    National Library of Medicine (NLM)</h4>
+  </div>
+
+  <div class="header">
+    <h1 class="elementtag">&lt;conf-acronym&gt;</h1>
+
+    <h1 class="elementname">Conference Acronym</h1>
+  </div>
+
+  <div class="definition">
+    <p class="para">Short, popular, or jargon name for a conference (for example, “Extreme” for
+    Extreme Markup Languages, “SIGGRAPH” for Special Interest Group on Computer Graphics).</p>
+  </div>
+
+  <div class="remarks">
+    <h2 class="header">Remarks</h2>
+
+    <p class="para">This element has been provided for searching convenience when the jargon name
+    is better known than the full formal conference name.</p>
+
+    <p class="para">A conference acronym often includes the year of the conference (for example,
+    “SGML ’97”) or, less often, the conference number (for example, “AMBA 6”). It is preferred, but
+    not required, that the acronym exclude this year or number (thus using “SGML” or “AMBA”) and
+    putting the year or number in the <a href="n-fr80.html" target="main" title=
+    "Conference Date"><span class="elementtag">&lt;conf-date&gt;</span></a> and <a href=
+    "n-5p80.html" target="main" title="Conference Number"><span class=
+    "elementtag">&lt;conf-num&gt;</span></a> elements, respectively.</p>
+  </div>
+
+  <div class="attrlist">
+    <h2 class="header">Attributes</h2>
+
+    <h5 class="header"><a href="n-kxj0.html" target="main"><span class=
+    "attrtag">content-type</span></a> <a href="n-kxj0.html" target="main"><span class=
+    "attrname">Type of Content</span></a></h5>
+
+    <h5 class="header"><a href="n-fdp0.html" target="main"><span class="attrtag">id</span></a>
+    <a href="n-fdp0.html" target="main"><span class="attrname">Document Internal
+    Identifier</span></a></h5>
+
+    <h5 class="header"><a href="n-t790.html" target="main"><span class=
+    "attrtag">specific-use</span></a> <a href="n-t790.html" target="main"><span class=
+    "attrname">Specific Use</span></a></h5>
+
+    <h5 class="header"><a href="n-jim0.html" target="main"><span class=
+    "attrtag">xml:base</span></a> <a href="n-jim0.html" target="main"><span class=
+    "attrname">Base</span></a></h5>
+
+    <h5 class="header"><a href="n-tkz0.html" target="main"><span class=
+    "attrtag">xml:lang</span></a> <a href="n-tkz0.html" target="main"><span class=
+    "attrname">Language</span></a></h5>
+  </div>
+
+  <div class="relatedelem">
+    <h2 class="header">Related Elements</h2>
+
+    <p class="para">The container element <a href="n-hka0.html" target="main" title=
+    "Conference Information"><span class="elementtag">&lt;conference&gt;</span></a> holds all of
+    the elements that may be used to describe a conference, when an article was originally
+    presented at a conference. Those elements include: <a href="n-fr80.html" target="main" title=
+    "Conference Date"><span class="elementtag">&lt;conf-date&gt;</span></a>, <a href="n-by80.html"
+    target="main" title="Conference Name"><span class="elementtag">&lt;conf-name&gt;</span></a>,
+    <a href="n-5d80.html" target="main" title="Conference Acronym"><span class=
+    "elementtag">&lt;conf-acronym&gt;</span></a>, <a href="n-5p80.html" target="main" title=
+    "Conference Number"><span class="elementtag">&lt;conf-num&gt;</span></a>, <a href="n-vi80.html"
+    target="main" title="Conference Location"><span class="elementtag">&lt;conf-loc&gt;</span></a>,
+    <a href="n-xq80.html" target="main" title="Conference Sponsor"><span class=
+    "elementtag">&lt;conf-sponsor&gt;</span></a>, and <a href="n-mb80.html" target="main" title=
+    "Conference Theme"><span class="elementtag">&lt;conf-theme&gt;</span></a>.</p>
+  </div>
+
+  <div class="contentmodel">
+    <h2 class="header first">Content Model</h2>
+    <pre class="contentdesc">
+&lt;!ELEMENT  conf-acronym (#PCDATA <a href="n-sp22.html" target="main" title=
+"Conference Acronym Elements"><span class=
+"petag">%conf-acronym-elements;</span></a>)*           &gt;
+</pre>
+  </div>
+
+  <div class="contentmodel">
+    <h2 class="header">Expanded Content Model</h2>
+
+    <p class="contentdesc">(#PCDATA)*</p>
+  </div>
+
+  <div class="modeldesc">
+    <h2 class="header">Description</h2>
+
+    <p class="para">Text, numbers, or special characters, zero or more</p>
+  </div>
+
+  <div class="elementcontext">
+    <h3 class="header">This element may be contained in:</h3>
+
+    <p class="para"><a href="n-hka0.html" target="main" title="Conference Information"><span class=
+    "elementtag">&lt;conference&gt;</span></a></p>
+  </div>
+
+  <div class="examp.group">
+    <h3 class="header">Example</h3>
+
+    <div class="taggedexamp">
+      <pre class="taggedtext">
 ...
 &lt;article-meta&gt;
 ...
@@ -29,4 +149,20 @@ organizations&lt;/conf-theme&gt;
 &lt;/article-meta&gt;
 ...
 
-</pre></div></div><div class="moduledefined"><h2 class="header">Module</h2><p class="moduledefined">JATS-articlemeta1.ent</p></div><div class="pagefooter"><h2 class="headname">Journal Publishing Tag Library  NISO JATS Draft Version 1.1d1</h2><h4 class="pubdate">Version of December 2013</h4></div></body></html>
+</pre>
+    </div>
+  </div>
+
+  <div class="moduledefined">
+    <h2 class="header">Module</h2>
+
+    <p class="moduledefined">JATS-articlemeta1.ent</p>
+  </div>
+
+  <div class="pagefooter">
+    <h2 class="headname">Journal Publishing Tag Library NISO JATS Draft Version 1.1d1</h2>
+
+    <h4 class="pubdate">Version of December 2013</h4>
+  </div>
+</body>
+</html>

@@ -1,30 +1,84 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008--><link rel="stylesheet" href="auto-css.css" type="text/css"><title>Element: Institution Identifier</title></head><body class="main"><div class="pageheader"><h2 class="headname">Journal Publishing Tag Library  NISO JATS Draft Version 1.1d1</h2><h4 class="sponsor">National Center for Biotechnology Information (NCBI)<br class="linebrk"> National Library of
-   Medicine (NLM)</h4></div><div class="header"><h1 class="elementtag">&lt;institution-id&gt;</h1><h1 class="elementname">Institution Identifier</h1></div><div class="definition"><p class="para">A externally defined institutional identifier, whether publisher-specific (for example 
-“AIP”) or from an established identifying authority (for example, “Ringgold” or “ISNI”).</p></div><div class="remarks"><h2 class="header">Remarks</h2><p class="para">A single institution may have multiple identifiers, either because different assigning
-agencies have defined an identifier or because the entity belongs to more than one larger
-organizational unit, for example, a laboratory may be part of multiple institutions.</p><p class="para"><strong>Common Practice:</strong> All levels of a multi-tier 
-organization are typically listed within a single 
-<span class="elementtag">&lt;institution&gt;</span> element and 
-given a single institution identifier. For example, a program, a 
-department, and a university may be part of the same 
-<a href="n-bjv0.html" target="main" title="Institution Name: in an Address"><span class="elementtag">&lt;institution&gt;</span></a>, inside a single 
-<a href="n-tmv0.html" target="main" title="Institution Wrapper"><span class="elementtag">&lt;institution-wrap&gt;</span></a> with a single 
-<a href="n-6bv0.html" target="main" title="Institution Identifier"><span class="elementtag">&lt;institution-id&gt;</span></a>. Similarly both a corporation and a
-division within the corporation might be inside one <a href="n-bjv0.html" target="main" title="Institution Name: in an Address"><span class="elementtag">&lt;institution&gt;</span></a> element, inside a <a href="n-tmv0.html" target="main" title="Institution Wrapper"><span class="elementtag">&lt;institution-wrap&gt;</span></a> with a single institution
-identifier (<a href="n-6bv0.html" target="main" title="Institution Identifier"><span class="elementtag">&lt;institution-id&gt;</span></a>.</p><div class="codeblock"><pre>&lt;institution-wrap&gt;
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta name="generator" content="HTML Tidy for Linux/x86 (vers 25 March 2009), see www.w3.org" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008-->
+  <link rel="stylesheet" href="auto-css.css" type="text/css" />
+
+  <title>Element: Institution Identifier</title>
+</head>
+
+<body class="main">
+  <div class="pageheader">
+    <h2 class="headname">Journal Publishing Tag Library NISO JATS Draft Version 1.1d1</h2>
+
+    <h4 class="sponsor">National Center for Biotechnology Information (NCBI)<br class="linebrk" />
+    National Library of Medicine (NLM)</h4>
+  </div>
+
+  <div class="header">
+    <h1 class="elementtag">&lt;institution-id&gt;</h1>
+
+    <h1 class="elementname">Institution Identifier</h1>
+  </div>
+
+  <div class="definition">
+    <p class="para">A externally defined institutional identifier, whether publisher-specific (for
+    example “AIP”) or from an established identifying authority (for example, “Ringgold” or
+    “ISNI”).</p>
+  </div>
+
+  <div class="remarks">
+    <h2 class="header">Remarks</h2>
+
+    <p class="para">A single institution may have multiple identifiers, either because different
+    assigning agencies have defined an identifier or because the entity belongs to more than one
+    larger organizational unit, for example, a laboratory may be part of multiple institutions.</p>
+
+    <p class="para"><strong>Common Practice:</strong> All levels of a multi-tier organization are
+    typically listed within a single <span class="elementtag">&lt;institution&gt;</span> element
+    and given a single institution identifier. For example, a program, a department, and a
+    university may be part of the same <a href="n-bjv0.html" target="main" title=
+    "Institution Name: in an Address"><span class="elementtag">&lt;institution&gt;</span></a>,
+    inside a single <a href="n-tmv0.html" target="main" title="Institution Wrapper"><span class=
+    "elementtag">&lt;institution-wrap&gt;</span></a> with a single <a href="n-6bv0.html" target=
+    "main" title="Institution Identifier"><span class=
+    "elementtag">&lt;institution-id&gt;</span></a>. Similarly both a corporation and a division
+    within the corporation might be inside one <a href="n-bjv0.html" target="main" title=
+    "Institution Name: in an Address"><span class="elementtag">&lt;institution&gt;</span></a>
+    element, inside a <a href="n-tmv0.html" target="main" title="Institution Wrapper"><span class=
+    "elementtag">&lt;institution-wrap&gt;</span></a> with a single institution identifier (<a href=
+    "n-6bv0.html" target="main" title="Institution Identifier"><span class=
+    "elementtag">&lt;institution-id&gt;</span></a>.</p>
+
+    <div class="codeblock">
+      <pre>
+&lt;institution-wrap&gt;
 &lt;institution-id&gt;Moo-U-41&lt;/institution-id&gt;
 &lt;institution content-type="edu"&gt;
 University of Frostbite Falls, Dept of Campus Security, 
 Dept of Moose and Squirrel Security, 
 Office of the Acting Dean&lt;/institution&gt;
-&lt;/institution-wrap&gt;</pre></div><p class="para">Alternatively, a divisional distinction such as an
-“organization” element with subordinate “dept” and an “office”
-inside a department could tagged using multiple 
-<a href="n-bjv0.html" target="main" title="Institution Name: in an Address"><span class="elementtag">&lt;institution&gt;</span></a> elements with the 
-<a href="n-kxj0.html" target="main" title="Type of Content"><span class="attrtag">@content-type</span></a> attribute differentiating institution, department, and
-office. Each of these divisions could be assigned an institutional identifier 
-(<a href="n-6bv0.html" target="main" title="Institution Identifier"><span class="elementtag">&lt;institution-id&gt;</span></a>), which would require the wrapper element  
-<a href="n-tmv0.html" target="main" title="Institution Wrapper"><span class="elementtag">&lt;institution-wrap&gt;</span></a>.</p><div class="codeblock"><pre>
+&lt;/institution-wrap&gt;
+</pre>
+    </div>
+
+    <p class="para">Alternatively, a divisional distinction such as an “organization” element with
+    subordinate “dept” and an “office” inside a department could tagged using multiple <a href=
+    "n-bjv0.html" target="main" title="Institution Name: in an Address"><span class=
+    "elementtag">&lt;institution&gt;</span></a> elements with the <a href="n-kxj0.html" target=
+    "main" title="Type of Content"><span class="attrtag">@content-type</span></a> attribute
+    differentiating institution, department, and office. Each of these divisions could be assigned
+    an institutional identifier (<a href="n-6bv0.html" target="main" title=
+    "Institution Identifier"><span class="elementtag">&lt;institution-id&gt;</span></a>), which
+    would require the wrapper element <a href="n-tmv0.html" target="main" title=
+    "Institution Wrapper"><span class="elementtag">&lt;institution-wrap&gt;</span></a>.</p>
+
+    <div class="codeblock">
+      <pre>
 &lt;institution-wrap&gt;
   &lt;institution content-type="edu"&gt;
     University of Frostbite Falls&lt;/institution&gt;
@@ -44,9 +98,78 @@ office. Each of these divisions could be assigned an institutional identifier
   &lt;institution content-type="office"&gt;
       Office of the Acting Dean&lt;/institution&gt;
   &lt;institution-id&gt;4850ws&lt;/institution-id&gt;
-&lt;/institution-wrap&gt;</pre></div><p class="para"><strong>External Identifier:</strong> The 
-<a href="n-6bv0.html" target="main" title="@"><span class="attrname"></span></a> element holds an external identifier, assigned to an institution by a publisher, an archive or library, or an agency such as Ringgold or ISNI. The contents of this element should not be confused with the <a href="n-fdp0.html" target="main" title="Document Internal Identifier"><span class="attrtag">@id</span></a> attribute, which holds an internal document identifier that can be used by software to preform a simple link.</p></div><div class="attrlist"><h2 class="header">Attributes</h2><h5 class="header"><a href="n-kxj0.html" target="main"><span class="attrtag">content-type</span></a> <a href="n-kxj0.html" target="main"><span class="attrname">Type of Content</span></a></h5><h5 class="header"><a href="n-fdp0.html" target="main"><span class="attrtag">id</span></a> <a href="n-fdp0.html" target="main"><span class="attrname">Document Internal Identifier</span></a></h5><h5 class="header"><a href="n-uzp0.html" target="main"><span class="attrtag">institution-id-type</span></a> <a href="n-uzp0.html" target="main"><span class="attrname">Type of Institution Identifier</span></a></h5><h5 class="header"><a href="n-t790.html" target="main"><span class="attrtag">specific-use</span></a> <a href="n-t790.html" target="main"><span class="attrname">Specific Use</span></a></h5><h5 class="header"><a href="n-jim0.html" target="main"><span class="attrtag">xml:base</span></a> <a href="n-jim0.html" target="main"><span class="attrname">Base</span></a></h5></div><div class="contentmodel"><h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  institution-id  
-                        <a href="n-zr52.html" target="main" title="Institution Identifier Model"><span class="petag">%institution-id-model;</span></a>                       &gt;</pre></div><div class="contentmodel"><h2 class="header">Expanded Content Model</h2><p class="contentdesc">(#PCDATA)</p></div><div class="modeldesc"><h2 class="header">Description</h2><p class="para">Text, numbers, or special characters</p></div><div class="elementcontext"><h3 class="header">This element may be contained in:</h3><p class="para"><a href="n-tmv0.html" target="main" title="Institution Wrapper"><span class="elementtag">&lt;institution-wrap&gt;</span></a></p></div><div class="examp.group"><h3 class="header">Example 1</h3><p class="para">In article metadata, inside an affiliation:</p><div class="taggedexamp"><pre class="taggedtext">
+&lt;/institution-wrap&gt;
+</pre>
+    </div>
+
+    <p class="para"><strong>External Identifier:</strong> The <a href="n-6bv0.html" target="main"
+    title="@"></a> element holds an external identifier, assigned to an institution by a publisher,
+    an archive or library, or an agency such as Ringgold or ISNI. The contents of this element
+    should not be confused with the <a href="n-fdp0.html" target="main" title=
+    "Document Internal Identifier"><span class="attrtag">@id</span></a> attribute, which holds an
+    internal document identifier that can be used by software to preform a simple link.</p>
+  </div>
+
+  <div class="attrlist">
+    <h2 class="header">Attributes</h2>
+
+    <h5 class="header"><a href="n-kxj0.html" target="main"><span class=
+    "attrtag">content-type</span></a> <a href="n-kxj0.html" target="main"><span class=
+    "attrname">Type of Content</span></a></h5>
+
+    <h5 class="header"><a href="n-fdp0.html" target="main"><span class="attrtag">id</span></a>
+    <a href="n-fdp0.html" target="main"><span class="attrname">Document Internal
+    Identifier</span></a></h5>
+
+    <h5 class="header"><a href="n-uzp0.html" target="main"><span class=
+    "attrtag">institution-id-type</span></a> <a href="n-uzp0.html" target="main"><span class=
+    "attrname">Type of Institution Identifier</span></a></h5>
+
+    <h5 class="header"><a href="n-t790.html" target="main"><span class=
+    "attrtag">specific-use</span></a> <a href="n-t790.html" target="main"><span class=
+    "attrname">Specific Use</span></a></h5>
+
+    <h5 class="header"><a href="n-jim0.html" target="main"><span class=
+    "attrtag">xml:base</span></a> <a href="n-jim0.html" target="main"><span class=
+    "attrname">Base</span></a></h5>
+  </div>
+
+  <div class="contentmodel">
+    <h2 class="header first">Content Model</h2>
+    <pre class="contentdesc">
+&lt;!ELEMENT  institution-id  
+                        <a href="n-zr52.html" target="main" title=
+"Institution Identifier Model"><span class=
+"petag">%institution-id-model;</span></a>                       &gt;
+</pre>
+  </div>
+
+  <div class="contentmodel">
+    <h2 class="header">Expanded Content Model</h2>
+
+    <p class="contentdesc">(#PCDATA)</p>
+  </div>
+
+  <div class="modeldesc">
+    <h2 class="header">Description</h2>
+
+    <p class="para">Text, numbers, or special characters</p>
+  </div>
+
+  <div class="elementcontext">
+    <h3 class="header">This element may be contained in:</h3>
+
+    <p class="para"><a href="n-tmv0.html" target="main" title="Institution Wrapper"><span class=
+    "elementtag">&lt;institution-wrap&gt;</span></a></p>
+  </div>
+
+  <div class="examp.group">
+    <h3 class="header">Example 1</h3>
+
+    <p class="para">In article metadata, inside an affiliation:</p>
+
+    <div class="taggedexamp">
+      <pre class="taggedtext">
   
 ...
 &lt;article-meta&gt;
@@ -63,7 +186,8 @@ office. Each of these divisions could be assigned an institutional identifier
 &lt;/contrib-group&gt;
 &lt;aff id="aff1"&gt;
 &lt;institution-wrap&gt;
-<strong><span class="focus">&lt;institution-id institution-id-type="Ringgold"&gt;1812&lt;/institution-id&gt;</span></strong>
+<strong><span class=
+"focus">&lt;institution-id institution-id-type="Ringgold"&gt;1812&lt;/institution-id&gt;</span></strong>
 &lt;institution content-type="university"&gt;Harvard University&lt;/institution&gt;
 &lt;/institution-wrap&gt;
 &lt;/aff&gt;
@@ -77,7 +201,18 @@ office. Each of these divisions could be assigned an institutional identifier
 ...
 
 
-  </pre></div></div><div class="examp.group"><h3 class="header">Example 2</h3><p class="para">In article metadata, inside a funding group:</p><div class="taggedexamp"><pre class="taggedtext">
+  
+</pre>
+    </div>
+  </div>
+
+  <div class="examp.group">
+    <h3 class="header">Example 2</h3>
+
+    <p class="para">In article metadata, inside a funding group:</p>
+
+    <div class="taggedexamp">
+      <pre class="taggedtext">
   
 ...
 &lt;funding-group&gt;
@@ -89,28 +224,34 @@ Computing Center&lt;/institution&gt;
 &lt;/institution-wrap&gt;, operated by 
   
 &lt;institution-wrap&gt;
-<strong><span class="focus">&lt;institution-id institution-id-type="Ringgold"&gt;1846&lt;/institution-id&gt;</span></strong>
-<strong><span class="focus">&lt;institution-id institution-id-type="ISNI"&gt;0000 0001 2170 1429&lt;/institution-id&gt;</span></strong>
+<strong><span class=
+"focus">&lt;institution-id institution-id-type="Ringgold"&gt;1846&lt;/institution-id&gt;</span></strong>
+<strong><span class=
+"focus">&lt;institution-id institution-id-type="ISNI"&gt;0000 0001 2170 1429&lt;/institution-id&gt;</span></strong>
 &lt;institution content-type="university"&gt;Boston University&lt;/institution&gt;
 &lt;/institution-wrap&gt;, 
       
 &lt;institution-wrap&gt;
-<strong><span class="focus">&lt;institution-id institution-id-type="Ringgold"&gt;1812&lt;/institution-id&gt;</span></strong>
+<strong><span class=
+"focus">&lt;institution-id institution-id-type="Ringgold"&gt;1812&lt;/institution-id&gt;</span></strong>
 &lt;institution content-type="university"&gt;Harvard University&lt;/institution&gt;
 &lt;/institution-wrap&gt;, 
       
 &lt;institution-wrap&gt;
-<strong><span class="focus">&lt;institution-id institution-id-type="Ringgold"&gt;2167&lt;/institution-id&gt;</span></strong>
+<strong><span class=
+"focus">&lt;institution-id institution-id-type="Ringgold"&gt;2167&lt;/institution-id&gt;</span></strong>
 &lt;institution content-type="university"&gt;MIT&lt;/institution&gt;
 &lt;/institution-wrap&gt;, 
       
 &lt;institution-wrap&gt;
-<strong><span class="focus">&lt;institution-id institution-id-type="Ringgold"&gt;1848&lt;/institution-id&gt;</span></strong>
+<strong><span class=
+"focus">&lt;institution-id institution-id-type="Ringgold"&gt;1848&lt;/institution-id&gt;</span></strong>
 &lt;institution content-type="university"&gt;Northeastern University&lt;/institution&gt;
 &lt;/institution-wrap&gt;, and the 
       
 &lt;institution-wrap&gt;      
-<strong><span class="focus">&lt;institution-id institution-id-type="Ringgold"&gt;14707&lt;/institution-id&gt;</span></strong>
+<strong><span class=
+"focus">&lt;institution-id institution-id-type="Ringgold"&gt;14707&lt;/institution-id&gt;</span></strong>
 &lt;institution content-type="university"&gt;University of Massachusetts&lt;/institution&gt;
 &lt;/institution-wrap&gt;
 &lt;/funding-source&gt;
@@ -119,4 +260,21 @@ Computing Center&lt;/institution&gt;
 ...
 
 
-  </pre></div></div><div class="moduledefined"><h2 class="header">Module</h2><p class="moduledefined">JATS-common1.ent</p></div><div class="pagefooter"><h2 class="headname">Journal Publishing Tag Library  NISO JATS Draft Version 1.1d1</h2><h4 class="pubdate">Version of December 2013</h4></div></body></html>
+  
+</pre>
+    </div>
+  </div>
+
+  <div class="moduledefined">
+    <h2 class="header">Module</h2>
+
+    <p class="moduledefined">JATS-common1.ent</p>
+  </div>
+
+  <div class="pagefooter">
+    <h2 class="headname">Journal Publishing Tag Library NISO JATS Draft Version 1.1d1</h2>
+
+    <h4 class="pubdate">Version of December 2013</h4>
+  </div>
+</body>
+</html>
