@@ -1,0 +1,33 @@
+#header {
+  background: #4F3C2E;
+  color: white;
+}
+#header #signatures-nav li {
+  text-shadow: 1px 1px 0 rgba(167, 137, 115, 0.5)
+}
+#header #navigation li a {
+  color: white
+}
+#header #navigation li a:hover {
+  background: #A79181;
+}
+
+#entry a {
+  color: #4F3C2E;
+}
+
+#entry #footer {
+  background: #4F3C2E; 
+  color: white;
+}
+#entry #footer h2 {
+  text-shadow: 1px 1px 0 rgba(167, 137, 115, 0.5)
+}
+#entry #footer a {
+  color: white;
+  text-decoration: underline;
+}
+#entry #footer a:hover {
+  background: #A78973; 
+}
+
