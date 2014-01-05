@@ -102,8 +102,8 @@ individual pages.  Like so:
 
 ### Generate toc.html
 
-Run the *t-2000.html* file through the stylesheet *make-toc.xsl*, to produce *jqapi-docs/toc.html*,
-which is the source for the left-hand navigation panel of the new docs:
+Run the *t-2000.html* file through the stylesheet *make-toc.xsl*, to produce
+*toc.html*, which is the source for the left-hand navigation panel of the new docs:
 
 ```
 java -jar ../scripts/saxon9he.jar -xsl:../scripts/make-toc.xsl \
