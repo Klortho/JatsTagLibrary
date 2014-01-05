@@ -5,21 +5,27 @@ Looking for the "permalink" user script for the JATS Tag Library pages?  I've mo
 that to its own repository, [here](https://github.com/Klortho/TagLibPermalink).
 
 This repository holds the content for a new-and-improved JATS Tag Set viewer.
-The results are deployed here:
+The results are deployed here, alongside links to the originals from which the
+were ported:
 
-  * [Archiving and Interchange - NISO JATS
-    1.0](http://jatspan.org/niso/archiving-1.0/)
-  * [Publishing - NISO JATS 1.0](http://jatspan.org/niso/publishing-1.0/)
-  * [Article Authoring - NISO JATS
-    1.0](http://jatspan.org/niso/authoring-1.0/)
-
-The original versions can be found on the NLM site here:
-
-  * [Archiving and Interchange - NISO JATS
-    1.0](http://jats.nlm.nih.gov/archiving/tag-library/1.0/)
-  * [Publishing - NISO JATS 1.0](http://jats.nlm.nih.gov/publishing/tag-library/1.0/)
-  * [Article Authoring - NISO JATS
-    1.0](http://jats.nlm.nih.gov/articleauthoring/tag-library/1.0/)
+  * *Archiving and Interchange*
+      * [NISO JATS Version 1.0](http://jatspan.org/niso/archiving-1.0/)
+        ([original](http://jats.nlm.nih.gov/archiving/tag-library/1.0/))
+      * [NISO JATS Draft Version 1.1d1](http://jatspan.org/niso/archiving-1.1d1/)
+        ([original](http://jats.nlm.nih.gov/archiving/tag-library/1.1d1/))
+  * *Publishing*
+      * [NISO JATS Version 1.0](http://jatspan.org/niso/publishing-1.0/)
+        ([original](http://jats.nlm.nih.gov/publishing/tag-library/1.0/))
+      * [NISO JATS Draft Version 1.1d1](http://jatspan.org/niso/publishing-1.1d1/)
+        ([original](http://jats.nlm.nih.gov/publishing/tag-library/1.1d1/))
+  * *Article Authoring*
+      * [NISO JATS Version 1.0](http://jatspan.org/niso/authoring-1.0/)
+        ([original](http://jats.nlm.nih.gov/articleauthoring/tag-library/1.0/))
+      * [NISO JATS Draft Version 1.1d1](http://jatspan.org/niso/authoring-1.1d1/)
+        ([original](http://jats.nlm.nih.gov/articleauthoring/tag-library/1.1d1/))
+  * *Book Interchange Tag Suite (BITS)*
+      * [Version 1.0](http://jatspan.org/nlm/bits-1.0/)
+        ([original](http://jats.nlm.nih.gov/extensions/bits/tag-library/1.0/))
 
 These documentation sets use [jatsdoc](https://github.com/Klortho/jatsdoc), a
 JS/CSS framework forked form the excellent [jqapi](http://jqapi.com/).
