@@ -1,0 +1,68 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008--><link rel="stylesheet" href="auto-css.css" type="text/css"><title>Tagging Affiliations</title></head><body class="main"><div class="pageheader"><h2 class="headname">Article Authoring Tag Library  NISO JATS Draft Version 1.1d1</h2><h4 class="sponsor">National Center for Biotechnology Information (NCBI)<br class="linebrk"> National Library of
+   Medicine (NLM)</h4></div><div class="section"><h3 class="header">Tagging Affiliations</h3><p class="para">Affiliations are commonly listed for some or all authors of an article to provide
+    information about their company, university or other institution, and their contact information.
+    In print, affiliations are commonly displayed in the footnote area, with footnote numbers or
+    other symbols to identify which contributors go with which affiliations. However, in this Tag
+    Set, each author’s affiliation is recorded as part of an individual contributor
+    (<a href="n-ht50.html" target="main" title="Contributor"><span class="elementtag">&lt;contrib&gt;</span></a>).</p><p class="para">The element to hold affiliation information is <a href="n-na20.html" target="main" title="Affiliation"><span class="elementtag">&lt;aff&gt;</span></a>, which allows many subelements, with the address and address-linking elements
+    being most common. <a href="n-na20.html" target="main" title="Affiliation"><span class="elementtag">&lt;aff&gt;</span></a> occurs only inside
+    <a href="n-ht50.html" target="main" title="Contributor"><span class="elementtag">&lt;contrib&gt;</span></a>, commonly at the end. If two or more
+    contributors have the same affiliation, the affiliation is repeated for each contributor to
+    which it applies inside each <a href="n-ht50.html" target="main" title="Contributor"><span class="elementtag">&lt;contrib&gt;</span></a>
+    element.</p><p class="para">In some cases, one or more authors will be designated “corresponding”
+    authors (that is, readers should contact them rather than other authors concerning the article).
+    The <a href="n-ht50.html" target="main" title="Contributor"><span class="elementtag">&lt;contrib&gt;</span></a> element provides the <a href="n-g260.html" target="main" title="Corresponding Author"><span class="attrtag">@corresp</span></a> attribute, which should be set to
+    “<tt>yes</tt>” for those authors.</p><div class="codeblock"><pre>
+
+&lt;contrib-group&gt;
+  &lt;contrib contrib-type="author" corresp="yes"&gt;
+    &lt;name&gt;
+      &lt;surname&gt;Tanabe&lt;/surname&gt;
+      &lt;given-names&gt;Lorraine&lt;/given-names&gt;
+    &lt;/name&gt;
+    &lt;aff&gt;National Center for Biotechnology Information, National Library of
+   Medicine, NIH, 8600 Rockville Pike, Bethesda, MD, USA&lt;/aff&gt;
+  &lt;/contrib&gt;
+  &lt;contrib contrib-type="author"&gt;
+    &lt;name&gt;
+      &lt;surname&gt;Thom&lt;/surname&gt;
+      &lt;given-names&gt;Lynne H.&lt;/given-names&gt;
+    &lt;/name&gt;
+    &lt;aff&gt;Consolidated Safety Services, 10335 Democracy Lane, Suite 202,
+   Fairfax, VA, USA&lt;/aff&gt;
+  &lt;/contrib&gt;
+&lt;/contrib-group&gt;</pre></div><div class="section"><a name="aut-tag-multiaff"></a><h4 class="header">Multiple Versions of an Affiliation</h4><p class="para">Sometimes an affiliation is present in multiple languages or multiple scripts and care should
+be taken so that it does not  appear to multiply the number of affiliations. (Three versions of the
+name of a university is not the same as three different universities.) The <a href="n-82d0.html" target="main" title="Document Internal Identifier"><span class="attrtag">@id</span></a> attribute that is normally placed 
+  onto the <a href="n-na20.html" target="main" title="Affiliation"><span class="elementtag">&lt;aff&gt;</span></a> element should be placed on the alternatives wrapper element instead, to make the connection 
+  between the contributors and the affiliations.</p><p class="para">The <a href="n-e420.html" target="main" title="Affiliation Alternatives"><span class="elementtag">&lt;aff-alternatives&gt;</span></a> element is intended to collect multiple
+versions of a single affiliation. Like the similar construction for graphics <span class="elementtag">&lt;alternatives&gt;</span>, it will be up to an application how multiple versions of a single affiliation are to be processed. The <a href="n-xzi0.html" target="main" title="Language"><span class="attrtag">@xml:lang</span></a> attributes can be used to distinguish the different affiliations for separate processing. The <span class="elementtag">&lt;aff-alternatives&gt;</span> element can be used to record:
+<ul class="bullist"><li>The name of an affiliation in multiple languages (For example, a university name in Korean or Chinese-Han characters and a 
+   transliterated version of the same name in the Latin alphabet);</li><li>The name of an affiliation in multiple language/script combinations (For example, a university name in Japanese 
+   [<tt>xml:lang="ja-Jpan"</tt> for Han + Hiragana + Katakana] and the same university name written in Kanji [<tt>xml:lang="ja-Hani"</tt>]);</li><li>An alternate affiliation for sorting or searching (For example, a name in French with
+accented letters, such as an “é”, and a plain lower-ASCII version of the same
+name with the “é” replaced by “e”. The attribute <a href="n-r6h0.html" target="main" title="Specific Use"><span class="attrtag">@specific-use</span></a> attribute can be used to indicate that the ASCII version is only for “sort”, not for display.);</li><li>An alternate name indexing (For example, an XML database may need to record all the name variants found for an individual from “President Thomas Jefferson” to “Long Tom”, with <a href="n-r6h0.html" target="main" title="Specific Use"><span class="attrtag">@specific-use</span></a> used to mark “primary” and “index”).</li></ul></p><div class="codeblock"><pre>
+...
+&lt;article-meta&gt;
+&lt;title-group&gt;...&lt;/title-group&gt;
+&lt;contrib-group&gt;
+&lt;contrib rid="aff1"&gt;
+&lt;name&gt;&lt;surname&gt;Smythe-Barring&lt;/surname&gt;
+&lt;given-names&gt;John&lt;/given-names&gt;&lt;/name&gt;
+<strong><span class="focus">&lt;aff-alternatives id="aff1"&gt;
+&lt;aff&gt; 
+&lt;institution xml:lang="ja-Jpan"&gt;国立言語学博物館&lt;/institution&gt;
+&lt;/aff&gt;
+&lt;aff&gt;
+&lt;institution xml:lang="en"&gt;National Museum of 
+ Linguistics&lt;/institution&gt;
+&lt;/aff&gt;
+&lt;/aff-alternatives&gt;</span></strong>
+&lt;/contrib&gt;
+&lt;/contrib-group&gt;
+...
+&lt;/article-meta&gt;
+...
+ 
+
+</pre></div></div></div><div class="pagefooter"><h2 class="headname">Article Authoring Tag Library  NISO JATS Draft Version 1.1d1</h2><h4 class="pubdate">Version of December 2013</h4></div></body></html>

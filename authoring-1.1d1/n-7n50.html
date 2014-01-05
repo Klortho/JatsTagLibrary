@@ -1,0 +1,117 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!--Tag library software copyright Mulberry Technologies, Inc., 2002-2008--><link rel="stylesheet" href="auto-css.css" type="text/css"><title>Element: Contributor Group</title></head><body class="main"><div class="pageheader"><h2 class="headname">Article Authoring Tag Library  NISO JATS Draft Version 1.1d1</h2><h4 class="sponsor">National Center for Biotechnology Information (NCBI)<br class="linebrk"> National Library of
+   Medicine (NLM)</h4></div><div class="header"><h1 class="elementtag">&lt;contrib-group&gt;</h1><h1 class="elementname">Contributor Group</h1></div><div class="definition"><p class="para">Container element for one or more contributors and information about those contributors.</p></div><div class="remarks"><h2 class="header">Remarks</h2><p class="para">Inside the element <a href="n-yp20.html" target="main" title="Article Metadata"><span class="elementtag">&lt;article-meta&gt;</span></a>, the <span class="elementtag">&lt;contrib-group&gt;</span> element groups individual contributors to a document such as authors, researchers, or photographers.</p><p class="para">Contributor groups may name primary authors, editors, sponsors, translators, illustrators, etc. The members of the group are contributors who worked individually, not as a group. The <a href="n-wyn0.html" target="main" title="Type of Content"><span class="attrtag">@content-type</span></a> attribute should be used to name the type of contributor, “<tt>authors</tt>”, “<tt>editors</tt>”, “<tt>translators</tt>”, etc.</p></div><div class="attrlist"><h2 class="header">Attributes</h2><h5 class="header"><a href="n-wyn0.html" target="main"><span class="attrtag">content-type</span></a> <a href="n-wyn0.html" target="main"><span class="attrname">Type of Content</span></a></h5><h5 class="header"><a href="n-82d0.html" target="main"><span class="attrtag">id</span></a> <a href="n-82d0.html" target="main"><span class="attrname">Document Internal Identifier</span></a></h5><h5 class="header"><a href="n-r6h0.html" target="main"><span class="attrtag">specific-use</span></a> <a href="n-r6h0.html" target="main"><span class="attrname">Specific Use</span></a></h5><h5 class="header"><a href="n-uyi0.html" target="main"><span class="attrtag">xml:base</span></a> <a href="n-uyi0.html" target="main"><span class="attrname">Base</span></a></h5></div><div class="relatedelem"><h2 class="header">Related Elements</h2><p class="para">The element <span class="elementtag">&lt;contrib-group&gt;</span> is a metadata element. The <a href="n-k540.html" target="main" title="Person Group for a Cited Publication"><span class="elementtag">&lt;person-group&gt;</span></a> element performs a similar function of grouping individual contributors, such as authors and editors, within a bibliographic reference (<a href="n-zh80.html" target="main" title="Element Citation"><span class="elementtag">&lt;element-citation&gt;</span></a> or <a href="n-48x0.html" target="main" title="Mixed Citation"><span class="elementtag">&lt;mixed-citation&gt;</span></a>).</p><p class="para">The <span class="elementtag">&lt;contrib-group&gt;</span> should not be confused with the element <a href="n-3e30.html" target="main" title="Collaborative (Group) Author"><span class="elementtag">&lt;collab&gt;</span></a>, in which individuals are not named as contributors because the contribution was made by the group as a whole, for example, a report which has a laboratory or department as the official author.</p></div><div class="contentmodel"><h2 class="header first">Content Model</h2><pre class="contentdesc">&lt;!ELEMENT  contrib-group
+                        <a href="n-vjp0.html" target="main" title="Contributor Group Model"><span class="petag">%contrib-group-model;</span></a>                        &gt;</pre></div><div class="contentmodel"><h2 class="header">Expanded Content Model</h2><p class="contentdesc">(contrib+)</p></div><div class="modeldesc"><h2 class="header">Description</h2><p class="para"><a href="n-ht50.html" target="main" title="Contributor"><span class="elementtag">&lt;contrib&gt;</span></a> <a href="n-ht50.html" target="main" title="<contrib&gt;"><span class="elementname">Contributor</span></a>, one or more</p></div><div class="elementcontext"><h3 class="header">This element may be contained in:</h3><p class="para"><a href="n-yp20.html" target="main" title="Article Metadata"><span class="elementtag">&lt;article-meta&gt;</span></a>, <a href="n-gm70.html" target="main" title="Supplement Information"><span class="elementtag">&lt;supplement&gt;</span></a></p></div><div class="examp.group"><h3 class="header">Example 1</h3><p class="para">A <a href="n-7n50.html" target="main" title="Contributor Group"><span class="elementtag">&lt;contrib-group&gt;</span></a> element with a single author:</p><div class="taggedexamp"><pre class="taggedtext">
+
+...
+<strong><span class="focus">&lt;contrib-group&gt;
+&lt;contrib contrib-type="author"&gt;
+&lt;name name-style="western"&gt;
+&lt;surname&gt;Foster&lt;/surname&gt;
+&lt;given-names&gt;Bill&lt;/given-names&gt;
+&lt;prefix&gt;Rep.&lt;/prefix&gt;
+&lt;/name&gt;
+&lt;role&gt;(IL-14)&lt;/role&gt;
+&lt;/contrib&gt;
+&lt;/contrib-group&gt;</span></strong>
+...
+
+</pre></div></div><div class="examp.group"><h3 class="header">Example 2</h3><p class="para">A <a href="n-7n50.html" target="main" title="Contributor Group"><span class="elementtag">&lt;contrib-group&gt;</span></a> element with a single author and his affiliation:</p><div class="taggedexamp"><pre class="taggedtext">
+
+...
+<strong><span class="focus">&lt;contrib-group&gt;
+&lt;contrib contrib-type="author"&gt;
+&lt;name name-style="western"&gt;
+&lt;surname&gt;Nüsslin&lt;/surname&gt;
+&lt;given-names&gt;Fridtjof&lt;/given-names&gt;
+&lt;prefix&gt;Dr.&lt;/prefix&gt;
+&lt;/name&gt;
+&lt;aff&gt;Klinik für Strahlentherapie und Radiologische Onkologie,
+&lt;institution&gt;Technische Universität München&lt;/institution&gt;, 
+Munich, Germany (Tel: 49-89-41404517, E-mail:
+&lt;ext-link ext-link-type="email" xlink:href="mailto:nuesslin@lrz.tum.de"&gt;
+nuesslin@lrz.tum.de&lt;/ext-link&gt;)&lt;/aff&gt;
+&lt;/contrib&gt;
+&lt;/contrib-group&gt;</span></strong>
+...
+
+</pre></div></div><div class="examp.group"><h3 class="header">Example 3</h3><p class="para">A <a href="n-7n50.html" target="main" title="Contributor Group"><span class="elementtag">&lt;contrib-group&gt;</span></a> element with a single editor:</p><div class="taggedexamp"><pre class="taggedtext">
+
+...  
+<strong><span class="focus">&lt;contrib-group content-type="conference-editors"&gt;
+&lt;contrib contrib-type="editor"&gt;
+&lt;name name-style="western"&gt;
+&lt;surname&gt;Herrera&lt;/surname&gt;
+&lt;given-names&gt;Gerardo&lt;/given-names&gt;
+&lt;/name&gt;
+&lt;role&gt;Conference Editor&lt;/role&gt;
+&lt;/contrib&gt;
+&lt;/contrib-group&gt;</span></strong>
+...
+
+</pre></div></div><div class="examp.group"><h3 class="header">Example 4</h3><p class="para">A <a href="n-7n50.html" target="main" title="Contributor Group"><span class="elementtag">&lt;contrib-group&gt;</span></a> element with several authors:</p><div class="taggedexamp"><pre class="taggedtext">
+...
+&lt;article-meta&gt;
+&lt;title-group&gt;
+&lt;article-title&gt;Systematic review of day hospital
+care for elderly people&lt;/article-title&gt;
+&lt;/title-group&gt;
+<strong><span class="focus">&lt;contrib-group&gt;
+&lt;contrib contrib-type="author"&gt;
+&lt;name&gt;&lt;surname&gt;Forster&lt;/surname&gt;
+&lt;given-names&gt;Anne Williams&lt;/given-names&gt;&lt;/name&gt;
+&lt;role&gt;research physiotherapist&lt;/role&gt;
+&lt;aff&gt;Department of Health Care for the Elderly, 
+St Luke&amp;#x2019;s Hospital, Bradford BD5 0NA&lt;/aff&gt;
+&lt;/contrib&gt;
+&lt;contrib contrib-type="author"&gt;
+&lt;name&gt;&lt;surname&gt;Young&lt;/surname&gt;
+&lt;given-names&gt;John&lt;/given-names&gt;&lt;/name&gt;
+&lt;role&gt;consultant physician&lt;/role&gt;
+&lt;aff&gt;Department of Health Care for the Elderly, 
+St Luke&amp;#x2019;s Hospital, Bradford BD5 0NA&lt;/aff&gt;
+&lt;/contrib&gt;
+&lt;contrib contrib-type="author"&gt;
+&lt;name&gt;&lt;surname&gt;Langhorne&lt;/surname&gt;
+&lt;given-names&gt;Peter&lt;/given-names&gt;&lt;/name&gt;
+&lt;role&gt;senior lecturer&lt;/role&gt;
+&lt;aff&gt;Academic Section of Geriatric Medicine, Royal 
+Infirmary, Glasgow G4 0SF&lt;/aff&gt;
+&lt;author-comment&gt;
+&lt;p&gt;on behalf of the Day Hospital Group&lt;/p&gt;
+&lt;/author-comment&gt;
+&lt;/contrib&gt;
+&lt;/contrib-group&gt;</span></strong>
+...
+&lt;/article-meta&gt;
+...
+</pre></div></div><div class="examp.group"><h3 class="header">Example 5</h3><p class="para">Three contributors with alternative names:</p><div class="taggedexamp"><pre class="taggedtext">
+
+...
+<strong><span class="focus">&lt;contrib-group&gt;
+&lt;contrib contrib-type="author"&gt;  
+&lt;name-alternatives&gt;
+&lt;name name-style="western"&gt;&lt;surname&gt;Zhang&lt;/surname&gt;
+&lt;given-names&gt;Y. P.&lt;/given-names&gt;&lt;/name&gt;
+&lt;string-name name-style="eastern" xml:lang="zh"&gt;张轶泼&lt;/string-name&gt;
+&lt;/name-alternatives&gt;
+&lt;/contrib&gt;
+  
+&lt;contrib contrib-type="author"&gt;
+&lt;name-alternatives&gt;
+&lt;name name-style="western"&gt;&lt;surname&gt;Isobe&lt;/surname&gt;
+&lt;given-names&gt;M.&lt;/given-names&gt;&lt;/name&gt;
+&lt;string-name name-style="eastern" xml:lang="zh"&gt;磯部光孝&lt;/string-name&gt;
+&lt;/name-alternatives&gt;
+&lt;/contrib&gt;
+  
+&lt;contrib contrib-type="author"&gt;
+&lt;name-alternatives&gt;
+&lt;name name-style="western"&gt;&lt;surname&gt;Liu&lt;/surname&gt;
+&lt;given-names&gt;Yi&lt;/given-names&gt;&lt;/name&gt;
+&lt;string-name name-style="eastern" xml:lang="zh"&gt;刘仪&lt;/string-name&gt;
+&lt;/name-alternatives&gt;
+&lt;/contrib&gt;
+&lt;/contrib-group&gt;</span></strong>
+...
+
+</pre></div></div><div class="moduledefined"><h2 class="header">Module</h2><p class="moduledefined">JATS-articlemeta1.ent</p></div><div class="pagefooter"><h2 class="headname">Article Authoring Tag Library  NISO JATS Draft Version 1.1d1</h2><h4 class="pubdate">Version of December 2013</h4></div></body></html>
