@@ -16,17 +16,18 @@
     <xsl:param name="slug" tunnel="yes"/>
     
     <div id='entry-wrapper'>
-      <span class='original'>
-        <a href='{$original-base}{$hash}.html'>Original</a>
-        <xsl:if test='starts-with($slug, "elem-") or
-                      starts-with($slug, "attr-") or
-                      starts-with($slug, "pe-")'>
-          <xsl:text> (</xsl:text>
-            <a href='{$original-base}?{concat(substring-before($slug, "-"), "=", substring-after($slug, "-"))}'>frames</a>
-          <xsl:text>)</xsl:text>
-        </xsl:if>
-      </span>
-      
+      <xsl:if test='$original-base'>
+        <span class='original'>
+          <a href='{$original-base}{$hash}.html'>Original</a>
+          <xsl:if test='starts-with($slug, "elem-") or
+                        starts-with($slug, "attr-") or
+                        starts-with($slug, "pe-")'>
+            <xsl:text> (</xsl:text>
+              <a href='{$original-base}?{concat(substring-before($slug, "-"), "=", substring-after($slug, "-"))}'>frames</a>
+            <xsl:text>)</xsl:text>
+          </xsl:if>
+        </span>
+      </xsl:if>
       
       <!-- h1 header -->
       <xsl:choose>
