@@ -5,8 +5,8 @@ Looking for the "permalink" user script for the JATS Tag Library pages?  I've mo
 that to its own repository, [here](https://github.com/Klortho/TagLibPermalink).
 
 This repository holds the content for a new-and-improved JATS Tag Set viewer.
-The results are deployed here, alongside links to the originals from which the
-were ported:
+The results are deployed to [jatspan.org](http://jatspan.org), at the following locations
+(links to the originals, from which the new views were ported, are also given):
 
   * *Archiving and Interchange*
       * [NISO JATS Version 1.0](http://jatspan.org/niso/archiving-1.0/)
