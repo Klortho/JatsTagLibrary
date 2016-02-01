@@ -1,6 +1,14 @@
 ﻿JatsTagLibrary
 ==============
 
+<strong><em>
+This repository is not maintained anymore. It is kept as an historical
+record of the generation of the earlier JATS 1.0 and JATS 1.1d1 versions
+of the Tag Libraries in jatsdoc. Newer versions of the Tag Libraries
+use the original Tag Library sources, which is a custom XML format,
+for the conversion. We hope to have those sources up on GitHub soon.
+</em></strong>
+
 Looking for the "permalink" user script for the JATS Tag Library pages?  I've moved
 that to its own repository, [here](https://github.com/Klortho/TagLibPermalink).
 
